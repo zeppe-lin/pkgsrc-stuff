@@ -1,0 +1,25 @@
+# Description: Test methods for warning
+# URL:         https://metacpan.org/pod/Test::Warn
+# Depends on:  p5-sub-uplevel
+
+name=p5-test-warn
+version=0.37
+release=1
+source=https://cpan.metacpan.org/authors/id/B/BI/BIGJ/Test-Warn-$version.tar.gz
+
+build() {
+	cd Test-Warn-$version
+
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make
+	make DESTDIR=$PKG install
+
+	# remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			\) -delete ,            \
+		-type d -empty -delete
+}

@@ -1,0 +1,13 @@
+OVERVIEW
+
+	This directory contains the source code of tnscmd10g, a lame tool to
+	prod the oracle tnslsnr process (1521/tcp).
+
+	The reason for this file being here is that it is abandoned and has no
+	official website.
+
+LICENSE
+
+	GPL.  See LICENSE file for complete license.
+
+End of file.

@@ -1,0 +1,27 @@
+# Description: TCP port scanner, spews SYN packets asynchronously
+# URL:         https://github.com/robertdavidgraham/masscan
+# Depends on:  libpcap
+
+name=masscan
+version=1.3.2-144c527
+release=1
+source=https://github.com/robertdavidgraham/$name/archive/${version#*-}/$name-${version#*-}.tar.gz
+
+build() {
+	cd $name-${version#*-}*
+
+	sed -e '/$(CC)/s!$(CFLAGS)!$(LDFLAGS) $(CFLAGS)!g'  \
+	    -e '/^GITVER :=/s!= .(.*!=!g'                   \
+	    -e '/^SYS/s|gcc|$(CC)|g'                        \
+	    -e '/^CFLAGS =/{s,=,+=,;s,-g -ggdb,,;s,-O.,,;}' \
+	    -e '/^CC =/d'                                   \
+	    -i Makefile
+
+	# optimize
+	CFLAGS="$(echo $CFLAGS | sed 's/-O. /-O3 /')"
+
+	make
+	make INSTALL_DATA='-m 0755 -D' DESTDIR=$PKG install
+
+	install -m 644 -Dt $PKG/usr/share/man/man8/ doc/masscan.8
+}

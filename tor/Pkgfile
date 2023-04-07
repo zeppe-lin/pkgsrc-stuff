@@ -1,0 +1,43 @@
+# Description: Anonymizing overlay network
+# URL:         https://www.torproject.org
+# Depends on:  libcap libevent libseccomp zstd
+
+name=tor
+version=0.4.4.9
+release=1
+source="https://www.torproject.org/dist/$name-$version.tar.gz
+	rc.tor torrc"
+
+build() {
+	cd $name-$version
+
+	export PATH="/sbin:/usr/sbin:/bin:/usr/bin"
+
+	./configure \
+		--prefix=/usr                 \
+		--sysconfdir=/etc             \
+		--localstatedir=/var          \
+		--runstatedir=/run            \
+		--enable-system-torrc         \
+		--disable-android             \
+		--disable-coverage            \
+		--disable-html-manual         \
+		--disable-rust                \
+		--disable-unittests           \
+		--disable-zstd-advanced-apis  \
+		--disable-module-dirauth      \
+		--disable-systemd             \
+		--disable-libfuzzer           \
+
+	make V=1
+	make DESTDIR=$PKG install
+
+	install -d $PKG/var/lib $PKG/var/log
+	install -m 0700 -d $PKG/var/lib/tor $PKG/var/log/tor
+
+	install -m 0750 -D $SRC/rc.tor $PKG/etc/rc.d/tor
+	install -m 0600 -D $SRC/torrc  $PKG/etc/tor/torrc
+
+	# remove junk
+	rm $PKG/etc/tor/torrc.sample
+}

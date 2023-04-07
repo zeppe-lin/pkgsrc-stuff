@@ -1,0 +1,71 @@
+# Description: Black box WordPress vulnerability scanner
+# URL:         https://wpscan.org
+# Depends on:  curl libxslt ruby
+
+name=wpscan
+version=3.8.22
+release=1
+source=https://github.com/wpscanteam/$name/archive/v$version/$name-$version.tar.gz
+
+build() {
+	install -d $PKG/usr/bin $PKG/opt
+
+	cp -a $name-$version $PKG/opt/$name
+
+	cd $PKG/opt/$name
+	sed -i '/bundler/ s|~>|>=|g' $name.gemspec
+	bundle config build.nokogiri --use-system-libraries
+	bundle config set deployment false
+	bundle config set no-cache true
+	bundle config set --local path vendor/bundle
+	bundle config set --local without development test
+	sed 's|git ls-files|find -type f|' -i $name.gemspec
+	CFLAGS="$CFLAGS -I/usr/include/libxml2"
+	bundle install -j ${JOBS:-1}
+
+	# reproducible builds: don't leak jobs count
+	sed '/BUNDLE_JOBS/d' -i .bundle/config
+
+        # fix perms
+        find vendor/bundle/ruby -exec chmod o+r '{}' \;
+
+	# wrapper
+	cat >$PKG/usr/bin/$name <<EOF
+#!/bin/sh
+BUNDLE_GEMFILE=/opt/wpscan/Gemfile \
+bundle exec ruby /opt/wpscan/bin/wpscan \$@
+EOF
+	chmod +x $PKG/usr/bin/$name
+
+	# remove junk
+	rm -rf  vendor/bundle/ruby/*/gems/*/test   \
+		vendor/bundle/ruby/*/cache         \
+
+	find $PKG  -depth -type f \(       \
+		   -name gen_make.out      \
+		-o -name mkmf.log          \
+		-o -name .codeclimate.yml  \
+		-o -name .dockerignore     \
+		-o -name .gitignore        \
+		-o -name .rubocop.yml      \
+		-o -name .travis.yml       \
+		-o -name CHANGELOG\*       \
+		-o -name CHANGES\*         \
+		-o -name COPYING           \
+		-o -name ChangeLog\*       \
+		-o -name Dockerfile        \
+		-o -name LICENSE\*         \
+		-o -name NEWS\*            \
+		-o -name README\*          \
+		-o -name SECURITY\*        \
+		-o -name THANKS            \
+		-o -name TODO              \
+		-o -name VERSION           \
+		-o -name \*-LICENSE\*      \
+		-o -name \*.md             \
+		\) -delete ,               \
+		-type d -name .github -exec rm -r {} +
+
+	# remove empty dirs
+	find $PKG -depth -type d -empty -delete
+}

@@ -1,0 +1,22 @@
+# Description: Database browser for SQLite
+# URL:         http://sqlitebrowser.org
+# Depends on:  qt5
+
+name=sqlitebrowser
+version=3.12.2
+release=1
+source=https://github.com/$name/$name/archive/v$version/$name-$version.tar.gz
+
+build() {
+	cmake -S $name-$version -B build -G Ninja       \
+		-D CMAKE_INSTALL_PREFIX=/usr            \
+		-D CMAKE_BUILD_TYPE=Release             \
+		-D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS"  \
+		-D CMAKE_C_FLAGS_RELEASE="$CFLAGS"      \
+
+	cmake --build build -j ${JOBS:-1} -v
+	DESTDIR=$PKG cmake --install build
+
+	# remove empty dirs
+	find $PKG -depth -empty -exec rm -rf {} \;
+}

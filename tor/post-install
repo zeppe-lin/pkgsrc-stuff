@@ -1,0 +1,17 @@
+#!/bin/sh -ex
+
+if ! /usr/bin/getent group tor; then
+	/usr/sbin/groupadd -r tor
+fi
+
+if ! /usr/bin/getent passwd tor; then
+	/usr/sbin/useradd -g tor -r -d /var/lib/tor -s /bin/false tor
+fi
+
+/usr/bin/passwd -l tor
+
+/bin/chown tor:tor /var/lib/tor
+/bin/chown tor:tor /var/log/tor
+/bin/chown tor:tor /etc/tor/torrc
+
+# End of file.

@@ -1,0 +1,28 @@
+# Description: Joomla vulnerability scanner
+# URL:         https://github.com/rezasp/joomscan
+# Depends on:  dos2unix p5-lwp-protocol-https p5-http-message
+
+name=joomscan
+version=0.0.7-7931539
+release=1
+source="https://github.com/OWASP/$name/archive/${version#*-}/$name-$version.tar.gz
+	joomscan.sh  0001-joomscan.pl-skip-clear-screen-at-startup.patch"
+
+build() {
+	cd $name-${version#*-}*
+
+	patch -p1 -i $SRC/0001-joomscan.pl-skip-clear-screen-at-startup.patch
+
+	# fix encoding
+	dos2unix joomscan.pl
+
+	install -d $PKG/usr/lib/joomscan $PKG/usr/bin
+
+	cp -r joomscan.pl core exploit modules $PKG/usr/lib/joomscan/
+
+	cd $PKG/usr/lib/joomscan
+	find core exploit modules -type f -exec chmod 644 {} +
+	cd -
+
+	install -m 0755 $SRC/joomscan.sh $PKG/usr/bin/joomscan
+}

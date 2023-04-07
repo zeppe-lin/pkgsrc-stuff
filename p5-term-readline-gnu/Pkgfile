@@ -1,0 +1,25 @@
+# Description: GNU Readline XS library wrapper
+# URL:         https://metacpan.org/pod/Term::ReadLine::Gnu
+# Depends on:  perl
+
+name=p5-term-readline-gnu
+version=1.45
+release=1
+source=https://cpan.metacpan.org/authors/id/H/HA/HAYASHI/Term-ReadLine-Gnu-$version.tar.gz
+
+build() {
+	cd Term-ReadLine-Gnu-$version
+
+	PERL_MM_USE_DEFAULT=1 perl -I. Makefile.PL INSTALLDIRS=vendor
+
+	make OPTIMIZE="$CFLAGS"
+	make DESTDIR=$PKG install
+
+	# remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			\) -delete ,            \
+		-type d -empty -delete
+}

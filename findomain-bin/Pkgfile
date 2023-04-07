@@ -1,0 +1,11 @@
+# Description: Subdomain enumerator
+# URL:         https://github.com/Findomain/Findomain
+
+name=findomain-bin
+version=8.2.1
+release=1
+source=$name-$version-x86_64.zip
+
+build() {
+	install -m 0755 -Dt $PKG/usr/bin/  findomain
+}

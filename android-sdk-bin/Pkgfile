@@ -1,0 +1,22 @@
+# Description: Google Android SDK
+# URL:         https://developer.android.com/studio/releases/sdk-tools.html
+# Depends on:  jdk11-bin xorg-libxtst fontconfig freetype xorg-libx11 xorg-libxext xorg-libxrender zlib
+
+name=android-sdk-bin
+version=26.1.1
+release=1
+source=https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
+
+build() {
+	install -d $PKG/opt/android-sdk/platforms
+	install -d $PKG/opt/android-sdk/add-ons
+
+	cp -a tools $PKG/opt/android-sdk
+
+	# fix broken permissions
+	chmod -R o=g $PKG/opt/android-sdk
+	find $PKG/opt/android-sdk -perm 744 -exec chmod 755 {} +
+
+	# remove junk
+	rm $PKG/opt/android-sdk/tools/proguard/README
+}

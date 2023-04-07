@@ -1,0 +1,14 @@
+# Description: Search through git repositories for high entropy strings and secrets
+# URL:         https://github.com/dxa4481/truffleHog
+# Depends on:  trufflehogregexes py3-gitpython
+
+name=trufflehog
+version=2.0.97
+release=1
+source=https://github.com/trufflesecurity/truffleHog/archive/$version/truffleHog-$version.tar.gz
+
+build() {
+	cd trufflehog-$version
+
+	/usr/bin/python3 setup.py install --prefix=/usr --root=$PKG -O2
+}

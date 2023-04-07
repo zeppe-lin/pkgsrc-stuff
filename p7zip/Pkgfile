@@ -1,0 +1,40 @@
+# Description: Port of 7-zip for POSIX systems
+# URL:         https://p7zip.sourceforge.net/
+# Depends on:  yasm
+
+name=p7zip
+version=16.02
+release=1
+source="https://downloads.sourceforge.net/project/p7zip/p7zip/$version/p7zip_${version}_src_all.tar.bz2
+	CPP_Windows_ErrorMsg.patch
+	CVE-2016-9296.patch
+	CVE-2017-17969.patch
+	CVE-2018-5996.patch
+	WimHandler.cpp.patch"
+
+build() {
+	cd p7zip_$version
+
+	# https://nvd.nist.gov/vuln/detail/CVE-2016-9296
+	patch -p1 -i $SRC/CVE-2016-9296.patch
+
+	# https://nvd.nist.gov/vuln/detail/CVE-2017-17969
+	patch -p1 -i $SRC/CVE-2017-17969.patch
+
+	# https://nvd.nist.gov/vuln/detail/CVE-2018-5996
+	patch -p1 -i $SRC/CVE-2018-5996.patch
+
+	# fix build against gcc 10
+	patch -p0 -i $SRC/CPP_Windows_ErrorMsg.patch
+	patch -p0 -i $SRC/WimHandler.cpp.patch
+
+	sed -i 's/ -pipe / /g' makefile.*
+	cp makefile.linux_amd64_asm makefile.machine
+
+	make all3 OPTFLAGS="$CFLAGS"
+
+	make install DEST_DIR="$PKG" DEST_HOME=/usr DEST_MAN=/usr/share/man
+
+	# remove junk
+	rm -r $PKG/usr/share/doc
+}

@@ -1,0 +1,25 @@
+# Description: Build.PL install path logic made easy
+# URL:         https://metacpan.org/pod/ExtUtils::InstallPaths
+# Depends on:  p5-extutils-config
+
+name=p5-extutils-installpaths
+version=0.012
+release=1
+source=https://www.cpan.org/modules/by-module/ExtUtils/ExtUtils-InstallPaths-$version.tar.gz
+
+build() {
+	cd ExtUtils-InstallPaths-$version
+
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make V=1
+	make DESTDIR=$PKG install
+
+	# remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			\) -delete ,            \
+		-type d -empty -delete
+}

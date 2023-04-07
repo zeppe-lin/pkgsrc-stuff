@@ -1,0 +1,36 @@
+# Description: Wrapper to safely torify applications
+# URL:         https://gitweb.torproject.org/torsocks.git
+# Optional:    tor
+
+name=torsocks
+version=2.3.0
+release=1
+source="https://people.torproject.org/~dgoulet/$name/$name-$version.tar.xz
+	4c00ec8773fd63fa48ef49e1ccf2adac598427be.patch
+	d4b0a84bdf2a1895c8ec3091dc2767fd9f8c2d66.patch
+	fb7db9ecd0be04385ad5ae40e6e802cd80bb3455.patch"
+
+build() {
+	cd $name-$version
+
+	# disable tests requiring network access
+	for test in dns fd_passing getpeername; do
+		sed -i -e "/^\ttest_${test} \\\\\$/d" tests/Makefile.am || \
+		{ echo 1>&2 "Failed to disable network tests!"; exit 1; }
+	done
+
+	patch -p1 -i $SRC/4c00ec8773fd63fa48ef49e1ccf2adac598427be.patch
+	patch -p1 -i $SRC/d4b0a84bdf2a1895c8ec3091dc2767fd9f8c2d66.patch
+	patch -p1 -i $SRC/fb7db9ecd0be04385ad5ae40e6e802cd80bb3455.patch
+
+	autoreconf -f -i
+	./configure \
+		--prefix=/usr     \
+		--sysconfdir=/etc \
+
+	make V=1
+	make DESTDIR=$PKG install
+
+	# remove junk
+	rm -r $PKG/usr/share/doc
+}

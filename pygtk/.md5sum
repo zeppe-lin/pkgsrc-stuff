@@ -1,0 +1,4 @@
+d7bbcdacd34b16dbf94e7f4df9e27b88  fix-leaks-of-pango-objects.patch
+6807ed114c8cf79270aff5a64331d308  pango-1.44.6.patch
+a1051d5794fd7696d3c1af6422d17a49  pygtk-2.24.0.tar.bz2
+12acfacd26f19c504a0a2d0edeb66121  python27.patch

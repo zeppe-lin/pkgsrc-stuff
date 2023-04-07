@@ -1,0 +1,29 @@
+Description: fix target dependency for parallel build
+
+ As detected on Debian[0], build with more than 4 jobs always fails
+ because the dependencies of the targets cowpatty and genpmk are not
+ well defined, this patch accomplish that and fixes the build on machines
+ with more than 4 threads.
+
+ [0]https://tests.reproducible-builds.org/debian/rbuild/buster/amd64/cowpatty_4.8-1.rbuild.log.gz
+
+Author: Samuel Henrique <samueloph@debian.org>
+Forwarded: https://github.com/joswr1ght/cowpatty/pull/5
+
+Index: cowpatty/Makefile
+===================================================================
+--- cowpatty.orig/Makefile
++++ cowpatty/Makefile
+@@ -19,10 +19,10 @@ BINDIR		= /usr/bin
+ all: $(PROGOBJ) $(PROG)
+ 
+ cowpatty: common.h md5.c md5.h sha1.h cowpatty.c cowpatty.h sha1.c \
+-            sha1.h utils.c utils.h
++            sha1.h utils.c utils.h utils.o md5.o sha1.o
+ 	$(CC) $(CFLAGS) $(CPPFLAGS) cowpatty.c -o cowpatty utils.o md5.o sha1.o $(LDFLAGS) $(LDLIBS)
+ 
+-genpmk: genpmk.c cowpatty.h utils.h sha1.h common.h
++genpmk: genpmk.c cowpatty.h utils.h sha1.h common.h utils.o sha1.o
+ 	$(CC) $(CFLAGS) $(CPPFLAGS) genpmk.c -o genpmk utils.o sha1.o $(LDFLAGS) $(LDLIBS)
+ 
+ utils: utils.c utils.h

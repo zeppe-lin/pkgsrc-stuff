@@ -1,0 +1,13 @@
+# Description: Credit card numbers generator
+# URL:         https://github.com/sighook/gencc
+
+name=gencc
+version=0.1.1
+release=1
+source=https://github.com/sighook/gencc/archive/v$version/$name-$version.tar.gz
+
+build() {
+	cd $name-$version
+
+	make PREFIX=/usr DESTDIR=$PKG install
+}

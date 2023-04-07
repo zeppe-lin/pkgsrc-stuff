@@ -1,0 +1,25 @@
+# Description: GoldenDict AppImage
+# URL:         https://github.com/Abs62/goldendict
+# Depends on:  fuse
+
+name=goldendict-appimage
+version=1.0.1-9a5e1e8
+release=1
+source="https://github.com/Abs62/goldendict/releases/download/continuous/GoldenDict-${version#*-}-x86_64.AppImage
+	goldendict.desktop
+	goldendict.png"
+
+build() {
+	install -m 0644 -Dt $PKG/usr/share/applications/ \
+		$SRC/goldendict.desktop
+	install -m 0644 -Dt $PKG/usr/share/pixmaps/ \
+		$SRC/goldendict.png
+
+	mkdir -p $PKG/opt/goldendict
+	mv *.AppImage $PKG/opt/goldendict/goldendict-$version.AppImage
+	chmod +x $PKG/opt/goldendict/goldendict-$version.AppImage
+
+	mkdir -p $PKG/usr/bin
+	ln -s /opt/goldendict/goldendict-$version.AppImage \
+		$PKG/usr/bin/goldendict
+}

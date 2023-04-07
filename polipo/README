@@ -1,0 +1,15 @@
+README polipo
+
+SOCKS5 TUNNEL
+
+	For using tor with polipo add the following lines in
+	/etc/polipo/config:
+
+		logFile = /var/log/polipo.log
+		socksParentProxy = "127.0.0.1:9050"
+		socksProxyType = socks5
+		proxyAddress = 127.0.0.1
+		proxyPort = 8123
+		allowedClients = 127.0.0.1
+
+End of file.

@@ -1,0 +1,22 @@
+# Description: Recover lost partitions and files
+# URL:         https://www.cgsecurity.org/wiki/TestDisk
+# Depends on:  libewf-legacy ntfs-3g qt5
+
+name=testdisk
+version=7.1
+release=1
+source=https://www.cgsecurity.org/$name-$version.tar.bz2
+
+build() {
+	mkdir build; cd build
+
+	../$name-$version/configure  \
+		--prefix=/usr        \
+		--enable-qt          \
+
+	make V=1
+	make DESTDIR=$PKG install
+
+	# remove junk
+	rm -r $PKG/usr/share/doc/ $PKG/usr/share/man/zh_CN/
+}

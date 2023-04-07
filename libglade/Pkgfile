@@ -1,0 +1,43 @@
+# Description: Runtime interpreter for GLADE GUI files
+# URL:         http://glade.gnome.org/
+# Depends on:  gtk libxml2 python
+
+name=libglade
+version=2.6.4
+release=1
+source="https://download.gnome.org/sources/$name/2.6/$name-$version.tar.bz2
+	libglade-2.0.1-nowarning.patch"
+
+build() {
+	install -d $PKG/etc/xml/dtd/$name/2.0
+	xmlcatalog --noout --create $PKG/etc/xml/dtd/$name/2.0/catalog
+
+	sed -e 's/USE_NLS=yes/USE_NLS=no/'    \
+	    -e 's/ENABLE_NLS 1/ENABLE_NLS 0/' \
+	    -i $name-$version/configure
+
+	sed -e "s|/etc/xml/catalog|$PKG/etc/xml/dtd/$name/2.0/catalog|"     \
+	    -e 's|$(datadir)/xml/libglade|$(datadir)/xml/dtd/libglade/2.0|' \
+	    -i $name-$version/Makefile.in
+
+	patch -p1 -d $name-$version -i $SRC/libglade-2.0.1-nowarning.patch
+
+	mkdir build; cd build
+
+	../$name-$version/configure     \
+		--prefix=/usr           \
+		--disable-gtk-doc       \
+		--disable-gtk-doc-html  \
+		--disable-static        \
+		--disable-gtktest       \
+
+	sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+
+	make V=1
+	make DESTDIR=$PKG install
+
+	install -m 0755 libglade-convert $PKG/usr/bin/
+
+	# remove junk
+	rm -rf $PKG/usr/share/gtk-doc
+}

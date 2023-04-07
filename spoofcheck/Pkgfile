@@ -1,0 +1,47 @@
+# Description: Check if a domain can be spoofed from
+# URL:         https://github.com/sighook/spoofcheck
+# Depends on:  py3-pip
+
+name=spoofcheck
+version=0.1
+release=1
+source=https://github.com/sighook/$name/archive/$version/$name-$version.tar.gz
+
+build() {
+	install -d $PKG/usr/bin $PKG/opt
+
+	cp -a $name-$version $PKG/opt/$name
+	/usr/bin/pip3 install -r $PKG/opt/$name/requirements.txt \
+		--target $PKG/opt/$name
+
+	# create an indirect launcher in /usr/bin
+	cat >$PKG/usr/bin/$name <<EOF
+#!/bin/sh
+export PYTHONPATH="/opt/spoofcheck"
+python3 /opt/spoofcheck/spoofcheck.py \$@
+EOF
+	chmod +x $PKG/usr/bin/$name
+
+	# fix perms
+	find $PKG/opt \
+		-type f -not -perm 0644 -exec chmod 0644 {} \; , \
+		-type d -not -perm 0755 -exec chmod 0755 {} \;
+
+	# remove junk
+	find $PKG/opt/$name -depth         \
+	-type f \( -name README.txt        \
+		-o -name LICENSE           \
+		-o -name requirements.txt  \
+		-o -name .dockerignore     \
+		-o -name .gitignore        \
+		-o -name .travis.yml       \
+		-o -name Dockerfile        \
+		-o -iname readme.md        \
+		\) -delete ,               \
+	-type d \( -name \*.dist-info      \
+		-o -name \*.egg-info       \
+		-o -name .travis           \
+		-o -name .github           \
+		-o -empty                  \
+		\) -exec rm -r {} +
+}

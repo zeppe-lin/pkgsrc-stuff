@@ -1,0 +1,19 @@
+# Description: EditorConfig File Locator and Interpreter
+# URL:         https://github.com/editorconfig/editorconfig-core-py
+# Depends on:  py3-setuptools
+
+name=py3-editorconfig
+version=0.12.3
+release=1
+source=https://pypi.io/packages/source/E/EditorConfig/EditorConfig-$version.tar.gz
+
+build() {
+	cd EditorConfig-$version
+
+	/usr/bin/python3 setup.py build
+	/usr/bin/python3 setup.py install --root=$PKG -O2
+
+	# FS#55201 (archlinux)
+	cd $PKG/usr/bin/
+	mv editorconfig editorconfig3
+}

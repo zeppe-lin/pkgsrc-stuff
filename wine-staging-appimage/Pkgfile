@@ -1,0 +1,16 @@
+# Description: WINE staging x86-64 AppImage
+# URL:         https://github.com/mmtrt/WINE_AppImage
+# Depends on:  fuse
+
+name=wine-staging-appimage
+version=8.1
+release=1
+source=https://github.com/mmtrt/WINE_AppImage/releases/download/continuous-staging/wine-staging_${version}-x86_64.AppImage
+
+build() {
+	mkdir -p $PKG/opt/wine
+
+	mv $SRC/wine-staging_${version}-x86_64.AppImage \
+		$PKG/opt/wine
+	chmod 0755 $PKG/opt/wine/*.AppImage
+}

@@ -1,0 +1,27 @@
+# Description: IPv6 attack toolkit
+# URL:         https://github.com/vanhauser-thc/thc-ipv6
+# Depends on:  bindutils libnetfilter-queue libpcap p5-socket6
+
+name=thc-ipv6
+version=3.8
+release=1
+source="https://github.com/vanhauser-thc/$name/archive/v$version/$name-$version.tar.gz
+	src/fake_dhcps6v2.c"
+
+build() {
+	cd $name-$version
+
+	# remove debug flag
+	sed -i 's|CFLAGS+=-g|CFLAGS+=|' Makefile
+
+	# see src/README for more information
+	cp $SRC/fake_dhcps6v2.c .
+	sed -i 's/fake_dhcps6 /fake_dhcps6 fake_dhcps6v2 /' Makefile
+
+	make
+	make PREFIX=/usr DESTDIR=$PKG install
+
+	cd contrib
+	make
+	make PREFIX=/usr DESTDIR=$PKG install
+}

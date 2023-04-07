@@ -1,0 +1,25 @@
+# Description: Perl HTML parser class
+# URL:         https://metacpan.org/release/HTML-Parser
+# Depends on:  p5-html-tagset p5-http-message
+
+name=p5-html-parser
+version=3.81
+release=1
+source=https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTML-Parser-$version.tar.gz
+
+build() {
+	cd HTML-Parser-$version
+
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make OPTIMIZE="$CFLAGS"
+	make DESTDIR=$PKG install
+
+	# remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			\) -delete ,            \
+		-type d -empty -delete
+}

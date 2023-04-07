@@ -1,0 +1,19 @@
+# Description: Asynchronous C DNS library
+# URL:         https://c-ares.haxx.se/
+
+name=c-ares
+version=1.19.0
+release=1
+source=https://$name.haxx.se/download/$name-$version.tar.gz
+
+build() {
+	mkdir build; cd build
+
+	../$name-$version/configure  \
+		--prefix=/usr        \
+		--disable-tests      \
+		--disable-debug      \
+
+	make V=1
+	make DESTDIR=$PKG install
+}

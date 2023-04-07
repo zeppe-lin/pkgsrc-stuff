@@ -1,0 +1,22 @@
+# Description: Open source client for Windows NT Terminal Server
+# URL:         http://www.rdesktop.org/
+# Depends on:  gnutls libtasn1 nettle xorg-libx11 xorg-libxcursor
+
+name=rdesktop
+version=1.9.0
+release=1
+source=https://github.com/rdesktop/rdesktop/archive/v${version}/rdesktop-v${version}.tar.gz
+
+build(){
+	# build in separate dir is broken
+	cd $name-$version
+
+	autoreconf -i
+	./configure \
+		--prefix=/usr        \
+		--disable-credssp    \
+		--disable-smartcard  \
+
+	make V=1
+	make prefix=$PKG/usr install
+}

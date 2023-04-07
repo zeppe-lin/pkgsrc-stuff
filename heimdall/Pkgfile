@@ -1,0 +1,20 @@
+# Description: Flash firmwares on Samsung Galaxy S devices
+# URL:         https://gitlab.com/BenjaminDobell/Heimdall
+# Depends on:  libusb
+# Optional:    qt5
+
+name=heimdall
+version=1.4.2
+release=1
+source=https://gitlab.com/BenjaminDobell/Heimdall/-/archive/v$version/Heimdall-v$version.tar.bz2
+
+build() {
+	export CXXFLAGS="$CXXFLAGS -DNDEBUG"
+
+	cmake -S Heimdall-v$version -B build \
+		-D DISABLE_FRONTEND=ON # disable GUI (requires qt5)
+
+	cmake --build build -v
+
+	install -m 0755 -Dt $PKG/usr/bin/ build/bin/$name
+}

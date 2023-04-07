@@ -1,0 +1,23 @@
+# Description: Expert Witness Compression Format (EWF)
+# URL:         https://github.com/libyal/libewf
+# Depends on:  e2fsprogs fuse2
+
+name=libewf-legacy
+version=20140814
+release=1
+source=https://github.com/libyal/$name/releases/download/$version/${name%%-*}-$version.tar.gz
+
+build() {
+	# build in separate dir is broken
+	cd ${name%%-*}-$version
+
+	export CFLAGS="$CFLAGS -std=gnu89"
+
+	./configure \
+		--prefix=/usr \
+		--sysconfdir=/etc \
+		--without-openssl
+
+	make V=1
+	make DESTDIR=$PKG install
+}

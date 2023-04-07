@@ -1,0 +1,21 @@
+# Description: GIMP AppImage
+# URL:         https://github.com/aferrero2707/gimp-appimage
+# Depends on:  fuse
+
+name=gimp-appimage
+version=2.10.25-20210610
+release=1
+source="https://github.com/aferrero2707/gimp-appimage/releases/download/continuous/GIMP_AppImage-git-$version-withplugins-x86_64.AppImage
+	gimp.desktop
+	gimp.png"
+
+build() {
+	install -m 0644 -Dt $PKG/usr/share/applications/ $SRC/gimp.desktop
+	install -m 0644 -Dt $PKG/opt/gimp/               $SRC/gimp.png
+
+	mv *.AppImage $PKG/opt/gimp/gimp-$version.AppImage
+	chmod +x $PKG/opt/gimp/gimp-$version.AppImage
+
+	mkdir -p $PKG/usr/bin
+	ln -s /opt/gimp/gimp-$version.AppImage $PKG/usr/bin/gimp
+}

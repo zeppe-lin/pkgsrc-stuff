@@ -1,0 +1,26 @@
+# Description: Qt Widgets for Technical Applications
+# URL:         https://qwt.sourceforge.io/
+# Depends on:  qt5
+
+name=qwt
+version=6.2.0
+release=1
+source=https://downloads.sourceforge.net/$name/$name-$version.tar.bz2
+
+build() {
+	cd $name-$version
+
+	sed -e '/^\s*QWT_INSTALL_PREFIX/s|=.*|= /usr|'               \
+	    -e '/^QWT_INSTALL_DOCS/s|/doc|/share/doc/qwt|'           \
+	    -e '/^QWT_INSTALL_HEADERS/s|include|&/qwt|'              \
+	    -e '/^QWT_INSTALL_PLUGINS/s|plugins/designer|lib/qt/&|'  \
+	    -e '/^QWT_INSTALL_FEATURES/s|features|lib/qt/mkspecs/&|' \
+	    -i qwtconfig.pri
+
+	qmake-qt5 qwt.pro
+	make V=1
+	make INSTALL_ROOT=$PKG install
+
+	mv $PKG/usr/share/doc/qwt/man $PKG/usr/share
+	rm -r $PKG/usr/share/doc
+}

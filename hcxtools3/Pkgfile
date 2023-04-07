@@ -1,0 +1,17 @@
+# Description: Capture packets from WLAN devices for hashcat (legacy)
+# URL:         https://github.com/wi-fi-analyzer/hcxtools
+# Depends on:  curl libpcap
+
+name=hcxtools3
+version=3.5.0-e4b60f4
+release=1
+source=https://github.com/ZerBea/hcxtools/archive/${version#*-}/hcxtools-$version.tar.gz
+
+build() {
+	cd hcxtools-${version#*-}*
+
+	make CFLAGS="$CFLAGS" INSTALLDIR=$PKG/usr/bin install
+
+	# append '3' to all binaries
+	find $PKG/usr/bin -type f -print | xargs -I% mv % %3
+}

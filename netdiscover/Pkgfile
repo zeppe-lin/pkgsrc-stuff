@@ -1,0 +1,25 @@
+# Description: Active/Passive ARP reconnaissance tool
+# URL:         https://github.com/netdiscover-scanner/netdiscover/
+# Depends on:  libnet libpcap dos2unix
+
+name=netdiscover
+version=0.10
+release=1
+source=https://github.com/$name-scanner/$name/archive/$version/$name-$version.tar.gz
+
+build() {
+	(cd $name-$version; ./update-oui-database.sh)
+
+	mkdir build; cd build
+
+	touch ../$name-$version/INSTALL
+	autoreconf -fi ../$name-$version
+	../$name-$version/configure  \
+		--prefix=/usr        \
+
+	make V=1
+	make DESTDIR=$PKG install
+
+	# remove junk
+	rm -r $PKG/usr/share/doc
+}

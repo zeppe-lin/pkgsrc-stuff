@@ -1,0 +1,28 @@
+diff '--color=always' -pruN '--color=never' ../../../nmap-7.92.orig/zenmap/zenmapGUI/NmapOutputViewer.py ../../zenmap/zenmapGUI/NmapOutputViewer.py
+--- a/zenmap/zenmapGUI/NmapOutputViewer.py	2021-09-17 22:58:45.298617806 +0300
++++ b/zenmap/zenmapGUI/NmapOutputViewer.py	2021-09-17 23:02:19.324617067 +0300
+@@ -139,15 +139,15 @@ class NmapOutputViewer (gtk.VBox):
+             else:
+                 tag.set_property("underline", pango.UNDERLINE_NONE)
+ 
+-            text_color = settings[3]
+-            highlight_color = settings[4]
++            #text_color = settings[3]
++            #highlight_color = settings[4]
+ 
+-            tag.set_property(
+-                    "foreground", gtk.color_selection_palette_to_string(
+-                        [gtk.gdk.Color(*text_color), ]))
+-            tag.set_property(
+-                    "background", gtk.color_selection_palette_to_string(
+-                        [gtk.gdk.Color(*highlight_color), ]))
++            #tag.set_property(
++            #       "foreground", gtk.color_selection_palette_to_string(
++            #            [gtk.gdk.Color(*text_color), ]))
++            #tag.set_property(
++            #        "background", gtk.color_selection_palette_to_string(
++            #            [gtk.gdk.Color(*highlight_color), ]))
+ 
+     def go_to_host(self, host):
+         """Go to host line on nmap output result"""
+Binary files ../../../nmap-7.92.orig/zenmap/zenmapGUI/.NmapOutputViewer.py.un~ and ../../zenmap/zenmapGUI/.NmapOutputViewer.py.un~ differ

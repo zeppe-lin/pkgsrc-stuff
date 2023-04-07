@@ -1,0 +1,26 @@
+Description: Fix make clean target
+Author: Raphael Hertzog <buxy@kali.org>
+Origin: vendor
+Last-Update: 2015-11-24
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/Makefile
++++ b/Makefile
+@@ -15,7 +15,7 @@
+ #CFLAGS		+= -static
+ PROGOBJ		= md5.o sha1.o utils.o cowpatty.o genpmk.o
+ PROG		= cowpatty genpmk
+-BINDIR		= /usr/local/bin
++BINDIR		= /usr/bin
+ CC			= clang
+ 
+ all: $(PROGOBJ) $(PROG)
+@@ -37,7 +37,7 @@
+ 	$(CC) $(CFLAGS) sha1.c -c
+ 
+ clean:
+-	@rm $(PROGOBJ) $(PROG)
++	@rm -f $(PROGOBJ) $(PROG)
+ 
+ strip:
+ 	@ls -l $(PROG)

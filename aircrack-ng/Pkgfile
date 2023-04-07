@@ -1,0 +1,25 @@
+# Description: Complete suite of tools to assess WiFi network security
+# URL:         https://github.com/aircrack-ng/aircrack-ng
+# Depends on:  hwloc libbsd libnl libpcap libpcre openssl sqlite3
+
+name=aircrack-ng
+version=1.7
+release=1
+source="https://github.com/$name/$name/archive/${version#*-}/$name-${version#*-}.tar.gz
+	add-manufacturer-column.patch"
+
+build() {
+	patch -Np1 -d $name-${version#*-} -i $SRC/add-manufacturer-column.patch
+
+	mkdir build; cd build
+
+	autoreconf -fi ../$name-${version#*-}
+	../$name-${version#*-}/configure  \
+		--prefix=/usr             \
+		--libdir=/usr/lib/$name   \
+		--libexecdir=/usr/lib     \
+		--enable-static           \
+
+	make V=1
+	make DESTDIR=$PKG install
+}

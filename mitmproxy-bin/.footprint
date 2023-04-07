@@ -1,0 +1,5 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/mitmdump
+-rwxr-xr-x	root/root	usr/bin/mitmproxy
+-rwxr-xr-x	root/root	usr/bin/mitmweb

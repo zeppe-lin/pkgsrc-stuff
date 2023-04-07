@@ -1,0 +1,24 @@
+# Description: Netcat from OpenBSD rewritten by Debian
+# URL:         https://tracker.debian.org/pkg/netcat-openbsd
+# Depends on:  libbsd gnutls
+
+name=netcat-openbsd
+version=1.219-1
+release=1
+source="http://http.debian.net/debian/pool/main/n/$name/${name}_${version%%-*}.orig.tar.gz
+	http://http.debian.net/debian/pool/main/n/$name/${name}_$version.debian.tar.xz"
+
+build() {
+	cd $name-${version%%-*}
+
+	# apply debian patches
+	while read -r patch; do
+		if echo $patch | grep -q '^#'; then continue; fi
+		patch -p1 -i $SRC/debian/patches/$patch
+	done < $SRC/debian/patches/series
+
+	make CFLAGS="$CFLAGS -DDEBIAN_VERSION=\"\\\"$version\\\"\" -I/usr/include/libbsd" LDFLAGS="$LDFLAGS -lbsd"
+
+	install -m 0755 -Dt $PKG/usr/bin/ nc
+	install -m 0644 -Dt $PKG/usr/share/man/man1/ nc.1
+}

@@ -1,0 +1,25 @@
+# Description: SAX2 Driver for Expat (XML::Parser)
+# URL:         https://metacpan.org/pod/XML::SAX::Expat
+# Depends on:  p5-xml-parser p5-xml-sax
+
+name=p5-xml-sax-expat
+version=0.51
+release=1
+source=https://cpan.metacpan.org/authors/id/B/BJ/BJOERN/XML-SAX-Expat-$version.tar.gz
+
+build() {
+	cd XML-SAX-Expat-$version
+
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make
+	make DESTDIR=$PKG pure_install doc_install
+
+	# remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			\) -delete ,            \
+		-type d -empty -delete
+}

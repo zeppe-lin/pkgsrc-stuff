@@ -1,0 +1,25 @@
+# Description: Directory/File, DNS and VHost busting tool
+# URL:         https://github.com/OJ/gobuster
+# Depends on:  p7zip tree
+
+name=gobuster-bin
+version=3.5.0
+release=1
+source="https://github.com/OJ/gobuster/releases/download/v$version/gobuster_${version}_Linux_x86_64.tar.gz
+	bash_completion"
+
+build() {
+	tree .
+
+	install -m 0755 -Dt $PKG/usr/bin/ gobuster
+
+	# add bash-completion
+	install -d $PKG/usr/share/bash-completion/completions
+	if [ -x /usr/bin/gobuster ]; then
+		gobuster completion bash > \
+		 $PKG/usr/share/bash-completion/completions/gobuster
+	else
+		install -m 0644 $SRC/bash_completion \
+		 $PKG/usr/share/bash-completion/completions/gobuster
+	fi
+}

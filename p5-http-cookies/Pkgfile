@@ -1,0 +1,25 @@
+# Description: HTTP cookie jars
+# URL:         https://metacpan.org/pod/HTTP::Cookies
+# Depends on:  p5-http-message
+
+name=p5-http-cookies
+version=6.10
+release=1
+source=https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTTP-Cookies-$version.tar.gz
+
+build() {
+	cd HTTP-Cookies-$version
+
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make V=1
+	make DESTDIR=$PKG install
+
+	# remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			\) -delete ,            \
+		-type d -empty -delete
+}

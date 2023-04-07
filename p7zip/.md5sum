@@ -1,0 +1,6 @@
+70f5cdb80fe933ae65890718907342f9  CPP_Windows_ErrorMsg.patch
+0f0535ca888273f3779ca14e8f186813  CVE-2016-9296.patch
+ede45c239086e0a8fc4c8c3adf380f0d  CVE-2017-17969.patch
+41e9a16637f6739a46a24fa07d16d94d  CVE-2018-5996.patch
+24ee6f1da430454d689770d367dc4c41  WimHandler.cpp.patch
+a0128d661cfe7cc8c121e73519c54fbf  p7zip_16.02_src_all.tar.bz2

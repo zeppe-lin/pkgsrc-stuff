@@ -1,0 +1,13 @@
+# Description: Fetch all the URLs that the Wayback Machine knows about for a domain
+# URL:         https://github.com/tomnomnom/waybackurls
+# Depends on:  tree
+
+name=waybackurls-bin
+version=0.1.0
+release=1
+source=https://github.com/tomnomnom/waybackurls/releases/download/v$version/waybackurls-linux-amd64-$version.tgz
+
+build() {
+	tree .
+	install -m 0755 -Dt $PKG/usr/bin/ waybackurls
+}

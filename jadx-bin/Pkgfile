@@ -1,0 +1,20 @@
+# Description: Dex to Java decompiler
+# URL:         https://github.com/skylot/jadx
+# Depends on:  jdk11-bin
+
+name=jadx-bin
+version=1.4.6
+release=1
+source="https://github.com/skylot/jadx/releases/download/v${version}/jadx-${version}.zip
+	jadx.sh jadx-gui.sh"
+
+build() {
+	# remove junk
+	rm -f LICENSE NOTICE README.md bin/jadx.bat bin/jadx-gui.bat
+
+	install -d $PKG/opt/jadx
+	cp -r bin lib $PKG/opt/jadx/
+
+	install -m 0755 -D $SRC/jadx.sh      $PKG/usr/bin/jadx
+	install -m 0755 -D $SRC/jadx-gui.sh  $PKG/usr/bin/jadx-gui
+}

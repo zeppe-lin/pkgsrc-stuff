@@ -1,0 +1,20 @@
+# Description: Performing Padding Oracle attacks (GW Fork)
+# URL:         https://github.com/gw0/PadBuster.git
+# Depends on:  p5-libwww p5-lwp-protocol-https
+
+name=padbuster
+version=0.3.3-94460ff
+release=1
+source="https://github.com/gw0/PadBuster/archive/${version#*-}/PadBuster-$version.zip
+	0001-padBuster.pl-remove-unnecessary-Crypt-SSLeay.patch
+	0002-padBuster.pl-improve-help-message.patch"
+
+build() {
+	cd PadBuster-${version#*-}*
+
+	patch -p1 -i $SRC/0001-padBuster.pl-remove-unnecessary-Crypt-SSLeay.patch
+	patch -p1 -i $SRC/0002-padBuster.pl-improve-help-message.patch
+
+	#install -m 0755 -D autoBuster.sh $PKG/usr/bin/autobuster
+	install -m 0755 -D padBuster.pl  $PKG/usr/bin/padbuster
+}

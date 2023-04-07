@@ -1,0 +1,12 @@
+# Description: Subdomain discovery tool that discovers valid subdomains for websites
+# URL:         https://github.com/projectdiscovery/subfinder
+
+name=subfinder-bin
+version=2.5.7
+release=1
+source=https://github.com/projectdiscovery/subfinder/releases/download/v$version/subfinder_${version}_linux_amd64.zip
+
+build() {
+	ls -la
+	install -m 755 -Dt $PKG/usr/bin/ subfinder
+}

@@ -1,0 +1,25 @@
+# Description: Generic namespace helpers (ported from SAX2)
+# URL:         https://metacpan.org/pod/XML::NamespaceSupport
+# Depends on:  perl
+
+name=p5-xml-namespacesupport
+version=1.12_9
+release=1
+source=https://www.cpan.org/authors/id/P/PE/PERIGRIN/XML-NamespaceSupport-$version.tar.gz
+
+build() {
+	cd XML-NamespaceSupport-$version
+
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make
+	make DESTDIR=$PKG install
+
+	# remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			\) -delete ,            \
+		-type d -empty -delete
+}

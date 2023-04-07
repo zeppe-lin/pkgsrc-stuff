@@ -1,0 +1,37 @@
+# Description: CGI/FastCGI version of the PHP interpreter
+# URL:         https://www.php.net
+# Depends on:  libpcre2 libxml2
+
+# 8.1 LTS (25 Nov 2024)
+# https://www.php.net/supported-versions.php
+
+name=php-fcgi
+version=8.1.17
+release=1
+source="https://php.net/distributions/php-$version.tar.xz
+	rc.$name"
+
+build() {
+	mkdir build; cd build
+
+	EXTENSION_DIR=/usr/lib/php/extensions                  \
+	../php-$version/configure                              \
+		--prefix=/usr                                  \
+		--disable-cli                                  \
+		--disable-debug                                \
+		--disable-static                               \
+		--enable-cgi                                   \
+		--with-config-file-path=/etc/php               \
+		--with-config-file-scan-dir=/etc/php/conf.d    \
+		--with-external-pcre                           \
+		--with-zlib                                    \
+		--without-pdo-sqlite                           \
+		--without-pear                                 \
+		--without-sqlite3                              \
+
+	make V=1
+	install -m 0755 -Dt $PKG/usr/bin/ sapi/cgi/php-cgi
+
+	# service
+	install -m 0755 -D $SRC/rc.$name $PKG/etc/rc.d/$name
+}

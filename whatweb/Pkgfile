@@ -1,0 +1,67 @@
+# Description: Web scanner that identifies what websites are running
+# URL:         https://github.com/urbanadventurer/WhatWeb
+# Depends on:  ruby libxslt
+
+name=whatweb
+version=0.5.5-ae89986
+release=1
+source=https://github.com/urbanadventurer/WhatWeb/archive/${version#*-}/WhatWeb-$version.tar.gz
+
+build() {
+	install -d $PKG/usr/bin $PKG/opt
+
+	cp -a WhatWeb-${version#*-}* $PKG/opt/$name
+
+	cd $PKG/opt/$name
+	bundle config build.nokogiri --use-system-libraries
+	bundle config set deployment false
+	bundle config set no-cache false
+	bundle config set --local path vendor/bundle
+	bundle config set --local without development test
+	bundle install -j ${JOBS:-1}
+	install -m 0644 -Dt $PKG/usr/share/man/man1/ $name.1
+
+	# fix perms
+	find vendor/bundle/ruby -exec chmod o+r '{}' \;
+
+	# install wrapper
+	cat >$PKG/usr/bin/$name <<EOF
+#!/bin/sh
+BUNDLE_GEMFILE=/opt/whatweb/Gemfile \
+bundle exec ruby /opt/whatweb/whatweb "\$@"
+EOF
+	chmod +x $PKG/usr/bin/$name
+
+	# remove junk
+	rm -rf  vendor/bundle/ruby/*/gems/*/test   \
+		vendor/bundle/ruby/*/cache         \
+		test icons whatweb.xsl
+
+	find $PKG  -depth -type f \(       \
+		   -name gen_make.out      \
+		-o -name mkmf.log          \
+		-o -name .codeclimate.yml  \
+		-o -name .dockerignore     \
+		-o -name .gitignore        \
+		-o -name .rubocop.yml      \
+		-o -name .travis.yml       \
+		-o -name CHANGELOG\*       \
+		-o -name CHANGES\*         \
+		-o -name COPYING           \
+		-o -name ChangeLog\*       \
+		-o -name Dockerfile        \
+		-o -name LICENSE\*         \
+		-o -name NEWS\*            \
+		-o -name README\*          \
+		-o -name SECURITY\*        \
+		-o -name THANKS            \
+		-o -name TODO              \
+		-o -name VERSION           \
+		-o -name \*-LICENSE\*      \
+		-o -name \*.md             \
+		\) -delete ,               \
+		-type d -name .github -exec rm -r {} +
+
+	# remove empty dirs
+	find $PKG -depth -type d -empty -delete
+}

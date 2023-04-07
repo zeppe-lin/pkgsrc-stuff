@@ -1,0 +1,43 @@
+#!/bin/sh
+#
+# /etc/rc.d/tor: start/stop tor(1) daemon
+#
+
+SSD=/sbin/start-stop-daemon
+PROG=/usr/bin/tor
+PID=/run/tor.pid
+OPTS="--quiet"
+
+case $1 in
+start)
+	$SSD --start --background --chuid tor:tor --make-pidfile --pidfile $PID \
+		--exec $PROG -- $OPTS
+	;;
+stop)
+	$SSD --stop --remove-pidfile --pidfile $PID --retry 10
+	;;
+reload)
+	$SSD --stop --signal HUP --pidfile $PID
+	;;
+restart)
+	$0 stop
+	$0 start
+	;;
+verify-config)
+	su tor -c "$PROG --verify-config"
+	;;
+status)
+	$SSD --status --pidfile $PID
+	case $? in
+	0) echo "$PROG is running with pid $(cat $PID)" ;;
+	1) echo "$PROG is not running but the pid file $PID exists" ;;
+	3) echo "$PROG is not running" ;;
+	4) echo "Unable to determine the program status" ;;
+	esac
+	;;
+*)
+	echo "usage: $0 [start|stop|reload|restart|verify-config|status]"
+	;;
+esac
+
+# End of file.

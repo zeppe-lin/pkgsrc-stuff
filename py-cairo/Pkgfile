@@ -1,0 +1,18 @@
+# Description: Python bindings for cairo
+# URL:         https://pypi.org/project/pycairo/
+# Depends on:  cairo python
+
+name=py-cairo
+version=1.18.2
+release=1
+source=https://github.com/pygobject/pycairo/releases/download/v$version/pycairo-$version.tar.gz
+
+build() {
+	cd pycairo-$version
+
+	/usr/bin/python setup.py build
+	/usr/bin/python setup.py install --prefix=/usr --root=$PKG -O2
+
+	# remove junk
+	rm -rf $PKG/usr/lib/python*/site-packages/*.egg-info
+}

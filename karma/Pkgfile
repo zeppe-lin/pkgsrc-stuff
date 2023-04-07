@@ -1,0 +1,30 @@
+# Description: Find leaked emails and passwords
+# URL:         https://github.com/sighook/karma
+# Depends on:  py3-pip
+
+name=karma
+version=1.0.0-19c0c7e
+release=1
+source=https://github.com/sighook/$name/archive/${version#*-}/$name-${version#*-}.tar.gz
+
+build() {
+	install -d $PKG/usr/bin $PKG/opt/$name
+
+	cd $name-${version#*-}*
+	/usr/bin/pip3 install -r requirements.txt -t $PKG/opt/$name
+	/usr/bin/python3 setup.py install --root=$PKG/opt/$name -O2
+
+	# create an indirect launcher in /usr/bin
+	cat > $PKG/usr/bin/$name <<EOF
+#!/bin/sh
+PYVER=\$(python3 -V | grep -Po '\d\.\d')
+export PATH=\$PATH:/opt/karma/bin
+export PYTHONPATH=/opt/karma:/opt/karma/usr/lib/python\$PYVER/site-packages
+/usr/bin/python3 /opt/karma/usr/bin/karma \$@
+EOF
+	chmod +x $PKG/usr/bin/$name
+
+	# remove junk files
+	cd $PKG/opt/$name
+	rm -r usr/lib/python*/site-packages/*.egg-info  *.dist-info
+}

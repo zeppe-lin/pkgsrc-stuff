@@ -1,0 +1,21 @@
+# Description: Library for constructing and injecting network packets
+# URL:         http://libnet-dev.sf.net
+
+name=libnet
+version=1.2
+release=1
+source=https://github.com/$name/$name/releases/download/v$version/$name-$version.tar.gz
+
+build() {
+	mkdir build; cd build
+
+	../$name-$version/configure   \
+		--prefix=/usr         \
+		--disable-doxygen-doc \
+
+	make V=1
+	make DESTDIR=$PKG install
+
+	# remove junk
+	rm -r $PKG/usr/share/doc
+}

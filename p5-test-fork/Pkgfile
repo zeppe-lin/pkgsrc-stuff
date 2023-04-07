@@ -1,0 +1,25 @@
+# Description: Test code which forks
+# URL:         https://metacpan.org/pod/Test::Fork
+# Depends on:  p5-module-build
+
+name=p5-test-fork
+version=0.02
+release=1
+source=https://cpan.metacpan.org/authors/id/M/MS/MSCHWERN/Test-Fork-$version.tar.gz
+
+build() {
+	cd Test-Fork-$version
+
+	perl Build.PL installdirs=vendor destdir=$PKG
+
+	perl Build
+	perl Build install
+
+	# remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			\) -delete ,            \
+		-type d -empty -delete
+}

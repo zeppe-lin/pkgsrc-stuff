@@ -1,0 +1,17 @@
+README amass-bin
+
+CONFIGURATION
+
+	See /etc/amass/config.ini for configuration details.
+
+	The location of the configuration file can be specified using the
+	-config flag or the AMASS_CONFIG environment variable.
+
+	Amass automatically tries to discover the configuration file (named
+	config.ini) in the following locations:
+
+		* $XDG_CONFIG_HOME/amass/config.ini
+		* $HOME/.config/amass/config.ini
+		* /etc/amass/config.ini
+
+End of file.

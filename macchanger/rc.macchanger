@@ -1,0 +1,35 @@
+#!/bin/sh -e
+#
+# /etc/rc.d/macchanger: start/stop mac interface changing
+#
+
+DEV=wlan0
+MAC=random
+
+case $1 in
+start)
+	/sbin/ip link set $DEV down
+	case $MAC in
+	random) /usr/bin/macchanger --random   $DEV ;;
+	*)	/usr/bin/macchanger --mac=$MAC $DEV ;;
+	esac
+	/sbin/ip link set $DEV up
+	;;
+stop)
+	/sbin/ip link set $DEV down
+	/usr/bin/macchanger --permanent $DEV
+	/sbin/ip link set $DEV up
+	;;
+restart)
+	$0 stop
+	$0 start
+	;;
+status)
+	/usr/bin/macchanger --show $DEV
+	;;
+*)
+	echo "usage: $0 [start|stop|restart|status]"
+	;;
+esac
+
+# End of file.

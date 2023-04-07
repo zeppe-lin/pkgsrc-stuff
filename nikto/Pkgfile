@@ -1,0 +1,51 @@
+# Description: Web and CGI vulnerability scanner with SSL support
+# URL:         http://www.cirt.net/nikto
+# Depends on:  p5-net-ssleay p5-json
+
+name=nikto
+version=2.1.6-fed0c5c
+release=1
+source="https://github.com/sullo/nikto/archive/${version#*-}/nikto-$version.tar.gz
+	nikto.sh
+	nikto-replay.sh"
+
+build() {
+	cd nikto-${version#*-}*
+
+	find . -type f ! -name nikto.pl -exec chmod 644 {} +
+
+	install -d $PKG/usr/share/nikto
+	cp -a program/* $PKG/usr/share/nikto
+
+	install -m 0755 -D $SRC/nikto.sh              $PKG/usr/bin/nikto
+	install -m 0755 -D $SRC/nikto-replay.sh       $PKG/usr/bin/nikto-replay
+	install -m 0644 -D program/nikto.conf.default $PKG/usr/etc/nikto.conf
+	install -m 0644 -D documentation/nikto.1      $PKG/usr/share/man/man1/nikto.1
+
+	rm -r $PKG/usr/share/nikto/nikto.conf.default \
+	      $PKG/usr/share/nikto/docs/nikto.1
+
+	sed -i 's|"$NIKTODIR/nikto.conf.default"|"/usr/etc/nikto.conf"|g' \
+		$PKG/usr/share/nikto/nikto.pl
+
+	sed -i 's|# EXECDIR=/usr/local/nikto|EXECDIR=/usr/share/nikto|g' \
+		$PKG/usr/etc/nikto.conf
+
+	sed -i 's|# PLUGINDIR=/opt/nikto/plugins|PLUGINDIR=/usr/share/nikto/plugins|g' \
+		$PKG/usr/etc/nikto.conf
+
+	sed -i 's|# DBDIR=/opt/nikto/databases|DBDIR=/usr/share/nikto/databases|g' \
+		$PKG/usr/etc/nikto.conf
+
+	sed -i 's|# TEMPLATEDIR=/opt/nikto/templates|TEMPLATEDIR=/usr/share/nikto/templates|g' \
+		$PKG/usr/etc/nikto.conf
+
+	sed -i 's|# DOCDIR=/opt/nikto/docs|DOCDIR=/usr/share/nikto/docs|g' \
+		$PKG/usr/etc/nikto.conf
+
+	sed -i 's|NIKTODTD=docs/nikto.dtd|NIKTODTD=/usr/share/nikto/docs/nikto.dtd|g' \
+		$PKG/usr/etc/nikto.conf
+
+	find $PKG -type d -exec chmod 0755 {} \;
+	chmod 0755 $PKG/usr/share/nikto/nikto.pl
+}

@@ -1,0 +1,22 @@
+# Description: JavaScript and CSS unobfuscator and beautifier
+# URL:         https://github.com/beautify-web/js-beautify
+# Depends on:  py3-editorconfig py3-six
+
+name=py3-jsbeautifier
+version=1.14.7
+release=1
+source=https://github.com/beautify-web/js-beautify/archive/v$version/js-beautify-v$version.tar.gz
+
+build() {
+	cd js-beautify-$version
+
+	cp -a python python-css
+
+	cd python
+	/usr/bin/python3 setup-js.py build
+	/usr/bin/python3 setup-js.py install --prefix=/usr --root=$PKG -O2
+
+	cd ../python-css
+	/usr/bin/python3 setup-css.py build
+	/usr/bin/python3 setup-css.py install --prefix=/usr --root=$PKG -O2
+}

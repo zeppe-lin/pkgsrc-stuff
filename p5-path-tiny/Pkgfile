@@ -1,0 +1,25 @@
+# Description: File path utility
+# URL:         https://metacpan.org/release/Path-Tiny
+# Depends on:  perl
+
+name=p5-path-tiny
+version=0.144
+release=1
+source=https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Path-Tiny-$version.tar.gz
+
+build() {
+	cd Path-Tiny-${version}*
+
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make
+	make DESTDIR=$PKG install
+
+	# remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			\) -delete ,            \
+		-type d -empty -delete
+}

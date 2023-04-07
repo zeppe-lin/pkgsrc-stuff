@@ -1,0 +1,32 @@
+# Description: Poison hosts via arp-requests as well as arp-replies
+# URL:         https://github.com/byt3bl33d3r/arpspoof
+# Depends on:  scapy
+
+name=arpspoof
+version=0.1.0-8359467
+release=1
+source="https://github.com/byt3bl33d3r/$name/archive/${version#*-}/$name-$version.tar.gz
+	show-help-without-root-privs.patch"
+
+build() {
+	cd $name-${version#*-}*
+
+	patch -p1 -i $SRC/show-help-without-root-privs.patch
+	sed -i "s|Usage: %prog|Usage: $name|" $name/$name.py
+
+	python3 setup.py build
+	python3 setup.py install --prefix=/usr --root=$PKG -O2
+
+	# rewrite /usr/bin/arpspoof with proper wrapper
+	cat >$PKG/usr/bin/$name <<EOF
+#!/bin/sh
+PYVER=\$(python3 -V | grep -Po '\d\.\d')
+exec python3 /usr/lib/python\${PYVER}/site-packages/arpspoof/arpspoof.py
+EOF
+
+	# conflicts with dsniff's /usr/sbin/arpspoof
+	rename $name $name.py $PKG/usr/bin/$name
+
+	# remove junk
+	rm -r $PKG/usr/lib/python*/site-packages/$name-*.egg-info
+}

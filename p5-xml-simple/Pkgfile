@@ -1,0 +1,26 @@
+# Description: API for simple XML files
+# URL:         https://metacpan.org/release/XML-Simple
+# Depends on:  p5-xml-sax-expat
+
+name=p5-xml-simple
+version=2.25
+release=1
+source=https://search.cpan.org/CPAN/authors/id/G/GR/GRANTM/XML-Simple-$version.tar.gz
+
+build() {
+	cd XML-Simple-$version
+
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make OPTIMIZE="$CFLAGS"
+	make install DESTDIR=$PKG
+
+	# remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			-o -name README         \
+			\) -delete ,            \
+		-type d -empty -delete
+}

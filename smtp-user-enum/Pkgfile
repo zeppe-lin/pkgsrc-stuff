@@ -1,0 +1,19 @@
+# Description: SMTP username guessing tool
+# URL:         https://github.com/pentestmonkey/smtp-user-enum
+
+name=smtp-user-enum
+version=1.2-69eea42
+release=1
+source="https://github.com/pentestmonkey/$name/archive/${version##*-}/$name-${version##*-}.tar.gz
+	0001-fix-timeout-parameter.patch
+	0002-fix-T-unknown-option.patch
+	0003-fix-usage-output.patch"
+
+
+build() {
+	cd $name-${version##*-}*
+
+	for f in $SRC/*.patch; do patch -Np1 -i $f; done
+
+	install -m 0755 -D $name.pl $PKG/usr/bin/$name
+}

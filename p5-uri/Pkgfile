@@ -1,0 +1,25 @@
+# Description: Perl Uniform Resource Identifiers Library
+# URL:         https://metacpan.org/release/URI
+# Depends on:  p5-test-fatal p5-test-needs p5-test-warnings
+
+name=p5-uri
+version=5.17
+release=1
+source=https://cpan.metacpan.org/authors/id/O/OA/OALDERS/URI-$version.tar.gz
+
+build() {
+	cd URI-$version
+
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make V=1
+	make install DESTDIR=$PKG
+
+	# remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			\) -delete ,            \
+		-type d -empty -delete
+}

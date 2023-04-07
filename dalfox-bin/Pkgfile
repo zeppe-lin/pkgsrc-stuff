@@ -1,0 +1,13 @@
+# Description: XSS scanning tool and parameter analyzer
+# URL:         https://github.com/hahwul/dalfox
+# Depends on:  tree
+
+name=dalfox-bin
+version=2.9.0
+release=1
+source=https://github.com/hahwul/dalfox/releases/download/v$version/dalfox_${version}_linux_amd64.tar.gz
+
+build() {
+	tree .
+	install -m 0755 -Dt $PKG/usr/bin/ dalfox
+}

@@ -1,0 +1,25 @@
+# Description: Easily test network connectivity
+# URL:         https://metacpan.org/pod/Test::RequiresInternet
+# Depends on:  perl
+
+name=p5-test-requiresinternet
+version=0.05
+release=1
+source=https://cpan.metacpan.org/authors/id/M/MA/MALLEN/Test-RequiresInternet-$version.tar.gz
+
+build() {
+	cd Test-RequiresInternet-$version
+
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make
+	make DESTDIR=$PKG install
+
+	# remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			\) -delete ,            \
+		-type d -empty -delete
+}

@@ -1,0 +1,26 @@
+# Description: Perl Interface to the Domain Name System
+# URL:         https://metacpan.org/pod/Net::DNS
+# Depends on:  p5-digest-hmac
+
+name=p5-net-dns
+version=1.37
+release=1
+source=https://cpan.metacpan.org/authors/id/N/NL/NLNETLABS/Net-DNS-$version.tar.gz
+
+build() {
+	cd Net-DNS-$version
+
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor \
+		--no-online-tests --no-IPv6-tests
+
+	make OPTIMIZE="$CFLAGS"
+	make install DESTDIR=$PKG
+
+	# remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			\) -delete ,            \
+		-type d -empty -delete
+}

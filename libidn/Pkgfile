@@ -1,0 +1,28 @@
+# Description: Provides support for IETF Internationalized Domain Names
+# URL:         http://www.gnu.org/software/libidn/
+
+name=libidn
+version=1.41
+release=1
+source=https://ftp.gnu.org/gnu/$name/$name-$version.tar.gz
+
+build() {
+	mkdir build; cd build
+
+	../$name-$version/configure       \
+		--prefix=/usr             \
+		--disable-doc             \
+		--disable-nls             \
+		--disable-valgrind-tests  \
+
+	make V=1
+	make DESTDIR=$PKG install
+
+	# install man-pages manually
+	cd ../$name-$version
+	install -m 0644 -Dt $PKG/usr/share/man/man1/ doc/*.1
+	install -m 0644 -Dt $PKG/usr/share/man/man3/ doc/man/*.3
+
+	# remove junk
+	rm -r $PKG/usr/share/emacs
+}

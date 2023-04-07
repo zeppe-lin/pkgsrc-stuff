@@ -1,0 +1,25 @@
+# Description: Make parse trees out of HTML source
+# URL:         https://metacpan.org/dist/HTML-Tree
+# Depends on:  p5-html-parser p5-module-build
+
+name=p5-html-tree
+version=5.07
+release=1
+source=https://search.cpan.org/CPAN/authors/id/K/KE/KENTNL/HTML-Tree-$version.tar.gz
+
+build() {
+	cd HTML-Tree-$version
+
+	perl Build.PL installdirs=vendor destdir=$PKG
+
+	perl Build
+	perl Build install
+
+	# remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			\) -delete ,            \
+		-type d -empty -delete
+}

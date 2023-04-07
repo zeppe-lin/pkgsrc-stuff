@@ -1,0 +1,25 @@
+# Description: Automates web page form and link interactions
+# URL:         https://metacpan.org/pod/WWW::Mechanize
+# Depends on:  p5-html-form p5-html-tree p5-path-tiny p5-test-deep p5-test-exception p5-test-memory-cycle p5-test-nowarnings p5-test-output p5-test-taint p5-test-warn
+
+name=p5-www-mechanize
+version=2.16
+release=1
+source=https://cpan.metacpan.org/authors/id/S/SI/SIMBABQUE/WWW-Mechanize-$version.tar.gz
+
+build() {
+	cd WWW-Mechanize-$version
+
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make
+	make DESTDIR=$PKG install
+
+	# remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			\) -delete ,            \
+		-type d -empty -delete
+}

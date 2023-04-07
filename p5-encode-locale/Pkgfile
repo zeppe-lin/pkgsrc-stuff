@@ -1,0 +1,25 @@
+# Description: Determine the locale encoding
+# URL:         https://metacpan.org/pod/Encode::Locale
+# Depends on:  perl
+
+name=p5-encode-locale
+version=1.05
+release=1
+source=https://cpan.metacpan.org/authors/id/G/GA/GAAS/Encode-Locale-$version.tar.gz
+
+build() {
+	cd Encode-Locale-$version
+
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make V=1
+	make DESTDIR=$PKG install
+
+	# remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			\) -delete ,            \
+		-type d -empty -delete
+}

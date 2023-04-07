@@ -1,0 +1,25 @@
+# Description: Build, test, and install Perl modules
+# URL:         https://github.com/dagolden/inc-latest
+# Depends on:  perl
+
+name=p5-inc-latest
+version=0.500
+release=1
+source=https://search.cpan.org/CPAN/authors/id/D/DA/DAGOLDEN/inc-latest-$version.tar.gz
+
+build() {
+	cd inc-latest-$version
+
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make
+	make install DESTDIR=$PKG
+
+	# remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			\) -delete ,            \
+		-type d -empty -delete
+}

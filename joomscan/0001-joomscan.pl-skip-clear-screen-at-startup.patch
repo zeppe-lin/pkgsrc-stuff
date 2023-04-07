@@ -1,0 +1,24 @@
+From 32c80e8df2a4338ea04cfc80f6a7eddf57482c36 Mon Sep 17 00:00:00 2001
+From: Alexandr Savca <alexandr.savca89@gmail.com>
+Date: Tue, 27 Oct 2020 13:05:24 +0200
+Subject: [PATCH] joomscan.pl: skip clear screen at startup
+
+---
+ joomscan.pl | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/joomscan.pl b/joomscan.pl
+index 63b6c8f..add13a1 100755
+--- a/joomscan.pl
++++ b/joomscan.pl
+@@ -27,7 +27,6 @@ $codename="Self Challenge";$codename.="";
+ $update="2018/09/23";$update.="";
+ $mmm=0;
+ 
+-system(($^O eq 'MSWin32') ? 'cls' : 'clear');
+ use if $^O eq "MSWin32", Win32::Console::ANSI;
+ use Term::ANSIColor;
+ use Getopt::Long;
+-- 
+2.29.1
+

@@ -1,0 +1,9 @@
+#!/bin/sh -ex
+
+DTD_CAT=/etc/xml/dtd/libglade/2.0/catalog
+DTD_PATH=file:///usr/share/xml/dtd/libglade/2.0/glade-2.0.dtd
+DTD_URL=http://glade.gnome.org/glade-2.0.dtd
+
+xmlcatalog --noout --add "delegateSystem" "$DTD_URL" "$DTD_PATH" $DTD_CAT
+
+# End of file.

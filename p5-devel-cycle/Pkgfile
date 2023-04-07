@@ -1,0 +1,25 @@
+# Description: Find memory cycles in objects
+# URL:         https://metacpan.org/pod/Devel::Cycle
+# Depends on:  perl
+
+name=p5-devel-cycle
+version=1.12
+release=1
+source=https://cpan.metacpan.org/authors/id/L/LD/LDS/Devel-Cycle-$version.tar.gz
+
+build() {
+	cd Devel-Cycle-$version
+
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make
+	make DESTDIR=$PKG install
+
+	# remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			\) -delete ,            \
+		-type d -empty -delete
+}

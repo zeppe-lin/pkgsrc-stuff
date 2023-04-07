@@ -1,0 +1,51 @@
+#!/bin/sh
+#
+# /etc/rc.d/polipo: start/stop polipo(1) daemon
+#
+
+SSD=/sbin/start-stop-daemon
+PROG=/usr/bin/polipo
+PID=/var/run/polipo.pid
+OPTS=""
+
+# Check for configuration files
+[ -f /etc/polipo/config ] || exit 1
+
+case $1 in
+start)
+	$SSD --start --background --chuid polipo:polipo \
+		--make-pidfile --pidfile $PID --chuid polipo:polipo \
+		--exec $PROG  -- $OPTS
+	;;
+stop)
+	$SSD --stop --remove-pidfile --pidfile $PID --retry 10
+	;;
+restart)
+	$0 stop
+	$0 start
+	;;
+fast-reload)
+	# write out all in-memory objects to disk and reload
+	# the forbidden URLs file
+	$SSD --stop --signal USR1 --pidfile $PID
+	;;
+reload)
+	# write out all in-memory objects to disk, discard all
+	# in-memory objects, and reload the forbidden URLs file
+	$SSD --stop --signal USR2 --pidfile $PID
+	;;
+status)
+	$SSD --status --pidfile $PID
+	case $? in
+	0) echo "$PROG is running with pid $(cat $PID)" ;;
+	1) echo "$PROG is not running but the pid file $PID exists" ;;
+	3) echo "$PROG is not running" ;;
+	4) echo "Unable to determine the program status" ;;
+	esac
+	;;
+*)
+	echo "usage: $0 [start|stop|restart|fast-reload|reload|status]"
+	;;
+esac
+
+# End of file.

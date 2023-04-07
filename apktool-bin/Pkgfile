@@ -1,0 +1,21 @@
+# Description: Reverse engineering Android apk files
+# URL:         https://ibotpeaches.github.io/Apktool
+# Depends on:  jdk11-bin
+
+name=apktool-bin
+version=2.7.0
+release=1
+source=https://github.com/iBotPeaches/Apktool/releases/download/v$version/apktool_$version.jar
+
+build() {
+	install -m 0644 -D $SRC/apktool_$version.jar \
+		$PKG/opt/apktool/apktool.jar
+
+	# create an indirect launcher in /usr/bin
+	install -d $PKG/usr/bin
+	cat >$PKG/usr/bin/apktool <<EOF
+#!/bin/sh -e
+exec java -Dfile.encoding=utf8 -Xmx512M -jar /opt/apktool/apktool.jar \$@
+EOF
+	chmod +x $PKG/usr/bin/apktool
+}

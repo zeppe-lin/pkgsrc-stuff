@@ -1,0 +1,13 @@
+# Description: Audit Git repos for secrets and keys
+# URL:         https://github.com/zricethezav/gitleaks
+# Depends on:  tree
+
+name=gitleaks-bin
+version=8.16.2
+release=1
+source=https://github.com/zricethezav/gitleaks/releases/download/v$version/gitleaks_${version}_linux_x64.tar.gz
+
+build() {
+	tree .
+	install -m 0755 -Dt $PKG/usr/bin/ gitleaks
+}

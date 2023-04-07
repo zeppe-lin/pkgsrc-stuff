@@ -1,0 +1,13 @@
+# Description: Convert password-protected 7z/sfx files to hashcat's hashes
+# URL:         https://github.com/philsmd/7z2hashcat
+# Depends on:  p5-compress-raw-lzma
+
+name=7z2hashcat
+version=1.9-2a041d9
+release=1
+source=https://github.com/philsmd/$name/archive/${version#*-}/$name-${version#*-}.tar.gz
+
+build() {
+	install -m 0755 -D $name-${version#*-}*/$name.pl \
+		$PKG/usr/bin/$name
+}

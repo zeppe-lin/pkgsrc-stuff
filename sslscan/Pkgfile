@@ -1,0 +1,18 @@
+# Description: Test SSL/TLS enabled services to discover supported cipher suites
+# URL:         https://github.com/rbsec/sslscan
+# Depends on:  zlib
+
+name=sslscan
+version=2.0.15
+release=1
+source=https://github.com/rbsec/$name/archive/$version/$name-$version.tar.gz
+
+build() {
+	cd $name-$version
+
+	install -d $PKG/usr/bin $PKG/usr/share/man/man1
+
+	make GIT_VERSION=$version static
+	make GIT_VERSION=$version DESTDIR=$PKG MANDIR=/usr/share/man \
+		install
+}

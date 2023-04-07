@@ -1,0 +1,13 @@
+# Description: Accept URLs on stdin, replace all query string values with a user-supplied value
+# URL:         https://github.com/tomnomnom/qsreplace
+# Depends on:  tree
+
+name=qsreplace-bin
+version=0.0.3
+release=1
+source=https://github.com/tomnomnom/qsreplace/releases/download/v$version/qsreplace-linux-amd64-$version.tgz
+
+build() {
+	tree .
+	install -m 0755 -Dt $PKG/usr/bin/ qsreplace
+}

@@ -1,0 +1,43 @@
+README tor
+
+UPGRADING
+
+	Before you decide to update to the new release, note that 0.4.4.x is
+	the last branch that supports v2 onion address.
+
+	This means that v2 sites will be unavailable, but most important is
+	that sites such as pwndb will be unavailable.  We are using v2 in
+	karma package.
+
+	The last stable branch that supports v2 onion address is 0.3.5.x.
+	This is a good candidate for an upgrade.
+
+PRECAUTION
+
+	Make sure you edit /etc/pkgadd.conf and add the following lines:
+
+		UPGRADE         ^var/lib/tor/.*$            NO
+		UPGRADE         ^etc/tor/torrc$             NO
+		UPGRADE         ^etc/tor/torifyrc$          NO
+
+	Failure to do so will result in the loss of your tor data and
+	configuration upon update!
+
+	If you edit the torrc file for extra logging, make sure you chmod'ed
+	/var/log/tor/* files for security reasons:
+
+		sudo chmod 0640 /var/log/tor/*
+
+PRE-INSTALL
+
+	Tor expects to have a user and group dedicated to it.  "pre-install"
+	script takes care of this.
+
+DNS NAMESERVER
+
+	If you want to use Tor DNS as default nameserver on port 53, then
+	don't forget to allow non-root process to bind a privileged port:
+
+		sudo setcap 'cap_net_bind_service=+ep' /usr/bin/tor
+
+End of file.

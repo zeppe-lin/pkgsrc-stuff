@@ -1,0 +1,39 @@
+# Description: Set of bindings for the GTK widget set
+# URL:         http://www.pygtk.org/
+# Depends on:  libglade py-cairo py-gobject-compat pango-compat
+
+name=pygtk
+version=2.24.0
+release=1
+source="https://download.gnome.org/sources/$name/2.24/$name-$version.tar.bz2
+	fix-leaks-of-pango-objects.patch
+	pango-1.44.6.patch
+	python27.patch"
+
+build() {
+	cd $name-$version
+
+	# https://bugzilla.gnome.org/show_bug.cgi?id=623965
+	patch -p1 -i $SRC/python27.patch
+
+	# https://bugzilla.gnome.org/show_bug.cgi?id=660216
+	patch -p1 -i $SRC/fix-leaks-of-pango-objects.patch
+
+	patch -p1 -i $SRC/pango-1.44.6.patch
+
+	PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/usr/lib/pango-compat/pkgconfig:/usr/lib/libcairo-compat/pkgconfig" \
+	./configure                 \
+		--prefix=/usr       \
+		--disable-static    \
+		--disable-glibtest  \
+		--enable-thread     \
+		--disable-numpy     \
+
+	make V=1
+	make DESTDIR=$PKG install
+
+	install -m 0644 gtk/gtk-extrafuncs.defs $PKG/usr/share/pygtk/2.0/defs/
+
+	# remove junk
+	rm -r $PKG/usr/share/gtk-doc
+}

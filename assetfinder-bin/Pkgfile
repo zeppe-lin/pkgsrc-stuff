@@ -1,0 +1,11 @@
+# Description: Find domains and subdomains related to a given domain
+# URL:         https://github.com/tomnomnom/assetfinder
+
+name=assetfinder-bin
+version=0.1.1
+release=1
+source=https://github.com/tomnomnom/assetfinder/releases/download/v$version/assetfinder-linux-amd64-$version.tgz
+
+build() {
+	install -m 0755 -Dt $PKG/usr/bin/ assetfinder
+}

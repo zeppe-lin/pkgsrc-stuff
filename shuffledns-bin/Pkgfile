@@ -1,0 +1,13 @@
+# Description: Bruteforce and resolve the subdomains with wildcard handling support
+# URL:         https://github.com/projectdiscovery/shuffledns
+# Depends on:  tree
+
+name=shuffledns-bin
+version=1.0.8
+release=1
+source=https://github.com/projectdiscovery/shuffledns/releases/download/v$version/shuffledns_${version}_linux_amd64.zip
+
+build() {
+	tree .
+	install -m 0755 -Dt $PKG/usr/bin/ shuffledns
+}

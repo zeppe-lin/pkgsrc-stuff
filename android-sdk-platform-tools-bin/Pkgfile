@@ -1,0 +1,29 @@
+# Description:  Platform-Tools for Google Android SDK (adb, fastboot and systrace)
+# URL:          http://developer.android.com/sdk/index.html
+
+name=android-sdk-platform-tools-bin
+version=31.0.3
+release=1
+source="http://dl-ssl.google.com/android/repository/platform-tools_r$version-linux.zip
+	rc.adb"
+
+build() {
+	install -d $PKG/opt/android-sdk
+
+	cp -a $SRC/platform-tools $PKG/opt/android-sdk
+
+	chmod -R +Xr $PKG/opt/android-sdk/platform-tools
+	install -m 0755 -D $SRC/rc.adb $PKG/etc/rc.d/adb
+
+	# remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name README\*           \
+			-o -name COPYING            \
+			-o -name AUTHORS            \
+			-o -name CONTRIBUTING\*     \
+			-o -name NOTICE\*           \
+			-o -name UPSTREAM_REVISION  \
+			-o -name LICENSE\*          \
+			\) -delete ,                \
+		-type d -empty -delete
+}

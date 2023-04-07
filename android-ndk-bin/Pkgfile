@@ -1,0 +1,28 @@
+# Description: Android C/C++ developer kit
+# URL:         https://developer.android.com/ndk/
+# Depends on:  libncurses5-compat
+
+name=android-ndk-bin
+version=r23b
+release=1
+source="https://dl.google.com/android/repository/android-ndk-$version-linux.zip
+	revdep.conf"
+
+build() {
+	install -d $PKG/opt
+	mv android-ndk-$version $PKG/opt/android-ndk
+
+	# make sdkmanager and gradle recognize NDK
+	install -d $PKG/opt/android-sdk
+	ln -s /opt/android-ndk $PKG/opt/android-sdk/ndk-bundle
+
+	# install revdep config
+	install -m 644 -D $SRC/revdep.conf $PKG/etc/revdep.d/$name
+
+	# remove junk
+	find $PKG   -type f \(        \
+		    -name README*     \
+		-or -name NOTICE*     \
+		-or -iname CHANGELOG* \
+		\)  -delete
+}

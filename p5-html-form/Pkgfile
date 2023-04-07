@@ -1,0 +1,25 @@
+# Description: Class that represents an HTML form element
+# URL:         https://metacpan.org/pod/HTML::Form
+# Depends on:  p5-html-parser
+
+name=p5-html-form
+version=6.11
+release=1
+source=https://search.cpan.org/CPAN/authors/id/S/SI/SIMBABQUE/HTML-Form-$version.tar.gz
+
+build() {
+	cd HTML-Form-$version
+
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make
+	make DESTDIR=$PKG install
+
+	# remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			\) -delete ,            \
+		-type d -empty -delete
+}

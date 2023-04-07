@@ -1,0 +1,13 @@
+# Description: Take a list of domains and probe for working HTTP and HTTPS servers
+# URL:         https://github.com/tomnomnom/httprobe
+# Depends on:  tree
+
+name=httprobe-bin
+version=0.2
+release=1
+source=https://github.com/tomnomnom/httprobe/releases/download/v$version/httprobe-linux-amd64-$version.tgz
+
+build() {
+	tree .
+	install -m 0755 -Dt $PKG/usr/bin/ httprobe
+}

@@ -1,0 +1,8 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/dns_ampflood.py
+-rwxr-xr-x	root/root	usr/bin/dns_cachesnoop.pl
+-rwxr-xr-x	root/root	usr/bin/dns_enum.sh
+-rwxr-xr-x	root/root	usr/bin/dns_zoneconf.pl
+-rwxr-xr-x	root/root	usr/bin/dns_zonetransfer.pl
+-rwxr-xr-x	root/root	usr/bin/proxy_checker.pl

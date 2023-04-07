@@ -1,0 +1,14 @@
+# Description: Convert the IP to different obfuscated forms
+# URL:         https://github.com/sighook/ipobfs
+
+name=ipobfs
+version=0.1-163695f
+release=1
+source=https://github.com/sighook/$name/archive/${version#*-}/$name-${version#*-}.tar.gz
+
+build() {
+	cd $name-${version#*-}*
+
+	make
+	install -m 0755 -Dt $PKG/usr/bin/ $name
+}

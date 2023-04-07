@@ -1,0 +1,27 @@
+# Description: Library for layout and rendering of text
+# URL:         https://www.gtk.org
+# Depends on:  xorg-libsm xorg-libxft
+
+name=pango-compat
+version=1.34.1
+release=1
+source=https://ftp.gnome.org/pub/gnome/sources/pango/1.34/pango-$version.tar.xz
+
+build() {
+	mkdir build; cd build
+
+	../pango-$version/configure                       \
+		--disable-introspection                   \
+		--includedir='/usr/include/pango-compat'  \
+		--libdir='/usr/lib/pango-compat'          \
+		--prefix=/usr                             \
+		--enable-gtk-doc=no                       \
+		--enable-gtk-doc-html=no                  \
+		--enable-gtk-doc-pdf=no                   \
+
+	make V=1
+	make DESTDIR=$PKG install
+
+	# remove junk and obsolete files
+	rm -r $PKG/usr/share/man $PKG/usr/bin/pango-view
+}

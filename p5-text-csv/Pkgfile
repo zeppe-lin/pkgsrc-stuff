@@ -1,0 +1,25 @@
+# Description: Comma-separated values manipulator (using XS or PurePerl)
+# URL:         https://metacpan.org/pod/Text::CSV
+# Depends on:  perl
+
+name=p5-text-csv
+version=2.02
+release=1
+source=https://cpan.metacpan.org/authors/id/I/IS/ISHIGAKI/Text-CSV-$version.tar.gz
+
+build() {
+	cd Text-CSV-$version
+
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make
+	make DESTDIR=$PKG install
+
+	# remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			\) -delete ,            \
+		-type d -empty -delete
+}

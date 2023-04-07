@@ -1,0 +1,17 @@
+# Description: These regexes power truffleHog
+# URL:         https://github.com/dxa4481/truffleHogRegexes
+# Depends on:  py3-setuptools
+
+name=trufflehogregexes
+version=20210616-9257f45
+release=1
+source=https://github.com/dxa4481/truffleHogRegexes/archive/${version##*-}/truffleHogRegexes-$version.tar.gz
+
+build() {
+	cd truffleHogRegexes-${version##*-}*
+
+	/usr/bin/python3 setup.py install --prefix=/usr --root=$PKG -O1
+
+	# fix perms
+	chmod 644 $PKG/usr/lib/python*/site-packages/truffleHogRegexes/regexes.json
+}

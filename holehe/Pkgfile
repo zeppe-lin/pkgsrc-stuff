@@ -1,0 +1,31 @@
+# Description: Check if the email is used on different sites
+# URL:         https://github.com/megadose/holehe
+# Depends on:  py3-pip
+
+name=holehe
+version=1.61-0f53de6
+release=1
+source="https://github.com/megadose/$name/archive/${version#*-}/$name-$version.tar.gz
+	holehe.sh requirements.txt adjust4zpln.patch"
+
+build() {
+	install -d $PKG/usr/bin $PKG/opt/$name
+
+	# install requirements
+	/usr/bin/pip3 install -r $SRC/requirements.txt -t $PKG/opt/$name/
+
+	(
+	cd $name-${version#*-}*
+	patch -p1 -i $SRC/adjust4zpln.patch
+	/usr/bin/python3 setup.py install \
+		--prefix=/usr --root=$PKG/opt/$name -O2
+	)
+
+	# create an indirect launcher in /usr/bin
+	install -m 0755 -D $name.sh $PKG/usr/bin/$name
+
+	# remove junk files
+	cd $PKG/opt/$name
+	rm -r usr/lib/python*/site-packages/*.egg-info  *.dist-info \
+		usr/bin */tests/
+}

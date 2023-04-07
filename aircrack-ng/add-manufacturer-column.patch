@@ -1,0 +1,67 @@
+From a3eb2dc8e86c1f1538d50a983bf4ee3ed5422518 Mon Sep 17 00:00:00 2001
+From: Alexandr Savca <alexandr.savca89@gmail.com>
+Date: Tue, 27 Oct 2020 10:08:16 +0200
+Subject: [PATCH] airodump-ng.c: add manufacturer column to the client list
+
+Be aware!
+
+According to this thread:
+>> https://github.com/aircrack-ng/aircrack-ng/issues/1023#issuecomment-372062743
+
+this patch is not needed at all :=D
+
+Git branch:master patch.
+---
+ src/airodump-ng/airodump-ng.c | 26 +++++++++++++++++++++++++-
+ 1 file changed, 25 insertions(+), 1 deletion(-)
+
+diff --git a/src/airodump-ng/airodump-ng.c b/src/airodump-ng/airodump-ng.c
+index d721c21..ff010f0 100644
+--- a/src/airodump-ng/airodump-ng.c
++++ b/src/airodump-ng/airodump-ng.c
+@@ -4045,10 +4045,19 @@ static void dump_print(int ws_row, int ws_col, int if_num)
+ 
+ 	if (lopt.show_sta)
+ 	{
+-		strlcpy(strbuf,
++		if (lopt.show_manufacturer)
++			strlcpy(strbuf,
++				" BSSID              STATION "
++				"           PWR   Rate    Lost    Frames  Notes "
++				" Manufacturer                   "
++				" Probes",
++				sizeof(strbuf));
++		else
++			strlcpy(strbuf,
+ 				" BSSID              STATION "
+ 				"           PWR   Rate    Lost    Frames  Notes  Probes",
+ 				sizeof(strbuf));
++
+ 		strbuf[ws_col - 1] = '\0';
+ 		console_puts(strbuf);
+ 		CHECK_END_OF_SCREEN();
+@@ -4153,6 +4162,21 @@ static void dump_print(int ws_row, int ws_col, int if_num)
+ 						   ? "PMKID"
+ 						   : (st_cur->wpa.state == 7 ? "EAPOL" : ""));
+ 
++				if (lopt.show_manufacturer)
++				{
++					if (st_cur->manuf == NULL)
++					{
++						st_cur->manuf =
++							get_manufacturer(st_cur->stmac[0],
++									 st_cur->stmac[1],
++									 st_cur->stmac[2]);
++					}
++					if (strstr(st_cur->manuf, "Unknown") == NULL)
++						printf(strlen(st_cur->manuf) > 32
++							? "  %s" : "  %-32s",
++							st_cur->manuf);
++				}
++
+ 				if (ws_col > (columns_sta - 6))
+ 				{
+ 					memset(ssid_list, 0, sizeof(ssid_list));
+-- 
+2.29.1
+

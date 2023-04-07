@@ -1,0 +1,15 @@
+# Description: OSINT helper tool
+# URL:         https://github.com/volgk/qrot
+
+name=qrot
+version=0.1-1c06002
+release=1
+source=https://github.com/volgk/qrot/archive/${version#*-}/qrot-$version.tar.gz
+
+build() {
+	cd qrot-${version#*-}*
+
+	install -d $PKG/usr/share/qrot $PKG/usr/bin
+	install -m 0644 engines.json search.py $PKG/usr/share/qrot/
+	install -m 0755 qrot.py                $PKG/usr/bin/qrot
+}

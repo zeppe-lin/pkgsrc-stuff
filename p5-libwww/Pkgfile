@@ -1,0 +1,26 @@
+# Description: World-Wide Web library for Perl
+# URL:         https://metacpan.org/release/libwww-perl
+# Depends on:  p5-file-listing p5-html-parser p5-http-cookies p5-http-daemon p5-http-negotiate p5-net-http p5-test-requiresinternet p5-www-robotrules
+
+name=p5-libwww
+version=6.68
+release=1
+source=https://cpan.metacpan.org/authors/id/O/OA/OALDERS/libwww-perl-$version.tar.gz
+
+build() {
+	cd libwww-perl-$version
+
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL --aliases \
+		INSTALLDIRS=vendor
+
+	make V=1
+	make DESTDIR=$PKG install
+
+        # remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			\) -delete ,            \
+		-type d -empty -delete
+}

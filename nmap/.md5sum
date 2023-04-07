@@ -1,0 +1,5 @@
+cdc6af6c6e26f73831849e2d73dcefb4  0001-fix-hardcoded-monospace-font.patch
+ae9ae0b0a9a4c9dee2f9ede739899cc7  0002-fix-highlight.patch
+cef4e19a55755dbb16898cd2979eff27  nmap-7.93-openssl-1.1.patch
+9027eac4b8ca57574012cb061ba9ce4d  nmap-7.93.tar.bz2
+6ed44d20904f5cf8e3636a0fa045eb71  nmap-extra-nse-5791e6d.tar.gz

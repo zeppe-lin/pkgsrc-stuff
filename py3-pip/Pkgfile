@@ -1,0 +1,22 @@
+# Description: Install and manage Python packages
+# URL:         https://pypi.python.org/pypi/pip/
+# Depends on:  py3-setuptools
+
+name=py3-pip
+version=23.0.1
+release=1
+source=https://files.pythonhosted.org/packages/source/p/${name#*-}/${name#*-}-$version.tar.gz
+
+build() {
+	cd ${name#*-}-$version
+
+	/usr/bin/python3 setup.py build
+	/usr/bin/python3 setup.py install --prefix=/usr --root=$PKG -O2
+
+	# remove obsolete
+	rm $PKG/usr/bin/pip
+
+	# fix perms
+	find $PKG/usr/lib/python*/site-packages -type f \
+		-exec chmod go-w '{}' \+
+}

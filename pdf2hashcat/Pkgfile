@@ -1,0 +1,14 @@
+# Description: Convert password-protected pdf files to hashcat's hashes
+# URL:         https://github.com/sighook/pdf2hashcat
+# Depends on:  python3
+
+name=pdf2hashcat
+version=0.1-a389f09
+release=1
+source=https://github.com/sighook/$name/archive/${version#*-}/$name-$version.tar.gz
+
+build() {
+	cd $name-${version#*-}*
+
+	install -m 0755 -D $name.py $PKG/usr/bin/$name
+}

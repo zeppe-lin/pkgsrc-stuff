@@ -1,0 +1,14 @@
+# Description: Static analysis tool for shell scripts
+# URL:         https://github.com/koalaman/shellcheck
+# Depends on:  tree
+
+name=shellcheck-bin
+version=0.9.0
+release=1
+source=https://github.com/koalaman/shellcheck/releases/download/v$version/shellcheck-v$version.linux.x86_64.tar.xz
+
+build() {
+	tree .
+	install -m 0755 -Dt $PKG/usr/bin/ \
+		shellcheck-v$version/shellcheck
+}

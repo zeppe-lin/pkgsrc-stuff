@@ -1,0 +1,26 @@
+# Description: GD module for PHP
+# URL:         https://www.php.net
+# Depends on:  harfbuzz libgd
+
+# 8.1 LTS (25 Nov 2024)
+# https://www.php.net/supported-versions.php
+
+name=php-gd
+version=8.1.17
+release=1
+source=https://www.php.net/distributions/php-$version.tar.xz
+
+build() {
+	mkdir build; cd build
+
+	../php-$version/configure   \
+		--disable-all       \
+		--enable-gd=shared  \
+		--with-external-gd  \
+
+	make build-modules
+
+	install -d $PKG/etc/php/conf.d  $PKG/usr/lib/php/extensions
+	install -m 0755 modules/gd.so   $PKG/usr/lib/php/extensions/
+	printf 'extension=%s\n' gd.so > $PKG/etc/php/conf.d/gd.ini
+}

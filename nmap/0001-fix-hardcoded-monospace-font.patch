@@ -1,0 +1,57 @@
+From 13811e30b773cc9518a6347589caaf18f2f2b4bb Mon Sep 17 00:00:00 2001
+From: "Alexandr Savca (chinarulezzz)" <alexandr.savca89@gmail.com>
+Date: Sun, 14 Feb 2021 16:04:25 +0200
+Subject: [PATCH] fix hardcoded monospace font
+
+---
+ zenmap/zenmapGUI/DiffCompare.py      | 13 ++++++++-----
+ zenmap/zenmapGUI/NmapOutputViewer.py |  2 +-
+ 2 files changed, 9 insertions(+), 6 deletions(-)
+
+diff --git a/zenmap/zenmapGUI/DiffCompare.py b/zenmap/zenmapGUI/DiffCompare.py
+index 6151357..3487184 100644
+--- a/zenmap/zenmapGUI/DiffCompare.py
++++ b/zenmap/zenmapGUI/DiffCompare.py
+@@ -171,7 +171,7 @@ class ScanChooser(HIGVBox):
+     def _set_text_view(self):
+         self.txg_table = self.txt_scan_result.get_buffer().get_tag_table()
+         self.txg_table.add(self.txg_tag)
+-        self.txg_tag.set_property("family", "Monospace")
++        #self.txg_tag.set_property("family", "Monospace")
+ 
+         self.txt_scan_result.set_wrap_mode(gtk.WRAP_WORD)
+         self.txt_scan_result.set_editable(False)
+@@ -412,10 +412,13 @@ class DiffView(gtk.TextView):
+ 
+         buff = self.get_buffer()
+         # Create text markup tags.
+-        buff.create_tag("=", font="Monospace")
+-        buff.create_tag(
+-            "-", font="Monospace", background=self.REMOVE_COLOR)
+-        buff.create_tag("+", font="Monospace", background=self.ADD_COLOR)
++        #buff.create_tag("=", font="Monospace")
++        #buff.create_tag(
++        #    "-", font="Monospace", background=self.REMOVE_COLOR)
++        #buff.create_tag("+", font="Monospace", background=self.ADD_COLOR)
++        buff.create_tag("=")
++        buff.create_tag("-", foreground=gtk.gdk.color_parse('dark red'))
++        buff.create_tag("+", foreground=gtk.gdk.color_parse('dark green'))
+ 
+     def clear(self):
+         self.get_buffer().set_text(u"")
+diff --git a/zenmap/zenmapGUI/NmapOutputViewer.py b/zenmap/zenmapGUI/NmapOutputViewer.py
+index dddacfc..2b235b7 100644
+--- a/zenmap/zenmapGUI/NmapOutputViewer.py
++++ b/zenmap/zenmapGUI/NmapOutputViewer.py
+@@ -119,7 +119,7 @@ class NmapOutputViewer (gtk.VBox):
+         self.text_view.set_editable(False)
+ 
+         self.tag_font = self.text_view.get_buffer().create_tag(None)
+-        self.tag_font.set_property("family", "Monospace")
++        #self.tag_font.set_property("family", "Monospace")
+         for property in self.HIGHLIGHT_PROPERTIES:
+             settings = self.nmap_highlight.__getattribute__(property)
+             tag = self.text_view.get_buffer().create_tag(property)
+-- 
+2.30.0
+

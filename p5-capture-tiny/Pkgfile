@@ -1,0 +1,25 @@
+# Description: Capture STDOUT and STDERR from Perl, XS or external programs
+# URL:         https://metacpan.org/pod/Capture::Tiny
+# Depends on:  perl
+
+name=p5-capture-tiny
+version=0.48
+release=1
+source=https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Capture-Tiny-$version.tar.gz
+
+build() {
+	cd Capture-Tiny-$version
+
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make
+	make DESTDIR=$PKG install
+
+	# remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			\) -delete ,            \
+		-type d -empty -delete
+}

@@ -1,0 +1,17 @@
+diff '--color=always' -pruN '--color=never' linssid-app.orig/MainForm.cpp linssid-app/MainForm.cpp
+--- linssid-app.orig/MainForm.cpp	2022-01-16 19:46:18.072114769 +0200
++++ linssid-app/MainForm.cpp	2022-01-16 23:56:09.045062998 +0200
+@@ -197,9 +197,9 @@ QColor MainForm::qColorArray[NUMBER_OF_C
+             Qt::cyan, Qt::magenta, Qt::gray, Qt::darkCyan, Qt::darkMagenta,
+             Qt::darkYellow, Qt::darkGray
+ };
+-QFont MainForm::tblFnt( (const QString) "Arial", 11);
+-QString MainForm::fntSizes[] = {"10", "11", "12", "14", "16"};
+-int MainForm::numFntSizes = 5;
++QFont MainForm::tblFnt( (const QString) "xos4 Terminus", 9);
++QString MainForm::fntSizes[] = {"9", "10", "11", "12", "14", "16"};
++int MainForm::numFntSizes = 6;
+ QAction* MainForm::colToQAction[MAX_TABLE_COLS];
+ int MainForm::columnWidth[MAX_TABLE_COLS]; // since Qt doesn't see fit to remember for us...
+ QwtPlotGrid* MainForm::chan24Grid;
+Binary files linssid-app.orig/.MainForm.cpp.un~ and linssid-app/.MainForm.cpp.un~ differ

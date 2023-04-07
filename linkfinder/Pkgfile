@@ -1,0 +1,27 @@
+# Description: Discover endpoint and their parameters in JavaScript files
+# URL:         https://github.com/GerbenJavado/LinkFinder
+# Depends on:  py3-jsbeautifier
+
+name=linkfinder
+version=0-095bb62
+release=1
+source="https://github.com/GerbenJavado/LinkFinder/archive/${version##*-}/LinkFinder-${version##*-}.tar.gz
+	disable_browser_call.patch"
+
+build() {
+	cd LinkFinder-${version##*-}*
+
+	sed -i "1s|python$|python3|" $name.py
+
+	# disable opening browser after each report
+	patch -i $SRC/disable_browser_call.patch $name.py
+
+	# adjust to DarkReader
+	sed -i "s|background-color:yellow|background-color:#5f0000;color:#ffffff|" $name.py
+
+	# fix template path
+	sed -i "s|%s/template.html' % sys.path\[0\]|/usr/share/$name/template.html'|" $name.py
+
+	install -m 755 -D $name.py       $PKG/usr/bin/$name
+	install -m 644 -D template.html  $PKG/usr/share/$name/template.html
+}

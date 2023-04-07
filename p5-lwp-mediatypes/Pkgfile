@@ -1,0 +1,25 @@
+# Description: Guess the media type of a file or a URL
+# URL:         https://metacpan.org/release/LWP-MediaTypes
+# Depends on:  p5-test-fatal
+
+name=p5-lwp-mediatypes
+version=6.04
+release=1
+source=https://cpan.metacpan.org/authors/id/O/OA/OALDERS/LWP-MediaTypes-$version.tar.gz
+
+build() {
+	cd LWP-MediaTypes-$version
+
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make V=1
+	make DESTDIR=$PKG install
+
+	# remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			\) -delete ,            \
+		-type d -empty -delete
+}

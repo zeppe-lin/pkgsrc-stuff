@@ -1,0 +1,25 @@
+# Description: Database of robots.txt-derived permissions
+# URL:         https://metacpan.org/pod/WWW::RobotRules
+# Depends on:  p5-uri
+
+name=p5-www-robotrules
+version=6.02
+release=1
+source=https://cpan.metacpan.org/authors/id/G/GA/GAAS/WWW-RobotRules-$version.tar.gz
+
+build() {
+	cd WWW-RobotRules-$version
+
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make V=1
+	make DESTDIR=$PKG install
+
+	# remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			\) -delete ,            \
+		-type d -empty -delete
+}

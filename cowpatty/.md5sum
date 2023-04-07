@@ -1,0 +1,5 @@
+954b397874c8d0b6a0599e6cf7811bbc  cowpatty-4.8.tar.gz
+8fbff18e2b542e5b9906dce927432b60  fix-makefile.patch
+25aea7c9b963367a64bd0c017962f4b3  kali-overflow.patch
+feaa38cf5f2a835664e9dea9c306acad  makefile-flags.patch
+08941bb88df89d0df2cafd716a6073d5  makefile-parallel.patch

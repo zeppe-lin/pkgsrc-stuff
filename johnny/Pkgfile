@@ -1,0 +1,16 @@
+# Description: GUI for John the Ripper
+# URL:         http://openwall.info/wiki/john/johnny
+# Depends on:  john qt5
+
+name=johnny
+version=2.2
+release=1
+source=https://github.com/openwall/johnny/archive/v$version/johnny-$version.tar.gz
+
+build() {
+	cd johnny-$version
+
+	qmake-qt5
+	make
+	install -m 0755 -Dt $PKG/usr/bin/ johnny
+}

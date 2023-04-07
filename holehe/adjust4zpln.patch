@@ -1,0 +1,24 @@
+diff '--color=auto' -pruN ../holehe-bbc0ef70ca0419f184375fb925674a1a8abf5a0c.orig/holehe/core.py ./holehe/core.py
+--- ../holehe-bbc0ef70ca0419f184375fb925674a1a8abf5a0c.orig/holehe/core.py	2023-01-15 04:16:26.689970403 +0200
++++ ./holehe/core.py	2023-01-15 04:19:14.895969822 +0200
+@@ -187,9 +187,9 @@ async def maincore():
+     parser.add_argument("-T","--timeout", default=10, required=False,dest="timeout",
+                     help="Set max timeout value (default 10)")
+ 
+-    check_update()
++    #check_update()
+     args = parser.parse_args()
+-    credit()
++    #credit()
+     email=args.email[0]
+ 
+     if not is_email(email):
+@@ -218,7 +218,7 @@ async def maincore():
+     await client.aclose()
+     # Print the result
+     print_result(out,args,email,start_time,websites)
+-    credit()
++    #credit()
+     # Export results
+     export_csv(out,args,email)
+ 

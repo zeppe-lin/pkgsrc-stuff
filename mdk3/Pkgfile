@@ -1,0 +1,16 @@
+# Description: Exploit common IEEE 802.11 protocol weaknesses (mod-musket-r1)
+# URL:         https://github.com/charlesxsh/mdk3-master
+
+name=mdk3
+version=6-1bf2bd3
+release=1
+source=https://github.com/charlesxsh/mdk3-master/archive/${version#*-}/mdk3-master-$version.tar.gz
+
+build() {
+	cd mdk3-master-${version#*-}*
+
+	# parallel build is broken
+	make CFLAGS="$CFLAGS" -j1
+
+	make PREFIX=/usr DESTDIR=$PKG install
+}

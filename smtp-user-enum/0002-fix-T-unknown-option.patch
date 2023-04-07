@@ -1,0 +1,23 @@
+From 79af846fe7d200ff38a72ff6f18541a9ea7571d0 Mon Sep 17 00:00:00 2001
+From: Mack Stump <mack.stump@gmail.com>
+Date: Tue, 6 Mar 2018 14:03:25 -0500
+Subject: [PATCH] fix for bug "Unknown option: -T"
+
+The getopts function call was missing 'T:'.
+---
+ smtp-user-enum.pl | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/smtp-user-enum.pl b/smtp-user-enum.pl
+index 5613985..caddd32 100755
+--- a/smtp-user-enum.pl
++++ b/smtp-user-enum.pl
+@@ -84,7 +84,7 @@
+ 
+ USAGE
+ 
+-getopts('m:u:U:s:S:r:dt:vhM:f:D:p:w:', \%opts);
++getopts('m:u:U:s:S:r:dt:T:vhM:f:D:p:w:', \%opts);
+ 
+ # Print help message if required
+ if ($opts{'h'}) {

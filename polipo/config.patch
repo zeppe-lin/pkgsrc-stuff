@@ -1,0 +1,63 @@
+--- config.sample.orig	2021-02-28 13:22:56.582000000 +0200
++++ config.sample	2021-02-28 13:52:51.101000000 +0200
+@@ -1,13 +1,26 @@
+-# Sample configuration file for Polipo. -*-sh-*-
++#
++# /etc/polipo/config: polipo web proxy configuration
++#
+ 
+-# You should not need to use a configuration file; all configuration
+-# variables have reasonable defaults.  If you want to use one, you
+-# can copy this to /etc/polipo/config or to ~/.polipo and modify.
++# You should not need to edit this configuration file; all configuration
++# variables have reasonable defaults.
+ 
+ # This file only contains some of the configuration variables; see the
+ # list given by ``polipo -v'' and the manual for more.
+ 
+ 
++### System configuration
++### ********************
++
++# Run as daemon
++daemonise = true
++
++# File with pid of running daemon
++pidFile = /var/run/polipo/pid
++
++# Log file
++logFile = /var/log/polipo/log
++
+ ### Basic configuration
+ ### *******************
+ 
+@@ -17,11 +30,14 @@
+ # proxyAddress = "::0"        # both IPv4 and IPv6
+ # proxyAddress = "0.0.0.0"    # IPv4 only
+ 
+-# If you do that, you'll want to restrict the set of hosts allowed to
+-# connect:
++proxyAddress = 127.0.0.1
++proxyPort = 8123
++
++# If you are enabling 'proxyAddress' above, then you want to enable the
++# 'allowedClients' variable to the address of your network, e.g.
++# allowedClients = 127.0.0.1, 192.168.42.0/24
+ 
+-# allowedClients = 127.0.0.1, 134.157.168.57
+-# allowedClients = 127.0.0.1, 134.157.168.0/24
++allowedClients = 127.0.0.1
+ 
+ # Uncomment this if you want your Polipo to identify itself by
+ # something else than the host name:
+@@ -38,8 +54,8 @@
+ 
+ # Uncomment this if you want to use a parent SOCKS proxy:
+ 
+-# socksParentProxy = "localhost:9050"
+-# socksProxyType = socks5
++socksParentProxy = "localhost:9050"
++socksProxyType = socks5
+ 
+ # Uncomment this if you want to scrub private information from the log:
+ 

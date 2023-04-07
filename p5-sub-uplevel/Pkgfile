@@ -1,0 +1,25 @@
+# Description: Apparently run a function in a higher stack frame
+# URL:         https://metacpan.org/pod/Sub::Uplevel
+# Depends on:  perl
+
+name=p5-sub-uplevel
+version=0.2800
+release=1
+source=https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Sub-Uplevel-$version.tar.gz
+
+build() {
+	cd Sub-Uplevel-$version
+
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make
+	make DESTDIR=$PKG install
+
+	# remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			\) -delete ,            \
+		-type d -empty -delete
+}

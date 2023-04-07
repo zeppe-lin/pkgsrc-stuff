@@ -1,0 +1,17 @@
+# Description: Check the properties of executables
+# URL:         https://github.com/slimm609/checksec.sh
+# Depends on:  binutils coreutils file findutils grep openssl
+
+name=checksec
+version=2.6.0
+release=1
+source=https://github.com/slimm609/$name.sh/archive/$version/$name-$version.tar.gz
+
+build() {
+	cd $name.sh-$version
+
+	sed -r 's|(pkg_release=)false|\1true|' -i checksec
+
+	install -m 0755 -Dt $PKG/usr/bin/ $name
+	install -m 0644 -Dt $PKG/usr/share/man/man1/ extras/man/$name.1
+}

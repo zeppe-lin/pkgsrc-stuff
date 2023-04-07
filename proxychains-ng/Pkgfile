@@ -1,0 +1,25 @@
+# Description: Socks proxy router
+# URL:         https://github.com/rofl0r/proxychains-ng
+
+name=proxychains-ng
+version=4.16
+release=1
+source=https://github.com/rofl0r/$name/archive/v$version/$name-$version.tar.gz
+
+build() {
+	# build in separate dir is broken
+	cd $name-$version
+
+	./configure \
+		--prefix=/usr          \
+		--sysconfdir=/usr/etc  \
+
+	# remove debug CFLAGS
+	sed -i '/^CFLAGS  += /s/-O0 -g//;s/-pipe//' Makefile
+
+	# make LDFLAGS additional
+	sed -i '/^LDFLAGS = /s/=/+=/' Makefile
+
+	make V=1
+	make DESTDIR=$PKG install install-config
+}

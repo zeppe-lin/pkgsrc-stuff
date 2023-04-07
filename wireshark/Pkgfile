@@ -1,0 +1,30 @@
+# Description: Network Sniffer
+# URL:         https://www.wireshark.org
+# Depends on:  asciidoctor c-ares gnutls hicolor-icon-theme libcap libgcrypt libnl libpcap libssh qt5
+
+name=wireshark
+version=4.0.4
+release=1
+source=https://github.com/$name/$name/archive/v$version/$name-$version.tar.gz
+
+build() {
+	cmake -S $name-$version -B build -G Ninja       \
+		-D CMAKE_BUILD_TYPE=Release             \
+		-D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS"  \
+		-D CMAKE_C_FLAGS_RELEASE="$CFLAGS"      \
+		-D CMAKE_INSTALL_PREFIX=/usr            \
+		-D CMAKE_INSTALL_LIBDIR=lib             \
+		-D ENABLE_OPUS=OFF                      \
+		-D ENABLE_SBC=OFF                       \
+		-D USE_qt6=OFF                          \
+
+	ninja -C build -j ${JOBS:-1} -v
+	DESTDIR=$PKG ninja -C build install
+
+	chmod 4755 $PKG/usr/bin/dumpcap
+
+	# Don't remove these files, they are read by wireshark's about
+	# box.
+	#rm -f $PKG/usr/share/$name/AUTHORS-SHORT
+	#rm -f $PKG/usr/share/$name/COPYING
+}

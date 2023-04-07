@@ -1,0 +1,10 @@
+README arpspoof
+
+USAGE
+
+	~~ Basic spoofing example ~~
+
+		arpspoof.py -i ${IFACE} -t ${VICTIM_IP} ${GW_IP} &
+		arpspoof.py -i ${IFACE} -t ${GW_IP} ${VICTIM_IP} &
+
+End of file.

@@ -1,0 +1,25 @@
+# Description: Handle Common Gateway Interface request and responses
+# URL:         https://metacpan.org/release/CGI
+# Depends on:  p5-html-parser p5-test-nowarnings p5-test-warn
+
+name=p5-cgi
+version=4.56
+release=1
+source=https://cpan.metacpan.org/authors/id/L/LE/LEEJO/CGI-$version.tar.gz
+
+build() {
+	cd CGI-$version
+
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make
+	make DESTDIR=$PKG install
+
+	# remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			\) -delete ,            \
+		-type d -empty -delete
+}

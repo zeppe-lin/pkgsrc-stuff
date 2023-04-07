@@ -1,0 +1,23 @@
+# Description: High-speed network authentication cracking tool
+# URL:         https://nmap.org/ncrack/
+# Depends on:  openssl
+
+name=ncrack
+version=0.7
+release=1
+source="https://nmap.org/$name/dist/$name-$version.tar.gz
+	fix-spelling-errors.patch"
+
+build() {
+	cd $name-$version
+
+	patch -p1 -i $SRC/fix-spelling-errors.patch
+
+	export CFLAGS="$CFLAGS -fcommon"
+
+	autoreconf -fiv
+	./configure --prefix=/usr
+
+	make V=1
+	make DESTDIR=$PKG install
+}

@@ -1,0 +1,22 @@
+# Description: Converting JPEG and PNG images to ASCII
+# URL:         https://github.com/Talinx/jp2a/
+# Depends on:  curl libjpeg-turbo libpng ncurses
+
+name=jp2a
+version=1.1.1
+release=1
+source=https://github.com/Talinx/jp2a/releases/download/v$version/jp2a-$version.tar.bz2
+
+build() {
+	# build in separate dir is broken
+	cd $name-$version
+
+	./configure \
+		--prefix=/usr          \
+		--disable-doxygen-doc  \
+		--enable-curl          \
+		--enable-termlib       \
+
+	make V=1
+	make DESTDIR=$PKG install
+}

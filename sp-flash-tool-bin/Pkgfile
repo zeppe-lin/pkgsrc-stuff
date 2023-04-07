@@ -1,0 +1,27 @@
+# Description: MediaTek SP Flash Tool
+# URL:         https://spflashtools.com/linux
+# Depends on:  fontconfig glib libbsd xorg-libsm xorg-libxext xorg-libxrender
+
+name=sp-flash-tool-bin
+version=5.2124
+release=1
+source="https://spflashtools.com/wp-content/uploads/SP_Flash_Tool_v${version}_Linux.zip
+	sp-flash-tool.sh"
+
+build () {
+	cd SP_Flash_Tool_v${version}_Linux
+
+	install -d $PKG/opt/sp-flash-tool
+
+	chmod +x flash_tool
+
+	rm -rf 99-ttyacms.rules Credits.txt Driver 'How to Use.url' \
+		'Official Website.url'
+
+	cp -pR . $PKG/opt/sp-flash-tool
+
+	install -m 0755 -D $SRC/sp-flash-tool.sh \
+		$PKG/usr/bin/sp-flash-tool
+
+	chmod -R g-w $PKG/opt/sp-flash-tool
+}

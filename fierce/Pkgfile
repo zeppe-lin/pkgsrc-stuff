@@ -1,0 +1,14 @@
+# Description: Domain scanner
+# URL:         https://github.com/sighook/fierce-domain-scanner
+# Depends on:  p5-net-dns
+
+name=fierce
+version=0.9.9-40501b5
+release=1
+source=https://github.com/sighook/$name-domain-scanner/archive/${version#*-}/$name-domain-scanner-${version#*-}.tar.gz
+
+build() {
+	cd $name-domain-scanner-${version#*-}*
+
+	install -m 0755 -D $name $PKG/usr/bin/$name
+}

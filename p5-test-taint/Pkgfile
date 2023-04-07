@@ -1,0 +1,25 @@
+# Description: Tools to test taintedness
+# URL:         https://metacpan.org/pod/Test::Taint
+# Depends on:  perl
+
+name=p5-test-taint
+version=1.08
+release=1
+source=https://cpan.metacpan.org/authors/id/P/PE/PETDANCE/Test-Taint-$version.tar.gz
+
+build() {
+	cd Test-Taint-$version
+
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make OPTIMIZE="$CFLAGS"
+	make DESTDIR=$PKG install
+
+	# remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			\) -delete ,            \
+		-type d -empty -delete
+}

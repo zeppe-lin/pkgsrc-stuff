@@ -1,0 +1,16 @@
+# Description: Programmer's calculator
+# URL:         https://github.com/vapier/pcalc
+# Depends on:  flex
+
+name=pcalc
+version=5
+release=1
+source=https://github.com/vapier/$name/archive/v$version/$name-v$version.tar.gz
+
+build() {
+	cd $name-$version
+
+	# parallel build is broken
+	make V=1 -j1
+	make DESTDIR=$PKG install
+}

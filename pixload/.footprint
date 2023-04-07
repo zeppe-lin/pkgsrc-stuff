@@ -1,0 +1,15 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/pixload-bmp
+-rwxr-xr-x	root/root	usr/bin/pixload-gif
+-rwxr-xr-x	root/root	usr/bin/pixload-jpg
+-rwxr-xr-x	root/root	usr/bin/pixload-png
+-rwxr-xr-x	root/root	usr/bin/pixload-webp
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/pixload-bmp.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/pixload-gif.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/pixload-jpg.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/pixload-png.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/pixload-webp.1.gz

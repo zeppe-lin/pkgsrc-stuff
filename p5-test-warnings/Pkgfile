@@ -1,0 +1,25 @@
+# Description: Test for warnings and the lack of them
+# URL:         https://metacpan.org/pod/Test::Warnings
+# Depends on:  perl
+
+name=p5-test-warnings
+version=0.031
+release=1
+source=https://cpan.metacpan.org/authors/id/E/ET/ETHER/Test-Warnings-0.031.tar.gz
+
+build() {
+	cd Test-Warnings-$version
+
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make
+	make DESTDIR=$PKG install
+
+	# remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			\) -delete ,            \
+		-type d -empty -delete
+}

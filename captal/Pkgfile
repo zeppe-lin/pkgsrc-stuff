@@ -1,0 +1,14 @@
+# Description: Wireless RogueAP MITM Phishing attack framework
+# URL:         https://github.com/sighook/captal
+# Depends on:  lighttpd aircrack-ng p5-net-dns hostapd dhcp php-fcgi
+
+name=captal
+version=0.3-f38d0c0
+release=1
+source=https://github.com/sighook/$name/archive/${version#*-}/$name-${version#*-}.tar.gz
+
+build() {
+	cd $name-${version#*-}*
+
+	make PREFIX=/usr DESTDIR=$PKG install
+}

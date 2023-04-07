@@ -1,0 +1,26 @@
+# Description: Remote desktop protocol implementation
+# URL:         https://www.freerdp.com/
+# Depends on:  ffmpeg libusb xorg-libxcursor xorg-libxi xorg-libxinerama xorg-libxkbfile xorg-libxrandr
+# Optional:    ffmpeg gst-plugins-base alsa-lib cups directfb neon pulseaudio xmlto
+
+name=freerdp2
+version=2.10.0
+release=1
+source=https://pub.freerdp.com/releases/freerdp-$version.tar.gz
+
+build() {
+	cmake -S freerdp-$version -B build -G Ninja  \
+		-D CMAKE_BUILD_TYPE=RELEASE          \
+		-D CMAKE_C_FLAGS_RELEASE="$CFLAGS"   \
+		-D CMAKE_INSTALL_PREFIX=/usr         \
+		-D CMAKE_INSTALL_LIBDIR=lib          \
+		-D CMAKE_SKIP_RPATH=ON               \
+		-D WITH_SERVER=OFF                   \
+		-D WITH_CLIENT=ON                    \
+		-D WITH_LIBSYSTEMD=OFF               \
+		-D WITH_WAYLAND=OFF                  \
+		-Wno-dev                             \
+
+	ninja -C build -j ${JOBS:-1} -v
+	DESTDIR=$PKG ninja -C build install
+}

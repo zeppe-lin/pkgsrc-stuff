@@ -1,0 +1,85 @@
+# Description: John the Ripper is a fast password cracker
+# URL:         http://www.openwall.com/john/
+# Depends on:  libpcap python
+
+name=john
+version=1.9.0-jumbo-1
+release=1
+source="https://www.openwall.com/$name/k/$name-$version.tar.xz
+	66cf12d17e9fa453b34bcd9d0b8dc4f1954e8cff.patch
+	8152ac071bce1ebc98fac6bed962e90e9b92d8cf.patch
+	johntheripper-jumbo-1.9.0-opencl-fix.patch"
+
+build() {
+	cd $name-$version
+
+	patch -Np1 -i $SRC/66cf12d17e9fa453b34bcd9d0b8dc4f1954e8cff.patch
+	patch -Np1 -i $SRC/8152ac071bce1ebc98fac6bed962e90e9b92d8cf.patch
+	patch -Np1 -i $SRC/johntheripper-jumbo-1.9.0-opencl-fix.patch
+
+	cd src
+
+	sed 's|$prefix/bin|/usr/lib/john|' -i configure.ac
+	autoreconf -fiv
+
+	CONFIG_SHELL=/bin/bash ./configure  \
+		--prefix=/usr \
+		--disable-native-tests \
+		--with-systemwide \
+		CFLAGS="$CFLAGS"
+
+	make V=1
+	cd ..
+
+	# config
+	install -m 644 -Dt $PKG/etc/john/       run/john.conf 
+	install -m 644 -Dt $PKG/usr/share/john/ run/*.conf
+
+	# opencl
+	#install -Dm 644 run/kernels/* -t "$PKG/usr/share/john/kernels"
+
+	# completion
+	install -m 644 -D run/john.bash_completion \
+		"$PKG/usr/share/bash-completion/completions/john"
+	#install -Dm 644 run/john.zsh_completion \
+	#	"$PKG/usr/share/zsh/site-functions/_john"
+
+	# binaries
+	install -m 755 -Dt $PKG/usr/bin/ run/john
+	for bin in calc_stat    cprepair     genmkvpwd    luks2john.py \
+		   mkvcalcproba raw2dyna     relbench     tgtsnarf \
+		   uaf2john     wpapcap2john vncpcap2john SIPdump \
+	; do
+		_target=$(echo $bin | sed 's/\.py$//')
+		install -m 755 -D run/$bin $PKG/usr/bin/$_target
+	done
+
+	# scripts
+	install -m 0755 -Dt $PKG/usr/lib/john/ \
+		run/*.py run/*.pl run/*.rb \
+		run/mailer run/benchmark-unify
+	install -m 0644 -Dt $PKG/usr/lib/john/lib/ \
+		run/lib/*.pm
+
+	# data
+	install -m 644 -Dt $PKG/usr/share/john/ \
+		run/*.chr run/*.lst run/dictionary* run/stats
+
+	install -m 644 -Dt $PKG/usr/share/john/rules/ \
+		run/rules/*
+
+	# syminks
+	cd $PKG/usr/bin
+	for link in base64conv    dmg2john       gpg2john      hccap2john    \
+		    keepass2john  keychain2john  keyring2john  keystore2john \
+		    kwallet2john  pfx2john       putty2john    pwsafe2john   \
+		    racf2john     rar2john       ssh2john      unique        \
+		    unshadow      zip2john       unafs         undrop        \
+		    truecrypt_volume2john \
+	; do
+		ln -s john $link
+	done
+
+	find $PKG -type f ! -name deepsound2john.py \
+		-exec /usr/bin/python -mcompileall {} \+
+}

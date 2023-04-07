@@ -1,0 +1,25 @@
+# Description: Base class for trees
+# URL:         https://metacpan.org/pod/Tree::DAG_Node
+# Depends on:  p5-file-slurp-tiny
+
+name=p5-tree-dag-node
+version=1.32
+release=1
+source=https://cpan.metacpan.org/authors/id/R/RS/RSAVAGE/Tree-DAG_Node-$version.tgz
+
+build() {
+	cd Tree-DAG_Node-$version
+
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make
+	make DESTDIR=$PKG install
+
+	# remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			\) -delete ,            \
+		-type d -empty -delete
+}
