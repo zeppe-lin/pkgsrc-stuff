@@ -105,6 +105,7 @@ drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.34/Image/ExifTool/Charset/
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/Image/ExifTool/ITC.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/Image/ExifTool/Import.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/Image/ExifTool/InDesign.pm
+-r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/Image/ExifTool/InfiRay.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/Image/ExifTool/JPEG.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/Image/ExifTool/JPEGDigest.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/Image/ExifTool/JSON.pm
@@ -128,6 +129,7 @@ drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.34/Image/ExifTool/Lang/
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/Image/ExifTool/Lang/nl.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/Image/ExifTool/Lang/pl.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/Image/ExifTool/Lang/ru.pm
+-r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/Image/ExifTool/Lang/sk.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/Image/ExifTool/Lang/sv.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/Image/ExifTool/Lang/tr.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/Image/ExifTool/Lang/zh_cn.pm
@@ -301,6 +303,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::ITC.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::Import.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::InDesign.3pm.gz
+-r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::InfiRay.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::JPEG.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::JPEGDigest.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::JSON.3pm.gz
@@ -323,6 +326,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::Lang::nl.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::Lang::pl.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::Lang::ru.3pm.gz
+-r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::Lang::sk.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::Lang::sv.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::Lang::tr.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::Lang::zh_cn.3pm.gz
