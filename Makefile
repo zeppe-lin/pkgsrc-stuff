@@ -11,7 +11,7 @@ check-deps:
 		--config-append="pkgsrcdir ${CURDIR}/../pkgsrc-xorg"    \
 		--config-append="pkgsrcdir ${CURDIR}/../pkgsrc-system"  \
 		--config-append="pkgsrcdir ${CURDIR}/../pkgsrc-core"    \
-		list-orphans -v | grep '(required by .*)'
+		list-orphans -v | grep '(required by .*)' >&2
 
 # vim: cc=72:tw=70
 # End of file.
