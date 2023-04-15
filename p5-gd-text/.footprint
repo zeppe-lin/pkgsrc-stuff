@@ -1,0 +1,16 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/perl5/
+drwxr-xr-x	root/root	usr/lib/perl5/site_perl/
+drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.34/
+drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.34/GD/
+-r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/GD/Text.pm
+drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.34/GD/Text/
+-r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/GD/Text/Align.pm
+-r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/GD/Text/Wrap.pm
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man3/
+-r--r--r--	root/root	usr/share/man/man3/GD::Text.3pm.gz
+-r--r--r--	root/root	usr/share/man/man3/GD::Text::Align.3pm.gz
+-r--r--r--	root/root	usr/share/man/man3/GD::Text::Wrap.3pm.gz

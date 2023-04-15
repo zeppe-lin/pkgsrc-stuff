@@ -1,0 +1,25 @@
+# Description: Text utilities for use with GD
+# URL:         https://metacpan.org/pod/GD::Text
+# Depends on:  p5-gd
+
+name=p5-gd-text
+version=0.86
+release=1
+source=https://cpan.metacpan.org/authors/id/M/MV/MVERB/GDTextUtil-$version.tar.gz
+
+build() {
+	cd GDTextUtil-$version
+
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make
+	make DESTDIR=$PKG install
+
+	# remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			\) -delete ,            \
+		-type d -empty -delete
+}
