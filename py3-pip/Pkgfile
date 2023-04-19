@@ -3,7 +3,7 @@
 # Depends on:  py3-setuptools
 
 name=py3-pip
-version=23.0.1
+version=23.1
 release=1
 source=https://files.pythonhosted.org/packages/source/p/${name#*-}/${name#*-}-$version.tar.gz
 
