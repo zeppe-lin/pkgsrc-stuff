@@ -3,7 +3,7 @@
 # Depends on:  py3-pip
 
 name=holehe
-version=1.61-0f53de6
+version=1.61-2158f87
 release=1
 source="https://github.com/megadose/$name/archive/${version#*-}/$name-$version.tar.gz
 	holehe.sh requirements.txt adjust4zpln.patch"
