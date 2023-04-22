@@ -3,7 +3,7 @@
 # Depends on:  tree
 
 name=gitleaks-bin
-version=8.16.2
+version=8.16.3
 release=1
 source=https://github.com/zricethezav/gitleaks/releases/download/v$version/gitleaks_${version}_linux_x64.tar.gz
 
