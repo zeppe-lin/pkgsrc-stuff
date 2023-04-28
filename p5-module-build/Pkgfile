@@ -4,7 +4,7 @@
 # Optional:    p5-inc-latest
 
 name=p5-module-build
-version=0.42_33
+version=0.4234
 release=1
 source=https://cpan.metacpan.org/authors/id/L/LE/LEONT/Module-Build-$version.tar.gz
 
