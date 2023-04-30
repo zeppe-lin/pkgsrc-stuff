@@ -3,9 +3,9 @@
 # Depends on:  p5-file-listing p5-html-parser p5-http-cookies p5-http-daemon p5-http-negotiate p5-net-http p5-test-requiresinternet p5-www-robotrules
 
 name=p5-libwww
-version=6.68
+version=6.70
 release=1
-source=https://cpan.metacpan.org/authors/id/O/OA/OALDERS/libwww-perl-$version.tar.gz
+source=https://cpan.metacpan.org/authors/id/S/SI/SIMBABQUE/libwww-perl-$version.tar.gz
 
 build() {
 	cd libwww-perl-$version
