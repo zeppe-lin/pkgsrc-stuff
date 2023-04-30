@@ -1,0 +1,25 @@
+# Description: Minimalist HTTP user agent cookie jar
+# URL:         https://metacpan.org/pod/HTTP::CookieJar
+# Depends on:  p5-http-date
+
+name=p5-http-cookiejar
+version=0.014
+release=1
+source=https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/HTTP-CookieJar-$version.tar.gz
+
+build() {
+	cd HTTP-CookieJar-$version
+
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make V=1
+	make DESTDIR=$PKG install
+
+	# remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			\) -delete ,            \
+		-type d -empty -delete
+}
