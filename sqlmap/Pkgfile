@@ -3,12 +3,12 @@
 # Depends on:  python3
 
 name=sqlmap
-version=1.7.4
+version=1.7.5
 release=1
 source=https://github.com/sqlmapproject/$name/archive/$version/$name-$version.tar.gz
 
 build() {
-	sed -i '1 s/python/python3/' $name-$version/sqlmap.py
+	sed -i '1 s/python$/python3/' $name-$version/sqlmap.py
 
 	install -d $PKG/opt $PKG/usr/bin
 	cp -r $name-$version $PKG/opt/$name
