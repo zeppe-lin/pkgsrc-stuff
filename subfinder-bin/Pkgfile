@@ -1,4 +1,4 @@
-# Description: Subdomain discovery tool that discovers valid subdomains for websites
+# Description: Discover valid subdomains for websites
 # URL:         https://github.com/projectdiscovery/subfinder
 
 name=subfinder-bin
