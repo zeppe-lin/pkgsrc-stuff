@@ -162,13 +162,6 @@ drwxr-xr-x	root/root	opt/holehe/attrs/__pycache__/
 drwxr-xr-x	root/root	opt/holehe/bin/
 -rwxr-xr-x	root/root	opt/holehe/bin/httpx
 -rwxr-xr-x	root/root	opt/holehe/bin/tqdm
-drwxr-xr-x	root/root	opt/holehe/bs4-0.0.1-py3.9.egg-info/
--rw-r--r--	root/root	opt/holehe/bs4-0.0.1-py3.9.egg-info/PKG-INFO
--rw-r--r--	root/root	opt/holehe/bs4-0.0.1-py3.9.egg-info/SOURCES.txt
--rw-r--r--	root/root	opt/holehe/bs4-0.0.1-py3.9.egg-info/dependency_links.txt
--rw-r--r--	root/root	opt/holehe/bs4-0.0.1-py3.9.egg-info/installed-files.txt
--rw-r--r--	root/root	opt/holehe/bs4-0.0.1-py3.9.egg-info/requires.txt
--rw-r--r--	root/root	opt/holehe/bs4-0.0.1-py3.9.egg-info/top_level.txt
 drwxr-xr-x	root/root	opt/holehe/bs4/
 -rw-r--r--	root/root	opt/holehe/bs4/__init__.py
 drwxr-xr-x	root/root	opt/holehe/bs4/__pycache__/
