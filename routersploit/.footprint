@@ -1107,6 +1107,7 @@ drwxr-xr-x	root/root	opt/routersploit/bin/
 drwxr-xr-x	root/root	opt/routersploit/bin/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/bin/__pycache__/mibcopy.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/bin/__pycache__/mibdump.cpython-39.pyc
+-rw-r--r--	root/root	opt/routersploit/bin/__pycache__/rsf.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/bin/futurize
 -rw-r--r--	root/root	opt/routersploit/bin/mibcopy.py
 -rw-r--r--	root/root	opt/routersploit/bin/mibdump.py
@@ -3562,6 +3563,7 @@ drwxr-xr-x	root/root	opt/routersploit/pyasn1/codec/
 -rw-r--r--	root/root	opt/routersploit/pyasn1/codec/__init__.py
 drwxr-xr-x	root/root	opt/routersploit/pyasn1/codec/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/pyasn1/codec/__pycache__/__init__.cpython-39.pyc
+-rw-r--r--	root/root	opt/routersploit/pyasn1/codec/__pycache__/streaming.cpython-39.pyc
 drwxr-xr-x	root/root	opt/routersploit/pyasn1/codec/ber/
 -rw-r--r--	root/root	opt/routersploit/pyasn1/codec/ber/__init__.py
 drwxr-xr-x	root/root	opt/routersploit/pyasn1/codec/ber/__pycache__/
@@ -3596,22 +3598,15 @@ drwxr-xr-x	root/root	opt/routersploit/pyasn1/codec/native/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/pyasn1/codec/native/__pycache__/encoder.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/pyasn1/codec/native/decoder.py
 -rw-r--r--	root/root	opt/routersploit/pyasn1/codec/native/encoder.py
+-rw-r--r--	root/root	opt/routersploit/pyasn1/codec/streaming.py
 drwxr-xr-x	root/root	opt/routersploit/pyasn1/compat/
 -rw-r--r--	root/root	opt/routersploit/pyasn1/compat/__init__.py
 drwxr-xr-x	root/root	opt/routersploit/pyasn1/compat/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/pyasn1/compat/__pycache__/__init__.cpython-39.pyc
--rw-r--r--	root/root	opt/routersploit/pyasn1/compat/__pycache__/binary.cpython-39.pyc
--rw-r--r--	root/root	opt/routersploit/pyasn1/compat/__pycache__/calling.cpython-39.pyc
--rw-r--r--	root/root	opt/routersploit/pyasn1/compat/__pycache__/dateandtime.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/pyasn1/compat/__pycache__/integer.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/pyasn1/compat/__pycache__/octets.cpython-39.pyc
--rw-r--r--	root/root	opt/routersploit/pyasn1/compat/__pycache__/string.cpython-39.pyc
--rw-r--r--	root/root	opt/routersploit/pyasn1/compat/binary.py
--rw-r--r--	root/root	opt/routersploit/pyasn1/compat/calling.py
--rw-r--r--	root/root	opt/routersploit/pyasn1/compat/dateandtime.py
 -rw-r--r--	root/root	opt/routersploit/pyasn1/compat/integer.py
 -rw-r--r--	root/root	opt/routersploit/pyasn1/compat/octets.py
--rw-r--r--	root/root	opt/routersploit/pyasn1/compat/string.py
 -rw-r--r--	root/root	opt/routersploit/pyasn1/debug.py
 -rw-r--r--	root/root	opt/routersploit/pyasn1/error.py
 drwxr-xr-x	root/root	opt/routersploit/pyasn1/type/
@@ -5487,7 +5482,9 @@ drwxr-xr-x	root/root	opt/routersploit/urllib3/
 -rw-r--r--	root/root	opt/routersploit/urllib3/__init__.py
 drwxr-xr-x	root/root	opt/routersploit/urllib3/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/urllib3/__pycache__/__init__.cpython-39.pyc
+-rw-r--r--	root/root	opt/routersploit/urllib3/__pycache__/_base_connection.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/urllib3/__pycache__/_collections.cpython-39.pyc
+-rw-r--r--	root/root	opt/routersploit/urllib3/__pycache__/_request_methods.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/urllib3/__pycache__/_version.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/urllib3/__pycache__/connection.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/urllib3/__pycache__/connectionpool.cpython-39.pyc
@@ -5495,9 +5492,10 @@ drwxr-xr-x	root/root	opt/routersploit/urllib3/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/urllib3/__pycache__/fields.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/urllib3/__pycache__/filepost.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/urllib3/__pycache__/poolmanager.cpython-39.pyc
--rw-r--r--	root/root	opt/routersploit/urllib3/__pycache__/request.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/urllib3/__pycache__/response.cpython-39.pyc
+-rw-r--r--	root/root	opt/routersploit/urllib3/_base_connection.py
 -rw-r--r--	root/root	opt/routersploit/urllib3/_collections.py
+-rw-r--r--	root/root	opt/routersploit/urllib3/_request_methods.py
 -rw-r--r--	root/root	opt/routersploit/urllib3/_version.py
 -rw-r--r--	root/root	opt/routersploit/urllib3/connection.py
 -rw-r--r--	root/root	opt/routersploit/urllib3/connectionpool.py
@@ -5505,13 +5503,9 @@ drwxr-xr-x	root/root	opt/routersploit/urllib3/contrib/
 -rw-r--r--	root/root	opt/routersploit/urllib3/contrib/__init__.py (EMPTY)
 drwxr-xr-x	root/root	opt/routersploit/urllib3/contrib/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/urllib3/contrib/__pycache__/__init__.cpython-39.pyc
--rw-r--r--	root/root	opt/routersploit/urllib3/contrib/__pycache__/_appengine_environ.cpython-39.pyc
--rw-r--r--	root/root	opt/routersploit/urllib3/contrib/__pycache__/appengine.cpython-39.pyc
--rw-r--r--	root/root	opt/routersploit/urllib3/contrib/__pycache__/ntlmpool.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/urllib3/contrib/__pycache__/pyopenssl.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/urllib3/contrib/__pycache__/securetransport.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/urllib3/contrib/__pycache__/socks.cpython-39.pyc
--rw-r--r--	root/root	opt/routersploit/urllib3/contrib/_appengine_environ.py
 drwxr-xr-x	root/root	opt/routersploit/urllib3/contrib/_securetransport/
 -rw-r--r--	root/root	opt/routersploit/urllib3/contrib/_securetransport/__init__.py (EMPTY)
 drwxr-xr-x	root/root	opt/routersploit/urllib3/contrib/_securetransport/__pycache__/
@@ -5520,28 +5514,14 @@ drwxr-xr-x	root/root	opt/routersploit/urllib3/contrib/_securetransport/__pycache
 -rw-r--r--	root/root	opt/routersploit/urllib3/contrib/_securetransport/__pycache__/low_level.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/urllib3/contrib/_securetransport/bindings.py
 -rw-r--r--	root/root	opt/routersploit/urllib3/contrib/_securetransport/low_level.py
--rw-r--r--	root/root	opt/routersploit/urllib3/contrib/appengine.py
--rw-r--r--	root/root	opt/routersploit/urllib3/contrib/ntlmpool.py
 -rw-r--r--	root/root	opt/routersploit/urllib3/contrib/pyopenssl.py
 -rw-r--r--	root/root	opt/routersploit/urllib3/contrib/securetransport.py
 -rw-r--r--	root/root	opt/routersploit/urllib3/contrib/socks.py
 -rw-r--r--	root/root	opt/routersploit/urllib3/exceptions.py
 -rw-r--r--	root/root	opt/routersploit/urllib3/fields.py
 -rw-r--r--	root/root	opt/routersploit/urllib3/filepost.py
-drwxr-xr-x	root/root	opt/routersploit/urllib3/packages/
--rw-r--r--	root/root	opt/routersploit/urllib3/packages/__init__.py (EMPTY)
-drwxr-xr-x	root/root	opt/routersploit/urllib3/packages/__pycache__/
--rw-r--r--	root/root	opt/routersploit/urllib3/packages/__pycache__/__init__.cpython-39.pyc
--rw-r--r--	root/root	opt/routersploit/urllib3/packages/__pycache__/six.cpython-39.pyc
-drwxr-xr-x	root/root	opt/routersploit/urllib3/packages/backports/
--rw-r--r--	root/root	opt/routersploit/urllib3/packages/backports/__init__.py (EMPTY)
-drwxr-xr-x	root/root	opt/routersploit/urllib3/packages/backports/__pycache__/
--rw-r--r--	root/root	opt/routersploit/urllib3/packages/backports/__pycache__/__init__.cpython-39.pyc
--rw-r--r--	root/root	opt/routersploit/urllib3/packages/backports/__pycache__/makefile.cpython-39.pyc
--rw-r--r--	root/root	opt/routersploit/urllib3/packages/backports/makefile.py
--rw-r--r--	root/root	opt/routersploit/urllib3/packages/six.py
 -rw-r--r--	root/root	opt/routersploit/urllib3/poolmanager.py
--rw-r--r--	root/root	opt/routersploit/urllib3/request.py
+-rw-r--r--	root/root	opt/routersploit/urllib3/py.typed
 -rw-r--r--	root/root	opt/routersploit/urllib3/response.py
 drwxr-xr-x	root/root	opt/routersploit/urllib3/util/
 -rw-r--r--	root/root	opt/routersploit/urllib3/util/__init__.py
@@ -5549,7 +5529,6 @@ drwxr-xr-x	root/root	opt/routersploit/urllib3/util/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/urllib3/util/__pycache__/__init__.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/urllib3/util/__pycache__/connection.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/urllib3/util/__pycache__/proxy.cpython-39.pyc
--rw-r--r--	root/root	opt/routersploit/urllib3/util/__pycache__/queue.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/urllib3/util/__pycache__/request.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/urllib3/util/__pycache__/response.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/urllib3/util/__pycache__/retry.cpython-39.pyc
@@ -5558,10 +5537,10 @@ drwxr-xr-x	root/root	opt/routersploit/urllib3/util/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/urllib3/util/__pycache__/ssltransport.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/urllib3/util/__pycache__/timeout.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/urllib3/util/__pycache__/url.cpython-39.pyc
+-rw-r--r--	root/root	opt/routersploit/urllib3/util/__pycache__/util.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/urllib3/util/__pycache__/wait.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/urllib3/util/connection.py
 -rw-r--r--	root/root	opt/routersploit/urllib3/util/proxy.py
--rw-r--r--	root/root	opt/routersploit/urllib3/util/queue.py
 -rw-r--r--	root/root	opt/routersploit/urllib3/util/request.py
 -rw-r--r--	root/root	opt/routersploit/urllib3/util/response.py
 -rw-r--r--	root/root	opt/routersploit/urllib3/util/retry.py
@@ -5570,6 +5549,7 @@ drwxr-xr-x	root/root	opt/routersploit/urllib3/util/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/urllib3/util/ssltransport.py
 -rw-r--r--	root/root	opt/routersploit/urllib3/util/timeout.py
 -rw-r--r--	root/root	opt/routersploit/urllib3/util/url.py
+-rw-r--r--	root/root	opt/routersploit/urllib3/util/util.py
 -rw-r--r--	root/root	opt/routersploit/urllib3/util/wait.py
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
