@@ -3,7 +3,7 @@
 # Depends on:  capstone file xxhash
 
 name=radare2
-version=5.8.4
+version=5.8.6
 release=1
 source=https://github.com/radare/$name/archive/$version/$name-$version.tar.gz
 
