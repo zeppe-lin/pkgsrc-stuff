@@ -6,7 +6,7 @@
 # https://www.php.net/supported-versions.php
 
 name=php-gd
-version=8.1.18
+version=8.1.19
 release=1
 source=https://www.php.net/distributions/php-$version.tar.xz
 
