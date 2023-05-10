@@ -3,7 +3,7 @@
 # Depends on:  tree
 
 name=shuffledns-bin
-version=1.0.8
+version=1.0.9
 release=1
 source=https://github.com/projectdiscovery/shuffledns/releases/download/v$version/shuffledns_${version}_linux_amd64.zip
 
