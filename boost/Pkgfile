@@ -1,10 +1,10 @@
 # Description: Free peer-reviewed portable C++ source libraries
-# URL:         https://www.boost.org/
+# URL:         https://www.boost.org
 # Depends on:  bzip2 zstd
 # Optional:    icu openmpi python3-numpy
 
 name=boost
-version=1.81.0
+version=1.82.0
 _version=$(echo $version | sed 's/\./_/g')
 release=1
 source="https://boostorg.jfrog.io/artifactory/main/release/$version/source/${name}_${_version}.tar.bz2
