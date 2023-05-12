@@ -4977,6 +4977,13 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/kubernetes/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/kubernetes/output/json.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/kubernetes/output/table.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/kubernetes/secret.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/manage_engine_adaudit_plus.rb
+drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/manage_engine_adaudit_plus/
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/manage_engine_adaudit_plus/json_post_data.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/manage_engine_adaudit_plus/login.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/manage_engine_adaudit_plus/status_codes.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/manage_engine_adaudit_plus/target_info.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/manage_engine_adaudit_plus/uris.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/moodle.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/moodle/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/moodle/admin.rb
@@ -6277,6 +6284,8 @@ drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/http/
 drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/http/handler/
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/http/handler/erb.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/http/handler/proc.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/http/http_logger_subscriber.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/http/http_subscriber.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/http/packet.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/http/packet/
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/http/packet/header.rb
@@ -8423,6 +8432,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/zimbra_mboximport_cve_2022_27925.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/zimbra_unrar_cve_2022_30333.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/zimbra_xxe_rce.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/zyxel_lfi_unauth_ssh_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/zyxel_ztp_rce.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/ids/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/ids/alienvault_centerd_soap_exec.rb
@@ -8829,6 +8839,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/orientdb_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/oscommerce_installer_unauth_code_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/pandora_upload_exec.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/pentaho_business_server_authbypass_and_ssti.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/phoenix_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/php_cgi_arg_injection.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/php_fpm_rce.rb
@@ -10038,6 +10049,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/windows/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/lexmark_markvision_gfd_upload.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/mailenable_auth_header.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/manage_engine_opmanager_rce.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/manageengine_adaudit_plus_authenticated_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/manageengine_adaudit_plus_cve_2022_28219.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/manageengine_adselfservice_plus_cve_2021_40539.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/manageengine_adselfservice_plus_cve_2022_28810.rb
@@ -12169,6 +12181,7 @@ drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/gss/kerberos/
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/http/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/http/client_request_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/http/client_spec.rb
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/http/http_logger_subscriber_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/http/packet/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/http/packet/header_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/http/packet_spec.rb
