@@ -1,14 +1,14 @@
 # Description: In-depth attack surface mapping and asset discovery
-# URL:         https://github.com/OWASP/Amass
-# Depends on:  tree
+# URL:         https://github.com/owasp-amass
+# Depends on:  tree unzip
 
 name=amass-bin
-version=3.22.2
+version=3.23.2
 release=1
 source=$name-$version-x86_64.zip
 
 build() {
-	cd amass_linux_*
+	cd amass_Linux_amd64
 
 	tree .
 
