@@ -3,7 +3,7 @@
 # Depends on:  inetutils libpcap postgresql ruby sqlite3
 
 name=metasploit
-version=6.3.16
+version=6.3.17
 release=1
 source=https://github.com/rapid7/$name-framework/archive/$version/$name-$version.tar.gz
 
@@ -22,6 +22,7 @@ build() {
 	bundle config set --local path vendor/bundle
 	bundle config set --local without development test
 	sed 's|git ls-files|find -type f|' -i metasploit-framework.gemspec
+	export TMPDIR="$PKGMK_WORK_DIR"
 	CFLAGS="$CFLAGS -I/usr/include/libxml2"
 	bundle install -j ${JOBS:-1}
 
