@@ -1,8 +1,8 @@
 # Description: Asynchronous C DNS library
-# URL:         https://c-ares.haxx.se/
+# URL:         https://c-ares.haxx.se
 
 name=c-ares
-version=1.19.0
+version=1.19.1
 release=1
 source=https://$name.haxx.se/download/$name-$version.tar.gz
 
