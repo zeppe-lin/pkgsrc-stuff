@@ -41,7 +41,7 @@ drwxr-xr-x	root/root	opt/zaproxy/plugin/
 -rw-r--r--	root/root	opt/zaproxy/plugin/alertFilters-release-16.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/ascanrules-release-55.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/ascanrulesBeta-beta-47.zap
--rw-r--r--	root/root	opt/zaproxy/plugin/authhelper-alpha-0.7.0.zap
+-rw-r--r--	root/root	opt/zaproxy/plugin/authhelper-beta-0.8.0.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/automation-beta-0.29.0.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/bruteforce-beta-13.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/callhome-release-0.7.0.zap
@@ -50,7 +50,7 @@ drwxr-xr-x	root/root	opt/zaproxy/plugin/
 -rw-r--r--	root/root	opt/zaproxy/plugin/database-alpha-0.2.0.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/diff-beta-13.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/directorylistv1-release-6.zap
--rw-r--r--	root/root	opt/zaproxy/plugin/domxss-release-15.zap
+-rw-r--r--	root/root	opt/zaproxy/plugin/domxss-release-16.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/encoder-release-1.2.0.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/exim-beta-0.6.0.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/formhandler-beta-6.3.0.zap
@@ -77,7 +77,7 @@ drwxr-xr-x	root/root	opt/zaproxy/plugin/
 -rw-r--r--	root/root	opt/zaproxy/plugin/retire-release-0.23.0.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/reveal-release-6.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/scripts-release-39.zap
--rw-r--r--	root/root	opt/zaproxy/plugin/selenium-release-15.12.0.zap
+-rw-r--r--	root/root	opt/zaproxy/plugin/selenium-release-15.13.0.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/sequence-alpha-7.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/soap-beta-18.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/spider-release-0.5.0.zap
@@ -121,7 +121,7 @@ drwxr-xr-x	root/root	opt/zaproxy/xml/
 -rw-r--r--	root/root	opt/zaproxy/xml/config.xml
 -rw-r--r--	root/root	opt/zaproxy/xml/drivers.dtd
 -rw-r--r--	root/root	opt/zaproxy/xml/reportCompare.xsl
--rw-r--r--	root/root	opt/zaproxy/zap-D-2023-05-15.jar
+-rw-r--r--	root/root	opt/zaproxy/zap-D-2023-05-30.jar
 -rwxr-xr-x	root/root	opt/zaproxy/zap.sh
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
