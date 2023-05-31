@@ -1,13 +1,12 @@
 # Description: Configurable targeted scanning based on templates
 # URL:         https://github.com/projectdiscovery/nuclei
-# Depends on:  tree
 
 name=nuclei-bin
-version=2.9.4
+version=2.9.5
 release=1
 source=https://github.com/projectdiscovery/nuclei/releases/download/v$version/nuclei_${version}_linux_amd64.zip
 
 build() {
-	tree .
+	ls -la .
 	install -m 0755 -Dt $PKG/usr/bin/ nuclei
 }
