@@ -4598,6 +4598,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/base/serializer/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/base/serializer/json.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/base/serializer/readable_text.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/base/sessions/
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/base/sessions/aws_ssm_command_shell_bind.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/base/sessions/command_shell.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/base/sessions/command_shell_options.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/base/sessions/command_shell_unix.rb
@@ -5206,6 +5207,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/sqli/utils/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/general_event_subscriber.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/handler.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/handler/
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/handler/bind_aws_ssm.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/handler/bind_named_pipe.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/handler/bind_sctp.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/handler/bind_tcp.rb
@@ -6310,6 +6312,8 @@ drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/http/packet/
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/http/response.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/http/server.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/http/web_socket.rb
+drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/http/web_socket/
+-rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/http/web_socket/amazon_ssm.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/iax2/
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/iax2/call.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/iax2/client.rb
@@ -6885,6 +6889,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/cloud/aws/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/cloud/aws/enum_ec2.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/cloud/aws/enum_iam.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/cloud/aws/enum_s3.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/cloud/aws/enum_ssm.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/cloud/kubernetes/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/cloud/kubernetes/enum_kubernetes.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/crawler/
@@ -6910,6 +6915,8 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/dos/dns/
 drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/dos/freebsd/
 drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/dos/freebsd/nfsd/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/dos/freebsd/nfsd/nfsd_mount.rb
+drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/dos/ftp/
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/dos/ftp/vsftpd_232.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/dos/hp/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/dos/hp/data_protector_rds.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/dos/http/
@@ -7297,10 +7304,13 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/apache_activemq_traversal.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/apache_flink_jobmanager_traversal.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/apache_mod_cgi_bash_env.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/apache_nifi_login.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/apache_nifi_version.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/apache_normalize_path.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/apache_optionsbleed.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/apache_userdir_enum.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/appletv_login.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/archer_c7_traversal.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/atlassian_crowd_fileaccess.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/axis_local_file_include.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/axis_login.rb
@@ -7354,6 +7364,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/dlink_user_agent_backdoor.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/dnalims_file_retrieve.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/docker_version.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/dolibarr_16_contact_dump.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/dolibarr_login.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/drupal_views_user_enum.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/ektron_cms400net.rb
@@ -10788,6 +10799,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/payloads/singles/firefox/
 drwxrwxr-x	root/root	opt/metasploit/modules/payloads/singles/generic/
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/generic/custom.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/generic/debug_trap.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/generic/shell_bind_aws_ssm.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/generic/shell_bind_tcp.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/generic/shell_reverse_tcp.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/payloads/singles/generic/ssh/
@@ -14696,6 +14708,22 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-s3-1.120
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-s3-1.120.1/lib/aws-sdk-s3/resource.rb
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-s3-1.120.1/lib/aws-sdk-s3/types.rb
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-s3-1.120.1/lib/aws-sdk-s3/waiters.rb
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ssm-1.146.0/
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ssm-1.146.0/lib/
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ssm-1.146.0/lib/aws-sdk-ssm.rb
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ssm-1.146.0/lib/aws-sdk-ssm/
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ssm-1.146.0/lib/aws-sdk-ssm/client.rb
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ssm-1.146.0/lib/aws-sdk-ssm/client_api.rb
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ssm-1.146.0/lib/aws-sdk-ssm/customizations.rb
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ssm-1.146.0/lib/aws-sdk-ssm/endpoint_parameters.rb
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ssm-1.146.0/lib/aws-sdk-ssm/endpoint_provider.rb
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ssm-1.146.0/lib/aws-sdk-ssm/endpoints.rb
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ssm-1.146.0/lib/aws-sdk-ssm/errors.rb
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ssm-1.146.0/lib/aws-sdk-ssm/plugins/
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ssm-1.146.0/lib/aws-sdk-ssm/plugins/endpoints.rb
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ssm-1.146.0/lib/aws-sdk-ssm/resource.rb
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ssm-1.146.0/lib/aws-sdk-ssm/types.rb
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ssm-1.146.0/lib/aws-sdk-ssm/waiters.rb
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sigv4-1.5.2/
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sigv4-1.5.2/lib/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sigv4-1.5.2/lib/aws-sigv4.rb
@@ -26487,6 +26515,7 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/specifications/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/specifications/aws-sdk-iam-1.77.0.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/specifications/aws-sdk-kms-1.63.0.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/specifications/aws-sdk-s3-1.120.1.gemspec
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/specifications/aws-sdk-ssm-1.146.0.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/specifications/aws-sigv4-1.5.2.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/specifications/bcrypt-3.1.18.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/specifications/bcrypt_pbkdf-1.1.0.gemspec
