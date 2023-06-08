@@ -3,7 +3,7 @@
 # Depends on:  libpcap
 
 name=masscan
-version=1.3.2-144c527
+version=1.3.2-9065684
 release=1
 source=https://github.com/robertdavidgraham/$name/archive/${version#*-}/$name-${version#*-}.tar.gz
 
