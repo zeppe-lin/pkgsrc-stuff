@@ -1,9 +1,9 @@
 # Description: Framework for reversing binaries
-# URL:         https://radare.org/
+# URL:         https://radare.org
 # Depends on:  capstone file xxhash
 
 name=radare2
-version=5.8.6
+version=5.8.8
 release=1
 source=https://github.com/radare/$name/archive/$version/$name-$version.tar.gz
 
@@ -11,12 +11,12 @@ build() {
 	# build in separate dir is broken
 	cd $name-$version
 
-	./configure                  \
-		--prefix=/usr        \
-		--with-sysmagic      \
-		--with-syscapstone   \
-		--with-syszip        \
-		--with-sysxxhash     \
+	./configure                 \
+		--prefix=/usr       \
+		--with-sysmagic     \
+		--with-syscapstone  \
+		--with-syszip       \
+		--with-sysxxhash    \
 
 	make V=1
 	make DESTDIR=$PKG install
