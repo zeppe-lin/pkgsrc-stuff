@@ -3,11 +3,14 @@
 # Depends on:  curl libxslt ruby
 
 name=wpscan
-version=3.8.22
+version=3.8.24
 release=1
 source=https://github.com/wpscanteam/$name/archive/v$version/$name-$version.tar.gz
 
 build() {
+	export TMPDIR="$PKGMK_WORK_DIR"
+	export CFLAGS="$CFLAGS -I/usr/include/libxml2"
+
 	install -d $PKG/usr/bin $PKG/opt
 
 	cp -a $name-$version $PKG/opt/$name
@@ -19,8 +22,7 @@ build() {
 	bundle config set no-cache true
 	bundle config set --local path vendor/bundle
 	bundle config set --local without development test
-	sed 's|git ls-files|find -type f|' -i $name.gemspec
-	CFLAGS="$CFLAGS -I/usr/include/libxml2"
+	sed -i 's|git ls-files|find -type f|' $name.gemspec
 	bundle install -j ${JOBS:-1}
 
 	# reproducible builds: don't leak jobs count
