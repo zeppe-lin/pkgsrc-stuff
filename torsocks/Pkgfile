@@ -1,32 +1,25 @@
 # Description: Wrapper to safely torify applications
-# URL:         https://gitweb.torproject.org/torsocks.git
+# URL:         https://gitlab.torproject.org/tpo/core/torsocks/
 # Optional:    tor
 
 name=torsocks
-version=2.3.0
+version=2.4.0
 release=1
-source="https://people.torproject.org/~dgoulet/$name/$name-$version.tar.xz
-	4c00ec8773fd63fa48ef49e1ccf2adac598427be.patch
-	d4b0a84bdf2a1895c8ec3091dc2767fd9f8c2d66.patch
-	fb7db9ecd0be04385ad5ae40e6e802cd80bb3455.patch"
+source=https://gitlab.torproject.org/tpo/core/$name/-/archive/v$version/$name-v$version.tar.gz
 
 build() {
-	cd $name-$version
-
 	# disable tests requiring network access
 	for test in dns fd_passing getpeername; do
-		sed -i -e "/^\ttest_${test} \\\\\$/d" tests/Makefile.am || \
-		{ echo 1>&2 "Failed to disable network tests!"; exit 1; }
+		sed -e "/^\ttest_${test} \\\\\$/d" \
+		    -i $name-v$version/tests/Makefile.am
 	done
 
-	patch -p1 -i $SRC/4c00ec8773fd63fa48ef49e1ccf2adac598427be.patch
-	patch -p1 -i $SRC/d4b0a84bdf2a1895c8ec3091dc2767fd9f8c2d66.patch
-	patch -p1 -i $SRC/fb7db9ecd0be04385ad5ae40e6e802cd80bb3455.patch
+	mkdir build; cd build
 
-	autoreconf -f -i
-	./configure \
-		--prefix=/usr     \
-		--sysconfdir=/etc \
+	autoreconf -fi ../$name-v$version
+	../$name-v$version/configure  \
+		--prefix=/usr         \
+		--sysconfdir=/etc     \
 
 	make V=1
 	make DESTDIR=$PKG install
