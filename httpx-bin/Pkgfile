@@ -1,13 +1,12 @@
 # Description: Fast and multi-purpose HTTP toolkit
 # URL:         https://github.com/projectdiscovery/httpx
-# Depends on:  tree
 
 name=httpx-bin
-version=1.3.1
+version=1.3.2
 release=1
 source=https://github.com/projectdiscovery/httpx/releases/download/v${version}/httpx_${version}_linux_amd64.zip
 
 build() {
-	tree .
+	ls -la .
 	install -m 0755 -Dt $PKG/usr/bin/ httpx
 }
