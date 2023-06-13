@@ -3,7 +3,7 @@
 # Depends on:  jdk11-bin
 
 name=zaproxy-bin
-version=2023-06-06
+version=2023-06-12
 release=1
 source=https://github.com/zaproxy/zaproxy/releases/download/w$version/ZAP_WEEKLY_D-$version.zip
 

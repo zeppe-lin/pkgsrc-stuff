@@ -38,7 +38,7 @@ drwxr-xr-x	root/root	opt/zaproxy/lib/
 -rw-r--r--	root/root	opt/zaproxy/lib/xom-1.3.8.jar
 drwxr-xr-x	root/root	opt/zaproxy/plugin/
 -rw-r--r--	root/root	opt/zaproxy/plugin/accessControl-alpha-9.zap
--rw-r--r--	root/root	opt/zaproxy/plugin/alertFilters-release-16.zap
+-rw-r--r--	root/root	opt/zaproxy/plugin/alertFilters-release-17.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/ascanrules-release-56.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/ascanrulesBeta-beta-47.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/authhelper-beta-0.9.0.zap
@@ -71,7 +71,7 @@ drwxr-xr-x	root/root	opt/zaproxy/plugin/
 -rw-r--r--	root/root	opt/zaproxy/plugin/pscanrulesBeta-beta-34.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/quickstart-release-38.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/replacer-release-13.zap
--rw-r--r--	root/root	opt/zaproxy/plugin/reports-release-0.22.0.zap
+-rw-r--r--	root/root	opt/zaproxy/plugin/reports-release-0.23.0.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/requester-beta-7.3.0.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/retest-alpha-0.6.0.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/retire-release-0.24.0.zap
@@ -121,7 +121,7 @@ drwxr-xr-x	root/root	opt/zaproxy/xml/
 -rw-r--r--	root/root	opt/zaproxy/xml/config.xml
 -rw-r--r--	root/root	opt/zaproxy/xml/drivers.dtd
 -rw-r--r--	root/root	opt/zaproxy/xml/reportCompare.xsl
--rw-r--r--	root/root	opt/zaproxy/zap-D-2023-06-06.jar
+-rw-r--r--	root/root	opt/zaproxy/zap-D-2023-06-12.jar
 -rwxr-xr-x	root/root	opt/zaproxy/zap.sh
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
