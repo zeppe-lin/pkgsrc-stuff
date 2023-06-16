@@ -3,7 +3,7 @@
 # Depends on:  p5-uri
 
 name=p5-net-http
-version=6.22
+version=6.23
 release=1
 source=https://cpan.metacpan.org/authors/id/O/OA/OALDERS/Net-HTTP-$version.tar.gz
 
