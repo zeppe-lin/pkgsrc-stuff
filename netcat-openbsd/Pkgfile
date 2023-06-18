@@ -1,6 +1,6 @@
 # Description: Netcat from OpenBSD rewritten by Debian
 # URL:         https://tracker.debian.org/pkg/netcat-openbsd
-# Depends on:  libbsd gnutls
+# Depends on:  libbsd libmd
 
 name=netcat-openbsd
 version=1.225-1
