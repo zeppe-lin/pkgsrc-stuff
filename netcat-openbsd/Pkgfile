@@ -3,7 +3,7 @@
 # Depends on:  libbsd gnutls
 
 name=netcat-openbsd
-version=1.219-1
+version=1.225-1
 release=1
 source="http://http.debian.net/debian/pool/main/n/$name/${name}_${version%%-*}.orig.tar.gz
 	http://http.debian.net/debian/pool/main/n/$name/${name}_$version.debian.tar.xz"
@@ -19,6 +19,6 @@ build() {
 
 	make CFLAGS="$CFLAGS -DDEBIAN_VERSION=\"\\\"$version\\\"\" -I/usr/include/libbsd" LDFLAGS="$LDFLAGS -lbsd"
 
-	install -m 0755 -Dt $PKG/usr/bin/ nc
+	install -m 0755 -Dt $PKG/usr/bin/            nc
 	install -m 0644 -Dt $PKG/usr/share/man/man1/ nc.1
 }
