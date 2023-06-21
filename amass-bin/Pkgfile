@@ -3,7 +3,7 @@
 # Depends on:  tree unzip
 
 name=amass-bin
-version=3.23.2
+version=3.23.3
 release=1
 source=$name-$version-x86_64.zip
 
