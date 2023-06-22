@@ -3,7 +3,7 @@
 # Depends on:  libpcre
 
 name=cppcheck
-version=2.10.3
+version=2.11
 release=1
 source=https://github.com/danmar/$name/archive/$version/$name-$version.tar.gz
 
@@ -17,7 +17,7 @@ build() {
 		FILESDIR=/usr/share/cppcheck DESTDIR=$PKG
 
 	# htmlreport depends on python stuff (pygments) but has no
-	# benefit
+	# benefit for us
 	rm $PKG/usr/bin/cppcheck-htmlreport
 
 	# Man pages requires dockbook-{xml,xsl}, skip that shit.
