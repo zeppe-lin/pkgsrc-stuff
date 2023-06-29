@@ -52,9 +52,9 @@ drwxr-xr-x	root/root	usr/lib/hwloc/
 -rwxr-xr-x	root/root	usr/lib/hwloc/hwloc_xml_libxml.la
 -rwxr-xr-x	root/root	usr/lib/hwloc/hwloc_xml_libxml.so
 -rwxr-xr-x	root/root	usr/lib/libhwloc.la
-lrwxrwxrwx	root/root	usr/lib/libhwloc.so -> libhwloc.so.15.6.2
-lrwxrwxrwx	root/root	usr/lib/libhwloc.so.15 -> libhwloc.so.15.6.2
--rwxr-xr-x	root/root	usr/lib/libhwloc.so.15.6.2
+lrwxrwxrwx	root/root	usr/lib/libhwloc.so -> libhwloc.so.15.6.3
+lrwxrwxrwx	root/root	usr/lib/libhwloc.so.15 -> libhwloc.so.15.6.3
+-rwxr-xr-x	root/root	usr/lib/libhwloc.so.15.6.3
 -rwxr-xr-x	root/root	usr/lib/libnetloc.la
 lrwxrwxrwx	root/root	usr/lib/libnetloc.so -> libnetloc.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libnetloc.so.0 -> libnetloc.so.0.0.0
@@ -512,6 +512,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/hwloc_windows_get_nr_processor_groups.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/hwloc_windows_get_processor_group_cpuset.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/hwlocality_advanced_io.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/hwlocality_api_error_reporting.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/hwlocality_api_version.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/hwlocality_bitmap.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/hwlocality_configuration.3.gz
