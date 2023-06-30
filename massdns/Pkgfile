@@ -2,7 +2,7 @@
 # URL:         https://github.com/blechschmidt/massdns
 
 name=massdns
-version=1.0.0-164fd41
+version=1.0.0-9f6294e
 release=1
 source=https://github.com/blechschmidt/$name/archive/${version##*-}/$name-${version##*-}.tar.gz
 
@@ -19,4 +19,10 @@ build() {
 	# additional helpers
 	install -d $PKG/usr/share/$name
 	cp -Pr scripts lists $PKG/usr/share/$name
+
+	# remove junk
+	cd $PKG/usr/share/$name/scripts/
+	# depends on python3 requests module and duplicates
+	# get-resolvers.sh
+	rm get-resolvers.py requirements.txt
 }

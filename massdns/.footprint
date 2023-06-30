@@ -15,7 +15,6 @@ drwxr-xr-x	root/root	usr/share/massdns/scripts/
 -rwxr-xr-x	root/root	usr/share/massdns/scripts/censys-extract.py
 -rwxr-xr-x	root/root	usr/share/massdns/scripts/ct.py
 -rwxr-xr-x	root/root	usr/share/massdns/scripts/dnsparse.py
--rwxr-xr-x	root/root	usr/share/massdns/scripts/get-resolvers.py
 -rwxr-xr-x	root/root	usr/share/massdns/scripts/get-resolvers.sh
 -rw-r--r--	root/root	usr/share/massdns/scripts/massdnsA.jq
 -rw-r--r--	root/root	usr/share/massdns/scripts/massdnsAAAA.jq
