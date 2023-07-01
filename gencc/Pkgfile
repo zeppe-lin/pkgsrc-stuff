@@ -4,10 +4,10 @@
 name=gencc
 version=0.1.1
 release=1
-source=https://github.com/sighook/gencc/archive/v$version/$name-$version.tar.gz
+source=https://github.com/sighook/gencc/archive/v$version/gencc-$version.tar.gz
 
 build() {
-	cd $name-$version
+	cd gencc-$version
 
 	make PREFIX=/usr DESTDIR=$PKG install
 }
