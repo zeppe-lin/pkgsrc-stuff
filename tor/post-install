@@ -1,5 +1,5 @@
 #!/bin/sh -ex
-export PATH="/usr/sbin:/sbin:/usr/bin:/bin"
+export PATH="/sbin:/usr/sbin:/bin:/usr/bin"
 
 getent group  tor || groupadd -r tor
 getent passwd tor || useradd -g tor -r -d /var/lib/tor -s /bin/false tor
