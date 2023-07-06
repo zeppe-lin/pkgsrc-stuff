@@ -1,9 +1,9 @@
 # Description: Automate the process of exploiting SQL injection flaws
-# URL:         http://sqlmap.org
+# URL:         https://sqlmap.org/
 # Depends on:  python3
 
 name=sqlmap
-version=1.7.6
+version=1.7.7
 release=1
 source=https://github.com/sqlmapproject/$name/archive/$version/$name-$version.tar.gz
 
