@@ -3,13 +3,14 @@
 # Depends on:  p5-timedate
 
 name=p5-http-date
-version=6.05
+version=6.06
 release=1
 source=https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTTP-Date-$version.tar.gz
 
 build() {
 	cd HTTP-Date-$version
 
+	#finddeps-distmeta
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
 	make V=1
