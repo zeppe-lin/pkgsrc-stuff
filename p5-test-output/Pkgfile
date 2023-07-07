@@ -10,7 +10,7 @@ source=https://cpan.metacpan.org/authors/id/B/BD/BDFOY/Test-Output-$version.tar.
 build() {
 	cd Test-Output-$version
 
-	finddeps-distmeta
+	#finddeps-distmeta
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
 	make
