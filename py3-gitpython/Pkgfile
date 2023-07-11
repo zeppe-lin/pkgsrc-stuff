@@ -3,15 +3,18 @@
 # Depends on:  git py3-gitdb
 
 name=py3-gitpython
-version=3.1.31
+version=3.1.32
 release=1
 source=https://github.com/gitpython-developers/GitPython/archive/$version/GitPython-$version.tar.gz
 
 build() {
+	export TMPDIR="$PKGMK_WORK_DIR"
+
 	cd GitPython-$version
 
 	/usr/bin/python3 setup.py build
-	/usr/bin/python3 setup.py install --prefix=/usr --root=$PKG -O2
+	/usr/bin/python3 setup.py install \
+		--skip-build --prefix=/usr --root=$PKG --optimize=2
 
 	# fix perms
 	find $PKG/usr/lib/python*/site-packages/ -type f \
