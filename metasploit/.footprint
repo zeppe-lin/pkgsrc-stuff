@@ -7596,6 +7596,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/wp_simple_backup_file_read.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/wp_subscribe_comments_file_read.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/wp_total_upkeep_downloader.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/wp_woocommerce_payments_add_user.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/wp_wps_hide_login_revealer.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/xpath.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/yaws_traversal.rb
@@ -9228,6 +9229,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/unix/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/http/laravel_token_unserialize_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/http/lifesize_room.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/http/pfsense_clickjacking.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/http/pfsense_config_data_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/http/pfsense_diag_routes_webshell.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/http/pfsense_graph_injection_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/http/pfsense_group_member_exec.rb
@@ -10172,6 +10174,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/windows/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/shoutcast_format.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/shttpd_post.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/sitecore_xp_cve_2021_42237.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/smartermail_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/solarwinds_fsm_userlogin.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/solarwinds_storage_manager_sql.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/sonicwall_scrutinizer_sqli.rb
