@@ -1,5 +1,5 @@
 # Description: Tools/helpers for attacking on the 2,3,4 Layers of the OSI
-# URL:         https://github.com/sighook/level234-attack-tools
+# URL:         https://github.com/sighook/layer234-attack-tools
 # Depends on:  aircrack-ng nmap p5-xml-simple scapy wireshark
 
 name=layer234-attack-tools

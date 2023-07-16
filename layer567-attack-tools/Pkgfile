@@ -1,5 +1,5 @@
 # Description: Tools/helpers for attacking on the 5,6,7 Layers of the OSI
-# URL:         https://github.com/sighook/level567-attack-tools
+# URL:         https://github.com/sighook/layer567-attack-tools
 # Depends on:  p5-net-dns nmap scapy
 
 name=layer567-attack-tools
