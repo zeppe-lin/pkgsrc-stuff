@@ -1,5 +1,5 @@
 # Description: Web and CGI vulnerability scanner with SSL support
-# URL:         http://www.cirt.net/nikto
+# URL:         https://github.com/sullo/nikto
 # Depends on:  p5-net-ssleay p5-json
 
 name=nikto
