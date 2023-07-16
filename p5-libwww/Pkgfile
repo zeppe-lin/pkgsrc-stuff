@@ -5,11 +5,12 @@
 name=p5-libwww
 version=6.71
 release=1
-source=https://cpan.metacpan.org/authors/id/S/SI/SIMBABQUE/libwww-perl-$version.tar.gz
+source=https://cpan.metacpan.org/authors/id/O/OA/OALDERS/libwww-perl-$version.tar.gz
 
 build() {
 	cd libwww-perl-$version
 
+	#[ -x /usr/bin/finddeps-distmeta ] && finddeps-distmeta
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL --aliases \
 		INSTALLDIRS=vendor
 
