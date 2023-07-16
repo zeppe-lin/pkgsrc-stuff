@@ -1,5 +1,5 @@
 # Description: Black box WordPress vulnerability scanner
-# URL:         https://wpscan.org
+# URL:         https://wpscan.com/
 # Depends on:  curl libxslt ruby
 
 name=wpscan
