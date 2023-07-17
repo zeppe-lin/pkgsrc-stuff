@@ -3,13 +3,14 @@
 # Depends on:  perl
 
 name=p5-compress-raw-lzma
-version=2.204
+version=2.205
 release=1
 source=https://cpan.metacpan.org/authors/id/P/PM/PMQS/Compress-Raw-Lzma-$version.tar.gz
 
 build() {
 	cd Compress-Raw-Lzma-$version
 
+	#[ -x /usr/bin/finddeps-distmeta ] && finddeps-distmeta
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
 	make OPTIMIZE="$CFLAGS"
