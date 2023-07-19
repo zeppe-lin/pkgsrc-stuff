@@ -3,7 +3,7 @@
 # Depends on:  aircrack-ng pixiewps
 
 name=reaver-wps-t6x
-version=1.6.6-4091bf2
+version=1.6.6-bd0f382
 release=1
 source=https://github.com/t6x/reaver-wps-fork-t6x/archive/${version#*-}/reaver-wps-fork-t6x-$version.tar.gz
 
