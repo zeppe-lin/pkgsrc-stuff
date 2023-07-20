@@ -1,9 +1,9 @@
 # Description: Penetration testing framework
-# URL:         https://www.metasploit.com
+# URL:         https://www.metasploit.com/
 # Depends on:  inetutils libpcap postgresql ruby sqlite3
 
 name=metasploit
-version=6.3.25
+version=6.3.26
 release=1
 source=https://github.com/rapid7/$name-framework/archive/$version/$name-$version.tar.gz
 
@@ -34,29 +34,28 @@ build() {
 	find vendor/bundle/ruby -exec chmod o+r '{}' \;
 	find vendor/bundle/ruby -exec chmod o-w '{}' \;
 
-	for f in msf*; do
-		_msffile=$PKG/usr/bin/$(basename $f)
-
-		cat >${_msffile} <<EOF
+	local _FILE
+	for _FILE in msf*; do
+		local _MSFFILE=$PKG/usr/bin/$(basename $_FILE)
+		cat >$_MSFFILE <<EOF
 #!/bin/sh
 BUNDLE_GEMFILE=/opt/$name/Gemfile \
-bundle exec ruby /opt/$name/$(basename $f) \$@
+bundle exec ruby /opt/$name/$(basename $_FILE) \$@
 EOF
-		chmod 0755 ${_msffile}
+		chmod 0755 $_MSFFILE
 	done
-
-	for f in tools/*/*.rb; do
-		install -m 755 -D $f .$f
-		cat >$f <<EOF
+	for _FILE in tools/*/*.rb; do
+		install -m 0755 -D $_FILE .$_FILE
+		cat >$_FILE <<EOF
 #!/bin/sh
 BUNDLE_GEMFILE=/opt/$name/Gemfile \
-bundle exec ruby /opt/$name/.$f \$@
+bundle exec ruby /opt/$name/.$_FILE \$@
 EOF
-		chmod 755 $f
+		chmod 0755 $_FILE
 	done
 
-	#install -Dm 644 external/zsh/_* \
-	#	-t "$PKG/usr/share/zsh/site-functions"
+	#install -m 0644 -Dt $PKG/usr/share/zsh/site-functions/ \
+	#	external/zsh/_*
 
 	# remove junk
 	rm $PKG/usr/bin/msfupdate

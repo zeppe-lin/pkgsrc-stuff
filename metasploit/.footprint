@@ -1432,6 +1432,14 @@ drwxrwxr-x	root/root	opt/metasploit/data/exploits/office_word_macro/
 -rw-rw-r--	root/root	opt/metasploit/data/exploits/office_word_macro/vbaData.xml
 -rw-rw-r--	root/root	opt/metasploit/data/exploits/office_word_macro/vbaProject.bin
 -rw-rw-r--	root/root	opt/metasploit/data/exploits/office_word_macro/vbaProject.bin.rels
+drwxrwxr-x	root/root	opt/metasploit/data/exploits/openfire_plugin/
+-rwxrwxr-x	root/root	opt/metasploit/data/exploits/openfire_plugin/changelog.html
+drwxrwxr-x	root/root	opt/metasploit/data/exploits/openfire_plugin/lib/
+-rwxrwxr-x	root/root	opt/metasploit/data/exploits/openfire_plugin/lib/plugin-metasploit.jar
+-rwxrwxr-x	root/root	opt/metasploit/data/exploits/openfire_plugin/logo_large.gif
+-rwxrwxr-x	root/root	opt/metasploit/data/exploits/openfire_plugin/logo_small.gif
+-rwxrwxr-x	root/root	opt/metasploit/data/exploits/openfire_plugin/plugin.xml
+-rwxrwxr-x	root/root	opt/metasploit/data/exploits/openfire_plugin/readme.html
 drwxrwxr-x	root/root	opt/metasploit/data/exploits/openoffice_document_macro/
 drwxrwxr-x	root/root	opt/metasploit/data/exploits/openoffice_document_macro/Basic/
 drwxrwxr-x	root/root	opt/metasploit/data/exploits/openoffice_document_macro/Basic/Standard/
@@ -2333,8 +2341,6 @@ drwxrwxr-x	root/root	opt/metasploit/external/source/exploits/CVE-2008-5353/src/m
 -rw-rw-r--	root/root	opt/metasploit/external/source/exploits/CVE-2008-5353/src/msf/x/PayloadX.java
 drwxrwxr-x	root/root	opt/metasploit/external/source/exploits/CVE-2008-5499/
 -rw-rw-r--	root/root	opt/metasploit/external/source/exploits/CVE-2008-5499/Exploit.as
-drwxrwxr-x	root/root	opt/metasploit/external/source/exploits/CVE-2008-6508/
--rw-rw-r--	root/root	opt/metasploit/external/source/exploits/CVE-2008-6508/Example.java
 drwxrwxr-x	root/root	opt/metasploit/external/source/exploits/CVE-2009-3867/
 -rw-rw-r--	root/root	opt/metasploit/external/source/exploits/CVE-2009-3867/AppletX.java
 -rwxrwxr-x	root/root	opt/metasploit/external/source/exploits/CVE-2009-3867/compile.sh
@@ -3413,6 +3419,8 @@ drwxrwxr-x	root/root	opt/metasploit/external/source/exploits/ntapphelpcachecontr
 -rwxrwxr-x	root/root	opt/metasploit/external/source/exploits/ntapphelpcachecontrol/exploit/targetver.h
 drwxrwxr-x	root/root	opt/metasploit/external/source/exploits/office_word_macro/
 -rw-rw-r--	root/root	opt/metasploit/external/source/exploits/office_word_macro/macro.vba
+drwxrwxr-x	root/root	opt/metasploit/external/source/exploits/openfire_plugin/
+-rw-rw-r--	root/root	opt/metasploit/external/source/exploits/openfire_plugin/Example.java
 drwxrwxr-x	root/root	opt/metasploit/external/source/exploits/rottenpotato/
 -rwxrwxr-x	root/root	opt/metasploit/external/source/exploits/rottenpotato/MSFRottenPotato.sln
 drwxrwxr-x	root/root	opt/metasploit/external/source/exploits/rottenpotato/MSFRottenPotato/
@@ -7201,6 +7209,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/gather/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/opennms_xxe.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/peplink_bauth_sqli.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/pimcore_creds_sqli.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/piwigo_cve_2023_26876.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/pulse_secure_file_disclosure.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/qnap_backtrace_admin_hash.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/qnap_lfi.rb
@@ -8888,6 +8897,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/op5_welcome.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/open_web_analytics_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/openfire_auth_bypass.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/openfire_auth_bypass_rce_cve_2023_32315.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/openmediavault_cmd_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/openmrs_deserialization.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/openx_backdoor_php.rb
