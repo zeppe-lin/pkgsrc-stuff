@@ -3,11 +3,13 @@
 # Depends on:  py3-editorconfig py3-six
 
 name=py3-jsbeautifier
-version=1.14.8
+version=1.14.9
 release=1
 source=https://github.com/beautify-web/js-beautify/archive/v$version/js-beautify-v$version.tar.gz
 
 build() {
+	export TMPDIR="$PKGMK_WORK_DIR"
+
 	cd js-beautify-$version
 
 	cp -a python python-css
@@ -19,4 +21,8 @@ build() {
 	cd ../python-css
 	/usr/bin/python3 setup-css.py build
 	/usr/bin/python3 setup-css.py install --prefix=/usr --root=$PKG -O2
+
+	# remove junk
+	rm -r $PKG/usr/lib/python*/site-packages/jsbeautifier/tests/ \
+	      $PKG/usr/lib/python*/site-packages/cssbeautifier/tests/
 }
