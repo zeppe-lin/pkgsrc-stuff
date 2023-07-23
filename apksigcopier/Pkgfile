@@ -1,0 +1,16 @@
+# Description: Copy/extract/patch android apk signatures & compare apks
+# URL:         https://github.com/obfusk/apksigcopier
+# Depends on:  py3-click
+
+name=apksigcopier
+version=1.1.1-879f248
+release=1
+source=https://github.com/obfusk/$name/archive/${version#*-}/$name-$version.tar.gz
+
+build() {
+	cd $name-*
+
+	/usr/bin/python3 setup.py build
+	/usr/bin/python3 setup.py install \
+		--prefix=/usr --root=$PKG --optimize=2
+}

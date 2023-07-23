@@ -1,0 +1,17 @@
+README apksigcopier
+
+REQUIREMENTS
+
+	* (optional) apksigner from android-sdk-build-tools-bin package
+	Required to compare two APKs by copying the signature from the first
+	to a copy of the second and checking if the resulting APK verifies.
+
+	Install android-sdk-build-tools-bin package and add
+	/opt/android-sdk/build-tools/ to the PATH.
+
+ONLINE DOCUMENTATION
+
+	1. https://github.com/obfusk/apksigcopier/tree/master
+	2. https://github.com/obfusk/apksigcopier/blob/master/apksigcopier.1.md
+
+End of file.

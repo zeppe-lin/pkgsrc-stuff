@@ -1,0 +1,18 @@
+# Description: Simple wrapper around optparse for powerful cmdline utils
+# URL:         https://github.com/pallets/click/
+# Depends on:  py3-setuptools
+
+name=py3-click
+version=8.1.6
+release=1
+source=https://github.com/pallets/click/releases/download/$version/click-$version.tar.gz
+
+build() {
+	export TMPDIR="$PKGMK_WORK_DIR"
+
+	cd click-$version
+
+	/usr/bin/python3 setup.py build
+	/usr/bin/python3 setup.py install \
+		--skip-build --root=$PKG --optimize=2
+}
