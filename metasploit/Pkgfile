@@ -18,6 +18,7 @@ build() {
 
 	# https://github.com/bundler/bundler/issues/6882
 	sed -e '/BUNDLED WITH/,+1d' -i Gemfile.lock
+
 	sed -i '/bundler/ s/~>/>=/g' metasploit-framework.gemspec
 	bundle config build.nokogiri --use-system-libraries
 	bundle config set deployment true
