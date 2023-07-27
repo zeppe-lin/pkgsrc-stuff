@@ -1,0 +1,294 @@
+=pod
+
+=encoding utf-8
+
+=head1 NAME
+
+bully - WPS brute force attack tool, similar to reaver
+
+=head1 SYNOPSIS
+
+=over
+
+=item B<bully> B<-b> I<MACADDR> [I<OPTION>]... I<IFNAME>
+
+=item B<bully> B<-e> I<STRING>  [I<OPTION>]... I<IFNAME>
+
+=back
+
+=head1 DESCRIPTION
+
+B<bully> is a new implementation of the WPS brute force attack,
+written in C.  It is conceptually identical to other programs, in that
+it exploits the (now well known) design flaw in the WPS specification.
+It has several advantages over the original reaver code.  These
+include fewer dependencies, improved memory and cpu performance,
+correct handling of endianness, and a more robust set of options.  It
+runs on Linux, and was specifically developed to run on embedded Linux
+systems (OpenWrt, etc) regardless of architecture.
+
+B<bully> provides several improvements in the detection and handling
+of anomalous scenarios.  It has been tested against access points from
+numerous vendors, and with differing configurations, with much
+success.
+
+B<bully> requires L<pixiewps(1)> to be installed to perform Pixie Dust
+attack.
+
+=head1 OPTIONS
+
+Mandatory arguments to long options are mandatory for short options too.
+
+=head2 Required options and arguments
+
+=over
+
+=item I<IFNAME>
+
+Wireless interface in monitor mode (root required).
+
+=item B<-b>, B<--bssid> I<MACADDR>
+
+MAC address of the target access point.
+
+=item B<-e>, B<--essid> I<STRING>
+
+Extended SSID for the access point.
+
+=back
+
+=head2 Optional options and arguments
+
+=over
+
+=item B<-c>, B<--channel> I<N>[,I<N>...]
+
+Channel number of AP, or list to hop.
+
+Default: b/g channels in 2.4 GHz band.
+
+=item B<-i>, B<--index> I<N>
+
+Starting pin index (7 or 8 digits).
+
+Default: auto.
+
+=item B<-l>, B<--lockwait> I<N>
+
+Seconds to wait if the AP locks WPS.
+
+Default: 43.
+
+=item B<-o>, B<--outfile> I<FILE>
+
+Output file for messages.
+
+Default: stdout.
+
+=item B<-p>, B<--pin> I<N>
+
+Starting pin number (7 or 8 digits).
+
+Default: auto.
+
+=item B<-s>, B<--source> I<MACADDR>
+
+Source (hardware) MAC address.
+
+Default: probe.
+
+=item B<-v>, B<--verbosity> I<N>
+
+Verbosity level 1-4, 1 is quietest. C<-v 4> prints all the collected
+hashes and outputs the L<pixiewps(1)> command run.
+
+Default: 3.
+
+=item B<-w>, B<--workdir> I<PATH>
+
+Location of pin/session files.
+
+Default: F<~/.bully>.
+
+=item B<-5>, B<--5ghz>
+
+Hop on 5GHz a/n default channel list.
+
+Default: no.
+
+=item B<-B>, B<--bruteforce>
+
+Bruteforce the WPS pin checksum digit.
+
+Default: no.
+
+=item B<-F>, B<--force>
+
+Force continue in spite of warnings.
+
+Default: no.
+
+=item B<-S>, B<--sequential>
+
+Sequential pins (do not randomize).
+
+Default: no.
+
+=item B<-T>, B<--test>
+
+Test mode (do not inject any packets).
+
+Default: no.
+
+=back
+
+=head2 Advanced options and arguments
+
+=over
+
+=item B<-d>, B<--pixiewps>
+
+Perform an offline attack, Pixie Dust, by automatically passing the
+C<PKE>, C<PKR>, C<E-Hash1>, C<E-Hash2>, C<E-Nonce> and C<Authkey>.
+L<pixiewps(1)> will then try to attack B<Ralink>, B<Broadcom> and
+B<Realtek> chipsets.
+
+Default: no.
+
+=item B<-a>, B<--acktime> I<N>
+
+Deprecated/ignored.
+
+Default: auto.
+
+=item B<-r>, B<--retries> I<N>
+
+Resend packets I<N> times when no acked.
+
+Default: 2.
+
+=item B<-m>, B<--m13time> I<N>
+
+Deprecated/ignored.
+
+Default: auto.
+
+=item B<-t>, B<--timeout> I<N>
+
+Deprecated/ignored.
+
+Default: auto.
+
+=item B<-1>, B<--pin1delay> I<M>,I<N>
+
+Delay I<M> seconds every I<N>th nack at M5.
+
+Default: 0,1.
+
+=item B<-2>, B<--pin2delay> I<M>,I<N>
+
+Delay I<M> seconds every I<N>th nack at M7.
+
+Default: 5,1.
+
+=item B<-A>, B<--noacks>
+
+Disable ACK check for sent packets.
+
+Default: no.
+
+=item B<-C>, B<--nocheck>
+
+Skip CRC/FCS validation (performance).
+
+Default: no.
+
+=item B<-D>, B<--detectlock>
+
+Detect WPS lockouts unreported by AP.
+
+Default: no.
+
+=item B<-E>, B<--eapfail>
+
+EAP Failure terminate every exchange.
+
+Default: no.
+
+=item B<-L>, B<--lockignore>
+
+Ignore WPS locks reported by the AP.
+
+Default: no.
+
+=item B<-M>, B<--m57nack>
+
+M5/M7 timeouts threated as WSC_NACK's.
+
+Default: no.
+
+=item B<-N>, B<--nofcs>
+
+Packets don't contain the FCS field.
+
+Default: auto.
+
+=item B<-P>, B<--probe>
+
+Use probe request for nonbeaconing AP.
+
+Default: no.
+
+=item B<-R>, B<--radiotap>
+
+Assume radiotap headers are present.
+
+Default: auto.
+
+=item B<-W>, B<--windows7>
+
+Masquerade as a Windows 7 registrar.
+
+Default: no.
+
+=item B<-Z>, B<--supress>
+
+Suppress packet throttling algorithm.
+
+Default: no.
+
+=back
+
+=head2 Standard options
+
+=over
+
+=item B<-V>, B<--version>
+
+Print version and exit.
+
+=item B<-h>, B<--help>
+
+Print help and exit.
+
+=back
+
+=head1 AUTHOR
+
+aanarchyy, L<https://github.com/aanarchyy>
+
+=head1 CREDITS
+
+None of this would have happened without the rest of the great team I
+am proud to credit with helping me: t6_x, DataHead, Soxrok2212, Wiire.
+
+Huge thanks to Wiire for helping remove the openssl dependancy!
+
+=head1 SEE ALSO
+
+L<pixiewps(1)>, L<reaver(1)>
+
+=cut
+
+# vim:sw=2:ts=2:sts=2:et:cc=72:tw=70
+# End of file.

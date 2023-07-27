@@ -1,0 +1,124 @@
+diff '--color=auto' -pruN bully-3ab3bc830738f447dce112e8551e3ac8193bf521.orig/src/bully.c bully-3ab3bc830738f447dce112e8551e3ac8193bf521/src/bully.c
+--- bully-3ab3bc830738f447dce112e8551e3ac8193bf521.orig/src/bully.c	2023-07-27 08:53:43.282770870 +0300
++++ bully-3ab3bc830738f447dce112e8551e3ac8193bf521/src/bully.c	2023-07-27 09:25:30.197764284 +0300
+@@ -418,7 +418,7 @@ int main(int argc, char *argv[])
+ 		else
+ 			G->error = "Too many arguments\n";
+ 	usage_err:
+-		fprintf(stderr, usage, argv[0], G->error);
++		fprintf(stderr, usage, G->error);
+ 		return 1;
+ 	};
+ 
+diff '--color=auto' -pruN bully-3ab3bc830738f447dce112e8551e3ac8193bf521.orig/src/bully.h bully-3ab3bc830738f447dce112e8551e3ac8193bf521/src/bully.h
+--- bully-3ab3bc830738f447dce112e8551e3ac8193bf521.orig/src/bully.h	2023-07-27 08:53:43.282770870 +0300
++++ bully-3ab3bc830738f447dce112e8551e3ac8193bf521/src/bully.h	2023-07-27 09:39:27.350761393 +0300
+@@ -206,56 +206,58 @@ struct global {
+ 
+ 
+ char usage[] =
+-"\n"
+-"  usage: %s <options> interface\n"
+-"\n"
+-"  Required arguments:\n"
+-"\n"
+-"      interface      : Wireless interface in monitor mode (root required)\n"
+-"\n"
+-"      -b, --bssid macaddr    : MAC address of the target access point\n"
+-"   Or\n"
+-"      -e, --essid string     : Extended SSID for the access point\n"
+-"\n"
+-"  Optional arguments:\n"
+-"\n"
+-"      -c, --channel N[,N...] : Channel number of AP, or list to hop [b/g]\n"
+-"      -i, --index N          : Starting pin index (7 or 8 digits)  [Auto]\n"
+-"      -l, --lockwait N       : Seconds to wait if the AP locks WPS   [43]\n"
+-"      -o, --outfile file     : Output file for messages          [stdout]\n"
+-"      -p, --pin N            : Starting pin number (7 or 8 digits) [Auto]\n"
+-"      -s, --source macaddr   : Source (hardware) MAC address      [Probe]\n"
+-"      -v, --verbosity N      : Verbosity level 1-4, 1 is quietest     [3]\n"
+-"      -w, --workdir path     : Location of pin/session files  [~/.bully/]\n"
+-"      -5, --5ghz             : Hop on 5GHz a/n default channel list  [No]\n"
+-"      -B, --bruteforce       : Bruteforce the WPS pin checksum digit [No]\n"
+-"      -F, --force            : Force continue in spite of warnings   [No]\n"
+-"      -S, --sequential       : Sequential pins (do not randomize)    [No]\n"
+-"      -T, --test             : Test mode (do not inject any packets) [No]\n"
+-"\n"
+-"  Advanced arguments:\n"
+-"\n"
+-"      -d, --pixiewps         : Attempt to use pixiewps               [No]\n"
+-/*"      -g, --genpin N         : Pin Generator [1] D-Link [2] Belkin    [0]\n"*/
+-"      -a, --acktime N        : Deprecated/ignored                  [Auto]\n"
+-"      -r, --retries N        : Resend packets N times when not acked  [2]\n"
+-"      -m, --m13time N        : Deprecated/ignored                  [Auto]\n"
+-"      -t, --timeout N        : Deprecated/ignored                  [Auto]\n"
+-"      -1, --pin1delay M,N    : Delay M seconds every Nth nack at M5 [0,1]\n"
+-"      -2, --pin2delay M,N    : Delay M seconds every Nth nack at M7 [5,1]\n"
+-"      -A, --noacks           : Disable ACK check for sent packets    [No]\n"
+-"      -C, --nocheck          : Skip CRC/FCS validation (performance) [No]\n"
+-"      -D, --detectlock       : Detect WPS lockouts unreported by AP  [No]\n"
+-"      -E, --eapfail          : EAP Failure terminate every exchange  [No]\n"
+-"      -L, --lockignore       : Ignore WPS locks reported by the AP   [No]\n"
+-"      -M, --m57nack          : M5/M7 timeouts treated as WSC_NACK's  [No]\n"
+-"      -N, --nofcs            : Packets don't contain the FCS field [Auto]\n"
+-"      -P, --probe            : Use probe request for nonbeaconing AP [No]\n"
+-"      -R, --radiotap         : Assume radiotap headers are present [Auto]\n"
+-"      -W, --windows7         : Masquerade as a Windows 7 registrar   [No]\n"
+-"      -Z, --suppress         : Suppress packet throttling algorithm  [No]\n"
+-"      -V, --version          : Print version info and exit\n"
+-"      -h, --help             : Display this help information\n\n%s";
++"Usage: "EXE_NAME" -b MACADDR [OPTION]... IFNAME\n"
++"       "EXE_NAME" -e STRING  [OPTION]... IFNAME\n"
++"WPS brute force attack tool, similar to reaver.\n"
++"\n"
++"Mandatory arguments to long options are mandatory for short options too.\n"
++"\n"
++"Required options and arguments:\n"
++"  IFNAME                 Wireless interface in monitor mode (root required)\n"
++"  -b, --bssid MACADDR    MAC address of the target access point\n"
++"  -e, --essid STRING     Extended SSID for the access point\n"
++"\n"
++"Optional options and arguments:\n"
++"  -c, --channel N[,N...] Channel number of AP, or list to hop     [b/g]\n"
++"  -i, --index N          Starting pin index (7 or 8 digits)      [auto]\n"
++"  -l, --lockwait N       Seconds to wait if the AP locks WPS       [43]\n"
++"  -o, --outfile FILE     Output file for messages              [stdout]\n"
++"  -p, --pin N            Starting pin number (7 or 8 digits)     [auto]\n"
++"  -s, --source MACADDR   Source (hardware) MAC address          [probe]\n"
++"  -v, --verbosity N      Verbosity level 1-4, 1 is quietest         [3]\n"
++"  -w, --workdir PATH     Location of pin/session files      [~/.bully/]\n"
++"  -5, --5ghz             Hop on 5GHz a/n default channel list      [no]\n"
++"  -B, --bruteforce       Bruteforce the WPS pin checksum digit     [no]\n"
++"  -F, --force            Force continue in spite of warnings       [no]\n"
++"  -S, --sequential       Sequential pins (do not randomize)        [no]\n"
++"  -T, --test             Test mode (do not inject any packets)     [no]\n"
++"\n"
++"Advanced options and arguments:\n"
++"  -d, --pixiewps         Attempt to use pixiewps                   [no]\n"
++#if 0
++"  -g, --genpin N         Pin Generator [1] D-Link [2] Belkin        [0]\n"
++#endif
++"  -a, --acktime N        Deprecated/ignored                      [auto]\n"
++"  -r, --retries N        Resend packets N times when not acked      [2]\n"
++"  -m, --m13time N        Deprecated/ignored                      [auto]\n"
++"  -t, --timeout N        Deprecated/ignored                      [auto]\n"
++"  -1, --pin1delay M,N    Delay M seconds every Nth nack at M5     [0,1]\n"
++"  -2, --pin2delay M,N    Delay M seconds every Nth nack at M7     [5,1]\n"
++"  -A, --noacks           Disable ACK check for sent packets        [no]\n"
++"  -C, --nocheck          Skip CRC/FCS validation (performance)     [no]\n"
++"  -D, --detectlock       Detect WPS lockouts unreported by AP      [no]\n"
++"  -E, --eapfail          EAP Failure terminate every exchange      [no]\n"
++"  -L, --lockignore       Ignore WPS locks reported by the AP       [no]\n"
++"  -M, --m57nack          M5/M7 timeouts treated as WSC_NACK's      [no]\n"
++"  -N, --nofcs            Packets don't contain the FCS field     [auto]\n"
++"  -P, --probe            Use probe request for nonbeaconing AP     [no]\n"
++"  -R, --radiotap         Assume radiotap headers are present     [auto]\n"
++"  -W, --windows7         Masquerade as a Windows 7 registrar       [no]\n"
++"  -Z, --suppress         Suppress packet throttling algorithm      [no]\n"
++"\n"
++"Standard options:\n"
++"  -V, --version          Print version and exit\n"
++"  -h, --help             Print help and exit\n\n%s";
+ 
+ 
+ #endif /* _BULLY_H */
