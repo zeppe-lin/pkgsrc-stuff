@@ -275,12 +275,15 @@ Print help and exit.
 
 =head1 AUTHOR
 
-aanarchyy, L<https://github.com/aanarchyy>
+B<bully> was written by aanarchyy L<https://github.com/aanarchyy> and
+numerous contributors.  This manual page was written by
+Alexandr Savca <L<alexandr.savca89@gmail.com>>.
 
 =head1 CREDITS
 
 None of this would have happened without the rest of the great team I
-am proud to credit with helping me: t6_x, DataHead, Soxrok2212, Wiire.
+(aanarchyy) am proud to credit with helping me:
+t6_x, DataHead, Soxrok2212, Wiire.
 
 Huge thanks to Wiire for helping remove the openssl dependancy!
 
