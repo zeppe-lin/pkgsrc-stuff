@@ -8476,6 +8476,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/vmware_vcenter_analytics_file_upload.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/vmware_vcenter_vsan_health_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/vmware_view_planner_4_6_uploadlog_rce.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/vmware_vrni_rce_cve_2023_20887.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/vmware_vrops_mgr_ssrf_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/vmware_workspace_one_access_cve_2022_22954.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/vmware_workspace_one_access_vmsa_2022_0011_chain.rb
@@ -9020,6 +9021,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_ninja_forms_unauthenticated_file_upload.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_plugin_backup_guard_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_plugin_elementor_auth_upload_rce.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_plugin_fma_shortcode_unauth_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_plugin_modern_events_calendar_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_plugin_sp_project_document_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_popular_posts_rce.rb
