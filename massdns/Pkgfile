@@ -3,14 +3,17 @@
 
 name=massdns
 version=1.0.0-ee7aecf
-release=1
-source=https://github.com/blechschmidt/$name/archive/${version##*-}/$name-${version##*-}.tar.gz
+release=2
+source=https://github.com/blechschmidt/$name/archive/${version#*-}/$name-$version.tar.gz
 
 build() {
-	cd $name-${version##*-}*
+	cd $name-*
 
-	sed -i "s/\$(shell git describe --tags --dirty=+)/$version/" \
-		Makefile
+	sed "s/\$(shell git describe --tags --dirty=+)/$version/"    \
+	    -i Makefile
+	sed "1s/.*/.TH massdns 1 \"\" \"$name ${version%-*}\" \"\"/" \
+	    -i doc/$name.1
+
 	make
 
 	install -m 0755 -Dt $PKG/usr/bin/            bin/$name
