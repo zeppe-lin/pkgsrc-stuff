@@ -4,7 +4,7 @@
 name=phoneinfoga-bin
 version=2.10.7
 release=1
-source=$name-$version-amd64.tar.gz
+source=$name-$version-amd64.tar.gz::https://github.com/sundowndev/phoneinfoga/releases/download/v$version/phoneinfoga_Linux_x86_64.tar.gz
 
 build() {
 	ls -la
