@@ -3,12 +3,12 @@
 # Depends on:  python3
 
 name=sqlmap
-version=1.7.7
+version=1.7.8
 release=1
 source=https://github.com/sqlmapproject/$name/archive/$version/$name-$version.tar.gz
 
 build() {
-	sed -i '1 s/python$/python3/' $name-$version/sqlmap.py
+	sed -i '1s/python$/python3/' $name-$version/sqlmap.py
 
 	install -d $PKG/opt $PKG/usr/bin
 	cp -r $name-$version $PKG/opt/$name
@@ -19,16 +19,15 @@ build() {
 	/usr/bin/python3 -OO -mcompileall $PKG
 
 	# remove junk
-	rm -rf $PKG/opt/sqlmap/doc/
-	rm -rf $PKG/opt/sqlmap/.github
-	rm -rf $PKG/opt/sqlmap/.gitattributes
-	rm -rf $PKG/opt/sqlmap/.gitignore
-	rm -rf $PKG/opt/sqlmap/.pylintrc
-	rm -rf $PKG/opt/sqlmap/LICENSE
-	rm -rf $PKG/opt/sqlmap/README.md
-	rm -rf $PKG/opt/sqlmap/data/*/README.txt
-	rm -rf $PKG/opt/sqlmap/extra/*/README.txt
-	rm -rf $PKG/opt/sqlmap/extra/*/src/README.txt
-	rm -rf $PKG/opt/sqlmap/thirdparty/*/LICENSE
-	rm -rf $PKG/opt/sqlmap/thirdparty/socks/LICENS/
+	rm -r $PKG/opt/sqlmap/doc                       \
+	      $PKG/opt/sqlmap/.github                   \
+	      $PKG/opt/sqlmap/.gitattributes            \
+	      $PKG/opt/sqlmap/.gitignore                \
+	      $PKG/opt/sqlmap/.pylintrc                 \
+	      $PKG/opt/sqlmap/LICENSE                   \
+	      $PKG/opt/sqlmap/README.md                 \
+	      $PKG/opt/sqlmap/data/*/README.txt         \
+	      $PKG/opt/sqlmap/extra/*/README.txt        \
+	      $PKG/opt/sqlmap/extra/*/src/README.txt    \
+	      $PKG/opt/sqlmap/thirdparty/*/LICENSE
 }
