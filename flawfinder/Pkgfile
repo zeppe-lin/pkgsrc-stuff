@@ -1,0 +1,14 @@
+# Description: Search through source code for potential security flaws
+# URL:         https://dwheeler.com/flawfinder/
+# Depends on:  py3-setuptools
+
+name=flawfinder
+version=2.0.19
+release=1
+source=https://dwheeler.com/$name/$name-$version.tar.gz
+
+build() {
+	cd $name-$version
+
+	make prefix=/usr DESTDIR=$PKG install
+}
