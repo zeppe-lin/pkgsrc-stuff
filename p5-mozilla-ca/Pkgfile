@@ -3,7 +3,7 @@
 # Depends on:  perl
 
 name=p5-mozilla-ca
-version=20230801
+version=20230807
 release=1
 source=https://cpan.metacpan.org/authors/id/L/LW/LWP/Mozilla-CA-$version.tar.gz
 
