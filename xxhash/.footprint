@@ -6,6 +6,7 @@ lrwxrwxrwx	root/root	usr/bin/xxh64sum -> xxhsum
 -rwxr-xr-x	root/root	usr/bin/xxhsum
 drwxr-xr-x	root/root	usr/include/
 -rw-r--r--	root/root	usr/include/xxh3.h
+-rw-r--r--	root/root	usr/include/xxh_x86dispatch.h
 -rw-r--r--	root/root	usr/include/xxhash.h
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libxxhash.a
