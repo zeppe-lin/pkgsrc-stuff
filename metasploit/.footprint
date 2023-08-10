@@ -6613,6 +6613,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/rubocop/cop/layout/
 -rw-rw-r--	root/root	opt/metasploit/lib/rubocop/cop/layout/module_hash_values_on_same_line.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/rubocop/cop/lint/
 -rw-rw-r--	root/root	opt/metasploit/lib/rubocop/cop/lint/deprecated_gem_version.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/rubocop/cop/lint/detect_invalid_pack_directives.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rubocop/cop/lint/module_disclosure_date_format.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rubocop/cop/lint/module_disclosure_date_present.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rubocop/cop/lint/module_enforce_notes.rb
@@ -8384,6 +8385,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/logsign_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/lucee_admin_imgprocess_file_write.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/mailcleaner_exec.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/metabase_setup_token_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/microfocus_obr_cmd_injection.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/microfocus_secure_messaging_gateway.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/mida_solutions_eframework_ajaxreq_rce.rb
@@ -12462,6 +12464,8 @@ drwxrwxr-x	root/root	opt/metasploit/spec/modules/auxiliary/admin/kerberos/
 drwxrwxr-x	root/root	opt/metasploit/spec/modules/auxiliary/scanner/
 drwxrwxr-x	root/root	opt/metasploit/spec/modules/auxiliary/scanner/lotus/
 -rw-rw-r--	root/root	opt/metasploit/spec/modules/auxiliary/scanner/lotus/lotus_domino_hashes_spec.rb
+drwxrwxr-x	root/root	opt/metasploit/spec/modules/auxiliary/scanner/ssh/
+-rw-rw-r--	root/root	opt/metasploit/spec/modules/auxiliary/scanner/ssh/ssh_login_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/modules/payloads_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/modules_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/msf/
@@ -12487,6 +12491,7 @@ drwxrwxr-x	root/root	opt/metasploit/spec/rubocop/cop/layout/
 -rw-rw-r--	root/root	opt/metasploit/spec/rubocop/cop/layout/module_hash_values_on_same_line_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/rubocop/cop/lint/
 -rw-rw-r--	root/root	opt/metasploit/spec/rubocop/cop/lint/deprecated_gem_version_spec.rb
+-rw-rw-r--	root/root	opt/metasploit/spec/rubocop/cop/lint/detect_invalid_pack_directives_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/rubocop/cop/lint/module_disclosure_date_format_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/rubocop/cop/lint/module_disclosure_date_present_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/rubocop/cop/lint/module_enforce_notes_spec.rb
