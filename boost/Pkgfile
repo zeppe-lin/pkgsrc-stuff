@@ -1,17 +1,17 @@
 # Description: Free peer-reviewed portable C++ source libraries
-# URL:         https://www.boost.org
+# URL:         https://www.boost.org/
 # Depends on:  bzip2 zstd
 # Optional:    icu openmpi python3-numpy
 
 name=boost
-version=1.82.0
+version=1.83.0
 _version=$(echo $version | sed 's/\./_/g')
 release=1
-source="https://boostorg.jfrog.io/artifactory/main/release/$version/source/${name}_${_version}.tar.bz2
+source="https://boostorg.jfrog.io/artifactory/main/release/$version/source/${name}_$_version.tar.bz2
 	boost-ublas-c++20-iterator.patch"
 
 build() {
-	cd ${name}_${_version}
+	cd ${name}_$_version
 
 	# https://github.com/boostorg/ublas/pull/97
 	patch -p2 -i $SRC/boost-ublas-c++20-iterator.patch
@@ -19,9 +19,9 @@ build() {
 	# Boost.Build does not allow for disabling of numpy
 	# extensions, thereby leading to automagic numpy
 	# https://github.com/boostorg/python/issues/111#issuecomment-280447482
-	pkgman isinst python3-numpy || sed \
-		-e 's/\[ unless \[ python\.numpy \] : <build>no \]/<build>no/g' \
-		-i libs/python/build/Jamfile
+	#pkgman isinst python3-numpy ||
+	sed -e 's/\[ unless \[ python\.numpy \] : <build>no \]/<build>no/g' \
+	    -i libs/python/build/Jamfile
 
 	cd tools/build
 	./bootstrap.sh --cxxflags="$CXXFLAGS $LDFLAGS"
@@ -29,28 +29,22 @@ build() {
 	ln -s b2 $PKG/usr/bin/bjam
 	cd -
 
-	# Boost.Build does not allow for disabling of numpy
-	# extensions, thereby leading to automagic numpy
-	# https://github.com/boostorg/python/issues/111#issuecomment-280447482
-	if ! pkgman isinst python3-numpy; then
-		sed -e 's/\[ unless \[ python\.numpy \] : <build>no \]/<build>no/g' \
-		-i libs/python/build/Jamfile
-	fi
-
 	./bootstrap.sh --with-toolset=gcc --with-python=/usr/bin/python3
 
-	# support for OpenMPI
-	if pkgman isinst openmpi; then
-		echo "using mpi ;" >>project-config.jam
-	else
-		PKGMK_BOOST="$PKGMK_BOOST --without-mpi --without-graph_parallel"
-	fi
+	# OpenMPI require this
+	#pkgman isinst openmpi && echo "using mpi ;" >>project-config.jam
 
+	# --disable-icu, boost.locale.icu=off:
+	#   disable Unicode and Globalization support
+	# --without-mpi, --without-graph_parallel:
+	#   disable OpenMPI support
 	./b2 install $PKGMK_BOOST     \
 		--prefix=$PKG/usr     \
 		--layout=system       \
 		--without-stacktrace  \
 		--disable-icu         \
+		--without-mpi         \
+		--without-graph_parallel \
 		-j ${JOBS:-1}         \
 		boost.locale.icu=off  \
 		variant=release       \
@@ -64,6 +58,8 @@ build() {
 		cxxflags="$CPPFLAGS $CXXFLAGS -fPIC -O3 -ffat-lto-objects" \
 		linkflags="$LDFLAGS"
 
-	pkgman isinst python3-numpy || rm -r $PKG/usr/include/boost/python/numpy*
-	pkgman isinst openmpi       || rm -r $PKG/usr/include/boost/mpi/python*
+	#pkgman isinst python3-numpy ||
+	rm -r $PKG/usr/include/boost/python/numpy*
+	#pkgman isinst openmpi       ||
+	rm -r $PKG/usr/include/boost/mpi/python*
 }
