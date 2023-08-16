@@ -1,6 +1,6 @@
 # Description: Network exploration of security auditing (with extra nse)
 # URL:         https://nmap.org/
-# Depends on:  libpcap
+# Depends on:  libpcap libpcre openssl zlib python3
 
 name=nmap
 version=7.94
