@@ -1,23 +1,17 @@
-# Description: Network exploration of security auditing (+extra nse)
-# URL:         https://nmap.org
-# Depends on:  ktsuss libpcap pygtk
+# Description: Network exploration of security auditing (with extra nse)
+# URL:         https://nmap.org/
+# Depends on:  libpcap
 
 name=nmap
-version=7.93
-release=2-5791e6d # nmap-extra-nse version
+version=7.94
+_extra_nse=5791e6d # nmap-extra-nse commit
+release=1
 source="https://nmap.org/dist/nmap-$version.tar.bz2
-	0001-fix-hardcoded-monospace-font.patch
-	0002-fix-highlight.patch
-	nmap-7.93-openssl-1.1.patch
-	https://github.com/sighook/nmap-extra-nse/archive/${release#*-}/nmap-extra-nse-${release#*-}.tar.gz"
+	https://github.com/sighook/nmap-extra-nse/archive/$_extra_nse/nmap-extra-nse-$_extra_nse.tar.gz"
 
 build() {
 	# build in separate dir is broken
 	cd $name-$version
-
-	patch -p1 -i $SRC/0001-fix-hardcoded-monospace-font.patch
-	patch -p1 -i $SRC/0002-fix-highlight.patch
-	patch -p1 -i $SRC/nmap-7.93-openssl-1.1.patch
 
 	./configure                    \
 		--prefix=/usr          \
@@ -26,20 +20,14 @@ build() {
 		--with-libpcre=/usr    \
 		--with-zlib=/usr       \
 		--without-nmap-update  \
+		--without-zenmap       \
 		--disable-nls          \
 
 	make V=1
 	make DESTDIR=$PKG install
 
-	# add a launcher to run zenmap as root
-	ln -s /usr/share/zenmap/su-to-zenmap.sh $PKG/usr/bin/zenmap-su
-
-	# fix error "PangoFc will not work correctly"
-	mkdir -p $PKG/usr/etc/pango
-	pango-querymodules > $PKG/usr/etc/pango/pango.modules
-
 	# add unofficial nse scripts
-	cd $SRC/nmap-extra-nse-${release#*-}*
+	cd $SRC/nmap-extra-nse*
 	for _NSE in *.nse; do
 		_NSE_NEW=${_NSE#*-}
 		[ -f $PKG/usr/share/nmap/scripts/$_NSE_NEW ] ||
@@ -48,7 +36,6 @@ build() {
 	sh ./update-scriptdb.sh $PKG/usr/share/nmap/scripts/script.db
 
 	# remove junk
-	rm -r $PKG/usr/share/zenmap/locale $PKG/usr/share/zenmap/docs
 	rm $PKG/usr/share/nmap/nselib/data/psexec/README          \
 	   $PKG/usr/share/nmap/nselib/data/jdwp-class/README.txt  \
 	   $PKG/usr/bin/uninstall_*
