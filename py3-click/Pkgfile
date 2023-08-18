@@ -3,11 +3,12 @@
 # Depends on:  py3-setuptools
 
 name=py3-click
-version=8.1.6
+version=8.1.7
 release=1
 source=https://github.com/pallets/click/releases/download/$version/click-$version.tar.gz
 
 build() {
+	# place build artefacts into the pkgmk's work dir
 	export TMPDIR="$PKGMK_WORK_DIR"
 
 	cd click-$version
