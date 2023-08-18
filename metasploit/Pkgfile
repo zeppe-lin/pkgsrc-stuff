@@ -3,11 +3,14 @@
 # Depends on:  inetutils libpcap postgresql ruby sqlite3
 
 name=metasploit
-version=6.3.29
+version=6.3.30
 release=1
 source=https://github.com/rapid7/$name-framework/archive/$version/$name-$version.tar.gz
 
 build() {
+	local _FILE=
+	local _MSFFILE=
+
 	export TMPDIR="$PKGMK_WORK_DIR"
 	export CFLAGS="$CFLAGS -I/usr/include/libxml2"
 
@@ -35,9 +38,8 @@ build() {
 	find vendor/bundle/ruby -exec chmod o+r '{}' \;
 	find vendor/bundle/ruby -exec chmod o-w '{}' \;
 
-	local _FILE
 	for _FILE in msf*; do
-		local _MSFFILE=$PKG/usr/bin/$(basename $_FILE)
+		_MSFFILE=$PKG/usr/bin/$(basename $_FILE)
 		cat >$_MSFFILE <<EOF
 #!/bin/sh
 BUNDLE_GEMFILE=/opt/$name/Gemfile \
