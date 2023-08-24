@@ -1,9 +1,9 @@
 # Description: Network Sniffer
-# URL:         https://www.wireshark.org
+# URL:         https://www.wireshark.org/
 # Depends on:  asciidoctor c-ares gnutls hicolor-icon-theme libcap libgcrypt libnl libpcap libssh qt5
 
 name=wireshark
-version=4.0.7
+version=4.0.8
 release=1
 source=https://github.com/$name/$name/archive/v$version/$name-$version.tar.gz
 
