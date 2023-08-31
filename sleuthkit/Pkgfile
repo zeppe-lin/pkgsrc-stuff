@@ -4,7 +4,7 @@
 
 
 name=sleuthkit
-version=4.12.0
+version=4.12.1
 release=1
 source=https://github.com/$name/$name/archive/refs/tags/$name-$version.tar.gz
 
@@ -12,9 +12,9 @@ build() {
 	# build in separate dir is broken
 	cd $name-$name-$version
 
-	autoreconf -i
-	./configure           \
-		--prefix=/usr \
+	autoreconf -fi
+	./configure            \
+		--prefix=/usr  \
 
 	make V=1
 	make DESTDIR=$PKG install
