@@ -5038,6 +5038,11 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/nagios_xi/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/nagios_xi/rce_check.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/nagios_xi/uris.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/nagios_xi/version.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/nifi.rb
+drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/nifi/
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/nifi/auth.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/nifi/dbconnectionpool.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/nifi/processor.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/pihole.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/sap_sol_man_eem_miss_auth.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/sharepoint.rb
@@ -7170,6 +7175,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/gather/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/doliwamp_traversal_creds.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/drupal_openid_xxe.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/eaton_nsm_creds.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/elasticsearch_enum.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/emc_cta_xxe.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/enum_dns.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/eventlog_cred_disclosure.rb
@@ -7313,8 +7319,6 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/dlsw/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/dlsw/dlsw_leak_capture.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/dns/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/dns/dns_amp.rb
-drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/elasticsearch/
--rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/elasticsearch/indices_enum.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/emc/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/emc/alphastor_devicemanager.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/emc/alphastor_librarymanager.rb
@@ -8267,6 +8271,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/apache_continuum_cmd_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/apache_couchdb_cmd_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/apache_druid_js_rce.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/apache_nifi_h2_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/apache_ofbiz_deserialization.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/apache_ofbiz_deserialization_soap.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/apache_spark_rce_cve_2022_33891.rb
@@ -12105,6 +12110,11 @@ drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/core/exploit/http/jboss/
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/core/exploit/http/joomla/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/exploit/http/joomla/base_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/exploit/http/joomla/version_spec.rb
+drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/core/exploit/http/nifi/
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/exploit/http/nifi/auth_spec.rb
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/exploit/http/nifi/dbconnectionpool_spec.rb
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/exploit/http/nifi/processor_spec.rb
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/exploit/http/nifi_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/exploit/http/pihole_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/exploit/http/server_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/exploit/http/typo3_spec.rb
