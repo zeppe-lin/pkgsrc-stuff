@@ -1,26 +1,40 @@
 # Description: Lightweight and flexible command-line JSON processor
-# URL:         https://stedolan.github.io/jq/
+# URL:         https://jqlang.github.io/jq/
 # Optional:    oniguruma
 
 name=jq
-version=1.6
+version=1.7
 release=1
-source=https://github.com/stedolan/jq/releases/download/jq-$version/jq-$version.tar.gz
+source="https://github.com/stedolan/jq/releases/download/jq-$version/jq-$version.tar.gz
+	jq-1.6-r3-never-bundle-oniguruma.patch
+	jq-1.7-runpath.patch"
 
 build() {
-	# never use bundled oniguruma for regex support
-	sed -i '242,245d;248,250d;256,267d' $name-$version/configure.ac
+	patch -d jq-$version -p1 -i $SRC/jq-1.6-r3-never-bundle-oniguruma.patch
+	patch -d jq-$version -p1 -i $SRC/jq-1.7-runpath.patch
+
+	sed -e '/^dist_doc_DATA/d; s:-Wextra ::' -i jq-$version/Makefile.am
+	printf "#!/bin/sh\\nprintf '%s'\\n\n" "$version" > jq-$version/scripts/version
+	sed -i "s/\[jq_version\]/[$version]/" jq-$version/configure.ac
+
+	# jq-1.6-r3-never-bundle-oniguruma makes sure we build with
+	# the system oniguruma, but the bundled copy of oniguruma
+	# still gets autoreconf'd since it exists;
+	# save the cycles by nuking it.
+	sed -e '/modules\/oniguruma/d' -i jq-$version/Makefile.am
+	rm -r jq-$version/modules/oniguruma
 
 	mkdir build; cd build
 
-	autoreconf -i ../$name-$version
-	../$name-$version/configure    \
-		--prefix=/usr          \
-		--with-oniguruma=/usr  \
+	autoreconf -i ../jq-$version
+	../jq-$version/configure           \
+		--prefix=/usr              \
+		--disable-docs             \
+		--disable-maintainer-mode  \
+		--disable-valgrind         \
+		--enable-rpathhack         \
+		--with-oniguruma=no        \
 
 	make V=1
 	make DESTDIR=$PKG install
-
-	# remove junk
-	rm -r $PKG/usr/share/doc
 }
