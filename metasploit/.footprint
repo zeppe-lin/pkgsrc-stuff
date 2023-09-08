@@ -7240,6 +7240,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/gather/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/qnap_lfi.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/rails_doubletap_file_read.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/redis_extractor.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/roundcube_auth_file_read.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/safari_file_url_navigation.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/saltstack_salt_root_key.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/samsung_browser_sop_bypass.rb
@@ -7416,6 +7417,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/dolibarr_login.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/drupal_views_user_enum.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/ektron_cms400net.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/elasticsearch_memory_disclosure.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/elasticsearch_traversal.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/emby_ssrf_scanner.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/emby_version_ssrf.rb
@@ -7702,6 +7704,8 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/msmail/shared/
 drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/msmail/shared/src/
 drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/msmail/shared/src/msmail/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/msmail/shared/src/msmail/msmail.go
+drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/msmq/
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/msmq/cve_2023_21554_queuejumper.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/mssql/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/mssql/mssql_hashdump.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/mssql/mssql_login.rb
@@ -8462,6 +8466,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/samsung_srv_1670d_upload_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/seagate_nas_php_exec_noauth.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/smt_ipmi_close_window_bof.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/solarview_unauth_rce_cve_2023_23333.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/sonicwall_cve_2021_20039.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/sophos_utm_webadmin_sid_cmd_injection.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/sophos_wpa_iface_exec.rb
