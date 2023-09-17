@@ -1,13 +1,12 @@
 # Description: Fast web fuzzer
 # URL:         https://github.com/ffuf/ffuf
-# Depends on:  tree
 
 name=ffuf-bin
-version=2.0.0
+version=2.1.0
 release=1
 source=https://github.com/ffuf/ffuf/releases/download/v$version/ffuf_${version}_linux_amd64.tar.gz
 
 build() {
-	tree .
+	ls -la .
 	install -m 0755 -Dt $PKG/usr/bin/ ffuf
 }
