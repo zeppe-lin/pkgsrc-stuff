@@ -4,10 +4,12 @@
 
 name=linssid
 version=3.6
-release=2
+release=3
 source="https://downloads.sourceforge.net/$name/${name}_${version}.orig.tar.gz
-	$name-start.png $name-pause.png
-	change-default-font.patch linssid-qwt-6.2.patch"
+	$name-start.png
+	$name-pause.png
+	change-deffont.patch
+	qwt-6.2.patch"
 
 build() {
 	cd $name-$version
@@ -15,29 +17,30 @@ build() {
 	# replace kde icons with trinity ones
 	cp -f $SRC/$name-start.png $SRC/$name-pause.png $name-app/
 
-	sed -r 's|libqwt-qt5.so|libqwt.so|g' -i linssid-app/linssid-app.pro
-	sed -r 's|/usr/sbin|/usr/bin|g'      -i linssid-app/linssid-app.pro
+	sed -e 's|libqwt-qt5.so|libqwt.so|g' \
+	    -e 's|/usr/sbin|/usr/bin|g'      \
+	    -i $name-app/$name-app.pro
 
 	# fix linssid-pkexec to use ktsuss
-	sed -e 's|Try linssid-pkexec instead.|Try linssid-su instead.|' \
-		-i linssid-app/main.cpp
-	sed -e 's|Exec=linssid-pkexec|Exec=linssid-su|' \
-		-i linssid-app/linssid.desktop
-	sed -e 's|^pkexec.*|ktsuss "/usr/bin/linssid"|' \
-		-i linssid-app/linssid-pkexec
+	sed "s|Try $name-pkexec instead.|Try $name-ktsuss instead.|" \
+		-i $name-app/main.cpp
+	sed "s|Exec=$name-pkexec|Exec=/usr/bin/$name-ktsuss|" \
+		-i $name-app/$name.desktop
+	sed -e 's|^pkexec.*|exec ktsuss /usr/bin/linssid \$@|' \
+		-i $name-app/$name-pkexec
 
 	# fix build with qwt 6.2
-	patch -p1 -i ../linssid-qwt-6.2.patch
+	patch -p1 -i $SRC/qwt-6.2.patch
 
 	# fix default font and scale in table view
-	sed 's/xos4 Terminus/Iosevka Term/g' ../change-default-font.patch |
-		patch -p0 -i -
+	sed 's/xos4 Terminus/Iosevka Term/g' \
+		$SRC/change-deffont.patch | patch -p0 -i -
 
 	qmake-qt5
 	make
 	make INSTALL_ROOT=$PKG install
 
-	mv $PKG/usr/bin/linssid-pkexec $PKG/usr/bin/linssid-su
+	mv $PKG/usr/bin/$name-pkexec $PKG/usr/bin/$name-ktsuss
 
 	# remove junk
 	rm -r $PKG/usr/share/polkit-1
