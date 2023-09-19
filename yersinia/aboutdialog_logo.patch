@@ -1,0 +1,29 @@
+diff '--color=auto' -pruN yersinia-867b309eced9e02b63412855440cd4f5f7727431.orig/src/gtk-interface.c yersinia-867b309eced9e02b63412855440cd4f5f7727431/src/gtk-interface.c
+--- yersinia-867b309eced9e02b63412855440cd4f5f7727431.orig/src/gtk-interface.c	2023-09-19 23:59:21.942470594 +0300
++++ yersinia-867b309eced9e02b63412855440cd4f5f7727431/src/gtk-interface.c	2023-09-20 00:07:20.431468941 +0300
+@@ -870,7 +870,6 @@ gtk_i_create_capturedialog (struct gtk_s
+    return savedialog;
+ }
+ 
+-
+ void gtk_i_create_aboutdialog( GtkMenuItem *menuitem, gpointer user_data )
+ 
+ {
+@@ -882,7 +881,6 @@ void gtk_i_create_aboutdialog( GtkMenuIt
+       NULL
+     };
+     gchar *translators = _("translator-credits");
+-    GdkPixbuf *aboutdialog_logo_pixbuf;
+ 
+     aboutdialog = gtk_about_dialog_new();
+ 
+@@ -901,9 +899,6 @@ void gtk_i_create_aboutdialog( GtkMenuIt
+     gtk_about_dialog_set_authors( GTK_ABOUT_DIALOG( aboutdialog ), authors );
+     gtk_about_dialog_set_translator_credits( GTK_ABOUT_DIALOG( aboutdialog ), translators );
+ 
+-    aboutdialog_logo_pixbuf = create_pixbuf( "yersinia.png" );
+-    
+-    gtk_about_dialog_set_logo( GTK_ABOUT_DIALOG( aboutdialog ), aboutdialog_logo_pixbuf );
+ 
+     gtk_dialog_run( GTK_DIALOG( aboutdialog ) );
+ 

@@ -4,34 +4,42 @@
 
 name=yersinia
 version=0.8.2-867b309
-release=1
+release=2
 source="https://github.com/tomac/$name/archive/${version##*-}/$name-${version##*-}.tar.gz
-	0001-gtk-interface.c-respect-system-font.patch"
+	respect_system_font.patch
+	aboutdialog_logo.patch
+	yersinia-gtk.sh
+	yersinia-gtk.desktop"
 
 build() {
 	patch -p1 -d $name-${version#*-}* \
-		-i $SRC/0001-gtk-interface.c-respect-system-font.patch
+		-i $SRC/respect_system_font.patch
+
+	# remove broken and useless logo resource
+	patch -p1 -d $name-${version#*-}* \
+		-i $SRC/aboutdialog_logo.patch
 
 	mkdir build; cd build
 
-	autoreconf -fi ../$name-${version#*-}*
+	NOCONFIGURE=1 autoreconf -fi ../$name-${version#*-}*
+
+	# remove system optimization flag, yersinia compiles with -O3
+	CFLAGS=$(echo $CFLAGS | sed 's/-O. / /')
 
 	# remove debug flag
 	sed -i "/CFLAGS=/s/\(-O3 -Wall\) -g/$CFLAGS \1 -fcommon/g" \
 		../$name-${version#*-}*/configure.ac
 
 	# --disable-admin: disable the remove admin interface
-	../$name-${version#*-}*/configure   \
-		--prefix=/usr               \
-		--disable-admin             \
+	../$name-${version#*-}*/configure  \
+		--prefix=/usr              \
+		--disable-admin            \
 
-		make V=1
+	make V=1
 	make DESTDIR=$PKG install
 
-	# wrapper to run yersinia as root
-	cat <<EOF > $PKG/usr/bin/$name-su
-#!/bin/sh -e
-exec ktsuss "yersinia -G"
-EOF
-	chmod 0755 $PKG/usr/bin/$name-su
+	install -m 0644 -Dt $PKG/usr/share/applications/ \
+		$SRC/yersinia-gtk.desktop
+
+	install -m 0755 -D $SRC/yersinia-gtk.sh $PKG/usr/bin/yersinia-gtk
 }
