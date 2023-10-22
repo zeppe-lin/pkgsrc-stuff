@@ -1,0 +1,17 @@
+# Description: Time command execution over multiple executions
+# URL:         https://tratt.net/laurie/src/multitime/
+
+name=multitime
+version=1.4
+release=1
+source=https://tratt.net/laurie/src/$name/releases/$name-$version.tar.gz
+
+build() {
+	# build in separate dir is broken
+	cd $name-$version
+
+	./configure --prefix=/usr
+
+	make V=1
+	make DESTDIR=$PKG install
+}
