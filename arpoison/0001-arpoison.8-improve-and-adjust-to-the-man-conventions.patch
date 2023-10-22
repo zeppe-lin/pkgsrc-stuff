@@ -1,0 +1,89 @@
+From f959d31f08a1ccb5eca73e1ece67aa83c5f662c1 Mon Sep 17 00:00:00 2001
+From: Alexandr Savca <alexandr.savca89@gmail.com>
+Date: Sun, 30 Jul 2023 14:48:40 +0300
+Subject: [PATCH 1/5] arpoison.8: improve and adjust to the man conventions
+
+---
+ arpoison.8 | 51 ++++++++++++++++++++++++++++++---------------------
+ 1 file changed, 30 insertions(+), 21 deletions(-)
+
+diff --git a/arpoison.8 b/arpoison.8
+index e3f4191..e361dcb 100644
+--- a/arpoison.8
++++ b/arpoison.8
+@@ -1,42 +1,51 @@
+ ./" Arpoison -- Steve Buer
+-./" ---------------------
+-./" Jan 2003
++./" ----------------------
++./" January 2003
+ 
++.TH arpoison 8 "July 2023" "arpoison @VERSION@"
+ 
+-.TH arpoison "Jan 2003" "Arpoison"
+ .SH NAME
+ arpoison -- arp cache update utility
++
+ .SH SYNOPSIS
+-.BI "arpoison -i <device> -d <destIP> -s <sourceIP> -t <targMAC> -r <srcMAC> [-a] [-n number of packets] [-w time between packets]" 
++.B arpoison -i \fIinterface\fR -d \fIdestip\fR -s \fIsourceip\fR
++-t \fItargetmac\fR -r \fIsourcemac\fR [-a] [-n \fInum\fR]
++[-w \fIinterval\fR]
++
+ .SH DESCRIPTION
+ .BI
+-Arpoison constructs an ARP REQUEST or REPLY packet using the specified hardware and 
+-protocol addresses and sends it out the specified interface.
++Arpoison constructs an ARP REQUEST or REPLY packet using the specified
++hardware and protocol addresses and sends it out the specified
++interface.
+ 
++.SH OPTIONS
+ .TP
+-.B \-i 
+-Device e.g. eth0
++.B \-i \fIinterface\fR
++Specify a network interface for outgoing packets.
+ .TP
+-.B \-d
+-Destination IP address in dotted decimal notation.
++.B \-d \fIdestip\fR
++Set the following IP address (in dotted decimal notation) as the
++destination address in outgoing packets.
+ .TP
+-.B \-s
+-Source IP address in dotted decimal notation
++.B \-s \fIsourceip\fR
++Set the following IP address (in dotted decimal notation) as the
++source address in outgoing packets.
+ .TP
+-.B \-t 
+-Target MAC address e.g. 00:f3:b2:23:17:f5 
++.B \-t \fItargetmac\fR
++Set the following MAC address as the destination address in outgoing
++packets.  e.g. 00:f3:b2:23:17:f5.
+ .TP
+-.B \-r 
+-Source MAC address
++.B \-r \fIsourcemac\fR
++Set the following MAC address as the source address in outgoing packets.
+ .TP
+ .B \-a
+-Send ARP REQUEST
++Send ARP REQUEST instead of ARP REPLY.
+ .TP
+-.B \-n
+-Number of packets to send
++.B \-n \fInum\fR
++Stop after sending \fInum\fR packets.
+ .TP
+-.B \-w
+-Time in seconds between packets
++.B \-w \fIinterval\fR
++Wait \fIinterval\fR seconds between sending each packet.
+ 
+ .SH AUTHOR
+ Steve Buer <sabuer@mailbox.syr.edu>
+-- 
+2.41.0
+

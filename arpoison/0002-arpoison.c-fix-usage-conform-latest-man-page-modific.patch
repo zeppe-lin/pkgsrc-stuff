@@ -1,0 +1,59 @@
+From 7e9b6f2e7a12b4d9c970fa8e9435b455a9498d1a Mon Sep 17 00:00:00 2001
+From: Alexandr Savca <alexandr.savca89@gmail.com>
+Date: Sun, 30 Jul 2023 14:49:50 +0300
+Subject: [PATCH 2/5] arpoison.c: fix usage conform latest man page
+ modifications
+
+---
+ arpoison.c | 14 ++++++++------
+ 1 file changed, 8 insertions(+), 6 deletions(-)
+
+diff --git a/arpoison.c b/arpoison.c
+index 4361518..403fdfa 100644
+--- a/arpoison.c
++++ b/arpoison.c
+@@ -16,10 +16,12 @@
+ #define ARP_REPLY 2
+ #define ARP_REQUEST 1
+ 
+-void usage()
++void usage(const char *prog)
+ {
+-	printf("Usage: -i <device> -d <dest IP> -s <src IP> -t <target MAC> -r <src MAC> "
+-		"[-a] [-w time between packets] [-n number to send]\n");
++	printf("Usage: %s -i <interface> -d <destip> -s <sourceip> "
++		"-t <targetmac> -r <sourcemac> [-a] [-n num] "
++		"[-w interval]\n",
++	       prog);
+ 	exit(1);
+ }
+ 
+@@ -56,7 +58,7 @@ int main(int argc, char *argv[])
+ 		
+ 			case 'h':
+ 
+-				usage();
++				usage(argv[0]);
+ 				break;
+ 		
+ 			case 'd':
+@@ -146,14 +148,14 @@ int main(int argc, char *argv[])
+ 				break;
+      
+ 			default:
+-				usage();
++				usage(argv[0]);
+ 
+ 		} // switch     
+ 
+ 	} // while
+ 
+ 	if(SrcIP == 0 || DstIP == 0 || SrcHW[0] == 'N' || DstHW[0] == 'N')
+-		usage();
++		usage(argv[0]);
+ 
+ 	if (getuid()) {
+ 
+-- 
+2.41.0
+

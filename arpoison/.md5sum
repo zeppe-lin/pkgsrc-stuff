@@ -1,0 +1,6 @@
+799e22e20126d340c744405236ebef20  0001-arpoison.8-improve-and-adjust-to-the-man-conventions.patch
+3ebf293cad272d8432de1902bd4224c4  0002-arpoison.c-fix-usage-conform-latest-man-page-modific.patch
+40746ffb72a3ddda23229a5e6ed08c3d  0003-rework-build-system.patch
+ca7c6d3a3496e54d76136921e29d524f  0004-README-adjust-to-80x24-fix-libnet-project-address.patch
+7ae1583494ad58a0080651bd2b19e245  0005-arpoison.c-clean-up-the-code-by-whitespace-and-misin.patch
+0e86186eb18c9aabf78afa9706b40530  arpoison-0.7.tar.gz

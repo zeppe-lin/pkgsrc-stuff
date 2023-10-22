@@ -1,0 +1,24 @@
+# Description: Utility to poison ARP cache
+# URL:         http://www.arpoison.net/
+# Depends on:  libnet
+
+name=arpoison
+version=0.7
+release=1
+source="http://www.arpoison.net/$name-$version.tar.gz
+	0001-arpoison.8-improve-and-adjust-to-the-man-conventions.patch
+	0002-arpoison.c-fix-usage-conform-latest-man-page-modific.patch
+	0003-rework-build-system.patch
+	0004-README-adjust-to-80x24-fix-libnet-project-address.patch
+	0005-arpoison.c-clean-up-the-code-by-whitespace-and-misin.patch"
+
+build() {
+	cd $name-$version
+
+	local _PATCH
+	for _PATCH in $SRC/*.patch; do
+		patch -p1 -i $_PATCH
+	done
+
+	make PREFIX=/usr DESTDIR=$PKG install
+}

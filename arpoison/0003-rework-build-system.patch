@@ -1,0 +1,67 @@
+From 041ad8ca8ef0028652f34b48847a4e3912782051 Mon Sep 17 00:00:00 2001
+From: Alexandr Savca <alexandr.savca89@gmail.com>
+Date: Sun, 30 Jul 2023 14:51:46 +0300
+Subject: [PATCH 3/5] rework build system
+
+1. Improve Makefile
+2. Add config.mk file with default settings
+---
+ Makefile  | 22 +++++++++++++++++++---
+ config.mk | 12 ++++++++++++
+ 2 files changed, 31 insertions(+), 3 deletions(-)
+ create mode 100644 config.mk
+
+diff --git a/Makefile b/Makefile
+index c370f6e..3841166 100644
+--- a/Makefile
++++ b/Makefile
+@@ -1,9 +1,25 @@
++.POSIX:
++
++include config.mk
++
+ all: arpoison
+ 
+-arpoison: arpoison.c
++arpoison: arpoison.o
++
++install: all
++	mkdir -p         ${DESTDIR}${PREFIX}/sbin
++	mkdir -p         ${DESTDIR}${MANPREFIX}/man8
++	cp -f arpoison   ${DESTDIR}${PREFIX}/sbin/
++	sed "s/@VERSION@/${VERSION}/" arpoison.8 > \
++	                 ${DESTDIR}${MANPREFIX}/man8/arpoison.8
++	chmod 0755       ${DESTDIR}${PREFIX}/sbin/arpoison
++	chmod 0644       ${DESTDIR}${MANPREFIX}/man8/arpoison.8
+ 
+-	gcc -lnet -o arpoison `libnet-config --defines` -I/opt/local/include -L/opt/local/lib arpoison.c
++uninstall:
++	rm -f ${DESTDIR}${PREFIX}/sbin/arpoison
++	rm -f ${DESTDIR}${MANPREFIX}/man8/arpoison.8
+ 
+ clean:
++	rm -f arpoison arpoison.o
+ 
+-	@rm -f arpoison
++.PHONY: all install uninstall clean
+diff --git a/config.mk b/config.mk
+new file mode 100644
+index 0000000..4fd223a
+--- /dev/null
++++ b/config.mk
+@@ -0,0 +1,12 @@
++# project metadata
++NAME      = ARPoison
++VERSION   = 0.7
++
++# paths
++PREFIX    = /usr/local
++MANPREFIX = ${PREFIX}/share/man
++
++# flags
++CPPFLAGS  = $(shell libnet-config --defines)
++CFLAGS    = $(shell libnet-config --cflags ) -pedantic -Wall -Wextra
++LDFLAGS   = $(shell libnet-config --libs   )
+-- 
+2.41.0
+
