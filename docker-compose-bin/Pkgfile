@@ -1,0 +1,18 @@
+# Description: Define and run multi-container Docker applications with YAML
+# URL:         https://docs.docker.com/compose/
+# Depends on:  docker-bin
+
+name=docker-compose-bin
+version=2.21.0
+release=1
+source=$name-$version-x86_64.bin::https://github.com/docker/compose/releases/download/v$version/docker-compose-linux-x86_64
+
+build() {
+	mkdir -p $PKG/usr/bin
+	mkdir -p $PKG/usr/lib/docker/cli-plugins
+
+	mv $name-$version-x86_64.bin $PKG/usr/bin/docker-compose
+	chmod +x $PKG/usr/bin/docker-compose
+	ln -s /usr/bin/docker-compose \
+		$PKG/usr/lib/docker/cli-plugins/docker-compose
+}
