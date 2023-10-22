@@ -1,0 +1,3 @@
+#!/bin/sh -ex
+export PATH="/sbin:/usr/sbin:/bin:/usr/bin"
+getent group docker || groupadd -r docker

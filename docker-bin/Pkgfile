@@ -1,0 +1,22 @@
+# Description: Pack, ship & run any application as a lightweight container
+# URL:         https://www.docker.com/
+# Depends on:  iproute2 lvm2 btrfs-progs gzip
+
+name=docker-bin
+version=24.0.5
+release=1
+source="https://download.docker.com/linux/static/stable/x86_64/docker-$version.tgz
+	rc.docker"
+
+build() {
+	mkdir -p $PKG/usr/bin
+	cp -a docker/* $PKG/usr/bin/
+
+	# Docker's man pages looks like sh!\t
+	#http://jaeger.morpheus.net/linux/crux/files/docker-man-pages-$version.tar.xz
+	#install -m 0644 -Dt $PKG/usr/share/man/man1/ $SRC/man1/*
+	#install -m 0644 -Dt $PKG/usr/share/man/man5/ $SRC/man5/*
+	#install -m 0644 -Dt $PKG/usr/share/man/man8/ $SRC/man8/*
+
+	install -m 0755 -D $SRC/rc.docker $PKG/etc/rc.d/docker
+}
