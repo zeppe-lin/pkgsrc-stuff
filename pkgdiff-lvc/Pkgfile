@@ -1,0 +1,20 @@
+# Description: Analyzing changes in Linux software packages
+# URL:         https://lvc.github.io/pkgdiff
+# Depends on:  p5-file-libmagic wdiff
+
+name=pkgdiff-lvc
+version=1.7.2
+release=1
+source="https://github.com/lvc/pkgdiff/archive/$version/$name-$version.tar.gz
+	zstd.patch"
+
+build() {
+	cd pkgdiff-$version
+
+	# tar.zst support https://github.com/lvc/pkgdiff/issues/40 
+	patch -Np1 -i $SRC/zstd.patch
+
+	mkdir -p $PKG/usr
+	perl Makefile.pl --install --prefix=/usr --destdir=$PKG
+	mv $PKG/usr/bin/pkgdiff $PKG/usr/bin/$name
+}
