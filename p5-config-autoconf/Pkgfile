@@ -1,0 +1,25 @@
+# Description: Implement some of AutoConf macros in pure
+# URL:         https://metacpan.org/pod/Config::AutoConf
+# Depends on:  p5-capture-tiny
+
+name=p5-config-autoconf
+version=0.320
+release=1
+source=https://cpan.metacpan.org/authors/id/A/AM/AMBS/Config-AutoConf-$version.tar.gz
+
+build() {
+	cd Config-AutoConf-$version
+
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make OPTIMIZE="$CFLAGS"
+	make DESTDIR=$PKG install
+
+        # remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			\) -delete ,            \
+		-type d -empty -delete
+}
