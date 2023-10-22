@@ -1,0 +1,42 @@
+# Description: Generate combination of domain names from the provided input
+# URL:         https://github.com/ProjectAnte/dnsgen
+# Depends on:  py3-pip
+
+name=dnsgen
+version=1.0.4-c936c68
+release=1
+source=https://github.com/ProjectAnte/$name/archive/${version#*-}/$name-${version#*-}.tar.gz
+
+build() {
+	export TMPDIR="$PKGMK_WORK_DIR"
+
+	install -d $PKG/usr/bin $PKG/opt/$name
+
+	cd $name-${version#*-}*
+
+	# install requirements
+	/usr/bin/pip3 install --use-pep517 --target $PKG/opt/$name \
+		-r requirements.txt
+
+	# install
+	/usr/bin/python3 setup.py build
+	/usr/bin/python3 setup.py install \
+		--prefix=/usr --root=$PKG/opt/$name --optimize=2
+
+	# create an indirect launcher
+	cat >$PKG/usr/bin/$name <<EOF
+#!/bin/sh
+# $name wrapper
+CPATH=/opt/$name
+PYVER=\$(python3 -V | grep -Po '\d\.\d')
+export PATH=\$PATH:\$CPATH/bin
+export PYTHONPATH=\$CPATH:\$CPATH/usr/lib/python\$PYVER/site-packages
+python3 /opt/$name/usr/bin/$name \$@
+# End of file.
+EOF
+	chmod +x $PKG/usr/bin/$name
+
+	# remove junk
+	#rm -r $PKG/opt/$name/*.dist-info (required)
+	rm -r $PKG/opt/dnsgen/*/tests
+}
