@@ -1,0 +1,12 @@
+# Description: Pull out bits of URLs provided on stdin
+# URL:         https://github.com/tomnomnom/unfurl
+
+name=unfurl-bin
+version=0.4.3
+release=1
+source=https://github.com/tomnomnom/unfurl/releases/download/v$version/unfurl-linux-amd64-$version.tgz
+
+build() {
+	ls -la .
+	install -m 0755 -Dt $PKG/usr/bin/ unfurl
+}
