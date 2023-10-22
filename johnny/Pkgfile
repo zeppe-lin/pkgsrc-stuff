@@ -4,10 +4,34 @@
 
 name=johnny
 version=2.2
-release=1
-source=https://github.com/openwall/johnny/archive/v$version/johnny-$version.tar.gz
+release=2
+source="https://github.com/openwall/johnny/archive/v$version/johnny-$version.tar.gz
+	export.svg
+	fileopen.svg
+	guess.svg
+	help.svg
+	homepage.svg
+	pause-attack.svg
+	projectnew.svg
+	projectopen.svg
+	projectsave.svg
+	quit.svg
+	start-attack.svg
+	tab_benchmark.svg
+	tab_log.svg
+	tab_options.svg
+	tab_output.svg
+	tab_passwords.svg
+	tab_settings.svg
+	trash.svg"
 
 build() {
+	# prepare trinity-like icons
+	for icon in $SRC/*.svg; do
+		convert -background None "$icon" "${icon%.*}.png"
+	done
+	mv *.png $name-$version/resources/icons/
+
 	cd johnny-$version
 
 	qmake-qt5
