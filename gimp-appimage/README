@@ -1,0 +1,7 @@
+README gimp-appimage
+
+POST-INSTALL
+
+	AppImage needs FUSE to run, so add 'modprobe fuse' to /etc/rc.modules.
+
+End of file.
