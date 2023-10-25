@@ -20,8 +20,10 @@ drwxr-xr-x	root/root	opt/spoofcheck/certifi/__pycache__/
 -rw-r--r--	root/root	opt/spoofcheck/certifi/py.typed (EMPTY)
 drwxr-xr-x	root/root	opt/spoofcheck/charset_normalizer/
 -rw-r--r--	root/root	opt/spoofcheck/charset_normalizer/__init__.py
+-rw-r--r--	root/root	opt/spoofcheck/charset_normalizer/__main__.py
 drwxr-xr-x	root/root	opt/spoofcheck/charset_normalizer/__pycache__/
 -rw-r--r--	root/root	opt/spoofcheck/charset_normalizer/__pycache__/__init__.cpython-39.pyc
+-rw-r--r--	root/root	opt/spoofcheck/charset_normalizer/__pycache__/__main__.cpython-39.pyc
 -rw-r--r--	root/root	opt/spoofcheck/charset_normalizer/__pycache__/api.cpython-39.pyc
 -rw-r--r--	root/root	opt/spoofcheck/charset_normalizer/__pycache__/cd.cpython-39.pyc
 -rw-r--r--	root/root	opt/spoofcheck/charset_normalizer/__pycache__/constant.cpython-39.pyc
@@ -31,17 +33,13 @@ drwxr-xr-x	root/root	opt/spoofcheck/charset_normalizer/__pycache__/
 -rw-r--r--	root/root	opt/spoofcheck/charset_normalizer/__pycache__/utils.cpython-39.pyc
 -rw-r--r--	root/root	opt/spoofcheck/charset_normalizer/__pycache__/version.cpython-39.pyc
 -rw-r--r--	root/root	opt/spoofcheck/charset_normalizer/api.py
-drwxr-xr-x	root/root	opt/spoofcheck/charset_normalizer/assets/
--rw-r--r--	root/root	opt/spoofcheck/charset_normalizer/assets/__init__.py
-drwxr-xr-x	root/root	opt/spoofcheck/charset_normalizer/assets/__pycache__/
--rw-r--r--	root/root	opt/spoofcheck/charset_normalizer/assets/__pycache__/__init__.cpython-39.pyc
 -rw-r--r--	root/root	opt/spoofcheck/charset_normalizer/cd.py
 drwxr-xr-x	root/root	opt/spoofcheck/charset_normalizer/cli/
--rw-r--r--	root/root	opt/spoofcheck/charset_normalizer/cli/__init__.py (EMPTY)
+-rw-r--r--	root/root	opt/spoofcheck/charset_normalizer/cli/__init__.py
+-rw-r--r--	root/root	opt/spoofcheck/charset_normalizer/cli/__main__.py
 drwxr-xr-x	root/root	opt/spoofcheck/charset_normalizer/cli/__pycache__/
 -rw-r--r--	root/root	opt/spoofcheck/charset_normalizer/cli/__pycache__/__init__.cpython-39.pyc
--rw-r--r--	root/root	opt/spoofcheck/charset_normalizer/cli/__pycache__/normalizer.cpython-39.pyc
--rw-r--r--	root/root	opt/spoofcheck/charset_normalizer/cli/normalizer.py
+-rw-r--r--	root/root	opt/spoofcheck/charset_normalizer/cli/__pycache__/__main__.cpython-39.pyc
 -rw-r--r--	root/root	opt/spoofcheck/charset_normalizer/constant.py
 -rw-r--r--	root/root	opt/spoofcheck/charset_normalizer/legacy.py
 -rw-r--r--	root/root	opt/spoofcheck/charset_normalizer/md.cpython-39-x86_64-linux-gnu.so
