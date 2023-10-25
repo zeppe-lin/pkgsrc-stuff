@@ -1,0 +1,25 @@
+# Description: Torrent viewer and editor
+# URL:         http://gtorrentviewer.sourceforge.net/
+# Depends on:  curl gtk p5-xml-parser
+
+name=gtorrentviewer
+version=0.2b
+release=1
+source=https://downloads.sourceforge.net/$name/GTorrentViewer-$version.tar.gz
+
+build() {
+	cd GTorrentViewer-$version
+
+	./configure \
+		--prefix=/usr            \
+		--mandir=/usr/share/man  \
+		LDFLAGS="$LDFLAGS -lm"   \
+
+	sed -i '/#include <curl\/types.h>/d' src/main.c
+
+	make V=1
+	make DESTDIR=$PKG install
+
+	# remove junk
+	rm $PKG/usr/share/GTorrentViewer/README
+}
