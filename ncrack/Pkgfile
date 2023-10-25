@@ -9,6 +9,7 @@ source="https://nmap.org/$name/dist/$name-$version.tar.gz
 	fix-spelling-errors.patch"
 
 build() {
+	# build in separate dir is broken
 	cd $name-$version
 
 	patch -p1 -i $SRC/fix-spelling-errors.patch
@@ -16,7 +17,10 @@ build() {
 	export CFLAGS="$CFLAGS -fcommon"
 
 	autoreconf -fiv
-	./configure --prefix=/usr
+	./configure                             \
+		--prefix=/usr                   \
+		--without-openssl-header-check  \
+		--without-zlib-version-check    \
 
 	make V=1
 	make DESTDIR=$PKG install
