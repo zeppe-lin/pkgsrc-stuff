@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=gspoof-gtk
+Comment=GTK+ TCP/IP Packet forger
+Exec=gspoof-gtk
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/gspoof.png
+Categories=GTK;Network;

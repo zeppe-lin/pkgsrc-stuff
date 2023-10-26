@@ -4,13 +4,15 @@
 
 name=gspoof
 version=3.2
-release=1
+release=2
 source="http://gspoof.sourceforge.net/src/gspoof-$version.tar.gz
 	configure.ac.patch
 	gfuncts.c.patch
 	ginclude.h.patch
 	gtk.c.patch
-	interface.c.patch"
+	interface.c.patch
+	$name-gtk.sh
+	$name-gtk.desktop"
 
 build() {
 	export CFLAGS="$CFLAGS -I/usr/include/cairo"
@@ -30,6 +32,15 @@ build() {
 	make V=1
 	#make DESTDIR=$PKG install (broken)
 
-	install -m 0755 -D gspoof $PKG/usr/bin/gspoof
-	install -m 0644 -D pixmap/icon.png $PKG/usr/share/pixmaps/$name.png
+	mkdir -p $PKG/usr/bin/
+	mkdir -p $PKG/usr/share/applications
+	mkdir -p $PKG/usr/share/pixmaps
+	install -m 0755 gspoof                                   \
+		$PKG/usr/bin/gspoof
+	install -m 0755 $SRC/gspoof-gtk.sh                       \
+		$PKG/usr/bin/gspoof-gtk
+	install -m 0644 $SRC/gspoof-gtk.desktop                  \
+		$PKG/usr/share/applications/gspoof-gtk.desktop
+	install -m 0644 pixmap/icon.png                          \
+		$PKG/usr/share/pixmaps/gspoof.png
 }
