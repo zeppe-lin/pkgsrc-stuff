@@ -1,0 +1,34 @@
+# Description: Find usernames across social networks
+# URL:         https://github.com/sherlock-project/sherlock
+# Depends on:  py3-pip
+
+name=sherlock
+version=0.1-b7cd7ab
+release=1
+source="https://github.com/sherlock-project/$name/archive/${version#*-}/$name-$version.tar.gz
+	$name.sh
+	revdep.$name"
+
+build() {
+	export TMPDIR="$PKGMK_WORK_DIR"
+
+	install -d $PKG/usr/bin $PKG/opt/$name
+
+	cd $name-${version#*-}*
+
+	# install requirements
+	/usr/bin/pip3 install                \
+		--use-pep517                 \
+		--target      $PKG/opt/$name \
+		--requirement requirements.txt
+
+	# install
+	cp -a sherlock $PKG/opt/$name
+
+	install -m 0755 -D $SRC/sherlock.sh $PKG/usr/bin/sherlock
+	install -m 0644 -D $SRC/revdep.$name $PKG/etc/revdep.d/$name
+	
+	# remove junk
+	#rm -r $PKG/opt/$name/*.dist-info (required)
+	rm -r $PKG/opt/$name/*/tests
+}
