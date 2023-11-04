@@ -2,9 +2,11 @@
 # URL:         https://www.nvidia.com/
 # Depends on:  gtk gtk3 libglvnd
 
+# https://www.nvidia.com/en-us/drivers/unix/
+
 name=nvidia
 version=535.129.03
-release=1
+release=2
 source="https://us.download.nvidia.com/XFree86/Linux-x86_64/$version/NVIDIA-Linux-x86_64-$version.run
 	10-nvidia-drm-outputclass.conf
 	90-nvidia-uvm.rules
@@ -78,9 +80,10 @@ build() {
 	install -D -m 0644 nvidia.icd $PKG/etc/OpenCL/vendors/nvidia.icd
 
 	# CUDA MPI applications
-	install -d $PKG/usr/bin
+	install -d $PKG/usr/bin $PKG/usr/share/man/man1
 	install -m 0755 nvidia-cuda-mps-control $PKG/usr/bin/
 	install -m 0755 nvidia-cuda-mps-server  $PKG/usr/bin/
+	install -m 0644 nvidia-cuda-mps-control.1.gz $PKG/usr/share/man/man1/
 
 	# TLS libraries
 	install -m 0755 libnvidia-tls.so.$version $PKG/usr/lib/
@@ -91,16 +94,26 @@ build() {
 	ln -s libnvidia-ml.so.$version $PKG/usr/lib/libnvidia-ml.so
 
 	# applications
-	# TODO man pages? nvidia-persistenced(1) is shipped
 	install -m 4755 nvidia-modprobe $PKG/usr/bin/
-	install -m 0755 nvidia-xconfig nvidia-settings nvidia-smi \
-		nvidia-debugdump nvidia-persistenced nvidia-powerd $PKG/usr/bin/
-	install -m 0755  -D $SRC/rc.nvidia-powerd $PKG/etc/rc.d/nvidia-powerd
+	install -m 0755 nvidia-xconfig nvidia-settings nvidia-smi  \
+		nvidia-debugdump nvidia-persistenced nvidia-powerd \
+		$PKG/usr/bin/
+	install -m 0644 nvidia-modprobe.1.gz nvidia-persistenced.1.gz    \
+		nvidia-settings.1.gz nvidia-smi.1.gz nvidia-xconfig.1.gz \
+		$PKG/usr/share/man/man1/
 
+	# freedesktop files for some applications
+	install -d $PKG/usr/share/pixmaps $PKG/usr/share/applications
+	sed -i 's|__UTILS_PATH__|/usr/bin|' nvidia-settings.desktop
+	install -m 0644 nvidia-settings.png     $PKG/usr/share/pixmaps/
+	install -m 0644 nvidia-settings.desktop $PKG/usr/share/applications/
+
+	# nvidia-powerd service file
+	install -m 0755 -D $SRC/rc.nvidia-powerd $PKG/etc/rc.d/nvidia-powerd
 
 	# nvidia-settings UI libraries
-	install -m 0755 libnvidia-gtk2.so.$version \
-		libnvidia-gtk3.so.$version $PKG/usr/lib/
+	install -m 0755 libnvidia-gtk2.so.$version $PKG/usr/lib/
+	install -m 0755 libnvidia-gtk3.so.$version $PKG/usr/lib/
 
 	# encoding/decoding libraries
 	install -m 0755 libnvcuvid.so.$version $PKG/usr/lib/
