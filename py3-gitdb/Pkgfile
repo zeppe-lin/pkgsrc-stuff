@@ -3,15 +3,18 @@
 # Depends on:  py3-smmap
 
 name=py3-gitdb
-version=4.0.10
+version=4.0.11
 release=1
 source=https://pypi.org/packages/source/g/gitdb/gitdb-$version.tar.gz
 
 build() {
+	export TMPDIR="$PKGMK_WORK_DIR"
+
 	cd gitdb-$version
 
 	/usr/bin/python3 setup.py build
-	/usr/bin/python3 setup.py install --prefix=/usr --root=$PKG -O1
+	/usr/bin/python3 setup.py install \
+		--prefix=/usr --root=$PKG --optimize=2
 
 	# remove junk
 	rm -r $PKG/usr/lib/python*/site-packages/gitdb/test/
