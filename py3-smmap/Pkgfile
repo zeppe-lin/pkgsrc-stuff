@@ -3,7 +3,7 @@
 # Depends on:  py3-setuptools
 
 name=py3-smmap
-version=5.0.0
+version=5.0.1
 release=1
 source=https://pypi.org/packages/source/s/smmap/smmap-$version.tar.gz
 
@@ -11,7 +11,8 @@ build() {
 	cd smmap-$version
 
 	/usr/bin/python3 setup.py build
-	/usr/bin/python3 setup.py install --prefix=/usr --root=$PKG -O2
+	/usr/bin/python3 setup.py install \
+		--prefix=/usr --root=$PKG --optimize=2
 
 	# remove junk
 	rm -r $PKG/usr/lib/python*/site-packages/smmap/test
