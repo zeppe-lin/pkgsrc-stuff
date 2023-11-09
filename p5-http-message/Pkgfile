@@ -3,7 +3,7 @@
 # Depends on:  p5-clone p5-encode-locale p5-http-date p5-io-html p5-lwp-mediatypes p5-uri
 
 name=p5-http-message
-version=6.44
+version=6.45
 release=1
 source=https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTTP-Message-$version.tar.gz
 
