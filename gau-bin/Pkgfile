@@ -1,13 +1,12 @@
 # Description: Fetch known URLs from AlienVault's Open Threat Exchange, the Wayback Machine, and Common Crawl
 # URL:         https://github.com/lc/gau
-# Depends on:  tree
 
 name=gau-bin
-version=2.1.2
+version=2.2.1
 release=1
 source=https://github.com/lc/gau/releases/download/v$version/gau_${version}_linux_amd64.tar.gz
 
 build() {
-	tree .
+	ls -la .
 	install -m 0755 -Dt $PKG/usr/bin/ gau
 }
