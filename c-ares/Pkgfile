@@ -1,19 +1,19 @@
 # Description: Asynchronous C DNS library
-# URL:         https://c-ares.haxx.se
+# URL:         https://c-ares.haxx.se/
 
 name=c-ares
-version=1.19.1
+version=1.21.0
 release=1
 source=https://$name.haxx.se/download/$name-$version.tar.gz
 
 build() {
-	mkdir build; cd build
+	cmake -S $name-$version -B build -G Ninja       \
+		-D CMAKE_INSTALL_PREFIX=/usr            \
+		-D CMAKE_INSTALL_LIBDIR=lib             \
+		-D CMAKE_BUILD_TYPE=Release             \
+		-D CMAKE_C_FLAGS_RELEASE="$CFLAGS"      \
+		-Wno-dev
 
-	../$name-$version/configure  \
-		--prefix=/usr        \
-		--disable-tests      \
-		--disable-debug      \
-
-	make V=1
-	make DESTDIR=$PKG install
+	ninja -C build -j ${JOBS:-1} -v
+	DESTDIR=$PKG ninja -C build install
 }
