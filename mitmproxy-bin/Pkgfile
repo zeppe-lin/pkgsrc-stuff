@@ -3,7 +3,7 @@
 # Depends on:  zlib
 
 name=mitmproxy-bin
-version=10.0.0
+version=10.1.3
 release=1
 source=https://snapshots.mitmproxy.org/$version/mitmproxy-$version-linux.tar.gz
 
