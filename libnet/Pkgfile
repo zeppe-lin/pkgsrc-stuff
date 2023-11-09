@@ -1,17 +1,17 @@
 # Description: Library for constructing and injecting network packets
-# URL:         http://libnet-dev.sf.net
+# URL:         https://github.com/libnet/libnet
 
 name=libnet
-version=1.2
+version=1.3
 release=1
 source=https://github.com/$name/$name/releases/download/v$version/$name-$version.tar.gz
 
 build() {
 	mkdir build; cd build
 
-	../$name-$version/configure   \
-		--prefix=/usr         \
-		--disable-doxygen-doc \
+	../$name-$version/configure    \
+		--prefix=/usr          \
+		--disable-doxygen-doc  \
 
 	make V=1
 	make DESTDIR=$PKG install
