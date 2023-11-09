@@ -3,9 +3,9 @@
 # Depends on:  perl
 
 name=p5-test-warnings
-version=0.031
+version=0.032
 release=1
-source=https://cpan.metacpan.org/authors/id/E/ET/ETHER/Test-Warnings-0.031.tar.gz
+source=https://cpan.metacpan.org/authors/id/E/ET/ETHER/Test-Warnings-$version.tar.gz
 
 build() {
 	cd Test-Warnings-$version
