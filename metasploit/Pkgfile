@@ -1,6 +1,6 @@
 # Description: Penetration testing framework
 # URL:         https://www.metasploit.com/
-# Depends on:  inetutils libpcap postgresql ruby sqlite3
+# Depends on:  glibc-32 inetutils libpcap postgresql ruby sqlite3
 
 name=metasploit
 version=6.3.41
