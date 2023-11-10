@@ -3,7 +3,7 @@
 # Depends on:  curl libxslt ruby
 
 name=wpscan
-version=3.8.24
+version=3.8.25
 release=1
 source=https://github.com/wpscanteam/$name/archive/v$version/$name-$version.tar.gz
 
