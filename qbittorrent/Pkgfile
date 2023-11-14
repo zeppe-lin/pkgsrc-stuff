@@ -1,0 +1,23 @@
+# Description: Advanced BitTorrent client in C++
+# URL:         https://github.com/qbittorrent
+# Depends on:  boost libtorrent-rasterbar python3 qt5
+
+name=qbittorrent
+version=4.5.5
+release=1
+source=$name-$version.tar.gz::https://github.com/$name/qBittorrent/archive/refs/tags/release-$version.tar.gz
+
+build() {
+	cmake -S qBittorrent-*$version -B build -G Ninja  \
+		-D CMAKE_INSTALL_PREFIX=/usr              \
+		-D CMAKE_INSTALL_LIBDIR=lib               \
+		-D CMAKE_INSTALL_LIBEXECDIR=lib           \
+		-D CMAKE_BUILD_TYPE=Release               \
+		-D CMAKE_C_FLAGS_RELEASE="$CFLAGS"        \
+		-D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS"    \
+		-D QT6=OFF                                \
+		-Wno-dev                                  \
+
+	ninja -C build -j ${JOBS:-1} -v
+	DESTDIR=$PKG ninja -C build install
+}

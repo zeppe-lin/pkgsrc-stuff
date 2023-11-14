@@ -1,0 +1,27 @@
+# Description: C++ bittorrent library
+# URL:         https://github.com/arvidn/libtorrent
+# Depends on:  boost openssl python3
+
+name=libtorrent-rasterbar
+version=2.0.9
+release=1
+source=https://github.com/arvidn/libtorrent/releases/download/v$version/$name-$version.tar.gz
+
+build() {
+	export PYTHON=/usr/bin/python3
+
+	cmake -S $name-$version -B build -G Ninja       \
+		-D CMAKE_INSTALL_PREFIX=/usr            \
+		-D CMAKE_INSTALL_LIBDIR=lib             \
+		-D CMAKE_INSTALL_LIBEXECDIR=lib         \
+		-D CMAKE_BUILD_TYPE=Release             \
+		-D CMAKE_C_FLAGS_RELEASE="$CFLAGS"      \
+		-D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS"  \
+		-D python-bindings:BOOL="ON"            \
+		-D boost-python-module-name="python"    \
+		-D python-egg-info="ON"                 \
+		-Wno-dev                                \
+
+	ninja -C build -j ${JOBS:-1} -v
+	DESTDIR=$PKG ninja -C build install
+}
