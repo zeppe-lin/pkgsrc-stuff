@@ -5016,6 +5016,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/dns/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/ftp_server.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/gdb.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/cisco_ios_xe.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/drupal.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/exchange.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/exchange/
@@ -5838,6 +5839,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/ui/console/command_dispatcher/db/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/ui/console/command_dispatcher/payload.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/ui/console/command_dispatcher/post.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/ui/console/command_dispatcher/resource.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/ui/console/command_dispatcher/session.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/ui/console/driver.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/ui/console/framework_event_manager.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/ui/console/module_action_commands.rb
@@ -6761,6 +6763,8 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/admin/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/http/axigen_file_access.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/http/cfme_manageiq_evm_pass_reset.rb
 -rwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/admin/http/cisco_7937g_ssh_privesc.py
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/http/cisco_ios_xe_cli_exec_cve_2023_20198.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/http/cisco_ios_xe_os_exec_cve_2023_20273.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/http/cnpilot_r_cmd_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/http/cnpilot_r_fpt.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/http/contentkeeper_fileaccess.rb
@@ -8482,6 +8486,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/linuxki_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/logsign_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/lucee_admin_imgprocess_file_write.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/magnusbilling_unauth_rce_cve_2023_30258.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/mailcleaner_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/metabase_setup_token_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/microfocus_obr_cmd_injection.rb
@@ -8712,6 +8717,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/misc/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/misc/accellion_fta_mpipe2.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/misc/aerospike_database_udf_cmd_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/misc/asus_infosvr_auth_bypass_exec.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/misc/cisco_ios_xe_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/misc/cisco_rv340_sslvpn.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/misc/cve_2020_13160_anydesk.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/misc/cve_2021_38647_omigod.rb
@@ -9176,6 +9182,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/local/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/local/xorg_x11_suid_server.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/local/xorg_x11_suid_server_modulepath.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/misc/
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/misc/apache_activemq_rce_cve_2023_46604.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/misc/arkeia_agent_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/misc/batik_svg_java.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/misc/bmc_patrol_cmd_exec.rb
@@ -9574,6 +9581,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/unix/webapp/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/webapp/zimbra_lfi.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/webapp/zoneminder_lang_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/webapp/zoneminder_packagecontrol_exec.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/webapp/zoneminder_snapshots.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/webapp/zpanel_username_exec.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/unix/x11/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/x11/x11_keyboard_exec.rb
@@ -10145,6 +10153,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/windows/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/adobe_robohelper_authbypass.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/advantech_iview_networkservlet_cmd_inject.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/advantech_iview_unauth_rce.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/ajaxpro_deserialization_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/altn_securitygateway.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/altn_webadmin.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/amlibweb_webquerydll_app.rb
@@ -11479,6 +11488,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/post/linux/busybox/
 drwxrwxr-x	root/root	opt/metasploit/modules/post/linux/dos/
 -rw-rw-r--	root/root	opt/metasploit/modules/post/linux/dos/xen_420_dos.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/post/linux/gather/
+-rw-rw-r--	root/root	opt/metasploit/modules/post/linux/gather/apache_nifi_credentials.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/post/linux/gather/checkcontainer.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/post/linux/gather/checkvm.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/post/linux/gather/ecryptfs_creds.rb
@@ -11708,6 +11718,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/post/windows/gather/credentials/
 -rw-rw-r--	root/root	opt/metasploit/modules/post/windows/gather/credentials/opera.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/post/windows/gather/credentials/operamail.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/post/windows/gather/credentials/outlook.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/post/windows/gather/credentials/plsql_developer.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/post/windows/gather/credentials/postbox.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/post/windows/gather/credentials/pulse_secure.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/post/windows/gather/credentials/purevpn_cred_collector.rb
@@ -12173,6 +12184,7 @@ drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/base/
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/base/serializer/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/base/serializer/readable_text_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/base/sessions/
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/base/sessions/command_shell_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/base/sessions/mainframe_shell_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/base/sessions/meterpreter_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/core/
@@ -12449,6 +12461,9 @@ drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/post/meterpreter/extensions/std
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/post/meterpreter/packet_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/post/meterpreter/ui/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/post/meterpreter/ui/console.rb
+drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/post/meterpreter/ui/console/
+drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/post/meterpreter/ui/console/command_dispatcher/
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/post/meterpreter/ui/console/command_dispatcher/core_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/post/meterpreter_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/acpp/
@@ -12837,6 +12852,10 @@ drwxrwxr-x	root/root	opt/metasploit/spec/support/shared/examples/msf/modules/
 drwxrwxr-x	root/root	opt/metasploit/spec/support/shared/examples/msf/simple/
 drwxrwxr-x	root/root	opt/metasploit/spec/support/shared/examples/msf/simple/framework/
 -rw-rw-r--	root/root	opt/metasploit/spec/support/shared/examples/msf/simple/framework/module_paths.rb
+drwxrwxr-x	root/root	opt/metasploit/spec/support/shared/examples/msf/ui/
+drwxrwxr-x	root/root	opt/metasploit/spec/support/shared/examples/msf/ui/console/
+drwxrwxr-x	root/root	opt/metasploit/spec/support/shared/examples/msf/ui/console/command_dispatcher/
+-rw-rw-r--	root/root	opt/metasploit/spec/support/shared/examples/msf/ui/console/command_dispatcher/session_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/support/shared/examples/payload_cached_size_is_consistent.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/support/shared/examples/payload_not_cached.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/support/shared/examples/rex/
