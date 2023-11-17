@@ -6,7 +6,7 @@
 # https://www.php.net/supported-versions.php
 
 name=php-fcgi
-version=8.1.23
+version=8.1.25
 release=1
 source="https://php.net/distributions/php-$version.tar.xz
 	rc.$name"
