@@ -3,7 +3,7 @@
 # Depends on:  py3-pip
 
 name=dnsgen
-version=1.0.4-c936c68
+version=1.0.4-16daeef
 release=1
 source=https://github.com/ProjectAnte/$name/archive/${version#*-}/$name-${version#*-}.tar.gz
 
