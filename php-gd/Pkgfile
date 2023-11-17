@@ -1,6 +1,6 @@
 # Description: GD module for PHP
 # URL:         https://www.php.net/
-# Depends on:  harfbuzz libgd libpcre2
+# Depends on:  harfbuzz libgd
 
 # 8.1 LTS (25 Nov 2024)
 # https://www.php.net/supported-versions.php
