@@ -1,3 +1,8 @@
 #!/bin/sh -ex
 export PATH="/sbin:/usr/sbin:/bin:/usr/bin"
-getent group docker || groupadd -r docker
+
+if ! getent group docker; then
+	groupadd -r docker
+fi
+
+# End of file.
