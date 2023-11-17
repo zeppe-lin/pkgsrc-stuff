@@ -198,13 +198,13 @@ drwxr-xr-x	root/root	opt/sherlock/idna/__pycache__/
 -rw-r--r--	root/root	opt/sherlock/idna/package_data.py
 -rw-r--r--	root/root	opt/sherlock/idna/py.typed (EMPTY)
 -rw-r--r--	root/root	opt/sherlock/idna/uts46data.py
-drwxr-xr-x	root/root	opt/sherlock/numpy-1.26.1.dist-info/
--rw-r--r--	root/root	opt/sherlock/numpy-1.26.1.dist-info/INSTALLER
--rw-r--r--	root/root	opt/sherlock/numpy-1.26.1.dist-info/LICENSE.txt
--rw-r--r--	root/root	opt/sherlock/numpy-1.26.1.dist-info/METADATA
--rw-r--r--	root/root	opt/sherlock/numpy-1.26.1.dist-info/RECORD
--rw-r--r--	root/root	opt/sherlock/numpy-1.26.1.dist-info/WHEEL
--rw-r--r--	root/root	opt/sherlock/numpy-1.26.1.dist-info/entry_points.txt
+drwxr-xr-x	root/root	opt/sherlock/numpy-1.26.2.dist-info/
+-rw-r--r--	root/root	opt/sherlock/numpy-1.26.2.dist-info/INSTALLER
+-rw-r--r--	root/root	opt/sherlock/numpy-1.26.2.dist-info/LICENSE.txt
+-rw-r--r--	root/root	opt/sherlock/numpy-1.26.2.dist-info/METADATA
+-rw-r--r--	root/root	opt/sherlock/numpy-1.26.2.dist-info/RECORD
+-rw-r--r--	root/root	opt/sherlock/numpy-1.26.2.dist-info/WHEEL
+-rw-r--r--	root/root	opt/sherlock/numpy-1.26.2.dist-info/entry_points.txt
 drwxr-xr-x	root/root	opt/sherlock/numpy.libs/
 -rwxr-xr-x	root/root	opt/sherlock/numpy.libs/libgfortran-040039e1.so.5.0.0
 -rwxr-xr-x	root/root	opt/sherlock/numpy.libs/libopenblas64_p-r0-0cf96a72.3.23.dev.so
@@ -734,6 +734,7 @@ drwxr-xr-x	root/root	opt/sherlock/numpy/distutils/checks/
 -rw-r--r--	root/root	opt/sherlock/numpy/distutils/checks/extra_avx512bw_mask.c
 -rw-r--r--	root/root	opt/sherlock/numpy/distutils/checks/extra_avx512dq_mask.c
 -rw-r--r--	root/root	opt/sherlock/numpy/distutils/checks/extra_avx512f_reduce.c
+-rw-r--r--	root/root	opt/sherlock/numpy/distutils/checks/extra_vsx3_half_double.c
 -rw-r--r--	root/root	opt/sherlock/numpy/distutils/checks/extra_vsx4_mma.c
 -rw-r--r--	root/root	opt/sherlock/numpy/distutils/checks/extra_vsx_asm.c
 -rw-r--r--	root/root	opt/sherlock/numpy/distutils/checks/test_flags.c
@@ -2117,14 +2118,14 @@ drwxr-xr-x	root/root	opt/sherlock/openpyxl/xml/__pycache__/
 -rw-r--r--	root/root	opt/sherlock/openpyxl/xml/__pycache__/functions.cpython-39.pyc
 -rw-r--r--	root/root	opt/sherlock/openpyxl/xml/constants.py
 -rw-r--r--	root/root	opt/sherlock/openpyxl/xml/functions.py
-drwxr-xr-x	root/root	opt/sherlock/pandas-2.1.2.dist-info/
--rw-r--r--	root/root	opt/sherlock/pandas-2.1.2.dist-info/INSTALLER
--rw-r--r--	root/root	opt/sherlock/pandas-2.1.2.dist-info/LICENSE
--rw-r--r--	root/root	opt/sherlock/pandas-2.1.2.dist-info/METADATA
--rw-r--r--	root/root	opt/sherlock/pandas-2.1.2.dist-info/RECORD
--rw-r--r--	root/root	opt/sherlock/pandas-2.1.2.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	opt/sherlock/pandas-2.1.2.dist-info/WHEEL
--rw-r--r--	root/root	opt/sherlock/pandas-2.1.2.dist-info/entry_points.txt
+drwxr-xr-x	root/root	opt/sherlock/pandas-2.1.3.dist-info/
+-rw-r--r--	root/root	opt/sherlock/pandas-2.1.3.dist-info/INSTALLER
+-rw-r--r--	root/root	opt/sherlock/pandas-2.1.3.dist-info/LICENSE
+-rw-r--r--	root/root	opt/sherlock/pandas-2.1.3.dist-info/METADATA
+-rw-r--r--	root/root	opt/sherlock/pandas-2.1.3.dist-info/RECORD
+-rw-r--r--	root/root	opt/sherlock/pandas-2.1.3.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	opt/sherlock/pandas-2.1.3.dist-info/WHEEL
+-rw-r--r--	root/root	opt/sherlock/pandas-2.1.3.dist-info/entry_points.txt
 drwxr-xr-x	root/root	opt/sherlock/pandas/
 -rw-r--r--	root/root	opt/sherlock/pandas/__init__.py
 drwxr-xr-x	root/root	opt/sherlock/pandas/__pycache__/
@@ -4483,13 +4484,13 @@ drwxr-xr-x	root/root	opt/sherlock/tzdata/zoneinfo/__pycache__/
 -rw-r--r--	root/root	opt/sherlock/tzdata/zoneinfo/zone.tab
 -rw-r--r--	root/root	opt/sherlock/tzdata/zoneinfo/zone1970.tab
 -rw-r--r--	root/root	opt/sherlock/tzdata/zones
-drwxr-xr-x	root/root	opt/sherlock/urllib3-2.0.7.dist-info/
--rw-r--r--	root/root	opt/sherlock/urllib3-2.0.7.dist-info/INSTALLER
--rw-r--r--	root/root	opt/sherlock/urllib3-2.0.7.dist-info/METADATA
--rw-r--r--	root/root	opt/sherlock/urllib3-2.0.7.dist-info/RECORD
--rw-r--r--	root/root	opt/sherlock/urllib3-2.0.7.dist-info/WHEEL
-drwxr-xr-x	root/root	opt/sherlock/urllib3-2.0.7.dist-info/licenses/
--rw-r--r--	root/root	opt/sherlock/urllib3-2.0.7.dist-info/licenses/LICENSE.txt
+drwxr-xr-x	root/root	opt/sherlock/urllib3-2.1.0.dist-info/
+-rw-r--r--	root/root	opt/sherlock/urllib3-2.1.0.dist-info/INSTALLER
+-rw-r--r--	root/root	opt/sherlock/urllib3-2.1.0.dist-info/METADATA
+-rw-r--r--	root/root	opt/sherlock/urllib3-2.1.0.dist-info/RECORD
+-rw-r--r--	root/root	opt/sherlock/urllib3-2.1.0.dist-info/WHEEL
+drwxr-xr-x	root/root	opt/sherlock/urllib3-2.1.0.dist-info/licenses/
+-rw-r--r--	root/root	opt/sherlock/urllib3-2.1.0.dist-info/licenses/LICENSE.txt
 drwxr-xr-x	root/root	opt/sherlock/urllib3/
 -rw-r--r--	root/root	opt/sherlock/urllib3/__init__.py
 drwxr-xr-x	root/root	opt/sherlock/urllib3/__pycache__/
@@ -4516,18 +4517,8 @@ drwxr-xr-x	root/root	opt/sherlock/urllib3/contrib/
 drwxr-xr-x	root/root	opt/sherlock/urllib3/contrib/__pycache__/
 -rw-r--r--	root/root	opt/sherlock/urllib3/contrib/__pycache__/__init__.cpython-39.pyc
 -rw-r--r--	root/root	opt/sherlock/urllib3/contrib/__pycache__/pyopenssl.cpython-39.pyc
--rw-r--r--	root/root	opt/sherlock/urllib3/contrib/__pycache__/securetransport.cpython-39.pyc
 -rw-r--r--	root/root	opt/sherlock/urllib3/contrib/__pycache__/socks.cpython-39.pyc
-drwxr-xr-x	root/root	opt/sherlock/urllib3/contrib/_securetransport/
--rw-r--r--	root/root	opt/sherlock/urllib3/contrib/_securetransport/__init__.py (EMPTY)
-drwxr-xr-x	root/root	opt/sherlock/urllib3/contrib/_securetransport/__pycache__/
--rw-r--r--	root/root	opt/sherlock/urllib3/contrib/_securetransport/__pycache__/__init__.cpython-39.pyc
--rw-r--r--	root/root	opt/sherlock/urllib3/contrib/_securetransport/__pycache__/bindings.cpython-39.pyc
--rw-r--r--	root/root	opt/sherlock/urllib3/contrib/_securetransport/__pycache__/low_level.cpython-39.pyc
--rw-r--r--	root/root	opt/sherlock/urllib3/contrib/_securetransport/bindings.py
--rw-r--r--	root/root	opt/sherlock/urllib3/contrib/_securetransport/low_level.py
 -rw-r--r--	root/root	opt/sherlock/urllib3/contrib/pyopenssl.py
--rw-r--r--	root/root	opt/sherlock/urllib3/contrib/securetransport.py
 -rw-r--r--	root/root	opt/sherlock/urllib3/contrib/socks.py
 -rw-r--r--	root/root	opt/sherlock/urllib3/exceptions.py
 -rw-r--r--	root/root	opt/sherlock/urllib3/fields.py
