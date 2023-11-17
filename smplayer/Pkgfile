@@ -3,7 +3,7 @@
 # Depends on:  hicolor-icon-theme qt5
 
 name=smplayer
-version=23.6.0
+version=23.6.0.10170
 release=1
 source=https://github.com/smplayer-dev/$name/releases/download/v$version/$name-$version.tar.bz2
 
@@ -14,7 +14,6 @@ build() {
 	sed '/gzip -9/d' -i Makefile
 
 	export CXXFLAGS="${CXXFLAGS} ${CPPFLAGS}"
-	local _OPTS=DEFINES+=NO_DEBUG_ON_CONSOLE
 
 	make PREFIX=/usr QMAKE_OPTS=DEFINES+=NO_DEBUG_ON_CONSOLE \
 		CFLAGS_EXTRA="$CFLAGS $CPPFLAGS $LDFLAGS" all
