@@ -3,11 +3,13 @@
 # Depends on:  py3-click
 
 name=apksigcopier
-version=1.1.1-879f248
+version=1.1.1-d928d65
 release=1
 source=https://github.com/obfusk/$name/archive/${version#*-}/$name-$version.tar.gz
 
 build() {
+	export TMPDIR="$PKGMK_WORK_DIR"
+
 	cd $name-*
 
 	/usr/bin/python3 setup.py build
