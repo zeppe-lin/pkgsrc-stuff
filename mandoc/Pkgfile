@@ -1,0 +1,22 @@
+# Description: Document processor for mdoc and man
+# URL:         https://mdocml.bsd.lv/
+# Depends on:  zlib
+
+name=mandoc
+version=1.14.6
+release=1
+source="http://mandoc.bsd.lv/snapshots/$name-$version.tar.gz
+	configure.local"
+
+build() {
+	cd $name-$version
+
+	cp $SRC/configure.local .
+	./configure
+
+	make
+	make DESTDIR=$PKG install
+
+	# remove junk
+	rm -rf $PKG/share/examples
+}
