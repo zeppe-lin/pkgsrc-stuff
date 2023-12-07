@@ -13,7 +13,6 @@ drwxr-xr-x	root/root	usr/share/nikto/databases/
 -rw-r--r--	root/root	usr/share/nikto/databases/db_404_strings
 -rw-r--r--	root/root	usr/share/nikto/databases/db_content_search
 -rw-r--r--	root/root	usr/share/nikto/databases/db_dictionary
--rw-r--r--	root/root	usr/share/nikto/databases/db_dir_traversal
 -rw-r--r--	root/root	usr/share/nikto/databases/db_domino
 -rw-r--r--	root/root	usr/share/nikto/databases/db_drupal
 -rw-r--r--	root/root	usr/share/nikto/databases/db_embedded
@@ -29,7 +28,6 @@ drwxr-xr-x	root/root	usr/share/nikto/databases/
 -rw-r--r--	root/root	usr/share/nikto/databases/db_variables
 drwxr-xr-x	root/root	usr/share/nikto/docs/
 -rw-r--r--	root/root	usr/share/nikto/docs/nikto.dtd
--rw-r--r--	root/root	usr/share/nikto/docs/nikto_manual.html
 -rw-r--r--	root/root	usr/share/nikto/docs/nikto_schema.sql
 -rwxr-xr-x	root/root	usr/share/nikto/nikto.pl
 drwxr-xr-x	root/root	usr/share/nikto/plugins/
@@ -43,7 +41,6 @@ drwxr-xr-x	root/root	usr/share/nikto/plugins/
 -rw-r--r--	root/root	usr/share/nikto/plugins/nikto_cookies.plugin
 -rw-r--r--	root/root	usr/share/nikto/plugins/nikto_core.plugin
 -rw-r--r--	root/root	usr/share/nikto/plugins/nikto_dictionary_attack.plugin
--rw-r--r--	root/root	usr/share/nikto/plugins/nikto_dir_traversal.plugin
 -rw-r--r--	root/root	usr/share/nikto/plugins/nikto_dishwasher.plugin
 -rw-r--r--	root/root	usr/share/nikto/plugins/nikto_docker_registry.plugin
 -rw-r--r--	root/root	usr/share/nikto/plugins/nikto_domino.plugin
