@@ -2,11 +2,8 @@
 # URL:         https://www.php.net/
 # Depends on:  harfbuzz libgd
 
-# 8.1 LTS (25 Nov 2024)
-# https://www.php.net/supported-versions.php
-
 name=php-gd
-version=8.1.25
+version=8.3.0
 release=1
 source=https://www.php.net/distributions/php-$version.tar.xz
 
