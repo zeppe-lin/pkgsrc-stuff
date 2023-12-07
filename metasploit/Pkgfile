@@ -3,7 +3,7 @@
 # Depends on:  glibc-32 inetutils libpcap postgresql ruby sqlite3
 
 name=metasploit
-version=6.3.43
+version=6.3.45
 release=1
 source=https://github.com/rapid7/$name-framework/archive/$version/$name-$version.tar.gz
 
@@ -29,7 +29,7 @@ build() {
 	bundle config set --local path vendor/bundle
 	bundle config set --local without development test
 	sed 's|git ls-files|find -type f|' -i metasploit-framework.gemspec
-	bundle install -j ${JOBS:-1}
+	bundle install -j ${JOBS:-1} --no-cache
 
 	# reproducible build: don't leak jobs count
 	sed -i '/BUNDLE_JOBS/d' .bundle/config

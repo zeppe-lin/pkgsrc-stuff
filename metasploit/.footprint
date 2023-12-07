@@ -5830,6 +5830,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/ui/console/command_dispatcher/db/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/ui/console/command_dispatcher/db/common.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/ui/console/command_dispatcher/db/klist.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/ui/console/command_dispatcher/developer.rb
+-rwxrwxr-x	root/root	opt/metasploit/lib/msf/ui/console/command_dispatcher/dns.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/ui/console/command_dispatcher/encoder.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/ui/console/command_dispatcher/evasion.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/ui/console/command_dispatcher/exploit.rb
@@ -6394,6 +6395,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/dhcp/
 drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/dns/
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/dns/cache.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/dns/cached_resolver.rb
+-rwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/dns/custom_nameserver_provider.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/dns/packet.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/dns/resolver.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/dns/server.rb
@@ -6424,6 +6426,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/http/packet/
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/http/request.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/http/response.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/http/server.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/http/server_client.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/http/web_socket.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/http/web_socket/
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/http/web_socket/amazon_ssm.rb
@@ -9161,6 +9164,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_plugin_sp_project_document_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_popular_posts_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_responsive_thumbnail_slider_upload.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_royal_elementor_addons_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_simple_file_list_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wso2_file_upload_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/x7chat2_php_exec.rb
@@ -12179,6 +12183,8 @@ drwxrwxr-x	root/root	opt/metasploit/spec/lib/metasploit/framework/password_crack
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/metasploit/framework/password_crackers/cracker_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/metasploit/framework/password_crackers/invalid_wordlist_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/metasploit/framework/password_crackers/wordlist_spec.rb
+drwxrwxr-x	root/root	opt/metasploit/spec/lib/metasploit/framework/ssh/
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/metasploit/framework/ssh/platform_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/base/
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/base/serializer/
@@ -12472,6 +12478,8 @@ drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/acpp/
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/crypto_asn/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/crypto_asn/x509_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/crypto_asn1_spec.rb
+drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/dns/
+-rwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/dns/custom_nameserver_provider_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/gss/
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/gss/kerberos/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/gss/kerberos/message_encryptor_spec.rb
