@@ -1,9 +1,9 @@
 # Description: Reader and rewriter of EXIF informations that supports raw files
-# URL:         https://exiftool.org
+# URL:         https://exiftool.org/
 # Depends on:  perl
 
 name=p5-image-exiftool
-version=12.60
+version=12.70
 release=1
 source=https://exiftool.org/Image-ExifTool-$version.tar.gz
 
