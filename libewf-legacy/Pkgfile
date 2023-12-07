@@ -1,6 +1,6 @@
 # Description: Expert Witness Compression Format (EWF)
 # URL:         https://github.com/libyal/libewf
-# Depends on:  e2fsprogs fuse2
+# Depends on:  fuse2 zlib
 
 name=libewf-legacy
 version=20140816
