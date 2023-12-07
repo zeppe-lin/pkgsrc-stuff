@@ -3,7 +3,7 @@
 # Depends on:  e2fsprogs fuse2
 
 name=libewf-legacy
-version=20140814
+version=20140816
 release=1
 source=https://github.com/libyal/$name/releases/download/$version/${name%%-*}-$version.tar.gz
 
@@ -13,10 +13,10 @@ build() {
 
 	export CFLAGS="$CFLAGS -std=gnu89"
 
-	./configure \
-		--prefix=/usr \
-		--sysconfdir=/etc \
-		--without-openssl
+	./configure                \
+		--prefix=/usr      \
+		--sysconfdir=/etc  \
+		--without-openssl  \
 
 	make V=1
 	make DESTDIR=$PKG install
