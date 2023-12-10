@@ -4,7 +4,7 @@
 
 name=bully
 version=1.1-3ab3bc8
-release=2
+release=3
 source="https://github.com/aanarchyy/$name/archive/${version#*-}/$name-$version.tar.gz
 	$name.1.pod
 	usage.patch"

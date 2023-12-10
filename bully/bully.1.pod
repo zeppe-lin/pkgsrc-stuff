@@ -14,6 +14,8 @@ bully - WPS brute force attack tool, similar to reaver
 
 =item B<bully> B<-e> I<STRING>  [I<OPTION>]... I<IFNAME>
 
+=item B<bully> [B<-Vh>]
+
 =back
 
 =head1 DESCRIPTION
@@ -151,7 +153,7 @@ Default: no.
 Perform an offline attack, Pixie Dust, by automatically passing the
 C<PKE>, C<PKR>, C<E-Hash1>, C<E-Hash2>, C<E-Nonce> and C<Authkey>.
 L<pixiewps(1)> will then try to attack B<Ralink>, B<Broadcom> and
-B<Realtek> chipsets.
+B<Realtek> chipsets.  Implies B<-F>/B<--force> flag.
 
 Default: no.
 
@@ -285,7 +287,7 @@ None of this would have happened without the rest of the great team I
 (aanarchyy) am proud to credit with helping me:
 t6_x, DataHead, Soxrok2212, Wiire.
 
-Huge thanks to Wiire for helping remove the openssl dependancy!
+Huge thanks to Wiire for helping remove the openssl dependency!
 
 =head1 SEE ALSO
 
