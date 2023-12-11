@@ -3,7 +3,7 @@
 # Depends on:  eudev libxml2 ncurses xorg-libpciaccess
 
 name=hwloc
-version=2.9.2
+version=2.10.0
 release=1
 source=https://download.open-mpi.org/release/$name/v${version%.*}/$name-$version.tar.gz
 
@@ -13,7 +13,6 @@ build() {
 	../$name-$version/configure  \
 		--prefix=/usr        \
 		--sysconfdir=/etc    \
-		--enable-netloc      \
 		--enable-plugins     \
 		--disable-cairo      \
 
