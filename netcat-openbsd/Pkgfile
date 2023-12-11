@@ -3,7 +3,7 @@
 # Depends on:  libbsd libmd
 
 name=netcat-openbsd
-version=1.225-1
+version=1.226-1
 release=1
 source="http://http.debian.net/debian/pool/main/n/$name/${name}_${version%%-*}.orig.tar.gz
 	http://http.debian.net/debian/pool/main/n/$name/${name}_$version.debian.tar.xz"
