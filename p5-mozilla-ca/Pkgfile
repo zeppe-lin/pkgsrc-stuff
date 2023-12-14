@@ -3,16 +3,12 @@
 # Depends on:  perl
 
 name=p5-mozilla-ca
-version=20230821
+version=20231213
 release=1
 source=https://cpan.metacpan.org/authors/id/L/LW/LWP/Mozilla-CA-$version.tar.gz
 
 build() {
 	cd Mozilla-CA-$version
-
-	if [ -x /usr/bin/finddeps-distmeta ]; then
-		/usr/bin/finddeps-distmeta
-	fi
 
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
