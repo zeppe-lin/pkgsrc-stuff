@@ -3,9 +3,9 @@
 # Depends on:  zlib
 
 name=mitmproxy-bin
-version=10.1.5
+version=10.1.6
 release=1
-source=https://snapshots.mitmproxy.org/$version/mitmproxy-$version-linux.tar.gz
+source=https://downloads.mitmproxy.org/$version/mitmproxy-$version-linux-x86_64.tar.gz
 
 build() {
 	ls -la .
