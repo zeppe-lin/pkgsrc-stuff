@@ -3,7 +3,7 @@
 # Optional:    oniguruma
 
 name=jq
-version=1.7
+version=1.7.1
 release=1
 source="https://github.com/stedolan/jq/releases/download/jq-$version/jq-$version.tar.gz
 	jq-1.6-r3-never-bundle-oniguruma.patch
