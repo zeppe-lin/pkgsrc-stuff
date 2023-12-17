@@ -1,0 +1,17 @@
+# Description: Convert perl documentation (POD) into man pages (mdoc)
+# URL:         http://mdocml.bsd.lv/pod2mdoc
+
+name=pod2mdoc
+version=0.2
+release=1
+source=http://mdocml.bsd.lv/pod2mdoc/snapshots/$name-$version.tgz
+
+build() {
+	cd $name-$version
+
+	sed -i "s/OHASH=1/OHASH=0/g" Makefile
+	make
+
+	install -m 0755 -Dt $PKG/usr/bin/            $name
+	install -m 0644 -Dt $PKG/usr/share/man/man1/ $name.1
+}
