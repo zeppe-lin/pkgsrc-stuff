@@ -1,0 +1,39 @@
+# Description: Converts Pod to PDF format
+# URL:         https://metacpan.org/dist/pod2pdf
+# Depends on:  p5-getopt-argvfile p5-pdf-api2 p5-pod-parser
+
+name=pod2pdf
+version=0.42
+release=1
+source="https://cpan.metacpan.org/authors/id/J/JO/JONALLEN/$name-$version.tar.gz
+	add-outlines.patch
+	allow-float.patch
+	fix-producer-version.patch
+	overlapping-text.patch
+	timestamp.patch"
+
+build() {
+	cd $name-$version
+
+	patch -p1 -i $SRC/timestamp.patch
+	patch -p1 -i $SRC/fix-producer-version.patch
+	patch -p1 -i $SRC/allow-float.patch
+	patch -p1 -i $SRC/overlapping-text.patch
+	patch -p1 -i $SRC/add-outlines.patch
+
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make
+	make DESTDIR=$PKG install
+
+	mv $PKG/usr/share/man/man1/pod2pdf.1 \
+	   $PKG/usr/share/man/man1/pod2pdf.1pm
+
+	# remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			\) -delete ,            \
+		-type d -empty -delete
+}

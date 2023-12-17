@@ -1,0 +1,11 @@
+README pod2pdf
+
+REQUIREMENTS
+
+	* p5-file-type, p5-image-size (optional)
+	To use images.
+
+	* p5-paper-specs (optional)
+	To specify alternative page sizes.
+
+End of file.

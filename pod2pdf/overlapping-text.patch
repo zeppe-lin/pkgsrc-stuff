@@ -1,0 +1,20 @@
+Description: Fix for overlapping text
+ When the last word in a text paragraph occur on a new page, it will overlap
+ with the next paragraph. (This usually happens when the page size is small.)
+ .
+ Reason: When $word is the last word in a paragraph,
+ in $self->print_word($word), newline() called linefeed(), then formfeed(), and
+ formfeed() resets print_flag. Then {x,y}-position are not changed until the
+ first word in the next paragraph, so it overlaps with previous word.
+Author: Guo Yixuan <culu.gyx@gmail.com>
+Bug: https://rt.cpan.org/Public/Bug/Display.html?id=76631
+--- a/lib/App/pod2pdf.pm
++++ b/lib/App/pod2pdf.pm
+@@ -1039,6 +1039,7 @@
+                                                     $self->{text_size},
+                                                     $word,
+                                                     -color => $self->{text_color});
++    $self->set_print_flag;
+     if ($self->{x_position} > $self->{page_width} - $self->{right_margin}) {
+       $self->newline;
+     }

@@ -1,0 +1,51 @@
+Description: Corrects the option --timestamp to use ISO 8601
+ For the printout of the timestamp not as the Perl-typical localtime but in
+ an ISO 8601 format. ISO 8601 is a standard for dates and times which is
+ suitable (agnostic; only numbers) for international use.
+ .
+ Note: although the upstream tracker list this bug as fixed in 0.42,
+ this patch is not applied.
+Forwarded: https://rt.cpan.org/Ticket/Display.html?id=50342
+Author: Jari Aalto <jari.aalto@cante.net>
+Bug-Debian: http://bugs.debian.org/550265
+Last-Update: 2012-04-11
+Index: pod2pdf-0.42/bin/pod2pdf
+===================================================================
+--- pod2pdf-0.42.orig/bin/pod2pdf	2010-09-12 17:52:40.696502868 +0200
++++ pod2pdf-0.42/bin/pod2pdf	2010-09-12 17:52:56.936477300 +0200
+@@ -46,6 +46,21 @@
+              # in @ARGV with the contents of the specified file)
+              
+              
++
++#--------------------------------------------------------------------------
++
++sub dateISO8601 ($) {
++    my ($timeval) = shift || time;
++
++    warn "time: $timeval";
++
++    my ($yyyy, $MM, $dd, $hh, $mm) = (localtime $timeval)[5, 4, 3, 2, 1];
++    $yyyy += 1900;
++    $MM++;
++
++    sprintf "$yyyy-%02d-%02d %02d:%02d", $MM, $dd, $hh, $mm;
++}
++
+ #--Parse command-line options----------------------------------------------
+ 
+ my %options = (
+@@ -74,9 +89,11 @@
+   version => sub{ print "This is pod2pdf, version $App::pod2pdf::VERSION\n"; exit }
+ ) or die("[Error] Could not parse options");
+ 
+-$config{title}  = (@ARGV) ? $ARGV[0] : 'STDIN' unless (exists $config{title});
+-$config{title} .= (' - ' . ((@ARGV) ? scalar localtime($^T - (-M $ARGV[0])*24*60*60) : scalar localtime)) if (exists $config{timestamp});
++my $file = $ARGV[0];
++my $time = $file ? $^T - (-M $file) * 24 * 60 * 60 : time;
+ 
++$config{title}  = $file ? $file : 'STDIN' unless exists $config{title};
++$config{title} .= ' - ' .  dateISO8601 $time if exists $config{timestamp};
+ 
+ #--Set output location-----------------------------------------------------
+ 

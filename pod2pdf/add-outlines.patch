@@ -1,0 +1,109 @@
+Description: New feature to add outlines
+ An option (--outlines) to enable adding outlines in pdf.
+Forwarded: https://rt.cpan.org/Public/Bug/Display.html?id=73149
+Author: Guo Yixuan <culu.gyx@gmail.com>
+Bug-Debian: http://bugs.debian.org/651256
+--- a/bin/pod2pdf
++++ b/bin/pod2pdf
+@@ -81,6 +81,7 @@
+   'icon-scale'       => '=s',
+   'timestamp'        => '!',
+   'output-file'      => '=s',
++  'outlines'         => '!',
+ );
+ 
+ my %config;
+@@ -220,6 +221,10 @@
+ Sets an optional footer text string that will be included in the bottom left corner
+ of each page.
+ 
++=item C<--outlines>
++
++Adds outlines (bookmarks) to pdf according to headings (=head1, =head2, ...).
++
+ =item C<--version>
+ 
+ Prints version number and exits.
+--- a/lib/App/pod2pdf.pm
++++ b/lib/App/pod2pdf.pm
+@@ -83,6 +83,8 @@
+       } else {
+         $self->{y_position} -= ($heading_space - $default_space);
+       }
++      # add an outline at the heading's position
++      $self->generate_outline($expansion, $command, $self->{page_number}, $self->{x_position}, $self->{y_position} + $heading_space) if $self->{outlines};
+       $self->print_text_with_style($expansion,$command);
+       $self->spacer;
+       $self->indent(48);
+@@ -492,6 +494,9 @@
+   $self->{pdf}           = PDF::API2->new;
+   $self->{pdf}->info('Producer'=>"$class version $version");
+   $self->{pdf}->mediabox($self->{page_width},$self->{page_height});
++
++  # push the root Outlines object into outline_stack
++  push @{$self->{outline_stack}}, $self->{pdf}->outlines() if $self->{outlines};
+   
+   if ($self->{icon} && $self->images) {
+       if (-e $self->{icon}) {
+@@ -925,6 +930,61 @@
+ 
+ 
+ #-----------------------------------------------------------------------
++
++# Outline method
++#
++# On encountering a heading, generate_outline($text, $style, $page, $x, $y)
++# is called, which use $style to determine depth in outline tree.
++# $self->{outline_stack} is used to record the structure of PDF Outlines.
++
++#-----------------------------------------------------------------------
++
++sub generate_outline {
++    my $self = shift;
++    my $text = shift;
++    $text =~ s/\s*$//; # remove trailing newlines and spaces
++
++    my $style = shift;
++
++    my $page  = shift;  #$self->{page_number};
++    my $pdfpage = $self->{pdf}->openpage($page);
++
++    my $x = shift;
++    my $y = shift;
++
++    my %level = (
++        'head1' => 1,
++        'head2' => 2,
++        'head3' => 3,
++        'head4' => 4,
++    );
++    my $level     = $level{$style};
++    my $up_level  = $level - 1;
++    my $cur_level = scalar @{$self->{outline_stack}} - 1;
++
++    # finding the right place to insert new outline
++    while ($cur_level < $up_level) {
++        my $tail = $self->{outline_stack}[-1];
++        push @{$self->{outline_stack}}, $tail->outline();
++        $cur_level ++;
++    }
++    while ($cur_level > $up_level) {
++        pop @{$self->{outline_stack}};
++        $cur_level --;
++    }
++    my $tail = $self->{outline_stack}[-1];
++
++    # create a new sub-outline, setting title and dest
++    my $outline = $tail->outline();
++    $outline->title($text);
++    # $outline->dest($pdfpage);
++    # $outline->dest($pdfpage, "-xyz" => [$self->{x_position}, $self->{y_position}, 0]);
++    $outline->dest($pdfpage, "-xyz" => [$x, $y, 0]);
++
++    push @{$self->{outline_stack}}, $outline;
++}
++
++#-----------------------------------------------------------------------
+ #-----------------------------------------------------------------------
+ 
+ # PDF file output

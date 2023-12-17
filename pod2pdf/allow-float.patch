@@ -1,0 +1,32 @@
+Description: Allow float point number in options
+ These options are affected: --page-width, --page-height, --left-margin,
+ --right-margin, --top-margin, --bottom-margin, and --margins.
+ .
+ They used to only allow integer as parameter.
+Author: Guo Yixuan <culu.gyx@gmail.com>
+Bug: https://rt.cpan.org/Public/Bug/Display.html?id=76624
+--- a/bin/pod2pdf
++++ b/bin/pod2pdf
+@@ -64,15 +64,15 @@
+ #--Parse command-line options----------------------------------------------
+ 
+ my %options = (
+-  'page-height'      => '=i',
+-  'page-width'       => '=i',
++  'page-height'      => '=f',
++  'page-width'       => '=f',
+   'page-size'        => '=s',
+   'page-orientation' => '=s',
+-  'margins'          => '=i',
+-  'left-margin'      => '=i',
+-  'right-margin'     => '=i',
+-  'top-margin'       => '=i',
+-  'bottom-margin'    => '=i',
++  'margins'          => '=f',
++  'left-margin'      => '=f',
++  'right-margin'     => '=f',
++  'top-margin'       => '=f',
++  'bottom-margin'    => '=f',
+   'header'           => '!',
+   'footer'           => '!',
+   'title'            => '=s',

@@ -1,0 +1,16 @@
+Description: Fix to report correct version
+ This fix will fix the "Producer: App::pod2pdf version unknown" bug.
+Bug: https://rt.cpan.org/Public/Bug/Display.html?id=73182
+Author: Guo Yixuan <culu.gyx@gmail.com>
+Last-Update: 2012-04-11
+--- a/lib/App/pod2pdf.pm
++++ b/lib/App/pod2pdf.pm
+@@ -422,7 +422,7 @@
+ sub create_pdf {
+   my $self    = shift;
+   my $class   = ref $self;
+-  my $version = $::{$class.'::'}{VERSION} ? ${ $::{$class.'::'}{VERSION} } : 'unknown';
++  my $version = $self->VERSION();
+       
+   # Define styles
+   #
