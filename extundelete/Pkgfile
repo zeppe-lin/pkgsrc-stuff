@@ -1,0 +1,28 @@
+# Description: Recover deleted files from ext3 or ext4 partition
+# URL:         http://extundelete.sourceforce.net/
+# Depends on:  e2fsprogs
+
+name=extundelete
+version=0.2.4
+release=1
+source="https://sourceforge.net/projects/$name/files/$name/$version/$name-$version.tar.bz2
+	https://sources.debian.org/data/main/e/extundelete/0.2.4-3/debian/extundelete.1
+	01_fix_segmentation_fault.patch
+	02_fix_ftbfs.patch
+	03_fix_recent_automake_autoconf.patch"
+
+build() {
+	patch -d $name-$version -p1 -i $SRC/01_fix_segmentation_fault.patch
+	patch -d $name-$version -p1 -i $SRC/02_fix_ftbfs.patch
+	#patch -d $name-$version -p1 -i $SRC/03_fix_recent_automake_autoconf.patch
+
+	mkdir build; cd build
+
+	../$name-$version/configure --prefix=/usr
+
+	make V=1
+	make DESTDIR=$PKG install
+
+	# man page
+	install -m 0644 -Dt $PKG/usr/share/man/man1/ $SRC/$name.1
+}

@@ -1,0 +1,5 @@
+ac6f7f6b11fbdcf4b4c509f392aaea4c  01_fix_segmentation_fault.patch
+28433246372e64704454337b8ec622a5  02_fix_ftbfs.patch
+4e14f716e5ec5e1cfedbd47b211d1d9d  03_fix_recent_automake_autoconf.patch
+77e626ad31433680c0a222069295d2ca  extundelete-0.2.4.tar.bz2
+611664be0d18883cd724fe8f1aad6c54  extundelete.1
