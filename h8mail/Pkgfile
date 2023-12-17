@@ -1,0 +1,29 @@
+# Description: Email OSINT & Password breach hunting tool
+# URL:         https://github.com/khast3x/h8mail
+# Depends on:  py3-setuptools
+
+name=h8mail
+version=2.5.6-ee31c8f
+release=1
+source="https://github.com/khast3x/$name/archive/${version#*-}/$name-${version#*-}.tar.gz
+	$name.sh"
+
+build() {
+	install -d $PKG/usr/bin $PKG/opt/$name
+
+	# install requirements
+	/usr/bin/pip3 install --use-pep517 --target $PKG/opt/$name \
+		requests
+
+	# install h8mail
+	cd $name-${version#*-}*
+	/usr/bin/python3 setup.py build
+	/usr/bin/python3 setup.py install \
+		--prefix=/usr --root=$PKG/opt/$name --optimize=2
+
+	# create an indirect launcher
+	install -m 0755 -D $SRC/$name.sh $PKG/usr/bin/$name
+
+	# remove junk
+	rm -r $PKG/opt/h8mail/usr/lib/python3.9/site-packages/tests/
+}
