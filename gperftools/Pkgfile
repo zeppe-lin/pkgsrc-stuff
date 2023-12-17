@@ -1,0 +1,35 @@
+# Description: Set of tools for performance profiling and memory checking
+# URL:         https://github.com/gperftools/gperftools
+# Depends on:  graphviz libunwind perl
+
+name=gperftools
+version=2.10
+release=1
+source=https://github.com/$name/$name/releases/download/$name-$version/$name-$version.tar.gz
+
+build() {
+	# Fix man references to nonexistent
+	# "/usr/share/gperftools/cpu_profiler.html" and
+	# "/usr/local/share/gperftools/cpu_profiler.html".
+	# Since we don't ship "/usr/share/doc", just point to online
+	# documentation.
+	sed -i '0,/^\.SH "SEE ALSO"$/!d'                      \
+		$name-$version/docs/pprof.1
+	sed -i '$a https://gperftools.github.io/gperftools/'  \
+		$name-$version/docs/pprof.1
+
+	mkdir build; cd build
+
+	../$name-$version/configure  \
+		--prefix=/usr        \
+		--enable-libunwind   \
+
+	# fix overlinking
+	sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+
+	make V=1
+	make DESTDIR=$PKG install
+
+	# remove junk
+	rm -r $PKG/usr/share/doc
+}

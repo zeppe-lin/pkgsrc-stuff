@@ -1,0 +1,16 @@
+README gperftools
+
+REQUIREMENTS
+
+	graphviz (optional)  pprof(1) graph generation
+	perl     (optional)  pprof(1) and pprof-symbolize commands
+
+ONLINE DOCUMENTATION
+
+	Good Introduction How-To:
+	https://developer.ridgerun.com/wiki/index.php/Profiling_with_GPerfTools
+
+	Official Documentation:
+	https://gperftools.github.io/gperftools/
+
+End of file.
