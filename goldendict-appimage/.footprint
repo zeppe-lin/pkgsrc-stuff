@@ -1,0 +1,11 @@
+drwxr-xr-x	root/root	opt/
+drwxr-xr-x	root/root	opt/goldendict/
+-rwxr-xr-x	root/root	opt/goldendict/goldendict-1.0.1-661dd4d.AppImage
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+lrwxrwxrwx	root/root	usr/bin/goldendict -> /opt/goldendict/goldendict-1.0.1-661dd4d.AppImage
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/applications/
+-rw-r--r--	root/root	usr/share/applications/goldendict.desktop
+drwxr-xr-x	root/root	usr/share/pixmaps/
+-rw-r--r--	root/root	usr/share/pixmaps/goldendict.png
