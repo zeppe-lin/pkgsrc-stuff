@@ -1,0 +1,19 @@
+# Description: Annotation-assisted static program checker
+# URL:         https://repo.or.cz/splint-patched.git
+
+name=splint
+version=3.1.2-3fb908d
+release=1
+source=$name-$version.tar.gz::https://repo.or.cz/splint-patched.git/snapshot/3fb908d0d8a4daa26dc770e1f2aa133f93100503.tar.gz
+
+build() {
+	cd $name-patched-${version#*-}
+
+	autoreconf -fi
+	./configure \
+		--prefix=/usr            \
+		--mandir=/usr/share/man  \
+
+	make -j1 V=1 # parallel build is broken
+	make DESTDIR=$PKG install
+}
