@@ -1,0 +1,12 @@
+# Description: American English en_US dictionary for hunspell
+# URL:         http://wordlist.aspell.net/dicts
+# Depends on:  unzip hunspell
+
+name=hunspell-en-us
+version=2020.12.07
+release=1
+source=http://downloads.sourceforge.net/wordlist/speller/$version/hunspell-en_US-$version.zip
+
+build() {
+	install -m 0644 -Dt $PKG/usr/share/hunspell en_US.aff en_US.dic
+}
