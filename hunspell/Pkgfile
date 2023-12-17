@@ -1,0 +1,23 @@
+# Description: Advanced spell checker
+# URL:         https://hunspell.github.io/
+
+name=hunspell
+version=1.7.2
+release=1
+source=https://github.com/$name/$name/releases/download/v$version/$name-$version.tar.gz
+
+build() {
+	mkdir build; cd build
+
+	autoreconf -fi ../$name-$version
+	../$name-$version/configure  \
+		--prefix=/usr        \
+		--disable-nls        \
+
+	make prefix=$PKG/usr install
+
+	ln -s libhunspell-1.7.so.0.0.1 $PKG/usr/lib/libhunspell.so
+
+	# remove junk
+	rm -r $PKG/usr/share/man/hu
+}
