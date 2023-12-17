@@ -1,0 +1,25 @@
+# Description: Create, modify, and examine PDF files
+# URL:         https://metacpan.org/pod/PDF::API2
+# Depends on:  p5-font-ttf
+
+name=p5-pdf-api2
+version=2.044
+release=1
+source=https://cpan.metacpan.org/authors/id/S/SS/SSIMMS/PDF-API2-$version.tar.gz
+
+build() {
+	cd PDF-API2-$version
+
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make
+	make DESTDIR=$PKG install
+
+	# remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			\) -delete ,            \
+		-type d -empty -delete
+}
