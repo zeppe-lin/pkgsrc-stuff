@@ -1,0 +1,52 @@
+# Description: Graph visualization software
+# URL:         https://www.graphviz.org/
+# Depends on:  gtk libgd librsvg-compat libtool poppler
+
+name=graphviz
+version=8.1.0
+release=1
+source=https://gitlab.com/api/v4/projects/4207231/packages/generic/$name-releases/$version/$name-$version.tar.xz
+
+build() {
+	cd $name-$version
+
+	# --disable-man-pdfs: don't generate PDFs of man pages
+	# --disable-swig:     build fails if swig is installed but tcl is not
+	# --disable-LANG:     disable LANG language bindings
+	# --with-LIB=no:      disable LIB library
+	LIBPOSTFIX=/ ./configure      \
+		--prefix=/usr         \
+		--disable-man-pdfs    \
+		--disable-swig        \
+		--disable-d           \
+		--disable-go          \
+		--disable-guile       \
+		--disable-java        \
+		--disable-javascript  \
+		--disable-lua         \
+		--disable-ocaml       \
+		--disable-perl        \
+		--disable-php         \
+		--disable-python      \
+		--disable-python3     \
+		--disable-r           \
+		--disable-ruby        \
+		--disable-sharp       \
+		--disable-tcl         \
+		--with-glade=no       \
+		--with-qt=no          \
+		--with-quartz=no      \
+		--with-ann=no         \
+		--with-gts=no         \
+		--with-lasi=no        \
+		--with-webp=no        \
+
+	# fix overlinking
+	sed -i 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+
+	make V=1
+	make DESTDIR=$PKG install
+
+	# remove junk
+	rm -r $PKG/usr/share/doc
+}

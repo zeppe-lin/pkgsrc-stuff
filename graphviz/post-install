@@ -1,0 +1,6 @@
+#!/bin/sh -ex
+
+# Configure plugins.
+/usr/bin/dot -c
+
+# End of file.
