@@ -1,0 +1,12 @@
+# Description: POSIX make(1p) implementation
+# URL:         https://frippery.org/make/
+
+# https://github.com/rmyorston/pdpmake/tags.atom
+name=pdpmake
+version=1.4.1
+release=1
+source=https://frippery.org/make/$name-$version.tgz
+
+build() {
+	make -C $name-$version PREFIX=/usr DESTDIR=$PKG install
+}
