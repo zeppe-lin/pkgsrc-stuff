@@ -1,0 +1,12 @@
+#!/bin/sh -ex
+
+# Create an index of X font files.
+/usr/bin/mkfontdir   /usr/share/fonts/TTF
+
+# Create an index of scalable font files for X.
+/usr/bin/mkfontscale /usr/share/fonts/TTF
+
+# Build font information cache files.
+/usr/bin/fc-cache
+
+# End of file.
