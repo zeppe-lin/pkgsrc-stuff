@@ -4,13 +4,15 @@
 
 name=p5-pdf-api2
 version=2.045
-release=1
+release=2
 source="https://cpan.metacpan.org/authors/id/S/SS/SSIMMS/PDF-API2-$version.tar.gz
+	font-location.patch
 	reproducible-resources.patch"
 
 build() {
 	cd PDF-API2-$version
 
+	patch -p1 -i $SRC/font-location.patch
 	patch -p1 -i $SRC/reproducible-resources.patch
 
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
