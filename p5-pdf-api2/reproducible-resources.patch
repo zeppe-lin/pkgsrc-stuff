@@ -1,0 +1,77 @@
+Description: Remove '~'.time() from internal font IDs
+ Adding '~'.time() is not necessary because the identifiers already include
+ the result of the pdfkey() function, which gives increasing numbers through
+ a process lifetime.
+ .
+ Keeping '~'.time() only makes the output unreproducible and adds a slight
+ performance penalty for thesyscall needed to get the current time.
+Bug: https://rt.cpan.org/Ticket/Display.html?id=113084
+Bug-Debian: https://bugs.debian.org/818363
+Forwarded: https://rt.cpan.org/Ticket/Display.html?id=113084
+Author: Damyan Ivanov <dmn@debian.org>
+Reviewed-by: gregor herrmann <gregoa@debian.org>
+Last-Update: 2021-09-29
+Applied-Upstream: no. rejected.
+
+--- a/lib/PDF/API2/Resource/CIDFont/TrueType.pm
++++ b/lib/PDF/API2/Resource/CIDFont/TrueType.pm
+@@ -38,7 +38,7 @@
+     my ($ff, $data) = PDF::API2::Resource::CIDFont::TrueType::FontFile->new($pdf, $file, %opts);
+ 
+     $class = ref($class) if ref($class);
+-    my $self = $class->SUPER::new($pdf, $data->{'apiname'} . pdfkey() . '~' . time());
++    my $self = $class->SUPER::new($pdf, $data->{'apiname'} . pdfkey());
+     $pdf->new_obj($self) if defined($pdf) and not $self->is_obj($pdf);
+ 
+     $self->{' data'} = $data;
+--- a/lib/PDF/API2/Resource/Font/BdFont.pm
++++ b/lib/PDF/API2/Resource/Font/BdFont.pm
+@@ -55,7 +55,7 @@
+     my ($class, $pdf, $file, %opts) = @_;
+ 
+     $class = ref($class) if ref($class);
+-    my $name = sprintf('%s+Bdf%02i', pdfkey(), ++$BmpNum) . '~' . time();
++    my $name = sprintf('%s+Bdf%02i', pdfkey(), ++$BmpNum);
+     my $self = $class->SUPER::new($pdf, $name);
+     $pdf->new_obj($self) unless $self->is_obj($pdf);
+ 
+@@ -206,7 +206,7 @@
+         $data->{'bbox'}{'.notdef'} = [0, 0, 0, 0];
+     }
+ 
+-    $data->{'fontname'} = pdfkey() . pdfkey() . '~' . time();
++    $data->{'fontname'} = pdfkey() . pdfkey();
+     $data->{'apiname'} = $data->{'fontname'};
+     $data->{'flags'} = 34;
+     $data->{'fontbbox'} = [ split(/\s+/, $data->{'FONTBOUNDINGBOX'}) ];
+--- a/lib/PDF/API2/Resource/Font/CoreFont.pm
++++ b/lib/PDF/API2/Resource/Font/CoreFont.pm
+@@ -156,7 +156,7 @@
+     die "Undefined font '$name($lookname)'" unless $data->{'fontname'};
+ 
+     $class = ref($class) if ref($class);
+-    my $self = $class->SUPER::new($pdf, $data->{'apiname'} . pdfkey() . '~' . time());
++    my $self = $class->SUPER::new($pdf, $data->{'apiname'} . pdfkey());
+     $pdf->new_obj($self) unless $self->is_obj($pdf);
+     $self->{' data'} = $data;
+     $self->{'-dokern'} = 1 if $options{'-dokern'};
+--- a/lib/PDF/API2/Resource/Font/Postscript.pm
++++ b/lib/PDF/API2/Resource/Font/Postscript.pm
+@@ -29,7 +29,7 @@
+     }
+ 
+     $class = ref $class if ref $class;
+-    $self = $class->SUPER::new($pdf, $data->{apiname}.pdfkey().'~'.time());
++    $self = $class->SUPER::new($pdf, $data->{apiname}.pdfkey());
+     $pdf->new_obj($self) unless($self->is_obj($pdf));
+     $self->{' data'}=$data;
+ 
+@@ -41,7 +41,7 @@
+     $self->{'FontDescriptor'}=$self->descrByData();
+     if(-f $psfile)
+     {
+-        $self->{'BaseFont'} = PDFName(pdfkey().'+'.($self->fontname).'~'.time());
++        $self->{'BaseFont'} = PDFName(pdfkey().'+'.($self->fontname));
+ 
+         my ($l1,$l2,$l3,$stream)=$self->readPFAPFB($psfile);
+ 

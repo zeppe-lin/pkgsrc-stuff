@@ -3,12 +3,15 @@
 # Depends on:  p5-font-ttf
 
 name=p5-pdf-api2
-version=2.044
+version=2.045
 release=1
-source=https://cpan.metacpan.org/authors/id/S/SS/SSIMMS/PDF-API2-$version.tar.gz
+source="https://cpan.metacpan.org/authors/id/S/SS/SSIMMS/PDF-API2-$version.tar.gz
+	reproducible-resources.patch"
 
 build() {
 	cd PDF-API2-$version
+
+	patch -p1 -i $SRC/reproducible-resources.patch
 
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
