@@ -1,0 +1,14 @@
+--- a/lib/App/pod2pdf.pm	2023-12-18 06:57:55.060717756 +0200
++++ b/lib/App/pod2pdf.pm	2023-12-18 06:24:46.155302887 +0200
+@@ -69,7 +69,10 @@
+      $self->formfeed if ($self->print_flag);
+     }
+     if ($command =~ /^head[1234]$/) {
+-      $self->indent(0);
++      $self->indent(
++        $command =~ /^head1$/ ? 0 :
++        $command =~ /^head2$/ ? 14 :
++        $command =~ /^head3$/ ? 36 : 48 );
+       $self->set_style('default');
+       $self->newline;
+       my $default_space = $self->{line_spacing};

@@ -1,5 +1,6 @@
 f99713747a77964e3b9a6a16d6615cae  add-outlines.patch
 def7a593c8d024b7ca71f2ebc8ea2c99  allow-float.patch
+e4fdcffde1898347181c7b47d9bc2983  custom-indent.patch
 79600076bf26ce26692bf0d00ddaa1bc  fix-producer-version.patch
 6c9b187b6c7db8b5a57be8edf6861ba7  overlapping-text.patch
 8338b8a9ee16eedc295045af300801d9  pod2pdf-0.42.tar.gz
