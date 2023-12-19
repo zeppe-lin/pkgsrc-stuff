@@ -27,34 +27,34 @@ drwxr-xr-x	root/root	usr/include/gperftools/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libprofiler.a
 -rwxr-xr-x	root/root	usr/lib/libprofiler.la
-lrwxrwxrwx	root/root	usr/lib/libprofiler.so -> libprofiler.so.0.5.5
-lrwxrwxrwx	root/root	usr/lib/libprofiler.so.0 -> libprofiler.so.0.5.5
--rwxr-xr-x	root/root	usr/lib/libprofiler.so.0.5.5
+lrwxrwxrwx	root/root	usr/lib/libprofiler.so -> libprofiler.so.0.5.9
+lrwxrwxrwx	root/root	usr/lib/libprofiler.so.0 -> libprofiler.so.0.5.9
+-rwxr-xr-x	root/root	usr/lib/libprofiler.so.0.5.9
 -rw-r--r--	root/root	usr/lib/libtcmalloc.a
 -rwxr-xr-x	root/root	usr/lib/libtcmalloc.la
-lrwxrwxrwx	root/root	usr/lib/libtcmalloc.so -> libtcmalloc.so.4.5.10
-lrwxrwxrwx	root/root	usr/lib/libtcmalloc.so.4 -> libtcmalloc.so.4.5.10
--rwxr-xr-x	root/root	usr/lib/libtcmalloc.so.4.5.10
+lrwxrwxrwx	root/root	usr/lib/libtcmalloc.so -> libtcmalloc.so.4.5.14
+lrwxrwxrwx	root/root	usr/lib/libtcmalloc.so.4 -> libtcmalloc.so.4.5.14
+-rwxr-xr-x	root/root	usr/lib/libtcmalloc.so.4.5.14
 -rw-r--r--	root/root	usr/lib/libtcmalloc_and_profiler.a
 -rwxr-xr-x	root/root	usr/lib/libtcmalloc_and_profiler.la
-lrwxrwxrwx	root/root	usr/lib/libtcmalloc_and_profiler.so -> libtcmalloc_and_profiler.so.4.6.5
-lrwxrwxrwx	root/root	usr/lib/libtcmalloc_and_profiler.so.4 -> libtcmalloc_and_profiler.so.4.6.5
--rwxr-xr-x	root/root	usr/lib/libtcmalloc_and_profiler.so.4.6.5
+lrwxrwxrwx	root/root	usr/lib/libtcmalloc_and_profiler.so -> libtcmalloc_and_profiler.so.4.6.9
+lrwxrwxrwx	root/root	usr/lib/libtcmalloc_and_profiler.so.4 -> libtcmalloc_and_profiler.so.4.6.9
+-rwxr-xr-x	root/root	usr/lib/libtcmalloc_and_profiler.so.4.6.9
 -rw-r--r--	root/root	usr/lib/libtcmalloc_debug.a
 -rwxr-xr-x	root/root	usr/lib/libtcmalloc_debug.la
-lrwxrwxrwx	root/root	usr/lib/libtcmalloc_debug.so -> libtcmalloc_debug.so.4.5.10
-lrwxrwxrwx	root/root	usr/lib/libtcmalloc_debug.so.4 -> libtcmalloc_debug.so.4.5.10
--rwxr-xr-x	root/root	usr/lib/libtcmalloc_debug.so.4.5.10
+lrwxrwxrwx	root/root	usr/lib/libtcmalloc_debug.so -> libtcmalloc_debug.so.4.5.14
+lrwxrwxrwx	root/root	usr/lib/libtcmalloc_debug.so.4 -> libtcmalloc_debug.so.4.5.14
+-rwxr-xr-x	root/root	usr/lib/libtcmalloc_debug.so.4.5.14
 -rw-r--r--	root/root	usr/lib/libtcmalloc_minimal.a
 -rwxr-xr-x	root/root	usr/lib/libtcmalloc_minimal.la
-lrwxrwxrwx	root/root	usr/lib/libtcmalloc_minimal.so -> libtcmalloc_minimal.so.4.5.10
-lrwxrwxrwx	root/root	usr/lib/libtcmalloc_minimal.so.4 -> libtcmalloc_minimal.so.4.5.10
--rwxr-xr-x	root/root	usr/lib/libtcmalloc_minimal.so.4.5.10
+lrwxrwxrwx	root/root	usr/lib/libtcmalloc_minimal.so -> libtcmalloc_minimal.so.4.5.14
+lrwxrwxrwx	root/root	usr/lib/libtcmalloc_minimal.so.4 -> libtcmalloc_minimal.so.4.5.14
+-rwxr-xr-x	root/root	usr/lib/libtcmalloc_minimal.so.4.5.14
 -rw-r--r--	root/root	usr/lib/libtcmalloc_minimal_debug.a
 -rwxr-xr-x	root/root	usr/lib/libtcmalloc_minimal_debug.la
-lrwxrwxrwx	root/root	usr/lib/libtcmalloc_minimal_debug.so -> libtcmalloc_minimal_debug.so.4.5.10
-lrwxrwxrwx	root/root	usr/lib/libtcmalloc_minimal_debug.so.4 -> libtcmalloc_minimal_debug.so.4.5.10
--rwxr-xr-x	root/root	usr/lib/libtcmalloc_minimal_debug.so.4.5.10
+lrwxrwxrwx	root/root	usr/lib/libtcmalloc_minimal_debug.so -> libtcmalloc_minimal_debug.so.4.5.14
+lrwxrwxrwx	root/root	usr/lib/libtcmalloc_minimal_debug.so.4 -> libtcmalloc_minimal_debug.so.4.5.14
+-rwxr-xr-x	root/root	usr/lib/libtcmalloc_minimal_debug.so.4.5.14
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libprofiler.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libtcmalloc.pc
