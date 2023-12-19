@@ -3,7 +3,7 @@
 # Depends on:  py3-click
 
 name=apksigcopier
-version=1.1.1-d928d65
+version=1.1.1-8ba53eb
 release=1
 source=https://github.com/obfusk/$name/archive/${version#*-}/$name-$version.tar.gz
 
@@ -14,5 +14,5 @@ build() {
 
 	/usr/bin/python3 setup.py build
 	/usr/bin/python3 setup.py install \
-		--prefix=/usr --root=$PKG --optimize=2
+		--skip-build --prefix=/usr --root=$PKG --optimize=2
 }
