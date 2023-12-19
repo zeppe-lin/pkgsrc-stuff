@@ -1,0 +1,17 @@
+# Description: Microsoft Cabinet file decompressor
+# URL:         https://www.cabextract.org.uk/
+
+name=cabextract
+version=1.11
+release=1
+source=https://www.cabextract.org.uk/$name-$version.tar.gz
+
+build() {
+	mkdir build; cd build
+
+	../$name-$version/configure  \
+		--prefix=/usr        \
+
+	make V=1
+	make DESTDIR=$PKG install
+}
