@@ -1,0 +1,14 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/perl5/
+drwxr-xr-x	root/root	usr/lib/perl5/site_perl/
+drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.34/
+drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.34/File/
+-r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/File/Type.pm
+drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.34/File/Type/
+-r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/File/Type/Builder.pm
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man3/
+-r--r--r--	root/root	usr/share/man/man3/File::Type.3pm.gz
+-r--r--r--	root/root	usr/share/man/man3/File::Type::Builder.3pm.gz

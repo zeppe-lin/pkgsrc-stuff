@@ -1,0 +1,25 @@
+# Description: Determine file type using magic
+# URL:         https://metacpan.org/pod/File::Type
+# Depends on:  perl
+
+name=p5-file-type
+version=0.22
+release=1
+source=https://cpan.metacpan.org/authors/id/P/PM/PMISON/File-Type-$version.tar.gz
+
+build() {
+	cd File-Type-$version
+
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make OPTIMIZE="$CFLAGS"
+	make DESTDIR=$PKG install
+
+	# remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			\) -delete ,            \
+		-type d -empty -delete
+}
