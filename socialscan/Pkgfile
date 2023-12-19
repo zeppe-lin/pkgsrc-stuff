@@ -3,7 +3,7 @@
 # Depends on:  py3-pip
 
 name=socialscan
-version=2.0.0-a181b40
+version=2.0.0-0593496
 release=1
 source=https://github.com/iojw/socialscan/archive/${version#*-}/$name-${version#*-}.tar.gz
 
