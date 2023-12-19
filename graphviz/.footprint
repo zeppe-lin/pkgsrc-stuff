@@ -88,6 +88,10 @@ lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_gdk.so.6 -> libgvplugin_gdk.so
 lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_gtk.so -> libgvplugin_gtk.so.6.0.0
 lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_gtk.so.6 -> libgvplugin_gtk.so.6.0.0
 -rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_gtk.so.6.0.0
+-rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_kitty.la
+lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_kitty.so -> libgvplugin_kitty.so.6.0.0
+lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_kitty.so.6 -> libgvplugin_kitty.so.6.0.0
+-rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_kitty.so.6.0.0
 -rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_neato_layout.la
 lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_neato_layout.so -> libgvplugin_neato_layout.so.6.0.0
 lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_neato_layout.so.6 -> libgvplugin_neato_layout.so.6.0.0
@@ -104,10 +108,10 @@ lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_poppler.so.6 -> libgvplugin_po
 lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_rsvg.so -> libgvplugin_rsvg.so.6.0.0
 lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_rsvg.so.6 -> libgvplugin_rsvg.so.6.0.0
 -rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_rsvg.so.6.0.0
--rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_vt100.la
-lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_vt100.so -> libgvplugin_vt100.so.6.0.0
-lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_vt100.so.6 -> libgvplugin_vt100.so.6.0.0
--rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_vt100.so.6.0.0
+-rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_vt.la
+lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_vt.so -> libgvplugin_vt.so.6.0.0
+lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_vt.so.6 -> libgvplugin_vt.so.6.0.0
+-rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_vt.so.6.0.0
 -rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_xlib.la
 lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_xlib.so -> libgvplugin_xlib.so.6.0.0
 lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_xlib.so.6 -> libgvplugin_xlib.so.6.0.0
