@@ -8,4 +8,7 @@ REQUIREMENTS
 	* p5-paper-specs (optional)
 	To specify alternative page sizes.
 
+	* ttf-font-ms (optional)
+	Free Microsoft fonts.
+
 End of file.
