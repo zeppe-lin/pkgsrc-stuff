@@ -8,7 +8,7 @@
 +      $self->indent(
 +        $command =~ /^head1$/ ? 0 :
 +        $command =~ /^head2$/ ? 14 :
-+        $command =~ /^head3$/ ? 36 : 48 );
++        $command =~ /^head3$/ ? 36 : 36 );
        $self->set_style('default');
        $self->newline;
        my $default_space = $self->{line_spacing};
