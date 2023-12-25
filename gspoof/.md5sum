@@ -2,7 +2,7 @@ cc9ffb7882a5ca0b1265bec7c2ddbbfe  configure.ac.patch
 8a63125bd046311296031cd357897cf7  gfuncts.c.patch
 85e1b7cd181a480c6984c6f53814a0e6  ginclude.h.patch
 7a1d124a1d0bed87e19b239d559ba880  gspoof-3.2.tar.gz
-86c6c412927988708164270b6d43655f  gspoof-gtk.desktop
+670373fb95eaa8b894bfd3d8897d12c9  gspoof-gtk.desktop
 073e0c81367284ab492cc876de10ee56  gspoof-gtk.sh
 8725cef0ebc7ea5b6afaf59e5ba963f1  gtk.c.patch
 f80b0045b5b0adef45f35a43ad494c5b  interface.c.patch

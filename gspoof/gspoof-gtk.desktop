@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=gspoof-gtk
+Name=GSpoof
 Comment=GTK+ TCP/IP Packet forger
 Exec=gspoof-gtk
 Terminal=false
