@@ -1,10 +1,11 @@
 # Description: Framework for layer 2 attacks
 # URL:         https://github.com/tomac/yersinia
-# Depends on:  gtk libnet libpcap
+# Depends on:  gtk libnet libpcap ktsuss
+# Optional:    ktsuss
 
 name=yersinia
 version=0.8.2-867b309
-release=2
+release=3
 source="https://github.com/tomac/$name/archive/${version##*-}/$name-${version##*-}.tar.gz
 	respect_system_font.patch
 	aboutdialog_logo.patch
@@ -12,12 +13,10 @@ source="https://github.com/tomac/$name/archive/${version##*-}/$name-${version##*
 	yersinia-gtk.desktop"
 
 build() {
-	patch -p1 -d $name-${version#*-}* \
-		-i $SRC/respect_system_font.patch
+	patch -p1 -d $name-${version#*-}* -i $SRC/respect_system_font.patch
 
-	# remove broken and useless logo resource
-	patch -p1 -d $name-${version#*-}* \
-		-i $SRC/aboutdialog_logo.patch
+	# remove broken, useless and ugly logo resource (sorry, bro)
+	patch -p1 -d $name-${version#*-}* -i $SRC/aboutdialog_logo.patch
 
 	mkdir build; cd build
 

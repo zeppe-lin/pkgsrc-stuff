@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=yersinia-gtk
+Name=Yersinia
 Comment=A framework for layer 2 attacks
 Exec=yersinia-gtk
 Terminal=false
