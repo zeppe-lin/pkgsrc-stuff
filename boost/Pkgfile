@@ -4,7 +4,7 @@
 # Optional:    icu openmpi python3-numpy
 
 name=boost
-version=1.83.0
+version=1.84.0
 _version=$(echo $version | sed 's/\./_/g')
 release=1
 source="https://boostorg.jfrog.io/artifactory/main/release/$version/source/${name}_$_version.tar.bz2
