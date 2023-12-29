@@ -25,14 +25,14 @@ drwxr-xr-x	root/root	opt/sherlock/bin/__pycache__/
 -rwxr-xr-x	root/root	opt/sherlock/bin/f2py
 -rwxr-xr-x	root/root	opt/sherlock/bin/normalizer
 -rwxr-xr-x	root/root	opt/sherlock/bin/tor-prompt
-drwxr-xr-x	root/root	opt/sherlock/certifi-2023.7.22.dist-info/
--rw-r--r--	root/root	opt/sherlock/certifi-2023.7.22.dist-info/INSTALLER
--rw-r--r--	root/root	opt/sherlock/certifi-2023.7.22.dist-info/LICENSE
--rw-r--r--	root/root	opt/sherlock/certifi-2023.7.22.dist-info/METADATA
--rw-r--r--	root/root	opt/sherlock/certifi-2023.7.22.dist-info/RECORD
--rw-r--r--	root/root	opt/sherlock/certifi-2023.7.22.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	opt/sherlock/certifi-2023.7.22.dist-info/WHEEL
--rw-r--r--	root/root	opt/sherlock/certifi-2023.7.22.dist-info/top_level.txt
+drwxr-xr-x	root/root	opt/sherlock/certifi-2023.11.17.dist-info/
+-rw-r--r--	root/root	opt/sherlock/certifi-2023.11.17.dist-info/INSTALLER
+-rw-r--r--	root/root	opt/sherlock/certifi-2023.11.17.dist-info/LICENSE
+-rw-r--r--	root/root	opt/sherlock/certifi-2023.11.17.dist-info/METADATA
+-rw-r--r--	root/root	opt/sherlock/certifi-2023.11.17.dist-info/RECORD
+-rw-r--r--	root/root	opt/sherlock/certifi-2023.11.17.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	opt/sherlock/certifi-2023.11.17.dist-info/WHEEL
+-rw-r--r--	root/root	opt/sherlock/certifi-2023.11.17.dist-info/top_level.txt
 drwxr-xr-x	root/root	opt/sherlock/certifi/
 -rw-r--r--	root/root	opt/sherlock/certifi/__init__.py
 -rw-r--r--	root/root	opt/sherlock/certifi/__main__.py
@@ -173,12 +173,12 @@ drwxr-xr-x	root/root	opt/sherlock/exrex-0.11.0.dist-info/
 -rw-r--r--	root/root	opt/sherlock/exrex-0.11.0.dist-info/entry_points.txt
 -rw-r--r--	root/root	opt/sherlock/exrex-0.11.0.dist-info/top_level.txt
 -rw-r--r--	root/root	opt/sherlock/exrex.py
-drwxr-xr-x	root/root	opt/sherlock/idna-3.4.dist-info/
--rw-r--r--	root/root	opt/sherlock/idna-3.4.dist-info/INSTALLER
--rw-r--r--	root/root	opt/sherlock/idna-3.4.dist-info/LICENSE.md
--rw-r--r--	root/root	opt/sherlock/idna-3.4.dist-info/METADATA
--rw-r--r--	root/root	opt/sherlock/idna-3.4.dist-info/RECORD
--rw-r--r--	root/root	opt/sherlock/idna-3.4.dist-info/WHEEL
+drwxr-xr-x	root/root	opt/sherlock/idna-3.6.dist-info/
+-rw-r--r--	root/root	opt/sherlock/idna-3.6.dist-info/INSTALLER
+-rw-r--r--	root/root	opt/sherlock/idna-3.6.dist-info/LICENSE.md
+-rw-r--r--	root/root	opt/sherlock/idna-3.6.dist-info/METADATA
+-rw-r--r--	root/root	opt/sherlock/idna-3.6.dist-info/RECORD
+-rw-r--r--	root/root	opt/sherlock/idna-3.6.dist-info/WHEEL
 drwxr-xr-x	root/root	opt/sherlock/idna/
 -rw-r--r--	root/root	opt/sherlock/idna/__init__.py
 drwxr-xr-x	root/root	opt/sherlock/idna/__pycache__/
@@ -2118,14 +2118,14 @@ drwxr-xr-x	root/root	opt/sherlock/openpyxl/xml/__pycache__/
 -rw-r--r--	root/root	opt/sherlock/openpyxl/xml/__pycache__/functions.cpython-39.pyc
 -rw-r--r--	root/root	opt/sherlock/openpyxl/xml/constants.py
 -rw-r--r--	root/root	opt/sherlock/openpyxl/xml/functions.py
-drwxr-xr-x	root/root	opt/sherlock/pandas-2.1.3.dist-info/
--rw-r--r--	root/root	opt/sherlock/pandas-2.1.3.dist-info/INSTALLER
--rw-r--r--	root/root	opt/sherlock/pandas-2.1.3.dist-info/LICENSE
--rw-r--r--	root/root	opt/sherlock/pandas-2.1.3.dist-info/METADATA
--rw-r--r--	root/root	opt/sherlock/pandas-2.1.3.dist-info/RECORD
--rw-r--r--	root/root	opt/sherlock/pandas-2.1.3.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	opt/sherlock/pandas-2.1.3.dist-info/WHEEL
--rw-r--r--	root/root	opt/sherlock/pandas-2.1.3.dist-info/entry_points.txt
+drwxr-xr-x	root/root	opt/sherlock/pandas-2.1.4.dist-info/
+-rw-r--r--	root/root	opt/sherlock/pandas-2.1.4.dist-info/INSTALLER
+-rw-r--r--	root/root	opt/sherlock/pandas-2.1.4.dist-info/LICENSE
+-rw-r--r--	root/root	opt/sherlock/pandas-2.1.4.dist-info/METADATA
+-rw-r--r--	root/root	opt/sherlock/pandas-2.1.4.dist-info/RECORD
+-rw-r--r--	root/root	opt/sherlock/pandas-2.1.4.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	opt/sherlock/pandas-2.1.4.dist-info/WHEEL
+-rw-r--r--	root/root	opt/sherlock/pandas-2.1.4.dist-info/entry_points.txt
 drwxr-xr-x	root/root	opt/sherlock/pandas/
 -rw-r--r--	root/root	opt/sherlock/pandas/__init__.py
 drwxr-xr-x	root/root	opt/sherlock/pandas/__pycache__/
@@ -3785,14 +3785,14 @@ drwxr-xr-x	root/root	opt/sherlock/torrequest-0.1.0.dist-info/
 -rw-r--r--	root/root	opt/sherlock/torrequest-0.1.0.dist-info/WHEEL
 -rw-r--r--	root/root	opt/sherlock/torrequest-0.1.0.dist-info/top_level.txt
 -rw-r--r--	root/root	opt/sherlock/torrequest.py
-drwxr-xr-x	root/root	opt/sherlock/tzdata-2023.3.dist-info/
--rw-r--r--	root/root	opt/sherlock/tzdata-2023.3.dist-info/INSTALLER
--rw-r--r--	root/root	opt/sherlock/tzdata-2023.3.dist-info/LICENSE
--rw-r--r--	root/root	opt/sherlock/tzdata-2023.3.dist-info/LICENSE_APACHE
--rw-r--r--	root/root	opt/sherlock/tzdata-2023.3.dist-info/METADATA
--rw-r--r--	root/root	opt/sherlock/tzdata-2023.3.dist-info/RECORD
--rw-r--r--	root/root	opt/sherlock/tzdata-2023.3.dist-info/WHEEL
--rw-r--r--	root/root	opt/sherlock/tzdata-2023.3.dist-info/top_level.txt
+drwxr-xr-x	root/root	opt/sherlock/tzdata-2023.4.dist-info/
+-rw-r--r--	root/root	opt/sherlock/tzdata-2023.4.dist-info/INSTALLER
+-rw-r--r--	root/root	opt/sherlock/tzdata-2023.4.dist-info/LICENSE
+-rw-r--r--	root/root	opt/sherlock/tzdata-2023.4.dist-info/LICENSE_APACHE
+-rw-r--r--	root/root	opt/sherlock/tzdata-2023.4.dist-info/METADATA
+-rw-r--r--	root/root	opt/sherlock/tzdata-2023.4.dist-info/RECORD
+-rw-r--r--	root/root	opt/sherlock/tzdata-2023.4.dist-info/WHEEL
+-rw-r--r--	root/root	opt/sherlock/tzdata-2023.4.dist-info/top_level.txt
 drwxr-xr-x	root/root	opt/sherlock/tzdata/
 -rw-r--r--	root/root	opt/sherlock/tzdata/__init__.py
 drwxr-xr-x	root/root	opt/sherlock/tzdata/__pycache__/
@@ -4483,6 +4483,7 @@ drwxr-xr-x	root/root	opt/sherlock/tzdata/zoneinfo/__pycache__/
 -rw-r--r--	root/root	opt/sherlock/tzdata/zoneinfo/tzdata.zi
 -rw-r--r--	root/root	opt/sherlock/tzdata/zoneinfo/zone.tab
 -rw-r--r--	root/root	opt/sherlock/tzdata/zoneinfo/zone1970.tab
+-rw-r--r--	root/root	opt/sherlock/tzdata/zoneinfo/zonenow.tab
 -rw-r--r--	root/root	opt/sherlock/tzdata/zones
 drwxr-xr-x	root/root	opt/sherlock/urllib3-2.1.0.dist-info/
 -rw-r--r--	root/root	opt/sherlock/urllib3-2.1.0.dist-info/INSTALLER
