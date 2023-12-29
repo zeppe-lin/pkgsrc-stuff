@@ -7360,6 +7360,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/gather/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/shodan_search.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/snare_registry.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/solarwinds_orion_sqli.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/splunk_raw_server_info.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/ssllabs_scan.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/suite_crm_export_sqli.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/teamtalk_creds.rb
@@ -8422,6 +8423,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/cisco_ucs_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/control_web_panel_login_cmd_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/cpi_tararchive_upload.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/craftcms_unauth_rce_cve_2023_41892.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/crypttech_cryptolog_login_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/cve_2019_1663_cisco_rmi_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/dcos_marathon.rb
