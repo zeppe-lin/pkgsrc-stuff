@@ -3,7 +3,7 @@
 # Depends on:  graphviz libunwind perl
 
 name=gperftools
-version=2.13
+version=2.15
 release=1
 source=https://github.com/$name/$name/releases/download/$name-$version/$name-$version.tar.gz
 
