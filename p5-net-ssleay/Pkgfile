@@ -1,9 +1,9 @@
-# Description: Perl extension for using OpenSSL
+# Description: Perl bindings for OpenSSL and LibreSSL
 # URL:         https://metacpan.org/release/Net-SSLeay
 # Depends on:  openssl perl zlib
 
 name=p5-net-ssleay
-version=1.93_02
+version=1.93_04
 release=1
 source=https://cpan.metacpan.org/authors/id/C/CH/CHRISN/Net-SSLeay-$version.tar.gz
 
