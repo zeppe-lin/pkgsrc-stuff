@@ -10083,6 +10083,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/windows/fileformat/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/fileformat/subtitle_processor_m3u_bof.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/fileformat/syncbreeze_xml.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/fileformat/tfm_mmplayer_m3u_ppl_bof.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/fileformat/theme_dll_hijack_cve_2023_38146.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/fileformat/total_video_player_ini_bof.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/fileformat/tugzip.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/fileformat/ultraiso_ccd.rb
