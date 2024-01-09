@@ -3,13 +3,13 @@
 # Depends on:  curl libjpeg-turbo libpng ncurses
 
 name=jp2a
-version=1.1.1
+version=1.2.0
 release=1
 source=https://github.com/Talinx/jp2a/releases/download/v$version/jp2a-$version.tar.bz2
 
 build() {
 	# build in separate dir is broken
-	cd $name-$version
+	cd jp2a-$version
 
 	./configure \
 		--prefix=/usr          \
