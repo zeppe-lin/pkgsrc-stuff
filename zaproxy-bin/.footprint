@@ -76,7 +76,7 @@ drwxr-xr-x	root/root	opt/zaproxy/plugin/
 -rw-r--r--	root/root	opt/zaproxy/plugin/reports-release-0.28.0.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/requester-beta-7.5.0.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/retest-alpha-0.9.0.zap
--rw-r--r--	root/root	opt/zaproxy/plugin/retire-release-0.29.0.zap
+-rw-r--r--	root/root	opt/zaproxy/plugin/retire-release-0.30.0.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/reveal-release-8.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/scripts-release-45.0.0.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/selenium-release-15.17.0.zap
@@ -85,9 +85,9 @@ drwxr-xr-x	root/root	opt/zaproxy/plugin/
 -rw-r--r--	root/root	opt/zaproxy/plugin/spider-release-0.9.0.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/spiderAjax-release-23.19.0.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/tips-beta-13.zap
--rw-r--r--	root/root	opt/zaproxy/plugin/webdriverlinux-release-68.zap
--rw-r--r--	root/root	opt/zaproxy/plugin/webdrivermacos-release-68.zap
--rw-r--r--	root/root	opt/zaproxy/plugin/webdriverwindows-release-68.zap
+-rw-r--r--	root/root	opt/zaproxy/plugin/webdriverlinux-release-70.zap
+-rw-r--r--	root/root	opt/zaproxy/plugin/webdrivermacos-release-70.zap
+-rw-r--r--	root/root	opt/zaproxy/plugin/webdriverwindows-release-70.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/websocket-release-31.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/zest-beta-44.zap
 drwxr-xr-x	root/root	opt/zaproxy/scripts/
@@ -123,7 +123,7 @@ drwxr-xr-x	root/root	opt/zaproxy/xml/
 -rw-r--r--	root/root	opt/zaproxy/xml/config.xml
 -rw-r--r--	root/root	opt/zaproxy/xml/drivers.dtd
 -rw-r--r--	root/root	opt/zaproxy/xml/reportCompare.xsl
--rw-r--r--	root/root	opt/zaproxy/zap-D-2024-01-02.jar
+-rw-r--r--	root/root	opt/zaproxy/zap-D-2024-01-08.jar
 -rwxr-xr-x	root/root	opt/zaproxy/zap.sh
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
