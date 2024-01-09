@@ -3,7 +3,7 @@
 # Depends on:  openssl perl zlib
 
 name=p5-net-ssleay
-version=1.93_04
+version=1.94
 release=1
 source=https://cpan.metacpan.org/authors/id/C/CH/CHRISN/Net-SSLeay-$version.tar.gz
 
