@@ -20,13 +20,13 @@
 +### ********************
 +
 +# Run as daemon
-+daemonise = true
++daemonise = false
 +
 +# File with pid of running daemon
-+pidFile = /var/run/polipo/pid
++#pidFile = /run/polipo.pid
 +
 +# Log file
-+logFile = /var/log/polipo/log
++#logFile = /var/log/polipo/log
 +
  ### Basic configuration
  ### *******************
