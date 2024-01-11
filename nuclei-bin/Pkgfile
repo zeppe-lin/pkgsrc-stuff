@@ -2,7 +2,7 @@
 # URL:         https://github.com/projectdiscovery/nuclei
 
 name=nuclei-bin
-version=3.1.4
+version=3.1.5
 release=1
 source=$name-$version-amd64.zip::https://github.com/projectdiscovery/nuclei/releases/download/v$version/nuclei_${version}_linux_amd64.zip
 
