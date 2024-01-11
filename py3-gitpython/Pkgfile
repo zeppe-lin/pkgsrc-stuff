@@ -3,7 +3,7 @@
 # Depends on:  git py3-gitdb
 
 name=py3-gitpython
-version=3.1.40
+version=3.1.41
 release=1
 source=https://github.com/gitpython-developers/GitPython/archive/$version/GitPython-$version.tar.gz
 
@@ -18,5 +18,5 @@ build() {
 
 	# fix perms
 	find $PKG/usr/lib/python*/site-packages/ -type f \
-		-exec chmod 644 {} +
+		-exec chmod 0644 {} +
 }
