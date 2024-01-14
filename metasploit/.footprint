@@ -11791,6 +11791,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/post/windows/gather/credentials/
 -rw-rw-r--	root/root	opt/metasploit/modules/post/windows/gather/credentials/viber.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/post/windows/gather/credentials/vnc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/post/windows/gather/credentials/whatsupgold_credential_dump.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/post/windows/gather/credentials/winbox_settings.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/post/windows/gather/credentials/windows_autologin.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/post/windows/gather/credentials/windows_sam_hivenightmare.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/post/windows/gather/credentials/windowslivemail.rb

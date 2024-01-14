@@ -3,7 +3,7 @@
 # Depends on:  glibc-32 inetutils libpcap postgresql ruby sqlite3
 
 name=metasploit
-version=6.3.50
+version=6.3.51
 release=1
 source=https://github.com/rapid7/$name-framework/archive/$version/$name-$version.tar.gz
 
@@ -57,8 +57,8 @@ EOF
 		chmod 0755 $_FILE
 	done
 
-	#install -m 0644 -Dt $PKG/usr/share/zsh/site-functions/ \
-	#	external/zsh/_*
+	# zsh completions
+	#install -m 0644 -Dt $PKG/usr/share/zsh/site-functions/ external/zsh/_*
 
 	# remove junk
 	rm $PKG/usr/bin/msfupdate
