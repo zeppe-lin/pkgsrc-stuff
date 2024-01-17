@@ -16,7 +16,8 @@ COUNT=8
 case $1 in
 start)
 	export PHP_FCGI_CHILDREN=$COUNT
-	$SSD --start -bm --chuid $USER --pidfile $PID --exec $PROG -- $OPTS
+	$SSD --start --background --chuid $USER --make-pidfile \
+		--pidfile $PID --exec $PROG -- $OPTS
 	;;
 stop)
 	$SSD --stop --remove-pidfile --retry 10 --pidfile $PID

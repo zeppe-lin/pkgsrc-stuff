@@ -1,9 +1,9 @@
-# Description: CGI/FastCGI version of the PHP interpreter
+# Description: PHP interpreter, CGI/FastCGI version
 # URL:         https://www.php.net/
 # Depends on:  libpcre2 libxml2
 
 name=php-fcgi
-version=8.3.1
+version=8.3.2
 release=1
 source="https://php.net/distributions/php-$version.tar.xz
 	rc.$name"
