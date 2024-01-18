@@ -1,17 +1,19 @@
 # Description: In-depth attack surface mapping and asset discovery
 # URL:         https://github.com/owasp-amass
-# Depends on:  tree unzip
+# Depends on:  unzip
 
 name=amass-bin
-version=3.23.3
+version=4.2.0
 release=1
 source=$name-$version-x86_64.zip::https://github.com/owasp-amass/amass/releases/download/v$version/amass_Linux_amd64.zip
 
 build() {
+	mkdir -p $PKG/usr/bin $PKG/usr/etc/amass
+
 	cd amass_Linux_amd64
 
-	tree .
+	ls -la .
 
-	install -m 0755 -Dt $PKG/usr/bin/    amass
-	install -m 0644 -Dt $PKG/etc/amass/  examples/config.ini
+	install -m 0755 -D amass       $PKG/usr/bin/amass
+	install -m 0644 -D examples/*  $PKG/usr/etc/amass/
 }

@@ -1,17 +1,14 @@
 README amass-bin
 
-CONFIGURATION
+ONLINE DOCUMENTATION
 
-	See /etc/amass/config.ini for configuration details.
+	Users' Guide:
+	https://github.com/owasp-amass/amass/blob/master/doc/user_guide.md
 
-	The location of the configuration file can be specified using the
-	-config flag or the AMASS_CONFIG environment variable.
+	An Extensive Tutorial:
+	https://github.com/owasp-amass/amass/blob/master/doc/tutorial.md
 
-	Amass automatically tries to discover the configuration file (named
-	config.ini) in the following locations:
-
-		* $XDG_CONFIG_HOME/amass/config.ini
-		* $HOME/.config/amass/config.ini
-		* /etc/amass/config.ini
+	The Amass Scripting Engine Manual:
+	https://github.com/owasp-amass/amass/blob/master/doc/scripting.md
 
 End of file.
