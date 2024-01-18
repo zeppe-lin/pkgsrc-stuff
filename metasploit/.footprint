@@ -4976,6 +4976,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/git/smart_http/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/kernel_mode.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/local.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/local/
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/local/ansible.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/local/compile_c.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/local/linux.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/local/linux_kernel.rb
@@ -5116,6 +5117,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/nifi/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/nifi/auth.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/nifi/dbconnectionpool.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/nifi/processor.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/php_filter_chain.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/pihole.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/sap_sol_man_eem_miss_auth.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/sharepoint.rb
@@ -8671,6 +8673,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/local/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/abrt_sosreport_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/af_packet_chocobo_root_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/af_packet_packet_set_ring_priv_esc.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/ansible_node_deployer.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/apport_abrt_chroot_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/apt_package_manager_persistence.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/asan_suid_executable_priv_esc.rb
@@ -9186,6 +9189,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/werkzeug_debug_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wikka_spam_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_ait_csv_rce.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_backup_migration_php_filter.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_catch_themes_demo_import.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_crop_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_db_backup_rce.rb
@@ -11529,6 +11533,8 @@ drwxrwxr-x	root/root	opt/metasploit/modules/post/linux/busybox/
 drwxrwxr-x	root/root	opt/metasploit/modules/post/linux/dos/
 -rw-rw-r--	root/root	opt/metasploit/modules/post/linux/dos/xen_420_dos.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/post/linux/gather/
+-rw-rw-r--	root/root	opt/metasploit/modules/post/linux/gather/ansible.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/post/linux/gather/ansible_playbook_error_message_file_reader.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/post/linux/gather/apache_nifi_credentials.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/post/linux/gather/checkcontainer.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/post/linux/gather/checkvm.rb
@@ -12422,6 +12428,7 @@ drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/db_manager/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/db_manager_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/debug_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/exploit/
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/exploit/local_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/exploit/remote/
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/exploit/remote/http/
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/exploit/remote/http/kubernetes/
