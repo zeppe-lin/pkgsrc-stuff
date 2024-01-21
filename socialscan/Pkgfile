@@ -3,12 +3,12 @@
 # Depends on:  py3-pip
 
 name=socialscan
-version=2.0.0-0593496
+version=2.0.1-5ae42d0
 release=1
 source=https://github.com/iojw/socialscan/archive/${version#*-}/$name-${version#*-}.tar.gz
 
 build() {
-	install -d $PKG/usr/bin $PKG/opt
+	mkdir -p $PKG/usr/bin $PKG/opt
 
 	cp -a $name-${version#*-}* $PKG/opt/$name
 	/usr/bin/pip3 install --compile $PKG/opt/$name \
