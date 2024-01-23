@@ -2,7 +2,7 @@
 # URL:         https://github.com/rofl0r/proxychains-ng
 
 name=proxychains-ng
-version=4.16
+version=4.17
 release=1
 source=https://github.com/rofl0r/$name/archive/v$version/$name-$version.tar.gz
 
