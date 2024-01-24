@@ -2,7 +2,7 @@
 # URL:         https://dos2unix.sourceforge.io/
 
 name=dos2unix
-version=7.5.1
+version=7.5.2
 release=1
 source=https://waterlan.home.xs4all.nl/$name/$name-$version.tar.gz
 
