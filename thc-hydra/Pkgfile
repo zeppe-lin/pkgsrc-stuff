@@ -4,8 +4,9 @@
 
 name=thc-hydra
 version=9.5-8c4165a
-release=1
-source=https://github.com/vanhauser-thc/$name/archive/${version#*-}/$name-${version#*-}.tar.gz
+release=2
+source="https://github.com/vanhauser-thc/$name/archive/${version#*-}/$name-${version#*-}.tar.gz
+	xhydra.desktop"
 
 build() {
 	# thc-hydra has -O3 by default, remove system-wide optimization
@@ -19,6 +20,9 @@ build() {
 
 	make V=1
 	make MANDIR=/share/man/man1 install
+
+	install -m 0644 -Dt $PKG/usr/share/applications/ \
+		$SRC/xhydra.desktop
 
 	# move password lists
 	mkdir -p $PKG/usr/share/hydra
