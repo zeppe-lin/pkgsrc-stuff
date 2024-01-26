@@ -2,10 +2,11 @@
 # URL:         https://www.nvidia.com/
 # Depends on:  gtk gtk3 libglvnd
 
+# See available versions at:
 # https://www.nvidia.com/en-us/drivers/unix/
 
 name=nvidia
-version=535.146.02
+version=535.154.05
 release=1
 source="https://us.download.nvidia.com/XFree86/Linux-x86_64/$version/NVIDIA-Linux-x86_64-$version.run
 	10-nvidia-drm-outputclass.conf
