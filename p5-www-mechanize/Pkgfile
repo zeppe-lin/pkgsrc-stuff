@@ -3,9 +3,9 @@
 # Depends on:  p5-html-form p5-html-tree p5-path-tiny p5-test-deep p5-test-exception p5-test-memory-cycle p5-test-nowarnings p5-test-output p5-test-taint p5-test-warn
 
 name=p5-www-mechanize
-version=2.17
+version=2.18
 release=1
-source=https://cpan.metacpan.org/authors/id/S/SI/SIMBABQUE/WWW-Mechanize-$version.tar.gz
+source=https://cpan.metacpan.org/authors/id/O/OA/OALDERS/WWW-Mechanize-$version.tar.gz
 
 build() {
 	cd WWW-Mechanize-$version
