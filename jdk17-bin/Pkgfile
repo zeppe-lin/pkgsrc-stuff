@@ -1,0 +1,42 @@
+# Description: Java 11 Software Development Kit (amazon-corretto)
+# URL:         https://docs.aws.amazon.com/corretto/latest/corretto-8-ug/what-is-corretto-8.html
+# Depends on:  alsa-lib xorg-libxrender xorg-libxtst jdk11-bin
+
+name=jdk17-bin
+version=17.0.10.7.1
+release=1
+source=https://corretto.aws/downloads/resources/$version/amazon-corretto-$version-linux-x64.tar.gz
+
+build(){
+	cd amazon-corretto-$version-linux-x64
+
+	# fix perms
+	chmod -R o-w,g-w .
+
+	# install
+	install -d $PKG/usr/bin $PKG/usr/lib/jdk $PKG/usr/share
+	mv man $PKG/usr/share/
+	mv *   $PKG/usr/lib/jdk/
+
+	# symlinks
+	ln -s jdk                       $PKG/usr/lib/java
+	ln -s ../lib/jdk/bin/java       $PKG/usr/bin/java
+	ln -s ../lib/jdk/bin/javac      $PKG/usr/bin/javac
+	#ln -s ../lib/jdk/bin/javah      $PKG/usr/bin/javah
+	ln -s ../lib/jdk/bin/javap      $PKG/usr/bin/javap
+	ln -s ../lib/jdk/bin/jar        $PKG/usr/bin/jar
+	ln -s ../lib/jdk/bin/keytool    $PKG/usr/bin/keytool
+	ln -s ../lib/jdk/bin/jarsigner  $PKG/usr/bin/jarsigner
+
+	# revdep
+	install -d $PKG/etc/revdep.d
+	cat > $PKG/etc/revdep.d/jdk17-bin <<EOF
+/usr/lib/jdk/lib
+/usr/lib/jdk/lib/server
+EOF
+
+	# remove junk
+	cd $PKG/usr/lib/jdk
+	rm ASSEMBLY_EXCEPTION ADDITIONAL_LICENSE_INFO LICENSE \
+		README.md conf/security/policy/README.txt
+}
