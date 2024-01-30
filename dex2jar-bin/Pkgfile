@@ -1,11 +1,11 @@
 # Description: Tools to work with Android's .dex format and Java's .class files
 # URL:         https://github.com/pxb1988/dex2jar
-# Depends on:  jdk11-bin
+# Depends on:  jdk17-bin
 
 name=dex2jar-bin
-version=2.2-SNAPSHOT-2021-10-31
+version=2.4
 release=1
-source=https://github.com/pxb1988/dex2jar/releases/download/v$version/dex-tools-$version.zip
+source=https://github.com/pxb1988/dex2jar/releases/download/v$version/dex-tools-v$version.zip
 
 build () {
 	cd dex-tools-*
