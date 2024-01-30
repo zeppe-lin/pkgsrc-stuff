@@ -4,33 +4,34 @@
 
 name=johnny
 version=2.2
-release=2
+release=3
 source="https://github.com/openwall/johnny/archive/v$version/johnny-$version.tar.gz
-	export.svg
-	fileopen.svg
-	guess.svg
-	help.svg
-	homepage.svg
-	pause-attack.svg
-	projectnew.svg
-	projectopen.svg
-	projectsave.svg
-	quit.svg
-	start-attack.svg
-	tab_benchmark.svg
-	tab_log.svg
-	tab_options.svg
-	tab_output.svg
-	tab_passwords.svg
-	tab_settings.svg
-	trash.svg"
+	export.png
+	fileopen.png
+	guess.png
+	help.png
+	homepage.png
+	pause-attack.png
+	projectnew.png
+	projectopen.png
+	projectsave.png
+	quit.png
+	start-attack.png
+	tab_benchmark.png
+	tab_log.png
+	tab_options.png
+	tab_output.png
+	tab_passwords.png
+	tab_settings.png
+	trash.png"
 
 build() {
-	# prepare trinity-like icons
-	for icon in $SRC/*.svg; do
-		convert -background None "$icon" "${icon%.*}.png"
-	done
-	mv *.png $name-$version/resources/icons/
+	# Add patch for trinity-like icons if +TRINITY+ is specified in
+	# PKGMK_JOHNNY variable.  You may declare this variable in your
+	# /etc/pkgmk.conf.
+	case $PKGMK_JOHNNY in
+	*+TRINITY+*) mv $SRC/*.png $name-$version/resources/icons/ ;;
+	esac
 
 	cd johnny-$version
 
