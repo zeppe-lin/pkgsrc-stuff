@@ -1,9 +1,9 @@
 # Description: Reverse engineering Android apk files
 # URL:         https://ibotpeaches.github.io/Apktool
-# Depends on:  jdk11-bin
+# Depends on:  jdk17-bin
 
 name=apktool-bin
-version=2.7.0
+version=2.9.3
 release=1
 source=https://github.com/iBotPeaches/Apktool/releases/download/v$version/apktool_$version.jar
 
