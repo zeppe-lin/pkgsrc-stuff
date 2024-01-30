@@ -1,6 +1,6 @@
 # Description: OWASP Zed Attack Proxy (Weekly Build)
 # URL:         https://github.com/zaproxy/zaproxy
-# Depends on:  jdk11-bin
+# Depends on:  jdk17-bin
 
 name=zaproxy-bin
 version=2024-01-29
