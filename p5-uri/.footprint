@@ -33,6 +33,7 @@ drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.34/URI/file/
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/URI/file/Unix.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/URI/file/Win32.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/URI/ftp.pm
+-r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/URI/geo.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/URI/gopher.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/URI/http.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/URI/https.pm
@@ -75,6 +76,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -r--r--r--	root/root	usr/share/man/man3/URI::_punycode.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/URI::data.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/URI::file.3pm.gz
+-r--r--r--	root/root	usr/share/man/man3/URI::geo.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/URI::icap.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/URI::icaps.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/URI::ldap.3pm.gz
