@@ -1,9 +1,9 @@
 # Description: Software reverse engineering framework
 # URL:         https://www.nsa.gov/ghidra
-# Depends on:  jdk11-bin
+# Depends on:  jdk17-bin
 
 name=ghidra-bin
-version=10.1.5-20220726
+version=11.0.1-20240130
 release=1
 source=https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_${version%%-*}_build/ghidra_${version%%-*}_PUBLIC_${version##*-}.zip
 
