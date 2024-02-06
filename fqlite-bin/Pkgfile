@@ -1,6 +1,6 @@
 # Description: Forensic SQLite data recovery tool
 # URL:         https://www.staff.hs-mittweida.de/~pawlaszc/fqlite/
-# Depends on:  jdk11-bin
+# Depends on:  jdk17-bin
 
 name=fqlite-bin
 version=1.5.7
