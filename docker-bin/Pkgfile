@@ -3,7 +3,7 @@
 # Depends on:  iproute2 lvm2 btrfs-progs gzip
 
 name=docker-bin
-version=24.0.7
+version=25.0.2
 release=1
 source="https://download.docker.com/linux/static/stable/x86_64/docker-$version.tgz
 	rc.docker"
@@ -12,7 +12,7 @@ build() {
 	mkdir -p $PKG/usr/bin
 	cp -a docker/* $PKG/usr/bin/
 
-	# Docker's man pages looks like sh!\t
+	# Docker's man pages looks like sh!\t, skit it.
 	#http://jaeger.morpheus.net/linux/crux/files/docker-man-pages-$version.tar.xz
 	#install -m 0644 -Dt $PKG/usr/share/man/man1/ $SRC/man1/*
 	#install -m 0644 -Dt $PKG/usr/share/man/man5/ $SRC/man5/*
