@@ -1,6 +1,6 @@
 # Description: Standalone Java Decompiler GUI
 # URL:         https://github.com/java-decompiler/jd-gui
-# Depends on:  jdk11-bin
+# Depends on:  jdk17-bin
 
 name=jd-gui-bin
 version=1.6.6
