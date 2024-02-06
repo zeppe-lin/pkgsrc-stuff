@@ -1,6 +1,6 @@
 # Description: Dex to Java decompiler
 # URL:         https://github.com/skylot/jadx
-# Depends on:  jdk11-bin
+# Depends on:  jdk17-bin
 
 name=jadx-bin
 version=1.4.7
