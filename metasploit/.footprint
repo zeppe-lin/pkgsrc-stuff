@@ -4612,8 +4612,6 @@ drwxrwxr-x	root/root	opt/metasploit/lib/metasploit/framework/login_scanner/
 -rw-rw-r--	root/root	opt/metasploit/lib/metasploit/framework/login_scanner/x3.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/metasploit/framework/login_scanner/zabbix.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/metasploit/framework/mssql/
--rw-rw-r--	root/root	opt/metasploit/lib/metasploit/framework/mssql/base.rb
--rw-rw-r--	root/root	opt/metasploit/lib/metasploit/framework/mssql/client.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/metasploit/framework/mssql/tdssslproxy.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/metasploit/framework/ntds/
 -rw-rw-r--	root/root	opt/metasploit/lib/metasploit/framework/ntds/account.rb
@@ -4727,6 +4725,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/base/sessions/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/base/sessions/meterpreter_x86_win.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/base/sessions/meterpreter_zarch_linux.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/base/sessions/mettle_config.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/base/sessions/mysql.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/base/sessions/pingback.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/base/sessions/postgresql.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/base/sessions/powershell.rb
@@ -6364,6 +6363,17 @@ drwxrwxr-x	root/root	opt/metasploit/lib/rex/post/meterpreter/ui/console/command_
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/post/meterpreter/ui/console/command_dispatcher/unhook.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/post/meterpreter/ui/console/command_dispatcher/winpmem.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/post/meterpreter/ui/console/interactive_channel.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/rex/post/mysql.rb
+drwxrwxr-x	root/root	opt/metasploit/lib/rex/post/mysql/
+-rw-rw-r--	root/root	opt/metasploit/lib/rex/post/mysql/ui.rb
+drwxrwxr-x	root/root	opt/metasploit/lib/rex/post/mysql/ui/
+-rw-rw-r--	root/root	opt/metasploit/lib/rex/post/mysql/ui/console.rb
+drwxrwxr-x	root/root	opt/metasploit/lib/rex/post/mysql/ui/console/
+-rw-rw-r--	root/root	opt/metasploit/lib/rex/post/mysql/ui/console/command_dispatcher.rb
+drwxrwxr-x	root/root	opt/metasploit/lib/rex/post/mysql/ui/console/command_dispatcher/
+-rw-rw-r--	root/root	opt/metasploit/lib/rex/post/mysql/ui/console/command_dispatcher/client.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/rex/post/mysql/ui/console/command_dispatcher/core.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/rex/post/mysql/ui/console/command_dispatcher/modules.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/post/permission.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/post/postgresql.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/rex/post/postgresql/
@@ -6376,6 +6386,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/rex/post/postgresql/ui/console/command_d
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/post/postgresql/ui/console/command_dispatcher/client.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/post/postgresql/ui/console/command_dispatcher/core.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/post/postgresql/ui/console/command_dispatcher/modules.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/rex/post/postgresql/ui/console/interactive_sql_client.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/post/process.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/post/smb.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/rex/post/smb/
@@ -6589,6 +6600,9 @@ drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/mqtt/
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/mqtt/client.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/ms_crtd.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/ms_dtyp.rb
+drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/mssql/
+-rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/mssql/client.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/mssql/client_mixin.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/natpmp.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/natpmp/
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/natpmp/constants.rb
@@ -8745,6 +8759,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/local/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/rds_rds_page_copy_user_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/recvmmsg_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/reptile_rootkit_reptile_cmd_priv_esc.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/runc_cwd_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/saltstack_salt_minion_deployer.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/service_persistence.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/servu_ftp_server_prepareinstallation_priv_esc.rb
@@ -8978,6 +8993,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/bitbucket_env_var_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/bolt_file_upload.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/builderengine_upload_exec.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/cacti_pollers_sqli_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/caidao_php_backdoor_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/churchinfo_upload_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/cisco_dcnm_upload.rb
@@ -9000,6 +9016,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/eventlog_file_upload.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/extplorer_upload_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/familycms_less_exec.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/fortra_goanywhere_mft_rce_cve_2024_0204.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/fortra_goanywhere_rce_cve_2023_0669.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/freenas_exec_raw.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/gestioip_exec.rb
@@ -12262,6 +12279,7 @@ drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/base/sessions/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/base/sessions/command_shell_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/base/sessions/mainframe_shell_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/base/sessions/meterpreter_spec.rb
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/base/sessions/mysql_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/base/sessions/postgresql_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/base/sessions/smb_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/core/
@@ -12544,6 +12562,11 @@ drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/post/meterpreter/ui/console/
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/post/meterpreter/ui/console/command_dispatcher/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/post/meterpreter/ui/console/command_dispatcher/core_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/post/meterpreter_spec.rb
+drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/post/mysql/
+drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/post/mysql/ui/
+drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/post/mysql/ui/console/
+drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/post/mysql/ui/console/command_dispatcher/
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/post/mysql/ui/console/command_dispatcher/core_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/post/postgresql/
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/post/postgresql/ui/
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/post/postgresql/ui/console/
