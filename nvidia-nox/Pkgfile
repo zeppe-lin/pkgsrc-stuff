@@ -1,5 +1,6 @@
 # Description: NVIDIA Linux Display Driver (long lived branch, no X11)
 # URL:         https://www.nvidia.com/
+# Maintainer:  UNMAINTAINED
 
 name=nvidia-nox
 version=460.39
