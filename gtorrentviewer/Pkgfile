@@ -20,6 +20,10 @@ build() {
 	make V=1
 	make DESTDIR=$PKG install
 
+	# program name instead of description
+	sed -i '/^Name=.*/s/.*/Name=gTorrentViewer/' \
+		$PKG/usr/share/applications/$name.desktop
+
 	# remove junk
 	rm $PKG/usr/share/GTorrentViewer/README
 }
