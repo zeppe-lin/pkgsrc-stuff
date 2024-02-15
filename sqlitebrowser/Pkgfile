@@ -1,10 +1,10 @@
 # Description: Database browser for SQLite
-# URL:         http://sqlitebrowser.org
+# URL:         https://sqlitebrowser.org/
 # Depends on:  qt5
 
 name=sqlitebrowser
 version=3.12.2
-release=1
+release=2
 source=https://github.com/$name/$name/archive/v$version/$name-$version.tar.gz
 
 build() {
@@ -14,8 +14,15 @@ build() {
 		-D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS"  \
 		-D CMAKE_C_FLAGS_RELEASE="$CFLAGS"      \
 
-	cmake --build build -j ${JOBS:-1} -v
-	DESTDIR=$PKG cmake --install build
+	ninja -C build -j ${JOBS:-1} -v
+	DESTDIR=$PKG ninja -C build install
+
+	# use program's name instead of description
+	sed -i '/^Name=.*/s/.*/Name=SQLiteBrowser/' \
+		$PKG/usr/share/applications/*.desktop
+
+	# remove i18n entries from desktop file
+	sed -ri '/\[.+\]=/d' $PKG/usr/share/applications/*.desktop
 
 	# remove empty dirs
 	find $PKG -depth -empty -exec rm -rf {} \;
