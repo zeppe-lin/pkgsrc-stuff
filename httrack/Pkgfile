@@ -1,5 +1,5 @@
 # Description: Easy-to-use offline browser utility
-# URL:         https://www.httrack.com/
+# URL:         UNMAINTAINED
 # Depends on:  openssl zlib
 
 name=httrack
