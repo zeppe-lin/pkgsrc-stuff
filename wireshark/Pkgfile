@@ -23,6 +23,9 @@ build() {
 
 	chmod 4755 $PKG/usr/bin/dumpcap
 
+	# remove i18n entries from desktop file
+	sed -ri '/\[.+\]=/d' $PKG/usr/share/applications/*.desktop
+
 	# Don't remove these files, they are read by wireshark's about
 	# box.
 	#rm -f $PKG/usr/share/$name/AUTHORS-SHORT
