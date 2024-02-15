@@ -4,7 +4,7 @@
 
 name=linssid
 version=3.6
-release=3
+release=4
 source="https://downloads.sourceforge.net/$name/${name}_${version}.orig.tar.gz
 	$name-start.png
 	$name-pause.png
@@ -14,8 +14,12 @@ source="https://downloads.sourceforge.net/$name/${name}_${version}.orig.tar.gz
 build() {
 	cd $name-$version
 
-	# replace kde icons with trinity ones
-	cp -f $SRC/$name-start.png $SRC/$name-pause.png $name-app/
+	case "$PKGMK_LINSSID" in
+	*+TRINITY*)
+		# replace kde icons with trinity look and feel
+		cp -f $SRC/$name-start.png $SRC/$name-pause.png $name-app/
+		;;
+	esac
 
 	sed -e 's|libqwt-qt5.so|libqwt.so|g' \
 	    -e 's|/usr/sbin|/usr/bin|g'      \
@@ -41,6 +45,9 @@ build() {
 	make INSTALL_ROOT=$PKG install
 
 	mv $PKG/usr/bin/$name-pkexec $PKG/usr/bin/$name-ktsuss
+
+	# remove i18n entries from desktop file
+	sed -ri '/\[.+\]=/d' $PKG/usr/share/applications/*.desktop
 
 	# remove junk
 	rm -r $PKG/usr/share/polkit-1
