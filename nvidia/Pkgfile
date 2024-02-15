@@ -7,7 +7,7 @@
 
 name=nvidia
 version=535.154.05
-release=1
+release=2
 source="https://us.download.nvidia.com/XFree86/Linux-x86_64/$version/NVIDIA-Linux-x86_64-$version.run
 	10-nvidia-drm-outputclass.conf
 	90-nvidia-uvm.rules
@@ -103,9 +103,10 @@ build() {
 		nvidia-settings.1.gz nvidia-smi.1.gz nvidia-xconfig.1.gz \
 		$PKG/usr/share/man/man1/
 
-	# freedesktop files for some applications
+	# desktop file and icon for nvidia-settings
 	install -d $PKG/usr/share/pixmaps $PKG/usr/share/applications
 	sed -i 's|__UTILS_PATH__|/usr/bin|' nvidia-settings.desktop
+	sed -ri '/\[.+\]=/d' nvidia-settings.desktop
 	install -m 0644 nvidia-settings.png     $PKG/usr/share/pixmaps/
 	install -m 0644 nvidia-settings.desktop $PKG/usr/share/applications/
 
@@ -161,7 +162,7 @@ build() {
 	install -m 0644 nvidia-application-profiles-$version-rc $PKG/usr/share/nvidia/
 	install -m 0644 nvidia-application-profiles-$version-key-documentation $PKG/usr/share/nvidia/
 
-	# nvidia-udm udev rules
+	# nvidia-uvm udev rules
 	install -d $PKG/lib/udev/rules.d
 	install -m 0644 $SRC/90-nvidia-uvm.rules $PKG/lib/udev/rules.d/
 
