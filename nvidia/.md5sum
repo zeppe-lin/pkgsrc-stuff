@@ -1,4 +1,4 @@
-2097834b5b5f1fca0b82dd5518e11cb6  10-nvidia-drm-outputclass.conf
+b8f881d2123a1dcfebc0a7bae298ed2b  10-nvidia-drm-outputclass.conf
 4511024cc556d0c6e7c467b6789524e2  90-nvidia-uvm.rules
 53ab0bf8076fb5ba881b3a8eab566f72  NVIDIA-Linux-x86_64-535.154.05.run
 8b2b80c58a38ea91c5264bd03b48cf87  rc.nvidia-powerd
