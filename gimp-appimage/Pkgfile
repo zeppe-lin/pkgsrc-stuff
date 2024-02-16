@@ -4,7 +4,7 @@
 
 name=gimp-appimage
 version=2.10.25-20210610
-release=1
+release=2
 source="https://github.com/aferrero2707/$name/releases/download/continuous/GIMP_AppImage-git-$version-withplugins-x86_64.AppImage
 	gimp.desktop
 	gimp.png"
