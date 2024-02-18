@@ -3567,6 +3567,7 @@ drwxrwxr-x	root/root	opt/metasploit/external/source/ipwn/
 drwxrwxr-x	root/root	opt/metasploit/external/source/libssh/
 -rw-rw-r--	root/root	opt/metasploit/external/source/libssh/ssh_server_fork.patch
 drwxrwxr-x	root/root	opt/metasploit/external/source/metsvc/
+-rw-rw-r--	root/root	opt/metasploit/external/source/metsvc/VERSION
 drwxrwxr-x	root/root	opt/metasploit/external/source/metsvc/src/
 -rw-rw-r--	root/root	opt/metasploit/external/source/metsvc/src/metsvc-server.cpp
 -rw-rw-r--	root/root	opt/metasploit/external/source/metsvc/src/metsvc.cpp
@@ -4416,6 +4417,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/anemone/docs/
 -rw-rw-r--	root/root	opt/metasploit/lib/anemone/docs/CONTRIBUTORS
 -rw-rw-r--	root/root	opt/metasploit/lib/anemone/docs/MODIFIED.txt
 -rw-rw-r--	root/root	opt/metasploit/lib/anemone/docs/Rakefile
+-rw-rw-r--	root/root	opt/metasploit/lib/anemone/docs/VERSION
 -rw-rw-r--	root/root	opt/metasploit/lib/anemone/exceptions.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/anemone/extractors/
 -rw-rw-r--	root/root	opt/metasploit/lib/anemone/extractors/anchors.rb
@@ -14613,6 +14615,7 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/addressable-2.8.
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/addressable-2.8.5/tasks/yard.rake
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/afm-0.2.2/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/afm-0.2.2/Rakefile
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/afm-0.2.2/VERSION
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/afm-0.2.2/lib/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/afm-0.2.2/lib/afm.rb
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/afm-0.2.2/test/
@@ -14646,6 +14649,7 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/arel-helpers-2.1
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/arel-helpers-2.14.0/spec/query_builder_spec.rb
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/arel-helpers-2.14.0/spec/spec_helper.rb
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-eventstream-1.2.0/
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-eventstream-1.2.0/VERSION
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-eventstream-1.2.0/lib/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-eventstream-1.2.0/lib/aws-eventstream.rb
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-eventstream-1.2.0/lib/aws-eventstream/
@@ -14656,6 +14660,7 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-eventstream-
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-eventstream-1.2.0/lib/aws-eventstream/message.rb
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-eventstream-1.2.0/lib/aws-eventstream/types.rb
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-partitions-1.834.0/
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-partitions-1.834.0/VERSION
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-partitions-1.834.0/lib/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-partitions-1.834.0/lib/aws-partitions.rb
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-partitions-1.834.0/lib/aws-partitions/
@@ -14667,6 +14672,7 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-partitions-1
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-partitions-1.834.0/partitions-metadata.json
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-partitions-1.834.0/partitions.json
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-core-3.185.1/
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-core-3.185.1/VERSION
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-core-3.185.1/ca-bundle.crt
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-core-3.185.1/lib/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-core-3.185.1/lib/aws-defaults.rb
@@ -14949,6 +14955,7 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-core-3.1
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-core-3.185.1/lib/seahorse/util.rb
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-core-3.185.1/lib/seahorse/version.rb
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ec2-1.411.0/
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ec2-1.411.0/VERSION
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ec2-1.411.0/lib/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ec2-1.411.0/lib/aws-sdk-ec2.rb
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ec2-1.411.0/lib/aws-sdk-ec2/
@@ -14993,6 +15000,7 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ec2-1.41
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ec2-1.411.0/lib/aws-sdk-ec2/vpc_peering_connection.rb
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ec2-1.411.0/lib/aws-sdk-ec2/waiters.rb
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ec2instanceconnect-1.34.0/
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ec2instanceconnect-1.34.0/VERSION
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ec2instanceconnect-1.34.0/lib/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ec2instanceconnect-1.34.0/lib/aws-sdk-ec2instanceconnect.rb
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ec2instanceconnect-1.34.0/lib/aws-sdk-ec2instanceconnect/
@@ -15008,6 +15016,7 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ec2insta
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ec2instanceconnect-1.34.0/lib/aws-sdk-ec2instanceconnect/resource.rb
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ec2instanceconnect-1.34.0/lib/aws-sdk-ec2instanceconnect/types.rb
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-iam-1.87.0/
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-iam-1.87.0/VERSION
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-iam-1.87.0/lib/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-iam-1.87.0/lib/aws-sdk-iam.rb
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-iam-1.87.0/lib/aws-sdk-iam/
@@ -15047,6 +15056,7 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-iam-1.87
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-iam-1.87.0/lib/aws-sdk-iam/virtual_mfa_device.rb
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-iam-1.87.0/lib/aws-sdk-iam/waiters.rb
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-kms-1.72.0/
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-kms-1.72.0/VERSION
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-kms-1.72.0/lib/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-kms-1.72.0/lib/aws-sdk-kms.rb
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-kms-1.72.0/lib/aws-sdk-kms/
@@ -15062,6 +15072,7 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-kms-1.72
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-kms-1.72.0/lib/aws-sdk-kms/resource.rb
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-kms-1.72.0/lib/aws-sdk-kms/types.rb
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-s3-1.136.0/
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-s3-1.136.0/VERSION
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-s3-1.136.0/lib/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-s3-1.136.0/lib/aws-sdk-s3.rb
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-s3-1.136.0/lib/aws-sdk-s3/
@@ -15166,6 +15177,7 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-s3-1.136
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-s3-1.136.0/lib/aws-sdk-s3/types.rb
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-s3-1.136.0/lib/aws-sdk-s3/waiters.rb
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ssm-1.158.0/
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ssm-1.158.0/VERSION
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ssm-1.158.0/lib/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ssm-1.158.0/lib/aws-sdk-ssm.rb
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ssm-1.158.0/lib/aws-sdk-ssm/
@@ -15182,6 +15194,7 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ssm-1.15
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ssm-1.158.0/lib/aws-sdk-ssm/types.rb
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sdk-ssm-1.158.0/lib/aws-sdk-ssm/waiters.rb
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sigv4-1.6.0/
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sigv4-1.6.0/VERSION
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sigv4-1.6.0/lib/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sigv4-1.6.0/lib/aws-sigv4.rb
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/aws-sigv4-1.6.0/lib/aws-sigv4/
@@ -18294,6 +18307,7 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/filesize-0.2.0/s
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/gssapi-1.3.1/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/gssapi-1.3.1/Gemfile
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/gssapi-1.3.1/Rakefile
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/gssapi-1.3.1/VERSION
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/gssapi-1.3.1/examples/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/gssapi-1.3.1/examples/gss_client.rb
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/gssapi-1.3.1/examples/gss_iov_client.rb
@@ -19042,6 +19056,7 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/irb-1.7.4/lib/ir
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/irb-1.7.4/man/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/irb-1.7.4/man/irb.1
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/jmespath-1.6.2/
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/jmespath-1.6.2/VERSION
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/jmespath-1.6.2/bin/
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/jmespath-1.6.2/bin/jmespath.rb
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/jmespath-1.6.2/lib/
@@ -19106,6 +19121,7 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/jsobfu-0.4.2/spe
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/jsobfu-0.4.2/spec/support/matchers/be_in_charset.rb
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/jsobfu-0.4.2/spec/support/matchers/evaluate_to.rb
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/json-2.6.3/
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/json-2.6.3/VERSION
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/json-2.6.3/ext/
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/json-2.6.3/ext/json/
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/json-2.6.3/ext/json/ext/
@@ -21234,6 +21250,7 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/nessus_rest-0.1.
 -rw-rw-r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/nessus_rest-0.1.6/.document
 -rw-rw-r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/nessus_rest-0.1.6/Gemfile
 -rw-rw-r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/nessus_rest-0.1.6/Rakefile
+-rw-rw-r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/nessus_rest-0.1.6/VERSION
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/nessus_rest-0.1.6/examples/
 -rwxrwxr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/nessus_rest-0.1.6/examples/backup-reports.rb
 -rwxrwxr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/nessus_rest-0.1.6/examples/serial-scan.rb
@@ -22037,6 +22054,7 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/openvas-omp-0.0.
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/openvas-omp-0.0.4/.document
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/openvas-omp-0.0.4/Gemfile
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/openvas-omp-0.0.4/Rakefile
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/openvas-omp-0.0.4/VERSION
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/openvas-omp-0.0.4/examples/
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/openvas-omp-0.0.4/examples/basic-scan.rb
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/openvas-omp-0.0.4/lib/
@@ -25607,6 +25625,7 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/sinatra-3.1.0/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/sinatra-3.1.0/.yardopts
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/sinatra-3.1.0/Gemfile
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/sinatra-3.1.0/Rakefile
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/sinatra-3.1.0/VERSION
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/sinatra-3.1.0/examples/
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/sinatra-3.1.0/examples/chat.rb
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/sinatra-3.1.0/examples/lifecycle_events.rb

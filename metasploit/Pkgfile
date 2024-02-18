@@ -4,7 +4,7 @@
 
 name=metasploit
 version=6.3.56
-release=1
+release=2
 source=https://github.com/rapid7/$name-framework/archive/$version/$name-$version.tar.gz
 
 build() {
@@ -84,7 +84,6 @@ EOF
 		-o -name SECURITY\*        \
 		-o -name THANKS            \
 		-o -name TODO              \
-		-o -name VERSION           \
 		-o -name \*-LICENSE\*      \
 		-o -name \*.md             \
 		-o -name Makefile          \
