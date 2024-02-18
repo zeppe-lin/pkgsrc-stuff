@@ -1,0 +1,16 @@
+# Description: Reverse image search plugin
+# URL:         https://github.com/dessant/search-by-image
+# Depends on:  firefox-bin
+
+name=firefox-search-by-image-bin
+version=6.1.2
+release=1
+source=$(lynx -dump https://addons.mozilla.org/en-US/firefox/addon/search_by_image/ |
+	awk "/search_by_image-$version\.xpi\$/{print \$2}")
+
+build() {
+	local _DESTDIR=$PKG/opt/firefox/distribution/extensions
+	local _ID="{2e5ff8c8-32fe-46d0-9fc8-6b8986621f3c}"
+
+	install -m 0644 -D search_by_image-$version.xpi $_DESTDIR/$_ID.xpi
+}
