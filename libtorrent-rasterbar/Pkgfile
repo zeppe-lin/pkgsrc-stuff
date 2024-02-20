@@ -3,7 +3,7 @@
 # Depends on:  boost openssl python3
 
 name=libtorrent-rasterbar
-version=2.0.9
+version=2.0.10
 release=1
 source=https://github.com/arvidn/libtorrent/releases/download/v$version/$name-$version.tar.gz
 
