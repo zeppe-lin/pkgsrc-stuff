@@ -3,7 +3,7 @@
 # Depends on:  zlib
 
 name=recheck-bin
-version=4.5.0-beta.4
+version=4.5.0-beta.6
 release=1
 source=$name-$version-amd64.bin::https://github.com/makenowjust-labs/recheck/releases/download/v$version/recheck-linux-x64
 
