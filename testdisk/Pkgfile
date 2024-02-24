@@ -1,6 +1,6 @@
 # Description: Recover lost partitions and files
 # URL:         https://www.cgsecurity.org/wiki/TestDisk
-# Depends on:  libewf-legacy ntfs-3g qt5
+# Depends on:  e2fsprogs libewf-legacy ntfs-3g qt5
 
 name=testdisk
 version=7.2
