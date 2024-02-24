@@ -3,7 +3,7 @@
 # Depends on:  libewf-legacy ntfs-3g qt5
 
 name=testdisk
-version=7.1
+version=7.2
 release=1
 source=https://www.cgsecurity.org/$name-$version.tar.bz2
 
