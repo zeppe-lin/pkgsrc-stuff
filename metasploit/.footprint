@@ -5128,6 +5128,14 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/nifi/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/pihole.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/sap_sol_man_eem_miss_auth.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/sharepoint.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/splunk.rb
+drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/splunk/
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/splunk/apps.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/splunk/base.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/splunk/helpers.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/splunk/login.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/splunk/uris.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/splunk/version.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/typo3.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/typo3/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/typo3/login.rb
@@ -5866,6 +5874,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/ui/console/command_dispatcher/db/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/ui/console/command_dispatcher/evasion.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/ui/console/command_dispatcher/exploit.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/ui/console/command_dispatcher/jobs.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/ui/console/command_dispatcher/local_file_system.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/ui/console/command_dispatcher/modules.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/ui/console/command_dispatcher/nop.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/ui/console/command_dispatcher/payload.rb
@@ -5874,6 +5883,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/ui/console/command_dispatcher/db/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/ui/console/command_dispatcher/session.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/ui/console/driver.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/ui/console/framework_event_manager.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/ui/console/local_file_system.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/ui/console/module_action_commands.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/ui/console/module_argument_parsing.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/ui/console/module_command_dispatcher.rb
@@ -6409,6 +6419,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/rex/post/postgresql/ui/console/command_d
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/post/postgresql/ui/console/command_dispatcher/client.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/post/postgresql/ui/console/command_dispatcher/core.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/post/process.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/rex/post/session_compatible_modules.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/post/smb.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/rex/post/smb/
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/post/smb/ui.rb
@@ -6640,6 +6651,8 @@ drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/mqtt/
 drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/mssql/
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/mssql/client.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/mssql/client_mixin.rb
+drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/mysql/
+-rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/mysql/client.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/natpmp.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/natpmp/
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/natpmp/constants.rb
@@ -7359,6 +7372,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/gather/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/fortios_vpnssl_traversal_creds_leak.rb
 -rwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/gather/get_user_spns.py
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/gitlab_authenticated_subgroups_file_read.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/gitlab_tags_rss_feed_email_disclosure.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/grandstream_ucm62xx_sql_account_guess.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/hikvision_info_disclosure_cve_2017_7921.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/hp_enum_perfd.rb
@@ -9052,6 +9066,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/cups_bash_env_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/cuteflow_upload_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/cve_2021_35464_forgerock_openam.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/cve_2023_38836_boidcms.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/dexter_casinoloader_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/dotcms_file_upload_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/drupal_drupageddon.rb
@@ -12478,6 +12493,11 @@ drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/core/modules/metadata/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/opt_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/option_container_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/option_group_spec.rb
+drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/core/optional_session/
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/optional_session/mssql_spec.rb
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/optional_session/mysql_spec.rb
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/optional_session/postgresql_spec.rb
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/optional_session/smb_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/core/payload/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/payload/python_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/payload/reverse_http_spec.rb
@@ -12731,6 +12751,8 @@ drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/mms/model/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/mms/model/smtp_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/ms_dtyp/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/ms_dtyp/ms_dtyp_security_descriptor_spec.rb
+drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/mysql/
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/mysql/client_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/natpmp/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/natpmp/packet_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/ntp/
@@ -12910,6 +12932,7 @@ drwxrwxr-x	root/root	opt/metasploit/spec/support/shared/examples/msf/core/exploi
 drwxrwxr-x	root/root	opt/metasploit/spec/support/shared/examples/msf/core/exploit/sqli/
 -rw-rw-r--	root/root	opt/metasploit/spec/support/shared/examples/msf/core/exploit/sqli/sqli_common_shared.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/support/shared/examples/msf/core/exploit/sqli/sqli_time_based_shared.rb
+-rw-rw-r--	root/root	opt/metasploit/spec/support/shared/examples/msf/core/optional_session.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/support/shared/examples/msf/db_manager/
 -rw-rw-r--	root/root	opt/metasploit/spec/support/shared/examples/msf/db_manager/adapter.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/support/shared/examples/msf/db_manager/client.rb
