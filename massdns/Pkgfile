@@ -2,8 +2,8 @@
 # URL:         https://github.com/blechschmidt/massdns
 
 name=massdns
-version=1.0.0-ee7aecf
-release=2
+version=1.1.0-ca81141
+release=1
 source=https://github.com/blechschmidt/$name/archive/${version#*-}/$name-$version.tar.gz
 
 build() {
