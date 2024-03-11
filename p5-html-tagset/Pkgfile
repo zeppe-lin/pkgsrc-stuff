@@ -3,7 +3,7 @@
 # Depends on:  perl
 
 name=p5-html-tagset
-version=3.20
+version=3.22
 release=1
 source=https://search.cpan.org/CPAN/authors/id/P/PE/PETDANCE/HTML-Tagset-$version.tar.gz
 
