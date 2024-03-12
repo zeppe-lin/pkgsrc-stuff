@@ -3,14 +3,14 @@
 # Depends on:  jdk17-bin
 
 name=zaproxy-bin
-version=2024-03-04
+version=2024-03-11
 release=1
 source=https://github.com/zaproxy/zaproxy/releases/download/w$version/ZAP_WEEKLY_D-$version.zip
 
 build() {
-	install -d $PKG/usr/bin $PKG/opt
+	mkdir -p $PKG/opt $PKG/usr/bin
 
-	cp -a ZAP_D-$version $PKG/opt/zaproxy
+	mv ZAP_D-$version $PKG/opt/zaproxy
 	ln -s /opt/zaproxy/zap.sh $PKG/usr/bin/zaproxy
 
 	# remove junk
