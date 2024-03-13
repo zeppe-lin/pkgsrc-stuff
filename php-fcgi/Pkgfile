@@ -3,7 +3,7 @@
 # Depends on:  libpcre2 libxml2
 
 name=php-fcgi
-version=8.3.3
+version=8.3.4
 release=1
 source="https://php.net/distributions/php-$version.tar.xz
 	rc.$name"
@@ -27,8 +27,7 @@ build() {
 		--without-sqlite3                            \
 
 	make V=1
-	install -m 0755 -Dt $PKG/usr/bin/ sapi/cgi/php-cgi
 
-	# service
-	install -m 0755 -D $SRC/rc.$name $PKG/etc/rc.d/$name
+	install -m 0755 -D sapi/cgi/php-cgi $PKG/usr/bin/php-cgi
+	install -m 0755 -D $SRC/rc.$name    $PKG/etc/rc.d/$name
 }
