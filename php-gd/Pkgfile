@@ -3,7 +3,7 @@
 # Depends on:  harfbuzz libgd
 
 name=php-gd
-version=8.3.3
+version=8.3.4
 release=1
 source=https://www.php.net/distributions/php-$version.tar.xz
 
@@ -17,7 +17,8 @@ build() {
 
 	make build-modules
 
-	install -d $PKG/etc/php/conf.d  $PKG/usr/lib/php/extensions
+	mkdir -p $PKG/usr/lib/php/extensions $PKG/etc/php/conf.d
+
 	install -m 0755 modules/gd.so   $PKG/usr/lib/php/extensions/
 	printf 'extension=%s\n' gd.so > $PKG/etc/php/conf.d/gd.ini
 }
