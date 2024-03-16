@@ -6034,6 +6034,8 @@ drwxrwxr-x	root/root	opt/metasploit/lib/rex/crypto/
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/crypto/aes256.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/crypto/chacha20.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/crypto/rc4.rb
+drwxrwxr-x	root/root	opt/metasploit/lib/rex/exploit/
+-rw-rw-r--	root/root	opt/metasploit/lib/rex/exploit/view_state.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/ext_time.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/rex/google/
 -rwxrwxr-x	root/root	opt/metasploit/lib/rex/google/geolocation.rb
@@ -6882,6 +6884,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/admin/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/http/dlink_dir_645_password_extractor.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/http/dlink_dsl320b_password_extractor.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/http/foreman_openstack_satellite_priv_esc.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/http/gitlab_password_reset_account_takeover.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/http/gitstack_rest.rb
 -rwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/admin/http/grafana_auth_bypass.py
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/http/hikvision_unauth_pwd_reset_cve_2017_7921.rb
@@ -7406,6 +7409,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/gather/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/memcached_extractor.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/microweber_lfi.rb
 -rwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/gather/mikrotik_winbox_fileread.py
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/minio_bootstrap_verify_info_disc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/mongodb_js_inject_collection_enum.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/ms14_052_xmldom.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/mybb_db_fingerprint.rb
@@ -9114,6 +9118,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/jenkins_script_console.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/jenkins_xstream_deserialize.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/jetbrains_teamcity_rce_cve_2023_42793.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/jetbrains_teamcity_rce_cve_2024_27198.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/jira_hipchat_template.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/jira_plugin_upload.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/joomla_http_header_rce.rb
@@ -12168,6 +12173,7 @@ drwxrwxr-x	root/root	opt/metasploit/spec/
 drwxrwxr-x	root/root	opt/metasploit/spec/acceptance/
 -rw-rw-r--	root/root	opt/metasploit/spec/acceptance/child_process_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/acceptance/meterpreter_spec.rb
+-rw-rw-r--	root/root	opt/metasploit/spec/acceptance/postgres_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/acceptance_spec_helper.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/allure_config.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/api/
@@ -12597,6 +12603,8 @@ drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/crypto/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/crypto/aes256_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/crypto/rc4_spec.rb
+drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/exploit/
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/exploit/view_state_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/image_source/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/image_source/disk_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/image_source/memory_spec.rb
@@ -12872,6 +12880,7 @@ drwxrwxr-x	root/root	opt/metasploit/spec/support/acceptance/meterpreter/
 -rw-rw-r--	root/root	opt/metasploit/spec/support/acceptance/meterpreter/python.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/support/acceptance/meterpreter/windows_meterpreter.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/support/acceptance/port_allocator.rb
+-rw-rw-r--	root/root	opt/metasploit/spec/support/acceptance/target.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/support/lib/
 -rw-rw-r--	root/root	opt/metasploit/spec/support/lib/module_validation.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/support/matchers/
@@ -13197,6 +13206,7 @@ drwxrwxr-x	root/root	opt/metasploit/test/modules/post/test/
 -rw-rw-r--	root/root	opt/metasploit/test/modules/post/test/file.rb
 -rw-rw-r--	root/root	opt/metasploit/test/modules/post/test/get_env.rb
 -rw-rw-r--	root/root	opt/metasploit/test/modules/post/test/meterpreter.rb
+-rw-rw-r--	root/root	opt/metasploit/test/modules/post/test/postgres.rb
 -rw-rw-r--	root/root	opt/metasploit/test/modules/post/test/railgun.rb
 -rw-rw-r--	root/root	opt/metasploit/test/modules/post/test/railgun_reverse_lookups.rb
 -rw-rw-r--	root/root	opt/metasploit/test/modules/post/test/registry.rb
