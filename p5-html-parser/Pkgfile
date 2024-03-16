@@ -3,7 +3,7 @@
 # Depends on:  p5-html-tagset p5-http-message
 
 name=p5-html-parser
-version=3.81
+version=3.82
 release=1
 source=https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTML-Parser-$version.tar.gz
 
