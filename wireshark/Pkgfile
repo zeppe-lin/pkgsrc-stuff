@@ -3,7 +3,7 @@
 # Depends on:  asciidoctor c-ares gnutls hicolor-icon-theme libcap libgcrypt libnl libpcap libssh qt5
 
 name=wireshark
-version=4.0.13
+version=4.0.14
 release=1
 source=https://github.com/$name/$name/archive/v$version/$name-$version.tar.gz
 
