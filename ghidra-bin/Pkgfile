@@ -3,18 +3,17 @@
 # Depends on:  jdk17-bin
 
 name=ghidra-bin
-version=11.0.1-20240130
+version=11.0.2-20240326
 release=1
 source=https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_${version%%-*}_build/ghidra_${version%%-*}_PUBLIC_${version##*-}.zip
 
 build() {
-	install -d $PKG/opt $PKG/usr/bin
+	mkdir -p $PKG/opt $PKG/usr/bin
 
 	cp -a ghidra_${version%%-*}_PUBLIC $PKG/opt/ghidra
 
-	ln -s /opt/ghidra/ghidraRun $PKG/usr/bin/ghidra
-	ln -s /opt/ghidra/support/analyzeHeadless \
-		$PKG/usr/bin/ghidra-headless
+	ln -s /opt/ghidra/ghidraRun               $PKG/usr/bin/ghidra
+	ln -s /opt/ghidra/support/analyzeHeadless $PKG/usr/bin/ghidra-headless
 
 	# remove junk
 	find $PKG \( -iname README.TXT -o -iname README \) -delete
