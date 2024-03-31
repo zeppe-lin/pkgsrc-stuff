@@ -2,16 +2,16 @@
 # URL:         https://c-ares.haxx.se/
 
 name=c-ares
-version=1.27.0
+version=1.28.0
 release=1
 source=https://$name.haxx.se/download/$name-$version.tar.gz
 
 build() {
-	cmake -S $name-$version -B build -G Ninja       \
-		-D CMAKE_INSTALL_PREFIX=/usr            \
-		-D CMAKE_INSTALL_LIBDIR=lib             \
-		-D CMAKE_BUILD_TYPE=Release             \
-		-D CMAKE_C_FLAGS_RELEASE="$CFLAGS"      \
+	cmake -S $name-$version -B build -G Ninja   \
+		-D CMAKE_INSTALL_PREFIX=/usr        \
+		-D CMAKE_INSTALL_LIBDIR=lib         \
+		-D CMAKE_BUILD_TYPE=Release         \
+		-D CMAKE_C_FLAGS_RELEASE="$CFLAGS"  \
 		-Wno-dev
 
 	ninja -C build -j ${JOBS:-1} -v
