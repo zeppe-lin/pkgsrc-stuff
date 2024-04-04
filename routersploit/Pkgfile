@@ -3,12 +3,14 @@
 # Depends on:  py3-pip
 
 name=routersploit
-version=3.4.0-85f4bf2
+version=3.4.0-ba839fd
 release=1
-source=https://github.com/threat9/$name/archive/${version#*-}/$name-${version#*-}.tar.gz
+source=https://github.com/threat9/$name/archive/${version#*-}/$name-$version.tar.gz
 
 build() {
-	install -d $PKG/usr/bin $PKG/opt
+	export TMPDIR="$PKGMK_WORK_DIR"
+
+	mkdir -p $PKG/opt $PKG/usr/bin
 
 	cp -a $name-${version#*-}* $PKG/opt/$name
 

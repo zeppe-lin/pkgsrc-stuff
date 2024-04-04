@@ -59,6 +59,7 @@ drwxr-xr-x	root/root	opt/routersploit/Crypto/Cipher/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/Crypto/Cipher/__pycache__/_mode_ofb.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/Crypto/Cipher/__pycache__/_mode_openpgp.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/Crypto/Cipher/__pycache__/_mode_siv.cpython-39.pyc
+-rw-r--r--	root/root	opt/routersploit/Crypto/Cipher/__pycache__/_pkcs1_oaep_decode.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/Crypto/Cipher/_chacha20.abi3.so
 -rw-r--r--	root/root	opt/routersploit/Crypto/Cipher/_mode_cbc.py
 -rw-r--r--	root/root	opt/routersploit/Crypto/Cipher/_mode_cbc.pyi
@@ -83,6 +84,7 @@ drwxr-xr-x	root/root	opt/routersploit/Crypto/Cipher/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/Crypto/Cipher/_mode_siv.py
 -rw-r--r--	root/root	opt/routersploit/Crypto/Cipher/_mode_siv.pyi
 -rw-r--r--	root/root	opt/routersploit/Crypto/Cipher/_pkcs1_decode.abi3.so
+-rw-r--r--	root/root	opt/routersploit/Crypto/Cipher/_pkcs1_oaep_decode.py
 -rw-r--r--	root/root	opt/routersploit/Crypto/Cipher/_raw_aes.abi3.so
 -rw-r--r--	root/root	opt/routersploit/Crypto/Cipher/_raw_aesni.abi3.so
 -rw-r--r--	root/root	opt/routersploit/Crypto/Cipher/_raw_arc2.abi3.so
@@ -152,6 +154,10 @@ drwxr-xr-x	root/root	opt/routersploit/Crypto/Hash/
 -rw-r--r--	root/root	opt/routersploit/Crypto/Hash/TupleHash128.pyi
 -rw-r--r--	root/root	opt/routersploit/Crypto/Hash/TupleHash256.py
 -rw-r--r--	root/root	opt/routersploit/Crypto/Hash/TupleHash256.pyi
+-rw-r--r--	root/root	opt/routersploit/Crypto/Hash/TurboSHAKE128.py
+-rw-r--r--	root/root	opt/routersploit/Crypto/Hash/TurboSHAKE128.pyi
+-rw-r--r--	root/root	opt/routersploit/Crypto/Hash/TurboSHAKE256.py
+-rw-r--r--	root/root	opt/routersploit/Crypto/Hash/TurboSHAKE256.pyi
 -rw-r--r--	root/root	opt/routersploit/Crypto/Hash/_BLAKE2b.abi3.so
 -rw-r--r--	root/root	opt/routersploit/Crypto/Hash/_BLAKE2s.abi3.so
 -rw-r--r--	root/root	opt/routersploit/Crypto/Hash/_MD2.abi3.so
@@ -164,7 +170,7 @@ drwxr-xr-x	root/root	opt/routersploit/Crypto/Hash/
 -rw-r--r--	root/root	opt/routersploit/Crypto/Hash/_SHA384.abi3.so
 -rw-r--r--	root/root	opt/routersploit/Crypto/Hash/_SHA512.abi3.so
 -rw-r--r--	root/root	opt/routersploit/Crypto/Hash/__init__.py
--rw-r--r--	root/root	opt/routersploit/Crypto/Hash/__init__.pyi (EMPTY)
+-rw-r--r--	root/root	opt/routersploit/Crypto/Hash/__init__.pyi
 drwxr-xr-x	root/root	opt/routersploit/Crypto/Hash/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/Crypto/Hash/__pycache__/BLAKE2b.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/Crypto/Hash/__pycache__/BLAKE2s.cpython-39.pyc
@@ -193,6 +199,8 @@ drwxr-xr-x	root/root	opt/routersploit/Crypto/Hash/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/Crypto/Hash/__pycache__/SHAKE256.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/Crypto/Hash/__pycache__/TupleHash128.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/Crypto/Hash/__pycache__/TupleHash256.cpython-39.pyc
+-rw-r--r--	root/root	opt/routersploit/Crypto/Hash/__pycache__/TurboSHAKE128.cpython-39.pyc
+-rw-r--r--	root/root	opt/routersploit/Crypto/Hash/__pycache__/TurboSHAKE256.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/Crypto/Hash/__pycache__/__init__.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/Crypto/Hash/__pycache__/cSHAKE128.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/Crypto/Hash/__pycache__/cSHAKE256.cpython-39.pyc
@@ -367,6 +375,7 @@ drwxr-xr-x	root/root	opt/routersploit/Crypto/SelfTest/Hash/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/Crypto/SelfTest/Hash/__pycache__/test_SHA512.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/Crypto/SelfTest/Hash/__pycache__/test_SHAKE.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/Crypto/SelfTest/Hash/__pycache__/test_TupleHash.cpython-39.pyc
+-rw-r--r--	root/root	opt/routersploit/Crypto/SelfTest/Hash/__pycache__/test_TurboSHAKE.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/Crypto/SelfTest/Hash/__pycache__/test_cSHAKE.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/Crypto/SelfTest/Hash/__pycache__/test_keccak.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/Crypto/SelfTest/Hash/common.py
@@ -391,6 +400,7 @@ drwxr-xr-x	root/root	opt/routersploit/Crypto/SelfTest/Hash/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/Crypto/SelfTest/Hash/test_SHA512.py
 -rw-r--r--	root/root	opt/routersploit/Crypto/SelfTest/Hash/test_SHAKE.py
 -rw-r--r--	root/root	opt/routersploit/Crypto/SelfTest/Hash/test_TupleHash.py
+-rw-r--r--	root/root	opt/routersploit/Crypto/SelfTest/Hash/test_TurboSHAKE.py
 -rw-r--r--	root/root	opt/routersploit/Crypto/SelfTest/Hash/test_cSHAKE.py
 -rw-r--r--	root/root	opt/routersploit/Crypto/SelfTest/Hash/test_keccak.py
 drwxr-xr-x	root/root	opt/routersploit/Crypto/SelfTest/IO/
@@ -408,9 +418,11 @@ drwxr-xr-x	root/root	opt/routersploit/Crypto/SelfTest/Math/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/Crypto/SelfTest/Math/__pycache__/test_Numbers.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/Crypto/SelfTest/Math/__pycache__/test_Primality.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/Crypto/SelfTest/Math/__pycache__/test_modexp.cpython-39.pyc
+-rw-r--r--	root/root	opt/routersploit/Crypto/SelfTest/Math/__pycache__/test_modmult.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/Crypto/SelfTest/Math/test_Numbers.py
 -rw-r--r--	root/root	opt/routersploit/Crypto/SelfTest/Math/test_Primality.py
 -rw-r--r--	root/root	opt/routersploit/Crypto/SelfTest/Math/test_modexp.py
+-rw-r--r--	root/root	opt/routersploit/Crypto/SelfTest/Math/test_modmult.py
 drwxr-xr-x	root/root	opt/routersploit/Crypto/SelfTest/Protocol/
 -rw-r--r--	root/root	opt/routersploit/Crypto/SelfTest/Protocol/__init__.py
 drwxr-xr-x	root/root	opt/routersploit/Crypto/SelfTest/Protocol/__pycache__/
@@ -609,6 +621,7 @@ drwxr-xr-x	root/root	opt/routersploit/Cryptodome/Cipher/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/Cipher/__pycache__/_mode_ofb.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/Cipher/__pycache__/_mode_openpgp.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/Cipher/__pycache__/_mode_siv.cpython-39.pyc
+-rw-r--r--	root/root	opt/routersploit/Cryptodome/Cipher/__pycache__/_pkcs1_oaep_decode.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/Cipher/_chacha20.abi3.so
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/Cipher/_mode_cbc.py
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/Cipher/_mode_cbc.pyi
@@ -633,6 +646,7 @@ drwxr-xr-x	root/root	opt/routersploit/Cryptodome/Cipher/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/Cipher/_mode_siv.py
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/Cipher/_mode_siv.pyi
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/Cipher/_pkcs1_decode.abi3.so
+-rw-r--r--	root/root	opt/routersploit/Cryptodome/Cipher/_pkcs1_oaep_decode.py
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/Cipher/_raw_aes.abi3.so
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/Cipher/_raw_aesni.abi3.so
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/Cipher/_raw_arc2.abi3.so
@@ -702,6 +716,10 @@ drwxr-xr-x	root/root	opt/routersploit/Cryptodome/Hash/
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/Hash/TupleHash128.pyi
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/Hash/TupleHash256.py
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/Hash/TupleHash256.pyi
+-rw-r--r--	root/root	opt/routersploit/Cryptodome/Hash/TurboSHAKE128.py
+-rw-r--r--	root/root	opt/routersploit/Cryptodome/Hash/TurboSHAKE128.pyi
+-rw-r--r--	root/root	opt/routersploit/Cryptodome/Hash/TurboSHAKE256.py
+-rw-r--r--	root/root	opt/routersploit/Cryptodome/Hash/TurboSHAKE256.pyi
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/Hash/_BLAKE2b.abi3.so
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/Hash/_BLAKE2s.abi3.so
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/Hash/_MD2.abi3.so
@@ -714,7 +732,7 @@ drwxr-xr-x	root/root	opt/routersploit/Cryptodome/Hash/
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/Hash/_SHA384.abi3.so
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/Hash/_SHA512.abi3.so
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/Hash/__init__.py
--rw-r--r--	root/root	opt/routersploit/Cryptodome/Hash/__init__.pyi (EMPTY)
+-rw-r--r--	root/root	opt/routersploit/Cryptodome/Hash/__init__.pyi
 drwxr-xr-x	root/root	opt/routersploit/Cryptodome/Hash/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/Hash/__pycache__/BLAKE2b.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/Hash/__pycache__/BLAKE2s.cpython-39.pyc
@@ -743,6 +761,8 @@ drwxr-xr-x	root/root	opt/routersploit/Cryptodome/Hash/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/Hash/__pycache__/SHAKE256.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/Hash/__pycache__/TupleHash128.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/Hash/__pycache__/TupleHash256.cpython-39.pyc
+-rw-r--r--	root/root	opt/routersploit/Cryptodome/Hash/__pycache__/TurboSHAKE128.cpython-39.pyc
+-rw-r--r--	root/root	opt/routersploit/Cryptodome/Hash/__pycache__/TurboSHAKE256.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/Hash/__pycache__/__init__.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/Hash/__pycache__/cSHAKE128.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/Hash/__pycache__/cSHAKE256.cpython-39.pyc
@@ -917,6 +937,7 @@ drwxr-xr-x	root/root	opt/routersploit/Cryptodome/SelfTest/Hash/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/SelfTest/Hash/__pycache__/test_SHA512.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/SelfTest/Hash/__pycache__/test_SHAKE.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/SelfTest/Hash/__pycache__/test_TupleHash.cpython-39.pyc
+-rw-r--r--	root/root	opt/routersploit/Cryptodome/SelfTest/Hash/__pycache__/test_TurboSHAKE.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/SelfTest/Hash/__pycache__/test_cSHAKE.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/SelfTest/Hash/__pycache__/test_keccak.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/SelfTest/Hash/common.py
@@ -941,6 +962,7 @@ drwxr-xr-x	root/root	opt/routersploit/Cryptodome/SelfTest/Hash/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/SelfTest/Hash/test_SHA512.py
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/SelfTest/Hash/test_SHAKE.py
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/SelfTest/Hash/test_TupleHash.py
+-rw-r--r--	root/root	opt/routersploit/Cryptodome/SelfTest/Hash/test_TurboSHAKE.py
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/SelfTest/Hash/test_cSHAKE.py
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/SelfTest/Hash/test_keccak.py
 drwxr-xr-x	root/root	opt/routersploit/Cryptodome/SelfTest/IO/
@@ -958,9 +980,11 @@ drwxr-xr-x	root/root	opt/routersploit/Cryptodome/SelfTest/Math/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/SelfTest/Math/__pycache__/test_Numbers.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/SelfTest/Math/__pycache__/test_Primality.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/SelfTest/Math/__pycache__/test_modexp.cpython-39.pyc
+-rw-r--r--	root/root	opt/routersploit/Cryptodome/SelfTest/Math/__pycache__/test_modmult.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/SelfTest/Math/test_Numbers.py
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/SelfTest/Math/test_Primality.py
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/SelfTest/Math/test_modexp.py
+-rw-r--r--	root/root	opt/routersploit/Cryptodome/SelfTest/Math/test_modmult.py
 drwxr-xr-x	root/root	opt/routersploit/Cryptodome/SelfTest/Protocol/
 -rw-r--r--	root/root	opt/routersploit/Cryptodome/SelfTest/Protocol/__init__.py
 drwxr-xr-x	root/root	opt/routersploit/Cryptodome/SelfTest/Protocol/__pycache__/
@@ -1105,13 +1129,11 @@ drwxr-xr-x	root/root	opt/routersploit/Cryptodome/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/Makefile
 -rw-r--r--	root/root	opt/routersploit/_cffi_backend.cpython-39-x86_64-linux-gnu.so
 drwxr-xr-x	root/root	opt/routersploit/bcrypt/
--rw-r--r--	root/root	opt/routersploit/bcrypt/__about__.py
 -rw-r--r--	root/root	opt/routersploit/bcrypt/__init__.py
+-rw-r--r--	root/root	opt/routersploit/bcrypt/__init__.pyi
 drwxr-xr-x	root/root	opt/routersploit/bcrypt/__pycache__/
--rw-r--r--	root/root	opt/routersploit/bcrypt/__pycache__/__about__.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/bcrypt/__pycache__/__init__.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/bcrypt/_bcrypt.abi3.so
--rw-r--r--	root/root	opt/routersploit/bcrypt/_bcrypt.pyi
 -rw-r--r--	root/root	opt/routersploit/bcrypt/py.typed (EMPTY)
 drwxr-xr-x	root/root	opt/routersploit/bin/
 drwxr-xr-x	root/root	opt/routersploit/bin/__pycache__/
@@ -2452,19 +2474,11 @@ drwxr-xr-x	root/root	opt/routersploit/cryptography/hazmat/backends/openssl/__pyc
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/backends/openssl/__pycache__/aead.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/backends/openssl/__pycache__/backend.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/backends/openssl/__pycache__/ciphers.cpython-39.pyc
--rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/backends/openssl/__pycache__/cmac.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/backends/openssl/__pycache__/decode_asn1.cpython-39.pyc
--rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/backends/openssl/__pycache__/ec.cpython-39.pyc
--rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/backends/openssl/__pycache__/rsa.cpython-39.pyc
--rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/backends/openssl/__pycache__/utils.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/backends/openssl/aead.py
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/backends/openssl/backend.py
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/backends/openssl/ciphers.py
--rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/backends/openssl/cmac.py
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/backends/openssl/decode_asn1.py
--rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/backends/openssl/ec.py
--rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/backends/openssl/rsa.py
--rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/backends/openssl/utils.py
 drwxr-xr-x	root/root	opt/routersploit/cryptography/hazmat/bindings/
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/bindings/__init__.py
 drwxr-xr-x	root/root	opt/routersploit/cryptography/hazmat/bindings/__pycache__/
@@ -2478,14 +2492,19 @@ drwxr-xr-x	root/root	opt/routersploit/cryptography/hazmat/bindings/_rust/
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/bindings/_rust/ocsp.pyi
 drwxr-xr-x	root/root	opt/routersploit/cryptography/hazmat/bindings/_rust/openssl/
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/bindings/_rust/openssl/__init__.pyi
+-rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/bindings/_rust/openssl/aead.pyi
+-rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/bindings/_rust/openssl/cmac.pyi
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/bindings/_rust/openssl/dh.pyi
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/bindings/_rust/openssl/dsa.pyi
+-rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/bindings/_rust/openssl/ec.pyi
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/bindings/_rust/openssl/ed25519.pyi
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/bindings/_rust/openssl/ed448.pyi
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/bindings/_rust/openssl/hashes.pyi
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/bindings/_rust/openssl/hmac.pyi
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/bindings/_rust/openssl/kdf.pyi
+-rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/bindings/_rust/openssl/keys.pyi
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/bindings/_rust/openssl/poly1305.pyi
+-rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/bindings/_rust/openssl/rsa.pyi
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/bindings/_rust/openssl/x25519.pyi
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/bindings/_rust/openssl/x448.pyi
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/bindings/_rust/pkcs7.pyi
@@ -2609,6 +2628,7 @@ drwxr-xr-x	root/root	opt/routersploit/cryptography/x509/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/cryptography/x509/__pycache__/name.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/cryptography/x509/__pycache__/ocsp.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/cryptography/x509/__pycache__/oid.cpython-39.pyc
+-rw-r--r--	root/root	opt/routersploit/cryptography/x509/__pycache__/verification.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/cryptography/x509/base.py
 -rw-r--r--	root/root	opt/routersploit/cryptography/x509/certificate_transparency.py
 -rw-r--r--	root/root	opt/routersploit/cryptography/x509/extensions.py
@@ -2616,6 +2636,7 @@ drwxr-xr-x	root/root	opt/routersploit/cryptography/x509/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/cryptography/x509/name.py
 -rw-r--r--	root/root	opt/routersploit/cryptography/x509/ocsp.py
 -rw-r--r--	root/root	opt/routersploit/cryptography/x509/oid.py
+-rw-r--r--	root/root	opt/routersploit/cryptography/x509/verification.py
 drwxr-xr-x	root/root	opt/routersploit/docs/
 drwxr-xr-x	root/root	opt/routersploit/docs/modules/
 drwxr-xr-x	root/root	opt/routersploit/docs/modules/creds/
@@ -3074,6 +3095,7 @@ drwxr-xr-x	root/root	opt/routersploit/future/moves/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/future/moves/__pycache__/configparser.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/future/moves/__pycache__/copyreg.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/future/moves/__pycache__/itertools.cpython-39.pyc
+-rw-r--r--	root/root	opt/routersploit/future/moves/__pycache__/multiprocessing.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/future/moves/__pycache__/pickle.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/future/moves/__pycache__/queue.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/future/moves/__pycache__/reprlib.cpython-39.pyc
@@ -3119,6 +3141,7 @@ drwxr-xr-x	root/root	opt/routersploit/future/moves/http/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/future/moves/http/cookies.py
 -rw-r--r--	root/root	opt/routersploit/future/moves/http/server.py
 -rw-r--r--	root/root	opt/routersploit/future/moves/itertools.py
+-rw-r--r--	root/root	opt/routersploit/future/moves/multiprocessing.py
 -rw-r--r--	root/root	opt/routersploit/future/moves/pickle.py
 -rw-r--r--	root/root	opt/routersploit/future/moves/queue.py
 -rw-r--r--	root/root	opt/routersploit/future/moves/reprlib.py
@@ -5499,6 +5522,7 @@ drwxr-xr-x	root/root	opt/routersploit/urllib3/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/urllib3/__pycache__/exceptions.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/urllib3/__pycache__/fields.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/urllib3/__pycache__/filepost.cpython-39.pyc
+-rw-r--r--	root/root	opt/routersploit/urllib3/__pycache__/http2.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/urllib3/__pycache__/poolmanager.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/urllib3/__pycache__/response.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/urllib3/_base_connection.py
@@ -5512,22 +5536,26 @@ drwxr-xr-x	root/root	opt/routersploit/urllib3/contrib/
 drwxr-xr-x	root/root	opt/routersploit/urllib3/contrib/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/urllib3/contrib/__pycache__/__init__.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/urllib3/contrib/__pycache__/pyopenssl.cpython-39.pyc
--rw-r--r--	root/root	opt/routersploit/urllib3/contrib/__pycache__/securetransport.cpython-39.pyc
 -rw-r--r--	root/root	opt/routersploit/urllib3/contrib/__pycache__/socks.cpython-39.pyc
-drwxr-xr-x	root/root	opt/routersploit/urllib3/contrib/_securetransport/
--rw-r--r--	root/root	opt/routersploit/urllib3/contrib/_securetransport/__init__.py (EMPTY)
-drwxr-xr-x	root/root	opt/routersploit/urllib3/contrib/_securetransport/__pycache__/
--rw-r--r--	root/root	opt/routersploit/urllib3/contrib/_securetransport/__pycache__/__init__.cpython-39.pyc
--rw-r--r--	root/root	opt/routersploit/urllib3/contrib/_securetransport/__pycache__/bindings.cpython-39.pyc
--rw-r--r--	root/root	opt/routersploit/urllib3/contrib/_securetransport/__pycache__/low_level.cpython-39.pyc
--rw-r--r--	root/root	opt/routersploit/urllib3/contrib/_securetransport/bindings.py
--rw-r--r--	root/root	opt/routersploit/urllib3/contrib/_securetransport/low_level.py
+drwxr-xr-x	root/root	opt/routersploit/urllib3/contrib/emscripten/
+-rw-r--r--	root/root	opt/routersploit/urllib3/contrib/emscripten/__init__.py
+drwxr-xr-x	root/root	opt/routersploit/urllib3/contrib/emscripten/__pycache__/
+-rw-r--r--	root/root	opt/routersploit/urllib3/contrib/emscripten/__pycache__/__init__.cpython-39.pyc
+-rw-r--r--	root/root	opt/routersploit/urllib3/contrib/emscripten/__pycache__/connection.cpython-39.pyc
+-rw-r--r--	root/root	opt/routersploit/urllib3/contrib/emscripten/__pycache__/fetch.cpython-39.pyc
+-rw-r--r--	root/root	opt/routersploit/urllib3/contrib/emscripten/__pycache__/request.cpython-39.pyc
+-rw-r--r--	root/root	opt/routersploit/urllib3/contrib/emscripten/__pycache__/response.cpython-39.pyc
+-rw-r--r--	root/root	opt/routersploit/urllib3/contrib/emscripten/connection.py
+-rw-r--r--	root/root	opt/routersploit/urllib3/contrib/emscripten/emscripten_fetch_worker.js
+-rw-r--r--	root/root	opt/routersploit/urllib3/contrib/emscripten/fetch.py
+-rw-r--r--	root/root	opt/routersploit/urllib3/contrib/emscripten/request.py
+-rw-r--r--	root/root	opt/routersploit/urllib3/contrib/emscripten/response.py
 -rw-r--r--	root/root	opt/routersploit/urllib3/contrib/pyopenssl.py
--rw-r--r--	root/root	opt/routersploit/urllib3/contrib/securetransport.py
 -rw-r--r--	root/root	opt/routersploit/urllib3/contrib/socks.py
 -rw-r--r--	root/root	opt/routersploit/urllib3/exceptions.py
 -rw-r--r--	root/root	opt/routersploit/urllib3/fields.py
 -rw-r--r--	root/root	opt/routersploit/urllib3/filepost.py
+-rw-r--r--	root/root	opt/routersploit/urllib3/http2.py
 -rw-r--r--	root/root	opt/routersploit/urllib3/poolmanager.py
 -rw-r--r--	root/root	opt/routersploit/urllib3/py.typed
 -rw-r--r--	root/root	opt/routersploit/urllib3/response.py
