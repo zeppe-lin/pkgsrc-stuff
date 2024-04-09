@@ -45,6 +45,7 @@ drwxr-xr-x	root/root	opt/sqlmap/data/txt/
 -rw-r--r--	root/root	opt/sqlmap/data/txt/common-outputs.txt
 -rw-r--r--	root/root	opt/sqlmap/data/txt/common-tables.txt
 -rw-r--r--	root/root	opt/sqlmap/data/txt/keywords.txt
+-rw-r--r--	root/root	opt/sqlmap/data/txt/sha256sums.txt
 -rw-r--r--	root/root	opt/sqlmap/data/txt/smalldict.txt
 -rw-r--r--	root/root	opt/sqlmap/data/txt/user-agents.txt
 -rw-r--r--	root/root	opt/sqlmap/data/txt/wordlist.tx_
