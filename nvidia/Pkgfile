@@ -6,7 +6,7 @@
 # https://www.nvidia.com/en-us/drivers/unix/
 
 name=nvidia
-version=550.54.14
+version=550.67
 release=1
 source="https://us.download.nvidia.com/XFree86/Linux-x86_64/$version/NVIDIA-Linux-x86_64-$version.run
 	10-nvidia-drm-outputclass.conf
