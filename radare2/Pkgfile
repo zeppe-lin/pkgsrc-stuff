@@ -1,9 +1,9 @@
 # Description: Framework for reversing binaries
-# URL:         https://radare.org
+# URL:         https://radare.org/
 # Depends on:  capstone file xxhash
 
 name=radare2
-version=5.8.8
+version=5.9.0
 release=1
 source=https://github.com/radare/$name/archive/$version/$name-$version.tar.gz
 
@@ -24,8 +24,8 @@ build() {
 	# bash-completion
 	install -m 0644 -D doc/bash_autocompletion.sh \
 		$PKG/usr/share/bash-completion/completions/$name
-	for __n in rafind2 r2 rabin2 rasm2 radiff2; do
-		ln -s $name $PKG/usr/share/bash-completion/completions/$__n
+	for n in rafind2 r2 rabin2 rasm2 radiff2; do
+		ln -s $name $PKG/usr/share/bash-completion/completions/$n
 	done
 
 	# remove junk
