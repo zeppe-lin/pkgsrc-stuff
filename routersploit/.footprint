@@ -1642,6 +1642,7 @@ drwxr-xr-x	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/ro
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/huawei/e5331_mifi_info_disclosure.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/huawei/hg520_info_disclosure.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/huawei/hg530_hg520b_password_disclosure.py
+-rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/huawei/hg532_rce.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/huawei/hg866_password_change.py
 drwxr-xr-x	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/ipfire/
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/ipfire/__init__.py (EMPTY)
@@ -4771,6 +4772,7 @@ drwxr-xr-x	root/root	opt/routersploit/routersploit/modules/exploits/routers/huaw
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/huawei/e5331_mifi_info_disclosure.py
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/huawei/hg520_info_disclosure.py
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/huawei/hg530_hg520b_password_disclosure.py
+-rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/huawei/hg532_rce.py
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/huawei/hg866_password_change.py
 drwxr-xr-x	root/root	opt/routersploit/routersploit/modules/exploits/routers/ipfire/
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/ipfire/__init__.py (EMPTY)
