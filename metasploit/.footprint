@@ -6471,6 +6471,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/amqp/version_0_9_1/frames/
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/amqp/version_0_9_1/frames/method_arguments.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/amqp/version_0_9_1/types.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/apache_j_p.rb
+-rwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/bcrypt_public_key.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/crypto_asn1.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/crypto_asn1/
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/crypto_asn1/o_i_ds.rb
@@ -6640,6 +6641,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/kerberos/pac/
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/ldap.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/ldap/
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/ldap/auth.rb
+-rwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/ldap/dn_binary.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/ldap/server.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/mms/
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/mms/client.rb
@@ -6651,6 +6653,10 @@ drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/mms/model/
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/mqtt.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/mqtt/
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/mqtt/client.rb
+drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/ms_adts/
+-rwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/ms_adts/key_credential.rb
+-rwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/ms_adts/ms_adts_key_credential_entry_struct.rb
+-rwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/ms_adts/ms_adts_key_credential_struct.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/ms_crtd.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/ms_dtyp.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/mssql/
@@ -6966,6 +6972,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/admin/kerberos/
 drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/admin/ldap/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/ldap/ad_cs_cert_template.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/ldap/rbcd.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/ldap/shadow_credentials.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/ldap/vmware_vcenter_vmdir_auth_bypass.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/admin/maxdb/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/maxdb/maxdb_cons_exec.rb
@@ -9090,6 +9097,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/freenas_exec_raw.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/gestioip_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/getsimplecms_unauth_code_exec.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/gibbon_auth_rce_cve_2024_24725.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/git_client_command_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/git_lfs_clone_command_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/git_submodule_command_exec.rb
@@ -11673,6 +11681,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/post/linux/gather/
 -rw-rw-r--	root/root	opt/metasploit/modules/post/linux/gather/phpmyadmin_credsteal.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/post/linux/gather/pptpd_chap_secrets.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/post/linux/gather/puppet.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/post/linux/gather/rancher_audit_log_leak.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/post/linux/gather/tor_hiddenservices.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/post/linux/gather/vcenter_secrets_dump.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/post/linux/manage/
@@ -12182,6 +12191,7 @@ drwxrwxr-x	root/root	opt/metasploit/spec/
 drwxrwxr-x	root/root	opt/metasploit/spec/acceptance/
 -rw-rw-r--	root/root	opt/metasploit/spec/acceptance/child_process_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/acceptance/meterpreter_spec.rb
+-rw-rw-r--	root/root	opt/metasploit/spec/acceptance/mssql_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/acceptance/mysql_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/acceptance/postgres_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/acceptance_spec_helper.rb
@@ -12762,14 +12772,19 @@ drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/kerberos/pac/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/kerberos/pac/krb5_pac_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/ldap/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/ldap/auth_spec.rb
+-rwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/ldap/dn_binary_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/ldap/server_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/mms/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/mms/client_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/mms/model/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/mms/model/message_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/mms/model/smtp_spec.rb
+drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/ms_adts/
+-rwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/ms_adts/key_credential_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/ms_dtyp/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/ms_dtyp/ms_dtyp_security_descriptor_spec.rb
+drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/mssql/
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/mssql/client_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/mysql/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/mysql/client_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/natpmp/
@@ -12782,6 +12797,8 @@ drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/nuuo/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/nuuo/response_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/pjl/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/pjl/client_spec.rb
+drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/postgresql/
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/postgresql/client_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/proxy/
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/proxy/socks5/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/proxy/socks5/packet_spec.rb
@@ -12805,6 +12822,8 @@ drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/rmi/model/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/rmi/model/unique_identifier_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/sip/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/sip/response_spec.rb
+drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/smb/
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/smb/simple_client_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/sms/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/sms/client_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/sms/model/
@@ -13067,6 +13086,7 @@ drwxrwxr-x	root/root	opt/metasploit/spec/support/shared/examples/msf/module_mana
 drwxrwxr-x	root/root	opt/metasploit/spec/support/shared/examples/msf/modules/
 -rw-rw-r--	root/root	opt/metasploit/spec/support/shared/examples/msf/modules/error_subclass_initialize.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/support/shared/examples/msf/modules/version_compatibility_error.rb
+-rw-rw-r--	root/root	opt/metasploit/spec/support/shared/examples/msf/sessions.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/support/shared/examples/msf/simple/
 drwxrwxr-x	root/root	opt/metasploit/spec/support/shared/examples/msf/simple/framework/
 -rw-rw-r--	root/root	opt/metasploit/spec/support/shared/examples/msf/simple/framework/module_paths.rb
@@ -13079,6 +13099,8 @@ drwxrwxr-x	root/root	opt/metasploit/spec/support/shared/examples/msf/ui/console/
 drwxrwxr-x	root/root	opt/metasploit/spec/support/shared/examples/rex/
 drwxrwxr-x	root/root	opt/metasploit/spec/support/shared/examples/rex/image_source/
 -rw-rw-r--	root/root	opt/metasploit/spec/support/shared/examples/rex/image_source/image_source.rb
+drwxrwxr-x	root/root	opt/metasploit/spec/support/shared/examples/rex/proto/
+-rw-rw-r--	root/root	opt/metasploit/spec/support/shared/examples/rex/proto/session_clients.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/support/shared/examples/typed_path.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/tools/
 -rw-rw-r--	root/root	opt/metasploit/spec/tools/cpassword_decrypt_spec.rb
@@ -13217,6 +13239,7 @@ drwxrwxr-x	root/root	opt/metasploit/test/modules/post/test/
 -rw-rw-r--	root/root	opt/metasploit/test/modules/post/test/file.rb
 -rw-rw-r--	root/root	opt/metasploit/test/modules/post/test/get_env.rb
 -rw-rw-r--	root/root	opt/metasploit/test/modules/post/test/meterpreter.rb
+-rw-rw-r--	root/root	opt/metasploit/test/modules/post/test/mssql.rb
 -rw-rw-r--	root/root	opt/metasploit/test/modules/post/test/mysql.rb
 -rw-rw-r--	root/root	opt/metasploit/test/modules/post/test/postgres.rb
 -rw-rw-r--	root/root	opt/metasploit/test/modules/post/test/railgun.rb
