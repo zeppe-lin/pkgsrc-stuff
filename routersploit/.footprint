@@ -1703,6 +1703,7 @@ drwxr-xr-x	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/ro
 drwxr-xr-x	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/tplink/
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/tplink/__init__.py (EMPTY)
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/tplink/archer_c2_c20i_rce.py
+-rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/tplink/archer_c9_admin_password_reset.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/tplink/wdr740nd_wdr740n_backdoor.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/tplink/wdr740nd_wdr740n_path_traversal.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/tplink/wdr842nd_wdr842n_configure_disclosure.py
@@ -4833,6 +4834,7 @@ drwxr-xr-x	root/root	opt/routersploit/routersploit/modules/exploits/routers/thom
 drwxr-xr-x	root/root	opt/routersploit/routersploit/modules/exploits/routers/tplink/
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/tplink/__init__.py (EMPTY)
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/tplink/archer_c2_c20i_rce.py
+-rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/tplink/archer_c9_admin_password_reset.py
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/tplink/wdr740nd_wdr740n_backdoor.py
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/tplink/wdr740nd_wdr740n_path_traversal.py
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/tplink/wdr842nd_wdr842n_configure_disclosure.py
