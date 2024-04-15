@@ -4,13 +4,15 @@
 
 name=dhcp-spoof
 version=0.1-a207d4c
-release=1
-source=https://github.com/emanuele-f/$name/archive/${version#*-}/$name-$version.tar.gz
+release=2
+source="https://github.com/emanuele-f/$name/archive/${version#*-}/$name-$version.tar.gz
+	$name.8"
 
 build() {
 	cd $name-${version#*-}*
 
 	${CC:-cc} $CFLAGS -Wall -Wextra -o $name -lpcap dhcp_spoof.c
 
-	install -m 0755 -Dt $PKG/usr/sbin/ $name
+	install -m 0755 -Dt $PKG/usr/sbin/           $name
+	install -m 0644 -Dt $PKG/usr/share/man/man8/ $SRC/$name.8
 }

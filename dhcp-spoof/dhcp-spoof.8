@@ -1,0 +1,50 @@
+.\" dhcp-spoof(8) manual page
+.Dd April 16, 2024
+.Dt DHCP-SPOOF 8
+.Os
+.\" ==================================================================
+.Sh NAME
+.Nm dhcp-spoof
+.Nd DHCP spoofing attack tool
+.\" ==================================================================
+.Sh SYNOPSIS
+.Nm
+.Op Fl d Ar dns-server
+.Op Fl g Ar gateway
+.Ar interface
+.Nm
+.Op Fl h
+.\" ==================================================================
+.Sh DESCRIPTION
+.Nm
+provides an alternative way of performing DHCP spoofing.
+It implements a bare-bone DHCP server with the use of
+.Xr libcap 3
+to reply to the DHCP request from the clients.
+.Pp
+The options are as follows:
+.Bl -tag -width XXXXXXXXXXXXX
+.It Fl d Ar dns-server
+The spoofed DNS server. Default: this host.
+.It Fl g Ar gateway
+The spoofed gateway. Default: this host.
+.It Ar interface
+An interface on which to perform DHCP spoofing attack.
+.It Fl h
+Print help message and exit.
+.El
+.\" ==================================================================
+.Sh EXAMPLES
+See
+.Lk https://github.com/emanuele-f/dhcp-spoof/blob/master/README.md
+for usage examples and attack scenarios.
+.\" ==================================================================
+.Sh AUTHORS
+.Nm
+was written by
+.An Emanuele Faranda Aq Mt black.silver@hotmail.it .
+.Pp
+This manual page was written by
+.An Alexandr Savca Aq Mt alexandr.savca89@gmail.com .
+.\" vim: cc=72 tw=70
+.\" End of file.
