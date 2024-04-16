@@ -3,18 +3,18 @@
 # Depends on:  alsa-lib xorg-libxrender xorg-libxtst jdk11-bin
 
 name=jdk17-bin
-version=17.0.10.8.1
+version=17.0.11.9.1
 release=1
 source=https://corretto.aws/downloads/resources/$version/amazon-corretto-$version-linux-x64.tar.gz
 
-build(){
+build() {
 	cd amazon-corretto-$version-linux-x64
 
 	# fix perms
 	chmod -R o-w,g-w .
 
 	# install
-	install -d $PKG/usr/bin $PKG/usr/lib/jdk $PKG/usr/share
+	mkdir -p $PKG/usr/bin $PKG/usr/lib/jdk $PKG/usr/share
 	mv man $PKG/usr/share/
 	mv *   $PKG/usr/lib/jdk/
 
@@ -29,7 +29,7 @@ build(){
 	ln -s ../lib/jdk/bin/jarsigner  $PKG/usr/bin/jarsigner
 
 	# revdep
-	install -d $PKG/etc/revdep.d
+	mkdir -p $PKG/etc/revdep.d
 	cat > $PKG/etc/revdep.d/jdk17-bin <<EOF
 /usr/lib/jdk/lib
 /usr/lib/jdk/lib/server
