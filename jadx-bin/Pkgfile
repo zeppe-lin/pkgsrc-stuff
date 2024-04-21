@@ -3,7 +3,7 @@
 # Depends on:  jdk17-bin
 
 name=jadx-bin
-version=1.4.7
+version=1.5.0
 release=1
 source="https://github.com/skylot/jadx/releases/download/v${version}/jadx-${version}.zip
 	jadx.sh jadx-gui.sh"
