@@ -5,15 +5,14 @@
 name=exif
 version=0.6.22
 release=1
-_version=$(echo $version | sed 's/\./_/g')
-source=https://github.com/libexif/$name/releases/download/$name-$_version-release/$name-$version.tar.xz
+source=https://github.com/libexif/exif/releases/download/exif-$(echo $version | tr . _)-release/exif-$version.tar.xz
 
 build() {
 	mkdir build; cd build
 
-	../$name-$version/configure  \
-		--prefix=/usr        \
-		--disable-nls        \
+	../exif-$version/configure  \
+		--prefix=/usr       \
+		--disable-nls       \
 
 	make V=1
 	make DESTDIR=$PKG install
