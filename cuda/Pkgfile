@@ -1,0 +1,109 @@
+# Description: NVIDIA's GPU programming toolkit
+# URL:         https://developer.nvidia.com/cuda-zone
+# Depends on:  nvidia
+
+name=cuda
+version=12.4.1
+_driverver=550.54.15
+release=1
+source="https://developer.download.nvidia.com/compute/cuda/$version/local_installers/cuda_${version}_${_driverver}_linux.run
+	cuda.sh
+	cuda.conf
+	accinj64.pc
+	cublas.pc
+	cuda.pc
+	cudart.pc
+	cufft.pc
+	cufftw.pc
+	cuinj64.pc
+	curand.pc
+	cusolver.pc
+	cusparse.pc
+	nppc.pc
+	nppial.pc
+	nppicc.pc
+	nppicom.pc
+	nppidei.pc
+	nppif.pc
+	nppig.pc
+	nppim.pc
+	nppi.pc
+	nppist.pc
+	nppisu.pc
+	nppitc.pc
+	npps.pc
+	nvgraph.pc
+	nvidia-ml.pc
+	nvjpeg.pc
+	nvrtc.pc
+	nvToolsExt.pc"
+
+build() {
+	sh cuda_${version}_${_driverver}_linux.run --target $SRC --noexec
+
+	cd $SRC/builds
+
+	rm -r NVIDIA*.run bin
+	mkdir -p $SRC/prep/opt/cuda/extras
+	mv integration nsight_compute nsight_systems EULA.txt \
+		$SRC/prep/opt/cuda
+	mv cuda_demo_suite/extras/demo_suite \
+		$SRC/prep/opt/cuda/extras/demo_suite
+	mv cuda_sanitizer_api/compute-sanitizer \
+		$SRC/prep/opt/cuda/extras/compute-sanitizer
+	rmdir cuda_sanitizer_api
+	for lib in *; do
+		case "$lib" in  *"version.json"*) continue ;;  esac
+		cp -r $lib/* $SRC/prep/opt/cuda/
+	done
+
+	# Delete some unnecessary files.
+	rm -r $SRC/prep/opt/cuda/bin/cuda-uninstaller
+
+	# Define compilers for CUDA to use.
+	# This allows us to use older versions of GCC if we have to.
+	# NOTE: As of cuda 12.3, this appears to be broken on its own.
+	# It worked with cuda 12.2. Due to this bug. we now additionally need an
+	# entry in cuda.sh for this to be recognized.
+	ln -s /usr/bin/gcc $SRC/prep/opt/cuda/bin/gcc
+	ln -s /usr/bin/g++ $SRC/prep/opt/cuda/bin/g++
+
+	# Install profile and ld.so.config files
+	install -Dm644 $SRC/cuda.sh   $SRC/prep/etc/profile.d/cuda.sh
+	install -Dm644 $SRC/cuda.conf $SRC/prep/etc/ld.so.conf.d/cuda.conf
+
+	# Install pkgconfig files
+	mkdir -p $SRC/prep/usr/lib/pkgconfig
+	cp $SRC/*.pc $SRC/prep/usr/lib/pkgconfig
+
+	# Add a symlink lib->lib64 as some libraries might expect that (FS#76951)
+	ln -s lib64 $SRC/prep/opt/cuda/lib
+
+	# Allow newer compilers to work.
+	# See the following link for official requirements:
+	# https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#system-requirements
+	sed -i "/.*unsupported GNU version.*/d"   $SRC/prep/opt/cuda/targets/x86_64-linux/include/crt/host_config.h
+	sed -i "/.*unsupported clang version.*/d" $SRC/prep/opt/cuda/targets/x86_64-linux/include/crt/host_config.h
+
+	# Fix Makefile paths to CUDA
+	for f in $(find $SRC/prep/opt/cuda -name Makefile); do
+		sed -i "s|/usr/local/cuda|/opt/cuda|g" "$f"
+	done
+
+	cd $SRC/prep
+	cp -al * $PKG/
+
+	# remove broken links
+	rm $PKG/opt/cuda/include/include
+	rm $PKG/opt/cuda/lib64/lib64
+
+	for f in bin/nvvp bin/computeprof libnvvp nsight*; do
+		rm -r $PKG/opt/cuda/$f
+	done
+
+	mkdir -p $PKG/opt/cuda/bin
+	mv $SRC/prep/opt/cuda/nsight*         $PKG/opt/cuda
+	mv $SRC/prep/opt/cuda/bin/nvvp        $PKG/opt/cuda/bin/nvvp
+	mv $SRC/prep/opt/cuda/bin/computeprof $PKG/opt/cuda/bin/computeprof
+	mv $SRC/prep/opt/cuda/libnvvp         $PKG/opt/cuda
+}

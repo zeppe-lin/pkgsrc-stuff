@@ -1,0 +1,12 @@
+README cuda
+
+POST-INSTALL
+
+	The cuda binaries are in /opt/cuda/bin, samples are in
+	/opt/cuda/samples, and docs are in /opt/cuda/doc.
+
+	Add ". /etc/profile.d/cuda.sh" to /etc/profile (system-wide) or
+	~/.profile (local) to import cuda-related paths and environment
+	variables into your current shell.
+
+End of file.
