@@ -10,9 +10,6 @@ source=http://search.cpan.org/CPAN/authors/id/R/RU/RURBAN/GD-$version.tar.gz
 build() {
 	cd GD-$version
 	
-	install -d $PKG/usr/bin
-
-	#finddeps-distmeta
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
 	make OPTIMIZE="$CFLAGS"
