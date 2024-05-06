@@ -117,6 +117,7 @@ drwxr-xr-x	root/root	usr/share/nmap/nselib/data/psexec/
 -rw-r--r--	root/root	usr/share/nmap/nselib/httpspider.lua
 -rw-r--r--	root/root	usr/share/nmap/nselib/iax2.lua
 -rw-r--r--	root/root	usr/share/nmap/nselib/idna.lua
+-rw-r--r--	root/root	usr/share/nmap/nselib/iec61850mms.lua
 -rw-r--r--	root/root	usr/share/nmap/nselib/ike.lua
 -rw-r--r--	root/root	usr/share/nmap/nselib/imap.lua
 -rw-r--r--	root/root	usr/share/nmap/nselib/informix.lua
@@ -162,7 +163,6 @@ drwxr-xr-x	root/root	usr/share/nmap/nselib/data/psexec/
 -rw-r--r--	root/root	usr/share/nmap/nselib/ospf.lua
 -rw-r--r--	root/root	usr/share/nmap/nselib/outlib.lua
 -rw-r--r--	root/root	usr/share/nmap/nselib/packet.lua
--rw-r--r--	root/root	usr/share/nmap/nselib/pcre.luadoc
 -rw-r--r--	root/root	usr/share/nmap/nselib/pgsql.lua
 -rw-r--r--	root/root	usr/share/nmap/nselib/pop3.lua
 -rw-r--r--	root/root	usr/share/nmap/nselib/pppoe.lua
@@ -375,6 +375,7 @@ drwxr-xr-x	root/root	usr/share/nmap/scripts/
 -rw-r--r--	root/root	usr/share/nmap/scripts/hadoop-namenode-info.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/hadoop-secondary-namenode-info.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/hadoop-tasktracker-info.nse
+-rw-r--r--	root/root	usr/share/nmap/scripts/hartip-info.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/hbase-master-info.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/hbase-region-info.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/hddtemp-info.nse
@@ -544,6 +545,7 @@ drwxr-xr-x	root/root	usr/share/nmap/scripts/
 -rw-r--r--	root/root	usr/share/nmap/scripts/iax2-version.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/icap-info.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/iec-identify.nse
+-rw-r--r--	root/root	usr/share/nmap/scripts/iec61850-mms.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/iis-buffer-overflow.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/ike-version.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/imap-brute.nse
@@ -623,6 +625,7 @@ drwxr-xr-x	root/root	usr/share/nmap/scripts/
 -rw-r--r--	root/root	usr/share/nmap/scripts/ms-sql-xp-cmdshell.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/msrpc-enum.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/mtrace.nse
+-rw-r--r--	root/root	usr/share/nmap/scripts/multicast-profinet-discovery.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/murmur-version.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/mysql-audit.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/mysql-brute.nse
@@ -688,6 +691,7 @@ drwxr-xr-x	root/root	usr/share/nmap/scripts/
 -rw-r--r--	root/root	usr/share/nmap/scripts/pop3-ntlm-info.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/port-states.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/pptp-version.nse
+-rw-r--r--	root/root	usr/share/nmap/scripts/profinet-cm-lookup.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/puppet-naivesigning.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/qconn-exec.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/qscan.nse
