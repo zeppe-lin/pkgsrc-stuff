@@ -1,9 +1,12 @@
 README android-sdk-platform-tools-bin
 
+
 POST-INSTALL
+============
 
-	Add the android-sdk-platform-tools-bin to your path:
+Add the android-sdk-platform-tools-bin to your path:
 
-		export PATH="$PATH:/opt/android-sdk/platform-tools"
+	export PATH="$PATH:/opt/android-sdk/platform-tools"
+
 
 End of file.

@@ -1,43 +1,48 @@
 README jdk17-bin
 
-BUGS
 
-	Java applications which use the XToolkit/XAWT backend may draw grey
-	windows only.  The XToolkit/XAWT backend breaks ICCCM-compliance in
-	recent JDK 1.5 and early JDK 1.6 versions, because it assumes a
-	reparenting window manager.  Possible workarounds are using JDK 1.4
-	(which doesn't contain the XToolkit/XAWT backend) or setting the
-	environment variable AWT_TOOLKIT=MToolkit (to use the older Motif
-	backend instead) or running ``xprop -root -f _NET_WM_NAME 32a -set
-	_NET_WM_NAME LG3D'' or ``wmname LG3D'' (to pretend that a
-	non-reparenting window manager is running that the XToolkit/XAWT
-	backend can recognize) or when using OpenJDK setting the environment
-	variable _JAVA_AWT_WM_NONREPARENTING=1.
+BUGS
+====
+
+Java applications which use the XToolkit/XAWT backend may draw grey windows
+only.  The XToolkit/XAWT backend breaks ICCCM-compliance in recent JDK 1.5 and
+early JDK 1.6 versions, because it assumes a reparenting window manager.
+Possible workarounds are using JDK 1.4 (which doesn't contain the
+XToolkit/XAWT backend) or setting the environment variable
+AWT_TOOLKIT=MToolkit (to use the older Motif backend instead) or running
+``xprop -root -f _NET_WM_NAME 32a -set _NET_WM_NAME LG3D'' or ``wmname LG3D''
+(to pretend that a non-reparenting window manager is running that the
+XToolkit/XAWT backend can recognize) or when using OpenJDK setting the
+environment variable _JAVA_AWT_WM_NONREPARENTING=1.
+
 
 FONT SETTINGS
+=============
 
-	There is a system property to set anti-aliasing.  To do this
-	system-wide, add the following line to /etc/profile:
+There is a system property to set anti-aliasing.  To do this system-wide, add
+the following line to /etc/profile:
 
-		export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on \
-		-Dswing.aatext=true"
+	export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on \
+	-Dswing.aatext=true"
 
-	And set "off/false" if you're using anti-aliased font, like Terminus.
+And set "off/false" if you're using anti-aliased font, like Terminus.
 
-	Some Java applications may specify use of a particular TrueType font;
-	these applications must be made aware of the directory path to the
-	desired font.  TrueType fonts are installed in the directory
-	/usr/share/fonts/X11/TTF.  Add the following line to /etc/profile to
-	enable these fonts.
+Some Java applications may specify use of a particular TrueType font; these
+applications must be made aware of the directory path to the desired font.
+TrueType fonts are installed in the directory /usr/share/fonts/X11/TTF.  Add
+the following line to /etc/profile to enable these fonts.
 
-		export JAVA_FONTS=/usr/share/fonts/X11/TTF
+	export JAVA_FONTS=/usr/share/fonts/X11/TTF
+
 
 GTK THEME
+=========
 
-	To use GTK look and feel, add the following line to /etc/profile:
+To use GTK look and feel, add the following line to /etc/profile:
 
-		export _JAVA_OPTIONS="$_JAVA_OPTIONS \
-		-Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel \
-		-Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel"
+	export _JAVA_OPTIONS="$_JAVA_OPTIONS \
+	-Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel \
+	-Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel"
+
 
 End of file.

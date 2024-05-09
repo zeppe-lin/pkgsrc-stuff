@@ -1,7 +1,10 @@
 README wine-4.0.x-i386-appimage
 
-POST-INSTALL
 
-	AppImage needs FUSE to run, so add 'modprobe fuse' to /etc/rc.modules.
+POST-INSTALL
+============
+
+AppImage needs FUSE to run, so add 'modprobe fuse' to /etc/rc.modules.
+
 
 End of file.

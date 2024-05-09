@@ -1,10 +1,13 @@
 README reaver-wps-t6x
 
+
 REQUIREMENTS
+============
 
-	Runtime:
+Runtime:
 
-		* pixiewps     (optional)  required for pixiedust attack
-		* aircrack-ng  (optional)  though recommended
+	* pixiewps     (optional)  required for pixiedust attack
+	* aircrack-ng  (optional)  though recommended
+
 
 End of file.

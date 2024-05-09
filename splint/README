@@ -1,10 +1,13 @@
 README splint
 
+
 POST-INSTALL
+============
 
-	Add the following exports to your interactive shell:
+Add the following exports to your interactive shell:
 
-		export LCLIMPORTDIR=/usr/share/splint/imports
-		export LARCH_PATH=/usr/share/splint/lib
+	export LCLIMPORTDIR=/usr/share/splint/imports
+	export LARCH_PATH=/usr/share/splint/lib
+
 
 End of file.

@@ -1,37 +1,42 @@
 README nvidia
 
+
 POST-INSTALL
+============
 
-	Add your user to the "video" group to be able to use the nvidia
-	devices required for 3D to function properly:
+Add your user to the "video" group to be able to use the nvidia devices
+required for 3D to function properly:
 
-		usermod -aG video <USER>
+	usermod -aG video <USER>
+
 
 INITRAMFS
+=========
 
-	If you want to ensure nvidia drivers are loaded at the earliest
-	possible occasion, or are noticing startup issues (such as the nvidia
-	kernel module being loaded after the display manager) you can add
-	nvidia, nvidia_modeset, nvidia_uvm and nvidia_drm to the initramfs.
+If you want to ensure nvidia drivers are loaded at the earliest possible
+occasion, or are noticing startup issues (such as the nvidia kernel module
+being loaded after the display manager) you can add nvidia, nvidia_modeset,
+nvidia_uvm and nvidia_drm to the initramfs.
 
-	In case of mkinitramfs, create the hook
-	/etc/mkinitramfs/hooks/nvidia/nvidia with the following content:
+In case of mkinitramfs, create the hook /etc/mkinitramfs/hooks/nvidia/nvidia
+with the following content:
 
-		#!/bin/sh
-		# /etc/mkinitramfs/hooks/nvidia/nvidia:
-		#     copy nvidia modules to initramfs image
-		copy_kmod nvidia
-		copy_kmod nvidia_uvm
-		copy_kmod nvidia_drm
-		copy_kmod nvidia_modeset
+	#!/bin/sh
+	# /etc/mkinitramfs/hooks/nvidia/nvidia:
+	#     copy nvidia modules to initramfs image
+	copy_kmod nvidia
+	copy_kmod nvidia_uvm
+	copy_kmod nvidia_drm
+	copy_kmod nvidia_modeset
 
-	Next, add "nvidia" to your hooks variable in /etc/mkinitramfs/config:
+Next, add "nvidia" to your hooks variable in /etc/mkinitramfs/config:
 
-		hooks="... nvidia"
+	hooks="... nvidia"
 
-	And update initramfs image:
+And update initramfs image:
 
-		kernver=$(uname -r)
-		mkinitramfs -o /boot/initramfs-$kernver.img -k $kernver -f
+	kernver=$(uname -r)
+	mkinitramfs -o /boot/initramfs-$kernver.img -k $kernver -f
+
 
 End of file.

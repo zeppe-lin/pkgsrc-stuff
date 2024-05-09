@@ -1,11 +1,13 @@
 README mdk3
 
+
 NOTES
+=====
 
-	This version of MDK3 has a new feature that sends directed probe
-	requests with invalid SSID characters to an AP.
+This version of MDK3 has a new feature that sends directed probe requests with
+invalid SSID characters to an AP.
 
-	The hope is that if enough probes are sent, the AP will lock up and
-	reboot.
+The hope is that if enough probes are sent, the AP will lock up and reboot.
+
 
 End of file.

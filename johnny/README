@@ -1,8 +1,11 @@
 README johnny
 
-TRINITY ICONS
 
-	To enable Trinity-like icons, add PKGMK_JOHNNY="+TRINITY+" to
-	your /etc/pkgmk.conf.
+TRINITY ICONS
+=============
+
+To enable Trinity-like icons, add PKGMK_JOHNNY="+TRINITY+" to your
+/etc/pkgmk.conf.
+
 
 End of file.

@@ -1,13 +1,20 @@
 README thc-ipv6
 
-	According to this thread
-	https://github.com/vanhauser-thc/thc-ipv6/pull/18 van Hauser has a
-	sane reasons to decline this PR.  And at the same time, since this
-	patch is very handyful, we may include it as a separate tool to not
-	break backward compatibility.
+
+ABOUT
+=====
+
+According to this thread
+https://github.com/vanhauser-thc/thc-ipv6/pull/18 van Hauser has a sane
+reasons to decline this PR.  And at the same time, since this patch is very
+handyful, we may include it as a separate tool to not break backward
+compatibility.
+
 
 LICENSE
+=======
 
-	AGPL3.  See thc-ipv6 sources for complete license.
+AGPL3.  See thc-ipv6 sources for complete license.
+
 
 End of file.

@@ -1,20 +1,23 @@
 README 7z2hashcat
 
+
 USAGE
+=====
 
-	1. View supported modes.
+1. View supported modes.
 
-	   Run the following command to grep hashcat's supported modes:
+   Run the following command to grep hashcat's supported modes:
 
-		hashcat --help | grep -i '7-z\|7z'
+	hashcat --help | grep -i '7-z\|7z'
 
-	   You would see something like this:
+   You would see something like this:
 
-		11600 | 7-Zip
+	11600 | 7-Zip
 
-	2. Crack password protected 7z/sfx file:
+2. Crack password protected 7z/sfx file:
 
-		7z2hashcat example.7z | tee example.7z.hash
-		hashcat -m $MODE -a 0 example.7z.hash wordlist.txt
+	7z2hashcat example.7z | tee example.7z.hash
+	hashcat -m $MODE -a 0 example.7z.hash wordlist.txt
+
 
 End of file.
