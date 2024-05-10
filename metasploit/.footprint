@@ -4802,6 +4802,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/auxiliary/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/auxiliary/kademlia.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/auxiliary/llmnr.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/auxiliary/login.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/auxiliary/login_scanner.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/auxiliary/manage_engine_xnode.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/auxiliary/manage_engine_xnode/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/auxiliary/manage_engine_xnode/action.rb
@@ -6535,6 +6536,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/gss/
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/gss/asn1.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/gss/kerberos/
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/gss/kerberos/message_encryptor.rb
+-rwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/gss/spnego_neg_token_targ.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/http/
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/http/client.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/http/client_request.rb
@@ -6660,6 +6662,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/kerberos/pac/
 drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/ldap/
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/ldap/auth.rb
 -rwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/ldap/dn_binary.rb
+-rwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/ldap/ldap_exception.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/ldap/server.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/mms/
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/mms/client.rb
@@ -6736,6 +6739,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/rmi/model/
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/rmi/model/return_data.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/rmi/model/return_value.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/rmi/model/unique_identifier.rb
+-rwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/sasl.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/secauthz/
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/secauthz/well_known_sids.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/sip/
@@ -7381,9 +7385,11 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/gather/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/citrix_published_applications.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/citrix_published_bruteforce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/cloud_lookup.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/coldfusion_pms_servlet_file_read.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/coldfusion_pwd_props.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/corpwatch_lookup_id.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/corpwatch_lookup_name.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/crushftp_fileread_cve_2024_4040.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/cve_2021_27850_apache_tapestry_hmac_key.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/d20pass.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/darkcomet_filedownloader.rb
@@ -7941,6 +7947,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/mssql/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/mssql/mssql_login.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/mssql/mssql_ping.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/mssql/mssql_schemadump.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/mssql/mssql_version.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/mysql/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/mysql/mysql_authbypass_hashdump.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/mysql/mysql_file_enum.rb
@@ -8825,6 +8832,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/local/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/docker_cgroup_escape.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/docker_daemon_privilege_escalation.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/docker_privileged_container_escape.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/docker_privileged_container_kernel_escape.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/docker_runc_escape.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/exim4_deliver_message_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/f5_create_user.rb
@@ -12728,6 +12736,7 @@ drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/dns/
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/gss/
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/gss/kerberos/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/gss/kerberos/message_encryptor_spec.rb
+-rwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/gss/spnego_neg_token_targ_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/http/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/http/client_request_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/http/client_spec.rb
