@@ -3,7 +3,7 @@
 # Depends on:  py3-pip
 
 name=sherlock
-version=0.1-2813b91
+version=0.14.4-f794e23
 release=1
 source="https://github.com/sherlock-project/$name/archive/${version#*-}/$name-$version.tar.gz
 	$name.sh
@@ -12,7 +12,7 @@ source="https://github.com/sherlock-project/$name/archive/${version#*-}/$name-$v
 build() {
 	export TMPDIR="$PKGMK_WORK_DIR"
 
-	install -d $PKG/usr/bin $PKG/opt/$name
+	mkdir -p $PKG/usr/bin $PKG/opt/$name
 
 	cd $name-${version#*-}*
 
@@ -25,8 +25,8 @@ build() {
 	# install
 	cp -a sherlock $PKG/opt/$name
 
-	install -m 0755 -D $SRC/sherlock.sh $PKG/usr/bin/sherlock
-	install -m 0644 -D $SRC/revdep.$name $PKG/etc/revdep.d/$name
+	install -m 0755 -D $SRC/sherlock.sh  $PKG/usr/bin/sherlock
+	install -m 0644 -D $SRC/revdep.$name $PKG/etc/revdep.d/sherlock
 	
 	# remove junk
 	#rm -r $PKG/opt/$name/*.dist-info (required)
