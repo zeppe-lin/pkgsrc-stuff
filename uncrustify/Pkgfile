@@ -2,7 +2,7 @@
 # URL:         https://uncrustify.sourceforge.net/
 
 name=uncrustify
-version=0.78.1
+version=0.79.0
 release=1
 source=https://github.com/$name/$name/archive/$name-$version.tar.gz
 
