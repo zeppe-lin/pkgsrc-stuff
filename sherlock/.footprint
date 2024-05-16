@@ -1715,14 +1715,14 @@ drwxr-xr-x	root/root	opt/sherlock/numpy/typing/tests/data/reveal/
 -rw-r--r--	root/root	opt/sherlock/numpy/typing/tests/test_runtime.py
 -rw-r--r--	root/root	opt/sherlock/numpy/typing/tests/test_typing.py
 -rw-r--r--	root/root	opt/sherlock/numpy/version.py
-drwxr-xr-x	root/root	opt/sherlock/openpyxl-3.0.10.dist-info/
--rw-r--r--	root/root	opt/sherlock/openpyxl-3.0.10.dist-info/INSTALLER
--rw-r--r--	root/root	opt/sherlock/openpyxl-3.0.10.dist-info/LICENCE.rst
--rw-r--r--	root/root	opt/sherlock/openpyxl-3.0.10.dist-info/METADATA
--rw-r--r--	root/root	opt/sherlock/openpyxl-3.0.10.dist-info/RECORD
--rw-r--r--	root/root	opt/sherlock/openpyxl-3.0.10.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	opt/sherlock/openpyxl-3.0.10.dist-info/WHEEL
--rw-r--r--	root/root	opt/sherlock/openpyxl-3.0.10.dist-info/top_level.txt
+drwxr-xr-x	root/root	opt/sherlock/openpyxl-3.1.2.dist-info/
+-rw-r--r--	root/root	opt/sherlock/openpyxl-3.1.2.dist-info/INSTALLER
+-rw-r--r--	root/root	opt/sherlock/openpyxl-3.1.2.dist-info/LICENCE.rst
+-rw-r--r--	root/root	opt/sherlock/openpyxl-3.1.2.dist-info/METADATA
+-rw-r--r--	root/root	opt/sherlock/openpyxl-3.1.2.dist-info/RECORD
+-rw-r--r--	root/root	opt/sherlock/openpyxl-3.1.2.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	opt/sherlock/openpyxl-3.1.2.dist-info/WHEEL
+-rw-r--r--	root/root	opt/sherlock/openpyxl-3.1.2.dist-info/top_level.txt
 drwxr-xr-x	root/root	opt/sherlock/openpyxl/
 -rw-r--r--	root/root	opt/sherlock/openpyxl/__init__.py
 drwxr-xr-x	root/root	opt/sherlock/openpyxl/__pycache__/
@@ -1736,10 +1736,12 @@ drwxr-xr-x	root/root	opt/sherlock/openpyxl/cell/__pycache__/
 -rw-r--r--	root/root	opt/sherlock/openpyxl/cell/__pycache__/_writer.cpython-39.pyc
 -rw-r--r--	root/root	opt/sherlock/openpyxl/cell/__pycache__/cell.cpython-39.pyc
 -rw-r--r--	root/root	opt/sherlock/openpyxl/cell/__pycache__/read_only.cpython-39.pyc
+-rw-r--r--	root/root	opt/sherlock/openpyxl/cell/__pycache__/rich_text.cpython-39.pyc
 -rw-r--r--	root/root	opt/sherlock/openpyxl/cell/__pycache__/text.cpython-39.pyc
 -rw-r--r--	root/root	opt/sherlock/openpyxl/cell/_writer.py
 -rw-r--r--	root/root	opt/sherlock/openpyxl/cell/cell.py
 -rw-r--r--	root/root	opt/sherlock/openpyxl/cell/read_only.py
+-rw-r--r--	root/root	opt/sherlock/openpyxl/cell/rich_text.py
 -rw-r--r--	root/root	opt/sherlock/openpyxl/cell/text.py
 drwxr-xr-x	root/root	opt/sherlock/openpyxl/chart/
 -rw-r--r--	root/root	opt/sherlock/openpyxl/chart/_3d.py
@@ -1928,12 +1930,14 @@ drwxr-xr-x	root/root	opt/sherlock/openpyxl/packaging/
 drwxr-xr-x	root/root	opt/sherlock/openpyxl/packaging/__pycache__/
 -rw-r--r--	root/root	opt/sherlock/openpyxl/packaging/__pycache__/__init__.cpython-39.pyc
 -rw-r--r--	root/root	opt/sherlock/openpyxl/packaging/__pycache__/core.cpython-39.pyc
+-rw-r--r--	root/root	opt/sherlock/openpyxl/packaging/__pycache__/custom.cpython-39.pyc
 -rw-r--r--	root/root	opt/sherlock/openpyxl/packaging/__pycache__/extended.cpython-39.pyc
 -rw-r--r--	root/root	opt/sherlock/openpyxl/packaging/__pycache__/interface.cpython-39.pyc
 -rw-r--r--	root/root	opt/sherlock/openpyxl/packaging/__pycache__/manifest.cpython-39.pyc
 -rw-r--r--	root/root	opt/sherlock/openpyxl/packaging/__pycache__/relationship.cpython-39.pyc
 -rw-r--r--	root/root	opt/sherlock/openpyxl/packaging/__pycache__/workbook.cpython-39.pyc
 -rw-r--r--	root/root	opt/sherlock/openpyxl/packaging/core.py
+-rw-r--r--	root/root	opt/sherlock/openpyxl/packaging/custom.py
 -rw-r--r--	root/root	opt/sherlock/openpyxl/packaging/extended.py
 -rw-r--r--	root/root	opt/sherlock/openpyxl/packaging/interface.py
 -rw-r--r--	root/root	opt/sherlock/openpyxl/packaging/manifest.py
@@ -2073,6 +2077,7 @@ drwxr-xr-x	root/root	opt/sherlock/openpyxl/worksheet/__pycache__/
 -rw-r--r--	root/root	opt/sherlock/openpyxl/worksheet/__pycache__/drawing.cpython-39.pyc
 -rw-r--r--	root/root	opt/sherlock/openpyxl/worksheet/__pycache__/errors.cpython-39.pyc
 -rw-r--r--	root/root	opt/sherlock/openpyxl/worksheet/__pycache__/filters.cpython-39.pyc
+-rw-r--r--	root/root	opt/sherlock/openpyxl/worksheet/__pycache__/formula.cpython-39.pyc
 -rw-r--r--	root/root	opt/sherlock/openpyxl/worksheet/__pycache__/header_footer.cpython-39.pyc
 -rw-r--r--	root/root	opt/sherlock/openpyxl/worksheet/__pycache__/hyperlink.cpython-39.pyc
 -rw-r--r--	root/root	opt/sherlock/openpyxl/worksheet/__pycache__/merge.cpython-39.pyc
@@ -2080,6 +2085,7 @@ drwxr-xr-x	root/root	opt/sherlock/openpyxl/worksheet/__pycache__/
 -rw-r--r--	root/root	opt/sherlock/openpyxl/worksheet/__pycache__/page.cpython-39.pyc
 -rw-r--r--	root/root	opt/sherlock/openpyxl/worksheet/__pycache__/pagebreak.cpython-39.pyc
 -rw-r--r--	root/root	opt/sherlock/openpyxl/worksheet/__pycache__/picture.cpython-39.pyc
+-rw-r--r--	root/root	opt/sherlock/openpyxl/worksheet/__pycache__/print_settings.cpython-39.pyc
 -rw-r--r--	root/root	opt/sherlock/openpyxl/worksheet/__pycache__/properties.cpython-39.pyc
 -rw-r--r--	root/root	opt/sherlock/openpyxl/worksheet/__pycache__/protection.cpython-39.pyc
 -rw-r--r--	root/root	opt/sherlock/openpyxl/worksheet/__pycache__/related.cpython-39.pyc
@@ -2102,6 +2108,7 @@ drwxr-xr-x	root/root	opt/sherlock/openpyxl/worksheet/__pycache__/
 -rw-r--r--	root/root	opt/sherlock/openpyxl/worksheet/drawing.py
 -rw-r--r--	root/root	opt/sherlock/openpyxl/worksheet/errors.py
 -rw-r--r--	root/root	opt/sherlock/openpyxl/worksheet/filters.py
+-rw-r--r--	root/root	opt/sherlock/openpyxl/worksheet/formula.py
 -rw-r--r--	root/root	opt/sherlock/openpyxl/worksheet/header_footer.py
 -rw-r--r--	root/root	opt/sherlock/openpyxl/worksheet/hyperlink.py
 -rw-r--r--	root/root	opt/sherlock/openpyxl/worksheet/merge.py
@@ -2109,6 +2116,7 @@ drwxr-xr-x	root/root	opt/sherlock/openpyxl/worksheet/__pycache__/
 -rw-r--r--	root/root	opt/sherlock/openpyxl/worksheet/page.py
 -rw-r--r--	root/root	opt/sherlock/openpyxl/worksheet/pagebreak.py
 -rw-r--r--	root/root	opt/sherlock/openpyxl/worksheet/picture.py
+-rw-r--r--	root/root	opt/sherlock/openpyxl/worksheet/print_settings.py
 -rw-r--r--	root/root	opt/sherlock/openpyxl/worksheet/properties.py
 -rw-r--r--	root/root	opt/sherlock/openpyxl/worksheet/protection.py
 -rw-r--r--	root/root	opt/sherlock/openpyxl/worksheet/related.py

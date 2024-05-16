@@ -3,7 +3,7 @@
 # Depends on:  py3-pip
 
 name=sherlock
-version=0.14.4-f794e23
+version=0.14.4-0ecb496
 release=1
 source="https://github.com/sherlock-project/$name/archive/${version#*-}/$name-$version.tar.gz
 	$name.sh
