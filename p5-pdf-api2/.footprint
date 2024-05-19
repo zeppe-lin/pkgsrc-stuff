@@ -73,6 +73,7 @@ drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.34/PDF/API2/Resource/ColorSpace/I
 drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.34/PDF/API2/Resource/Font/
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/PDF/API2/Resource/Font/BdFont.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/PDF/API2/Resource/Font/CoreFont.pm
+-r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/PDF/API2/Resource/Font/CoreFont.pm.orig
 drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.34/PDF/API2/Resource/Font/CoreFont/
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/PDF/API2/Resource/Font/CoreFont/bankgothic.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/PDF/API2/Resource/Font/CoreFont/courier.pm

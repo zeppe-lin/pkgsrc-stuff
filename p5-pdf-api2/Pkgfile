@@ -3,7 +3,7 @@
 # Depends on:  p5-font-ttf
 
 name=p5-pdf-api2
-version=2.046
+version=2.047
 release=1
 source="https://cpan.metacpan.org/authors/id/S/SS/SSIMMS/PDF-API2-$version.tar.gz
 	font-location.patch
