@@ -1683,6 +1683,7 @@ drwxr-xr-x	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/ro
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/netgear/n300_auth_bypass.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/netgear/prosafe_rce.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/netgear/r7000_r6400_rce.py
+-rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/netgear/rax30_rce.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/netgear/wnr500_612v3_jnr1010_2010_path_traversal.py
 drwxr-xr-x	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/netsys/
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/netsys/__init__.py (EMPTY)
@@ -4814,6 +4815,7 @@ drwxr-xr-x	root/root	opt/routersploit/routersploit/modules/exploits/routers/netg
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/netgear/n300_auth_bypass.py
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/netgear/prosafe_rce.py
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/netgear/r7000_r6400_rce.py
+-rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/netgear/rax30_rce.py
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/netgear/wnr500_612v3_jnr1010_2010_path_traversal.py
 drwxr-xr-x	root/root	opt/routersploit/routersploit/modules/exploits/routers/netsys/
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/netsys/__init__.py (EMPTY)
