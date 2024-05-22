@@ -3,7 +3,7 @@
 # Depends on:  massdns
 
 name=shuffledns-bin
-version=1.0.9
+version=1.1.0
 release=1
 source=https://github.com/projectdiscovery/shuffledns/releases/download/v$version/shuffledns_${version}_linux_amd64.zip
 
