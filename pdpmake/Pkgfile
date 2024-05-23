@@ -1,9 +1,8 @@
 # Description: POSIX make(1p) implementation
 # URL:         https://frippery.org/make/
 
-# https://github.com/rmyorston/pdpmake/tags.atom
 name=pdpmake
-version=1.4.1
+version=1.4.2
 release=1
 source=https://frippery.org/make/$name-$version.tgz
 
