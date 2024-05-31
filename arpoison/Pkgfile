@@ -4,7 +4,7 @@
 
 name=arpoison
 version=0.7
-release=1
+release=2
 source="http://www.arpoison.net/$name-$version.tar.gz
 	0001-arpoison.8-improve-and-adjust-to-the-man-conventions.patch
 	0002-arpoison.c-fix-usage-conform-latest-man-page-modific.patch
@@ -13,12 +13,12 @@ source="http://www.arpoison.net/$name-$version.tar.gz
 	0005-arpoison.c-clean-up-the-code-by-whitespace-and-misin.patch"
 
 build() {
-	cd $name-$version
-
-	local _PATCH
-	for _PATCH in $SRC/*.patch; do
-		patch -p1 -i $_PATCH
+	for p in $SRC/*.patch; do
+		patch -d $name-$version -p1 -i $p
 	done
 
-	make PREFIX=/usr DESTDIR=$PKG install
+	# pick up system flags
+	sed -ri '/^(C|LD)FLAGS/s/ = /+=/g' $name-$version/config.mk
+
+	make -C $name-$version PREFIX=/usr DESTDIR=$PKG install
 }
