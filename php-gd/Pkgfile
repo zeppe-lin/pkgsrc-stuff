@@ -3,7 +3,7 @@
 # Depends on:  harfbuzz libgd
 
 name=php-gd
-version=8.3.7
+version=8.3.8
 release=1
 source=https://www.php.net/distributions/php-$version.tar.xz
 
