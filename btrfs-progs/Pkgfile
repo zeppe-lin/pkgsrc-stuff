@@ -3,7 +3,7 @@
 # Depends on:  lzo util-linux
 
 name=btrfs-progs
-version=6.8.1
+version=6.9
 release=1
 source=https://www.kernel.org/pub/linux/kernel/people/kdave/$name/$name-v$version.tar.xz
 
