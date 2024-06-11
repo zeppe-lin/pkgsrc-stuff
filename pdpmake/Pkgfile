@@ -2,7 +2,7 @@
 # URL:         https://frippery.org/make/
 
 name=pdpmake
-version=1.4.2
+version=1.4.3
 release=1
 source=https://frippery.org/make/$name-$version.tgz
 
