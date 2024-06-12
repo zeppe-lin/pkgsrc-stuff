@@ -3,7 +3,7 @@
 # Depends on:  firefox-bin
 
 name=firefox-search-by-image-bin
-version=6.1.2
+version=7.0.0
 release=1
 source=$(lynx -dump https://addons.mozilla.org/en-US/firefox/addon/search_by_image/ |
 	awk "/search_by_image-$version\.xpi\$/{print \$2}")
