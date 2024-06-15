@@ -46,13 +46,13 @@ drwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/src/main/java/skeleto
 -rwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/src/main/java/skeleton/SkeletonPlugin.java
 drwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/src/main/resources/
 drwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/src/main/resources/images/
--rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.1_PUBLIC_20240607_BSimElasticPlugin.zip
--rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.1_PUBLIC_20240607_GnuDisassembler.zip
--rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.1_PUBLIC_20240607_MachineLearning.zip
--rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.1_PUBLIC_20240607_SampleTablePlugin.zip
--rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.1_PUBLIC_20240607_SleighDevTools.zip
--rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.1_PUBLIC_20240607_bundle_examples.zip
--rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.1_PUBLIC_20240607_sample.zip
+-rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.1.1_PUBLIC_20240614_BSimElasticPlugin.zip
+-rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.1.1_PUBLIC_20240614_GnuDisassembler.zip
+-rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.1.1_PUBLIC_20240614_MachineLearning.zip
+-rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.1.1_PUBLIC_20240614_SampleTablePlugin.zip
+-rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.1.1_PUBLIC_20240614_SleighDevTools.zip
+-rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.1.1_PUBLIC_20240614_bundle_examples.zip
+-rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.1.1_PUBLIC_20240614_sample.zip
 drwxr-xr-x	root/root	opt/ghidra/Extensions/IDAPro/
 drwxr-xr-x	root/root	opt/ghidra/Extensions/IDAPro/Python/
 drwxr-xr-x	root/root	opt/ghidra/Extensions/IDAPro/Python/6xx/
@@ -1531,6 +1531,7 @@ drwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/Decompiler/src/decompile/datates
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/Decompiler/src/decompile/datatests/convert.xml
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/Decompiler/src/decompile/datatests/deadvolatile.xml
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/Decompiler/src/decompile/datatests/deindirect.xml
+-rwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/Decompiler/src/decompile/datatests/deindirect2.xml
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/Decompiler/src/decompile/datatests/displayformat.xml
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/Decompiler/src/decompile/datatests/divopt.xml
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/Decompiler/src/decompile/datatests/dupptr.xml
@@ -4686,7 +4687,7 @@ drwxr-xr-x	root/root	opt/ghidra/Ghidra/Processors/Z80/data/languages/
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Processors/Z80/data/manuals/
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Processors/Z80/data/manuals/Z180.idx
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Processors/Z80/data/manuals/Z80.idx
--rw-r--r--	root/root	opt/ghidra/Ghidra/Processors/Z80/data/sleighArgs.txt (EMPTY)
+-rw-r--r--	root/root	opt/ghidra/Ghidra/Processors/Z80/data/sleighArgs.txt
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Processors/eBPF/
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Processors/eBPF/LICENSE.txt
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Processors/eBPF/Module.manifest (EMPTY)
