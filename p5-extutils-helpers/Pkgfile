@@ -3,7 +3,7 @@
 # Depends on:  perl
 
 name=p5-extutils-helpers
-version=0.026
+version=0.027
 release=1
 source=https://www.cpan.org/modules/by-module/ExtUtils/ExtUtils-Helpers-$version.tar.gz
 
