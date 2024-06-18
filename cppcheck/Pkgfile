@@ -3,7 +3,7 @@
 # Depends on:  libpcre
 
 name=cppcheck
-version=2.14.1
+version=2.14.2
 release=1
 source=https://github.com/danmar/$name/archive/$version/$name-$version.tar.gz
 
