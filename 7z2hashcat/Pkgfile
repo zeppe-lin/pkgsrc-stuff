@@ -3,7 +3,7 @@
 # Depends on:  p5-compress-raw-lzma
 
 name=7z2hashcat
-version=2.0-6c1795c
+version=2.0-d50eac8
 release=1
 source=https://github.com/philsmd/$name/archive/${version#*-}/$name-$version.tar.gz
 
