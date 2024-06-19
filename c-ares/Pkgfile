@@ -2,9 +2,9 @@
 # URL:         https://c-ares.haxx.se/
 
 name=c-ares
-version=1.29.0
+version=1.31.0
 release=1
-source=https://$name.haxx.se/download/$name-$version.tar.gz
+source=https://github.com/c-ares/c-ares/releases/download/v$version/$name-$version.tar.gz
 
 build() {
 	cmake -S $name-$version -B build -G Ninja   \
