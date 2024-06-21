@@ -7407,6 +7407,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/gather/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/c2s_dvr_password_disclosure.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/censys_search.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/cerberus_helpdesk_hash_disclosure.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/checkpoint_gateway_fileread_cve_2024_24919.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/checkpoint_hostname.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/chrome_debugger.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/cisco_pvc2300_download_config.rb
@@ -7513,6 +7514,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/gather/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/shodan_search.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/snare_registry.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/solarwinds_orion_sqli.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/solarwinds_servu_fileread_cve_2024_28995.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/splunk_raw_server_info.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/ssllabs_scan.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/suite_crm_export_sqli.rb
@@ -9119,6 +9121,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/apache_mod_cgi_bash_env_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/apache_nifi_processor_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/apache_normalize_path_rce.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/apache_ofbiz_forgot_password_directory_traversal.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/apache_rocketmq_update_config.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/apache_roller_ognl_injection.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/apprain_upload_exec.rb
@@ -10549,6 +10552,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/windows/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/osb_uname_jlist.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/peercast_url.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/php_apache_request_headers_bof.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/php_cgi_arg_injection_rce_cve_2024_4577.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/plesk_mylittleadmin_viewstate.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/plex_unpickle_dict_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/privatewire_gateway.rb
