@@ -2,7 +2,7 @@
 # URL:         https://github.com/projectdiscovery/httpx
 
 name=httpx-bin
-version=1.6.3
+version=1.6.4
 release=1
 source=https://github.com/projectdiscovery/httpx/releases/download/v${version}/httpx_${version}_linux_amd64.zip
 
