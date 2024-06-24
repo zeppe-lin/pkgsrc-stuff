@@ -1,0 +1,25 @@
+# Description: Perl implementation of the which utility as an API
+# URL:         https://metacpan.org/pod/File::Which
+# Depends on:  perl
+
+name=p5-file-which
+version=1.27
+release=1
+source=https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/File-Which-$version.tar.gz
+
+build() {
+	cd File-Which-$version
+	
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make
+	make DESTDIR=$PKG install
+
+	# remove junk and empty dirs
+	find $PKG -depth \
+		-type f \( -name perllocal.pod  \
+			-o -name \*.bs          \
+			-o -name .packlist      \
+			\) -delete ,            \
+		-type d -empty -delete
+}
