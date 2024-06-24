@@ -1,6 +1,6 @@
 # Description: Perl interface to GD graphics library
 # URL:         https://metacpan.org/pod/GD
-# Depends on:  libgd p5-extutils-pkgconfig p5-test-fork p5-test-nowarnings
+# Depends on:  libgd p5-extutils-pkgconfig p5-file-which p5-test-fork p5-test-nowarnings
 
 name=p5-gd
 version=2.83
