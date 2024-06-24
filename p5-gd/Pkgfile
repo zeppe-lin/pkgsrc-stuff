@@ -3,7 +3,7 @@
 # Depends on:  libgd p5-extutils-pkgconfig p5-test-fork p5-test-nowarnings
 
 name=p5-gd
-version=2.82
+version=2.83
 release=1
 source=http://search.cpan.org/CPAN/authors/id/R/RU/RURBAN/GD-$version.tar.gz
 
