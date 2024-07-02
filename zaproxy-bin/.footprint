@@ -70,11 +70,11 @@ drwxr-xr-x	root/root	opt/zaproxy/plugin/
 -rw-r--r--	root/root	opt/zaproxy/plugin/plugnhack-beta-14.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/postman-alpha-0.5.0.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/pscanrules-release-59.zap
--rw-r--r--	root/root	opt/zaproxy/plugin/pscanrulesBeta-beta-39.zap
+-rw-r--r--	root/root	opt/zaproxy/plugin/pscanrulesBeta-beta-40.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/quickstart-release-48.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/replacer-release-19.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/reports-release-0.33.0.zap
--rw-r--r--	root/root	opt/zaproxy/plugin/requester-beta-7.7.0.zap
+-rw-r--r--	root/root	opt/zaproxy/plugin/requester-beta-7.8.0.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/retest-alpha-0.10.0.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/retire-release-0.37.0.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/reveal-release-9.zap
@@ -89,7 +89,7 @@ drwxr-xr-x	root/root	opt/zaproxy/plugin/
 -rw-r--r--	root/root	opt/zaproxy/plugin/webdrivermacos-release-94.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/webdriverwindows-release-94.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/websocket-release-32.zap
--rw-r--r--	root/root	opt/zaproxy/plugin/zest-beta-46.zap
+-rw-r--r--	root/root	opt/zaproxy/plugin/zest-beta-47.zap
 drwxr-xr-x	root/root	opt/zaproxy/scripts/
 drwxr-xr-x	root/root	opt/zaproxy/scripts/templates/
 drwxr-xr-x	root/root	opt/zaproxy/scripts/templates/active/
@@ -123,7 +123,7 @@ drwxr-xr-x	root/root	opt/zaproxy/xml/
 -rw-r--r--	root/root	opt/zaproxy/xml/config.xml
 -rw-r--r--	root/root	opt/zaproxy/xml/drivers.dtd
 -rw-r--r--	root/root	opt/zaproxy/xml/reportCompare.xsl
--rw-r--r--	root/root	opt/zaproxy/zap-D-2024-06-27.jar
+-rw-r--r--	root/root	opt/zaproxy/zap-D-2024-07-01.jar
 -rwxr-xr-x	root/root	opt/zaproxy/zap.sh
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
