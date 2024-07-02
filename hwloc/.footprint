@@ -49,9 +49,9 @@ drwxr-xr-x	root/root	usr/lib/hwloc/
 -rwxr-xr-x	root/root	usr/lib/hwloc/hwloc_xml_libxml.la
 -rwxr-xr-x	root/root	usr/lib/hwloc/hwloc_xml_libxml.so
 -rwxr-xr-x	root/root	usr/lib/libhwloc.la
-lrwxrwxrwx	root/root	usr/lib/libhwloc.so -> libhwloc.so.15.7.0
-lrwxrwxrwx	root/root	usr/lib/libhwloc.so.15 -> libhwloc.so.15.7.0
--rwxr-xr-x	root/root	usr/lib/libhwloc.so.15.7.0
+lrwxrwxrwx	root/root	usr/lib/libhwloc.so -> libhwloc.so.15.8.0
+lrwxrwxrwx	root/root	usr/lib/libhwloc.so.15 -> libhwloc.so.15.8.0
+-rwxr-xr-x	root/root	usr/lib/libhwloc.so.15.8.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/hwloc.pc
 drwxr-xr-x	root/root	usr/sbin/
@@ -126,6 +126,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/HWLOC_MEMBIND_PROCESS.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/HWLOC_MEMBIND_STRICT.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/HWLOC_MEMBIND_THREAD.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/HWLOC_MEMBIND_WEIGHTED_INTERLEAVE.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/HWLOC_OBJ_BRIDGE.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/HWLOC_OBJ_BRIDGE_HOST.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/HWLOC_OBJ_BRIDGE_PCI.3.gz
@@ -408,6 +409,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -rw-r--r--	root/root	usr/share/man/man3/hwloc_obj_is_in_subtree.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/hwloc_obj_osdev_type_e.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/hwloc_obj_osdev_type_t.3.gz
+-rw-r--r--	root/root	usr/share/man/man3/hwloc_obj_set_subtype.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/hwloc_obj_t.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/hwloc_obj_type_is_cache.3.gz
 -rw-r--r--	root/root	usr/share/man/man3/hwloc_obj_type_is_dcache.3.gz
