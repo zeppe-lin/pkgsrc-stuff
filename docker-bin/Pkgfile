@@ -4,7 +4,7 @@
 
 name=docker-bin
 version=27.0.3
-release=1
+release=2
 source="https://download.docker.com/linux/static/stable/x86_64/docker-$version.tgz
 	rc.docker"
 

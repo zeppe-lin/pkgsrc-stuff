@@ -16,7 +16,7 @@ start)
 		chgrp docker $LOG
 		chmod 640    $LOG
 	fi
-	/usr/bin/cgroupfs-mount
+	/usr/sbin/cgroupfs-mount
 	$SSD --start --pidfile $PID --background --exec $PROG \
 		-- $OPTS >> $LOG 2>&1
 	;;
