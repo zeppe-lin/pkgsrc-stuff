@@ -13,6 +13,7 @@ drwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/
 -rwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/Module.manifest (EMPTY)
 -rwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/build.gradle
 drwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/data/
+-rwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/data/README.txt
 -rwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/data/buildLanguage.xml
 drwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/data/languages/
 -rwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/data/languages/skel.cspec
@@ -24,11 +25,16 @@ drwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/data/languages/
 -rwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/data/sleighArgs.txt
 -rwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/extension.properties
 drwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/ghidra_scripts/
+-rwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/ghidra_scripts/README.txt
 drwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/lib/
+-rwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/lib/README.txt
 drwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/os/
 drwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/os/linux_x86_64/
+-rwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/os/linux_x86_64/README.txt
 drwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/os/mac_x86_64/
+-rwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/os/mac_x86_64/README.txt
 drwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/os/win_x86_64/
+-rwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/os/win_x86_64/README.txt
 drwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/src/
 drwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/src/main/
 drwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/src/main/help/
@@ -46,13 +52,14 @@ drwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/src/main/java/skeleto
 -rwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/src/main/java/skeleton/SkeletonPlugin.java
 drwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/src/main/resources/
 drwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/src/main/resources/images/
--rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.1.1_PUBLIC_20240614_BSimElasticPlugin.zip
--rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.1.1_PUBLIC_20240614_GnuDisassembler.zip
--rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.1.1_PUBLIC_20240614_MachineLearning.zip
--rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.1.1_PUBLIC_20240614_SampleTablePlugin.zip
--rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.1.1_PUBLIC_20240614_SleighDevTools.zip
--rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.1.1_PUBLIC_20240614_bundle_examples.zip
--rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.1.1_PUBLIC_20240614_sample.zip
+-rwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/src/main/resources/images/README.txt
+-rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.1.2_PUBLIC_20240709_BSimElasticPlugin.zip
+-rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.1.2_PUBLIC_20240709_GnuDisassembler.zip
+-rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.1.2_PUBLIC_20240709_MachineLearning.zip
+-rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.1.2_PUBLIC_20240709_SampleTablePlugin.zip
+-rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.1.2_PUBLIC_20240709_SleighDevTools.zip
+-rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.1.2_PUBLIC_20240709_bundle_examples.zip
+-rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.1.2_PUBLIC_20240709_sample.zip
 drwxr-xr-x	root/root	opt/ghidra/Extensions/IDAPro/
 drwxr-xr-x	root/root	opt/ghidra/Extensions/IDAPro/Python/
 drwxr-xr-x	root/root	opt/ghidra/Extensions/IDAPro/Python/6xx/
@@ -157,6 +164,7 @@ drwxr-xr-x	root/root	opt/ghidra/GPL/DemanglerGnu/os/win_x86_64/
 -rw-r--r--	root/root	opt/ghidra/GPL/DemanglerGnu/os/win_x86_64/demangler_gnu_v2_41.exe
 drwxr-xr-x	root/root	opt/ghidra/GPL/DemanglerGnu/src/
 drwxr-xr-x	root/root	opt/ghidra/GPL/DemanglerGnu/src/demangler_gnu_v2_24/
+-rwxr-xr-x	root/root	opt/ghidra/GPL/DemanglerGnu/src/demangler_gnu_v2_24/README.txt
 drwxr-xr-x	root/root	opt/ghidra/GPL/DemanglerGnu/src/demangler_gnu_v2_24/c/
 -rwxr-xr-x	root/root	opt/ghidra/GPL/DemanglerGnu/src/demangler_gnu_v2_24/c/alloca.c
 -rwxr-xr-x	root/root	opt/ghidra/GPL/DemanglerGnu/src/demangler_gnu_v2_24/c/argv.c
@@ -320,7 +328,7 @@ drwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-dbgeng/pypkg/dist/
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-dbgeng/pypkg/dist/Pybag-2.2.10-py3-none-any.whl
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-dbgeng/pypkg/dist/capstone-5.0.1-py3-none-win_amd64.whl
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-dbgeng/pypkg/dist/comtypes-1.4.1-py3-none-any.whl
--rw-r--r--	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-dbgeng/pypkg/dist/ghidradbg-11.1-py3-none-any.whl
+-rw-r--r--	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-dbgeng/pypkg/dist/ghidradbg-11.1.2-py3-none-any.whl
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-dbgeng/pypkg/dist/pywin32-306-cp312-cp312-win_amd64.whl
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-dbgeng/pypkg/pyproject.toml
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-dbgeng/pypkg/src/
@@ -398,6 +406,7 @@ drwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-gdb/
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-gdb/Module.manifest (EMPTY)
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-gdb/data/
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-gdb/data/debugger-launchers/
+-rwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-gdb/data/debugger-launchers/local-gdb.bat
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-gdb/data/debugger-launchers/local-gdb.sh
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-gdb/data/debugger-launchers/qemu-gdb.sh
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-gdb/data/debugger-launchers/raw-gdb.sh
@@ -416,6 +425,7 @@ drwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-gdb/lib/
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-gdb/lib/Debugger-agent-gdb.jar
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-gdb/pypkg/
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-gdb/pypkg/LICENSE
+-rwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-gdb/pypkg/MANIFEST.in
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-gdb/pypkg/README.md
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-gdb/pypkg/build/
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-gdb/pypkg/build/bdist.macosx-13-x86_64/
@@ -427,10 +437,11 @@ drwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-gdb/pypkg/build/lib/
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-gdb/pypkg/build/lib/ghidragdb/hooks.py
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-gdb/pypkg/build/lib/ghidragdb/methods.py
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-gdb/pypkg/build/lib/ghidragdb/parameters.py
+-rwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-gdb/pypkg/build/lib/ghidragdb/schema.xml
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-gdb/pypkg/build/lib/ghidragdb/util.py
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-gdb/pypkg/build/lib/ghidragdb/wine.py
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-gdb/pypkg/dist/
--rw-r--r--	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-gdb/pypkg/dist/ghidragdb-11.1-py3-none-any.whl
+-rw-r--r--	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-gdb/pypkg/dist/ghidragdb-11.1.2-py3-none-any.whl
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-gdb/pypkg/pyproject.toml
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-gdb/pypkg/src/
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-gdb/pypkg/src/ghidragdb.egg-info/
@@ -456,6 +467,7 @@ drwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-lldb/
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-lldb/Module.manifest (EMPTY)
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-lldb/data/
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-lldb/data/debugger-launchers/
+-rwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-lldb/data/debugger-launchers/local-lldb.bat
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-lldb/data/debugger-launchers/local-lldb.sh
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-lldb/data/debugger-launchers/remote-lldb.sh
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-lldb/lib/
@@ -463,6 +475,7 @@ drwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-lldb/lib/
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-lldb/lib/Debugger-agent-lldb.jar
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-lldb/pypkg/
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-lldb/pypkg/LICENSE
+-rwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-lldb/pypkg/MANIFEST.in
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-lldb/pypkg/README.md
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-lldb/pypkg/build/
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-lldb/pypkg/build/bdist.macosx-13-x86_64/
@@ -475,7 +488,7 @@ drwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-lldb/pypkg/build/lib
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-lldb/pypkg/build/lib/ghidralldb/methods.py
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-lldb/pypkg/build/lib/ghidralldb/util.py
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-lldb/pypkg/dist/
--rw-r--r--	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-lldb/pypkg/dist/ghidralldb-11.1-py3-none-any.whl
+-rw-r--r--	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-lldb/pypkg/dist/ghidralldb-11.1.2-py3-none-any.whl
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-lldb/pypkg/pyproject.toml
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-lldb/pypkg/src/
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-agent-lldb/pypkg/src/ghidralldb.egg-info/
@@ -547,7 +560,7 @@ drwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-rmi-trace/pypkg/build/lib/
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Debug/Debugger-rmi-trace/pypkg/build/lib/ghidratrace/trace_rmi_pb2.py
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Debug/Debugger-rmi-trace/pypkg/build/lib/ghidratrace/util.py
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-rmi-trace/pypkg/dist/
--rw-r--r--	root/root	opt/ghidra/Ghidra/Debug/Debugger-rmi-trace/pypkg/dist/ghidratrace-11.1-py3-none-any.whl
+-rw-r--r--	root/root	opt/ghidra/Ghidra/Debug/Debugger-rmi-trace/pypkg/dist/ghidratrace-11.1.2-py3-none-any.whl
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-rmi-trace/pypkg/dist/protobuf-3.20.3-py2.py3-none-any.whl
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-rmi-trace/pypkg/dist/psutil-5.9.8.tar.gz
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Debug/Debugger-rmi-trace/pypkg/dist/setuptools-68.0.0-py3-none-any.whl
@@ -920,6 +933,7 @@ drwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/Base/data/pcodetest/
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/Base/data/stringngrams/
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/Base/data/stringngrams/StringModel.sng
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/Base/data/symbols/
+-rwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/Base/data/symbols/README.txt
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/Base/data/symbols/win16/
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/Base/data/symbols/win16/commctrl.exports
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/Base/data/symbols/win16/commdlg.exports
@@ -1594,6 +1608,7 @@ drwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/Decompiler/src/decompile/unittes
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/Decompiler/src/decompile/unittests/testparamstore.cc
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/Decompiler/src/decompile/unittests/testtypes.cc
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/Decompiler/src/decompile/zlib/
+-rwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/Decompiler/src/decompile/zlib/README.txt
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/Decompiler/src/decompile/zlib/adler32.c
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/Decompiler/src/decompile/zlib/deflate.c
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/Decompiler/src/decompile/zlib/deflate.h
@@ -1629,6 +1644,7 @@ drwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/FileFormats/data/android/
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/FileFormats/data/android/eclipse-classpath
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/FileFormats/data/android/eclipse-project
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/FileFormats/data/crypto/
+-rwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/FileFormats/data/crypto/README.txt
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/FileFormats/data/languages/
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/FileFormats/data/languages/apport.opinion
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/FileFormats/data/languages/minidump.opinion
@@ -1775,6 +1791,7 @@ drwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/GhidraServer/data/yajsw-stable-1
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Features/GhidraServer/data/yajsw-stable-13.09/doc/index.html
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/GhidraServer/data/yajsw-stable-13.09/lib/
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/GhidraServer/data/yajsw-stable-13.09/lib/core/
+-rw-r--r--	root/root	opt/ghidra/Ghidra/Features/GhidraServer/data/yajsw-stable-13.09/lib/core/ReadMe.txt
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/GhidraServer/data/yajsw-stable-13.09/lib/core/commons/
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Features/GhidraServer/data/yajsw-stable-13.09/lib/core/commons/commons-cli-1.5.0.jar
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Features/GhidraServer/data/yajsw-stable-13.09/lib/core/commons/commons-collections-3.2.2.jar
@@ -1800,6 +1817,7 @@ drwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/GhidraServer/data/yajsw-stable-1
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/GhidraServer/data/yajsw-stable-13.09/lib/core/yajsw/
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Features/GhidraServer/data/yajsw-stable-13.09/lib/core/yajsw/ahessian.jar
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/GhidraServer/data/yajsw-stable-13.09/lib/extended/
+-rw-r--r--	root/root	opt/ghidra/Ghidra/Features/GhidraServer/data/yajsw-stable-13.09/lib/extended/ReadMe.txt
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/GhidraServer/data/yajsw-stable-13.09/lib/extended/abeille/
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Features/GhidraServer/data/yajsw-stable-13.09/lib/extended/abeille/formsrt.jar
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/GhidraServer/data/yajsw-stable-13.09/lib/extended/commons/
@@ -1854,6 +1872,7 @@ drwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/GhidraServer/lib/
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Features/GhidraServer/lib/GhidraServer-src.zip
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Features/GhidraServer/lib/GhidraServer.jar
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/GhidraServer/os/
+-rwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/GhidraServer/os/readme.txt
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/GnuDemangler/
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Features/GnuDemangler/LICENSE.txt
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/GnuDemangler/Module.manifest
@@ -1923,6 +1942,7 @@ drwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/PDB/os/win_x86_64/
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Features/PDB/os/win_x86_64/pdb.exe
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/PDB/src/
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/PDB/src/pdb/
+-rwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/PDB/src/pdb/README.txt
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/PDB/src/pdb/cpp/
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/PDB/src/pdb/cpp/err.cpp
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/PDB/src/pdb/cpp/find.cpp
@@ -2121,6 +2141,7 @@ drwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/Python/data/jython-2.7.3/Lib/cty
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Features/Python/data/jython-2.7.3/Lib/dis$py.class
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Features/Python/data/jython-2.7.3/Lib/dis.py
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/Python/data/jython-2.7.3/Lib/distutils/
+-rw-r--r--	root/root	opt/ghidra/Ghidra/Features/Python/data/jython-2.7.3/Lib/distutils/README
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Features/Python/data/jython-2.7.3/Lib/distutils/__init__$py.class
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Features/Python/data/jython-2.7.3/Lib/distutils/__init__.py
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Features/Python/data/jython-2.7.3/Lib/distutils/archive_util$py.class
@@ -2963,6 +2984,7 @@ drwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/Python/data/jython-2.7.3/Lib/lib
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/Python/data/jython-2.7.3/Lib/lib2to3/tests/
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Features/Python/data/jython-2.7.3/Lib/lib2to3/tests/__init__.py
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/Python/data/jython-2.7.3/Lib/lib2to3/tests/data/
+-rw-r--r--	root/root	opt/ghidra/Ghidra/Features/Python/data/jython-2.7.3/Lib/lib2to3/tests/data/README
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Features/Python/data/jython-2.7.3/Lib/lib2to3/tests/data/bom.py
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Features/Python/data/jython-2.7.3/Lib/lib2to3/tests/data/crlf.py
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Features/Python/data/jython-2.7.3/Lib/lib2to3/tests/data/different_encoding.py
@@ -3159,6 +3181,7 @@ drwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/Python/data/jython-2.7.3/Lib/pyd
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Features/Python/data/jython-2.7.3/Lib/signal.py
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Features/Python/data/jython-2.7.3/Lib/site$py.class
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/Features/Python/data/jython-2.7.3/Lib/site-packages/
+-rw-r--r--	root/root	opt/ghidra/Ghidra/Features/Python/data/jython-2.7.3/Lib/site-packages/README
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Features/Python/data/jython-2.7.3/Lib/site.py
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Features/Python/data/jython-2.7.3/Lib/smtpd$py.class
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Features/Python/data/jython-2.7.3/Lib/smtpd.py
@@ -4848,6 +4871,7 @@ drwxr-xr-x	root/root	opt/ghidra/Ghidra/Processors/x86/lib/
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Processors/x86/lib/x86.jar
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/application.properties
 drwxr-xr-x	root/root	opt/ghidra/Ghidra/patch/
+-rwxr-xr-x	root/root	opt/ghidra/Ghidra/patch/README.txt
 -rwxr-xr-x	root/root	opt/ghidra/Ghidra/settings.gradle
 -rwxr-xr-x	root/root	opt/ghidra/LICENSE
 -rw-r--r--	root/root	opt/ghidra/bom.json
@@ -4943,6 +4967,7 @@ drwxr-xr-x	root/root	opt/ghidra/docs/GhidraClass/Beginner/Images/
 -rwxr-xr-x	root/root	opt/ghidra/docs/GhidraClass/Beginner/Images/GhidraLogo64.png
 -rwxr-xr-x	root/root	opt/ghidra/docs/GhidraClass/Beginner/Introduction_to_Ghidra_Student_Guide.html
 -rwxr-xr-x	root/root	opt/ghidra/docs/GhidraClass/Beginner/Introduction_to_Ghidra_Student_Guide_withNotes.html
+-rwxr-xr-x	root/root	opt/ghidra/docs/GhidraClass/Beginner/README.txt
 drwxr-xr-x	root/root	opt/ghidra/docs/GhidraClass/Debugger/
 -rwxr-xr-x	root/root	opt/ghidra/docs/GhidraClass/Debugger/A1-GettingStarted.html
 -rwxr-xr-x	root/root	opt/ghidra/docs/GhidraClass/Debugger/A1-GettingStarted.md
@@ -5061,6 +5086,7 @@ drwxr-xr-x	root/root	opt/ghidra/docs/GhidraClass/ExerciseFiles/Debugger/
 -rwxr-xr-x	root/root	opt/ghidra/docs/GhidraClass/ExerciseFiles/Debugger/termmines.c
 drwxr-xr-x	root/root	opt/ghidra/docs/GhidraClass/ExerciseFiles/Emulation/
 drwxr-xr-x	root/root	opt/ghidra/docs/GhidraClass/ExerciseFiles/Emulation/Source/
+-rwxr-xr-x	root/root	opt/ghidra/docs/GhidraClass/ExerciseFiles/Emulation/Source/README.txt
 -rwxr-xr-x	root/root	opt/ghidra/docs/GhidraClass/ExerciseFiles/Emulation/Source/deobExample.c
 -rwxr-xr-x	root/root	opt/ghidra/docs/GhidraClass/ExerciseFiles/Emulation/Source/deobHookExample.c
 drwxr-xr-x	root/root	opt/ghidra/docs/GhidraClass/ExerciseFiles/VersionTracking/
@@ -5120,6 +5146,7 @@ drwxr-xr-x	root/root	opt/ghidra/docs/GhidraClass/Intermediate/Images/Scripting/
 -rwxr-xr-x	root/root	opt/ghidra/docs/GhidraClass/Intermediate/Images/Scripting/scriptVariablesEclipse.png
 -rwxr-xr-x	root/root	opt/ghidra/docs/GhidraClass/Intermediate/Intermediate_Ghidra_Student_Guide.html
 -rwxr-xr-x	root/root	opt/ghidra/docs/GhidraClass/Intermediate/Intermediate_Ghidra_Student_Guide_withNotes.html
+-rwxr-xr-x	root/root	opt/ghidra/docs/GhidraClass/Intermediate/README.txt
 -rwxr-xr-x	root/root	opt/ghidra/docs/GhidraClass/Intermediate/Scripting.html
 -rwxr-xr-x	root/root	opt/ghidra/docs/GhidraClass/Intermediate/Scripting_withNotes.html
 -rwxr-xr-x	root/root	opt/ghidra/docs/GhidraClass/Intermediate/VersionTracking.html
