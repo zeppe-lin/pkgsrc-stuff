@@ -3,18 +3,21 @@
 # Depends on:  gtk libgd librsvg-compat libtool poppler
 
 name=graphviz
-version=9.0.0
+version=12.0.0
 release=1
-source=https://gitlab.com/api/v4/projects/4207231/packages/generic/$name-releases/$version/$name-$version.tar.xz
+source=https://gitlab.com/graphviz/graphviz/-/archive/$version/$name-$version.tar.bz2
 
 build() {
 	cd $name-$version
+
+	./autogen.sh NOCONFIG
 
 	# --disable-man-pdfs: don't generate PDFs of man pages
 	# --disable-swig:     build fails if swig is installed but tcl is not
 	# --disable-LANG:     disable LANG language bindings
 	# --with-LIB=no:      disable LIB library
-	LIBPOSTFIX=/ ./configure      \
+	CONFIG_SHELL=/bin/bash        \
+	./configure                   \
 		--prefix=/usr         \
 		--disable-man-pdfs    \
 		--disable-swig        \

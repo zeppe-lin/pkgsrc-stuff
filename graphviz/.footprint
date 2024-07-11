@@ -45,8 +45,6 @@ drwxr-xr-x	root/root	usr/include/graphviz/
 -rw-r--r--	root/root	usr/include/graphviz/color.h
 -rw-r--r--	root/root	usr/include/graphviz/geom.h
 -rw-r--r--	root/root	usr/include/graphviz/graphviz_version.h
--rw-r--r--	root/root	usr/include/graphviz/gv.cpp
--rw-r--r--	root/root	usr/include/graphviz/gv.i
 -rw-r--r--	root/root	usr/include/graphviz/gvc.h
 -rw-r--r--	root/root	usr/include/graphviz/gvcext.h
 -rw-r--r--	root/root	usr/include/graphviz/gvcjob.h
@@ -84,10 +82,6 @@ lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_gd.so.6 -> libgvplugin_gd.so.6
 lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_gdk.so -> libgvplugin_gdk.so.6.0.0
 lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_gdk.so.6 -> libgvplugin_gdk.so.6.0.0
 -rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_gdk.so.6.0.0
--rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_gtk.la
-lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_gtk.so -> libgvplugin_gtk.so.6.0.0
-lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_gtk.so.6 -> libgvplugin_gtk.so.6.0.0
--rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_gtk.so.6.0.0
 -rwxr-xr-x	root/root	usr/lib/graphviz/libgvplugin_kitty.la
 lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_kitty.so -> libgvplugin_kitty.so.6.0.0
 lrwxrwxrwx	root/root	usr/lib/graphviz/libgvplugin_kitty.so.6 -> libgvplugin_kitty.so.6.0.0
@@ -132,10 +126,6 @@ lrwxrwxrwx	root/root	usr/lib/libgvc.so.6 -> libgvc.so.6.0.0
 lrwxrwxrwx	root/root	usr/lib/libgvpr.so -> libgvpr.so.2.0.0
 lrwxrwxrwx	root/root	usr/lib/libgvpr.so.2 -> libgvpr.so.2.0.0
 -rwxr-xr-x	root/root	usr/lib/libgvpr.so.2.0.0
--rwxr-xr-x	root/root	usr/lib/liblab_gamut.la
-lrwxrwxrwx	root/root	usr/lib/liblab_gamut.so -> liblab_gamut.so.1.0.0
-lrwxrwxrwx	root/root	usr/lib/liblab_gamut.so.1 -> liblab_gamut.so.1.0.0
--rwxr-xr-x	root/root	usr/lib/liblab_gamut.so.1.0.0
 -rwxr-xr-x	root/root	usr/lib/libpathplan.la
 lrwxrwxrwx	root/root	usr/lib/libpathplan.so -> libpathplan.so.4.0.0
 lrwxrwxrwx	root/root	usr/lib/libpathplan.so.4 -> libpathplan.so.4.0.0
@@ -149,7 +139,6 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libcgraph.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libgvc.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libgvpr.pc
--rw-r--r--	root/root	usr/lib/pkgconfig/liblab_gamut.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libpathplan.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libxdot.pc
 drwxr-xr-x	root/root	usr/share/
