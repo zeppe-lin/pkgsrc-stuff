@@ -1,0 +1,24 @@
+# Description: Extract BIOS firmware from Intel-based workstations and laptops
+# URL:         https://github.com/google/pawn
+
+name=pawn
+version=0.2-83e711f
+release=1
+source="https://github.com/google/pawn/archive/${version#*-}/pawn-$version.tar.gz
+	pawn.8.pod"
+
+build() {
+	cmake -S pawn-${version#*-}* -B build -G Ninja           \
+		-D CMAKE_INSTALL_PREFIX=/usr                     \
+		-D CMAKE_BUILD_TYPE=Release                      \
+		-D CMAKE_C_FLAGS_RELEASE="$CFLAGS -DNDEBUG"      \
+		-D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS -DNDEBUG"  \
+
+	ninja -C build -j ${JOBS:-1} -v
+	DESTDIR=$PKG ninja -C build install
+
+	# install custom man page
+	mkdir -p $PKG/usr/share/man/man8
+	pod2man -c ' ' -n pawn -r $version -s 8 \
+		pawn.8.pod > $PKG/usr/share/man/man8/pawn.8
+}

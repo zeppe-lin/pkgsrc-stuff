@@ -1,0 +1,84 @@
+=pod
+
+=encoding UTF-8
+
+=head1 NAME
+
+pawn - BIOS dumping tool
+
+=head1 SYNOPSIS
+
+B<pawn> [I<OPTIONS>] I<OUTPUT>
+
+=head1 DESCRIPTION
+
+B<pawn> is a tool to extract the BIOS firmware from Intel-based workstations
+and laptops.
+
+The options are as follows:
+
+=over
+
+=item B<--version>
+
+Display version.
+
+=item B<--help>
+
+Display help information and exit.
+
+=item B<--help>=I<substring>
+
+Show help for flags which include specified substring in either in the name, or
+description or path.
+
+=item B<--helpfull>
+
+Get a list of all flags.
+
+=item B<--flagfile>=I<arg>
+
+Comma-separated list of files to load flags from.
+Default: none.
+
+=item B<--fromenv>=I<arg>
+
+Comma-separated list of flags to set from the environment.  Use
+
+  export FLAGS_flag1=value
+
+Default: none.
+
+=item B<--tryfromenv>=I<arg>
+
+Comma-separated list of flags to try to set from the environment if present.
+
+=item B<--undefok>=I<arg>
+
+Comma-separated list of flag names that it is okay to specify on the command
+line even if the program does not define a flag with that name.
+Default: none.
+
+=item B<--logo>
+
+Display version/copyright information.
+
+=back
+
+=head1 EXAMPLES
+
+The following command will extract the BIOS firmware and save the image to
+F<bios_image.bin>:
+
+  pawn bios_image.bin
+
+=head1 CAVEATS
+
+When running a Linux kernel > 4.8.4, make sure that either
+B<CONFIG_IO_DEVMEM=n> is set or that you've booted with the B<iomem=relaxed>
+boot option.
+
+After extraction, you can then use other tools like
+L<UEFITool|https://github.com/LongSoft/UEFITool> to process the firmware image further.
+
+=cut
