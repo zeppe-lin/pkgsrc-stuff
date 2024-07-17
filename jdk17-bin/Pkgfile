@@ -1,6 +1,6 @@
 # Description: Java 17 Software Development Kit (amazon-corretto)
 # URL:         https://github.com/corretto/corretto-17/
-# Depends on:  alsa-lib xorg-libxrender xorg-libxtst jdk11-bin
+# Depends on:  alsa-lib xorg-libxrender xorg-libxtst
 
 name=jdk17-bin
 version=17.0.12.7.1
