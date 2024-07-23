@@ -4,7 +4,7 @@
 
 name=gtorrentviewer
 version=0.2b
-release=1
+release=2
 source=https://downloads.sourceforge.net/$name/GTorrentViewer-$version.tar.gz
 
 build() {
@@ -21,7 +21,11 @@ build() {
 	make DESTDIR=$PKG install
 
 	# program name instead of description
-	sed -i '/^Name=.*/s/.*/Name=gTorrentViewer/' \
+	sed -i '/^Name=/s/.*/Name=gTorrentViewer/' \
+		$PKG/usr/share/applications/$name.desktop
+
+	# update categories
+	sed -i '/^Categories=/s/Network;/Network;FileTransfer;P2P;/' \
 		$PKG/usr/share/applications/$name.desktop
 
 	# remove junk
