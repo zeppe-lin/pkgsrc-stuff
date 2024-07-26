@@ -766,6 +766,8 @@ drwxrwxr-x	root/root	opt/metasploit/data/exploits/CVE-2022-21882/
 -rwxrwxr-x	root/root	opt/metasploit/data/exploits/CVE-2022-21882/CVE-2022-21882.x64.dll
 drwxrwxr-x	root/root	opt/metasploit/data/exploits/CVE-2022-22942/
 -rw-rw-r--	root/root	opt/metasploit/data/exploits/CVE-2022-22942/pre_compiled
+drwxrwxr-x	root/root	opt/metasploit/data/exploits/CVE-2022-2334/
+-rw-rw-r--	root/root	opt/metasploit/data/exploits/CVE-2022-2334/template_x64_windows.dll
 drwxrwxr-x	root/root	opt/metasploit/data/exploits/CVE-2022-26904/
 -rw-rw-r--	root/root	opt/metasploit/data/exploits/CVE-2022-26904/CVE-2022-26904.dll
 drwxrwxr-x	root/root	opt/metasploit/data/exploits/CVE-2022-30190/
@@ -825,6 +827,8 @@ drwxrwxr-x	root/root	opt/metasploit/data/exploits/CVE-2023-50386/conf/lang/
 -rw-rw-r--	root/root	opt/metasploit/data/exploits/CVE-2023-50386/conf/stopwords.txt (EMPTY)
 -rw-rw-r--	root/root	opt/metasploit/data/exploits/CVE-2023-50386/conf/synonyms.txt (EMPTY)
 -rw-rw-r--	root/root	opt/metasploit/data/exploits/CVE-2023-50386/solrconfig.xml
+drwxrwxr-x	root/root	opt/metasploit/data/exploits/CVE-2024-29510/
+-rw-rw-r--	root/root	opt/metasploit/data/exploits/CVE-2024-29510/ghostscript_format_string.eps
 -rwxrwxr-x	root/root	opt/metasploit/data/exploits/QTJavaExploit.class
 drwxrwxr-x	root/root	opt/metasploit/data/exploits/R7_2015_17/
 -rw-rw-r--	root/root	opt/metasploit/data/exploits/R7_2015_17/stream.raw
@@ -3063,6 +3067,11 @@ drwxrwxr-x	root/root	opt/metasploit/external/source/exploits/CVE-2022-21882/
 -rwxrwxr-x	root/root	opt/metasploit/external/source/exploits/CVE-2022-21882/exploit.h
 drwxrwxr-x	root/root	opt/metasploit/external/source/exploits/CVE-2022-22942/
 -rw-rw-r--	root/root	opt/metasploit/external/source/exploits/CVE-2022-22942/cve-2022-22942-dc.c
+drwxrwxr-x	root/root	opt/metasploit/external/source/exploits/CVE-2022-2334/
+-rwxrwxr-x	root/root	opt/metasploit/external/source/exploits/CVE-2022-2334/build.sh
+-rw-rw-r--	root/root	opt/metasploit/external/source/exploits/CVE-2022-2334/template.c
+-rw-rw-r--	root/root	opt/metasploit/external/source/exploits/CVE-2022-2334/template.def
+-rw-rw-r--	root/root	opt/metasploit/external/source/exploits/CVE-2022-2334/template.h
 drwxrwxr-x	root/root	opt/metasploit/external/source/exploits/CVE-2022-26904/
 -rw-rw-r--	root/root	opt/metasploit/external/source/exploits/CVE-2022-26904/SuperProfileDLL.sln
 drwxrwxr-x	root/root	opt/metasploit/external/source/exploits/CVE-2022-26904/SuperProfileDLL/
@@ -7474,6 +7483,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/gather/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/ldap_esc_vulnerable_cert_finder.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/ldap_hashdump.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/ldap_query.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/magento_xxe_cve_2024_34102.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/manageengine_adaudit_plus_xnode_enum.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/manageengine_datasecurity_plus_xnode_enum.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/mantisbt_admin_sqli.rb
@@ -9096,6 +9106,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/fileformat/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/fileformat/archive_tar_arb_file_write.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/fileformat/evince_cbt_cmd_injection.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/fileformat/ghostscript_failed_restore.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/fileformat/ghostscript_format_string_cve_2024_29510.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/fileformat/gitlens_local_config_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/fileformat/js_unpacker_eval_injection.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/fileformat/libreoffice_logo_exec.rb
@@ -10591,6 +10602,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/windows/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/shttpd_post.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/sitecore_xp_cve_2021_42237.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/smartermail_rce.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/softing_sis_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/solarwinds_fsm_userlogin.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/solarwinds_storage_manager_sql.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/sonicwall_scrutinizer_sqli.rb
