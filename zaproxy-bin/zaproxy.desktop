@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=ZAP
+Exec=zaproxy
+Icon=zaproxy.png
+Terminal=false
+Type=Application
+Comment=ZAP is an open-source web application security scanner
+Categories=Network;
+Keywords=network;scan;scanner;web;security;zed;attack;proxy;

@@ -4,14 +4,18 @@
 
 name=zaproxy-bin
 version=2024-07-22
-release=1
-source=https://github.com/zaproxy/zaproxy/releases/download/w$version/ZAP_WEEKLY_D-$version.zip
+release=2
+source="https://github.com/zaproxy/zaproxy/releases/download/w$version/ZAP_WEEKLY_D-$version.zip
+	zaproxy.png zaproxy.desktop"
 
 build() {
 	mkdir -p $PKG/opt $PKG/usr/bin
 
 	mv ZAP_D-$version $PKG/opt/zaproxy
 	ln -s /opt/zaproxy/zap.sh $PKG/usr/bin/zaproxy
+
+	install -m 0644 -Dt $PKG/usr/share/pixmaps/      $SRC/zaproxy.png
+	install -m 0644 -Dt $PKG/usr/share/applications/ $SRC/zaproxy.desktop
 
 	# remove junk
 	cd $PKG/opt/zaproxy
