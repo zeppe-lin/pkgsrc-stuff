@@ -1,0 +1,34 @@
+# Description: Detecting and exploiting SQL injection security flaws
+# URL:         https://github.com/r0oth3x49/ghauri
+# Depends on:  py3-pip
+
+name=ghauri
+version=1.3.5-003b635
+release=1
+source=https://github.com/r0oth3x49/$name/archive/${version#*-}/$name-$version.tar.gz
+
+build() {
+	export TMPDIR="$PKGMK_WORK_DIR"
+
+	mkdir -p $PKG/opt $PKG/usr/bin
+
+	cd $name-${version#*-}*
+
+	# install deps
+	/usr/bin/pip3 install -r requirements.txt -t $PKG/opt/$name
+
+	# build and install ghauri
+	/usr/bin/python3 setup.py build
+	/usr/bin/python3 setup.py install \
+		--skip-build --prefix=/usr --root=$PKG/opt/$name --optimize=2
+
+	# create an indirect launcher in /usr/bin
+	cat >$PKG/usr/bin/$name <<EOF
+#!/bin/sh -e
+PYVER=\$(python3 -V | grep -Po '\d\.\d')
+export PATH=\$PATH:/opt/$name/bin
+export PYTHONPATH=/opt/$name:/opt/$name/usr/lib/python\$PYVER/site-packages
+/usr/bin/python3 /opt/$name/usr/bin/$name \$@
+EOF
+	chmod +x $PKG/usr/bin/$name
+}
