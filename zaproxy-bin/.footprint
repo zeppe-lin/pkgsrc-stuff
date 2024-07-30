@@ -70,8 +70,8 @@ drwxr-xr-x	root/root	opt/zaproxy/plugin/
 -rw-r--r--	root/root	opt/zaproxy/plugin/plugnhack-beta-14.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/postman-alpha-0.5.0.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/pscan-alpha-0.0.1.zap
--rw-r--r--	root/root	opt/zaproxy/plugin/pscanrules-release-59.zap
--rw-r--r--	root/root	opt/zaproxy/plugin/pscanrulesBeta-beta-40.zap
+-rw-r--r--	root/root	opt/zaproxy/plugin/pscanrules-release-60.zap
+-rw-r--r--	root/root	opt/zaproxy/plugin/pscanrulesBeta-beta-41.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/quickstart-release-49.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/replacer-release-19.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/reports-release-0.33.0.zap
@@ -86,9 +86,9 @@ drwxr-xr-x	root/root	opt/zaproxy/plugin/
 -rw-r--r--	root/root	opt/zaproxy/plugin/spider-release-0.12.0.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/spiderAjax-release-23.21.0.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/tips-beta-14.zap
--rw-r--r--	root/root	opt/zaproxy/plugin/webdriverlinux-release-96.zap
--rw-r--r--	root/root	opt/zaproxy/plugin/webdrivermacos-release-96.zap
--rw-r--r--	root/root	opt/zaproxy/plugin/webdriverwindows-release-96.zap
+-rw-r--r--	root/root	opt/zaproxy/plugin/webdriverlinux-release-97.zap
+-rw-r--r--	root/root	opt/zaproxy/plugin/webdrivermacos-release-97.zap
+-rw-r--r--	root/root	opt/zaproxy/plugin/webdriverwindows-release-97.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/websocket-release-32.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/zest-beta-47.zap
 drwxr-xr-x	root/root	opt/zaproxy/scripts/
@@ -124,7 +124,7 @@ drwxr-xr-x	root/root	opt/zaproxy/xml/
 -rw-r--r--	root/root	opt/zaproxy/xml/config.xml
 -rw-r--r--	root/root	opt/zaproxy/xml/drivers.dtd
 -rw-r--r--	root/root	opt/zaproxy/xml/reportCompare.xsl
--rw-r--r--	root/root	opt/zaproxy/zap-D-2024-07-22.jar
+-rw-r--r--	root/root	opt/zaproxy/zap-D-2024-07-29.jar
 -rwxr-xr-x	root/root	opt/zaproxy/zap.sh
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
