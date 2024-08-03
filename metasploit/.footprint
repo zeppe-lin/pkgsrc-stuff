@@ -9285,7 +9285,6 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/open_web_analytics_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/openfire_auth_bypass.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/openfire_auth_bypass_rce_cve_2023_32315.rb
--rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/openmediavault_cmd_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/openmrs_deserialization.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/openx_backdoor_php.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/opmanager_socialit_file_upload.rb
@@ -9751,6 +9750,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/unix/webapp/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/webapp/open_flash_chart_upload_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/webapp/openemr_sqli_privesc_upload.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/webapp/openemr_upload_exec.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/webapp/openmediavault_auth_cron_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/webapp/openmediavault_rpc_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/webapp/opennetadmin_ping_cmd_injection.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/webapp/opensis_chain_exec.rb
@@ -10992,6 +10992,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/windows/scada/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/scada/igss_exec_17.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/scada/indusoft_webstudio_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/scada/moxa_mdmtool.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/scada/mypro_cmdexe.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/scada/procyon_core_server.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/scada/realwin.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/scada/realwin_on_fc_binfile_a.rb
