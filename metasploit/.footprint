@@ -9447,6 +9447,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/misc/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/misc/batik_svg_java.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/misc/bmc_patrol_cmd_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/misc/bmc_server_automation_rscd_nsh_rce.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/misc/calibre_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/misc/claymore_dual_miner_remote_manager_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/misc/consul_rexec_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/misc/consul_service_exec.rb
@@ -13617,10 +13618,10 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/extensions/x86_64-lin
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/extensions/x86_64-linux/3.1-static/nio4r-2.7.3/gem.build_complete (EMPTY)
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/extensions/x86_64-linux/3.1-static/nio4r-2.7.3/gem_make.out
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/extensions/x86_64-linux/3.1-static/nio4r-2.7.3/nio4r_ext.so
-drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/extensions/x86_64-linux/3.1-static/pcaprub-0.13.2/
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/extensions/x86_64-linux/3.1-static/pcaprub-0.13.2/gem.build_complete (EMPTY)
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/extensions/x86_64-linux/3.1-static/pcaprub-0.13.2/gem_make.out
--rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/extensions/x86_64-linux/3.1-static/pcaprub-0.13.2/pcaprub_c.so
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/extensions/x86_64-linux/3.1-static/pcaprub-0.13.3/
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/extensions/x86_64-linux/3.1-static/pcaprub-0.13.3/gem.build_complete (EMPTY)
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/extensions/x86_64-linux/3.1-static/pcaprub-0.13.3/gem_make.out
+-rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/extensions/x86_64-linux/3.1-static/pcaprub-0.13.3/pcaprub_c.so
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/extensions/x86_64-linux/3.1-static/pg-1.5.6/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/extensions/x86_64-linux/3.1-static/pg-1.5.6/gem.build_complete (EMPTY)
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/extensions/x86_64-linux/3.1-static/pg-1.5.6/gem_make.out
@@ -23070,34 +23071,34 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/patch_finder-1.0
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/patch_finder-1.0.2/tools/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/patch_finder-1.0.2/tools/extract_msu.bat
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/patch_finder-1.0.2/tools/list_dll.rb
-drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.2/
--rw-rw-r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.2/.document
--rw-rw-r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.2/FAQ.rdoc
--rw-rw-r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.2/Gemfile
--rw-rw-r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.2/Rakefile
--rw-rw-r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.2/USAGE.rdoc
-drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.2/examples/
--rwxrwxr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.2/examples/dead_cap.rb
--rwxrwxr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.2/examples/file_cap.rb
--rwxrwxr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.2/examples/simple_cap.rb
--rw-rw-r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.2/examples/telnet-raw.pcap
-drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.2/ext/
-drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.2/ext/pcaprub_c/
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.2/ext/pcaprub_c/.sitearchdir.time (EMPTY)
--rw-rw-r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.2/ext/pcaprub_c/extconf.rb
--rw-rw-r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.2/ext/pcaprub_c/pcaprub.c
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.2/ext/pcaprub_c/pcaprub.o
--rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.2/ext/pcaprub_c/pcaprub_c.so
-drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.2/lib/
--rw-rw-r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.2/lib/pcaprub.rb
-drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.2/lib/pcaprub/
--rw-rw-r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.2/lib/pcaprub/common.rb
--rw-rw-r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.2/lib/pcaprub/ext.rb
--rw-rw-r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.2/lib/pcaprub/version.rb
--rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.2/lib/pcaprub_c.so
-drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.2/test/
--rw-rw-r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.2/test/test_helper.rb
--rw-rw-r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.2/test/test_pcaprub_unit.rb
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.3/
+-rw-rw-r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.3/.document
+-rw-rw-r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.3/FAQ.rdoc
+-rw-rw-r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.3/Gemfile
+-rw-rw-r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.3/Rakefile
+-rw-rw-r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.3/USAGE.rdoc
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.3/examples/
+-rwxrwxr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.3/examples/dead_cap.rb
+-rwxrwxr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.3/examples/file_cap.rb
+-rwxrwxr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.3/examples/simple_cap.rb
+-rw-rw-r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.3/examples/telnet-raw.pcap
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.3/ext/
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.3/ext/pcaprub_c/
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.3/ext/pcaprub_c/.sitearchdir.time (EMPTY)
+-rw-rw-r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.3/ext/pcaprub_c/extconf.rb
+-rw-rw-r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.3/ext/pcaprub_c/pcaprub.c
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.3/ext/pcaprub_c/pcaprub.o
+-rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.3/ext/pcaprub_c/pcaprub_c.so
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.3/lib/
+-rw-rw-r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.3/lib/pcaprub.rb
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.3/lib/pcaprub/
+-rw-rw-r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.3/lib/pcaprub/common.rb
+-rw-rw-r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.3/lib/pcaprub/ext.rb
+-rw-rw-r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.3/lib/pcaprub/version.rb
+-rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.3/lib/pcaprub_c.so
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.3/test/
+-rw-rw-r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.3/test/test_helper.rb
+-rw-rw-r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pcaprub-0.13.3/test/test_pcaprub_unit.rb
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pdf-reader-2.12.0/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pdf-reader-2.12.0/Rakefile
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/gems/pdf-reader-2.12.0/bin/
@@ -28000,7 +28001,7 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.1/specifications/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/specifications/openvas-omp-0.0.4.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/specifications/packetfu-2.0.0.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/specifications/patch_finder-1.0.2.gemspec
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/specifications/pcaprub-0.13.2.gemspec
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/specifications/pcaprub-0.13.3.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/specifications/pdf-reader-2.12.0.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/specifications/pg-1.5.6.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.1/specifications/public_suffix-5.0.5.gemspec
