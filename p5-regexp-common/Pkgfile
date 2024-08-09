@@ -3,7 +3,7 @@
 # Depends on:  perl
 
 name=p5-regexp-common
-version=2017060201
+version=2024080801
 release=1
 source=https://cpan.metacpan.org/authors/id/A/AB/ABIGAIL/Regexp-Common-$version.tar.gz
 
