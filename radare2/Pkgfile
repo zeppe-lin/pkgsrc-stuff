@@ -3,12 +3,12 @@
 # Depends on:  capstone file xxhash
 
 name=radare2
-version=5.9.2
+version=5.9.4
 release=1
 source=https://github.com/radare/$name/archive/$version/$name-$version.tar.gz
 
 build() {
-	# build in separate dir is broken
+	# build in separate dir is broken!
 	cd $name-$version
 
 	./configure                 \
@@ -24,7 +24,7 @@ build() {
 	# bash-completion
 	install -m 0644 -D doc/bash_autocompletion.sh \
 		$PKG/usr/share/bash-completion/completions/$name
-	for n in rafind2 r2 rabin2 rasm2 radiff2; do
+	for n in r2 rasm2 rabin2 rafind2 radiff2; do
 		ln -s $name $PKG/usr/share/bash-completion/completions/$n
 	done
 
