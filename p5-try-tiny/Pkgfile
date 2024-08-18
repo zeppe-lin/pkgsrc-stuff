@@ -3,7 +3,7 @@
 # Depends on:  perl
 
 name=p5-try-tiny
-version=0.31
+version=0.32
 release=1
 source=https://cpan.metacpan.org/authors/id/E/ET/ETHER/Try-Tiny-$version.tar.gz
 
