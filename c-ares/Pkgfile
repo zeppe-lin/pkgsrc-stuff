@@ -2,7 +2,7 @@
 # URL:         https://c-ares.haxx.se/
 
 name=c-ares
-version=1.33.0
+version=1.33.1
 release=1
 source=https://github.com/c-ares/c-ares/releases/download/v$version/$name-$version.tar.gz
 
