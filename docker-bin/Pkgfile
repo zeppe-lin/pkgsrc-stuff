@@ -3,7 +3,7 @@
 # Depends on:  iproute2 lvm2 btrfs-progs gzip
 
 name=docker-bin
-version=27.1.1
+version=27.1.2
 release=1
 source="https://download.docker.com/linux/static/stable/x86_64/docker-$version.tgz
 	rc.docker"
