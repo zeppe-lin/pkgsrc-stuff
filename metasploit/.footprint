@@ -146,6 +146,12 @@ drwxrwxr-x	root/root	opt/metasploit/data/auxiliary/vmware/
 drwxrwxr-x	root/root	opt/metasploit/data/auxiliary/vmware/vcenter_forge_saml_token/
 -rw-rw-r--	root/root	opt/metasploit/data/auxiliary/vmware/vcenter_forge_saml_token/assert.xml.erb
 -rw-rw-r--	root/root	opt/metasploit/data/capture_config.yaml
+drwxrwxr-x	root/root	opt/metasploit/data/cmd_exec/
+-rw-rw-r--	root/root	opt/metasploit/data/cmd_exec/makefile.mk
+-rw-rw-r--	root/root	opt/metasploit/data/cmd_exec/show_args.c
+-rwxrwxr-x	root/root	opt/metasploit/data/cmd_exec/show_args.exe
+-rwxrwxr-x	root/root	opt/metasploit/data/cmd_exec/show_args_linux
+-rwxrwxr-x	root/root	opt/metasploit/data/cmd_exec/show_args_osx
 -rwxrwxr-x	root/root	opt/metasploit/data/eicar.com
 -rwxrwxr-x	root/root	opt/metasploit/data/eicar.txt
 -rwxrwxr-x	root/root	opt/metasploit/data/emailer_config.yaml
@@ -6957,6 +6963,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/admin/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/http/dlink_dir_645_password_extractor.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/http/dlink_dsl320b_password_extractor.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/http/foreman_openstack_satellite_priv_esc.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/http/fortra_filecatalyst_workflow_sqli.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/http/gitlab_password_reset_account_takeover.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/http/gitstack_rest.rb
 -rwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/admin/http/grafana_auth_bypass.py
@@ -9348,6 +9355,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/sonicwall_gms_upload.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/sonicwall_scrutinizer_methoddetail_sqli.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/sonicwall_shell_injection_cve_2023_34124.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/spip_porte_plume_previsu_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/splunk_mappy_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/splunk_privilege_escalation_cve_2023_32707.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/splunk_upload_app_exec.rb
@@ -10985,6 +10993,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/windows/scada/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/scada/codesys_web_server.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/scada/daq_factory_bof.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/scada/delta_ia_commgr_bof.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/scada/diaenergie_sqli.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/scada/factorylink_csservice.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/scada/factorylink_vrn_09.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/scada/ge_proficy_cimplicity_gefebt.rb
