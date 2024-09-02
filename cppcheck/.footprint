@@ -50,10 +50,12 @@ drwxr-xr-x	root/root	usr/share/cppcheck/cfg/
 -rw-r--r--	root/root	usr/share/cppcheck/cfg/openssl.cfg
 -rw-r--r--	root/root	usr/share/cppcheck/cfg/pcre.cfg
 -rw-r--r--	root/root	usr/share/cppcheck/cfg/posix.cfg
+-rw-r--r--	root/root	usr/share/cppcheck/cfg/protobuf.cfg
 -rw-r--r--	root/root	usr/share/cppcheck/cfg/python.cfg
 -rw-r--r--	root/root	usr/share/cppcheck/cfg/qt.cfg
 -rw-r--r--	root/root	usr/share/cppcheck/cfg/ruby.cfg
 -rw-r--r--	root/root	usr/share/cppcheck/cfg/sdl.cfg
+-rw-r--r--	root/root	usr/share/cppcheck/cfg/selinux.cfg
 -rw-r--r--	root/root	usr/share/cppcheck/cfg/sfml.cfg
 -rw-r--r--	root/root	usr/share/cppcheck/cfg/sqlite3.cfg
 -rw-r--r--	root/root	usr/share/cppcheck/cfg/std.cfg
