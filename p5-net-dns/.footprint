@@ -28,6 +28,7 @@ drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.34/Net/DNS/RR/
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/Net/DNS/RR/CERT.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/Net/DNS/RR/CNAME.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/Net/DNS/RR/CSYNC.pm
+-r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/Net/DNS/RR/DELEG.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/Net/DNS/RR/DHCID.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/Net/DNS/RR/DNAME.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/Net/DNS/RR/DNSKEY.pm
@@ -117,6 +118,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -r--r--r--	root/root	usr/share/man/man3/Net::DNS::RR::CERT.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Net::DNS::RR::CNAME.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Net::DNS::RR::CSYNC.3pm.gz
+-r--r--r--	root/root	usr/share/man/man3/Net::DNS::RR::DELEG.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Net::DNS::RR::DHCID.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Net::DNS::RR::DNAME.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Net::DNS::RR::DNSKEY.3pm.gz
