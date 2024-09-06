@@ -47,6 +47,7 @@ drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.34/URI/file/
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/URI/news.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/URI/nntp.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/URI/nntps.pm
+-r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/URI/otpauth.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/URI/pop.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/URI/rlogin.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.34/URI/rsync.pm
@@ -80,3 +81,4 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -r--r--r--	root/root	usr/share/man/man3/URI::icap.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/URI::icaps.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/URI::ldap.3pm.gz
+-r--r--r--	root/root	usr/share/man/man3/URI::otpauth.3pm.gz
