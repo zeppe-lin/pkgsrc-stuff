@@ -1,6 +1,6 @@
 # Description: Graph visualization software
 # URL:         https://www.graphviz.org/
-# Depends on:  gtk libgd librsvg-compat libtool poppler
+# Depends on:  libgd librsvg-compat libtool poppler
 
 name=graphviz
 version=12.1.1
