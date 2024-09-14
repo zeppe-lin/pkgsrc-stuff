@@ -1,5 +1,8 @@
 drwxr-xr-x	root/root	opt/
 drwxr-xr-x	root/root	opt/holehe/
+-rw-r--r--	root/root	opt/holehe/README.rst
+drwxr-xr-x	root/root	opt/holehe/__pycache__/
+-rw-r--r--	root/root	opt/holehe/__pycache__/typing_extensions.cpython-39.pyc
 drwxr-xr-x	root/root	opt/holehe/anyio/
 -rw-r--r--	root/root	opt/holehe/anyio/__init__.py
 drwxr-xr-x	root/root	opt/holehe/anyio/__pycache__/
@@ -197,10 +200,12 @@ drwxr-xr-x	root/root	opt/holehe/exceptiongroup/__pycache__/
 -rw-r--r--	root/root	opt/holehe/exceptiongroup/__pycache__/_catch.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/exceptiongroup/__pycache__/_exceptions.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/exceptiongroup/__pycache__/_formatting.cpython-39.pyc
+-rw-r--r--	root/root	opt/holehe/exceptiongroup/__pycache__/_suppress.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/exceptiongroup/__pycache__/_version.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/exceptiongroup/_catch.py
 -rw-r--r--	root/root	opt/holehe/exceptiongroup/_exceptions.py
 -rw-r--r--	root/root	opt/holehe/exceptiongroup/_formatting.py
+-rw-r--r--	root/root	opt/holehe/exceptiongroup/_suppress.py
 -rw-r--r--	root/root	opt/holehe/exceptiongroup/_version.py
 -rw-r--r--	root/root	opt/holehe/exceptiongroup/py.typed (EMPTY)
 drwxr-xr-x	root/root	opt/holehe/h11/
@@ -334,7 +339,7 @@ drwxr-xr-x	root/root	opt/holehe/httpx/__pycache__/
 -rw-r--r--	root/root	opt/holehe/httpx/_multipart.py
 -rw-r--r--	root/root	opt/holehe/httpx/_status_codes.py
 drwxr-xr-x	root/root	opt/holehe/httpx/_transports/
--rw-r--r--	root/root	opt/holehe/httpx/_transports/__init__.py (EMPTY)
+-rw-r--r--	root/root	opt/holehe/httpx/_transports/__init__.py
 drwxr-xr-x	root/root	opt/holehe/httpx/_transports/__pycache__/
 -rw-r--r--	root/root	opt/holehe/httpx/_transports/__pycache__/__init__.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/httpx/_transports/__pycache__/asgi.cpython-39.pyc
@@ -389,12 +394,6 @@ drwxr-xr-x	root/root	opt/holehe/sniffio/__pycache__/
 -rw-r--r--	root/root	opt/holehe/sniffio/__pycache__/_impl.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/sniffio/__pycache__/_version.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/sniffio/_impl.py
-drwxr-xr-x	root/root	opt/holehe/sniffio/_tests/
--rw-r--r--	root/root	opt/holehe/sniffio/_tests/__init__.py (EMPTY)
-drwxr-xr-x	root/root	opt/holehe/sniffio/_tests/__pycache__/
--rw-r--r--	root/root	opt/holehe/sniffio/_tests/__pycache__/__init__.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/sniffio/_tests/__pycache__/test_sniffio.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/sniffio/_tests/test_sniffio.py
 -rw-r--r--	root/root	opt/holehe/sniffio/_version.py
 -rw-r--r--	root/root	opt/holehe/sniffio/py.typed (EMPTY)
 drwxr-xr-x	root/root	opt/holehe/sortedcontainers/
@@ -430,7 +429,9 @@ drwxr-xr-x	root/root	opt/holehe/termcolor/
 drwxr-xr-x	root/root	opt/holehe/termcolor/__pycache__/
 -rw-r--r--	root/root	opt/holehe/termcolor/__pycache__/__init__.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/termcolor/__pycache__/__main__.cpython-39.pyc
+-rw-r--r--	root/root	opt/holehe/termcolor/__pycache__/_types.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/termcolor/__pycache__/termcolor.cpython-39.pyc
+-rw-r--r--	root/root	opt/holehe/termcolor/_types.py
 -rw-r--r--	root/root	opt/holehe/termcolor/py.typed (EMPTY)
 -rw-r--r--	root/root	opt/holehe/termcolor/termcolor.py
 drwxr-xr-x	root/root	opt/holehe/tqdm/
@@ -505,8 +506,10 @@ drwxr-xr-x	root/root	opt/holehe/tqdm/contrib/__pycache__/
 -rw-r--r--	root/root	opt/holehe/tqdm/version.py
 drwxr-xr-x	root/root	opt/holehe/trio/
 -rw-r--r--	root/root	opt/holehe/trio/__init__.py
+-rw-r--r--	root/root	opt/holehe/trio/__main__.py
 drwxr-xr-x	root/root	opt/holehe/trio/__pycache__/
 -rw-r--r--	root/root	opt/holehe/trio/__pycache__/__init__.cpython-39.pyc
+-rw-r--r--	root/root	opt/holehe/trio/__pycache__/__main__.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/__pycache__/_abc.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/__pycache__/_channel.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/__pycache__/_deprecate.cpython-39.pyc
@@ -520,6 +523,7 @@ drwxr-xr-x	root/root	opt/holehe/trio/__pycache__/
 -rw-r--r--	root/root	opt/holehe/trio/__pycache__/_highlevel_socket.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/__pycache__/_highlevel_ssl_helpers.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/__pycache__/_path.cpython-39.pyc
+-rw-r--r--	root/root	opt/holehe/trio/__pycache__/_repl.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/__pycache__/_signals.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/__pycache__/_socket.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/__pycache__/_ssl.cpython-39.pyc
@@ -536,7 +540,6 @@ drwxr-xr-x	root/root	opt/holehe/trio/__pycache__/
 -rw-r--r--	root/root	opt/holehe/trio/__pycache__/from_thread.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/__pycache__/lowlevel.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/__pycache__/socket.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/__pycache__/tests.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/__pycache__/to_thread.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/_abc.py
 -rw-r--r--	root/root	opt/holehe/trio/_channel.py
@@ -545,6 +548,7 @@ drwxr-xr-x	root/root	opt/holehe/trio/_core/
 drwxr-xr-x	root/root	opt/holehe/trio/_core/__pycache__/
 -rw-r--r--	root/root	opt/holehe/trio/_core/__pycache__/__init__.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/_core/__pycache__/_asyncgens.cpython-39.pyc
+-rw-r--r--	root/root	opt/holehe/trio/_core/__pycache__/_concat_tb.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/_core/__pycache__/_entry_queue.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/_core/__pycache__/_exceptions.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/_core/__pycache__/_generated_instrumentation.cpython-39.pyc
@@ -560,7 +564,6 @@ drwxr-xr-x	root/root	opt/holehe/trio/_core/__pycache__/
 -rw-r--r--	root/root	opt/holehe/trio/_core/__pycache__/_ki.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/_core/__pycache__/_local.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/_core/__pycache__/_mock_clock.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_core/__pycache__/_multierror.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/_core/__pycache__/_parking_lot.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/_core/__pycache__/_run.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/_core/__pycache__/_thread_cache.cpython-39.pyc
@@ -569,6 +572,7 @@ drwxr-xr-x	root/root	opt/holehe/trio/_core/__pycache__/
 -rw-r--r--	root/root	opt/holehe/trio/_core/__pycache__/_wakeup_socketpair.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/_core/__pycache__/_windows_cffi.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/_core/_asyncgens.py
+-rw-r--r--	root/root	opt/holehe/trio/_core/_concat_tb.py
 -rw-r--r--	root/root	opt/holehe/trio/_core/_entry_queue.py
 -rw-r--r--	root/root	opt/holehe/trio/_core/_exceptions.py
 -rw-r--r--	root/root	opt/holehe/trio/_core/_generated_instrumentation.py
@@ -584,7 +588,6 @@ drwxr-xr-x	root/root	opt/holehe/trio/_core/__pycache__/
 -rw-r--r--	root/root	opt/holehe/trio/_core/_ki.py
 -rw-r--r--	root/root	opt/holehe/trio/_core/_local.py
 -rw-r--r--	root/root	opt/holehe/trio/_core/_mock_clock.py
--rw-r--r--	root/root	opt/holehe/trio/_core/_multierror.py
 -rw-r--r--	root/root	opt/holehe/trio/_core/_parking_lot.py
 -rw-r--r--	root/root	opt/holehe/trio/_core/_run.py
 drwxr-xr-x	root/root	opt/holehe/trio/_core/_tests/
@@ -592,13 +595,13 @@ drwxr-xr-x	root/root	opt/holehe/trio/_core/_tests/
 drwxr-xr-x	root/root	opt/holehe/trio/_core/_tests/__pycache__/
 -rw-r--r--	root/root	opt/holehe/trio/_core/_tests/__pycache__/__init__.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/_core/_tests/__pycache__/test_asyncgen.cpython-39.pyc
+-rw-r--r--	root/root	opt/holehe/trio/_core/_tests/__pycache__/test_exceptiongroup_gc.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/_core/_tests/__pycache__/test_guest_mode.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/_core/_tests/__pycache__/test_instrumentation.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/_core/_tests/__pycache__/test_io.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/_core/_tests/__pycache__/test_ki.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/_core/_tests/__pycache__/test_local.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/_core/_tests/__pycache__/test_mock_clock.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_core/_tests/__pycache__/test_multierror.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/_core/_tests/__pycache__/test_parking_lot.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/_core/_tests/__pycache__/test_run.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/_core/_tests/__pycache__/test_thread_cache.cpython-39.pyc
@@ -607,27 +610,13 @@ drwxr-xr-x	root/root	opt/holehe/trio/_core/_tests/__pycache__/
 -rw-r--r--	root/root	opt/holehe/trio/_core/_tests/__pycache__/test_windows.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/_core/_tests/__pycache__/tutil.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/_core/_tests/test_asyncgen.py
+-rw-r--r--	root/root	opt/holehe/trio/_core/_tests/test_exceptiongroup_gc.py
 -rw-r--r--	root/root	opt/holehe/trio/_core/_tests/test_guest_mode.py
 -rw-r--r--	root/root	opt/holehe/trio/_core/_tests/test_instrumentation.py
 -rw-r--r--	root/root	opt/holehe/trio/_core/_tests/test_io.py
 -rw-r--r--	root/root	opt/holehe/trio/_core/_tests/test_ki.py
 -rw-r--r--	root/root	opt/holehe/trio/_core/_tests/test_local.py
 -rw-r--r--	root/root	opt/holehe/trio/_core/_tests/test_mock_clock.py
--rw-r--r--	root/root	opt/holehe/trio/_core/_tests/test_multierror.py
-drwxr-xr-x	root/root	opt/holehe/trio/_core/_tests/test_multierror_scripts/
--rw-r--r--	root/root	opt/holehe/trio/_core/_tests/test_multierror_scripts/__init__.py
-drwxr-xr-x	root/root	opt/holehe/trio/_core/_tests/test_multierror_scripts/__pycache__/
--rw-r--r--	root/root	opt/holehe/trio/_core/_tests/test_multierror_scripts/__pycache__/__init__.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_core/_tests/test_multierror_scripts/__pycache__/_common.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_core/_tests/test_multierror_scripts/__pycache__/apport_excepthook.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_core/_tests/test_multierror_scripts/__pycache__/ipython_custom_exc.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_core/_tests/test_multierror_scripts/__pycache__/simple_excepthook.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_core/_tests/test_multierror_scripts/__pycache__/simple_excepthook_IPython.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_core/_tests/test_multierror_scripts/_common.py
--rw-r--r--	root/root	opt/holehe/trio/_core/_tests/test_multierror_scripts/apport_excepthook.py
--rw-r--r--	root/root	opt/holehe/trio/_core/_tests/test_multierror_scripts/ipython_custom_exc.py
--rw-r--r--	root/root	opt/holehe/trio/_core/_tests/test_multierror_scripts/simple_excepthook.py
--rw-r--r--	root/root	opt/holehe/trio/_core/_tests/test_multierror_scripts/simple_excepthook_IPython.py
 -rw-r--r--	root/root	opt/holehe/trio/_core/_tests/test_parking_lot.py
 -rw-r--r--	root/root	opt/holehe/trio/_core/_tests/test_run.py
 -rw-r--r--	root/root	opt/holehe/trio/_core/_tests/test_thread_cache.py
@@ -635,6 +624,12 @@ drwxr-xr-x	root/root	opt/holehe/trio/_core/_tests/test_multierror_scripts/__pyca
 -rw-r--r--	root/root	opt/holehe/trio/_core/_tests/test_unbounded_queue.py
 -rw-r--r--	root/root	opt/holehe/trio/_core/_tests/test_windows.py
 -rw-r--r--	root/root	opt/holehe/trio/_core/_tests/tutil.py
+drwxr-xr-x	root/root	opt/holehe/trio/_core/_tests/type_tests/
+drwxr-xr-x	root/root	opt/holehe/trio/_core/_tests/type_tests/__pycache__/
+-rw-r--r--	root/root	opt/holehe/trio/_core/_tests/type_tests/__pycache__/nursery_start.cpython-39.pyc
+-rw-r--r--	root/root	opt/holehe/trio/_core/_tests/type_tests/__pycache__/run.cpython-39.pyc
+-rw-r--r--	root/root	opt/holehe/trio/_core/_tests/type_tests/nursery_start.py
+-rw-r--r--	root/root	opt/holehe/trio/_core/_tests/type_tests/run.py
 -rw-r--r--	root/root	opt/holehe/trio/_core/_thread_cache.py
 -rw-r--r--	root/root	opt/holehe/trio/_core/_traps.py
 -rw-r--r--	root/root	opt/holehe/trio/_core/_unbounded_queue.py
@@ -651,6 +646,7 @@ drwxr-xr-x	root/root	opt/holehe/trio/_core/_tests/test_multierror_scripts/__pyca
 -rw-r--r--	root/root	opt/holehe/trio/_highlevel_socket.py
 -rw-r--r--	root/root	opt/holehe/trio/_highlevel_ssl_helpers.py
 -rw-r--r--	root/root	opt/holehe/trio/_path.py
+-rw-r--r--	root/root	opt/holehe/trio/_repl.py
 -rw-r--r--	root/root	opt/holehe/trio/_signals.py
 -rw-r--r--	root/root	opt/holehe/trio/_socket.py
 -rw-r--r--	root/root	opt/holehe/trio/_ssl.py
@@ -666,82 +662,6 @@ drwxr-xr-x	root/root	opt/holehe/trio/_subprocess_platform/__pycache__/
 -rw-r--r--	root/root	opt/holehe/trio/_subprocess_platform/waitid.py
 -rw-r--r--	root/root	opt/holehe/trio/_subprocess_platform/windows.py
 -rw-r--r--	root/root	opt/holehe/trio/_sync.py
-drwxr-xr-x	root/root	opt/holehe/trio/_tests/
--rw-r--r--	root/root	opt/holehe/trio/_tests/__init__.py (EMPTY)
-drwxr-xr-x	root/root	opt/holehe/trio/_tests/__pycache__/
--rw-r--r--	root/root	opt/holehe/trio/_tests/__pycache__/__init__.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/__pycache__/check_type_completeness.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/__pycache__/module_with_deprecations.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/__pycache__/pytest_plugin.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/__pycache__/test_abc.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/__pycache__/test_channel.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/__pycache__/test_contextvars.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/__pycache__/test_deprecate.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/__pycache__/test_dtls.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/__pycache__/test_exports.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/__pycache__/test_fakenet.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/__pycache__/test_file_io.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/__pycache__/test_highlevel_generic.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/__pycache__/test_highlevel_open_tcp_listeners.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/__pycache__/test_highlevel_open_tcp_stream.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/__pycache__/test_highlevel_open_unix_stream.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/__pycache__/test_highlevel_serve_listeners.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/__pycache__/test_highlevel_socket.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/__pycache__/test_highlevel_ssl_helpers.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/__pycache__/test_path.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/__pycache__/test_scheduler_determinism.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/__pycache__/test_signals.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/__pycache__/test_socket.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/__pycache__/test_ssl.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/__pycache__/test_subprocess.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/__pycache__/test_sync.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/__pycache__/test_testing.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/__pycache__/test_threads.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/__pycache__/test_timeouts.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/__pycache__/test_tracing.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/__pycache__/test_unix_pipes.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/__pycache__/test_util.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/__pycache__/test_wait_for_object.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/__pycache__/test_windows_pipes.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/check_type_completeness.py
--rw-r--r--	root/root	opt/holehe/trio/_tests/module_with_deprecations.py
--rw-r--r--	root/root	opt/holehe/trio/_tests/pytest_plugin.py
--rw-r--r--	root/root	opt/holehe/trio/_tests/test_abc.py
--rw-r--r--	root/root	opt/holehe/trio/_tests/test_channel.py
--rw-r--r--	root/root	opt/holehe/trio/_tests/test_contextvars.py
--rw-r--r--	root/root	opt/holehe/trio/_tests/test_deprecate.py
--rw-r--r--	root/root	opt/holehe/trio/_tests/test_dtls.py
--rw-r--r--	root/root	opt/holehe/trio/_tests/test_exports.py
--rw-r--r--	root/root	opt/holehe/trio/_tests/test_fakenet.py
--rw-r--r--	root/root	opt/holehe/trio/_tests/test_file_io.py
--rw-r--r--	root/root	opt/holehe/trio/_tests/test_highlevel_generic.py
--rw-r--r--	root/root	opt/holehe/trio/_tests/test_highlevel_open_tcp_listeners.py
--rw-r--r--	root/root	opt/holehe/trio/_tests/test_highlevel_open_tcp_stream.py
--rw-r--r--	root/root	opt/holehe/trio/_tests/test_highlevel_open_unix_stream.py
--rw-r--r--	root/root	opt/holehe/trio/_tests/test_highlevel_serve_listeners.py
--rw-r--r--	root/root	opt/holehe/trio/_tests/test_highlevel_socket.py
--rw-r--r--	root/root	opt/holehe/trio/_tests/test_highlevel_ssl_helpers.py
--rw-r--r--	root/root	opt/holehe/trio/_tests/test_path.py
--rw-r--r--	root/root	opt/holehe/trio/_tests/test_scheduler_determinism.py
--rw-r--r--	root/root	opt/holehe/trio/_tests/test_signals.py
--rw-r--r--	root/root	opt/holehe/trio/_tests/test_socket.py
--rw-r--r--	root/root	opt/holehe/trio/_tests/test_ssl.py
--rw-r--r--	root/root	opt/holehe/trio/_tests/test_subprocess.py
--rw-r--r--	root/root	opt/holehe/trio/_tests/test_sync.py
--rw-r--r--	root/root	opt/holehe/trio/_tests/test_testing.py
--rw-r--r--	root/root	opt/holehe/trio/_tests/test_threads.py
--rw-r--r--	root/root	opt/holehe/trio/_tests/test_timeouts.py
--rw-r--r--	root/root	opt/holehe/trio/_tests/test_tracing.py
--rw-r--r--	root/root	opt/holehe/trio/_tests/test_unix_pipes.py
--rw-r--r--	root/root	opt/holehe/trio/_tests/test_util.py
--rw-r--r--	root/root	opt/holehe/trio/_tests/test_wait_for_object.py
--rw-r--r--	root/root	opt/holehe/trio/_tests/test_windows_pipes.py
-drwxr-xr-x	root/root	opt/holehe/trio/_tests/tools/
--rw-r--r--	root/root	opt/holehe/trio/_tests/tools/__init__.py (EMPTY)
-drwxr-xr-x	root/root	opt/holehe/trio/_tests/tools/__pycache__/
--rw-r--r--	root/root	opt/holehe/trio/_tests/tools/__pycache__/__init__.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/tools/__pycache__/test_gen_exports.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/trio/_tests/tools/test_gen_exports.py
 -rw-r--r--	root/root	opt/holehe/trio/_threads.py
 -rw-r--r--	root/root	opt/holehe/trio/_timeouts.py
 drwxr-xr-x	root/root	opt/holehe/trio/_tools/
@@ -749,7 +669,9 @@ drwxr-xr-x	root/root	opt/holehe/trio/_tools/
 drwxr-xr-x	root/root	opt/holehe/trio/_tools/__pycache__/
 -rw-r--r--	root/root	opt/holehe/trio/_tools/__pycache__/__init__.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/_tools/__pycache__/gen_exports.cpython-39.pyc
+-rw-r--r--	root/root	opt/holehe/trio/_tools/__pycache__/mypy_annotate.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/_tools/gen_exports.py
+-rw-r--r--	root/root	opt/holehe/trio/_tools/mypy_annotate.py
 -rw-r--r--	root/root	opt/holehe/trio/_unix_pipes.py
 -rw-r--r--	root/root	opt/holehe/trio/_util.py
 -rw-r--r--	root/root	opt/holehe/trio/_version.py
@@ -758,6 +680,7 @@ drwxr-xr-x	root/root	opt/holehe/trio/_tools/__pycache__/
 -rw-r--r--	root/root	opt/holehe/trio/abc.py
 -rw-r--r--	root/root	opt/holehe/trio/from_thread.py
 -rw-r--r--	root/root	opt/holehe/trio/lowlevel.py
+-rw-r--r--	root/root	opt/holehe/trio/py.typed (EMPTY)
 -rw-r--r--	root/root	opt/holehe/trio/socket.py
 drwxr-xr-x	root/root	opt/holehe/trio/testing/
 -rw-r--r--	root/root	opt/holehe/trio/testing/__init__.py
@@ -768,6 +691,7 @@ drwxr-xr-x	root/root	opt/holehe/trio/testing/__pycache__/
 -rw-r--r--	root/root	opt/holehe/trio/testing/__pycache__/_fake_net.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/testing/__pycache__/_memory_streams.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/testing/__pycache__/_network.cpython-39.pyc
+-rw-r--r--	root/root	opt/holehe/trio/testing/__pycache__/_raises_group.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/testing/__pycache__/_sequencer.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/testing/__pycache__/_trio_test.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/trio/testing/_check_streams.py
@@ -775,10 +699,11 @@ drwxr-xr-x	root/root	opt/holehe/trio/testing/__pycache__/
 -rw-r--r--	root/root	opt/holehe/trio/testing/_fake_net.py
 -rw-r--r--	root/root	opt/holehe/trio/testing/_memory_streams.py
 -rw-r--r--	root/root	opt/holehe/trio/testing/_network.py
+-rw-r--r--	root/root	opt/holehe/trio/testing/_raises_group.py
 -rw-r--r--	root/root	opt/holehe/trio/testing/_sequencer.py
 -rw-r--r--	root/root	opt/holehe/trio/testing/_trio_test.py
--rw-r--r--	root/root	opt/holehe/trio/tests.py
 -rw-r--r--	root/root	opt/holehe/trio/to_thread.py
+-rw-r--r--	root/root	opt/holehe/typing_extensions.py
 drwxr-xr-x	root/root	opt/holehe/usr/
 drwxr-xr-x	root/root	opt/holehe/usr/lib/
 drwxr-xr-x	root/root	opt/holehe/usr/lib/python3.9/
@@ -971,9 +896,12 @@ drwxr-xr-x	root/root	opt/holehe/usr/lib/python3.9/site-packages/holehe/modules/l
 -rw-r--r--	root/root	opt/holehe/usr/lib/python3.9/site-packages/holehe/modules/learning/__pycache__/__init__.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/usr/lib/python3.9/site-packages/holehe/modules/learning/__pycache__/diigo.cpython-39.opt-2.pyc
 -rw-r--r--	root/root	opt/holehe/usr/lib/python3.9/site-packages/holehe/modules/learning/__pycache__/diigo.cpython-39.pyc
+-rw-r--r--	root/root	opt/holehe/usr/lib/python3.9/site-packages/holehe/modules/learning/__pycache__/duolingo.cpython-39.opt-2.pyc
+-rw-r--r--	root/root	opt/holehe/usr/lib/python3.9/site-packages/holehe/modules/learning/__pycache__/duolingo.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/usr/lib/python3.9/site-packages/holehe/modules/learning/__pycache__/quora.cpython-39.opt-2.pyc
 -rw-r--r--	root/root	opt/holehe/usr/lib/python3.9/site-packages/holehe/modules/learning/__pycache__/quora.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/usr/lib/python3.9/site-packages/holehe/modules/learning/diigo.py
+-rw-r--r--	root/root	opt/holehe/usr/lib/python3.9/site-packages/holehe/modules/learning/duolingo.py
 -rw-r--r--	root/root	opt/holehe/usr/lib/python3.9/site-packages/holehe/modules/learning/quora.py
 drwxr-xr-x	root/root	opt/holehe/usr/lib/python3.9/site-packages/holehe/modules/mails/
 -rw-r--r--	root/root	opt/holehe/usr/lib/python3.9/site-packages/holehe/modules/mails/__init__.py (EMPTY)
@@ -1181,6 +1109,8 @@ drwxr-xr-x	root/root	opt/holehe/usr/lib/python3.9/site-packages/holehe/modules/s
 -rw-r--r--	root/root	opt/holehe/usr/lib/python3.9/site-packages/holehe/modules/social_media/__pycache__/crevado.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/usr/lib/python3.9/site-packages/holehe/modules/social_media/__pycache__/discord.cpython-39.opt-2.pyc
 -rw-r--r--	root/root	opt/holehe/usr/lib/python3.9/site-packages/holehe/modules/social_media/__pycache__/discord.cpython-39.pyc
+-rw-r--r--	root/root	opt/holehe/usr/lib/python3.9/site-packages/holehe/modules/social_media/__pycache__/facebook.cpython-39.opt-2.pyc
+-rw-r--r--	root/root	opt/holehe/usr/lib/python3.9/site-packages/holehe/modules/social_media/__pycache__/facebook.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/usr/lib/python3.9/site-packages/holehe/modules/social_media/__pycache__/fanpop.cpython-39.opt-2.pyc
 -rw-r--r--	root/root	opt/holehe/usr/lib/python3.9/site-packages/holehe/modules/social_media/__pycache__/fanpop.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/usr/lib/python3.9/site-packages/holehe/modules/social_media/__pycache__/imgur.cpython-39.opt-2.pyc
@@ -1220,6 +1150,7 @@ drwxr-xr-x	root/root	opt/holehe/usr/lib/python3.9/site-packages/holehe/modules/s
 -rw-r--r--	root/root	opt/holehe/usr/lib/python3.9/site-packages/holehe/modules/social_media/bitmoji.py
 -rw-r--r--	root/root	opt/holehe/usr/lib/python3.9/site-packages/holehe/modules/social_media/crevado.py
 -rw-r--r--	root/root	opt/holehe/usr/lib/python3.9/site-packages/holehe/modules/social_media/discord.py
+-rw-r--r--	root/root	opt/holehe/usr/lib/python3.9/site-packages/holehe/modules/social_media/facebook.py
 -rw-r--r--	root/root	opt/holehe/usr/lib/python3.9/site-packages/holehe/modules/social_media/fanpop.py
 -rw-r--r--	root/root	opt/holehe/usr/lib/python3.9/site-packages/holehe/modules/social_media/imgur.py
 -rw-r--r--	root/root	opt/holehe/usr/lib/python3.9/site-packages/holehe/modules/social_media/instagram.py
