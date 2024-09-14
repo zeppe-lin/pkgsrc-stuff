@@ -9363,7 +9363,10 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/sonicwall_gms_upload.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/sonicwall_scrutinizer_methoddetail_sqli.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/sonicwall_shell_injection_cve_2023_34124.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/spip_bigup_unauth_rce.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/spip_connect_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/spip_porte_plume_previsu_rce.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/spip_rce_form.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/splunk_mappy_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/splunk_privilege_escalation_cve_2023_32707.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/splunk_upload_app_exec.rb
@@ -9799,8 +9802,6 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/unix/webapp/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/webapp/sixapart_movabletype_storable_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/webapp/skybluecanvas_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/webapp/sphpblog_file_upload.rb
--rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/webapp/spip_connect_exec.rb
--rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/webapp/spip_rce_form.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/webapp/squash_yaml_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/webapp/squirrelmail_pgp_plugin.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/webapp/sugarcrm_rest_unserialize_exec.rb
