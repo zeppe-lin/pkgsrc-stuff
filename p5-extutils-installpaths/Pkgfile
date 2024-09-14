@@ -3,7 +3,7 @@
 # Depends on:  p5-extutils-config
 
 name=p5-extutils-installpaths
-version=0.013
+version=0.014
 release=1
 source=https://www.cpan.org/modules/by-module/ExtUtils/ExtUtils-InstallPaths-$version.tar.gz
 
@@ -12,7 +12,7 @@ build() {
 
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
-	make V=1
+	make
 	make DESTDIR=$PKG install
 
 	# remove junk and empty dirs
