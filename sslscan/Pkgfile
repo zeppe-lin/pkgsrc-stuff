@@ -3,16 +3,11 @@
 # Depends on:  zlib
 
 name=sslscan
-version=2.0.16
+version=2.1.5
 release=1
 source=https://github.com/rbsec/$name/archive/$version/$name-$version.tar.gz
 
 build() {
-	cd $name-$version
-
-	install -d $PKG/usr/bin $PKG/usr/share/man/man1
-
-	make GIT_VERSION=$version static
-	make GIT_VERSION=$version DESTDIR=$PKG MANDIR=/usr/share/man \
-		install
+	make -C $name-$version GIT_VERSION=$version PREFIX=/usr static
+	make -C $name-$version GIT_VERSION=$version PREFIX=/usr DESTDIR=$PKG install
 }
