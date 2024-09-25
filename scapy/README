@@ -4,13 +4,11 @@ README scapy
 REQUIREMENTS
 ============
 
-Optional software for special features:
-
-	* py3-matplotlib         plotting support
-	* py3-pyx                PostScript and PDF graphs drawing
-	* graphviz, imagemagick  graph generation
-	* py3-cryptography       WEP, PKI and TLS support
-	* sox                    VOIP support
+py3-matplotlib:        (optional)  Plotting support.
+py3-pyx:               (optional)  PostScript and PDF graphs drawing.
+graphviz imagemagick:  (optional)  Graph generation.
+py3-cryptography:      (optional)  WEP, PKI and TLS support.
+sox:                   (optional)  VOIP support.
 
 
 End of file.
