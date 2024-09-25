@@ -3,15 +3,17 @@
 # Depends on:  curl libjpeg-turbo libpng ncurses
 
 name=jp2a
-version=1.2.0
+version=1.3.0
 release=1
 source=https://github.com/Talinx/jp2a/releases/download/v$version/jp2a-$version.tar.bz2
 
 build() {
-	# build in separate dir is broken
+	# build in separate dir is broken!
 	cd jp2a-$version
 
-	./configure \
+	# --enable-curl: use libcurl to download images from the net
+	# --enable-termlib: use term/curses for detecting terminal dimensions
+	./configure                    \
 		--prefix=/usr          \
 		--disable-doxygen-doc  \
 		--enable-curl          \
@@ -19,4 +21,7 @@ build() {
 
 	make V=1
 	make DESTDIR=$PKG install
+
+	# rm zsh completion
+	rm -r $PKG/usr/share/zsh
 }
