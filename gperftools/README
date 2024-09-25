@@ -4,8 +4,8 @@ README gperftools
 REQUIREMENTS
 ============
 
-graphviz (optional)  pprof(1) graph generation
-perl     (optional)  pprof(1) and pprof-symbolize commands
+graphviz:  (optional)  pprof(1) graph generation
+perl:      (optional)  pprof(1) and pprof-symbolize commands
 
 
 ONLINE DOCUMENTATION
