@@ -4,7 +4,7 @@ README android-sdk-build-tools-bin
 REQUIREMENTS
 ============
 
-android-ndk-bin  (optional)
+android-ndk-bin:  (optional)
 
 
 POST-INSTALL
