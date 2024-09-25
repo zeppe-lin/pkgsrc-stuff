@@ -4,8 +4,8 @@ README bully
 REQUIREMENTS
 ============
 
-* aircrack-ng
-* pixiewps
+aircrack-ng:  (optional)
+pixiewps:     (optional)  To perform Pixie Dust attack.
 
 
 End of file.
