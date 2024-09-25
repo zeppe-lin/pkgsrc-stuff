@@ -4,7 +4,7 @@ README libewf-legacy
 REQUIREMENTS
 ============
 
-* fuse (optional) to be able to use ewfmount
+fuse:  (optional)  To be able to use ewfmount(1).
 
 
 End of file.
