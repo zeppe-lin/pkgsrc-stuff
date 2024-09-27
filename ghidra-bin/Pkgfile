@@ -2,6 +2,8 @@
 # URL:         https://www.nsa.gov/ghidra
 # Depends on:  jdk17-bin
 
+# Ghidra 11.2 requires JDK 21+
+
 name=ghidra-bin
 version=11.1.2-20240709
 release=1
