@@ -4,7 +4,7 @@
 
 name=pixiewps
 version=1.4.2
-release=1
+release=2
 source=https://github.com/wiire-a/$name/archive/v$version/$name-$version.tar.gz
 
 build() {
