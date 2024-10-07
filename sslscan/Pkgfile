@@ -4,10 +4,10 @@
 
 name=sslscan
 version=2.1.5
-release=1
+release=2
 source=https://github.com/rbsec/$name/archive/$version/$name-$version.tar.gz
 
 build() {
-	make -C $name-$version GIT_VERSION=$version PREFIX=/usr static
+	make -C $name-$version GIT_VERSION=$version PREFIX=/usr
 	make -C $name-$version GIT_VERSION=$version PREFIX=/usr DESTDIR=$PKG install
 }
