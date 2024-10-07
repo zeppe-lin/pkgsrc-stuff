@@ -4,7 +4,7 @@
 
 name=metasploit
 version=6.4.28
-release=1
+release=2
 source=https://github.com/rapid7/$name-framework/archive/$version/$name-$version.tar.gz
 
 build() {
