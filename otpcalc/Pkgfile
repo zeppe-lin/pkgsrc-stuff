@@ -4,7 +4,7 @@
 
 name=otpcalc
 version=0.98
-release=1
+release=2
 source=https://gitlab.com/$name/$name/-/archive/$version/$name-$version.tar.gz
 
 build() {
