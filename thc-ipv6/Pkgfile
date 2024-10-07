@@ -4,7 +4,7 @@
 
 name=thc-ipv6
 version=3.8
-release=1
+release=2
 source="https://github.com/vanhauser-thc/$name/archive/v$version/$name-$version.tar.gz
 	src/fake_dhcps6v2.c"
 
