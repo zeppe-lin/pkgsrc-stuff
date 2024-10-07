@@ -4,7 +4,7 @@
 
 name=p5-net-ssleay
 version=1.94
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/C/CH/CHRISN/Net-SSLeay-$version.tar.gz
 
 build() {
