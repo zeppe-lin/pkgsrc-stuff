@@ -7987,6 +7987,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/misc/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/misc/cctv_dvr_login.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/misc/cisco_smart_install.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/misc/clamav_control.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/misc/cups_browsed_info_disclosure.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/misc/dahua_dvr_auth_bypass.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/misc/dvr_config_disclosure.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/misc/easycafe_server_fileaccess.rb
@@ -8591,6 +8592,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/games/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/games/ut2004_secure.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/accellion_fta_getstatus_oauth.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/acronis_cyber_infra_cve_2023_45249.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/advantech_switch_bash_env_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/airties_login_cgi_bof.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/alcatel_omnipcx_mastercgi_exec.rb
@@ -9843,6 +9845,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/unix/webapp/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/webapp/twiki_maketext.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/webapp/twiki_search.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/webapp/vbulletin_vote_sqli_exec.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/webapp/vicidial_agent_authenticated_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/webapp/vicidial_manager_send_cmd_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/webapp/vicidial_user_authorization_unauth_cmd_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/webapp/webmin_show_cgi_exec.rb
@@ -12258,6 +12261,7 @@ drwxrwxr-x	root/root	opt/metasploit/plugins/
 -rw-rw-r--	root/root	opt/metasploit/plugins/db_tracker.rb
 -rw-rw-r--	root/root	opt/metasploit/plugins/event_tester.rb
 -rw-rw-r--	root/root	opt/metasploit/plugins/ffautoregen.rb
+-rw-rw-r--	root/root	opt/metasploit/plugins/fzuse.rb
 -rw-rw-r--	root/root	opt/metasploit/plugins/ips_filter.rb
 -rw-rw-r--	root/root	opt/metasploit/plugins/lab.rb
 -rw-rw-r--	root/root	opt/metasploit/plugins/libnotify.rb
