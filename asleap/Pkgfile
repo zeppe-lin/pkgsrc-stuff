@@ -4,7 +4,7 @@
 
 name=asleap
 version=2.2
-release=1
+release=2
 source="http://www.willhackforsushi.com/code/$name/$version/$name-$version.tgz
 	000-fix-build-for-zeppe-lin.patch
 	001_add_simple_password_bruteforcing_option.patch
