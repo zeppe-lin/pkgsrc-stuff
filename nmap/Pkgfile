@@ -5,7 +5,7 @@
 name=nmap
 version=7.95
 _extra_nse=5791e6d # nmap-extra-nse commit
-release=1
+release=2
 source="https://nmap.org/dist/nmap-$version.tar.bz2
 	https://github.com/sighook/nmap-extra-nse/archive/$_extra_nse/nmap-extra-nse-$_extra_nse.tar.gz"
 
