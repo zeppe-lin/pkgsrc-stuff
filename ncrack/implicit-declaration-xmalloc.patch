@@ -1,0 +1,24 @@
+Description: define _GNU_SOURCE
+ This resolves resolve implict declaration error
+ xmalloc.c: In function ‘xasprintf’:
+ xmalloc.c:114:13: error: implicit declaration of function ‘vasprintf’; did you mean ‘xasprintf’? [-Werror=implicit-function-declaration]
+  114 |         i = vasprintf(ret, fmt, ap);
+      |             ^~~~~~~~~
+      |             xasprintf
+ _GNU_SOURCE macro enables vasprintf function declaration.
+Author: Vladimir Petko <vladimir.petko@canonical.com>
+Origin: https://github.com/nmap/ncrack/pull/136
+Bug: https://github.com/nmap/ncrack/issues/137
+Bug-Debian: https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1065799
+Last-Update: 2024-04-15
+---
+--- a/opensshlib/xmalloc.c
++++ b/opensshlib/xmalloc.c
+@@ -13,6 +13,7 @@
+  * called by a name other than "ssh" or "Secure Shell".
+  */
+ 
++#define _GNU_SOURCE
+ #include "includes.h"
+ 
+ #include <stdarg.h>

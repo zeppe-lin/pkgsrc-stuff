@@ -1,2 +1,8 @@
+ab8123b7f52fda9bbe7ffde883b7c67c  allow-zlib-versions-with-two-part-version-number.patch
+9f62173f020504eac988a28f5af12693  fix-autotools-compat.patch
+07ca8afe78471d6c6b04d1aace844b87  fix-gcc-10-build.patch
 5dad55b601497bf2be4434f56155558c  fix-spelling-errors.patch
+2a9da45f6486a9ff110112d6057f778a  implicit-declaration-in-configure.patch
+5991782af534ba755eae9dcce0fa7bba  implicit-declaration-xmalloc.patch
 a6417241c994d8687dcfef1f40ac3f34  ncrack-0.7.tar.gz
+6ebf2728f270ffe88f7b3e25773e2cca  ncrack-nullcheck.patch

@@ -4,15 +4,27 @@
 
 name=ncrack
 version=0.7
-release=1
+release=2
 source="https://nmap.org/$name/dist/$name-$version.tar.gz
-	fix-spelling-errors.patch"
+	allow-zlib-versions-with-two-part-version-number.patch
+	fix-autotools-compat.patch
+	fix-gcc-10-build.patch
+	fix-spelling-errors.patch
+	implicit-declaration-in-configure.patch
+	implicit-declaration-xmalloc.patch
+	ncrack-nullcheck.patch"
 
 build() {
 	# build in separate dir is broken
 	cd $name-$version
 
+	patch -p1 -i $SRC/fix-gcc-10-build.patch
+	patch -p1 -i $SRC/fix-autotools-compat.patch
 	patch -p1 -i $SRC/fix-spelling-errors.patch
+	patch -p1 -i $SRC/allow-zlib-versions-with-two-part-version-number.patch
+	patch -p1 -i $SRC/implicit-declaration-in-configure.patch
+	patch -p1 -i $SRC/implicit-declaration-xmalloc.patch
+	patch -p1 -i $SRC/ncrack-nullcheck.patch
 
 	export CFLAGS="$CFLAGS -fcommon"
 
