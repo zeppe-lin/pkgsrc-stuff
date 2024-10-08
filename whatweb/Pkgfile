@@ -4,11 +4,11 @@
 
 name=whatweb
 version=0.5.5-ae89986
-release=1
+release=2
 source=https://github.com/urbanadventurer/WhatWeb/archive/${version#*-}/WhatWeb-$version.tar.gz
 
 build() {
-	install -d $PKG/usr/bin $PKG/opt
+	mkdir -p $PKG/usr/bin $PKG/opt
 
 	cp -a WhatWeb-${version#*-}* $PKG/opt/$name
 
