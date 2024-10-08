@@ -4,11 +4,11 @@
 
 name=spoofcheck
 version=0.1
-release=1
+release=2
 source=https://github.com/sighook/$name/archive/$version/$name-$version.tar.gz
 
 build() {
-	install -d $PKG/usr/bin $PKG/opt
+	mkdir -p $PKG/usr/bin $PKG/opt
 
 	cp -a $name-$version $PKG/opt/$name
 	/usr/bin/pip3 install -r $PKG/opt/$name/requirements.txt \
