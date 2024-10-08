@@ -4,7 +4,7 @@
 
 name=dnsgen
 version=1.0.4-16daeef
-release=1
+release=2
 source=https://github.com/ProjectAnte/$name/archive/${version#*-}/$name-${version#*-}.tar.gz
 
 build() {
