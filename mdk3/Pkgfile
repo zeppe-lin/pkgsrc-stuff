@@ -3,10 +3,13 @@
 
 name=mdk3
 version=6-1bf2bd3
-release=1
+release=2
 source=https://github.com/charlesxsh/mdk3-master/archive/${version#*-}/mdk3-master-$version.tar.gz
 
 build() {
+	# fix build with gcc 14
+	CFLAGS="$CFLAGS -Wno-incompatible-pointer-types"
+
 	cd mdk3-master-${version#*-}*
 
 	# parallel build is broken
