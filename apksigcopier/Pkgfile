@@ -4,7 +4,7 @@
 
 name=apksigcopier
 version=1.1.1-8ba53eb
-release=1
+release=2
 source=https://github.com/obfusk/$name/archive/${version#*-}/$name-$version.tar.gz
 
 build() {
