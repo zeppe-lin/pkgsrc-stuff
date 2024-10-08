@@ -4,7 +4,7 @@
 
 name=routersploit
 version=3.4.4-d70fe7a
-release=1
+release=2
 source=https://github.com/threat9/$name/archive/${version#*-}/$name-$version.tar.gz
 
 build() {
