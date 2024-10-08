@@ -4,7 +4,7 @@
 
 name=trufflehogregexes
 version=20210616-9257f45
-release=1
+release=2
 source=https://github.com/dxa4481/truffleHogRegexes/archive/${version##*-}/truffleHogRegexes-$version.tar.gz
 
 build() {
