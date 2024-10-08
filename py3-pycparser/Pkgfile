@@ -4,7 +4,7 @@
 
 name=py3-pycparser
 version=2.22
-release=1
+release=2
 source=https://github.com/eliben/${name#*-*}/archive/release_v$version.tar.gz
 
 build() {
