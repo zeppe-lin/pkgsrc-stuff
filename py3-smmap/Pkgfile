@@ -4,7 +4,7 @@
 
 name=py3-smmap
 version=5.0.1
-release=1
+release=2
 source=https://pypi.org/packages/source/s/smmap/smmap-$version.tar.gz
 
 build() {
