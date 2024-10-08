@@ -4,10 +4,13 @@
 
 name=torsocks
 version=2.4.0
-release=1
+release=2
 source=https://gitlab.torproject.org/tpo/core/$name/-/archive/v$version/$name-v$version.tar.gz
 
 build() {
+	# fix build with gcc 14
+	CFLAGS="$CFLAGS -Wno-implicit-function-declaration"
+
 	# disable tests requiring network access
 	for test in dns fd_passing getpeername; do
 		sed -e "/^\ttest_${test} \\\\\$/d" \
