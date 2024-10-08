@@ -4,7 +4,7 @@
 
 name=arpspoof
 version=0.1.0-8359467
-release=1
+release=2
 source="https://github.com/byt3bl33d3r/$name/archive/${version#*-}/$name-$version.tar.gz
 	show-help-without-root-privs.patch"
 
