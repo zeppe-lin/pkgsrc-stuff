@@ -4,10 +4,13 @@
 
 name=pango-compat
 version=1.34.1
-release=1
+release=2
 source=https://ftp.gnome.org/pub/gnome/sources/pango/1.34/pango-$version.tar.xz
 
 build() {
+	# fix build with gcc 14
+	CFLAGS="$CFLAGS -Wno-incompatible-pointer-types"
+
 	mkdir build; cd build
 
 	../pango-$version/configure                       \
