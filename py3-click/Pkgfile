@@ -4,7 +4,7 @@
 
 name=py3-click
 version=8.1.7
-release=1
+release=2
 source=https://github.com/pallets/click/releases/download/$version/click-$version.tar.gz
 
 build() {
