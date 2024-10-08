@@ -4,7 +4,7 @@
 
 name=py3-gitpython
 version=3.1.43
-release=1
+release=2
 source=https://github.com/gitpython-developers/GitPython/archive/$version/GitPython-$version.tar.gz
 
 build() {
