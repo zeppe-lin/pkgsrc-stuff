@@ -4,10 +4,12 @@
 
 name=scapy
 version=2.6.0
-release=1
+release=2
 source=https://github.com/secdev/$name/archive/v$version/$name-$version.tar.gz
 
 build() {
+	export TMPDIR="$PKGMK_WORK_DIR"
+
 	cd $name-$version
 
 	python3 setup.py build
