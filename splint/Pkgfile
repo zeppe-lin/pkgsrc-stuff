@@ -3,10 +3,13 @@
 
 name=splint
 version=3.1.2-3fb908d
-release=1
+release=2
 source=$name-$version.tar.gz::https://repo.or.cz/splint-patched.git/snapshot/3fb908d0d8a4daa26dc770e1f2aa133f93100503.tar.gz
 
 build() {
+	# fix build with gcc 14
+	CFLAGS="$CFLAGS -Wno-incompatible-pointer-types"
+
 	cd $name-patched-${version#*-}
 
 	autoreconf -fi
