@@ -4,10 +4,13 @@
 
 name=rdesktop
 version=1.9.0
-release=1
+release=2
 source=https://github.com/rdesktop/rdesktop/archive/v${version}/rdesktop-v${version}.tar.gz
 
 build(){
+	# fix build with gcc 14
+	CFLAGS="$CFLAGS -Wno-incompatible-pointer-types"
+
 	# build in separate dir is broken
 	cd $name-$version
 
