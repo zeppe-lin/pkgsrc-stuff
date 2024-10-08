@@ -4,7 +4,7 @@
 
 name=p5-cgi
 version=4.66
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/L/LE/LEEJO/CGI-$version.tar.gz
 
 build() {
