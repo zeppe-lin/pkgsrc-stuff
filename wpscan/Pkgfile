@@ -4,7 +4,7 @@
 
 name=wpscan
 version=3.8.27
-release=1
+release=2
 source=https://github.com/wpscanteam/$name/archive/v$version/$name-$version.tar.gz
 
 build() {
