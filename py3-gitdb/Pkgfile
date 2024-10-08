@@ -4,7 +4,7 @@
 
 name=py3-gitdb
 version=4.0.11
-release=1
+release=2
 source=https://pypi.org/packages/source/g/gitdb/gitdb-$version.tar.gz
 
 build() {
