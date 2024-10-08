@@ -4,7 +4,7 @@
 
 name=sqlmap
 version=1.8.9
-release=1
+release=2
 source=https://github.com/sqlmapproject/$name/archive/$version/$name-$version.tar.gz
 
 build() {
