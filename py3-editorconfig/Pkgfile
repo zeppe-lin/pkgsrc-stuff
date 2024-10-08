@@ -4,7 +4,7 @@
 
 name=py3-editorconfig
 version=0.12.4
-release=1
+release=2
 source=https://pypi.io/packages/source/E/EditorConfig/EditorConfig-$version.tar.gz
 
 build() {
