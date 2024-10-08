@@ -4,7 +4,7 @@
 
 name=h8mail
 version=2.5.6-ee31c8f
-release=1
+release=2
 source="https://github.com/khast3x/$name/archive/${version#*-}/$name-${version#*-}.tar.gz
 	$name.sh"
 
@@ -25,5 +25,5 @@ build() {
 	install -m 0755 -D $SRC/$name.sh $PKG/usr/bin/$name
 
 	# remove junk
-	rm -r $PKG/opt/h8mail/usr/lib/python3.9/site-packages/tests/
+	rm -r $PKG/opt/h8mail/usr/lib/python*/site-packages/tests/
 }
