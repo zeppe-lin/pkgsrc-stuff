@@ -4,10 +4,13 @@
 
 name=mdk4
 version=4.2-c6a3599
-release=1
+release=2
 source=https://github.com/aircrack-ng/mdk4/archive/${version#*-}/mdk4-${version#*-}.tar.gz
 
 build() {
+	# fix build with gcc 14
+	CFLAGS="$CFLAGS -Wno-int-conversion -Wno-implicit-function-declaration -Wno-return-mismatch"
+
 	cd mdk4-${version#*-}*
 
 	# remove default debug flag
