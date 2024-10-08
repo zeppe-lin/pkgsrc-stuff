@@ -4,7 +4,7 @@
 
 name=py3-jsbeautifier
 version=1.15.1
-release=1
+release=2
 source=https://github.com/beautify-web/js-beautify/archive/v$version/js-beautify-v$version.tar.gz
 
 build() {
