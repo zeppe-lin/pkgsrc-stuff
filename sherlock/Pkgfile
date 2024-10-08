@@ -4,7 +4,7 @@
 
 name=sherlock
 version=0.14.4-0ecb496
-release=1
+release=2
 source="https://github.com/sherlock-project/$name/archive/${version#*-}/$name-$version.tar.gz
 	$name.sh
 	revdep.$name"
