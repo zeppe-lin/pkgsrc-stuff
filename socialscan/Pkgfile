@@ -4,7 +4,7 @@
 
 name=socialscan
 version=2.0.1-5ae42d0
-release=1
+release=2
 source=https://github.com/iojw/socialscan/archive/${version#*-}/$name-${version#*-}.tar.gz
 
 build() {
