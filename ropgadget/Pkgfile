@@ -4,7 +4,7 @@
 
 name=ropgadget
 version=7.5
-release=1
+release=2
 source=https://github.com/JonathanSalwan/ROPgadget/archive/v$version/ROPgadget-$version.tar.gz
 
 build() {
