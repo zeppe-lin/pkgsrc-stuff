@@ -4,7 +4,7 @@
 
 name=p5-b-cow
 version=0.007
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/A/AT/ATOOMIC/B-COW-$version.tar.gz
 
 build() {
