@@ -1,12 +1,12 @@
 # Description: Free peer-reviewed portable C++ source libraries
 # URL:         https://www.boost.org/
-# Depends on:  bzip2 zstd
-# Optional:    icu openmpi python3-numpy
+# Depends on:  bzip2 zstd python3
+# Optional:    icu openmpi py3-numpy
 
 name=boost
 version=1.84.0
 _version=$(echo $version | sed 's/\./_/g')
-release=1
+release=2
 source="https://boostorg.jfrog.io/artifactory/main/release/$version/source/${name}_$_version.tar.bz2
 	boost-ublas-c++20-iterator.patch"
 
@@ -19,7 +19,7 @@ build() {
 	# Boost.Build does not allow for disabling of numpy
 	# extensions, thereby leading to automagic numpy
 	# https://github.com/boostorg/python/issues/111#issuecomment-280447482
-	#pkgman isinst python3-numpy ||
+	#pkgman isinst py3-numpy ||
 	sed -e 's/\[ unless \[ python\.numpy \] : <build>no \]/<build>no/g' \
 	    -i libs/python/build/Jamfile
 
