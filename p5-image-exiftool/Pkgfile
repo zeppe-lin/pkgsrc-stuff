@@ -4,7 +4,7 @@
 
 name=p5-image-exiftool
 version=12.76
-release=1
+release=2
 source=https://exiftool.org/Image-ExifTool-$version.tar.gz
 
 build() {
@@ -12,7 +12,7 @@ build() {
 
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
-	make V=1
+	make
 	make DESTDIR=$PKG install
 
 	install -m 0755 -d $PKG/usr/share/$name
