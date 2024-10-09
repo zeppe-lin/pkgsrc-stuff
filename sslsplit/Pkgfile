@@ -4,10 +4,13 @@
 
 name=sslsplit
 version=0.5.5
-release=1
-source=https://github.com/droe/$name/archive/$version/$name-$version.tar.gz
+release=2
+source="https://github.com/droe/$name/archive/$version/$name-$version.tar.gz
+	https://github.com/droe/sslsplit/commit/e17de8454a65d2b9ba432856971405dfcf1e7522.patch"
 
 build() {
+	patch -d $name-$version -Np1 -i $SRC/e17de8454a65d2b9ba432856971405dfcf1e7522.patch
+
 	cd $name-$version
 
 	sed -e 's/-D_FORTIFY_SOURCE=2 //g'          \
