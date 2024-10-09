@@ -4,16 +4,15 @@
 
 name=p5-http-date
 version=6.06
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTTP-Date-$version.tar.gz
 
 build() {
 	cd HTTP-Date-$version
 
-	#finddeps-distmeta
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
-	make V=1
+	make
 	make DESTDIR=$PKG install
 
 	# remove junk and empty dirs
