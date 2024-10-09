@@ -4,7 +4,7 @@
 
 name=p5-net-http
 version=6.23
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/O/OA/OALDERS/Net-HTTP-$version.tar.gz
 
 build() {
@@ -12,7 +12,7 @@ build() {
 
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
-	make VERBOSE=1
+	make
 	make DESTDIR=$PKG install
 
 	# remove junk and empty dirs
