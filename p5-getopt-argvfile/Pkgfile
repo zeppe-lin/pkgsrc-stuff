@@ -4,7 +4,7 @@
 
 name=p5-getopt-argvfile
 version=1.11
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/J/JS/JSTENZEL/Getopt-ArgvFile-$version.tar.gz
 
 build() {
@@ -12,7 +12,7 @@ build() {
 
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
-	make OPTIMIZE="$CFLAGS"
+	make
 	make DESTDIR=$PKG install
 
         # remove junk and empty dirs
