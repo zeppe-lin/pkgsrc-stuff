@@ -4,7 +4,7 @@
 
 name=p5-encode-locale
 version=1.05
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/G/GA/GAAS/Encode-Locale-$version.tar.gz
 
 build() {
