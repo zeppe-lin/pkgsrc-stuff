@@ -4,7 +4,7 @@
 
 name=p5-http-response-encoding
 version=0.06
-release=1
+release=2
 source=https://www.cpan.org/authors/id/D/DA/DANKOGAI/HTTP-Response-Encoding-$version.tar.gz
 
 build() {
