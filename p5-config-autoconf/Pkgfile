@@ -4,7 +4,7 @@
 
 name=p5-config-autoconf
 version=0.320
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/A/AM/AMBS/Config-AutoConf-$version.tar.gz
 
 build() {
