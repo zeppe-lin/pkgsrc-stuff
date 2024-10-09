@@ -4,7 +4,7 @@
 
 name=p5-gd
 version=2.83
-release=1
+release=2
 source=http://search.cpan.org/CPAN/authors/id/R/RU/RURBAN/GD-$version.tar.gz
 
 build() {
