@@ -4,7 +4,7 @@
 
 name=p5-mozilla-ca
 version=20240924
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/L/LW/LWP/Mozilla-CA-$version.tar.gz
 
 build() {
