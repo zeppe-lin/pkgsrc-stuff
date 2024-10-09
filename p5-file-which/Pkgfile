@@ -4,7 +4,7 @@
 
 name=p5-file-which
 version=1.27
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/File-Which-$version.tar.gz
 
 build() {
