@@ -4,7 +4,7 @@
 
 name=p5-test-fork
 version=0.02
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/M/MS/MSCHWERN/Test-Fork-$version.tar.gz
 
 build() {
