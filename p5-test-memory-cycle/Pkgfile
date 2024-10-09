@@ -4,7 +4,7 @@
 
 name=p5-test-memory-cycle
 version=1.06
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/P/PE/PETDANCE/Test-Memory-Cycle-$version.tar.gz
 
 build() {
