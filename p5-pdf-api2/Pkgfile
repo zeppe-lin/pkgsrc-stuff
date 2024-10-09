@@ -4,7 +4,7 @@
 
 name=p5-pdf-api2
 version=2.047
-release=1
+release=2
 source="https://cpan.metacpan.org/authors/id/S/SS/SSIMMS/PDF-API2-$version.tar.gz
 	font-location.patch
 	reproducible-resources.patch"
