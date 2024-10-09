@@ -4,7 +4,7 @@
 
 name=p5-html-form
 version=6.11
-release=1
+release=2
 source=https://search.cpan.org/CPAN/authors/id/S/SI/SIMBABQUE/HTML-Form-$version.tar.gz
 
 build() {
