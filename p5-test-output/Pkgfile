@@ -4,13 +4,12 @@
 
 name=p5-test-output
 version=1.034
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/B/BD/BDFOY/Test-Output-$version.tar.gz
 
 build() {
 	cd Test-Output-$version
 
-	#finddeps-distmeta
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
 	make
