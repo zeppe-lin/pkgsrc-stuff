@@ -4,7 +4,7 @@
 
 name=p5-gd-text
 version=0.86
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/M/MV/MVERB/GDTextUtil-$version.tar.gz
 
 build() {
