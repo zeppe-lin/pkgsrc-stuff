@@ -4,7 +4,7 @@
 
 name=p5-string-crc32
 version=2.100
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/L/LE/LEEJO/String-CRC32-$version.tar.gz
 
 build() {
