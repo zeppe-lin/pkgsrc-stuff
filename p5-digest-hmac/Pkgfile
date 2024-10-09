@@ -4,7 +4,7 @@
 
 name=p5-digest-hmac
 version=1.04
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/A/AR/ARODLAND/Digest-HMAC-$version.tar.gz
 
 build() {
