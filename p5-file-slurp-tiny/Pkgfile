@@ -4,7 +4,7 @@
 
 name=p5-file-slurp-tiny
 version=0.004
-release=1
+release=2
 source=https://search.cpan.org/CPAN/authors/id/L/LE/LEONT/File-Slurp-Tiny-$version.tar.gz
 
 build() {
