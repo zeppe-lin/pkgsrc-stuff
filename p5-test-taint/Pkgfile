@@ -4,7 +4,7 @@
 
 name=p5-test-taint
 version=1.08
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/P/PE/PETDANCE/Test-Taint-$version.tar.gz
 
 build() {
