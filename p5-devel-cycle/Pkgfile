@@ -4,7 +4,7 @@
 
 name=p5-devel-cycle
 version=1.12
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/L/LD/LDS/Devel-Cycle-$version.tar.gz
 
 build() {
