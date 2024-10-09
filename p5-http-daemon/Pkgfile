@@ -4,7 +4,7 @@
 
 name=p5-http-daemon
 version=6.16
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTTP-Daemon-$version.tar.gz
 
 build() {
