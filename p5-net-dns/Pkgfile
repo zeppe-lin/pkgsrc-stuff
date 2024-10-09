@@ -4,7 +4,7 @@
 
 name=p5-net-dns
 version=1.47
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/N/NL/NLNETLABS/Net-DNS-$version.tar.gz
 
 build() {
