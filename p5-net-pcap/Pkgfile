@@ -3,7 +3,7 @@
 # Depends on:  libpcap perl
 
 name=p5-net-pcap
-version=0.20
+version=0.21
 release=1
 source="https://cpan.metacpan.org/authors/id/C/CO/CORION/Net-Pcap-$version.tar.gz
 	fixups.patch
