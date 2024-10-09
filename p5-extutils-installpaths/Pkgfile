@@ -4,7 +4,7 @@
 
 name=p5-extutils-installpaths
 version=0.014
-release=1
+release=2
 source=https://www.cpan.org/modules/by-module/ExtUtils/ExtUtils-InstallPaths-$version.tar.gz
 
 build() {
