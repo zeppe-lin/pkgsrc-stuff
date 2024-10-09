@@ -4,7 +4,7 @@
 
 name=p5-test-needs
 version=0.002010
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/H/HA/HAARG/Test-Needs-$version.tar.gz
 
 build() {
