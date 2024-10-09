@@ -4,7 +4,7 @@
 
 name=p5-www-mechanize
 version=2.19
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/O/OA/OALDERS/WWW-Mechanize-$version.tar.gz
 
 build() {
