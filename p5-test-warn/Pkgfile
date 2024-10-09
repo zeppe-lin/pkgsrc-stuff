@@ -4,7 +4,7 @@
 
 name=p5-test-warn
 version=0.37
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/B/BI/BIGJ/Test-Warn-$version.tar.gz
 
 build() {
