@@ -12,7 +12,7 @@
 
 name=p5-compress-raw-lzma
 version=2.213
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/P/PM/PMQS/Compress-Raw-Lzma-$version.tar.gz
 
 build() {
