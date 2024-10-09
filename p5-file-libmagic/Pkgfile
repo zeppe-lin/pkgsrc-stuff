@@ -4,13 +4,12 @@
 
 name=p5-file-libmagic
 version=1.23
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/File-LibMagic-$version.tar.gz
 
 build() {
 	cd File-LibMagic-$version
 
-	finddeps-distmeta
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
 	make OPTIMIZE="$CFLAGS"
