@@ -4,7 +4,7 @@
 
 name=p5-test-exception
 version=0.43
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/E/EX/EXODIST/Test-Exception-$version.tar.gz
 
 build() {
