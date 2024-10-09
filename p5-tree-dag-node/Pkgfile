@@ -4,7 +4,7 @@
 
 name=p5-tree-dag-node
 version=1.32
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/R/RS/RSAVAGE/Tree-DAG_Node-$version.tgz
 
 build() {
