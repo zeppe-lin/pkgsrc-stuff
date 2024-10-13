@@ -4,7 +4,7 @@
 
 name=gimp-appimage
 version=2.10.25-20210610
-release=3
+release=4
 source="https://github.com/aferrero2707/$name/releases/download/continuous/GIMP_AppImage-git-$version-withplugins-x86_64.AppImage
 	gimp.desktop
 	gimp.png"
@@ -19,5 +19,5 @@ build() {
 	ln -s /opt/gimp/gimp-$version.AppImage $PKG/usr/bin/gimp
 
 	install -m 0644 -Dt $PKG/usr/share/applications/ $SRC/gimp.desktop
-	install -m 0644 -Dt $PKG/opt/share/pixmaps/      $SRC/gimp.png
+	install -m 0644 -Dt $PKG/usr/share/pixmaps/      $SRC/gimp.png
 }
