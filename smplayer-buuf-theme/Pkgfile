@@ -1,0 +1,17 @@
+# Description: Buuf theme for SMPlayer
+# URL:         https://github.com/robson-66/Buuf-smplayer
+# Depends on:  smplayer
+
+name=smplayer-buuf-theme
+version=20221121-b1dffc9
+release=1
+source=https://github.com/robson-66/Buuf-smplayer/archive/${version#*-}/$name-$version.tar.gz
+
+build() {
+	mkdir -p $PKG/usr/share/smplayer/themes
+	mv Buuf-smplayer-* $PKG/usr/share/smplayer/themes/Buuf
+
+	# remove junk
+	rm $PKG/usr/share/smplayer/themes/Buuf/Screenshot.png
+	rm $PKG/usr/share/smplayer/themes/Buuf/README.md
+}
