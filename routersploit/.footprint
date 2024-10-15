@@ -1053,6 +1053,7 @@ drwxr-xr-x	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/ro
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/cisco/firepower_management60_path_traversal.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/cisco/firepower_management60_rce.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/cisco/ios_http_authorization_bypass.py
+-rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/cisco/rv320_command_injection.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/cisco/secure_acs_bypass.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/cisco/ucm_info_disclosure.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/cisco/ucs_manager_rce.py
@@ -1070,6 +1071,7 @@ drwxr-xr-x	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/ro
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/dlink/dir_300_645_815_upnp_rce.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/dlink/dir_645_815_rce.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/dlink/dir_645_password_disclosure.py
+-rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/dlink/dir_655_866_652_rce.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/dlink/dir_815_850l_rce.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/dlink/dir_825_path_traversal.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/dlink/dir_850l_creds_disclosure.py
@@ -1659,6 +1661,7 @@ drwxr-xr-x	root/root	opt/routersploit/build/lib/tests/exploits/routers/cisco/
 -rw-r--r--	root/root	opt/routersploit/build/lib/tests/exploits/routers/cisco/test_firepower_management60_path_traversal.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/tests/exploits/routers/cisco/test_firepower_management60_rce.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/tests/exploits/routers/cisco/test_ios_http_authorization_bypass.py
+-rw-r--r--	root/root	opt/routersploit/build/lib/tests/exploits/routers/cisco/test_rv320_command_injection.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/tests/exploits/routers/cisco/test_secure_acs_bypass.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/tests/exploits/routers/cisco/test_ucm_info_disclosure.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/tests/exploits/routers/cisco/test_ucs_manager_rce.py
@@ -1675,6 +1678,7 @@ drwxr-xr-x	root/root	opt/routersploit/build/lib/tests/exploits/routers/dlink/
 -rw-r--r--	root/root	opt/routersploit/build/lib/tests/exploits/routers/dlink/test_dir_300_645_815_upnp_rce.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/tests/exploits/routers/dlink/test_dir_645_815_rce.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/tests/exploits/routers/dlink/test_dir_645_password_disclosure.py
+-rw-r--r--	root/root	opt/routersploit/build/lib/tests/exploits/routers/dlink/test_dir_655_866_652_rce.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/tests/exploits/routers/dlink/test_dir_815_850l_rce.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/tests/exploits/routers/dlink/test_dir_825_path_traversal.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/tests/exploits/routers/dlink/test_dir_850l_creds_disclosure.py
@@ -2324,7 +2328,10 @@ drwxr-xr-x	root/root	opt/routersploit/docs/modules/exploits/routers/
 drwxr-xr-x	root/root	opt/routersploit/docs/modules/exploits/routers/asus/
 -rw-r--r--	root/root	opt/routersploit/docs/modules/exploits/routers/asus/asuswrt_lan_rce.md
 -rw-r--r--	root/root	opt/routersploit/docs/modules/exploits/routers/asus/infosvr_backdoor_rce.md
+drwxr-xr-x	root/root	opt/routersploit/docs/modules/exploits/routers/cisco/
+-rw-r--r--	root/root	opt/routersploit/docs/modules/exploits/routers/cisco/rv320_command_injection.md
 drwxr-xr-x	root/root	opt/routersploit/docs/modules/exploits/routers/dlink/
+-rw-r--r--	root/root	opt/routersploit/docs/modules/exploits/routers/dlink/dir_655_866_652_rce.md
 -rw-r--r--	root/root	opt/routersploit/docs/modules/exploits/routers/dlink/dsl_2750b_rce.md
 drwxr-xr-x	root/root	opt/routersploit/docs/modules/exploits/routers/ipfire/
 -rw-r--r--	root/root	opt/routersploit/docs/modules/exploits/routers/ipfire/ipfire_proxy_rce.md
@@ -3996,6 +4003,7 @@ drwxr-xr-x	root/root	opt/routersploit/routersploit/modules/exploits/routers/cisc
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/cisco/firepower_management60_path_traversal.py
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/cisco/firepower_management60_rce.py
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/cisco/ios_http_authorization_bypass.py
+-rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/cisco/rv320_command_injection.py
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/cisco/secure_acs_bypass.py
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/cisco/ucm_info_disclosure.py
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/cisco/ucs_manager_rce.py
@@ -4013,6 +4021,7 @@ drwxr-xr-x	root/root	opt/routersploit/routersploit/modules/exploits/routers/dlin
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/dlink/dir_300_645_815_upnp_rce.py
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/dlink/dir_645_815_rce.py
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/dlink/dir_645_password_disclosure.py
+-rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/dlink/dir_655_866_652_rce.py
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/dlink/dir_815_850l_rce.py
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/dlink/dir_825_path_traversal.py
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/dlink/dir_850l_creds_disclosure.py
@@ -4616,6 +4625,7 @@ drwxr-xr-x	root/root	opt/routersploit/tests/exploits/routers/cisco/
 -rw-r--r--	root/root	opt/routersploit/tests/exploits/routers/cisco/test_firepower_management60_path_traversal.py
 -rw-r--r--	root/root	opt/routersploit/tests/exploits/routers/cisco/test_firepower_management60_rce.py
 -rw-r--r--	root/root	opt/routersploit/tests/exploits/routers/cisco/test_ios_http_authorization_bypass.py
+-rw-r--r--	root/root	opt/routersploit/tests/exploits/routers/cisco/test_rv320_command_injection.py
 -rw-r--r--	root/root	opt/routersploit/tests/exploits/routers/cisco/test_secure_acs_bypass.py
 -rw-r--r--	root/root	opt/routersploit/tests/exploits/routers/cisco/test_ucm_info_disclosure.py
 -rw-r--r--	root/root	opt/routersploit/tests/exploits/routers/cisco/test_ucs_manager_rce.py
@@ -4632,6 +4642,7 @@ drwxr-xr-x	root/root	opt/routersploit/tests/exploits/routers/dlink/
 -rw-r--r--	root/root	opt/routersploit/tests/exploits/routers/dlink/test_dir_300_645_815_upnp_rce.py
 -rw-r--r--	root/root	opt/routersploit/tests/exploits/routers/dlink/test_dir_645_815_rce.py
 -rw-r--r--	root/root	opt/routersploit/tests/exploits/routers/dlink/test_dir_645_password_disclosure.py
+-rw-r--r--	root/root	opt/routersploit/tests/exploits/routers/dlink/test_dir_655_866_652_rce.py
 -rw-r--r--	root/root	opt/routersploit/tests/exploits/routers/dlink/test_dir_815_850l_rce.py
 -rw-r--r--	root/root	opt/routersploit/tests/exploits/routers/dlink/test_dir_825_path_traversal.py
 -rw-r--r--	root/root	opt/routersploit/tests/exploits/routers/dlink/test_dir_850l_creds_disclosure.py
