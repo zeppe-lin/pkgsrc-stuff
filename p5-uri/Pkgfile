@@ -1,5 +1,5 @@
 # Description: Perl Uniform Resource Identifiers Library
-# URL:         https://metacpan.org/release/URI
+# URL:         https://metacpan.org/pod/URI
 # Depends on:  p5-test-fatal p5-test-needs p5-test-warnings
 
 name=p5-uri
