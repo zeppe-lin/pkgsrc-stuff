@@ -3,9 +3,9 @@
 # Depends on:  p5-html-parser
 
 name=p5-html-form
-version=6.11
-release=2
-source=https://search.cpan.org/CPAN/authors/id/S/SI/SIMBABQUE/HTML-Form-$version.tar.gz
+version=6.12
+release=1
+source=https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTML-Form-$version.tar.gz
 
 build() {
 	cd HTML-Form-$version
