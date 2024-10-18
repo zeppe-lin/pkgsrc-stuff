@@ -1,0 +1,22 @@
+# Description: Simple video editor -- Legacy 2.7.6 version
+# URL:         https://sourceforge.net/projects/avidemux/
+# Depends on:  apulse
+
+name=avidemux276-appimage
+version=2.7.6
+release=1
+source="https://downloads.sourceforge.net/project/avidemux/avidemux/$version/avidemux_${version}.appImage
+	avidemux-2.7.6.desktop
+	avidemux.png
+	launcher.sh"
+
+build() {
+	mkdir -p $PKG/opt/avidemux
+
+	mv $SRC/*.appImage $PKG/opt/avidemux/avidemux-$version.AppImage
+	chmod +x $PKG/opt/avidemux/avidemux-$version.AppImage
+
+	install -m 0755 -D $SRC/launcher.sh $PKG/usr/bin/avidemux-$version
+	install -m 0644 -Dt $PKG/usr/share/applications/ $SRC/avidemux-$version.desktop
+	install -m 0644 -Dt $PKG/usr/share/pixmaps/ $SRC/avidemux.png
+}
