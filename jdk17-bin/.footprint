@@ -177,6 +177,7 @@ drwxr-xr-x	root/root	usr/lib/jdk/legal/java.desktop/
 -r--r--r--	root/root	usr/lib/jdk/legal/java.desktop/lcms.md
 -r--r--r--	root/root	usr/lib/jdk/legal/java.desktop/libpng.md
 -r--r--r--	root/root	usr/lib/jdk/legal/java.desktop/mesa3d.md
+-r--r--r--	root/root	usr/lib/jdk/legal/java.desktop/pipewire.md
 -r--r--r--	root/root	usr/lib/jdk/legal/java.desktop/xwd.md
 drwxr-xr-x	root/root	usr/lib/jdk/legal/java.instrument/
 -r--r--r--	root/root	usr/lib/jdk/legal/java.instrument/ADDITIONAL_LICENSE_INFO
