@@ -981,6 +981,7 @@ drwxr-xr-x	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/ca
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/cameras/multi/P2P_wificam_credential_disclosure.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/cameras/multi/P2P_wificam_rce.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/cameras/multi/__init__.py (EMPTY)
+-rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/cameras/multi/cctv_dvr_rce.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/cameras/multi/dvr_creds_disclosure.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/cameras/multi/jvc_vanderbilt_honeywell_path_traversal.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/cameras/multi/netwave_ip_camera_information_disclosure.py
@@ -1598,6 +1599,7 @@ drwxr-xr-x	root/root	opt/routersploit/build/lib/tests/exploits/cameras/jovision/
 -rw-r--r--	root/root	opt/routersploit/build/lib/tests/exploits/cameras/jovision/test_jovision_camera_credential_disclosure.py
 drwxr-xr-x	root/root	opt/routersploit/build/lib/tests/exploits/cameras/multi/
 -rw-r--r--	root/root	opt/routersploit/build/lib/tests/exploits/cameras/multi/__init__.py (EMPTY)
+-rw-r--r--	root/root	opt/routersploit/build/lib/tests/exploits/cameras/multi/test_cctv_dvr_rce.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/tests/exploits/cameras/multi/test_dvr_creds_disclosure.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/tests/exploits/cameras/multi/test_jvc_vanderbilt_honeywell_path_traversal.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/tests/exploits/cameras/multi/test_netwave_ip_camera_information_disclosure.py
@@ -2324,6 +2326,8 @@ drwxr-xr-x	root/root	opt/routersploit/docs/modules/exploits/
 drwxr-xr-x	root/root	opt/routersploit/docs/modules/exploits/cameras/
 drwxr-xr-x	root/root	opt/routersploit/docs/modules/exploits/cameras/jovision/
 -rw-r--r--	root/root	opt/routersploit/docs/modules/exploits/cameras/jovision/jovision_credentials_disclosure.md
+drwxr-xr-x	root/root	opt/routersploit/docs/modules/exploits/cameras/multi/
+-rw-r--r--	root/root	opt/routersploit/docs/modules/exploits/cameras/multi/cctv_dvr_rce.md
 drwxr-xr-x	root/root	opt/routersploit/docs/modules/exploits/routers/
 drwxr-xr-x	root/root	opt/routersploit/docs/modules/exploits/routers/asus/
 -rw-r--r--	root/root	opt/routersploit/docs/modules/exploits/routers/asus/asuswrt_lan_rce.md
@@ -3931,6 +3935,7 @@ drwxr-xr-x	root/root	opt/routersploit/routersploit/modules/exploits/cameras/mult
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/cameras/multi/P2P_wificam_credential_disclosure.py
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/cameras/multi/P2P_wificam_rce.py
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/cameras/multi/__init__.py (EMPTY)
+-rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/cameras/multi/cctv_dvr_rce.py
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/cameras/multi/dvr_creds_disclosure.py
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/cameras/multi/jvc_vanderbilt_honeywell_path_traversal.py
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/cameras/multi/netwave_ip_camera_information_disclosure.py
@@ -4560,6 +4565,7 @@ drwxr-xr-x	root/root	opt/routersploit/tests/exploits/cameras/jovision/
 -rw-r--r--	root/root	opt/routersploit/tests/exploits/cameras/jovision/test_jovision_camera_credential_disclosure.py
 drwxr-xr-x	root/root	opt/routersploit/tests/exploits/cameras/multi/
 -rw-r--r--	root/root	opt/routersploit/tests/exploits/cameras/multi/__init__.py (EMPTY)
+-rw-r--r--	root/root	opt/routersploit/tests/exploits/cameras/multi/test_cctv_dvr_rce.py
 -rw-r--r--	root/root	opt/routersploit/tests/exploits/cameras/multi/test_dvr_creds_disclosure.py
 -rw-r--r--	root/root	opt/routersploit/tests/exploits/cameras/multi/test_jvc_vanderbilt_honeywell_path_traversal.py
 -rw-r--r--	root/root	opt/routersploit/tests/exploits/cameras/multi/test_netwave_ip_camera_information_disclosure.py
