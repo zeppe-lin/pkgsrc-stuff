@@ -1,6 +1,6 @@
 # Description: Capture packets from wlan devices
 # URL:         https://github.com/ZerBea/hcxdumptool
-# Depends on:  openssl
+# Depends on:  libpcap
 
 name=hcxdumptool
 version=6.3.4
@@ -8,5 +8,5 @@ release=1
 source=https://github.com/ZerBea/$name/archive/$version/$name-$version.tar.gz
 
 build() {
-	make -C $name-$version BINDIR=$PKG/usr/bin install
+	make -C $name-$version PREFIX=/usr DESTDIR=$PKG install
 }
