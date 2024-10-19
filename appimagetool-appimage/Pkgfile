@@ -1,0 +1,20 @@
+# Description: Tool to generate AppImages from AppDirs
+# URL:         https://github.com/AppImage/AppImageKit
+
+name=appimagetool-appimage
+version=13
+release=1
+source=AppImageTool-$version.AppImage::https://github.com/AppImage/AppImageKit/releases/download/$version/appimagetool-x86_64.AppImage
+
+build() {
+	mkdir -p $PKG/opt/AppImageKit $PKG/usr/bin
+
+	mv *.AppImage $PKG/opt/AppImageKit/AppImageTool-$version.AppImage
+	chmod +x $PKG/opt/AppImageKit/AppImageTool-$version.AppImage
+
+	ln -s /opt/AppImageKit/AppImageTool-$version.AppImage $PKG/usr/bin/appimagetool
+
+	# useless
+	#install -m 0644 -Dt $PKG/usr/share/applications/ $SRC/AppImageExtract.desktop
+	#install -m 0644 -Dt $PKG/usr/share/pixmaps/ $SRC/AppImageExtract.png
+}

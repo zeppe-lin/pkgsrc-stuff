@@ -1,0 +1,6 @@
+drwxr-xr-x	root/root	opt/
+drwxr-xr-x	root/root	opt/AppImageKit/
+-rwxr-xr-x	root/root	opt/AppImageKit/AppImageTool-13.AppImage
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+lrwxrwxrwx	root/root	usr/bin/appimagetool -> /opt/AppImageKit/AppImageTool-13.AppImage
