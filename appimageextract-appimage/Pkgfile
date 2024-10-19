@@ -1,0 +1,23 @@
+# Description: Extract the contents of AppImage v1
+# URL:         https://github.com/AppImage/AppImageKit
+# Depends on:  fuse2
+
+name=appimageextract-appimage
+version=6
+release=1
+source="https://github.com/AppImage/AppImageKit/releases/download/$version/AppImageExtract_$version-x86_64.AppImage
+	AppRun.patch
+	AppImageExtract.desktop
+	AppImageExtract.png"
+
+build() {
+	mkdir -p $PKG/opt/AppImageKit $PKG/usr/bin
+
+	patch -i $SRC/AppRun.patch AppImageExtract_$version-x86_64.AppImage
+	mv *.AppImage $PKG/opt/AppImageKit/AppImageExtract-$version.AppImage
+	chmod +x $PKG/opt/AppImageKit/AppImageExtract-$version.AppImage
+
+	ln -s /opt/AppImageKit/AppImageExtract-$version.AppImage $PKG/usr/bin/appimageextract
+	install -m 0644 -Dt $PKG/usr/share/applications/ $SRC/AppImageExtract.desktop
+	install -m 0644 -Dt $PKG/usr/share/pixmaps/ $SRC/AppImageExtract.png
+}
