@@ -4,8 +4,9 @@
 
 name=avidemux276-appimage
 version=2.7.6
-release=1
+release=2
 source="https://downloads.sourceforge.net/project/avidemux/avidemux/$version/avidemux_${version}.appImage
+	AppRun.patch
 	avidemux-2.7.6.desktop
 	avidemux.png
 	launcher.sh"
@@ -13,6 +14,7 @@ source="https://downloads.sourceforge.net/project/avidemux/avidemux/$version/avi
 build() {
 	mkdir -p $PKG/opt/avidemux
 
+	patch -i $SRC/AppRun.patch *.appImage
 	mv $SRC/*.appImage $PKG/opt/avidemux/avidemux-$version.AppImage
 	chmod +x $PKG/opt/avidemux/avidemux-$version.AppImage
 
