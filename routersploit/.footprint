@@ -954,9 +954,15 @@ drwxr-xr-x	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/__init__.py (EMPTY)
 drwxr-xr-x	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/cameras/
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/cameras/__init__.py (EMPTY)
+drwxr-xr-x	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/cameras/acti/
+-rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/cameras/acti/__init__.py (EMPTY)
+-rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/cameras/acti/acm_5611_rce.py
 drwxr-xr-x	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/cameras/avigilon/
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/cameras/avigilon/__init__.py (EMPTY)
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/cameras/avigilon/videoiq_camera_path_traversal.py
+drwxr-xr-x	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/cameras/beward/
+-rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/cameras/beward/__init__.py (EMPTY)
+-rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/cameras/beward/n100_rce.py
 drwxr-xr-x	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/cameras/brickcom/
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/cameras/brickcom/__init__.py (EMPTY)
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/cameras/brickcom/corp_network_cameras_conf_disclosure.py
@@ -1007,6 +1013,9 @@ drwxr-xr-x	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/mi
 drwxr-xr-x	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/misc/miele/
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/misc/miele/__init__.py (EMPTY)
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/misc/miele/pg8528_path_traversal.py
+drwxr-xr-x	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/misc/watchguard/
+-rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/misc/watchguard/__init__.py (EMPTY)
+-rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/misc/watchguard/xcs_9_rce.py
 drwxr-xr-x	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/misc/wepresent/
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/misc/wepresent/__init__.py (EMPTY)
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/misc/wepresent/wipg1000_rce.py
@@ -1106,6 +1115,9 @@ drwxr-xr-x	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/ro
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/ipfire/ipfire_oinkcode_rce.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/ipfire/ipfire_proxy_rce.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/ipfire/ipfire_shellshock.py
+drwxr-xr-x	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/lg/
+-rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/lg/__init__.py (EMPTY)
+-rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/lg/nas_3718.py
 drwxr-xr-x	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/linksys/
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/linksys/1500_2500_rce.py
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/routers/linksys/__init__.py (EMPTY)
@@ -2324,10 +2336,15 @@ drwxr-xr-x	root/root	opt/routersploit/docs/modules/encoders/python/
 -rw-r--r--	root/root	opt/routersploit/docs/modules/encoders/python/hex.md
 drwxr-xr-x	root/root	opt/routersploit/docs/modules/exploits/
 drwxr-xr-x	root/root	opt/routersploit/docs/modules/exploits/cameras/
+drwxr-xr-x	root/root	opt/routersploit/docs/modules/exploits/cameras/acti/
+-rw-r--r--	root/root	opt/routersploit/docs/modules/exploits/cameras/acti/acm_5611_rce.md
 drwxr-xr-x	root/root	opt/routersploit/docs/modules/exploits/cameras/jovision/
 -rw-r--r--	root/root	opt/routersploit/docs/modules/exploits/cameras/jovision/jovision_credentials_disclosure.md
 drwxr-xr-x	root/root	opt/routersploit/docs/modules/exploits/cameras/multi/
 -rw-r--r--	root/root	opt/routersploit/docs/modules/exploits/cameras/multi/cctv_dvr_rce.md
+drwxr-xr-x	root/root	opt/routersploit/docs/modules/exploits/misc/
+drwxr-xr-x	root/root	opt/routersploit/docs/modules/exploits/misc/watchguard/
+-rw-r--r--	root/root	opt/routersploit/docs/modules/exploits/misc/watchguard/xcs_9_rce.md
 drwxr-xr-x	root/root	opt/routersploit/docs/modules/exploits/routers/
 drwxr-xr-x	root/root	opt/routersploit/docs/modules/exploits/routers/asus/
 -rw-r--r--	root/root	opt/routersploit/docs/modules/exploits/routers/asus/asuswrt_lan_rce.md
@@ -3908,9 +3925,15 @@ drwxr-xr-x	root/root	opt/routersploit/routersploit/modules/exploits/
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/__init__.py (EMPTY)
 drwxr-xr-x	root/root	opt/routersploit/routersploit/modules/exploits/cameras/
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/cameras/__init__.py (EMPTY)
+drwxr-xr-x	root/root	opt/routersploit/routersploit/modules/exploits/cameras/acti/
+-rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/cameras/acti/__init__.py (EMPTY)
+-rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/cameras/acti/acm_5611_rce.py
 drwxr-xr-x	root/root	opt/routersploit/routersploit/modules/exploits/cameras/avigilon/
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/cameras/avigilon/__init__.py (EMPTY)
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/cameras/avigilon/videoiq_camera_path_traversal.py
+drwxr-xr-x	root/root	opt/routersploit/routersploit/modules/exploits/cameras/beward/
+-rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/cameras/beward/__init__.py (EMPTY)
+-rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/cameras/beward/n100_rce.py
 drwxr-xr-x	root/root	opt/routersploit/routersploit/modules/exploits/cameras/brickcom/
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/cameras/brickcom/__init__.py (EMPTY)
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/cameras/brickcom/corp_network_cameras_conf_disclosure.py
@@ -3961,6 +3984,9 @@ drwxr-xr-x	root/root	opt/routersploit/routersploit/modules/exploits/misc/asus/
 drwxr-xr-x	root/root	opt/routersploit/routersploit/modules/exploits/misc/miele/
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/misc/miele/__init__.py (EMPTY)
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/misc/miele/pg8528_path_traversal.py
+drwxr-xr-x	root/root	opt/routersploit/routersploit/modules/exploits/misc/watchguard/
+-rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/misc/watchguard/__init__.py (EMPTY)
+-rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/misc/watchguard/xcs_9_rce.py
 drwxr-xr-x	root/root	opt/routersploit/routersploit/modules/exploits/misc/wepresent/
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/misc/wepresent/__init__.py (EMPTY)
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/misc/wepresent/wipg1000_rce.py
@@ -4060,6 +4086,9 @@ drwxr-xr-x	root/root	opt/routersploit/routersploit/modules/exploits/routers/ipfi
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/ipfire/ipfire_oinkcode_rce.py
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/ipfire/ipfire_proxy_rce.py
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/ipfire/ipfire_shellshock.py
+drwxr-xr-x	root/root	opt/routersploit/routersploit/modules/exploits/routers/lg/
+-rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/lg/__init__.py (EMPTY)
+-rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/lg/nas_3718.py
 drwxr-xr-x	root/root	opt/routersploit/routersploit/modules/exploits/routers/linksys/
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/linksys/1500_2500_rce.py
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/routers/linksys/__init__.py (EMPTY)
