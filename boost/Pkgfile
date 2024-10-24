@@ -4,17 +4,21 @@
 # Optional:    icu openmpi py3-numpy
 
 name=boost
-version=1.84.0
+version=1.86.0
 _version=$(echo $version | sed 's/\./_/g')
-release=2
+release=1
 source="https://boostorg.jfrog.io/artifactory/main/release/$version/source/${name}_$_version.tar.bz2
-	boost-ublas-c++20-iterator.patch"
+	boost-python-numpy-2.patch"
 
 build() {
 	cd ${name}_$_version
 
-	# https://github.com/boostorg/ublas/pull/97
-	patch -p2 -i $SRC/boost-ublas-c++20-iterator.patch
+	# https://github.com/boostorg/phoenix/issues/111
+	sed -e '/^\s*auto uarg/s/auto/const auto/' \
+	    -i boost/phoenix/stl/tuple.hpp
+
+	# fix build when py3-numpy is installed
+	patch -Np1 -i $SRC/boost-python-numpy-2.patch
 
 	# Boost.Build does not allow for disabling of numpy
 	# extensions, thereby leading to automagic numpy
