@@ -4,7 +4,7 @@
 
 name=linssid
 version=3.6
-release=6
+release=7
 source="https://downloads.sourceforge.net/$name/${name}_${version}.orig.tar.gz
 	$name-start.png
 	$name-pause.png
