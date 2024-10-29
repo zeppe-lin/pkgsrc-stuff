@@ -973,6 +973,9 @@ drwxr-xr-x	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/ca
 drwxr-xr-x	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/cameras/dlink/
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/cameras/dlink/__init__.py (EMPTY)
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/cameras/dlink/dcs_930l_932l_auth_bypass.py
+drwxr-xr-x	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/cameras/geuterbruck/
+-rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/cameras/geuterbruck/__init__.py (EMPTY)
+-rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/cameras/geuterbruck/efd_2250.py
 drwxr-xr-x	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/cameras/grandstream/
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/cameras/grandstream/__init__.py (EMPTY)
 -rw-r--r--	root/root	opt/routersploit/build/lib/routersploit/modules/exploits/cameras/grandstream/gxv3611hd_ip_camera_backdoor.py
@@ -2338,6 +2341,8 @@ drwxr-xr-x	root/root	opt/routersploit/docs/modules/exploits/
 drwxr-xr-x	root/root	opt/routersploit/docs/modules/exploits/cameras/
 drwxr-xr-x	root/root	opt/routersploit/docs/modules/exploits/cameras/acti/
 -rw-r--r--	root/root	opt/routersploit/docs/modules/exploits/cameras/acti/acm_5611_rce.md
+drwxr-xr-x	root/root	opt/routersploit/docs/modules/exploits/cameras/geuterbruck/
+-rw-r--r--	root/root	opt/routersploit/docs/modules/exploits/cameras/geuterbruck/efd_2250.md
 drwxr-xr-x	root/root	opt/routersploit/docs/modules/exploits/cameras/jovision/
 -rw-r--r--	root/root	opt/routersploit/docs/modules/exploits/cameras/jovision/jovision_credentials_disclosure.md
 drwxr-xr-x	root/root	opt/routersploit/docs/modules/exploits/cameras/multi/
@@ -3944,6 +3949,9 @@ drwxr-xr-x	root/root	opt/routersploit/routersploit/modules/exploits/cameras/cisc
 drwxr-xr-x	root/root	opt/routersploit/routersploit/modules/exploits/cameras/dlink/
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/cameras/dlink/__init__.py (EMPTY)
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/cameras/dlink/dcs_930l_932l_auth_bypass.py
+drwxr-xr-x	root/root	opt/routersploit/routersploit/modules/exploits/cameras/geuterbruck/
+-rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/cameras/geuterbruck/__init__.py (EMPTY)
+-rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/cameras/geuterbruck/efd_2250.py
 drwxr-xr-x	root/root	opt/routersploit/routersploit/modules/exploits/cameras/grandstream/
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/cameras/grandstream/__init__.py (EMPTY)
 -rw-r--r--	root/root	opt/routersploit/routersploit/modules/exploits/cameras/grandstream/gxv3611hd_ip_camera_backdoor.py

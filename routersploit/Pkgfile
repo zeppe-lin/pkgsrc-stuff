@@ -3,7 +3,7 @@
 # Depends on:  py3-pip
 
 name=routersploit
-version=3.4.5-fc3bc92
+version=3.4.6-a1700b6
 release=1
 source=https://github.com/threat9/$name/archive/${version#*-}/$name-$version.tar.gz
 
@@ -20,8 +20,7 @@ build() {
 	# create an indirect launcher in /usr/bin
 	cat >$PKG/usr/bin/$name <<EOF
 #!/bin/sh -e
-PYTHONPATH="/opt/routersploit" \
-python3 /opt/routersploit/rsf.py \$@
+PYTHONPATH="/opt/routersploit" python3 /opt/routersploit/rsf.py \$@
 EOF
 	chmod +x $PKG/usr/bin/$name
 
