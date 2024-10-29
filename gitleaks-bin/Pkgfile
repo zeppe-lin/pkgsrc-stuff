@@ -2,11 +2,11 @@
 # URL:         https://github.com/zricethezav/gitleaks
 
 name=gitleaks-bin
-version=8.21.1
+version=8.21.2
 release=1
 source=https://github.com/zricethezav/gitleaks/releases/download/v$version/gitleaks_${version}_linux_x64.tar.gz
 
 build() {
 	ls -la .
-	install -m 0755 -Dt $PKG/usr/bin/ gitleaks
+	install -m 0755 -Dt $PKG/usr/bin  gitleaks
 }
