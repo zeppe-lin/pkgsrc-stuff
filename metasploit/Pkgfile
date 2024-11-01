@@ -3,7 +3,7 @@
 # Depends on:  glibc-32 inetutils libpcap postgresql ruby sqlite3
 
 name=metasploit
-version=6.4.33
+version=6.4.34
 release=1
 source=https://github.com/rapid7/$name-framework/archive/$version/$name-$version.tar.gz
 
@@ -36,7 +36,7 @@ build() {
 
 	# fix perms
 	find vendor/bundle/ruby -exec chmod o+r '{}' \;
-	find vendor/bundle/ruby -exec chmod o-w '{}' \;
+	find vendor/bundle/ruby -exec chmod o-w,g-w '{}' \;
 
 	for _FILE in msf*; do
 		_MSFFILE=$PKG/usr/bin/$(basename $_FILE)
