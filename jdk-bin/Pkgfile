@@ -1,0 +1,46 @@
+# Description: Java Software Development Kit (amazon-corretto)
+# URL:         https://github.com/corretto/
+# Depends on:  alsa-lib xorg-libxrender xorg-libxtst
+
+name=jdk-bin
+version=23.0.1.8.1
+release=1
+source=https://corretto.aws/downloads/resources/$version/amazon-corretto-$version-linux-x64.tar.gz
+
+build() {
+	cd amazon-corretto-$version-linux-x64
+
+	# fix perms
+	chmod -R o-w,g-w .
+
+	# install
+	mkdir -p $PKG/usr/bin $PKG/usr/lib/jdk $PKG/usr/share
+	mv man $PKG/usr/share/
+	mv *   $PKG/usr/lib/jdk/
+
+	# symlinks
+	ln -s jdk                       $PKG/usr/lib/java
+	ln -s ../lib/jdk/bin/java       $PKG/usr/bin/java
+	ln -s ../lib/jdk/bin/javac      $PKG/usr/bin/javac
+	#ln -s ../lib/jdk/bin/javah      $PKG/usr/bin/javah
+	ln -s ../lib/jdk/bin/javap      $PKG/usr/bin/javap
+	ln -s ../lib/jdk/bin/jar        $PKG/usr/bin/jar
+	ln -s ../lib/jdk/bin/keytool    $PKG/usr/bin/keytool
+	ln -s ../lib/jdk/bin/jarsigner  $PKG/usr/bin/jarsigner
+
+	# revdep
+	mkdir -p $PKG/etc/revdep.d
+	cat >$PKG/etc/revdep.d/jdk-bin <<EOF
+/usr/lib/jdk/lib
+/usr/lib/jdk/lib/server
+EOF
+
+	# remove junk
+	find $PKG  -type f \(                     \
+		   -name ASSEMBLY_EXCEPTION       \
+		-o -name ADDITIONAL_LICENSE_INFO  \
+		-o -name LICENSE                  \
+		-o -name README.md                \
+		-o -name README.txt               \
+		\) -delete
+}
