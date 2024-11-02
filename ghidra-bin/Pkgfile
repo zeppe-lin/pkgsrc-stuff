@@ -1,11 +1,11 @@
 # Description: Software reverse engineering framework
 # URL:         https://www.nsa.gov/ghidra
-# Depends on:  jdk17-bin
+# Depends on:  jdk-bin
 
-# Ghidra 11.2 requires JDK 21+
+# ghidra 11.2 requires JDK version 21+
 
 name=ghidra-bin
-version=11.1.2-20240709
+version=11.2-20240926
 release=1
 source=https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_${version%%-*}_build/ghidra_${version%%-*}_PUBLIC_${version##*-}.zip
 
