@@ -1,6 +1,6 @@
 # Description: Forensic SQLite data recovery tool
 # URL:         https://www.staff.hs-mittweida.de/~pawlaszc/fqlite/
-# Depends on:  jdk17-bin
+# Depends on:  jdk-bin
 
 name=fqlite-bin
 version=1.5.7
@@ -10,8 +10,8 @@ source=https://www.staff.hs-mittweida.de/~pawlaszc/fqlite/downloads/fqlite_v$ver
 build() {
 	install -m 644 -D $SRC/fqlite_v$version.jar $PKG/opt/fqlite/fqlite.jar
 
-	# make wrapper
-	install -d $PKG/usr/bin
+	# launch wrapper
+	mkdir -p $PKG/usr/bin
 	cat >$PKG/usr/bin/fqlite <<EOF
 #!/bin/sh
 exec java -jar /opt/fqlite/fqlite.jar
