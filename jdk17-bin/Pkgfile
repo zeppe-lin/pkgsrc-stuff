@@ -4,7 +4,7 @@
 
 name=jdk17-bin
 version=17.0.13.11.1
-release=1
+release=2
 source=https://corretto.aws/downloads/resources/$version/amazon-corretto-$version-linux-x64.tar.gz
 
 build() {
@@ -14,29 +14,33 @@ build() {
 	chmod -R o-w,g-w .
 
 	# install
-	mkdir -p $PKG/usr/bin $PKG/usr/lib/jdk $PKG/usr/share
-	mv man $PKG/usr/share/
-	mv *   $PKG/usr/lib/jdk/
+	mkdir -p $PKG/usr/bin $PKG/usr/lib/jdk17 $PKG/usr/share
+	#mv man $PKG/usr/share/ # (conflicts with jdk-bin)
+	mv * $PKG/usr/lib/jdk17/
 
 	# symlinks
-	ln -s jdk                       $PKG/usr/lib/java
-	ln -s ../lib/jdk/bin/java       $PKG/usr/bin/java
-	ln -s ../lib/jdk/bin/javac      $PKG/usr/bin/javac
-	#ln -s ../lib/jdk/bin/javah      $PKG/usr/bin/javah
-	ln -s ../lib/jdk/bin/javap      $PKG/usr/bin/javap
-	ln -s ../lib/jdk/bin/jar        $PKG/usr/bin/jar
-	ln -s ../lib/jdk/bin/keytool    $PKG/usr/bin/keytool
-	ln -s ../lib/jdk/bin/jarsigner  $PKG/usr/bin/jarsigner
+	ln -s jdk17                       $PKG/usr/lib/java17
+	ln -s ../lib/jdk17/bin/java       $PKG/usr/bin/java17
+	ln -s ../lib/jdk17/bin/javac      $PKG/usr/bin/javac17
+	#ln -s ../lib/jdk17/bin/javah     $PKG/usr/bin/javah17
+	ln -s ../lib/jdk17/bin/javap      $PKG/usr/bin/javap17
+	ln -s ../lib/jdk17/bin/jar        $PKG/usr/bin/jar17
+	ln -s ../lib/jdk17/bin/keytool    $PKG/usr/bin/keytool17
+	ln -s ../lib/jdk17/bin/jarsigner  $PKG/usr/bin/jarsigner17
 
 	# revdep
 	mkdir -p $PKG/etc/revdep.d
 	cat > $PKG/etc/revdep.d/jdk17-bin <<EOF
-/usr/lib/jdk/lib
-/usr/lib/jdk/lib/server
+/usr/lib/jdk17/lib
+/usr/lib/jdk17/lib/server
 EOF
 
 	# remove junk
-	cd $PKG/usr/lib/jdk
-	rm ASSEMBLY_EXCEPTION ADDITIONAL_LICENSE_INFO LICENSE \
-		README.md conf/security/policy/README.txt
+	find $PKG  -type f \(                     \
+		   -name ASSEMBLY_EXCEPTION       \
+		-o -name ADDITIONAL_LICENSE_INFO  \
+		-o -name LICENSE                  \
+		-o -name README.md                \
+		-o -name README.txt               \
+		\) -delete
 }
