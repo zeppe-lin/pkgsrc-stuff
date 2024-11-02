@@ -1,6 +1,6 @@
 # Description: Standalone Java Decompiler GUI
 # URL:         https://github.com/java-decompiler/jd-gui
-# Depends on:  jdk17-bin
+# Depends on:  jdk-bin
 
 name=jd-gui-bin
 version=1.6.6
@@ -10,8 +10,8 @@ source=https://github.com/java-decompiler/jd-gui/releases/download/v$version/jd-
 build() {
 	install -m 0644 -D jd-gui-$version.jar $PKG/opt/jd-gui/jd-gui.jar
 
-	# install wrapper
-	install -d $PKG/usr/bin
+	# launch wrapper
+	mkdir -p $PKG/usr/bin
 	cat >$PKG/usr/bin/jd-gui <<EOF
 #!/bin/sh -e
 exec java -jar /opt/jd-gui/jd-gui.jar "\$@"
