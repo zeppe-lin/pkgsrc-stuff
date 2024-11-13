@@ -1,6 +1,6 @@
 # Description: Converting JPEG and PNG images to ASCII
 # URL:         https://github.com/Talinx/jp2a/
-# Depends on:  curl libexif libjpeg-turbo libwebp ncurses
+# Depends on:  curl libexif libwebp ncurses
 
 name=jp2a
 version=1.3.2
