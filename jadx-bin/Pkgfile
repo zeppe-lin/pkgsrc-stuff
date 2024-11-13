@@ -3,10 +3,11 @@
 # Depends on:  jdk-bin
 
 name=jadx-bin
-version=1.5.0
+version=1.5.1
 release=1
-source="https://github.com/skylot/jadx/releases/download/v${version}/jadx-${version}.zip
-	jadx.sh jadx-gui.sh"
+source="https://github.com/skylot/jadx/releases/download/v$version/jadx-$version.zip
+	jadx.sh
+	jadx-gui.sh"
 
 build() {
 	# remove junk
