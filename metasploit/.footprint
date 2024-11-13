@@ -2009,12 +2009,16 @@ drwxrwxr-x	root/root	opt/metasploit/data/templates/src/elf/
 drwxrwxr-x	root/root	opt/metasploit/data/templates/src/elf/dll/
 -rw-rw-r--	root/root	opt/metasploit/data/templates/src/elf/dll/elf_dll_aarch64_template.s
 -rw-rw-r--	root/root	opt/metasploit/data/templates/src/elf/dll/elf_dll_armle_template.s
+-rw-rw-r--	root/root	opt/metasploit/data/templates/src/elf/dll/elf_dll_riscv32le_template.s
+-rw-rw-r--	root/root	opt/metasploit/data/templates/src/elf/dll/elf_dll_riscv64le_template.s
 -rw-rw-r--	root/root	opt/metasploit/data/templates/src/elf/dll/elf_dll_x64_template.s
 -rw-rw-r--	root/root	opt/metasploit/data/templates/src/elf/dll/elf_dll_x86_template.s
 drwxrwxr-x	root/root	opt/metasploit/data/templates/src/elf/exe/
 -rwxrwxr-x	root/root	opt/metasploit/data/templates/src/elf/exe/elf_aarch64_template.s
 -rwxrwxr-x	root/root	opt/metasploit/data/templates/src/elf/exe/elf_armle_template.s
 -rwxrwxr-x	root/root	opt/metasploit/data/templates/src/elf/exe/elf_mipsle_template.s
+-rwxrwxr-x	root/root	opt/metasploit/data/templates/src/elf/exe/elf_riscv32le_template.s
+-rwxrwxr-x	root/root	opt/metasploit/data/templates/src/elf/exe/elf_riscv64le_template.s
 -rwxrwxr-x	root/root	opt/metasploit/data/templates/src/elf/exe/elf_x86_bsd_template.s
 -rwxrwxr-x	root/root	opt/metasploit/data/templates/src/elf/exe/elf_x86_solaris_template.s
 -rwxrwxr-x	root/root	opt/metasploit/data/templates/src/elf/exe/elf_x86_template.s
@@ -2056,6 +2060,10 @@ drwxrwxr-x	root/root	opt/metasploit/data/templates/src/pe/exe/service/
 -rw-rw-r--	root/root	opt/metasploit/data/templates/template_mipsle_linux.bin
 -rw-rw-r--	root/root	opt/metasploit/data/templates/template_nouac_windows.msi
 -rwxrwxr-x	root/root	opt/metasploit/data/templates/template_ppc_darwin.bin
+-rw-rw-r--	root/root	opt/metasploit/data/templates/template_riscv32le_linux.bin
+-rw-rw-r--	root/root	opt/metasploit/data/templates/template_riscv32le_linux_dll.bin
+-rw-rw-r--	root/root	opt/metasploit/data/templates/template_riscv64le_linux.bin
+-rw-rw-r--	root/root	opt/metasploit/data/templates/template_riscv64le_linux_dll.bin
 -rw-rw-r--	root/root	opt/metasploit/data/templates/template_windows.msi
 -rwxrwxr-x	root/root	opt/metasploit/data/templates/template_x64_bsd.bin
 -rwxrwxr-x	root/root	opt/metasploit/data/templates/template_x64_darwin.bin
@@ -5320,9 +5328,16 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/smb/relay/
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/smb/relay/ntlm/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/smb/relay/ntlm/server.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/smb/relay/ntlm/server_client.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/smb/relay/ntlm/target.rb
+drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/smb/relay/ntlm/target/
+drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/smb/relay/ntlm/target/http/
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/smb/relay/ntlm/target/http/client.rb
+drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/smb/relay/ntlm/target/smb/
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/smb/relay/ntlm/target/smb/client.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/smb/relay/provider/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/smb/relay/provider/always_grant_access.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/smb/relay/target_list.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/smb/relay_server.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/smb/server.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/smb/server/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/smb/server/hash_capture.rb
@@ -7564,6 +7579,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/gather/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/snare_registry.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/solarwinds_orion_sqli.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/solarwinds_servu_fileread_cve_2024_28995.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/solarwinds_webhelpdesk_backdoor.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/splunk_raw_server_info.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/ssllabs_scan.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/suite_crm_export_sqli.rb
@@ -7950,6 +7966,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/wp_secure_copy_content_protection_sqli.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/wp_simple_backup_file_read.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/wp_subscribe_comments_file_read.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/wp_ti_woocommerce_wishlist_sqli.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/wp_total_upkeep_downloader.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/wp_ultimate_member_sorting_sqli.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/wp_woocommerce_payments_add_user.rb
@@ -8364,6 +8381,8 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/server/dns/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/server/openssl_heartbeat_client_memory.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/server/pxeexploit.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/server/regsvr32_command_delivery_server.rb
+drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/server/relay/
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/server/relay/esc8.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/server/socks_proxy.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/server/socks_unc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/server/teamviewer_uri_smb_redirect.rb
@@ -11165,6 +11184,10 @@ drwxrwxr-x	root/root	opt/metasploit/modules/nops/php/
 -rw-rw-r--	root/root	opt/metasploit/modules/nops/php/generic.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/nops/ppc/
 -rw-rw-r--	root/root	opt/metasploit/modules/nops/ppc/simple.rb
+drwxrwxr-x	root/root	opt/metasploit/modules/nops/riscv32le/
+-rw-rw-r--	root/root	opt/metasploit/modules/nops/riscv32le/simple.rb
+drwxrwxr-x	root/root	opt/metasploit/modules/nops/riscv64le/
+-rw-rw-r--	root/root	opt/metasploit/modules/nops/riscv64le/simple.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/nops/sparc/
 -rw-rw-r--	root/root	opt/metasploit/modules/nops/sparc/random.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/nops/tty/
@@ -11407,6 +11430,12 @@ drwxrwxr-x	root/root	opt/metasploit/modules/payloads/singles/linux/ppce500v2/
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/linux/ppce500v2/meterpreter_reverse_http.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/linux/ppce500v2/meterpreter_reverse_https.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/linux/ppce500v2/meterpreter_reverse_tcp.rb
+drwxrwxr-x	root/root	opt/metasploit/modules/payloads/singles/linux/riscv32le/
+-rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/linux/riscv32le/exec.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/linux/riscv32le/reboot.rb
+drwxrwxr-x	root/root	opt/metasploit/modules/payloads/singles/linux/riscv64le/
+-rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/linux/riscv64le/exec.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/linux/riscv64le/reboot.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/payloads/singles/linux/x64/
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/linux/x64/exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/linux/x64/meterpreter_reverse_http.rb
@@ -11490,6 +11519,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/payloads/singles/php/
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/php/reverse_php.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/php/shell_findsock.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/payloads/singles/python/
+-rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/python/exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/python/meterpreter_bind_tcp.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/python/meterpreter_reverse_http.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/python/meterpreter_reverse_https.rb
@@ -13590,67 +13620,36 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/ascii85
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/ascii85.lock (EMPTY)
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/bootsnap
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/bootsnap.lock (EMPTY)
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/faker
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/faker.lock (EMPTY)
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/httpclient
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/httpclient.lock (EMPTY)
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/irb
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/irb.lock (EMPTY)
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/jmespath.rb
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/jmespath.rb.lock (EMPTY)
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/jsobfu
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/jsobfu.lock (EMPTY)
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/list_interfaces.rb
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/list_interfaces.rb.lock (EMPTY)
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/mkunixcrypt
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/mkunixcrypt.lock (EMPTY)
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/msfbinscan
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/msfbinscan.lock (EMPTY)
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/msfelfscan
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/msfelfscan.lock (EMPTY)
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/msfmachscan
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/msfmachscan.lock (EMPTY)
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/msfpescan
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/msfpescan.lock (EMPTY)
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/msfrop
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/msfrop.lock (EMPTY)
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/msu_finder
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/msu_finder.lock (EMPTY)
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/nokogiri
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/nokogiri.lock (EMPTY)
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/pdf_callbacks
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/pdf_callbacks.lock (EMPTY)
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/pdf_object
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/pdf_object.lock (EMPTY)
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/pdf_text
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/pdf_text.lock (EMPTY)
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/puma
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/puma.lock (EMPTY)
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/pumactl
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/pumactl.lock (EMPTY)
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/racc
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/racc.lock (EMPTY)
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/rackup
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/rackup.lock (EMPTY)
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/rails
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/rails.lock (EMPTY)
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/rake
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/rake.lock (EMPTY)
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/recog_match
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/recog_match.lock (EMPTY)
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/redcarpet
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/redcarpet.lock (EMPTY)
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/rwinrm
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/rwinrm.lock (EMPTY)
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/thin
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/thin.lock (EMPTY)
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/thor
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/thor.lock (EMPTY)
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/tilt
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/bin/tilt.lock (EMPTY)
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/build_info/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/build_info/nokogiri-1.16.7-x86_64-linux.info
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/
