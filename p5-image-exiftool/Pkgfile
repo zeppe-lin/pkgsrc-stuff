@@ -3,8 +3,8 @@
 # Depends on:  perl
 
 name=p5-image-exiftool
-version=12.76
-release=2
+version=13.00
+release=1
 source=https://exiftool.org/Image-ExifTool-$version.tar.gz
 
 build() {
