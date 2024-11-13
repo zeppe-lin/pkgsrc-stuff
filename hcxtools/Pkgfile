@@ -3,7 +3,7 @@
 # Depends on:  curl
 
 name=hcxtools
-version=6.3.4
+version=6.3.5
 release=1
 source=https://github.com/ZerBea/$name/archive/$version/$name-$version.tar.gz
 
