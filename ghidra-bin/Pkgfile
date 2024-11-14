@@ -5,7 +5,7 @@
 # ghidra 11.2 requires JDK version 21+
 
 name=ghidra-bin
-version=11.2-20240926
+version=11.2.1-20241105
 release=1
 source=https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_${version%%-*}_build/ghidra_${version%%-*}_PUBLIC_${version##*-}.zip
 
@@ -16,6 +16,10 @@ build() {
 
 	ln -s /opt/ghidra/ghidraRun               $PKG/usr/bin/ghidra
 	ln -s /opt/ghidra/support/analyzeHeadless $PKG/usr/bin/ghidra-headless
+
+	# fix dir perms
+	find $PKG -type d -not -perm 0755 -exec chmod 0755 {} \;
+	chmod 0644 $PKG/opt/ghidra/Ghidra/.dbDirLock
 
 	# remove junk
 	rm -r $PKG/opt/ghidra/licenses
