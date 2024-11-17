@@ -8809,6 +8809,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/opentsdb_yrange_cmd_injection.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/optergy_bms_backdoor_rce_cve_2019_7276.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/oracle_ebs_rce_cve_2022_21587.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/paloalto_expedition_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/pandora_fms_events_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/pandora_fms_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/pandora_fms_sqli.rb
