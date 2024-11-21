@@ -32,7 +32,7 @@ IDs to udev rules.
 
 3. Change file permissions and reload udev rules:
 
-    ```
+    ```sh
     sudo chmod a+r /etc/udev/rules.d/99-ttyacms.rules
     sudo udevadm control --reload-rules
     ```
