@@ -3,31 +3,38 @@
 # Depends on:  capstone file xxhash
 
 name=radare2
-version=5.9.6
+version=5.9.8
 release=1
 source=https://github.com/radare/$name/archive/$version/$name-$version.tar.gz
 
 build() {
-	# build in separate dir is broken!
-	cd $name-$version
+	meson setup build $name-$version  \
+		--prefix=/usr             \
+		--buildtype=plain         \
+		--wrap-mode=nodownload    \
+		-D b_lto=true             \
+		-D b_pie=true             \
+		-D use_sys_capstone=true  \
+		-D use_sys_magic=true     \
+		-D use_sys_zip=true       \
+		-D use_sys_zlib=true      \
+		-D use_sys_lz4=true       \
+		-D use_sys_xxhash=true    \
+		-D use_sys_openssl=true   \
+		-D use_libuv=true         \
+		-D use_webui=true         \
+		-D enable_tests=false     \
 
-	./configure                 \
-		--prefix=/usr       \
-		--with-sysmagic     \
-		--with-syscapstone  \
-		--with-syszip       \
-		--with-sysxxhash    \
-
-	make V=1
-	make DESTDIR=$PKG install
+	ninja -C build -j ${JOBS:-1} -v
+	DESTDIR=$PKG ninja -C build install
 
 	# bash-completion
-	install -m 0644 -D doc/bash_autocompletion.sh \
+	install -m 0644 -D $name-$version/doc/bash_autocompletion.sh \
 		$PKG/usr/share/bash-completion/completions/$name
 	for n in r2 rasm2 rabin2 rafind2 radiff2; do
 		ln -s $name $PKG/usr/share/bash-completion/completions/$n
 	done
 
-	# remove junk
-	rm -r $PKG/usr/share/doc/
+	# remove junk & zsh completion
+	rm -r $PKG/usr/share/doc $PKG/usr/share/zsh
 }
