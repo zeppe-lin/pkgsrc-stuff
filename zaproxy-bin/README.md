@@ -7,7 +7,9 @@ LOOK AND FEEL
 =============
 
 To find out how to setup font settings and GTK+ appearance, see the README of
-`jdk17-bin` package.
+`jdk-bin` package:
+
+    pkgman readme zaproxy-bin
 
 
 RUN AS DIFFERENT USER
@@ -63,15 +65,19 @@ Adjust pem to OWASP ZAP' compatibility:
 
 Next, import domain.pem into browser:
 
-- In case of Palemoon:
+* In case of Palemoon:
 
-    Tools -> Preferences -> Advanced -> Certificates
-          -> View Certificates -> Import
+    ```
+    Tools -> Preferences
+    Advanced -> Certificates -> View Certificates -> Import
+    ```
 
-- In case of Firefox:
+* In case of Firefox:
 
-    Settings -> Preferences -> Privacy & Security -> Security
-        -> View Certificates -> Import
+    ```
+    (Edit) -> Settings -> Privacy & Security
+    Security -> View Certificates -> Import
+    ```
 
 And import domain.pem into zaproxy:
 
