@@ -18,7 +18,7 @@ Add a new user and allow to make connections to the X server:
     # useradd -G audio,video -U -m zaproxy
     $ xhost +SI:localuser:zaproxy
 
-If you wish to customize user's gtk themes, see README files of `gtk` and
+If you wish to customize user's GTK+ themes, see README files of `gtk` and
 `gtk3` packages.
 
 Use the following wrapper as zaproxy launcher:
