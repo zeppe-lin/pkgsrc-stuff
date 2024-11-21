@@ -1,6 +1,6 @@
 # Description: Framework for reversing binaries
 # URL:         https://radare.org/
-# Depends on:  capstone file xxhash
+# Depends on:  capstone file libuv xxhash
 
 name=radare2
 version=5.9.8
