@@ -4,3 +4,4 @@ httpx
 trio
 tqdm
 colorama
+requests

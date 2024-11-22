@@ -4,7 +4,7 @@
 
 name=holehe
 version=1.61-14da70f
-release=2
+release=3
 source="https://github.com/megadose/$name/archive/${version#*-}/$name-$version.tar.gz
 	holehe.sh requirements.txt adjust4zpln.patch"
 
