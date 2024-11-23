@@ -1,10 +1,10 @@
-# Description: OTP and S/Key calculator for X
+# Description: OTP (One Time Password) and S/Key calculator for GTK+
 # URL:         http://www.killa.net/infosec/otpCalc/
 # Depends on:  gtk3
 
 name=otpcalc
-version=0.98
-release=2
+version=0.98.1
+release=1
 source=https://gitlab.com/$name/$name/-/archive/$version/$name-$version.tar.gz
 
 build() {
