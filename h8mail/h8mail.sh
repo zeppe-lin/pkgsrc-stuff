@@ -1,11 +1,8 @@
 #!/bin/sh
 # h8mail wrapper
 
-_CPATH=/opt/h8mail
-_PYVER=$(python3 -V | grep -Po '\d\.\d')
-export PATH=$PATH:$_CPATH/bin
-export PYTHONPATH=$_CPATH:$_CPATH/usr/lib/python$_PYVER/site-packages
-
-python3 /opt/h8mail/usr/bin/h8mail $@
+export PATH=$PATH:/opt/h8mail/bin:/opt/h8mail/usr/bin
+export PYTHONPATH=/opt/h8mail/bin:/opt/h8mail/usr/bin:/opt/h8mail:/opt/h8mail$(python3 -c 'import site; print(site.getsitepackages()[0])')
+python3 /opt/h8mail/usr/bin/h8mail "$@"
 
 # End of file.
