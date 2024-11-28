@@ -5092,6 +5092,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/dns/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/ftp_server.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/gdb.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/acronis_cyber.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/apache_solr.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/atlassian/
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/atlassian/confluence/
@@ -6746,6 +6747,8 @@ drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/ldap/auth_adapter/rex_ntlm/
 -rwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/ldap/dn_binary.rb
 -rwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/ldap/ldap_exception.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/ldap/server.rb
+drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/mdns/
+-rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/mdns/server.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/mms/
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/mms/client.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/mms/exception.rb
@@ -7456,6 +7459,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/fuzzers/tds/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/fuzzers/tds/tds_login_corrupt.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/fuzzers/tds/tds_login_username.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/gather/
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/acronis_cyber_protect_machine_info_disclosure.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/adobe_coldfusion_fileread_cve_2023_26360.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/advantech_webaccess_creds.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/alienvault_iso27001_sqli.rb
@@ -7909,6 +7913,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/springcloud_traversal.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/squid_pivot_scanning.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/squiz_matrix_user_enum.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/strapi_3_password_reset.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/support_center_plus_directory_traversal.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/surgenews_user_creds.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/svn_scanner.rb
@@ -8840,6 +8845,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/piranha_passwd_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/progress_flowmon_unauth_cmd_injection.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/progress_kemp_loadmaster_unauth_cmd_injection.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/projectsend_unauth_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/pulse_secure_cmd_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/pulse_secure_gzip_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/pyload_js2py_cve_2024_39205.rb
@@ -9541,6 +9547,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/misc/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/misc/claymore_dual_miner_remote_manager_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/misc/consul_rexec_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/misc/consul_service_exec.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/misc/cups_ipp_remote_code_execution.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/misc/erlang_cookie_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/misc/freeswitch_event_socket_cmd_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/misc/hp_data_protector_exec_integutil.rb
