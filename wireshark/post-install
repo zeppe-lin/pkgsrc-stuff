@@ -1,0 +1,9 @@
+#!/bin/sh -ex
+
+export PATH="/sbin:/usr/sbin:/bin:/usr/bin"
+
+gtk-update-icon-cache -f -t -q /usr/share/icons/hicolor
+update-mime-database /usr/share/mime
+update-desktop-database -q
+
+# End of file.

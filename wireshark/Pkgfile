@@ -1,13 +1,30 @@
 # Description: Network Sniffer
 # URL:         https://www.wireshark.org/
-# Depends on:  asciidoctor c-ares gnutls hicolor-icon-theme libcap libgcrypt libnl libpcap libssh qt5
+# Depends on:  asciidoctor c-ares gnutls hicolor-icon-theme libcap libgcrypt libnl libpcap libssh qt5 speexdsp
 
 name=wireshark
-version=4.0.17
+version=4.4.2
 release=1
 source=https://github.com/$name/$name/archive/v$version/$name-$version.tar.gz
 
 build() {
+	if pkgman isinst ccache; then
+		PKGMK_WIRESHARK="$PKGMK_WIRESHARK -D ENABLE_CCACHE=ON"
+		PATH="$(echo $PATH | awk -v RS=: -v ORS=: '/ccache/ {next} {print}' | sed 's/:*$//')"
+	fi
+
+	#if pkgman isinst gnutls; then
+	#	PKGMK_WIRESHARK="$PKGMK_WIRESHARK -D ENABLE_GNUTLS=ON"
+	#fi
+
+	#if pkgman isinst sbc; then
+	#	PKGMK_WIRESHARK="$PKGMK_WIRESHARK -D ENABLE_SBC=ON"
+	#fi
+
+	#if pkgman isinst opus; then
+	#	PKGMK_WIRESHARK="$PKGMK_WIRESHARK -D ENABLE_OPUS=ON"
+	#fi
+
 	cmake -S $name-$version -B build -G Ninja       \
 		-D CMAKE_INSTALL_PREFIX=/usr            \
 		-D CMAKE_INSTALL_LIBDIR=lib             \
@@ -16,18 +33,22 @@ build() {
 		-D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS"  \
 		-D ENABLE_OPUS=OFF                      \
 		-D ENABLE_SBC=OFF                       \
+		-D ENABLE_KERBEROS=OFF                  \
 		-D USE_qt6=OFF                          \
+		$PKGMK_WIRESHARK                        \
 
 	ninja -C build -j ${JOBS:-1} -v
 	DESTDIR=$PKG ninja -C build install
 
 	chmod 4755 $PKG/usr/bin/dumpcap
 
-	# remove i18n entries from desktop file
+	# Remove i18n entries from desktop file.
 	sed -ri '/\[.+\]=/d' $PKG/usr/share/applications/*.desktop
 
-	# Don't remove these files, they are read by wireshark's about
-	# box.
+	# Don't remove these files, they are read by wireshark's about box.
 	#rm -f $PKG/usr/share/$name/AUTHORS-SHORT
 	#rm -f $PKG/usr/share/$name/COPYING
+
+	# These files are used by Help menu.
+	#rm -r $PKG/usr/share/doc
 }
