@@ -3,7 +3,7 @@
 # Depends on:  lzo util-linux
 
 name=btrfs-progs
-version=6.11
+version=6.12
 release=1
 source=https://www.kernel.org/pub/linux/kernel/people/kdave/$name/$name-v$version.tar.xz
 
@@ -26,6 +26,6 @@ build() {
 	install -m 0644 -D btrfs-completion \
 		$PKG/usr/share/bash-completion/completions/btrfs
 
-	install -m 0644 -Dt $PKG/usr/share/man/man5/ Documentation/*.5
-	install -m 0644 -Dt $PKG/usr/share/man/man8/ Documentation/*.8
+	install -m 0644 -Dt $PKG/usr/share/man/man5 Documentation/*.5
+	install -m 0644 -Dt $PKG/usr/share/man/man8 Documentation/*.8
 }
