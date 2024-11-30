@@ -1,0 +1,20 @@
+# Description: DSP library derived from Speex
+# URL:         https://www.speex.org/
+
+name=speexdsp
+version=1.2.1
+release=1
+source=https://downloads.us.xiph.org/releases/speex/$name-$version.tar.gz
+
+build() {
+	mkdir build; cd build
+
+	../$name-$version/configure  \
+		--prefix=/usr        \
+
+	# skip installing manual.pdf
+	sed -i '/^SUBDIRS *=/s| doc | |' Makefile
+
+	make V=1
+	make DESTDIR=$PKG install
+}
