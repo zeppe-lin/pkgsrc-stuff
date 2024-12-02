@@ -1,6 +1,6 @@
 # Description: Test SSL/TLS enabled services to discover supported cipher suites
 # URL:         https://github.com/rbsec/sslscan
-# Depends on:  zlib
+# Depends on:  openssl zlib
 
 name=sslscan
 version=2.1.6
