@@ -192,6 +192,7 @@ drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/Lang/
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/Photoshop.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/PostScript.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/PrintIM.pm
+-r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/Protobuf.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/Qualcomm.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/QuickTime.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/QuickTimeStream.pl
@@ -395,6 +396,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::Photoshop.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::PostScript.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::PrintIM.3pm.gz
+-r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::Protobuf.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::Qualcomm.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::QuickTime.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::QuickTimeStream.3pm.gz
