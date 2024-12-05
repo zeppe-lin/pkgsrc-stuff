@@ -842,6 +842,8 @@ drwxrwxr-x	root/root	opt/metasploit/data/exploits/CVE-2024-29510/
 -rw-rw-r--	root/root	opt/metasploit/data/exploits/CVE-2024-29510/ghostscript_format_string.eps
 drwxrwxr-x	root/root	opt/metasploit/data/exploits/CVE-2024-30088/
 -rw-rw-r--	root/root	opt/metasploit/data/exploits/CVE-2024-30088/CVE-2024-30088.x64.dll
+drwxrwxr-x	root/root	opt/metasploit/data/exploits/CVE-2024-35250/
+-rw-rw-r--	root/root	opt/metasploit/data/exploits/CVE-2024-35250/CVE-2024-35250.x64.dll
 -rwxrwxr-x	root/root	opt/metasploit/data/exploits/QTJavaExploit.class
 drwxrwxr-x	root/root	opt/metasploit/data/exploits/R7_2015_17/
 -rw-rw-r--	root/root	opt/metasploit/data/exploits/R7_2015_17/stream.raw
@@ -3174,6 +3176,12 @@ drwxrwxr-x	root/root	opt/metasploit/external/source/exploits/CVE-2024-30088/CVE-
 -rwxrwxr-x	root/root	opt/metasploit/external/source/exploits/CVE-2024-30088/CVE-2024-30088/dllmain.c
 -rwxrwxr-x	root/root	opt/metasploit/external/source/exploits/CVE-2024-30088/CVE-2024-30088/exploit.c
 -rwxrwxr-x	root/root	opt/metasploit/external/source/exploits/CVE-2024-30088/CVE-2024-30088/exploit.h
+drwxrwxr-x	root/root	opt/metasploit/external/source/exploits/CVE-2024-35250/
+-rw-rw-r--	root/root	opt/metasploit/external/source/exploits/CVE-2024-35250/CVE-2024-35250.sln
+-rw-rw-r--	root/root	opt/metasploit/external/source/exploits/CVE-2024-35250/CVE-2024-35250.vcxproj
+-rw-rw-r--	root/root	opt/metasploit/external/source/exploits/CVE-2024-35250/dllmain.c
+-rw-rw-r--	root/root	opt/metasploit/external/source/exploits/CVE-2024-35250/exploit.cpp
+-rw-rw-r--	root/root	opt/metasploit/external/source/exploits/CVE-2024-35250/exploit.h
 drwxrwxr-x	root/root	opt/metasploit/external/source/exploits/IE11SandboxEscapes/
 drwxrwxr-x	root/root	opt/metasploit/external/source/exploits/IE11SandboxEscapes/CVE-2013-5045/
 -rwxrwxr-x	root/root	opt/metasploit/external/source/exploits/IE11SandboxEscapes/CVE-2013-5045/CVE-2013-5045.cpp
@@ -5064,6 +5072,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/powershell/
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/afp.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/arkeia.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/asterisk.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/auth_option.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/auto_check.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/browser_autopwn.rb
@@ -5369,6 +5378,11 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/ssh/auth_methods
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/wdbrpc_client.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/web.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/winrm.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/x11.rb
+drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/x11/
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/x11/connect.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/x11/extension.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/x11/read.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/zeromq.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/retry.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/riff.rb
@@ -6875,6 +6889,14 @@ drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/tftp/
 drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/thrift/
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/thrift/client.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/thrift/error.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/x11.rb
+drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/x11/
+-rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/x11/connect.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/x11/extension.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/x11/extensions.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/x11/keysymdef.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/x11/window.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/x11/xkeyboard.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/x509/
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/x509/request.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/script.rb
@@ -7083,6 +7105,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/admin/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/http/wp_gdpr_compliance_privesc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/http/wp_google_maps_sqli.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/http/wp_masterstudy_privesc.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/http/wp_post_smtp_acct_takeover.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/http/wp_symposium_sql_injection.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/http/wp_wplms_privilege_escalation.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/http/zyxel_admin_password_extractor.rb
@@ -7609,6 +7632,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/gather/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/wp_bookingpress_category_services_sqli.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/wp_ultimate_csv_importer_user_extract.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/wp_w3_total_cache_hash_extract.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/x11_keyboard_spy.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/xbmc_traversal.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/xerox_pwd_extract.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/xerox_workcentre_5xxx_ldap.rb
@@ -8667,6 +8691,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/centreon_sqli_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/centreon_useralias_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/cfme_manageiq_evm_upload_exec.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/chamilo_bigupload_webshell.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/chamilo_unauth_rce_cve_2023_34960.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/chaos_rat_xss_to_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/cisco_asax_sfr_rce.rb
@@ -8757,6 +8782,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/ipfire_proxy_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/ivanti_connect_secure_rce_cve_2023_46805.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/ivanti_connect_secure_rce_cve_2024_21893.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/ivanti_connect_secure_rce_cve_2024_37404.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/ivanti_csa_unauth_rce_cve_2021_44529.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/ivanti_sentry_misc_log_service.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/jenkins_cli_deserialization.rb
@@ -9028,6 +9054,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/local/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/ueb_bpserverd_privesc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/ufo_privilege_escalation.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/vcenter_java_wrapper_vmon_priv_esc.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/vcenter_sudo_lpe.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/vmware_alsa_config.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/vmware_mount.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/vmware_workspace_one_access_certproxy_lpe.rb
@@ -9041,11 +9068,13 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/local/
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/misc/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/misc/accellion_fta_mpipe2.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/misc/aerospike_database_udf_cmd_exec.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/misc/asterisk_ami_originate_auth_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/misc/asus_infosvr_auth_bypass_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/misc/cisco_ios_xe_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/misc/cisco_rv340_sslvpn.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/misc/cve_2020_13160_anydesk.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/misc/cve_2021_38647_omigod.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/misc/fortimanager_rce_cve_2024_47575.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/misc/gld_postfix.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/misc/hid_discoveryd_command_blink_on_unauth_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/misc/hikvision_rtsp_bof.rb
@@ -9137,6 +9166,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/mainframe/
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/mainframe/ftp/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/mainframe/ftp/ftp_jcl_creds.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/acronis_cyber_protect_unauth_rce_cve_2022_3405.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/browser/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/browser/adobe_flash_hacking_team_uaf.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/browser/adobe_flash_nellymoser_bof.rb
@@ -10822,6 +10852,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/windows/local/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/local/cve_2023_21768_afd_lpe.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/local/cve_2023_28252_clfs_driver.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/local/cve_2024_30088_authz_basep.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/local/cve_2024_35250_ks_driver.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/local/dnsadmin_serverlevelplugindll.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/local/docker_credential_wincred.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/local/druva_insync_insynccphwnet64_rcp_type_5_priv_esc.rb
@@ -13091,6 +13122,12 @@ drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/thrift/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/thrift/thrift_header_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/thrift/thrift_string_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/thrift/thrift_struct_spec.rb
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/x11.rb
+drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/x11/
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/x11/connect.rb
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/x11/extensions.rb
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/x11/window.rb
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/x11/xkeyboard.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/time_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/ui/
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/ui/text/
