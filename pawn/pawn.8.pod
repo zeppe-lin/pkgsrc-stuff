@@ -43,9 +43,8 @@ Default: none.
 
 =item B<--fromenv>=I<arg>
 
-Comma-separated list of flags to set from the environment.  Use
-
-  export FLAGS_flag1=value
+Comma-separated list of flags to set from the environment.
+Use C<export FLAGS_flag1=value>.
 
 Default: none.
 
@@ -70,7 +69,7 @@ Display version/copyright information.
 The following command will extract the BIOS firmware and save the image to
 F<bios_image.bin>:
 
-  pawn bios_image.bin
+	pawn bios_image.bin
 
 =head1 CAVEATS
 
