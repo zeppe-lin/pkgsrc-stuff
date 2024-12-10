@@ -8,7 +8,7 @@ release=1
 source=https://github.com/slimm609/$name.sh/archive/$version/$name-$version.tar.gz
 
 build() {
-	cd $name.sh-$version
+	cd $name-$version
 
 	sed -r 's|(pkg_release=)false|\1true|' -i checksec
 
