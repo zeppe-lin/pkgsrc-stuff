@@ -24,6 +24,7 @@ drwxr-xr-x	root/root	opt/holehe/anyio/_core/
 -rw-r--r--	root/root	opt/holehe/anyio/_core/__init__.py (EMPTY)
 drwxr-xr-x	root/root	opt/holehe/anyio/_core/__pycache__/
 -rw-r--r--	root/root	opt/holehe/anyio/_core/__pycache__/__init__.cpython-39.pyc
+-rw-r--r--	root/root	opt/holehe/anyio/_core/__pycache__/_asyncio_selector_thread.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/anyio/_core/__pycache__/_eventloop.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/anyio/_core/__pycache__/_exceptions.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/anyio/_core/__pycache__/_fileio.cpython-39.pyc
@@ -36,6 +37,7 @@ drwxr-xr-x	root/root	opt/holehe/anyio/_core/__pycache__/
 -rw-r--r--	root/root	opt/holehe/anyio/_core/__pycache__/_tasks.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/anyio/_core/__pycache__/_testing.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/anyio/_core/__pycache__/_typedattr.cpython-39.pyc
+-rw-r--r--	root/root	opt/holehe/anyio/_core/_asyncio_selector_thread.py
 -rw-r--r--	root/root	opt/holehe/anyio/_core/_eventloop.py
 -rw-r--r--	root/root	opt/holehe/anyio/_core/_exceptions.py
 -rw-r--r--	root/root	opt/holehe/anyio/_core/_fileio.py
@@ -312,7 +314,6 @@ drwxr-xr-x	root/root	opt/holehe/httpx/__pycache__/
 -rw-r--r--	root/root	opt/holehe/httpx/__pycache__/_api.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/httpx/__pycache__/_auth.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/httpx/__pycache__/_client.cpython-39.pyc
--rw-r--r--	root/root	opt/holehe/httpx/__pycache__/_compat.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/httpx/__pycache__/_config.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/httpx/__pycache__/_content.cpython-39.pyc
 -rw-r--r--	root/root	opt/holehe/httpx/__pycache__/_decoders.cpython-39.pyc
@@ -329,7 +330,6 @@ drwxr-xr-x	root/root	opt/holehe/httpx/__pycache__/
 -rw-r--r--	root/root	opt/holehe/httpx/_api.py
 -rw-r--r--	root/root	opt/holehe/httpx/_auth.py
 -rw-r--r--	root/root	opt/holehe/httpx/_client.py
--rw-r--r--	root/root	opt/holehe/httpx/_compat.py
 -rw-r--r--	root/root	opt/holehe/httpx/_config.py
 -rw-r--r--	root/root	opt/holehe/httpx/_content.py
 -rw-r--r--	root/root	opt/holehe/httpx/_decoders.py
