@@ -1,6 +1,8 @@
 drwxr-xr-x	root/root	opt/
 drwxr-xr-x	root/root	opt/holehe/
 -rw-r--r--	root/root	opt/holehe/README.rst
+drwxr-xr-x	root/root	opt/holehe/__pycache__/
+-rw-r--r--	root/root	opt/holehe/__pycache__/typing_extensions.cpython-312.pyc
 drwxr-xr-x	root/root	opt/holehe/anyio/
 -rw-r--r--	root/root	opt/holehe/anyio/__init__.py
 drwxr-xr-x	root/root	opt/holehe/anyio/__pycache__/
@@ -22,6 +24,7 @@ drwxr-xr-x	root/root	opt/holehe/anyio/_core/
 -rw-r--r--	root/root	opt/holehe/anyio/_core/__init__.py (EMPTY)
 drwxr-xr-x	root/root	opt/holehe/anyio/_core/__pycache__/
 -rw-r--r--	root/root	opt/holehe/anyio/_core/__pycache__/__init__.cpython-312.pyc
+-rw-r--r--	root/root	opt/holehe/anyio/_core/__pycache__/_asyncio_selector_thread.cpython-312.pyc
 -rw-r--r--	root/root	opt/holehe/anyio/_core/__pycache__/_eventloop.cpython-312.pyc
 -rw-r--r--	root/root	opt/holehe/anyio/_core/__pycache__/_exceptions.cpython-312.pyc
 -rw-r--r--	root/root	opt/holehe/anyio/_core/__pycache__/_fileio.cpython-312.pyc
@@ -34,6 +37,7 @@ drwxr-xr-x	root/root	opt/holehe/anyio/_core/__pycache__/
 -rw-r--r--	root/root	opt/holehe/anyio/_core/__pycache__/_tasks.cpython-312.pyc
 -rw-r--r--	root/root	opt/holehe/anyio/_core/__pycache__/_testing.cpython-312.pyc
 -rw-r--r--	root/root	opt/holehe/anyio/_core/__pycache__/_typedattr.cpython-312.pyc
+-rw-r--r--	root/root	opt/holehe/anyio/_core/_asyncio_selector_thread.py
 -rw-r--r--	root/root	opt/holehe/anyio/_core/_eventloop.py
 -rw-r--r--	root/root	opt/holehe/anyio/_core/_exceptions.py
 -rw-r--r--	root/root	opt/holehe/anyio/_core/_fileio.py
@@ -327,7 +331,6 @@ drwxr-xr-x	root/root	opt/holehe/httpx/__pycache__/
 -rw-r--r--	root/root	opt/holehe/httpx/__pycache__/_api.cpython-312.pyc
 -rw-r--r--	root/root	opt/holehe/httpx/__pycache__/_auth.cpython-312.pyc
 -rw-r--r--	root/root	opt/holehe/httpx/__pycache__/_client.cpython-312.pyc
--rw-r--r--	root/root	opt/holehe/httpx/__pycache__/_compat.cpython-312.pyc
 -rw-r--r--	root/root	opt/holehe/httpx/__pycache__/_config.cpython-312.pyc
 -rw-r--r--	root/root	opt/holehe/httpx/__pycache__/_content.cpython-312.pyc
 -rw-r--r--	root/root	opt/holehe/httpx/__pycache__/_decoders.cpython-312.pyc
@@ -344,7 +347,6 @@ drwxr-xr-x	root/root	opt/holehe/httpx/__pycache__/
 -rw-r--r--	root/root	opt/holehe/httpx/_api.py
 -rw-r--r--	root/root	opt/holehe/httpx/_auth.py
 -rw-r--r--	root/root	opt/holehe/httpx/_client.py
--rw-r--r--	root/root	opt/holehe/httpx/_compat.py
 -rw-r--r--	root/root	opt/holehe/httpx/_config.py
 -rw-r--r--	root/root	opt/holehe/httpx/_content.py
 -rw-r--r--	root/root	opt/holehe/httpx/_decoders.py
@@ -756,6 +758,7 @@ drwxr-xr-x	root/root	opt/holehe/trio/testing/__pycache__/
 -rw-r--r--	root/root	opt/holehe/trio/testing/_sequencer.py
 -rw-r--r--	root/root	opt/holehe/trio/testing/_trio_test.py
 -rw-r--r--	root/root	opt/holehe/trio/to_thread.py
+-rw-r--r--	root/root	opt/holehe/typing_extensions.py
 drwxr-xr-x	root/root	opt/holehe/urllib3/
 -rw-r--r--	root/root	opt/holehe/urllib3/__init__.py
 drwxr-xr-x	root/root	opt/holehe/urllib3/__pycache__/
