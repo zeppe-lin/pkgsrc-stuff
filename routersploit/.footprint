@@ -2065,12 +2065,14 @@ drwxr-xr-x	root/root	opt/routersploit/cryptography/hazmat/primitives/kdf/
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/kdf/__init__.py
 drwxr-xr-x	root/root	opt/routersploit/cryptography/hazmat/primitives/kdf/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/kdf/__pycache__/__init__.cpython-312.pyc
+-rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/kdf/__pycache__/argon2.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/kdf/__pycache__/concatkdf.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/kdf/__pycache__/hkdf.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/kdf/__pycache__/kbkdf.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/kdf/__pycache__/pbkdf2.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/kdf/__pycache__/scrypt.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/kdf/__pycache__/x963kdf.cpython-312.pyc
+-rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/kdf/argon2.py
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/kdf/concatkdf.py
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/kdf/hkdf.py
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/kdf/kbkdf.py
@@ -3453,6 +3455,7 @@ drwxr-xr-x	root/root	opt/routersploit/pysnmp/smi/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/pysnmp/smi/__pycache__/indices.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/pysnmp/smi/__pycache__/instrum.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/pysnmp/smi/__pycache__/rfc1902.cpython-312.pyc
+-rw-r--r--	root/root	opt/routersploit/pysnmp/smi/__pycache__/types.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/pysnmp/smi/__pycache__/view.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/pysnmp/smi/builder.py
 -rw-r--r--	root/root	opt/routersploit/pysnmp/smi/compiler.py
@@ -3535,6 +3538,7 @@ drwxr-xr-x	root/root	opt/routersploit/pysnmp/smi/mibs/instances/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/pysnmp/smi/mibs/instances/__pycache__/__SNMPv2-MIB.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/pysnmp/smi/mibs/instances/__pycache__/__init__.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/pysnmp/smi/rfc1902.py
+-rw-r--r--	root/root	opt/routersploit/pysnmp/smi/types.py
 -rw-r--r--	root/root	opt/routersploit/pysnmp/smi/view.py
 drwxr-xr-x	root/root	opt/routersploit/requests/
 -rw-r--r--	root/root	opt/routersploit/requests/__init__.py
@@ -4275,6 +4279,20 @@ drwxr-xr-x	root/root	opt/routersploit/routersploit/resources/wordlists/
 -rw-r--r--	root/root	opt/routersploit/routersploit/resources/wordlists/snmp.txt
 -rw-r--r--	root/root	opt/routersploit/routersploit/resources/wordlists/usernames.txt
 -rw-r--r--	root/root	opt/routersploit/rsf.py
+drwxr-xr-x	root/root	opt/routersploit/rust/
+-rw-r--r--	root/root	opt/routersploit/rust/Cargo.toml
+drwxr-xr-x	root/root	opt/routersploit/rust/cryptography-cffi/
+-rw-r--r--	root/root	opt/routersploit/rust/cryptography-cffi/Cargo.toml
+drwxr-xr-x	root/root	opt/routersploit/rust/cryptography-keepalive/
+-rw-r--r--	root/root	opt/routersploit/rust/cryptography-keepalive/Cargo.toml
+drwxr-xr-x	root/root	opt/routersploit/rust/cryptography-key-parsing/
+-rw-r--r--	root/root	opt/routersploit/rust/cryptography-key-parsing/Cargo.toml
+drwxr-xr-x	root/root	opt/routersploit/rust/cryptography-openssl/
+-rw-r--r--	root/root	opt/routersploit/rust/cryptography-openssl/Cargo.toml
+drwxr-xr-x	root/root	opt/routersploit/rust/cryptography-x509-verification/
+-rw-r--r--	root/root	opt/routersploit/rust/cryptography-x509-verification/Cargo.toml
+drwxr-xr-x	root/root	opt/routersploit/rust/cryptography-x509/
+-rw-r--r--	root/root	opt/routersploit/rust/cryptography-x509/Cargo.toml
 -rw-r--r--	root/root	opt/routersploit/setup.py
 drwxr-xr-x	root/root	opt/routersploit/tests/
 -rw-r--r--	root/root	opt/routersploit/tests/__init__.py (EMPTY)
