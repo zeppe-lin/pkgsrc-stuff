@@ -15,7 +15,12 @@ sudo modprobe fuse
 
 You can add `modprobe fuse` to `/etc/rc.modules` to have the module load
 automatically on system startup, rather than having to do it every time before
-starting AppImage.
+starting AppImage:
+
+```sh
+# Filesystem in Userspace.
+/sbin/modprobe fuse
+```
 
 
 ---
