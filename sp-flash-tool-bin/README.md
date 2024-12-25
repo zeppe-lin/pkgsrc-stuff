@@ -22,7 +22,7 @@ IDs to udev rules.
     Galaxy series, misc. (MTP mode)
     ```
 
-2. Write /etc/udev/rules.d/99-ttyacms.rules using ID numbers (as one line):
+2. Write `/etc/udev/rules.d/99-ttyacms.rules` using ID numbers (as one line):
 
     ```udev
     SUBSYSTEM=="usb", ATTR{idVendor}=="04e8",

@@ -16,7 +16,9 @@ Material (m) seems very buggy now.  Use (t) for a while.
 ONLINE DOCUMENTATION
 ====================
 
-The Official Radare2 Book: https://book.rada.re/
+* [The Official Radare2 Book][1]
+
+[1]: https://book.rada.re/
 
 
 ---
