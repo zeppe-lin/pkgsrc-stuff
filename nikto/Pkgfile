@@ -3,7 +3,7 @@
 # Depends on:  p5-net-ssleay p5-json
 
 name=nikto
-version=2.5.0-b7233c3
+version=2.5.0-7242f81
 release=1
 source="https://github.com/sullo/nikto/archive/${version#*-}/nikto-$version.tar.gz
 	nikto.sh
@@ -14,7 +14,7 @@ build() {
 
 	find . -type f ! -name nikto.pl -exec chmod 644 {} +
 
-	install -d $PKG/usr/share/nikto
+	mkdir -p $PKG/usr/share/nikto
 	cp -a program/* $PKG/usr/share/nikto
 
 	install -m 0755 -D $SRC/nikto.sh              $PKG/usr/bin/nikto
