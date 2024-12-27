@@ -1765,8 +1765,6 @@ drwxrwxr-x	root/root	opt/metasploit/data/msfcrawler/
 -rw-rw-r--	root/root	opt/metasploit/data/msfcrawler/scripts.rb
 drwxrwxr-x	root/root	opt/metasploit/data/passivex/
 -rwxrwxr-x	root/root	opt/metasploit/data/passivex/passivex.dll
-drwxrwxr-x	root/root	opt/metasploit/data/php/
--rw-rw-r--	root/root	opt/metasploit/data/php/hop.php
 drwxrwxr-x	root/root	opt/metasploit/data/post/
 -rw-rw-r--	root/root	opt/metasploit/data/post/SharpHound.exe
 -rwxrwxr-x	root/root	opt/metasploit/data/post/bypassuac-x64.dll
@@ -5445,10 +5443,8 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/handler/
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/handler/reverse/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/handler/reverse/comm.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/handler/reverse/ssl.rb
--rw-rw-r--	root/root	opt/metasploit/lib/msf/core/handler/reverse_hop_http.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/handler/reverse_http.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/handler/reverse_https.rb
--rw-rw-r--	root/root	opt/metasploit/lib/msf/core/handler/reverse_https_proxy.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/handler/reverse_named_pipe.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/handler/reverse_sctp.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/handler/reverse_ssh.rb
@@ -5569,6 +5565,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/modules/metadata/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/opt_enum.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/opt_float.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/opt_int.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/opt_int_range.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/opt_meterpreter_debug_logging.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/opt_path.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/opt_port.rb
@@ -6804,6 +6801,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/ntlm/
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/ntp.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/ntp/
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/ntp/constants.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/ntp/header.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/ntp/modes.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/nuuo/
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/nuuo/client.rb
@@ -8128,6 +8126,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/ntp/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/ntp/ntp_req_nonce_dos.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/ntp/ntp_reslist_dos.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/ntp/ntp_unsettrap_dos.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/ntp/timeroast.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/openvas/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/openvas/openvas_gsad_login.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/openvas/openvas_omp_login.rb
@@ -11757,11 +11756,9 @@ drwxrwxr-x	root/root	opt/metasploit/modules/payloads/stagers/windows/
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/stagers/windows/bind_tcp_uuid.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/stagers/windows/encrypted_reverse_tcp.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/stagers/windows/findtag_ord.rb
--rw-rw-r--	root/root	opt/metasploit/modules/payloads/stagers/windows/reverse_hop_http.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/stagers/windows/reverse_http.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/stagers/windows/reverse_http_proxy_pstore.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/stagers/windows/reverse_https.rb
--rw-rw-r--	root/root	opt/metasploit/modules/payloads/stagers/windows/reverse_https_proxy.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/stagers/windows/reverse_ipv6_tcp.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/stagers/windows/reverse_named_pipe.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/stagers/windows/reverse_nonx_tcp.rb
@@ -12798,6 +12795,7 @@ drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/core/modules/metadata/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/opt_condition_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/opt_enum_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/opt_float_spec.rb
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/opt_int_range_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/opt_int_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/opt_meterpreter_debug_logging_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/opt_path_spec.rb
@@ -13083,6 +13081,7 @@ drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/mysql/
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/natpmp/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/natpmp/packet_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/ntp/
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/ntp/header_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/ntp/modes_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/proto/nuuo/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/proto/nuuo/client_request_spec.rb
