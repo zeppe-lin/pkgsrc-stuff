@@ -3,20 +3,19 @@
 # Depends on:  py3-setuptools
 
 name=py3-editorconfig
-version=0.12.4
-release=2
-source=https://pypi.io/packages/source/E/EditorConfig/EditorConfig-$version.tar.gz
+version=0.17.0
+release=1
+source=$name-$version.tar.gz::https://github.com/editorconfig/editorconfig-core-py/archive/refs/tags/v$version.tar.gz
 
 build() {
 	export TMPDIR="$PKGMK_WORK_DIR"
 
-	cd EditorConfig-$version
+	cd editorconfig-core-py-$version
 
 	/usr/bin/python3 setup.py build
 	/usr/bin/python3 setup.py install \
 		--skip-build --root=$PKG --optimize=2
 
-	# FS#55201 (archlinux)
-	cd $PKG/usr/bin/
-	mv editorconfig editorconfig3
+	# https://bugs.archlinux.org/task/55201
+	mv $PKG/usr/bin/editorconfig $PKG/usr/bin/editorconfig3
 }
