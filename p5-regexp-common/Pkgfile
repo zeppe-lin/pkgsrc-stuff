@@ -3,12 +3,12 @@
 # Depends on:  perl
 
 name=p5-regexp-common
-version=2024080801
-release=2
-source=https://cpan.metacpan.org/authors/id/A/AB/ABIGAIL/Regexp-Common-$version.tar.gz
+version=1.0.0
+release=1
+source=https://cpan.metacpan.org/authors/id/A/AR/ARFREITAS/Regexp-Common-v$version.tar.gz
 
 build() {
-	cd Regexp-Common-$version
+	cd Regexp-Common-v$version
 
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
