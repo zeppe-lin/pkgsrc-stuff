@@ -33,6 +33,7 @@ drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.38/Net/DNS/RR/
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Net/DNS/RR/DNAME.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Net/DNS/RR/DNSKEY.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Net/DNS/RR/DS.pm
+-r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Net/DNS/RR/DSYNC.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Net/DNS/RR/EUI48.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Net/DNS/RR/EUI64.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Net/DNS/RR/GPOS.pm
@@ -123,6 +124,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -r--r--r--	root/root	usr/share/man/man3/Net::DNS::RR::DNAME.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Net::DNS::RR::DNSKEY.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Net::DNS::RR::DS.3pm.gz
+-r--r--r--	root/root	usr/share/man/man3/Net::DNS::RR::DSYNC.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Net::DNS::RR::EUI48.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Net::DNS::RR::EUI64.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Net::DNS::RR::GPOS.3pm.gz
