@@ -2,14 +2,12 @@
 # URL:          https://cyan4973.github.io/xxHash/
 
 name=xxhash
-version=0.8.2
-release=2
+version=0.8.3
+release=1
 source=https://github.com/Cyan4973/xxHash/archive/v$version/$name-$version.tar.gz
 
 build() {
-	cd xxHash-$version
-
 	# DISPATCH=1: include the dispatch code in order to use SIMD
 	# https://github.com/Cyan4973/xxHash#build-modifiers
-	make DISPATCH=1 PREFIX=/usr DESTDIR=$PKG install
+	make -C xxHash-$version DISPATCH=1 PREFIX=/usr DESTDIR=$PKG install
 }
