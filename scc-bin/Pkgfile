@@ -1,0 +1,13 @@
+# Description: Code counter with complexity calculations and COCOMO estimates
+# URL:         https://github.com/boyter/scc
+
+name=scc-bin
+version=3.4.0
+release=1
+source=$name-$version.tar.gz::https://github.com/boyter/scc/releases/download/v$version/scc_Linux_x86_64.tar.gz
+
+build() {
+	ls -la .
+	mkdir -p $PKG/usr/bin
+	mv scc $PKG/usr/bin/scc
+}
