@@ -3,12 +3,10 @@
 # Depends on:  python3
 
 name=dsss
-version=0.3b-84ddd33
+version=0.3b-f354215
 release=1
 source=https://github.com/stamparm/DSSS/archive/${version#*-}/DSSS-$version.tar.gz
 
 build() {
-	cd DSSS-${version#*-}*
-
-	install -m 0755 -D dsss.py $PKG/usr/bin/dsss
+	install -m 0755 -D DSSS-${version#*-}*/dsss.py $PKG/usr/bin/dsss
 }
