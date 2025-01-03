@@ -3,11 +3,13 @@
 # Depends on:  py3-setuptools
 
 name=py3-smmap
-version=5.0.1
-release=2
+version=5.0.2
+release=1
 source=https://pypi.org/packages/source/s/smmap/smmap-$version.tar.gz
 
 build() {
+	export TMPDIR="$PKGMK_WORK_DIR"
+
 	cd smmap-$version
 
 	/usr/bin/python3 setup.py build
