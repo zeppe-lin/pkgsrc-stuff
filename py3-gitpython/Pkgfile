@@ -3,8 +3,8 @@
 # Depends on:  git py3-gitdb
 
 name=py3-gitpython
-version=3.1.43
-release=2
+version=3.1.44
+release=1
 source=https://github.com/gitpython-developers/GitPython/archive/$version/GitPython-$version.tar.gz
 
 build() {
@@ -17,6 +17,5 @@ build() {
 		--skip-build --prefix=/usr --root=$PKG --optimize=2
 
 	# fix perms
-	find $PKG/usr/lib/python*/site-packages/ -type f \
-		-exec chmod 0644 {} +
+	find $PKG/usr/lib/python*/site-packages/ -type f -exec chmod 0644 {} +
 }
