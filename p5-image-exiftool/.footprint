@@ -140,6 +140,7 @@ drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/Lang/
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/Lang/zh_cn.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/Lang/zh_tw.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/Leaf.pm
+-r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/LigoGPS.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/Lytro.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/M2TS.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/MIE.pm
@@ -344,6 +345,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::Lang::zh_cn.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::Lang::zh_tw.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::Leaf.3pm.gz
+-r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::LigoGPS.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::Lytro.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::M2TS.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::MIE.3pm.gz

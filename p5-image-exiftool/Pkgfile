@@ -3,7 +3,7 @@
 # Depends on:  perl
 
 name=p5-image-exiftool
-version=13.10
+version=13.11
 release=1
 source=https://exiftool.org/Image-ExifTool-$version.tar.gz
 
@@ -15,7 +15,7 @@ build() {
 	make
 	make DESTDIR=$PKG install
 
-	install -m 0755 -d $PKG/usr/share/$name
+	mkdir -p $PKG/usr/share/$name
 	cp -R fmt_files config_files arg_files $PKG/usr/share/$name/
 
 	# remove junk and empty dirs
