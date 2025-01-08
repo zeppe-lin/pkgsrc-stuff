@@ -3,8 +3,8 @@
 # Depends on:  p5-html-parser p5-test-nowarnings p5-test-warn
 
 name=p5-cgi
-version=4.66
-release=2
+version=4.67
+release=1
 source=https://cpan.metacpan.org/authors/id/L/LE/LEEJO/CGI-$version.tar.gz
 
 build() {
