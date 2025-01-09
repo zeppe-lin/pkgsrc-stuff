@@ -3,7 +3,7 @@
 # Depends on:  asciidoctor c-ares gnutls hicolor-icon-theme libcap libgcrypt libnl libpcap libssh qt5 speexdsp
 
 name=wireshark
-version=4.4.2
+version=4.4.3
 release=1
 source=https://github.com/$name/$name/archive/v$version/$name-$version.tar.gz
 
@@ -40,7 +40,11 @@ build() {
 	ninja -C build -j ${JOBS:-1} -v
 	DESTDIR=$PKG ninja -C build install
 
-	chmod 4755 $PKG/usr/bin/dumpcap
+	# Allow users in the wheel group to capture packages.
+	# See: https://wiki.wireshark.org/CaptureSetup/CapturePrivileges#Limiting_capture_permission_to_only_one_group
+	chmod 0750 $PKG/usr/bin/dumpcap
+	chown root:wheel $PKG/usr/bin/dumpcap
+	setcap cap_net_raw,cap_net_admin+eip $PKG/usr/bin/dumpcap
 
 	# Remove i18n entries from desktop file.
 	sed -ri '/\[.+\]=/d' $PKG/usr/share/applications/*.desktop
