@@ -7588,6 +7588,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/gather/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/nuuo_cms_file_download.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/oats_downloadservlet_traversal.rb
 -rwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/gather/office365userenum.py
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/onedev_arbitrary_file_read.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/opennms_xxe.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/owncloud_phpinfo_reader.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/peplink_bauth_sqli.rb
@@ -7610,6 +7611,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/gather/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/samsung_browser_sop_bypass.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/search_email_collector.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/searchengine_subdomains_collector.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/selenium_file_read.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/shodan_honeyscore.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/shodan_host.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/shodan_search.rb
@@ -8843,6 +8845,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/netgear_unauth_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/netgear_wnr2000_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/netis_unauth_rce_cve_2024_22729.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/netis_unauth_rce_cve_2024_48456_and_48457.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/netsweeper_webadmin_unixlogin.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/nexus_repo_manager_el_injection.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/nginx_chunked_size.rb
@@ -8896,6 +8899,8 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/saltstack_salt_wheel_async_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/samsung_srv_1670d_upload_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/seagate_nas_php_exec_noauth.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/selenium_greed_chrome_rce_cve_2022_28108.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/selenium_greed_firefox_rce_cve_2022_28108.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/smt_ipmi_close_window_bof.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/solarview_unauth_rce_cve_2023_23333.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/sonicwall_cve_2021_20039.rb
@@ -13750,10 +13755,10 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-lin
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-linux/3.3/bson-5.0.1/bson_native.so
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-linux/3.3/bson-5.0.1/gem.build_complete (EMPTY)
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-linux/3.3/bson-5.0.1/gem_make.out
-drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-linux/3.3/date-3.3.4/
--rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-linux/3.3/date-3.3.4/date_core.so
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-linux/3.3/date-3.3.4/gem.build_complete (EMPTY)
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-linux/3.3/date-3.3.4/gem_make.out
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-linux/3.3/date-3.4.1/
+-rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-linux/3.3/date-3.4.1/date_core.so
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-linux/3.3/date-3.4.1/gem.build_complete (EMPTY)
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-linux/3.3/date-3.4.1/gem_make.out
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-linux/3.3/ed25519-1.3.0/
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-linux/3.3/ed25519-1.3.0/ed25519_ref10.so
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-linux/3.3/ed25519-1.3.0/gem.build_complete (EMPTY)
@@ -13767,6 +13772,10 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-lin
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-linux/3.3/ffi-1.16.3/ffi_c.so
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-linux/3.3/ffi-1.16.3/gem.build_complete (EMPTY)
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-linux/3.3/ffi-1.16.3/gem_make.out
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-linux/3.3/fiddle-1.1.6/
+-rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-linux/3.3/fiddle-1.1.6/fiddle.so
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-linux/3.3/fiddle-1.1.6/gem.build_complete (EMPTY)
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-linux/3.3/fiddle-1.1.6/gem_make.out
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-linux/3.3/http_parser.rb-0.8.0/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-linux/3.3/http_parser.rb-0.8.0/gem.build_complete (EMPTY)
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-linux/3.3/http_parser.rb-0.8.0/gem_make.out
@@ -16132,6 +16141,16 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/bcrypt_pbkdf-1.1
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/bcrypt_pbkdf-1.1.1/test/bcrypt_pnkdf/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/bcrypt_pbkdf-1.1.1/test/bcrypt_pnkdf/engine_test.rb
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/bcrypt_pbkdf-1.1.1/test/test_helper.rb
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/benchmark-0.4.0/
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/benchmark-0.4.0/BSDL
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/benchmark-0.4.0/Gemfile
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/benchmark-0.4.0/Rakefile
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/benchmark-0.4.0/benchmark.gemspec
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/benchmark-0.4.0/bin/
+-rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/benchmark-0.4.0/bin/console
+-rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/benchmark-0.4.0/bin/setup
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/benchmark-0.4.0/lib/
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/benchmark-0.4.0/lib/benchmark.rb
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/bigdecimal-3.1.8/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/bigdecimal-3.1.8/bigdecimal.gemspec
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/bigdecimal-3.1.8/ext/
@@ -17136,21 +17155,21 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/daemons-1.4.1/li
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/daemons-1.4.1/lib/daemons/reporter.rb
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/daemons-1.4.1/lib/daemons/syslogio.rb
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/daemons-1.4.1/lib/daemons/version.rb
-drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/date-3.3.4/
-drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/date-3.3.4/ext/
-drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/date-3.3.4/ext/date/
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/date-3.3.4/ext/date/date_core.c
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/date-3.3.4/ext/date/date_parse.c
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/date-3.3.4/ext/date/date_strftime.c
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/date-3.3.4/ext/date/date_strptime.c
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/date-3.3.4/ext/date/date_tmx.h
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/date-3.3.4/ext/date/extconf.rb
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/date-3.3.4/ext/date/prereq.mk
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/date-3.3.4/ext/date/zonetab.h
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/date-3.3.4/ext/date/zonetab.list
-drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/date-3.3.4/lib/
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/date-3.3.4/lib/date.rb
--rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/date-3.3.4/lib/date_core.so
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/date-3.4.1/
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/date-3.4.1/ext/
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/date-3.4.1/ext/date/
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/date-3.4.1/ext/date/date_core.c
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/date-3.4.1/ext/date/date_parse.c
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/date-3.4.1/ext/date/date_strftime.c
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/date-3.4.1/ext/date/date_strptime.c
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/date-3.4.1/ext/date/date_tmx.h
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/date-3.4.1/ext/date/extconf.rb
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/date-3.4.1/ext/date/prereq.mk
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/date-3.4.1/ext/date/zonetab.h
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/date-3.4.1/ext/date/zonetab.list
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/date-3.4.1/lib/
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/date-3.4.1/lib/date.rb
+-rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/date-3.4.1/lib/date_core.so
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/dnsruby-1.72.2/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/dnsruby-1.72.2/.coveralls.yml
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/dnsruby-1.72.2/.yardopts
@@ -19202,6 +19221,39 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/ffi-1.16.3/sampl
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/ffi-1.16.3/samples/pty.rb
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/ffi-1.16.3/samples/qsort.rb
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/ffi-1.16.3/samples/qsort_ractor.rb
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/fiddle-1.1.6/
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/fiddle-1.1.6/Rakefile
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/fiddle-1.1.6/ext/
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/fiddle-1.1.6/ext/fiddle/
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/fiddle-1.1.6/ext/fiddle/closure.c
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/fiddle-1.1.6/ext/fiddle/closure.h
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/fiddle-1.1.6/ext/fiddle/conversions.c
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/fiddle-1.1.6/ext/fiddle/conversions.h
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/fiddle-1.1.6/ext/fiddle/depend
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/fiddle-1.1.6/ext/fiddle/extconf.rb
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/fiddle-1.1.6/ext/fiddle/fiddle.c
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/fiddle-1.1.6/ext/fiddle/fiddle.h
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/fiddle-1.1.6/ext/fiddle/function.c
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/fiddle-1.1.6/ext/fiddle/function.h
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/fiddle-1.1.6/ext/fiddle/handle.c
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/fiddle-1.1.6/ext/fiddle/memory_view.c
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/fiddle-1.1.6/ext/fiddle/pinned.c
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/fiddle-1.1.6/ext/fiddle/pointer.c
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/fiddle-1.1.6/fiddle.gemspec
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/fiddle-1.1.6/lib/
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/fiddle-1.1.6/lib/fiddle.rb
+-rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/fiddle-1.1.6/lib/fiddle.so
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/fiddle-1.1.6/lib/fiddle/
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/fiddle-1.1.6/lib/fiddle/closure.rb
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/fiddle-1.1.6/lib/fiddle/cparser.rb
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/fiddle-1.1.6/lib/fiddle/ffi_backend.rb
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/fiddle-1.1.6/lib/fiddle/function.rb
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/fiddle-1.1.6/lib/fiddle/import.rb
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/fiddle-1.1.6/lib/fiddle/pack.rb
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/fiddle-1.1.6/lib/fiddle/struct.rb
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/fiddle-1.1.6/lib/fiddle/types.rb
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/fiddle-1.1.6/lib/fiddle/value.rb
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/fiddle-1.1.6/lib/fiddle/version.rb
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/filesize-0.2.0/
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/filesize-0.2.0/lib/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/filesize-0.2.0/lib/filesize.rb
@@ -22993,6 +23045,16 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/openvas-omp-0.0.
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/openvas-omp-0.0.4/test/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/openvas-omp-0.0.4/test/helper.rb
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/openvas-omp-0.0.4/test/test_openvas-omp.rb
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/ostruct-0.6.1/
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/ostruct-0.6.1/BSDL
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/ostruct-0.6.1/Gemfile
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/ostruct-0.6.1/Rakefile
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/ostruct-0.6.1/bin/
+-rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/ostruct-0.6.1/bin/console
+-rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/ostruct-0.6.1/bin/setup
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/ostruct-0.6.1/lib/
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/ostruct-0.6.1/lib/ostruct.rb
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/ostruct-0.6.1/ostruct.gemspec
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/packetfu-2.0.0/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/packetfu-2.0.0/.document
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/packetfu-2.0.0/.mailmap
@@ -27938,6 +28000,7 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/base64-0.2.0.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/bcrypt-3.1.20.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/bcrypt_pbkdf-1.1.1.gemspec
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/benchmark-0.4.0.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/bigdecimal-3.1.8.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/bindata-2.4.15.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/bootsnap-1.18.4.gemspec
@@ -27949,7 +28012,7 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/crass-1.0.6.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/csv-3.3.0.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/daemons-1.4.1.gemspec
--rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/date-3.3.4.gemspec
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/date-3.4.1.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/dnsruby-1.72.2.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/docile-1.4.1.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/domain_name-0.6.20240107.gemspec
@@ -27966,6 +28029,7 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/faraday-retry-2.2.1.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/faye-websocket-0.11.3.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/ffi-1.16.3.gemspec
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/fiddle-1.1.6.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/filesize-0.2.0.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/getoptlong-0.2.1.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/gssapi-1.3.1.gemspec
@@ -28015,6 +28079,7 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/openssl-ccm-1.2.3.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/openssl-cmac-2.0.2.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/openvas-omp-0.0.4.gemspec
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/ostruct-0.6.1.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/packetfu-2.0.0.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/patch_finder-1.0.2.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/pcaprub-0.13.3.gemspec
