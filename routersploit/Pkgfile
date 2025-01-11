@@ -3,7 +3,7 @@
 # Depends on:  py3-pip
 
 name=routersploit
-version=3.4.6-a1700b6
+version=3.4.6-a306896
 release=1
 source=https://github.com/threat9/$name/archive/${version#*-}/$name-$version.tar.gz
 
