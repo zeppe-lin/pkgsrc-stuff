@@ -3,7 +3,7 @@
 # Depends on:  p5-file-libmagic wdiff
 
 name=pkgdiff-lvc
-version=1.7.2
+version=1.8
 release=1
 source="https://github.com/lvc/pkgdiff/archive/$version/$name-$version.tar.gz
 	zstd.patch"

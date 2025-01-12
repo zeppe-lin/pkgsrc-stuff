@@ -6,10 +6,14 @@ drwxr-xr-x	root/root	usr/share/pkgdiff/
 drwxr-xr-x	root/root	usr/share/pkgdiff/modules/
 -rw-r--r--	root/root	usr/share/pkgdiff/modules/FileType.xml
 drwxr-xr-x	root/root	usr/share/pkgdiff/modules/Internals/
+drwxr-xr-x	root/root	usr/share/pkgdiff/modules/Internals/Fonts/
+-rw-r--r--	root/root	usr/share/pkgdiff/modules/Internals/Fonts/OpenSans.ttf
+-rw-r--r--	root/root	usr/share/pkgdiff/modules/Internals/Fonts/VeraMono.ttf
 drwxr-xr-x	root/root	usr/share/pkgdiff/modules/Internals/Scripts/
 -rw-r--r--	root/root	usr/share/pkgdiff/modules/Internals/Scripts/Sort.js
 drwxr-xr-x	root/root	usr/share/pkgdiff/modules/Internals/Styles/
 -rw-r--r--	root/root	usr/share/pkgdiff/modules/Internals/Styles/Index.css
 -rw-r--r--	root/root	usr/share/pkgdiff/modules/Internals/Styles/View.css
 drwxr-xr-x	root/root	usr/share/pkgdiff/modules/Internals/Tools/
+-rwxr-xr-x	root/root	usr/share/pkgdiff/modules/Internals/Tools/java-dump.sh
 -rwxr-xr-x	root/root	usr/share/pkgdiff/modules/Internals/Tools/rfcdiff-1.41-CUSTOM.sh
