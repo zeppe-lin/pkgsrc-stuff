@@ -1,11 +1,11 @@
 OVERVIEW
 ========
 
-This directory contains **stuff** pkgsrc collection: build scripts and
-files for the packages that **do not** fit into the **core**,
-**system**, **xorg** and **desktop** pkgsrc collections.
+This repository contains **stuff** pkgsrc collection: build scripts
+and files for the packages that **do not** fit into the **core**,
+**system**, **xorg**, and **desktop** pkgsrc collections.
 
-It wouldn't hurt to say that this collection packages are of very low
+It wouldn't hurt to say that these collection packages are of very low
 quality and this should be taken into account before using them.
 
 This distribution was originally forked from CRUX ports as of version
