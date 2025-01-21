@@ -844,6 +844,9 @@ drwxrwxr-x	root/root	opt/metasploit/data/exploits/CVE-2024-30088/
 -rw-rw-r--	root/root	opt/metasploit/data/exploits/CVE-2024-30088/CVE-2024-30088.x64.dll
 drwxrwxr-x	root/root	opt/metasploit/data/exploits/CVE-2024-35250/
 -rw-rw-r--	root/root	opt/metasploit/data/exploits/CVE-2024-35250/CVE-2024-35250.x64.dll
+drwxrwxr-x	root/root	opt/metasploit/data/exploits/CVE-2024-48990/
+-rw-rw-r--	root/root	opt/metasploit/data/exploits/CVE-2024-48990/lib.metasm
+-rw-rw-r--	root/root	opt/metasploit/data/exploits/CVE-2024-48990/sleeper.py
 -rwxrwxr-x	root/root	opt/metasploit/data/exploits/QTJavaExploit.class
 drwxrwxr-x	root/root	opt/metasploit/data/exploits/R7_2015_17/
 -rw-rw-r--	root/root	opt/metasploit/data/exploits/R7_2015_17/stream.raw
@@ -8860,6 +8863,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/optergy_bms_backdoor_rce_cve_2019_7276.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/oracle_ebs_rce_cve_2022_21587.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/paloalto_expedition_rce.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/pandora_fms_auth_rce_cve_2024_11320.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/pandora_fms_events_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/pandora_fms_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/pandora_fms_sqli.rb
@@ -9060,6 +9064,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/local/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/tomcat_rhel_based_temp_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/tomcat_ubuntu_log_init_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/ubuntu_enlightenment_mount_priv_esc.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/ubuntu_needrestart_lpe.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/udev_netlink.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/ueb_bpserverd_privesc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/ufo_privilege_escalation.rb
@@ -9176,7 +9181,6 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/mainframe/
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/mainframe/ftp/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/mainframe/ftp/ftp_jcl_creds.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/
--rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/acronis_cyber_protect_unauth_rce_cve_2022_3405.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/browser/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/browser/adobe_flash_hacking_team_uaf.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/browser/adobe_flash_nellymoser_bof.rb
@@ -9256,6 +9260,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/hams/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/hams/steamed.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/handler.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/http/
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/acronis_cyber_protect_unauth_rce_cve_2022_3405.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/activecollab_chat.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/adobe_coldfusion_rce_cve_2023_26360.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/agent_tesla_panel_rce.rb
@@ -9297,6 +9302,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/churchinfo_upload_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/cisco_dcnm_upload.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/cisco_dcnm_upload_2019.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/cleo_rce_cve_2024_55956.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/clinic_pms_fileupload_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/clipbucket_fileupload_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/cmsms_object_injection_rce.rb
