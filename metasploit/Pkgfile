@@ -3,14 +3,11 @@
 # Depends on:  glibc-32 inetutils libpcap postgresql ruby sqlite3
 
 name=metasploit
-version=6.4.45
+version=6.4.46
 release=1
 source=https://github.com/rapid7/$name-framework/archive/$version/$name-$version.tar.gz
 
 build() {
-	local _FILE=
-	local _MSFFILE=
-
 	export TMPDIR="$PKGMK_WORK_DIR"
 	export CFLAGS="$CFLAGS -I/usr/include/libxml2"
 
@@ -38,23 +35,25 @@ build() {
 	find vendor/bundle/ruby -exec chmod o+r '{}' \;
 	find vendor/bundle/ruby -exec chmod o-w,g-w '{}' \;
 
-	for _FILE in msf*; do
-		_MSFFILE=$PKG/usr/bin/$(basename $_FILE)
-		cat >$_MSFFILE <<EOF
+	# launchers
+	for f in msf*; do
+		msf_name=$(basename $f)
+		msf_file=$PKG/usr/bin/$msf_name
+		cat >$msf_file <<EOF
 #!/bin/sh
 BUNDLE_GEMFILE=/opt/$name/Gemfile \
-bundle exec ruby /opt/$name/$(basename $_FILE) \$@
+bundle exec ruby /opt/$name/$msf_name \$@
 EOF
-		chmod 0755 $_MSFFILE
+		chmod 0755 $msf_file
 	done
-	for _FILE in tools/*/*.rb; do
-		install -m 0755 -D $_FILE .$_FILE
-		cat >$_FILE <<EOF
+	for f in tools/*/*.rb; do
+		install -m 0755 -D $f .$f
+		cat >$f <<EOF
 #!/bin/sh
 BUNDLE_GEMFILE=/opt/$name/Gemfile \
-bundle exec ruby /opt/$name/.$_FILE \$@
+bundle exec ruby /opt/$name/.$f \$@
 EOF
-		chmod 0755 $_FILE
+		chmod 0755 $f
 	done
 
 	# zsh completions

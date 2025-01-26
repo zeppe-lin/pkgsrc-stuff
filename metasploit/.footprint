@@ -8803,6 +8803,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/kloxo_sqli.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/lexmark_faxtrace_settings.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/librenms_addhost_cmd_inject.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/librenms_authenticated_rce_cve_2024_51092.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/librenms_collectd_cmd_inject.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/lifesize_uvc_ping_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/linear_emerge_unauth_rce_cve_2019_7256.rb
