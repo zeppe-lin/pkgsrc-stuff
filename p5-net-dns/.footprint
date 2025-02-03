@@ -64,6 +64,7 @@ drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.38/Net/DNS/RR/
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Net/DNS/RR/OPT.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Net/DNS/RR/PTR.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Net/DNS/RR/PX.pm
+-r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Net/DNS/RR/RESINFO.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Net/DNS/RR/RP.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Net/DNS/RR/RRSIG.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Net/DNS/RR/RT.pm
@@ -155,6 +156,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -r--r--r--	root/root	usr/share/man/man3/Net::DNS::RR::OPT.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Net::DNS::RR::PTR.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Net::DNS::RR::PX.3pm.gz
+-r--r--r--	root/root	usr/share/man/man3/Net::DNS::RR::RESINFO.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Net::DNS::RR::RP.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Net::DNS::RR::RRSIG.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Net::DNS::RR::RT.3pm.gz
