@@ -4,14 +4,14 @@ drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python3.12/
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/
-drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pip-24.3.1.dist-info/
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-24.3.1.dist-info/AUTHORS.txt
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-24.3.1.dist-info/LICENSE.txt
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-24.3.1.dist-info/METADATA
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-24.3.1.dist-info/RECORD
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-24.3.1.dist-info/WHEEL
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-24.3.1.dist-info/entry_points.txt
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-24.3.1.dist-info/top_level.txt
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pip-25.0.dist-info/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-25.0.dist-info/AUTHORS.txt
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-25.0.dist-info/LICENSE.txt
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-25.0.dist-info/METADATA
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-25.0.dist-info/RECORD
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-25.0.dist-info/WHEEL
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-25.0.dist-info/entry_points.txt
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip-25.0.dist-info/top_level.txt
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pip/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/__init__.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/__main__.py
@@ -552,9 +552,6 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pip/_internal/utils/__pyca
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_internal/utils/__pycache__/egg_link.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_internal/utils/__pycache__/egg_link.cpython-312.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_internal/utils/__pycache__/egg_link.cpython-312.pyc
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_internal/utils/__pycache__/encoding.cpython-312.opt-1.pyc
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_internal/utils/__pycache__/encoding.cpython-312.opt-2.pyc
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_internal/utils/__pycache__/encoding.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_internal/utils/__pycache__/entrypoints.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_internal/utils/__pycache__/entrypoints.cpython-312.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_internal/utils/__pycache__/entrypoints.cpython-312.pyc
@@ -612,7 +609,6 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pip/_internal/utils/__pyca
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_internal/utils/deprecation.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_internal/utils/direct_url_helpers.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_internal/utils/egg_link.py
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_internal/utils/encoding.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_internal/utils/entrypoints.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_internal/utils/filesystem.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_internal/utils/filetypes.py
@@ -913,6 +909,16 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pip/_vendor/packaging/__py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/packaging/_parser.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/packaging/_structures.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/packaging/_tokenizer.py
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pip/_vendor/packaging/licenses/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/packaging/licenses/__init__.py
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pip/_vendor/packaging/licenses/__pycache__/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/packaging/licenses/__pycache__/__init__.cpython-312.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/packaging/licenses/__pycache__/__init__.cpython-312.opt-2.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/packaging/licenses/__pycache__/__init__.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/packaging/licenses/__pycache__/_spdx.cpython-312.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/packaging/licenses/__pycache__/_spdx.cpython-312.opt-2.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/packaging/licenses/__pycache__/_spdx.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/packaging/licenses/_spdx.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/packaging/markers.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/packaging/metadata.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/packaging/py.typed (EMPTY)
@@ -1122,13 +1128,9 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pip/_vendor/pyproject_hook
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/pyproject_hooks/__pycache__/__init__.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/pyproject_hooks/__pycache__/__init__.cpython-312.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/pyproject_hooks/__pycache__/__init__.cpython-312.pyc
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/pyproject_hooks/__pycache__/_compat.cpython-312.opt-1.pyc
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/pyproject_hooks/__pycache__/_compat.cpython-312.opt-2.pyc
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/pyproject_hooks/__pycache__/_compat.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/pyproject_hooks/__pycache__/_impl.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/pyproject_hooks/__pycache__/_impl.cpython-312.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/pyproject_hooks/__pycache__/_impl.cpython-312.pyc
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/pyproject_hooks/_compat.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/pyproject_hooks/_impl.py
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pip/_vendor/pyproject_hooks/_in_process/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/pyproject_hooks/_in_process/__init__.py
@@ -1140,6 +1142,7 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pip/_vendor/pyproject_hook
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/pyproject_hooks/_in_process/__pycache__/_in_process.cpython-312.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/pyproject_hooks/_in_process/__pycache__/_in_process.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/pyproject_hooks/py.typed (EMPTY)
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pip/_vendor/requests/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/pip/_vendor/requests/__init__.py
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/pip/_vendor/requests/__pycache__/
