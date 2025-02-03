@@ -3,8 +3,8 @@
 # Depends on:  perl
 
 name=p5-test-warnings
-version=0.033
-release=2
+version=0.038
+release=1
 source=https://cpan.metacpan.org/authors/id/E/ET/ETHER/Test-Warnings-$version.tar.gz
 
 build() {
