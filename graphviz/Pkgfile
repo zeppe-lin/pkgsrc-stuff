@@ -3,12 +3,14 @@
 # Depends on:  libgd librsvg-compat libtool poppler
 
 name=graphviz
-version=12.1.2
+version=12.2.1
 release=1
 source=https://gitlab.com/graphviz/graphviz/-/archive/$version/$name-$version.tar.bz2
 
 build() {
 	cd $name-$version
+
+	export CXXFLAGS="$CXXFLAGS -fPIC -fpermissive"
 
 	./autogen.sh NOCONFIG
 
