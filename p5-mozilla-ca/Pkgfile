@@ -3,8 +3,8 @@
 # Depends on:  perl
 
 name=p5-mozilla-ca
-version=20240924
-release=2
+version=20250202
+release=1
 source=https://cpan.metacpan.org/authors/id/L/LW/LWP/Mozilla-CA-$version.tar.gz
 
 build() {
