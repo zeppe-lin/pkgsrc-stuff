@@ -3,11 +3,11 @@
 # Depends on:  zlib
 
 name=mitmproxy-bin
-version=11.1.0
+version=11.1.2
 release=1
 source=https://downloads.mitmproxy.org/$version/mitmproxy-$version-linux-x86_64.tar.gz
 
 build() {
 	ls -la .
-	install -m 0755 -Dt $PKG/usr/bin  mitmdump mitmproxy mitmweb
+	install -m 0755 -Dt $PKG/usr/bin mitmdump mitmproxy mitmweb
 }
