@@ -2,20 +2,24 @@
 # URL:         https://www.nsa.gov/ghidra
 # Depends on:  jdk-bin
 
-# ghidra 11.2 requires JDK version 21+
+# ghidra version 11.2+ requires JDK version 21+
 
 name=ghidra-bin
-version=11.2.1-20241105
+version=11.3-20250205
 release=1
-source=https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_${version%%-*}_build/ghidra_${version%%-*}_PUBLIC_${version##*-}.zip
+source="https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_${version%%-*}_build/ghidra_${version%%-*}_PUBLIC_${version##*-}.zip
+	ghidra.desktop"
 
 build() {
-	mkdir -p $PKG/opt $PKG/usr/bin
+	mkdir -p $PKG/opt $PKG/usr/bin $PKG/usr/share/icons/hicolor/64x64/apps
 
 	mv ghidra_${version%%-*}_PUBLIC $PKG/opt/ghidra
 
 	ln -s /opt/ghidra/ghidraRun               $PKG/usr/bin/ghidra
 	ln -s /opt/ghidra/support/analyzeHeadless $PKG/usr/bin/ghidra-headless
+	ln -s /opt/ghidra/docs/GhidraClass/Beginner/Images/GhidraLogo64.png \
+		$PKG/usr/share/icons/hicolor/64x64/apps/ghidra.png
+	install -m 0644 -Dt $PKG/usr/share/applications $SRC/ghidra.desktop
 
 	# fix dir perms
 	find $PKG -type d -not -perm 0755 -exec chmod 0755 {} \;
