@@ -21,6 +21,8 @@ drwxr-xr-x	root/root	opt/metasploit/.tools/dev/
 -rwxr-xr-x	root/root	opt/metasploit/.tools/dev/msftidy_docs.rb
 -rwxr-xr-x	root/root	opt/metasploit/.tools/dev/pre-commit-hook.rb
 -rwxr-xr-x	root/root	opt/metasploit/.tools/dev/set_binary_encoding.rb
+-rwxr-xr-x	root/root	opt/metasploit/.tools/dev/update_joomla_components.rb
+-rwxr-xr-x	root/root	opt/metasploit/.tools/dev/update_user_agent_strings.rb
 -rwxr-xr-x	root/root	opt/metasploit/.tools/dev/update_wordpress_vulnerabilities.rb
 drwxr-xr-x	root/root	opt/metasploit/.tools/exploit/
 -rwxr-xr-x	root/root	opt/metasploit/.tools/exploit/egghunter.rb
@@ -4645,6 +4647,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/metasploit/framework/login_scanner/
 -rw-rw-r--	root/root	opt/metasploit/lib/metasploit/framework/login_scanner/http.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/metasploit/framework/login_scanner/invalid.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/metasploit/framework/login_scanner/ipboard.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/metasploit/framework/login_scanner/ivanti_login.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/metasploit/framework/login_scanner/jenkins.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/metasploit/framework/login_scanner/jupyter.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/metasploit/framework/login_scanner/kerberos.rb
@@ -6789,6 +6792,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/ms_adts/
 -rwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/ms_adts/ms_adts_key_credential_entry_struct.rb
 -rwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/ms_adts/ms_adts_key_credential_struct.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/ms_crtd.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/ms_dnsp.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/ms_dtyp.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/ms_nrtp/
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/ms_nrtp/client.rb
@@ -7510,6 +7514,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/gather/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/apache_superset_cookie_sig_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/apple_safari_ftp_url_cookie_theft.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/apple_safari_webarchive_uxss.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/argus_dvr_4_lfi_cve_2018_15745.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/asrep.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/asterisk_creds.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/avtech744_dvr_accounts.rb
@@ -8043,6 +8048,8 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/ipmi/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/ipmi/ipmi_cipher_zero.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/ipmi/ipmi_dumphashes.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/ipmi/ipmi_version.rb
+drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/ivanti/
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/ivanti/login_scanner.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/jenkins/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/jenkins/jenkins_udp_broadcast_enum.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/kademlia/
@@ -13636,8 +13643,8 @@ drwxrwxr-x	root/root	opt/metasploit/tools/dev/report_generation/support_matrix/
 -rwxr-xr-x	root/root	opt/metasploit/tools/dev/set_binary_encoding.rb
 -rwxrwxr-x	root/root	opt/metasploit/tools/dev/sign-dev-keys.sh
 -rwxrwxr-x	root/root	opt/metasploit/tools/dev/update_gem_licenses.sh
--rwxrwxr-x	root/root	opt/metasploit/tools/dev/update_joomla_components.py
--rw-rw-r--	root/root	opt/metasploit/tools/dev/update_user_agent_strings.py
+-rwxr-xr-x	root/root	opt/metasploit/tools/dev/update_joomla_components.rb
+-rwxr-xr-x	root/root	opt/metasploit/tools/dev/update_user_agent_strings.rb
 -rwxr-xr-x	root/root	opt/metasploit/tools/dev/update_wordpress_vulnerabilities.rb
 drwxrwxr-x	root/root	opt/metasploit/tools/docs/
 -rw-rw-r--	root/root	opt/metasploit/tools/docs/issue_finder.py
