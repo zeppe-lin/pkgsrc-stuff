@@ -3,7 +3,7 @@
 # Depends on:  py3-editorconfig py3-six
 
 name=py3-jsbeautifier
-version=1.15.2
+version=1.15.3
 release=1
 source=https://github.com/beautify-web/js-beautify/archive/v$version/js-beautify-v$version.tar.gz
 
