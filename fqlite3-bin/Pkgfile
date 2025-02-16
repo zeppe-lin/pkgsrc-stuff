@@ -1,0 +1,25 @@
+# Description: Forensic SQLite data recovery tool (version 3)
+# URL:         https://www.staff.hs-mittweida.de/~pawlaszc/fqlite/
+# Depends on:  jdk-bin
+
+name=fqlite3-bin
+version=3.21
+release=1
+source=https://github.com/pawlaszczyk/fqlite/releases/download/$version/fqlite-$version-x86_64.deb
+
+build() {
+	ar x fqlite-$version-x86_64.deb
+
+	bsdtar -p -o --no-acls --no-xattrs --no-mac-metadata --no-fflags \
+		-C $PKG -xf data.tar.zst
+
+	# fix conflict with fqlite-bin
+	cd $PKG/opt; mv fqlite fqlite3
+
+	# launcher
+	mkdir -p $PKG/usr/bin
+	ln -s /opt/fqlite3/bin/fqlite $PKG/usr/bin/fqlite3
+
+	# remove junk
+	cd $PKG/opt/fqlite3; rm -r share/doc; rmdir share
+}
