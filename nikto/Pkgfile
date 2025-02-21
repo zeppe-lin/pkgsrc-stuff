@@ -3,7 +3,7 @@
 # Depends on:  p5-net-ssleay p5-json
 
 name=nikto
-version=2.5.0-cacf9a2
+version=2.5.0-c6cbce7
 release=1
 source="https://github.com/sullo/nikto/archive/${version#*-}/nikto-$version.tar.gz
 	nikto.sh
