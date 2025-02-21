@@ -3,12 +3,10 @@
 # Depends on:  python3
 
 name=pdf2hashcat
-version=0.1-a389f09
+version=0.1-f72185a
 release=1
 source=https://github.com/sighook/$name/archive/${version#*-}/$name-$version.tar.gz
 
 build() {
-	cd $name-${version#*-}*
-
-	install -m 0755 -D $name.py $PKG/usr/bin/$name
+	install -m 0755 -D $name-*/$name.py $PKG/usr/bin/$name
 }
