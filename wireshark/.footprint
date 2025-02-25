@@ -15,11 +15,11 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/wireshark
 drwxr-xr-x	root/root	usr/lib/
 lrwxrwxrwx	root/root	usr/lib/libwireshark.so -> libwireshark.so.18
-lrwxrwxrwx	root/root	usr/lib/libwireshark.so.18 -> libwireshark.so.18.0.4
--rwxr-xr-x	root/root	usr/lib/libwireshark.so.18.0.4
+lrwxrwxrwx	root/root	usr/lib/libwireshark.so.18 -> libwireshark.so.18.0.5
+-rwxr-xr-x	root/root	usr/lib/libwireshark.so.18.0.5
 lrwxrwxrwx	root/root	usr/lib/libwiretap.so -> libwiretap.so.15
-lrwxrwxrwx	root/root	usr/lib/libwiretap.so.15 -> libwiretap.so.15.0.4
--rwxr-xr-x	root/root	usr/lib/libwiretap.so.15.0.4
+lrwxrwxrwx	root/root	usr/lib/libwiretap.so.15 -> libwiretap.so.15.0.5
+-rwxr-xr-x	root/root	usr/lib/libwiretap.so.15.0.5
 lrwxrwxrwx	root/root	usr/lib/libwsutil.so -> libwsutil.so.16
 lrwxrwxrwx	root/root	usr/lib/libwsutil.so.16 -> libwsutil.so.16.0.0
 -rwxr-xr-x	root/root	usr/lib/libwsutil.so.16.0.0
