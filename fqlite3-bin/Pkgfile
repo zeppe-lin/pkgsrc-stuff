@@ -4,8 +4,9 @@
 
 name=fqlite3-bin
 version=3.21
-release=1
-source=https://github.com/pawlaszczyk/fqlite/releases/download/$version/fqlite-$version-x86_64.deb
+release=2
+source="https://github.com/pawlaszczyk/fqlite/releases/download/$version/fqlite-$version-x86_64.deb
+	revdep.$name"
 
 build() {
 	ar x fqlite-$version-x86_64.deb
@@ -15,6 +16,8 @@ build() {
 
 	# fix conflict with fqlite-bin
 	cd $PKG/opt; mv fqlite fqlite3
+
+	install -m 0644 -D $SRC/revdep.$name $PKG/etc/revdep.d/$name
 
 	# launcher
 	mkdir -p $PKG/usr/bin
