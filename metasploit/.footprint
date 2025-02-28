@@ -5054,6 +5054,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/git/smart_http/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/java_deserialization.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/jsobfu.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/kernel_mode.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/laravel_crypto_killer.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/local.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/local/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/local/ansible.rb
@@ -7218,6 +7219,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/admin/scada/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/scada/modicon_stux_transfer.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/scada/moxa_credentials_recovery.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/scada/multi_cip_command.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/scada/mypro_mgr_creds.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/scada/pcom_command.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/scada/phoenix_command.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/scada/yokogawa_bkbcopyd_client.rb
@@ -7901,6 +7903,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/ms15_034_http_sys_memory_dump.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/mybook_live_login.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/nagios_xi_scanner.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/netalertx_file_read.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/netdecision_traversal.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/netgear_sph200d_traversal.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/nginx_source_disclosure.rb
@@ -7944,6 +7947,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/servicedesk_plus_traversal.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/sevone_enum.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/simple_webserver_traversal.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/simplehelp_toolbox_path_traversal.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/smt_ipmi_49152_exposure.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/smt_ipmi_cgi_scanner.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/smt_ipmi_static_cert_scanner.rb
@@ -8801,6 +8805,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/ibm_drm_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/ibm_qradar_unauth_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/imperva_securesphere_exec.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/invoiceninja_unauth_rce_cve_2024_55555.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/invokeai_rce_cve_2024_12029.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/ipfire_bashbug_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/ipfire_oinkcode_exec.rb
@@ -8913,6 +8918,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/raidsonic_nas_ib5220_exec_noauth.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/railo_cfml_rfi.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/rancher_server.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/raspberrymatic_unauth_rce_cve_2024_24578.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/ray_agent_job_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/ray_cpu_profile_cmd_injection_cve_2023_6019.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/rconfig_ajaxarchivefiles_rce.rb
