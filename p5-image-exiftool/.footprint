@@ -173,6 +173,7 @@ drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/Lang/
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/OpenEXR.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/Opus.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/Other.pm
+-r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/PCAP.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/PCX.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/PDF.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/PGF.pm
@@ -380,6 +381,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::OpenEXR.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::Opus.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::Other.3pm.gz
+-r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::PCAP.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::PCX.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::PDF.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::PGF.3pm.gz
