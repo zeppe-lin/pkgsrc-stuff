@@ -3,7 +3,7 @@
 # Depends on:  jdk-bin
 
 name=apktool-bin
-version=2.11.0
+version=2.11.1
 release=1
 source=https://github.com/iBotPeaches/Apktool/releases/download/v$version/apktool_$version.jar
 
