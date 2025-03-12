@@ -42,13 +42,16 @@ drwxr-xr-x	root/root	usr/include/tsk/auto/
 drwxr-xr-x	root/root	usr/include/tsk/base/
 -rw-r--r--	root/root	usr/include/tsk/base/tsk_base.h
 -rw-r--r--	root/root	usr/include/tsk/base/tsk_os.h
+-rw-r--r--	root/root	usr/include/tsk/base/tsk_os_cpp.h
 drwxr-xr-x	root/root	usr/include/tsk/fs/
 -rw-r--r--	root/root	usr/include/tsk/fs/apfs_compat.hpp
 -rw-r--r--	root/root	usr/include/tsk/fs/apfs_fs.h
 -rw-r--r--	root/root	usr/include/tsk/fs/apfs_fs.hpp
 -rw-r--r--	root/root	usr/include/tsk/fs/decmpfs.h
+-rw-r--r--	root/root	usr/include/tsk/fs/encryptionHelper.h
 -rw-r--r--	root/root	usr/include/tsk/fs/tsk_apfs.h
 -rw-r--r--	root/root	usr/include/tsk/fs/tsk_apfs.hpp
+-rw-r--r--	root/root	usr/include/tsk/fs/tsk_btrfs.h
 -rw-r--r--	root/root	usr/include/tsk/fs/tsk_exfatfs.h
 -rw-r--r--	root/root	usr/include/tsk/fs/tsk_ext2fs.h
 -rw-r--r--	root/root	usr/include/tsk/fs/tsk_fatfs.h
@@ -59,6 +62,7 @@ drwxr-xr-x	root/root	usr/include/tsk/fs/
 -rw-r--r--	root/root	usr/include/tsk/fs/tsk_iso9660.h
 -rw-r--r--	root/root	usr/include/tsk/fs/tsk_logical_fs.h
 -rw-r--r--	root/root	usr/include/tsk/fs/tsk_ntfs.h
+-rw-r--r--	root/root	usr/include/tsk/fs/tsk_xfs.h
 -rw-r--r--	root/root	usr/include/tsk/fs/tsk_yaffs.h
 drwxr-xr-x	root/root	usr/include/tsk/hashdb/
 -rw-r--r--	root/root	usr/include/tsk/hashdb/tsk_hashdb.h
@@ -77,6 +81,19 @@ drwxr-xr-x	root/root	usr/include/tsk/pool/
 -rw-r--r--	root/root	usr/include/tsk/pool/tsk_pool.hpp
 -rw-r--r--	root/root	usr/include/tsk/tsk_incs.h
 drwxr-xr-x	root/root	usr/include/tsk/util/
+drwxr-xr-x	root/root	usr/include/tsk/util/Bitlocker/
+-rw-r--r--	root/root	usr/include/tsk/util/Bitlocker/BitlockerParser.h
+-rw-r--r--	root/root	usr/include/tsk/util/Bitlocker/BitlockerUtils.h
+-rw-r--r--	root/root	usr/include/tsk/util/Bitlocker/DataTypes.h
+-rw-r--r--	root/root	usr/include/tsk/util/Bitlocker/MetadataEntry.h
+-rw-r--r--	root/root	usr/include/tsk/util/Bitlocker/MetadataUtils.h
+-rw-r--r--	root/root	usr/include/tsk/util/Bitlocker/MetadataValue.h
+-rw-r--r--	root/root	usr/include/tsk/util/Bitlocker/MetadataValueAesCcmEncryptedKey.h
+-rw-r--r--	root/root	usr/include/tsk/util/Bitlocker/MetadataValueKey.h
+-rw-r--r--	root/root	usr/include/tsk/util/Bitlocker/MetadataValueOffsetAndSize.h
+-rw-r--r--	root/root	usr/include/tsk/util/Bitlocker/MetadataValueStretchKey.h
+-rw-r--r--	root/root	usr/include/tsk/util/Bitlocker/MetadataValueUnicode.h
+-rw-r--r--	root/root	usr/include/tsk/util/Bitlocker/MetadataValueVolumeMasterKey.h
 -rw-r--r--	root/root	usr/include/tsk/util/crypto.hpp
 -rw-r--r--	root/root	usr/include/tsk/util/detect_encryption.h
 -rw-r--r--	root/root	usr/include/tsk/util/file_system_utils.h
@@ -92,9 +109,9 @@ drwxr-xr-x	root/root	usr/include/tsk/vs/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libtsk.a
 -rwxr-xr-x	root/root	usr/lib/libtsk.la
-lrwxrwxrwx	root/root	usr/lib/libtsk.so -> libtsk.so.19.2.1
-lrwxrwxrwx	root/root	usr/lib/libtsk.so.19 -> libtsk.so.19.2.1
--rwxr-xr-x	root/root	usr/lib/libtsk.so.19.2.1
+lrwxrwxrwx	root/root	usr/lib/libtsk.so -> libtsk.so.22.0.0
+lrwxrwxrwx	root/root	usr/lib/libtsk.so.22 -> libtsk.so.22.0.0
+-rwxr-xr-x	root/root	usr/lib/libtsk.so.22.0.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/tsk.pc
 drwxr-xr-x	root/root	usr/share/
