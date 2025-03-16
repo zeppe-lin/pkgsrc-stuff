@@ -3,8 +3,8 @@
 # Depends on:  py3-setuptools tcpdump
 
 name=scapy
-version=2.6.0
-release=2
+version=2.6.1
+release=1
 source=https://github.com/secdev/$name/archive/v$version/$name-$version.tar.gz
 
 build() {

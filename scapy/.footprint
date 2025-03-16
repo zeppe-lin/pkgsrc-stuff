@@ -871,6 +871,8 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/scapy/layers/msrpce/__pyca
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/scapy/layers/msrpce/__pycache__/ept.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/scapy/layers/msrpce/__pycache__/msdcom.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/scapy/layers/msrpce/__pycache__/msdcom.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/scapy/layers/msrpce/__pycache__/msdrsr.cpython-312.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/scapy/layers/msrpce/__pycache__/msdrsr.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/scapy/layers/msrpce/__pycache__/msnrpc.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/scapy/layers/msrpce/__pycache__/msnrpc.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/scapy/layers/msrpce/__pycache__/mspac.cpython-312.opt-1.pyc
@@ -882,6 +884,7 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/scapy/layers/msrpce/__pyca
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/scapy/layers/msrpce/all.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/scapy/layers/msrpce/ept.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/scapy/layers/msrpce/msdcom.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/scapy/layers/msrpce/msdrsr.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/scapy/layers/msrpce/msnrpc.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/scapy/layers/msrpce/mspac.py
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/scapy/layers/msrpce/raw/
@@ -893,6 +896,8 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/scapy/layers/msrpce/raw/__
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/scapy/layers/msrpce/raw/__pycache__/ept.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/scapy/layers/msrpce/raw/__pycache__/ms_dcom.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/scapy/layers/msrpce/raw/__pycache__/ms_dcom.cpython-312.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/scapy/layers/msrpce/raw/__pycache__/ms_drsr.cpython-312.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/scapy/layers/msrpce/raw/__pycache__/ms_drsr.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/scapy/layers/msrpce/raw/__pycache__/ms_nrpc.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/scapy/layers/msrpce/raw/__pycache__/ms_nrpc.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/scapy/layers/msrpce/raw/__pycache__/ms_samr.cpython-312.opt-1.pyc
@@ -903,6 +908,7 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/scapy/layers/msrpce/raw/__
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/scapy/layers/msrpce/raw/__pycache__/ms_wkst.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/scapy/layers/msrpce/raw/ept.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/scapy/layers/msrpce/raw/ms_dcom.py
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/scapy/layers/msrpce/raw/ms_drsr.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/scapy/layers/msrpce/raw/ms_nrpc.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/scapy/layers/msrpce/raw/ms_samr.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/scapy/layers/msrpce/raw/ms_srvs.py
@@ -1153,3 +1159,7 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/scapy/tools/automotive/__p
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/scapy/utils.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/scapy/utils6.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/scapy/volatile.py
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-rw-r--	root/root	usr/share/man/man1/scapy.1.gz
