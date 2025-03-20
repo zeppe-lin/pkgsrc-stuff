@@ -3,8 +3,8 @@
 # Depends on:  perl
 
 name=p5-path-tiny
-version=0.146
-release=2
+version=0.148
+release=1
 source=https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/Path-Tiny-$version.tar.gz
 
 build() {
