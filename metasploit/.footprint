@@ -19,6 +19,7 @@ drwxr-xr-x	root/root	opt/metasploit/.tools/dev/
 -rwxr-xr-x	root/root	opt/metasploit/.tools/dev/detect_dead_reference_links.rb
 -rwxr-xr-x	root/root	opt/metasploit/.tools/dev/find_and_replace_dead_reference_links.rb
 -rwxr-xr-x	root/root	opt/metasploit/.tools/dev/find_release_notes.rb
+-rwxr-xr-x	root/root	opt/metasploit/.tools/dev/hash_cracker_validator.rb
 -rwxr-xr-x	root/root	opt/metasploit/.tools/dev/msftidy.rb
 -rwxr-xr-x	root/root	opt/metasploit/.tools/dev/msftidy_docs.rb
 -rwxr-xr-x	root/root	opt/metasploit/.tools/dev/pre-commit-hook.rb
@@ -5354,6 +5355,8 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/smb/relay/ntlm/
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/smb/relay/ntlm/target/
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/smb/relay/ntlm/target/http/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/smb/relay/ntlm/target/http/client.rb
+drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/smb/relay/ntlm/target/ldap/
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/smb/relay/ntlm/target/ldap/client.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/smb/relay/ntlm/target/smb/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/smb/relay/ntlm/target/smb/client.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/smb/relay/provider/
@@ -6785,6 +6788,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/ldap/auth_adapter/rex_kerberos
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/ldap/auth_adapter/rex_ntlm.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/ldap/auth_adapter/rex_ntlm/
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/ldap/auth_adapter/rex_ntlm/encryptor.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/ldap/auth_adapter/rex_relay_ntlm.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/rex/proto/ldap/client.rb
 -rwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/ldap/dn_binary.rb
 -rwxrwxr-x	root/root	opt/metasploit/lib/rex/proto/ldap/ldap_exception.rb
@@ -8470,6 +8474,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/server/dns/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/server/regsvr32_command_delivery_server.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/server/relay/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/server/relay/esc8.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/server/relay/smb_to_ldap.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/server/socks_proxy.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/server/socks_unc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/server/teamviewer_uri_smb_redirect.rb
@@ -13700,6 +13705,7 @@ drwxrwxr-x	root/root	opt/metasploit/tools/dev/
 -rwxr-xr-x	root/root	opt/metasploit/tools/dev/detect_dead_reference_links.rb
 -rwxr-xr-x	root/root	opt/metasploit/tools/dev/find_and_replace_dead_reference_links.rb
 -rwxr-xr-x	root/root	opt/metasploit/tools/dev/find_release_notes.rb
+-rwxr-xr-x	root/root	opt/metasploit/tools/dev/hash_cracker_validator.rb
 -rwxrwxr-x	root/root	opt/metasploit/tools/dev/import-dev-keys.sh
 -rwxrwxr-x	root/root	opt/metasploit/tools/dev/msfdb_ws
 -rwxr-xr-x	root/root	opt/metasploit/tools/dev/msftidy.rb
