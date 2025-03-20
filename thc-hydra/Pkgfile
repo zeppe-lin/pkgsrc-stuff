@@ -3,7 +3,7 @@
 # Depends on:  freerdp2 gtk libgcrypt libidn libpcre2 libssh mysql postgresql subversion
 
 name=thc-hydra
-version=9.5-9bf9f8b
+version=9.5-c57df67
 release=1
 source="https://github.com/vanhauser-thc/$name/archive/${version#*-}/$name-${version#*-}.tar.gz
 	xhydra.desktop"
