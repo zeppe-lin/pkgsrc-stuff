@@ -2,7 +2,7 @@
 # URL:         http://www.gnu.org/software/libidn/
 
 name=libidn
-version=1.42
+version=1.43
 release=1
 source=https://ftp.gnu.org/gnu/$name/$name-$version.tar.gz
 
