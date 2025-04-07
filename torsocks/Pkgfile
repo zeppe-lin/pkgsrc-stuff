@@ -3,8 +3,8 @@
 # Optional:    tor
 
 name=torsocks
-version=2.4.0
-release=2
+version=2.5.0
+release=1
 source=https://gitlab.torproject.org/tpo/core/$name/-/archive/v$version/$name-v$version.tar.gz
 
 build() {
