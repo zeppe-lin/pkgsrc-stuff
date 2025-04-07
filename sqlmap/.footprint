@@ -1696,6 +1696,9 @@ drwxr-xr-x	root/root	opt/sqlmap/tamper/__pycache__/
 -rw-r--r--	root/root	opt/sqlmap/tamper/__pycache__/luanginx.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	opt/sqlmap/tamper/__pycache__/luanginx.cpython-312.opt-2.pyc
 -rw-r--r--	root/root	opt/sqlmap/tamper/__pycache__/luanginx.cpython-312.pyc
+-rw-r--r--	root/root	opt/sqlmap/tamper/__pycache__/luanginxmore.cpython-312.opt-1.pyc
+-rw-r--r--	root/root	opt/sqlmap/tamper/__pycache__/luanginxmore.cpython-312.opt-2.pyc
+-rw-r--r--	root/root	opt/sqlmap/tamper/__pycache__/luanginxmore.cpython-312.pyc
 -rw-r--r--	root/root	opt/sqlmap/tamper/__pycache__/misunion.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	opt/sqlmap/tamper/__pycache__/misunion.cpython-312.opt-2.pyc
 -rw-r--r--	root/root	opt/sqlmap/tamper/__pycache__/misunion.cpython-312.pyc
@@ -1836,6 +1839,7 @@ drwxr-xr-x	root/root	opt/sqlmap/tamper/__pycache__/
 -rw-r--r--	root/root	opt/sqlmap/tamper/least.py
 -rw-r--r--	root/root	opt/sqlmap/tamper/lowercase.py
 -rw-r--r--	root/root	opt/sqlmap/tamper/luanginx.py
+-rw-r--r--	root/root	opt/sqlmap/tamper/luanginxmore.py
 -rw-r--r--	root/root	opt/sqlmap/tamper/misunion.py
 -rw-r--r--	root/root	opt/sqlmap/tamper/modsecurityversioned.py
 -rw-r--r--	root/root	opt/sqlmap/tamper/modsecurityzeroversioned.py
