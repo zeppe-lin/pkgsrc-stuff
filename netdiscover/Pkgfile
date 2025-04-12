@@ -3,7 +3,7 @@
 # Depends on:  libnet libpcap dos2unix
 
 name=netdiscover
-version=0.10
+version=0.11
 release=1
 source=https://github.com/$name-scanner/$name/archive/$version/$name-$version.tar.gz
 
@@ -12,7 +12,6 @@ build() {
 
 	mkdir build; cd build
 
-	touch ../$name-$version/INSTALL
 	autoreconf -fi ../$name-$version
 	../$name-$version/configure  \
 		--prefix=/usr        \
@@ -21,5 +20,5 @@ build() {
 	make DESTDIR=$PKG install
 
 	# remove junk
-	rm -r $PKG/usr/share/doc
+	rm -rf $PKG/usr/share/doc
 }
