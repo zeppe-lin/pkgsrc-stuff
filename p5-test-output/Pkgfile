@@ -3,7 +3,7 @@
 # Depends on:  p5-capture-tiny
 
 name=p5-test-output
-version=1.035
+version=1.036
 release=1
 source=https://cpan.metacpan.org/authors/id/B/BR/BRIANDFOY/Test-Output-$version.tar.gz
 
