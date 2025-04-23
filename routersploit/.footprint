@@ -254,6 +254,7 @@ drwxr-xr-x	root/root	opt/routersploit/Crypto/Math/__pycache__/
 drwxr-xr-x	root/root	opt/routersploit/Crypto/Protocol/
 -rw-r--r--	root/root	opt/routersploit/Crypto/Protocol/DH.py
 -rw-r--r--	root/root	opt/routersploit/Crypto/Protocol/DH.pyi
+-rw-r--r--	root/root	opt/routersploit/Crypto/Protocol/HPKE.py
 -rw-r--r--	root/root	opt/routersploit/Crypto/Protocol/KDF.py
 -rw-r--r--	root/root	opt/routersploit/Crypto/Protocol/KDF.pyi
 -rw-r--r--	root/root	opt/routersploit/Crypto/Protocol/SecretSharing.py
@@ -262,6 +263,7 @@ drwxr-xr-x	root/root	opt/routersploit/Crypto/Protocol/
 -rw-r--r--	root/root	opt/routersploit/Crypto/Protocol/__init__.pyi
 drwxr-xr-x	root/root	opt/routersploit/Crypto/Protocol/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/Crypto/Protocol/__pycache__/DH.cpython-312.pyc
+-rw-r--r--	root/root	opt/routersploit/Crypto/Protocol/__pycache__/HPKE.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/Crypto/Protocol/__pycache__/KDF.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/Crypto/Protocol/__pycache__/SecretSharing.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/Crypto/Protocol/__pycache__/__init__.cpython-312.pyc
@@ -439,10 +441,12 @@ drwxr-xr-x	root/root	opt/routersploit/Crypto/SelfTest/Protocol/
 -rw-r--r--	root/root	opt/routersploit/Crypto/SelfTest/Protocol/__init__.py
 drwxr-xr-x	root/root	opt/routersploit/Crypto/SelfTest/Protocol/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/Crypto/SelfTest/Protocol/__pycache__/__init__.cpython-312.pyc
+-rw-r--r--	root/root	opt/routersploit/Crypto/SelfTest/Protocol/__pycache__/test_HPKE.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/Crypto/SelfTest/Protocol/__pycache__/test_KDF.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/Crypto/SelfTest/Protocol/__pycache__/test_SecretSharing.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/Crypto/SelfTest/Protocol/__pycache__/test_ecdh.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/Crypto/SelfTest/Protocol/__pycache__/test_rfc1751.cpython-312.pyc
+-rw-r--r--	root/root	opt/routersploit/Crypto/SelfTest/Protocol/test_HPKE.py
 -rw-r--r--	root/root	opt/routersploit/Crypto/SelfTest/Protocol/test_KDF.py
 -rw-r--r--	root/root	opt/routersploit/Crypto/SelfTest/Protocol/test_SecretSharing.py
 -rw-r--r--	root/root	opt/routersploit/Crypto/SelfTest/Protocol/test_ecdh.py
