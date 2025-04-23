@@ -42,7 +42,6 @@ drwxr-xr-x	root/root	usr/include/tsk/auto/
 drwxr-xr-x	root/root	usr/include/tsk/base/
 -rw-r--r--	root/root	usr/include/tsk/base/tsk_base.h
 -rw-r--r--	root/root	usr/include/tsk/base/tsk_os.h
--rw-r--r--	root/root	usr/include/tsk/base/tsk_os_cpp.h
 drwxr-xr-x	root/root	usr/include/tsk/fs/
 -rw-r--r--	root/root	usr/include/tsk/fs/apfs_compat.hpp
 -rw-r--r--	root/root	usr/include/tsk/fs/apfs_fs.h
@@ -51,7 +50,6 @@ drwxr-xr-x	root/root	usr/include/tsk/fs/
 -rw-r--r--	root/root	usr/include/tsk/fs/encryptionHelper.h
 -rw-r--r--	root/root	usr/include/tsk/fs/tsk_apfs.h
 -rw-r--r--	root/root	usr/include/tsk/fs/tsk_apfs.hpp
--rw-r--r--	root/root	usr/include/tsk/fs/tsk_btrfs.h
 -rw-r--r--	root/root	usr/include/tsk/fs/tsk_exfatfs.h
 -rw-r--r--	root/root	usr/include/tsk/fs/tsk_ext2fs.h
 -rw-r--r--	root/root	usr/include/tsk/fs/tsk_fatfs.h
@@ -62,7 +60,6 @@ drwxr-xr-x	root/root	usr/include/tsk/fs/
 -rw-r--r--	root/root	usr/include/tsk/fs/tsk_iso9660.h
 -rw-r--r--	root/root	usr/include/tsk/fs/tsk_logical_fs.h
 -rw-r--r--	root/root	usr/include/tsk/fs/tsk_ntfs.h
--rw-r--r--	root/root	usr/include/tsk/fs/tsk_xfs.h
 -rw-r--r--	root/root	usr/include/tsk/fs/tsk_yaffs.h
 drwxr-xr-x	root/root	usr/include/tsk/hashdb/
 -rw-r--r--	root/root	usr/include/tsk/hashdb/tsk_hashdb.h
@@ -109,9 +106,9 @@ drwxr-xr-x	root/root	usr/include/tsk/vs/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libtsk.a
 -rwxr-xr-x	root/root	usr/lib/libtsk.la
-lrwxrwxrwx	root/root	usr/lib/libtsk.so -> libtsk.so.22.0.0
-lrwxrwxrwx	root/root	usr/lib/libtsk.so.22 -> libtsk.so.22.0.0
--rwxr-xr-x	root/root	usr/lib/libtsk.so.22.0.0
+lrwxrwxrwx	root/root	usr/lib/libtsk.so -> libtsk.so.23.0.0
+lrwxrwxrwx	root/root	usr/lib/libtsk.so.23 -> libtsk.so.23.0.0
+-rwxr-xr-x	root/root	usr/lib/libtsk.so.23.0.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/tsk.pc
 drwxr-xr-x	root/root	usr/share/
