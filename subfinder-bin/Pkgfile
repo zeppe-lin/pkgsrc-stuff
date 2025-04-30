@@ -2,11 +2,11 @@
 # URL:         https://github.com/projectdiscovery/subfinder
 
 name=subfinder-bin
-version=2.7.0
+version=2.7.1
 release=1
 source=https://github.com/projectdiscovery/subfinder/releases/download/v$version/subfinder_${version}_linux_amd64.zip
 
 build() {
 	ls -la .
-	install -m 0755 -Dt $PKG/usr/bin  subfinder
+	install -m 0755 -Dt $PKG/usr/bin subfinder
 }
