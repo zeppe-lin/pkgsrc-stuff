@@ -5347,6 +5347,9 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/ms_samr/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/ndmp.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/ndmp_socket.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/nuuo.rb
+drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/pkcs12/
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/pkcs12/storage.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/pkcs12/stored_pkcs12.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/pop2.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/postgres.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/rdp.rb
@@ -5559,6 +5562,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/modules/external/python/metaspl
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/modules/external/python/metasploit/login_scanner.py
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/modules/external/python/metasploit/module.py
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/modules/external/python/metasploit/probe_scanner.py
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/modules/external/python/metasploit/version.py
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/modules/external/ruby/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/modules/external/ruby/metasploit.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/modules/external/shim.rb
@@ -6003,6 +6007,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/ui/console/command_dispatcher/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/ui/console/command_dispatcher/db.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/ui/console/command_dispatcher/db/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/ui/console/command_dispatcher/db/analyze.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/ui/console/command_dispatcher/db/certs.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/ui/console/command_dispatcher/db/common.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/ui/console/command_dispatcher/db/klist.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/ui/console/command_dispatcher/developer.rb
@@ -8675,10 +8680,6 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/bsd/finger/
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/bsdi/
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/bsdi/softcart/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/bsdi/softcart/mercantec_softcart.rb
-drwxrwxr-x	root/root	opt/metasploit/modules/exploits/dialup/
-drwxrwxr-x	root/root	opt/metasploit/modules/exploits/dialup/multi/
-drwxrwxr-x	root/root	opt/metasploit/modules/exploits/dialup/multi/login/
--rw-rw-r--	root/root	opt/metasploit/modules/exploits/dialup/multi/login/manyargs.rb
 -rwxrwxr-x	root/root	opt/metasploit/modules/exploits/example.py
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/example.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/example_linux_priv_esc.rb
@@ -8757,6 +8758,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/axis_srv_parhand_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/belkin_login_bof.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/bentoml_rce_cve_2025_27520.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/bentoml_runner_server_rce_cve_2025_32375.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/beyondtrust_pra_rs_unauth_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/bitbucket_git_cmd_injection.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/bludit_upload_images_exec.rb
@@ -9826,6 +9828,8 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/qnx/local/
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/qnx/qconn/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/qnx/qconn/qconn_exec.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/solaris/
+drwxrwxr-x	root/root	opt/metasploit/modules/exploits/solaris/dialup/
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/solaris/dialup/manyargs.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/solaris/dtspcd/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/solaris/dtspcd/heap_noir.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/solaris/local/
@@ -12878,6 +12882,9 @@ drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/core/exploit/remote/kerberos/se
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/exploit/remote/kerberos/ticket_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/exploit/remote/ldap_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/exploit/remote/ms_icpr_spec.rb
+drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/core/exploit/remote/pkcs12/
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/exploit/remote/pkcs12/storage_spec.rb
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/exploit/remote/pkcs12/stored_pkcs12_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/core/exploit/remote/remote/
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/core/exploit/remote/remote/http/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/exploit/remote/remote/http/http_cookie_jar_spec.rb
@@ -13006,6 +13013,7 @@ drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/ui/console/command_dispatcher/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/ui/console/command_dispatcher/core_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/ui/console/command_dispatcher/creds_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/ui/console/command_dispatcher/db/
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/ui/console/command_dispatcher/db/certs_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/ui/console/command_dispatcher/db/klist_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/ui/console/command_dispatcher/db_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/ui/console/command_dispatcher/exploit_spec.rb
