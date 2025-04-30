@@ -3,7 +3,7 @@
 # Depends on:  py3-pip
 
 name=routersploit
-version=3.4.7-ebbde74
+version=3.4.7-0bf837f
 release=1
 source=https://github.com/threat9/$name/archive/${version#*-}/$name-$version.tar.gz
 
@@ -39,6 +39,7 @@ EOF
 			-o -name .travis.yml       \
 			-o -name Dockerfile        \
 			-o -iname readme.md        \
+			-o -name .DS_Store         \
 			\) -delete ,               \
 		-type d \( -name \*.dist-info      \
 			-o -name \*.egg-info       \
