@@ -1,14 +1,16 @@
 # Description: Perl Uniform Resource Identifiers Library
 # URL:         https://metacpan.org/pod/URI
-# Depends on:  p5-test-fatal p5-test-needs p5-test-warnings
+# Depends on:  p5-mime-base32 p5-test-fatal p5-test-needs p5-test-warnings
 
 name=p5-uri
-version=5.31
+version=5.32
 release=1
 source=https://cpan.metacpan.org/authors/id/O/OA/OALDERS/URI-$version.tar.gz
 
 build() {
 	cd URI-$version
+
+	if command -v finddepsdistmeta; then finddepsdistmeta; fi
 
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 

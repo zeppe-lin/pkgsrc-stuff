@@ -61,6 +61,7 @@ drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.38/URI/file/
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/URI/sftp.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/URI/sip.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/URI/sips.pm
+-r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/URI/smb.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/URI/snews.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/URI/ssh.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/URI/telnet.pm
@@ -87,3 +88,4 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -r--r--r--	root/root	usr/share/man/man3/URI::icaps.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/URI::ldap.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/URI::otpauth.3pm.gz
+-r--r--r--	root/root	usr/share/man/man3/URI::smb.3pm.gz
