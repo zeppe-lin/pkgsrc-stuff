@@ -3,13 +3,14 @@
 # Depends on:  p5-b-cow
 
 name=p5-clone
-version=0.47
-release=2
+version=0.48_01
+release=1
 source=https://cpan.metacpan.org/authors/id/A/AT/ATOOMIC/Clone-$version.tar.gz
 
 build() {
 	cd Clone-$version
 
+	command -v finddepsdistmeta && finddepsdistmeta
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
 	make OPTIMIZE="$CFLAGS"
