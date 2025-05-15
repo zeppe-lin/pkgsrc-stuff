@@ -3,7 +3,7 @@
 # Depends on:  libnet libpcap dos2unix
 
 name=netdiscover
-version=0.11
+version=0.20
 release=1
 source=https://github.com/$name-scanner/$name/archive/$version/$name-$version.tar.gz
 
