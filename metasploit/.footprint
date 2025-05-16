@@ -1788,6 +1788,7 @@ drwxrwxr-x	root/root	opt/metasploit/data/post/
 -rwxrwxr-x	root/root	opt/metasploit/data/post/bypassuac-x86.exe
 -rwxrwxr-x	root/root	opt/metasploit/data/post/enum_artifacts_list.txt
 drwxrwxr-x	root/root	opt/metasploit/data/post/execute-dotnet-assembly/
+-rwxrwxr-x	root/root	opt/metasploit/data/post/execute-dotnet-assembly/HostingCLRWin32.dll
 -rwxrwxr-x	root/root	opt/metasploit/data/post/execute-dotnet-assembly/HostingCLRx64.dll
 drwxrwxr-x	root/root	opt/metasploit/data/post/powershell/
 -rw-rw-r--	root/root	opt/metasploit/data/post/powershell/Invoke-LoginPrompt.ps1
@@ -2283,7 +2284,6 @@ drwxrwxr-x	root/root	opt/metasploit/external/source/HostingCLR_inject/HostingCLR
 -rwxrwxr-x	root/root	opt/metasploit/external/source/HostingCLR_inject/HostingCLR/ReflectiveFree.h
 -rw-rw-r--	root/root	opt/metasploit/external/source/HostingCLR_inject/HostingCLR/ReflectiveLoader.cpp
 -rw-rw-r--	root/root	opt/metasploit/external/source/HostingCLR_inject/HostingCLR/ReflectiveLoader.h
--rw-rw-r--	root/root	opt/metasploit/external/source/HostingCLR_inject/HostingCLR/Syscalls.asm
 -rw-rw-r--	root/root	opt/metasploit/external/source/HostingCLR_inject/HostingCLR/stdafx.cpp
 -rw-rw-r--	root/root	opt/metasploit/external/source/HostingCLR_inject/HostingCLR/stdafx.h
 -rw-rw-r--	root/root	opt/metasploit/external/source/HostingCLR_inject/HostingCLR/targetver.h
@@ -7693,6 +7693,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/gather/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/teamtalk_creds.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/tplink_archer_c7_traversal.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/trackit_sql_domain_creds.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/upsmon_traversal.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/vbulletin_getindexablecontent_sqli.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/vbulletin_vote_sqli.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/vmware_vcenter_vmdir_ldap.rb
@@ -9386,6 +9387,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/cacti_package_import_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/cacti_pollers_sqli_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/caidao_php_backdoor_exec.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/carrental_fileupload_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/churchinfo_upload_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/cisco_dcnm_upload.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/cisco_dcnm_upload_2019.rb
@@ -9660,7 +9662,9 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_responsive_thumbnail_slider_upload.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_royal_elementor_addons_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_simple_file_list_rce.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_suretriggers_auth_bypass.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_time_capsule_file_upload_rce.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_user_registration_membership_escalation.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wso2_api_manager_file_upload_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wso2_file_upload_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/x7chat2_php_exec.rb
@@ -10981,6 +10985,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/windows/local/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/local/ipass_launch_app.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/local/lenovo_systemupdate.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/local/lexmark_driver_privesc.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/local/linqpad_deserialization_persistence.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/local/microfocus_operations_privesc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/local/mov_ss.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/local/mqac_write.rb
