@@ -3,13 +3,14 @@
 # Depends on:  perl
 
 name=p5-image-exiftool
-version=13.29
+version=13.30
 release=1
 source=https://exiftool.org/Image-ExifTool-$version.tar.gz
 
 build() {
 	cd Image-ExifTool-$version
 
+	command -v finddepsdistmeta && finddepsdistmeta
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
 	make
