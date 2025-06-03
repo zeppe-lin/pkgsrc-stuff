@@ -3,7 +3,7 @@
 # Depends on:  firefox-bin lynx
 
 name=firefox-search-by-image-bin
-version=8.2.1
+version=8.2.3
 release=1
 _url=https://addons.mozilla.org/en-US/firefox/addon/search_by_image/
 source=$(lynx -dump $_url | awk "/search_by_image-$version\.xpi\$/{print \$2}")
