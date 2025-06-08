@@ -7227,6 +7227,8 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/admin/networking/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/networking/f5_config.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/networking/juniper_config.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/networking/mikrotik_config.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/networking/thinmanager_traversal_upload.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/networking/thinmanager_traversal_upload2.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/networking/ubiquiti_config.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/admin/networking/vyos_config.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/admin/officescan/
@@ -7692,6 +7694,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/gather/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/ssllabs_scan.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/suite_crm_export_sqli.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/teamtalk_creds.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/thinmanager_traversal_download.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/tplink_archer_c7_traversal.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/trackit_sql_domain_creds.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/upsmon_traversal.rb
@@ -9156,6 +9159,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/local/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/ubuntu_enlightenment_mount_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/ubuntu_needrestart_lpe.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/udev_netlink.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/udev_persistence.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/ueb_bpserverd_privesc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/ufo_privilege_escalation.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/vcenter_java_wrapper_vmon_priv_esc.rb
@@ -9454,6 +9458,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/ibm_openadmin_tool_soap_welcomeserver_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/invision_customcss_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/ispconfig_php_exec.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/ivanti_epmm_rce_cve_2025_4427_4428.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/jboss_bshdeployer.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/jboss_deploymentfilerepository.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/jboss_invoke_deploy.rb
@@ -11426,6 +11431,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/payloads/adapters/cmd/linux/tftp/
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/adapters/cmd/linux/tftp/x64.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/adapters/cmd/linux/tftp/x86.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/payloads/adapters/cmd/unix/
+-rw-rw-r--	root/root	opt/metasploit/modules/payloads/adapters/cmd/unix/php.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/adapters/cmd/unix/python.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/payloads/adapters/cmd/windows/
 drwxrwxr-x	root/root	opt/metasploit/modules/payloads/adapters/cmd/windows/http/
