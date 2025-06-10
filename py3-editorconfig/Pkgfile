@@ -3,7 +3,7 @@
 # Depends on:  py3-setuptools
 
 name=py3-editorconfig
-version=0.17.0
+version=0.17.1
 release=1
 source=$name-$version.tar.gz::https://github.com/editorconfig/editorconfig-core-py/archive/refs/tags/v$version.tar.gz
 

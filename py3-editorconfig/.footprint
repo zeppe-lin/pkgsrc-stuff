@@ -4,12 +4,13 @@ drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python3.12/
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/
-drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/EditorConfig-0.17.0-py3.12.egg-info/
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/EditorConfig-0.17.0-py3.12.egg-info/PKG-INFO
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/EditorConfig-0.17.0-py3.12.egg-info/SOURCES.txt
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/EditorConfig-0.17.0-py3.12.egg-info/dependency_links.txt
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/EditorConfig-0.17.0-py3.12.egg-info/entry_points.txt
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/EditorConfig-0.17.0-py3.12.egg-info/top_level.txt
+drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/EditorConfig-0.17.1-py3.12.egg-info/
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/EditorConfig-0.17.1-py3.12.egg-info/PKG-INFO
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/EditorConfig-0.17.1-py3.12.egg-info/SOURCES.txt
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/EditorConfig-0.17.1-py3.12.egg-info/dependency_links.txt
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/EditorConfig-0.17.1-py3.12.egg-info/entry_points.txt
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/EditorConfig-0.17.1-py3.12.egg-info/requires.txt
+-rw-r--r--	root/root	usr/lib/python3.12/site-packages/EditorConfig-0.17.1-py3.12.egg-info/top_level.txt
 drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/editorconfig/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/editorconfig/__init__.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/editorconfig/__main__.py
@@ -18,8 +19,6 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/editorconfig/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/editorconfig/__pycache__/__init__.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/editorconfig/__pycache__/__main__.cpython-312.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/editorconfig/__pycache__/__main__.cpython-312.pyc
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/editorconfig/__pycache__/compat.cpython-312.opt-2.pyc
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/editorconfig/__pycache__/compat.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/editorconfig/__pycache__/exceptions.cpython-312.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/editorconfig/__pycache__/exceptions.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/editorconfig/__pycache__/fnmatch.cpython-312.opt-2.pyc
@@ -32,10 +31,10 @@ drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/editorconfig/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/editorconfig/__pycache__/version.cpython-312.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/editorconfig/__pycache__/versiontools.cpython-312.opt-2.pyc
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/editorconfig/__pycache__/versiontools.cpython-312.pyc
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/editorconfig/compat.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/editorconfig/exceptions.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/editorconfig/fnmatch.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/editorconfig/handler.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/editorconfig/ini.py
+-rw-rw-r--	root/root	usr/lib/python3.12/site-packages/editorconfig/py.typed (EMPTY)
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/editorconfig/version.py
 -rw-r--r--	root/root	usr/lib/python3.12/site-packages/editorconfig/versiontools.py
