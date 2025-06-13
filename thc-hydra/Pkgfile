@@ -3,7 +3,7 @@
 # Depends on:  freerdp2 gtk libgcrypt libidn libpcre2 libssh mysql postgresql subversion
 
 name=thc-hydra
-version=9.5-c57df67
+version=9.5-e762093
 release=1
 source="https://github.com/vanhauser-thc/$name/archive/${version#*-}/$name-${version#*-}.tar.gz
 	xhydra.desktop"
@@ -21,8 +21,7 @@ build() {
 	make V=1
 	make MANDIR=/share/man/man1 install
 
-	install -m 0644 -Dt $PKG/usr/share/applications/ \
-		$SRC/xhydra.desktop
+	install -m 0644 -Dt $PKG/usr/share/applications $SRC/xhydra.desktop
 
 	# move password lists
 	mkdir -p $PKG/usr/share/hydra
