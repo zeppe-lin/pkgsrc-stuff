@@ -1,5 +1,5 @@
 # Description: Handle Common Gateway Interface request and responses
-# URL:         https://metacpan.org/release/CGI
+# URL:         https://metacpan.org/dist/CGI
 # Depends on:  p5-html-parser p5-test-nowarnings p5-test-warn
 
 name=p5-cgi
