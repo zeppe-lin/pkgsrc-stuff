@@ -3,13 +3,14 @@
 # Depends on:  p5-html-parser p5-test-nowarnings p5-test-warn
 
 name=p5-cgi
-version=4.68
+version=4.69
 release=1
 source=https://cpan.metacpan.org/authors/id/L/LE/LEEJO/CGI-$version.tar.gz
 
 build() {
 	cd CGI-$version
 
+	command -v finddepsdistmeta && finddepsdistmeta
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
 	make
