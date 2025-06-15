@@ -3,7 +3,7 @@
 # Depends on:  openssl zlib
 
 name=sslscan
-version=2.1.6
+version=2.2.0
 release=1
 source=https://github.com/rbsec/$name/archive/$version/$name-$version.tar.gz
 
