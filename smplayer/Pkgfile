@@ -4,10 +4,9 @@
 # Optional:    yt-dlp
 
 name=smplayer
-version=24.5.0.10345
+version=25.6.0
 release=1
 source=https://github.com/smplayer-dev/$name/releases/download/v$version/$name-$version.tar.bz2
-
 build() {
 	cd $name-$version
 
