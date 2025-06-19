@@ -3,30 +3,14 @@
 # Optional:    oniguruma
 
 name=jq
-version=1.7.1
+version=1.8.0
 release=1
-source="https://github.com/stedolan/jq/releases/download/jq-$version/jq-$version.tar.gz
-	jq-1.6-r3-never-bundle-oniguruma.patch
-	jq-1.7-runpath.patch"
+source=https://github.com/stedolan/jq/releases/download/jq-$version/jq-$version.tar.gz
 
 build() {
-	patch -d jq-$version -p1 -i $SRC/jq-1.6-r3-never-bundle-oniguruma.patch
-	patch -d jq-$version -p1 -i $SRC/jq-1.7-runpath.patch
-
-	sed -e '/^dist_doc_DATA/d; s:-Wextra ::' -i jq-$version/Makefile.am
-	printf "#!/bin/sh\\nprintf '%s'\\n\n" "$version" > jq-$version/scripts/version
-	sed -i "s/\[jq_version\]/[$version]/" jq-$version/configure.ac
-
-	# jq-1.6-r3-never-bundle-oniguruma makes sure we build with
-	# the system oniguruma, but the bundled copy of oniguruma
-	# still gets autoreconf'd since it exists;
-	# save the cycles by nuking it.
-	sed -e '/modules\/oniguruma/d' -i jq-$version/Makefile.am
-	rm -r jq-$version/modules/oniguruma
-
 	mkdir build; cd build
 
-	autoreconf -i ../jq-$version
+	autoreconf -fi ../jq-$version
 	../jq-$version/configure           \
 		--prefix=/usr              \
 		--disable-docs             \
@@ -37,4 +21,7 @@ build() {
 
 	make V=1
 	make DESTDIR=$PKG install
+
+	# remove junk
+	rm -rf $PKG/usr/share/doc
 }
