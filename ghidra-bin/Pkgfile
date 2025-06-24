@@ -5,7 +5,7 @@
 # ghidra version 11.2+ requires JDK version 21+
 
 name=ghidra-bin
-version=11.3.2-20250415
+version=11.4-20250620
 release=1
 source="https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_${version%%-*}_build/ghidra_${version%%-*}_PUBLIC_${version##*-}.zip
 	ghidra.desktop"
