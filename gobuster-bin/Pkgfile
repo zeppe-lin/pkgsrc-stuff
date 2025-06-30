@@ -3,7 +3,7 @@
 # Depends on:  p7zip
 
 name=gobuster-bin
-version=3.6.0
+version=3.7.0
 release=1
 source=$name-$version.tar.gz::https://github.com/OJ/gobuster/releases/download/v$version/gobuster_Linux_x86_64.tar.gz
 
@@ -11,9 +11,4 @@ build() {
 	ls -la .
 
 	install -m 0755 -Dt $PKG/usr/bin/ gobuster
-
-	# add bash-completion
-	install -d $PKG/usr/share/bash-completion/completions
-	$PKG/usr/bin/gobuster completion bash > \
-		$PKG/usr/share/bash-completion/completions/gobuster
 }
