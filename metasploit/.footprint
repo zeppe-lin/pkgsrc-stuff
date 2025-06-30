@@ -19,6 +19,7 @@ drwxr-xr-x	root/root	opt/metasploit/.tools/dev/
 -rwxr-xr-x	root/root	opt/metasploit/.tools/dev/detect_dead_reference_links.rb
 -rwxr-xr-x	root/root	opt/metasploit/.tools/dev/find_and_replace_dead_reference_links.rb
 -rwxr-xr-x	root/root	opt/metasploit/.tools/dev/find_release_notes.rb
+-rwxr-xr-x	root/root	opt/metasploit/.tools/dev/generate_mitre_attack_technique_constants.rb
 -rwxr-xr-x	root/root	opt/metasploit/.tools/dev/hash_cracker_validator.rb
 -rwxr-xr-x	root/root	opt/metasploit/.tools/dev/msftidy.rb
 -rwxr-xr-x	root/root	opt/metasploit/.tools/dev/msftidy_docs.rb
@@ -5497,6 +5498,10 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/handler/reverse/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/handler/reverse_tcp_ssl.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/handler/reverse_udp.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/host_state.rb
+drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/mitre/
+drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/mitre/attack/
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/mitre/attack/categories.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/mitre/attack/technique.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/module.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/module/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/module/alert.rb
@@ -9004,6 +9009,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/seagate_nas_php_exec_noauth.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/selenium_greed_chrome_rce_cve_2022_28108.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/selenium_greed_firefox_rce_cve_2022_28108.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/skyvern_ssti_cve_2025_49619.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/smt_ipmi_close_window_bof.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/solarview_unauth_rce_cve_2023_23333.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/sonicwall_cve_2021_20039.rb
@@ -13791,6 +13797,7 @@ drwxrwxr-x	root/root	opt/metasploit/tools/dev/
 -rwxr-xr-x	root/root	opt/metasploit/tools/dev/detect_dead_reference_links.rb
 -rwxr-xr-x	root/root	opt/metasploit/tools/dev/find_and_replace_dead_reference_links.rb
 -rwxr-xr-x	root/root	opt/metasploit/tools/dev/find_release_notes.rb
+-rwxr-xr-x	root/root	opt/metasploit/tools/dev/generate_mitre_attack_technique_constants.rb
 -rwxr-xr-x	root/root	opt/metasploit/tools/dev/hash_cracker_validator.rb
 -rwxrwxr-x	root/root	opt/metasploit/tools/dev/import-dev-keys.sh
 -rwxrwxr-x	root/root	opt/metasploit/tools/dev/msfdb_ws
@@ -14021,6 +14028,10 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-lin
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-linux/3.3/strptime-0.2.5/gem_make.out
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-linux/3.3/strptime-0.2.5/strptime/
 -rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-linux/3.3/strptime-0.2.5/strptime/strptime.so
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-linux/3.3/syslog-0.3.0/
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-linux/3.3/syslog-0.3.0/gem.build_complete (EMPTY)
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-linux/3.3/syslog-0.3.0/gem_make.out
+-rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-linux/3.3/syslog-0.3.0/syslog_ext.so
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-linux/3.3/thin-1.8.2/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-linux/3.3/thin-1.8.2/gem.build_complete (EMPTY)
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/extensions/x86_64-linux/3.3/thin-1.8.2/gem_make.out
@@ -27082,6 +27093,25 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/swagger-blocks-3
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/swagger-blocks-3.0.0/spec/lib/swagger_v3_blocks_spec.rb
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/swagger-blocks-3.0.0/spec/spec_helper.rb
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/swagger-blocks-3.0.0/swagger-blocks.gemspec
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/syslog-0.3.0/
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/syslog-0.3.0/.git-blame-ignore-revs
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/syslog-0.3.0/BSDL
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/syslog-0.3.0/Gemfile
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/syslog-0.3.0/Rakefile
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/syslog-0.3.0/bin/
+-rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/syslog-0.3.0/bin/console
+-rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/syslog-0.3.0/bin/setup
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/syslog-0.3.0/ext/
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/syslog-0.3.0/ext/syslog/
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/syslog-0.3.0/ext/syslog/extconf.rb
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/syslog-0.3.0/ext/syslog/syslog.c
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/syslog-0.3.0/ext/syslog/syslog.txt
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/syslog-0.3.0/lib/
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/syslog-0.3.0/lib/syslog.rb
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/syslog-0.3.0/lib/syslog/
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/syslog-0.3.0/lib/syslog/logger.rb
+-rwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/syslog-0.3.0/lib/syslog_ext.so
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/syslog-0.3.0/syslog.gemspec
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/thin-1.8.2/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/thin-1.8.2/Rakefile
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/thin-1.8.2/bin/
@@ -28534,6 +28564,7 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/sshkey-3.0.0.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/strptime-0.2.5.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/swagger-blocks-3.0.0.gemspec
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/syslog-0.3.0.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/thin-1.8.2.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/thor-1.3.2.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/tilt-2.6.0.gemspec
