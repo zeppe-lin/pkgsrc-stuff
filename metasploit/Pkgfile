@@ -3,9 +3,9 @@
 # Depends on:  glibc-32 inetutils libpcap postgresql ruby sqlite3
 
 name=metasploit
-version=6.4.73
+version=6.4.74
 release=1
-source=https://github.com/rapid7/$name-framework/archive/$version/$name-$version.tar.gz
+source=$name-$version.tar.gz::https://github.com/rapid7/metasploit-framework/archive/refs/tags/$version.tar.gz
 
 build() {
 	export TMPDIR="$PKGMK_WORK_DIR"
