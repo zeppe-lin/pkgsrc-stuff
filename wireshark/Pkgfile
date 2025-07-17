@@ -3,7 +3,7 @@
 # Depends on:  asciidoctor c-ares gnutls hicolor-icon-theme libcap libgcrypt libnl libpcap libssh qt5 speexdsp
 
 name=wireshark
-version=4.4.7
+version=4.4.8
 release=1
 source=https://github.com/$name/$name/archive/v$version/$name-$version.tar.gz
 
@@ -55,4 +55,7 @@ build() {
 
 	# These files are used by Help menu.
 	#rm -r $PKG/usr/share/doc
+
+	# remove freedesktop.org appstream junk
+	rm -r $PKG/usr/share/metainfo
 }
