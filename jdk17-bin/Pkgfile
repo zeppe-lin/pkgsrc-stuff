@@ -3,7 +3,7 @@
 # Depends on:  alsa-lib xorg-libxrender xorg-libxtst
 
 name=jdk17-bin
-version=17.0.15.6.1
+version=17.0.16.8.1
 release=1
 source=https://corretto.aws/downloads/resources/$version/amazon-corretto-$version-linux-x64.tar.gz
 
