@@ -3,12 +3,11 @@
 # Depends on:  p7zip
 
 name=gobuster-bin
-version=3.7.0
+version=3.8.0
 release=1
-source=$name-$version.tar.gz::https://github.com/OJ/gobuster/releases/download/v$version/gobuster_Linux_x86_64.tar.gz
+source=$name-$version-x86_64.tar.gz::https://github.com/OJ/gobuster/releases/download/v$version/gobuster_Linux_x86_64.tar.gz
 
 build() {
 	ls -la .
-
-	install -m 0755 -Dt $PKG/usr/bin/ gobuster
+	install -m 0755 -Dt $PKG/usr/bin gobuster
 }
