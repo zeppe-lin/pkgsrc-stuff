@@ -2,7 +2,7 @@
 # URL:         https://github.com/zricethezav/gitleaks
 
 name=gitleaks-bin
-version=8.27.2
+version=8.28.0
 release=1
 source=https://github.com/zricethezav/gitleaks/releases/download/v$version/gitleaks_${version}_linux_x64.tar.gz
 
