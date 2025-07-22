@@ -1,0 +1,15 @@
+# Description: Vim-like keyboard navigation for firefox
+# URL:         https://github.com/philc/vimium
+# Depends on:  firefox-bin lynx
+
+name=firefox-vimium-bin
+version=2.3
+release=1
+source=$(lynx -dump https://addons.mozilla.org/en-US/firefox/addon/vimium-ff/ |
+	grep -Po "https://addons.mozilla.org/firefox/downloads/file/[0-9]+/vimium_ff-$version.xpi")
+
+build() {
+	local _DESTDIR=$PKG/opt/firefox/distribution/extensions
+	install -m 0644 -D vimium_ff-$version.xpi \
+		$_DESTDIR/'{d7742d87-e61d-4b78-b8a1-b469842139fa}.xpi'
+}

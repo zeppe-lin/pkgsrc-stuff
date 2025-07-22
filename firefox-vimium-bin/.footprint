@@ -1,0 +1,5 @@
+drwxr-xr-x	root/root	opt/
+drwxr-xr-x	root/root	opt/firefox/
+drwxr-xr-x	root/root	opt/firefox/distribution/
+drwxr-xr-x	root/root	opt/firefox/distribution/extensions/
+-rw-r--r--	root/root	opt/firefox/distribution/extensions/{d7742d87-e61d-4b78-b8a1-b469842139fa}.xpi
