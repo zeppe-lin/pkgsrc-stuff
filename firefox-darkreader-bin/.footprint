@@ -1,0 +1,5 @@
+drwxr-xr-x	root/root	opt/
+drwxr-xr-x	root/root	opt/firefox/
+drwxr-xr-x	root/root	opt/firefox/distribution/
+drwxr-xr-x	root/root	opt/firefox/distribution/extensions/
+-rw-r--r--	root/root	opt/firefox/distribution/extensions/addon@darkreader.org.xpi

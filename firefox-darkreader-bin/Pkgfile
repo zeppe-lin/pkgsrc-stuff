@@ -1,0 +1,14 @@
+# Description: Dark Reader Firefox extension
+# URL:         https://darkreader.org/
+# Depends on:  firefox-bin
+
+name=firefox-darkreader-bin
+version=4.9.110
+release=1
+source=$name-$version.xpi::https://github.com/darkreader/darkreader/releases/download/v$version/darkreader-firefox.xpi
+
+build() {
+	local _DESTDIR=$PKG/opt/firefox/distribution/extensions
+	install -m 0644 -D $name-$version.xpi \
+		$_DESTDIR/addon@darkreader.org.xpi
+}
