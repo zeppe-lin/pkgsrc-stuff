@@ -3,7 +3,7 @@
 # Depends on:  jdk-bin
 
 name=zaproxy-bin
-version=2025-07-14
+version=2025-07-22
 release=1
 source="https://github.com/zaproxy/zaproxy/releases/download/w$version/ZAP_WEEKLY_D-$version.zip
 	zaproxy.png
@@ -15,7 +15,7 @@ build() {
 	mv ZAP_D-$version $PKG/opt/zaproxy
 	ln -s /opt/zaproxy/zap.sh $PKG/usr/bin/zaproxy
 
-	install -m 0644 -Dt $PKG/usr/share/pixmaps      zaproxy.png
+	install -m 0644 -Dt $PKG/usr/share/pixmaps zaproxy.png
 	install -m 0644 -Dt $PKG/usr/share/applications zaproxy.desktop
 
 	# remove junk
