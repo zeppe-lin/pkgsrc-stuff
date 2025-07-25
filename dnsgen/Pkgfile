@@ -10,7 +10,7 @@ source=https://github.com/ProjectAnte/$name/archive/${version#*-}/$name-${versio
 build() {
 	export TMPDIR="$PKGMK_WORK_DIR"
 
-	install -d $PKG/usr/bin $PKG/opt/$name
+	mkdir -p $PKG/usr/bin $PKG/opt/$name
 
 	cd $name-${version#*-}*
 
