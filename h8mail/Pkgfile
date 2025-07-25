@@ -4,16 +4,17 @@
 
 name=h8mail
 version=2.5.6-ee31c8f
-release=3
+release=4
 source="https://github.com/khast3x/$name/archive/${version#*-}/$name-${version#*-}.tar.gz
 	$name.sh"
 
 build() {
-	install -d $PKG/usr/bin $PKG/opt/$name
+	export TMPDIR=$PKGMK_WORK_DIR
+
+	mkdir -p $PKG/usr/bin $PKG/opt/$name
 
 	# install requirements
-	/usr/bin/pip3 install --use-pep517 --target $PKG/opt/$name \
-		requests
+	/usr/bin/pip3 install --use-pep517 --target $PKG/opt/$name requests
 
 	# install h8mail
 	cd $name-${version#*-}*
