@@ -4,7 +4,7 @@
 # Optional:    yt-dlp
 
 name=smplayer
-version=25.6.0.10382
+version=25.6.0.10388
 release=1
 
 # for stable
