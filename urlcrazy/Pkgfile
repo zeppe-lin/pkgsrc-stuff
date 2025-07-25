@@ -3,12 +3,12 @@
 # Depends on:  ruby
 
 name=urlcrazy
-version=0.7.3
-release=2
+version=0.8.1
+release=1
 source=https://github.com/urbanadventurer/$name/archive/v$version/$name-$version.tar.gz
 
 build() {
-	install -d $PKG/usr/bin $PKG/opt/
+	mkdir -p $PKG/usr/bin $PKG/opt
 
 	cp -a $name-$version $PKG/opt/$name
 
