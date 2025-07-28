@@ -218,6 +218,7 @@ drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/Lang/
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/Sony.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/SonyIDC.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/Stim.pm
+-r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/TNEF.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/TagInfoXML.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/TagLookup.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/TagNames.pod
@@ -426,6 +427,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::Sony.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::SonyIDC.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::Stim.3pm.gz
+-r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::TNEF.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::TagInfoXML.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::TagLookup.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::TagNames.3pm.gz
