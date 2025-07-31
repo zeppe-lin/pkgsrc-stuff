@@ -3,8 +3,8 @@
 # Depends on:  ruby libxslt
 
 name=whatweb
-version=0.5.5-ae89986
-release=2
+version=0.5.5-a0038e8
+release=1
 source=https://github.com/urbanadventurer/WhatWeb/archive/${version#*-}/WhatWeb-$version.tar.gz
 
 build() {
