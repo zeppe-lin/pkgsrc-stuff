@@ -148,6 +148,7 @@ drwxrwxr-x	root/root	opt/whatweb/plugins/
 -rw-rw-r--	root/root	opt/whatweb/plugins/akiva-webboard.rb
 -rw-rw-r--	root/root	opt/whatweb/plugins/aladdin-hasp-license-manager.rb
 -rw-rw-r--	root/root	opt/whatweb/plugins/alcatel-lucent-omniswitch.rb
+-rw-rw-r--	root/root	opt/whatweb/plugins/alibaba-aliyun.rb
 -rw-rw-r--	root/root	opt/whatweb/plugins/all-in-one-seo-pack.rb
 -rw-rw-r--	root/root	opt/whatweb/plugins/allegro-rompager.rb
 -rw-rw-r--	root/root	opt/whatweb/plugins/allen-bradley-plc.rb
@@ -246,6 +247,7 @@ drwxrwxr-x	root/root	opt/whatweb/plugins/
 -rw-rw-r--	root/root	opt/whatweb/plugins/backuppc.rb
 -rw-rw-r--	root/root	opt/whatweb/plugins/bad-behaviour-anti-spam-plugin.rb
 -rw-rw-r--	root/root	opt/whatweb/plugins/badblue.rb
+-rw-rw-r--	root/root	opt/whatweb/plugins/baidu-platform.rb
 -rw-rw-r--	root/root	opt/whatweb/plugins/barracuda-backup-server.rb
 -rw-rw-r--	root/root	opt/whatweb/plugins/barracuda-load-balancer.rb
 -rw-rw-r--	root/root	opt/whatweb/plugins/barracuda-spam-firewall.rb
@@ -960,6 +962,7 @@ drwxrwxr-x	root/root	opt/whatweb/plugins/
 -rw-rw-r--	root/root	opt/whatweb/plugins/memht-portal.rb
 -rw-rw-r--	root/root	opt/whatweb/plugins/mercurial.rb
 -rw-rw-r--	root/root	opt/whatweb/plugins/meta-author.rb
+-rw-rw-r--	root/root	opt/whatweb/plugins/meta-facebook-infrastructure.rb
 -rw-rw-r--	root/root	opt/whatweb/plugins/meta-generator.rb
 -rw-rw-r--	root/root	opt/whatweb/plugins/meta-geo.rb
 -rw-rw-r--	root/root	opt/whatweb/plugins/meta-powered-by.rb
@@ -1005,6 +1008,7 @@ drwxrwxr-x	root/root	opt/whatweb/plugins/
 -rw-rw-r--	root/root	opt/whatweb/plugins/mobilityguard.rb
 -rw-rw-r--	root/root	opt/whatweb/plugins/mobotix-network-camera.rb
 -rw-rw-r--	root/root	opt/whatweb/plugins/mochiweb.rb
+-rw-rw-r--	root/root	opt/whatweb/plugins/modern-security-headers.rb
 -rw-rw-r--	root/root	opt/whatweb/plugins/modernizr.rb
 -rw-rw-r--	root/root	opt/whatweb/plugins/modlogan.rb
 -rw-rw-r--	root/root	opt/whatweb/plugins/modx-cms.rb
@@ -1058,6 +1062,7 @@ drwxrwxr-x	root/root	opt/whatweb/plugins/
 -rw-rw-r--	root/root	opt/whatweb/plugins/netbox.rb
 -rw-rw-r--	root/root	opt/whatweb/plugins/netcache-appliance.rb
 -rw-rw-r--	root/root	opt/whatweb/plugins/netcomm-wireless-hotspot-gateway.rb
+-rw-rw-r--	root/root	opt/whatweb/plugins/netflix-platform.rb
 -rw-rw-r--	root/root	opt/whatweb/plugins/netgear-firewall.rb
 -rw-rw-r--	root/root	opt/whatweb/plugins/netgear-print-server.rb
 -rw-rw-r--	root/root	opt/whatweb/plugins/netgear-router.rb
@@ -1730,6 +1735,7 @@ drwxrwxr-x	root/root	opt/whatweb/plugins/
 -rw-rw-r--	root/root	opt/whatweb/plugins/visualroute.rb
 -rw-rw-r--	root/root	opt/whatweb/plugins/visualware-myconnection-server.rb
 -rw-rw-r--	root/root	opt/whatweb/plugins/vivotek-network-camera.rb
+-rw-rw-r--	root/root	opt/whatweb/plugins/vkontakte-platform.rb
 -rw-rw-r--	root/root	opt/whatweb/plugins/vlc-web-interface.rb
 -rw-rw-r--	root/root	opt/whatweb/plugins/vmware-esxi-server.rb
 -rw-rw-r--	root/root	opt/whatweb/plugins/vmware-horizon.rb
@@ -1799,6 +1805,7 @@ drwxrwxr-x	root/root	opt/whatweb/plugins/
 -rw-rw-r--	root/root	opt/whatweb/plugins/webtrends.rb
 -rw-rw-r--	root/root	opt/whatweb/plugins/webyep.rb
 -rw-rw-r--	root/root	opt/whatweb/plugins/weebly.rb
+-rw-rw-r--	root/root	opt/whatweb/plugins/weibo-platform.rb
 -rw-rw-r--	root/root	opt/whatweb/plugins/werkzeug.rb
 -rw-rw-r--	root/root	opt/whatweb/plugins/whatsup.rb
 -rw-rw-r--	root/root	opt/whatweb/plugins/whatweb-plugin.rb
