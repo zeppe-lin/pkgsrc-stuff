@@ -1,20 +1,12 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/ncat
--rwxr-xr-x	root/root	usr/bin/ndiff
 -rwxr-xr-x	root/root	usr/bin/nmap
 -rwxr-xr-x	root/root	usr/bin/nping
-drwxr-xr-x	root/root	usr/lib/
-drwxr-xr-x	root/root	usr/lib/python3.12/
-drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/
-drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/__pycache__/
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/__pycache__/ndiff.cpython-312.pyc
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/ndiff.py
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/ncat.1.gz
--rw-r--r--	root/root	usr/share/man/man1/ndiff.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/nmap.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/nping.1.gz
 drwxr-xr-x	root/root	usr/share/ncat/
@@ -603,6 +595,8 @@ drwxr-xr-x	root/root	usr/share/nmap/scripts/
 -rw-r--r--	root/root	usr/share/nmap/scripts/metasploit-msgrpc-brute.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/metasploit-xmlrpc-brute.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/mikrotik-routeros-brute.nse
+-rw-r--r--	root/root	usr/share/nmap/scripts/mikrotik-routeros-username-brute.nse
+-rw-r--r--	root/root	usr/share/nmap/scripts/mikrotik-routeros-version.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/mmouse-brute.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/mmouse-exec.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/modbus-discover.nse
@@ -817,6 +811,7 @@ drwxr-xr-x	root/root	usr/share/nmap/scripts/
 -rw-r--r--	root/root	usr/share/nmap/scripts/supermicro-ipmi-conf.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/svn-brute.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/targets-asn.nse
+-rw-r--r--	root/root	usr/share/nmap/scripts/targets-ipv6-eui64.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/targets-ipv6-map4to6.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/targets-ipv6-multicast-echo.nse
 -rw-r--r--	root/root	usr/share/nmap/scripts/targets-ipv6-multicast-invalid-dst.nse

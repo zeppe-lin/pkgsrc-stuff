@@ -3,9 +3,9 @@
 # Depends on:  libpcap libpcre openssl zlib python3
 
 name=nmap
-version=7.95
+version=7.97
 _extra_nse=5791e6d # nmap-extra-nse commit
-release=3
+release=1
 source="https://nmap.org/dist/nmap-$version.tar.bz2
 	https://github.com/sighook/nmap-extra-nse/archive/$_extra_nse/nmap-extra-nse-$_extra_nse.tar.gz"
 
@@ -13,6 +13,7 @@ build() {
 	# build in separate dir is broken
 	cd $name-$version
 
+	# --without-ndiff: otherwise requires a lot of python crap
 	./configure                    \
 		--prefix=/usr          \
 		--libexecdir=/usr/lib  \
@@ -21,6 +22,7 @@ build() {
 		--with-zlib=/usr       \
 		--without-nmap-update  \
 		--without-zenmap       \
+		--without-ndiff        \
 		--disable-nls          \
 
 	make V=1
@@ -37,6 +39,5 @@ build() {
 
 	# remove junk
 	rm $PKG/usr/share/nmap/nselib/data/psexec/README          \
-	   $PKG/usr/share/nmap/nselib/data/jdwp-class/README.txt  \
-	   $PKG/usr/bin/uninstall_*
+	   $PKG/usr/share/nmap/nselib/data/jdwp-class/README.txt
 }
