@@ -1,7 +1,4 @@
 drwxr-xr-x	root/root	usr/
-drwxr-xr-x	root/root	usr/bin/
--rwxr-xr-x	root/root	usr/bin/pprof
--rwxr-xr-x	root/root	usr/bin/pprof-symbolize
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/gperftools/
 -rw-r--r--	root/root	usr/include/gperftools/heap-checker.h
@@ -17,41 +14,37 @@ drwxr-xr-x	root/root	usr/include/gperftools/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libprofiler.a
 -rwxr-xr-x	root/root	usr/lib/libprofiler.la
-lrwxrwxrwx	root/root	usr/lib/libprofiler.so -> libprofiler.so.0.5.13
-lrwxrwxrwx	root/root	usr/lib/libprofiler.so.0 -> libprofiler.so.0.5.13
--rwxr-xr-x	root/root	usr/lib/libprofiler.so.0.5.13
+lrwxrwxrwx	root/root	usr/lib/libprofiler.so -> libprofiler.so.0.5.15
+lrwxrwxrwx	root/root	usr/lib/libprofiler.so.0 -> libprofiler.so.0.5.15
+-rwxr-xr-x	root/root	usr/lib/libprofiler.so.0.5.15
 -rw-r--r--	root/root	usr/lib/libtcmalloc.a
 -rwxr-xr-x	root/root	usr/lib/libtcmalloc.la
-lrwxrwxrwx	root/root	usr/lib/libtcmalloc.so -> libtcmalloc.so.4.5.18
-lrwxrwxrwx	root/root	usr/lib/libtcmalloc.so.4 -> libtcmalloc.so.4.5.18
--rwxr-xr-x	root/root	usr/lib/libtcmalloc.so.4.5.18
+lrwxrwxrwx	root/root	usr/lib/libtcmalloc.so -> libtcmalloc.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libtcmalloc.so.4 -> libtcmalloc.so.4.6.1
+-rwxr-xr-x	root/root	usr/lib/libtcmalloc.so.4.6.1
 -rw-r--r--	root/root	usr/lib/libtcmalloc_and_profiler.a
 -rwxr-xr-x	root/root	usr/lib/libtcmalloc_and_profiler.la
-lrwxrwxrwx	root/root	usr/lib/libtcmalloc_and_profiler.so -> libtcmalloc_and_profiler.so.4.6.13
-lrwxrwxrwx	root/root	usr/lib/libtcmalloc_and_profiler.so.4 -> libtcmalloc_and_profiler.so.4.6.13
--rwxr-xr-x	root/root	usr/lib/libtcmalloc_and_profiler.so.4.6.13
+lrwxrwxrwx	root/root	usr/lib/libtcmalloc_and_profiler.so -> libtcmalloc_and_profiler.so.4.7.1
+lrwxrwxrwx	root/root	usr/lib/libtcmalloc_and_profiler.so.4 -> libtcmalloc_and_profiler.so.4.7.1
+-rwxr-xr-x	root/root	usr/lib/libtcmalloc_and_profiler.so.4.7.1
 -rw-r--r--	root/root	usr/lib/libtcmalloc_debug.a
 -rwxr-xr-x	root/root	usr/lib/libtcmalloc_debug.la
-lrwxrwxrwx	root/root	usr/lib/libtcmalloc_debug.so -> libtcmalloc_debug.so.4.5.18
-lrwxrwxrwx	root/root	usr/lib/libtcmalloc_debug.so.4 -> libtcmalloc_debug.so.4.5.18
--rwxr-xr-x	root/root	usr/lib/libtcmalloc_debug.so.4.5.18
+lrwxrwxrwx	root/root	usr/lib/libtcmalloc_debug.so -> libtcmalloc_debug.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libtcmalloc_debug.so.4 -> libtcmalloc_debug.so.4.6.1
+-rwxr-xr-x	root/root	usr/lib/libtcmalloc_debug.so.4.6.1
 -rw-r--r--	root/root	usr/lib/libtcmalloc_minimal.a
 -rwxr-xr-x	root/root	usr/lib/libtcmalloc_minimal.la
-lrwxrwxrwx	root/root	usr/lib/libtcmalloc_minimal.so -> libtcmalloc_minimal.so.4.5.18
-lrwxrwxrwx	root/root	usr/lib/libtcmalloc_minimal.so.4 -> libtcmalloc_minimal.so.4.5.18
--rwxr-xr-x	root/root	usr/lib/libtcmalloc_minimal.so.4.5.18
+lrwxrwxrwx	root/root	usr/lib/libtcmalloc_minimal.so -> libtcmalloc_minimal.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libtcmalloc_minimal.so.4 -> libtcmalloc_minimal.so.4.6.1
+-rwxr-xr-x	root/root	usr/lib/libtcmalloc_minimal.so.4.6.1
 -rw-r--r--	root/root	usr/lib/libtcmalloc_minimal_debug.a
 -rwxr-xr-x	root/root	usr/lib/libtcmalloc_minimal_debug.la
-lrwxrwxrwx	root/root	usr/lib/libtcmalloc_minimal_debug.so -> libtcmalloc_minimal_debug.so.4.5.18
-lrwxrwxrwx	root/root	usr/lib/libtcmalloc_minimal_debug.so.4 -> libtcmalloc_minimal_debug.so.4.5.18
--rwxr-xr-x	root/root	usr/lib/libtcmalloc_minimal_debug.so.4.5.18
+lrwxrwxrwx	root/root	usr/lib/libtcmalloc_minimal_debug.so -> libtcmalloc_minimal_debug.so.4.6.1
+lrwxrwxrwx	root/root	usr/lib/libtcmalloc_minimal_debug.so.4 -> libtcmalloc_minimal_debug.so.4.6.1
+-rwxr-xr-x	root/root	usr/lib/libtcmalloc_minimal_debug.so.4.6.1
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libprofiler.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libtcmalloc.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libtcmalloc_debug.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libtcmalloc_minimal.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libtcmalloc_minimal_debug.pc
-drwxr-xr-x	root/root	usr/share/
-drwxr-xr-x	root/root	usr/share/man/
-drwxr-xr-x	root/root	usr/share/man/man1/
--rw-r--r--	root/root	usr/share/man/man1/pprof.1.gz
