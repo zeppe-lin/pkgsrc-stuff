@@ -3,7 +3,7 @@
 # Depends on:  docker-bin
 
 name=docker-compose-bin
-version=2.39.1
+version=2.39.2
 release=1
 source=$name-$version-x86_64.bin::https://github.com/docker/compose/releases/download/v$version/docker-compose-linux-x86_64
 
@@ -12,6 +12,7 @@ build() {
 
 	mv $name-$version-x86_64.bin $PKG/usr/bin/docker-compose
 	chmod +x $PKG/usr/bin/docker-compose
+
 	ln -s /usr/bin/docker-compose \
 		$PKG/usr/lib/docker/cli-plugins/docker-compose
 }
