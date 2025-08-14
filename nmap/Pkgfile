@@ -3,7 +3,7 @@
 # Depends on:  libpcap libpcre openssl zlib python3
 
 name=nmap
-version=7.97
+version=7.98
 _extra_nse=5791e6d # nmap-extra-nse commit
 release=1
 source="https://nmap.org/dist/nmap-$version.tar.bz2
