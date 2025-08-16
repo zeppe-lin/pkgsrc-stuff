@@ -9013,6 +9013,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/pineapple_bypass_cmdinject.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/pineapple_preconfig_cmdinject.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/piranha_passwd_exec.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/pivotx_index_php_overwrite.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/progress_flowmon_unauth_cmd_injection.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/progress_kemp_loadmaster_unauth_cmd_injection.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/projectsend_unauth_rce.rb
@@ -9094,6 +9095,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/vmware_workspace_one_access_vmsa_2022_0011_chain.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/wanem_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/watchguard_firebox_unauth_rce_cve_2022_26318.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/wazuh_auth_rce_cve_2025_24016.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/wd_mycloud_multiupload_upload.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/wd_mycloud_unauthenticated_cmd_injection.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/webcalendar_settings_exec.rb
@@ -11856,6 +11858,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/payloads/singles/windows/aarch64/
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/windows/shell_reverse_tcp.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/windows/speak_pwned.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/payloads/singles/windows/x64/
+-rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/windows/x64/download_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/windows/x64/encrypted_shell_reverse_tcp.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/windows/x64/exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/windows/x64/loadlibrary.rb
