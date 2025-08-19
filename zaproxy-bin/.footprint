@@ -98,7 +98,7 @@ drwxr-xr-x	root/root	opt/zaproxy/xml/
 -rw-r--r--	root/root	opt/zaproxy/xml/config.xml
 -rw-r--r--	root/root	opt/zaproxy/xml/drivers.dtd
 -rw-r--r--	root/root	opt/zaproxy/xml/reportCompare.xsl
--rw-r--r--	root/root	opt/zaproxy/zap-D-2025-08-14.jar
+-rw-r--r--	root/root	opt/zaproxy/zap-D-2025-08-18.jar
 -rwxr-xr-x	root/root	opt/zaproxy/zap.sh
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
