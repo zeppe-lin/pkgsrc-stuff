@@ -5103,8 +5103,10 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/local/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/local/compile_c.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/local/linux.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/local/linux_kernel.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/local/persistence.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/local/saltstack.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/local/sap_smd_agent_unencrypted_property.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/local/timespec.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/local/windows_kernel.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/ntlm.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/omelet.rb
@@ -5628,12 +5630,15 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/modules/metadata/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/opt_base.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/opt_bool.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/opt_condition.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/opt_database_ref_or_path.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/opt_enum.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/opt_float.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/opt_int.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/opt_int_range.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/opt_kerberos_credential_cache.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/opt_meterpreter_debug_logging.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/opt_path.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/opt_pkcs12_cert.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/opt_port.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/opt_proxies.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/opt_raw.rb
@@ -5844,6 +5849,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/post/linux/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/post/linux/priv.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/post/linux/process.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/post/linux/system.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/post/linux/user.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/post/osx.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/post/osx/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/post/osx/priv.rb
@@ -12696,6 +12702,9 @@ drwxrwxr-x	root/root	opt/metasploit/spec/factories/mdm/
 -rw-rw-r--	root/root	opt/metasploit/spec/factories/mdm/exported_web_vulns.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/factories/mdm/module_details.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/file_fixtures/
+drwxrwxr-x	root/root	opt/metasploit/spec/file_fixtures/ccache/
+-rw-rw-r--	root/root	opt/metasploit/spec/file_fixtures/ccache/administrator_dev_demo_local_expired.ccache
+-rw-rw-r--	root/root	opt/metasploit/spec/file_fixtures/ccache/fake_user_example_local_forged_silver.ccache
 drwxrwxr-x	root/root	opt/metasploit/spec/file_fixtures/config_files/
 -rw-rw-r--	root/root	opt/metasploit/spec/file_fixtures/config_files/db.ini
 -rw-rw-r--	root/root	opt/metasploit/spec/file_fixtures/config_files/default_remote_db.ini
@@ -12926,6 +12935,8 @@ drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/core/exploit/http/wordpress/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/exploit/http/wordpress/base_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/exploit/http/wordpress/login_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/exploit/http/wordpress/version_spec.rb
+drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/core/exploit/local/
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/exploit/local/timespec_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/exploit/powershell_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/core/exploit/remote/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/exploit/remote/auto_check_spec.rb
@@ -13020,8 +13031,10 @@ drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/core/modules/metadata/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/opt_float_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/opt_int_range_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/opt_int_spec.rb
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/opt_kerberos_credential_cache_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/opt_meterpreter_debug_logging_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/opt_path_spec.rb
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/opt_pkcs12_cert_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/opt_port_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/opt_proxies_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/opt_raw_spec.rb
@@ -13054,6 +13067,7 @@ drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/core/post/linux/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/post/linux/priv_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/post/linux/process_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/post/linux/system_spec.rb
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/post/linux/user_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/core/post/vcenter/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/post/vcenter/database_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/post/vcenter/vcenter_spec.rb
@@ -13499,6 +13513,7 @@ drwxrwxr-x	root/root	opt/metasploit/spec/support/shared/contexts/rex/job/
 -rw-rw-r--	root/root	opt/metasploit/spec/support/shared/contexts/untested_payloads.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/support/shared/contexts/wait_for_expect.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/support/shared/examples/
+-rw-rw-r--	root/root	opt/metasploit/spec/support/shared/examples/a_database_ref_or_path_option.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/support/shared/examples/a_module_with_valid_metadata.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/support/shared/examples/all_modules_with_module_type_can_be_instantiated.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/support/shared/examples/an_option.rb
