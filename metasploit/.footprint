@@ -9175,6 +9175,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/local/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/lastore_daemon_dbus_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/libuser_roothelper_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/motd_persistence.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/ndsudo_cve_2024_32019.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/nested_namespace_idmap_limit_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/netfilter_nft_set_elem_init_privesc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/netfilter_priv_esc_ipv4.rb
@@ -23668,6 +23669,11 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/packetfu-2.0.0/s
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/packetfu-2.0.0/spec/udp_spec.rb
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/packetfu-2.0.0/spec/utils_spec.rb
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/packetfu-2.0.0/spec/vlan-pcapr.cap
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/parallel-1.27.0/
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/parallel-1.27.0/lib/
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/parallel-1.27.0/lib/parallel.rb
+drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/parallel-1.27.0/lib/parallel/
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/parallel-1.27.0/lib/parallel/version.rb
 drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/patch_finder-1.0.2/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/patch_finder-1.0.2/Gemfile
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/gems/patch_finder-1.0.2/Rakefile
@@ -29015,6 +29021,7 @@ drwxr-xr-x	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/openvas-omp-0.0.4.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/ostruct-0.6.1.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/packetfu-2.0.0.gemspec
+-rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/parallel-1.27.0.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/patch_finder-1.0.2.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/pcaprub-0.13.3.gemspec
 -rw-r--r--	root/root	opt/metasploit/vendor/bundle/ruby/3.3/specifications/pdf-reader-2.14.1.gemspec
