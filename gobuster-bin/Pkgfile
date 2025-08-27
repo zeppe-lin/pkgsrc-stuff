@@ -3,7 +3,7 @@
 # Depends on:  p7zip
 
 name=gobuster-bin
-version=3.8.0
+version=3.8.1
 release=1
 source=$name-$version-x86_64.tar.gz::https://github.com/OJ/gobuster/releases/download/v$version/gobuster_Linux_x86_64.tar.gz
 
