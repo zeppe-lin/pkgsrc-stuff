@@ -5249,6 +5249,9 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/nifi/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/nifi/processor.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/php_filter_chain.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/pihole.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/pretalx.rb
+drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/pretalx/
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/pretalx/error.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/sap_sol_man_eem_miss_auth.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/sccm.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/sharepoint.rb
@@ -8022,6 +8025,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/pfsense_login.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/phpmyadmin_login.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/pocketpad_login.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/pretalx_file_read_cve_2023_28459.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/prev_dir_same_name_file.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/radware_appdirector_enum.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/rails_json_yaml_scanner.rb
@@ -9020,6 +9024,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/pineapple_preconfig_cmdinject.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/piranha_passwd_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/pivotx_index_php_overwrite.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/pretalx_rce_cve_2023_28458.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/progress_flowmon_unauth_cmd_injection.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/progress_kemp_loadmaster_unauth_cmd_injection.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/projectsend_unauth_rce.rb
@@ -9896,6 +9901,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/osx/local/
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/osx/mdns/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/osx/mdns/upnp_location.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/osx/misc/
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/osx/misc/remote_for_mac_udp_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/osx/misc/ufo_ai.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/osx/rtsp/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/osx/rtsp/quicktime_rtsp_content_type.rb
