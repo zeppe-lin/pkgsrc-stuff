@@ -1,10 +1,10 @@
 # Description: Create, modify, and examine PDF files
 # URL:         https://metacpan.org/pod/PDF::API2
-# Depends on:  p5-font-ttf
+# Depends on:  p5-font-ttf p5-test-exception p5-test-memory-cycle
 
 name=p5-pdf-api2
-version=2.047
-release=2
+version=2.048
+release=1
 source="https://cpan.metacpan.org/authors/id/S/SS/SSIMMS/PDF-API2-$version.tar.gz
 	font-location.patch
 	reproducible-resources.patch"
@@ -12,9 +12,10 @@ source="https://cpan.metacpan.org/authors/id/S/SS/SSIMMS/PDF-API2-$version.tar.g
 build() {
 	cd PDF-API2-$version
 
-	patch -p1 -i $SRC/font-location.patch
-	patch -p1 -i $SRC/reproducible-resources.patch
+	patch -Np1 -i $SRC/font-location.patch
+	patch -Np1 -i $SRC/reproducible-resources.patch
 
+	command -v finddepsdistmeta && finddepsdistmeta
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
 	make
