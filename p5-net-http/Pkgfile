@@ -3,13 +3,14 @@
 # Depends on:  p5-uri
 
 name=p5-net-http
-version=6.23
-release=2
+version=6.24
+release=1
 source=https://cpan.metacpan.org/authors/id/O/OA/OALDERS/Net-HTTP-$version.tar.gz
 
 build() {
 	cd Net-HTTP-$version
 
+	command -v finddepsdistmeta && finddepsdistmeta
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
 	make
