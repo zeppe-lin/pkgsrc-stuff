@@ -9144,7 +9144,6 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/local/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/apt_package_manager_persistence.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/asan_suid_executable_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/autostart_persistence.rb
--rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/bash_profile_persistence.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/blueman_set_dhcp_handler_dbus_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/bpf_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/bpf_sign_extension_priv_esc.rb
@@ -9209,6 +9208,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/local/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/sophos_wpa_clear_keys.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/su_login.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/sudo_baron_samedit.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/sudo_chroot_cve_2025_32463.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/sudoedit_bypass_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/systemtap_modprobe_options_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/tomcat_rhel_based_temp_priv_esc.rb
@@ -9278,6 +9278,8 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/misc/
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/mysql/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/mysql/mysql_yassl_getname.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/mysql/mysql_yassl_hello.rb
+drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/persistence/
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/persistence/bash_profile.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/pop3/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/pop3/cyrus_pop3d_popsubfolders.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/postgres/
@@ -9740,6 +9742,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wso2_api_manager_file_upload_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wso2_file_upload_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/x7chat2_php_exec.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/xwiki_unauth_rce_cve_2025_24893.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/zabbix_script_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/zemra_panel_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/zenworks_configuration_management_upload.rb
@@ -9755,6 +9758,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/local/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/local/allwinner_backdoor.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/local/magnicomp_sysinfo_mcsiwrapper_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/local/obsidian_plugin_persistence.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/local/periodic_script_persistence.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/local/vagrant_synced_folder_vagrantfile_breakout.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/local/xorg_x11_suid_server.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/local/xorg_x11_suid_server_modulepath.rb
