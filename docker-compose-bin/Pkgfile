@@ -3,7 +3,7 @@
 # Depends on:  docker-bin
 
 name=docker-compose-bin
-version=2.39.2
+version=2.39.3
 release=1
 source=$name-$version-x86_64.bin::https://github.com/docker/compose/releases/download/v$version/docker-compose-linux-x86_64
 
