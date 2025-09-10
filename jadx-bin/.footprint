@@ -4,7 +4,7 @@ drwxr-xr-x	root/root	opt/jadx/bin/
 -rwxr-xr-x	root/root	opt/jadx/bin/jadx
 -rwxr-xr-x	root/root	opt/jadx/bin/jadx-gui
 drwxr-xr-x	root/root	opt/jadx/lib/
--rw-r--r--	root/root	opt/jadx/lib/jadx-1.5.2-all.jar
+-rw-r--r--	root/root	opt/jadx/lib/jadx-1.5.3-all.jar
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/jadx
