@@ -3,7 +3,7 @@
 # Depends on:  glibc-32 inetutils libpcap postgresql ruby sqlite3
 
 name=metasploit
-version=6.4.86
+version=6.4.87
 release=1
 source=$name-$version.tar.gz::https://github.com/rapid7/metasploit-framework/archive/refs/tags/$version.tar.gz
 
@@ -32,8 +32,8 @@ build() {
 	sed -i '/BUNDLE_JOBS/d' .bundle/config
 
 	# fix perms
-	find vendor/bundle/ruby -exec chmod o+r '{}' \;
-	find vendor/bundle/ruby -exec chmod o-w,g-w '{}' \;
+	find vendor/bundle/ruby -print0 | xargs -0 chmod o+r
+	find vendor/bundle/ruby -print0 | xargs -0 chmod o-w,g-w
 
 	# launchers
 	for f in msf*; do

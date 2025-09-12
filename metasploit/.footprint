@@ -2048,7 +2048,7 @@ drwxrwxr-x	root/root	opt/metasploit/data/templates/src/msi/
 -rw-rw-r--	root/root	opt/metasploit/data/templates/src/msi/template_nouac_windows.wxs
 -rw-rw-r--	root/root	opt/metasploit/data/templates/src/msi/template_windows.wxs
 drwxrwxr-x	root/root	opt/metasploit/data/templates/src/pe/
--rw-rw-r--	root/root	opt/metasploit/data/templates/src/pe/build_dlls.bat
+-rw-rw-r--	root/root	opt/metasploit/data/templates/src/pe/build_all.bat
 drwxrwxr-x	root/root	opt/metasploit/data/templates/src/pe/dll/
 -rw-rw-r--	root/root	opt/metasploit/data/templates/src/pe/dll/build.bat
 -rw-rw-r--	root/root	opt/metasploit/data/templates/src/pe/dll/template.c
@@ -2061,15 +2061,13 @@ drwxrwxr-x	root/root	opt/metasploit/data/templates/src/pe/dll_mixed_mode/
 -rw-rw-r--	root/root	opt/metasploit/data/templates/src/pe/dll_mixed_mode/build.bat
 -rw-rw-r--	root/root	opt/metasploit/data/templates/src/pe/dll_mixed_mode/template.cpp
 drwxrwxr-x	root/root	opt/metasploit/data/templates/src/pe/exe/
-drwxrwxr-x	root/root	opt/metasploit/data/templates/src/pe/exe/service/
--rwxrwxr-x	root/root	opt/metasploit/data/templates/src/pe/exe/service/Service.sln
--rwxrwxr-x	root/root	opt/metasploit/data/templates/src/pe/exe/service/Service.vcproj
--rwxrwxr-x	root/root	opt/metasploit/data/templates/src/pe/exe/service/service.c
--rwxrwxr-x	root/root	opt/metasploit/data/templates/src/pe/exe/template.c
--rwxrwxr-x	root/root	opt/metasploit/data/templates/src/pe/exe/template.s
+-rw-rw-r--	root/root	opt/metasploit/data/templates/src/pe/exe/build.bat
+-rw-rw-r--	root/root	opt/metasploit/data/templates/src/pe/exe/template.c
 -rw-rw-r--	root/root	opt/metasploit/data/templates/src/pe/exe/template_aarch64_windows.asm
 -rw-rw-r--	root/root	opt/metasploit/data/templates/src/pe/exe/template_aarch64_windows.c
--rwxrwxr-x	root/root	opt/metasploit/data/templates/src/pe/exe/template_x64_windows.asm
+drwxrwxr-x	root/root	opt/metasploit/data/templates/src/pe/exe_service/
+-rw-rw-r--	root/root	opt/metasploit/data/templates/src/pe/exe_service/build.bat
+-rw-rw-r--	root/root	opt/metasploit/data/templates/src/pe/exe_service/template.c
 -rwxrwxr-x	root/root	opt/metasploit/data/templates/template_aarch64_darwin.bin
 -rw-rw-r--	root/root	opt/metasploit/data/templates/template_aarch64_linux.bin
 -rw-rw-r--	root/root	opt/metasploit/data/templates/template_aarch64_linux_dll.bin
@@ -8740,6 +8738,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/bsdi/softcart/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/bsdi/softcart/mercantec_softcart.rb
 -rwxrwxr-x	root/root	opt/metasploit/modules/exploits/example.py
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/example.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/example_linux_persistence.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/example_linux_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/example_webapp.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/firefox/
@@ -8792,6 +8791,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/acronis_cyber_infra_cve_2023_45249.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/advantech_switch_bash_env_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/airties_login_cgi_bof.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/aitemi_m300_time_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/alcatel_omnipcx_mastercgi_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/alienvault_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/alienvault_sqli_exec.rb
@@ -9537,6 +9537,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/langflow_unauth_rce_cve_2025_3248.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/lcms_php_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/liferay_java_unmarshalling.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/lighthouse_studio_unauth_rce_cve_2025_34300.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/log1cms_ajax_create_folder.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/log4shell_header_injection.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/lucee_scheduled_job.rb
