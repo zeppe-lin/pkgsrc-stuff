@@ -5253,6 +5253,9 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/pretalx/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/sap_sol_man_eem_miss_auth.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/sccm.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/sharepoint.rb
+drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/sitecore/
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/sitecore/error.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/sitecore_xp.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/spip.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/splunk.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/splunk/
@@ -9141,9 +9144,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/local/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/af_packet_packet_set_ring_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/ansible_node_deployer.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/apport_abrt_chroot_priv_esc.rb
--rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/apt_package_manager_persistence.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/asan_suid_executable_priv_esc.rb
--rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/autostart_persistence.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/blueman_set_dhcp_handler_dbus_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/bpf_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/bpf_sign_extension_priv_esc.rb
@@ -9279,6 +9280,8 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/mysql/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/mysql/mysql_yassl_getname.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/mysql/mysql_yassl_hello.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/persistence/
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/persistence/apt_package_manager.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/persistence/autostart.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/persistence/bash_profile.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/pop3/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/pop3/cyrus_pop3d_popsubfolders.rb
@@ -9815,6 +9818,8 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/mysql/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/mysql/mysql_udf_payload.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/ntp/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/ntp/ntp_overflow.rb
+drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/persistence/
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/persistence/at.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/php/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/php/ignition_laravel_debug_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/php/jorani_path_trav.rb
@@ -9989,7 +9994,6 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/unix/http/
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/unix/irc/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/irc/unreal_ircd_3281_backdoor.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/unix/local/
--rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/local/at_persistence.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/local/chkrootkit.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/local/emacs_movemail.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/local/exim_perl_startup.rb
@@ -10941,6 +10945,8 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/windows/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/shttpd_post.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/sitecore_xp_cve_2021_42237.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/sitecore_xp_cve_2025_27218.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/sitecore_xp_cve_2025_34510.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/sitecore_xp_cve_2025_34511.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/smartermail_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/softing_sis_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/solarwinds_fsm_userlogin.rb
