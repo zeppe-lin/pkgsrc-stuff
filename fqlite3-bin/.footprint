@@ -43,7 +43,7 @@ drwxr-xr-x	root/root	opt/fqlite3/lib/app/
 -rw-r--r--	root/root	opt/fqlite3/lib/app/failureaccess-1.0.2.jar
 -rw-r--r--	root/root	opt/fqlite3/lib/app/flowless-0.7.3.jar
 -rw-r--r--	root/root	opt/fqlite3/lib/app/fontbox-3.0.0.jar
--rw-r--r--	root/root	opt/fqlite3/lib/app/fqlite-3.21.jar
+-rw-r--r--	root/root	opt/fqlite3/lib/app/fqlite-3.3.jar
 -rw-r--r--	root/root	opt/fqlite3/lib/app/fqlite.cfg
 -rw-r--r--	root/root	opt/fqlite3/lib/app/guava-33.3.0-jre.jar
 -rw-r--r--	root/root	opt/fqlite3/lib/app/hamcrest-core-1.3.jar
