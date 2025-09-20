@@ -9179,7 +9179,6 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/local/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/ktsuss_suid_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/lastore_daemon_dbus_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/libuser_roothelper_priv_esc.rb
--rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/motd_persistence.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/ndsudo_cve_2024_32019.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/nested_namespace_idmap_limit_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/netfilter_nft_set_elem_init_privesc.rb
@@ -9196,7 +9195,6 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/local/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/progress_kemp_loadmaster_sudo_privesc_2024.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/ptrace_sudo_token_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/ptrace_traceme_pkexec_helper.rb
--rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/rc_local_persistence.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/rds_atomic_free_op_null_pointer_deref_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/rds_rds_page_copy_user_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/recvmmsg_priv_esc.rb
@@ -9283,6 +9281,11 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/persistence/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/persistence/apt_package_manager.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/persistence/autostart.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/persistence/bash_profile.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/persistence/docker_image.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/persistence/init_openrc.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/persistence/init_systemd.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/persistence/motd.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/persistence/rc_local.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/pop3/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/pop3/cyrus_pop3d_popsubfolders.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/postgres/
@@ -9761,7 +9764,6 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/kubernetes/
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/local/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/local/allwinner_backdoor.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/local/magnicomp_sysinfo_mcsiwrapper_priv_esc.rb
--rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/local/obsidian_plugin_persistence.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/local/periodic_script_persistence.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/local/vagrant_synced_folder_vagrantfile_breakout.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/local/xorg_x11_suid_server.rb
@@ -9820,6 +9822,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/ntp/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/ntp/ntp_overflow.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/persistence/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/persistence/at.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/persistence/obsidian_plugin.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/php/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/php/ignition_laravel_debug_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/php/jorani_path_trav.rb
@@ -10778,6 +10781,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/windows/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/cogent_datahub_command.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/cogent_datahub_request_headers_bof.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/coldfusion_fckeditor.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/commvault_rce_cve_2025_57790_cve_2025_57791.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/cyclope_ess_sqli.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/desktopcentral_deserialization.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/http/desktopcentral_file_upload.rb
@@ -13798,6 +13802,7 @@ drwxrwxr-x	root/root	opt/metasploit/test/modules/auxiliary/test/
 -rw-rw-r--	root/root	opt/metasploit/test/modules/auxiliary/test/heaplib2.rb
 -rw-rw-r--	root/root	opt/metasploit/test/modules/auxiliary/test/httpserver.rb
 -rw-rw-r--	root/root	opt/metasploit/test/modules/auxiliary/test/ip_spoof.rb
+-rw-rw-r--	root/root	opt/metasploit/test/modules/auxiliary/test/login.rb
 -rw-rw-r--	root/root	opt/metasploit/test/modules/auxiliary/test/recon_passive.rb
 -rw-rw-r--	root/root	opt/metasploit/test/modules/auxiliary/test/report_auth_info.rb
 -rw-rw-r--	root/root	opt/metasploit/test/modules/auxiliary/test/scanner_batch.rb
