@@ -28,8 +28,8 @@ build() {
 	# reproducible builds: don't leak jobs count
 	sed '/BUNDLE_JOBS/d' -i .bundle/config
 
-        # fix perms
-        find vendor/bundle/ruby -exec chmod o+r '{}' \;
+	# fix perms
+	find vendor/bundle/ruby -exec chmod o+r '{}' \;
 
 	# wrapper
 	cat >$PKG/usr/bin/$name <<EOF
@@ -40,8 +40,8 @@ EOF
 	chmod +x $PKG/usr/bin/$name
 
 	# remove junk
-	rm -rf  vendor/bundle/ruby/*/gems/*/test   \
-		vendor/bundle/ruby/*/cache         \
+	rm -rf  vendor/bundle/ruby/*/gems/*/test  \
+		vendor/bundle/ruby/*/cache        \
 
 	find $PKG  -depth -type f \(       \
 		   -name gen_make.out      \
