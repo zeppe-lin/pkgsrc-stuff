@@ -3,7 +3,7 @@
 # Depends on:  perl
 
 name=p5-image-exiftool
-version=13.36
+version=13.37
 release=1
 source=https://exiftool.org/Image-ExifTool-$version.tar.gz
 
@@ -21,10 +21,10 @@ build() {
 
 	# remove junk and empty dirs
 	find $PKG -depth \
-		-type f \( -name perllocal.pod  \
-			-o -name \*.bs          \
+		\( -type f -name perllocal.pod  \
+			-o -name '*.bs'         \
 			-o -name .packlist      \
 			-o -name README         \
-			\) -delete ,            \
-		-type d -empty -delete
+		\) -delete                      \
+		-o -type d -empty -delete
 }

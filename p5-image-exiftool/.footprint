@@ -98,6 +98,7 @@ drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/Charset/
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/Geolocation.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/Geotag.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/GoPro.pm
+-r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/Google.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/H264.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/HP.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/HTML.pm
@@ -308,6 +309,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::Geolocation.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::Geotag.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::GoPro.3pm.gz
+-r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::Google.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::H264.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::HP.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::HTML.3pm.gz
