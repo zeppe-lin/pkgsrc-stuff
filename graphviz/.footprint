@@ -116,9 +116,9 @@ lrwxrwxrwx	root/root	usr/lib/libcdt.so -> libcdt.so.6.0.0
 lrwxrwxrwx	root/root	usr/lib/libcdt.so.6 -> libcdt.so.6.0.0
 -rwxr-xr-x	root/root	usr/lib/libcdt.so.6.0.0
 -rwxr-xr-x	root/root	usr/lib/libcgraph.la
-lrwxrwxrwx	root/root	usr/lib/libcgraph.so -> libcgraph.so.7.0.0
-lrwxrwxrwx	root/root	usr/lib/libcgraph.so.7 -> libcgraph.so.7.0.0
--rwxr-xr-x	root/root	usr/lib/libcgraph.so.7.0.0
+lrwxrwxrwx	root/root	usr/lib/libcgraph.so -> libcgraph.so.8.0.0
+lrwxrwxrwx	root/root	usr/lib/libcgraph.so.8 -> libcgraph.so.8.0.0
+-rwxr-xr-x	root/root	usr/lib/libcgraph.so.8.0.0
 -rwxr-xr-x	root/root	usr/lib/libgvc.la
 lrwxrwxrwx	root/root	usr/lib/libgvc.so -> libgvc.so.7.0.0
 lrwxrwxrwx	root/root	usr/lib/libgvc.so.7 -> libgvc.so.7.0.0

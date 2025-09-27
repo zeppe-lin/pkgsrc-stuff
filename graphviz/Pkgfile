@@ -1,9 +1,9 @@
-# Description: Graph visualization software
+# Description: Rich graph visualization toolkit with multiple output formats
 # URL:         https://www.graphviz.org/
 # Depends on:  libgd librsvg-compat libtool poppler
 
 name=graphviz
-version=13.1.2
+version=14.0.0
 release=1
 source=https://gitlab.com/$name/$name/-/archive/$version/$name-$version.tar.bz2
 
@@ -46,7 +46,7 @@ build() {
 		--with-lasi=no        \
 		--with-webp=no        \
 
-	# fix overlinking
+	# fix overlinking: drop unused DT_NEEDED entries
 	sed -i 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
 
 	make V=1
