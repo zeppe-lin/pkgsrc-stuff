@@ -1,10 +1,12 @@
 #!/bin/sh
-# sherlock launcher
+# Launch Sherlock from /opt
 
 CPATH=/opt/sherlock
-PYVER=$(python3 -V | grep -Po '\d\.\d')
+PYVER=$(python3 -V 2>&1 | grep -Po '\d+\.\d+')
+
 export PATH=$PATH:$CPATH/bin
 export PYTHONPATH=$CPATH:$CPATH/usr/lib/python$PYVER/site-packages
-python3 /opt/sherlock/sherlock/sherlock.py "$@"
+
+exec python3 $CPATH/bin/sherlock "$@"
 
 # End of file.

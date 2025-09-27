@@ -3,32 +3,38 @@
 # Depends on:  py3-pip
 
 name=sherlock
-version=0.14.4-0ecb496
-release=2
-source="https://github.com/sherlock-project/$name/archive/${version#*-}/$name-$version.tar.gz
-	$name.sh
-	revdep.$name"
+version=0.16.0
+release=1
+source="$name.sh revdep.$name"
 
 build() {
 	export TMPDIR="$PKGMK_WORK_DIR"
 
 	mkdir -p $PKG/usr/bin $PKG/opt/$name
 
-	cd $name-${version#*-}*
-
-	# install requirements
-	/usr/bin/pip3 install                \
-		--use-pep517                 \
-		--target      $PKG/opt/$name \
-		--requirement requirements.txt
-
-	# install
-	cp -a sherlock $PKG/opt/$name
+	/usr/bin/pip3 install "sherlock-project==$version"  \
+		--use-pep517 --target $PKG/opt/$name
 
 	install -m 0755 -D $SRC/sherlock.sh  $PKG/usr/bin/sherlock
 	install -m 0644 -D $SRC/revdep.$name $PKG/etc/revdep.d/sherlock
-	
+
 	# remove junk
 	#rm -r $PKG/opt/$name/*.dist-info (required)
-	rm -r $PKG/opt/$name/*/tests
+	rm -r $PKG/opt/sherlock/pandas/tests/ \
+	      $PKG/opt/sherlock/numpy/_core/tests/ \
+	      $PKG/opt/sherlock/numpy/_pyinstaller/tests/ \
+	      $PKG/opt/sherlock/numpy/f2py/tests/ \
+	      $PKG/opt/sherlock/numpy/fft/tests/ \
+	      $PKG/opt/sherlock/numpy/lib/tests/ \
+	      $PKG/opt/sherlock/numpy/linalg/tests/ \
+	      $PKG/opt/sherlock/numpy/ma/tests/ \
+	      $PKG/opt/sherlock/numpy/matrixlib/tests/ \
+	      $PKG/opt/sherlock/numpy/polynomial/tests/ \
+	      $PKG/opt/sherlock/numpy/random/tests/ \
+	      $PKG/opt/sherlock/numpy/testing/tests/ \
+	      $PKG/opt/sherlock/numpy/typing/tests/
+
+	/usr/bin/python3     -m compileall $PKG
+	/usr/bin/python3 -O  -m compileall $PKG
+	/usr/bin/python3 -OO -m compileall $PKG
 }
