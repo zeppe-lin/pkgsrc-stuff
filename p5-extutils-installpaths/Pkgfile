@@ -3,13 +3,14 @@
 # Depends on:  p5-extutils-config
 
 name=p5-extutils-installpaths
-version=0.014
-release=2
+version=0.015
+release=1
 source=https://www.cpan.org/modules/by-module/ExtUtils/ExtUtils-InstallPaths-$version.tar.gz
 
 build() {
 	cd ExtUtils-InstallPaths-$version
 
+	command -v finddepsdistmeta && finddepsdistmeta
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
 	make
@@ -17,9 +18,9 @@ build() {
 
 	# remove junk and empty dirs
 	find $PKG -depth \
-		-type f \( -name perllocal.pod  \
+		\( -type f -name perllocal.pod  \
 			-o -name \*.bs          \
 			-o -name .packlist      \
-			\) -delete ,            \
-		-type d -empty -delete
+		\) -delete                      \
+		-o -type d -empty -delete
 }
