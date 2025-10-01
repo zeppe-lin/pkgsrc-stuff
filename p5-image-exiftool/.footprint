@@ -73,6 +73,7 @@ drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/Charset/
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/DJI.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/DNG.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/DPX.pm
+-r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/DSF.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/DV.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/DarwinCore.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/DjVu.pm
@@ -233,6 +234,7 @@ drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/Lang/
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/Vorbis.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/WPG.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/WTV.pm
+-r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/WavPack.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/WriteCanonRaw.pl
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/WriteExif.pl
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/WriteIPTC.pl
@@ -285,6 +287,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::DJI.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::DNG.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::DPX.3pm.gz
+-r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::DSF.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::DV.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::DarwinCore.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::DjVu.3pm.gz
@@ -443,6 +446,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::Vorbis.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::WPG.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::WTV.3pm.gz
+-r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::WavPack.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::WriteCanonRaw.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::WriteExif.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::WriteIPTC.3pm.gz

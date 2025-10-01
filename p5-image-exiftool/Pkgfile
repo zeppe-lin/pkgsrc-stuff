@@ -1,16 +1,16 @@
-# Description: Reader and rewriter of EXIF informations that supports raw files
+# Description: Reader and rewriter of EXIF metadata with raw file support
 # URL:         https://exiftool.org/
 # Depends on:  perl
 
 name=p5-image-exiftool
-version=13.37
+version=13.38
 release=1
 source=https://exiftool.org/Image-ExifTool-$version.tar.gz
 
 build() {
 	cd Image-ExifTool-$version
 
-	command -v finddepsdistmeta && finddepsdistmeta
+	command -v finddepsdistmeta >/dev/null 2>&1 && finddepsdistmeta
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
 	make
