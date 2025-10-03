@@ -3,13 +3,15 @@
 # Depends on:  iproute2 lvm2 btrfs-progs gzip
 
 name=docker-bin
-version=28.4.0
+version=28.5.0
 release=1
 source="https://download.docker.com/linux/static/stable/x86_64/docker-$version.tgz
 	rc.docker"
 
 build() {
 	mkdir -p $PKG/usr/bin
+
+	ls -la docker/
 	cp -a docker/* $PKG/usr/bin/
 
 	# Docker's man pages looks like sh!\t, skit it.
