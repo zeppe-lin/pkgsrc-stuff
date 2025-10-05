@@ -3,7 +3,7 @@
 # Depends on:  py3-pip
 
 name=ghauri
-version=1.4.2-d6bb1e5
+version=1.4.3-18e3677
 release=1
 source=https://github.com/r0oth3x49/$name/archive/${version#*-}/$name-$version.tar.gz
 
