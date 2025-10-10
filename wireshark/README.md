@@ -6,8 +6,8 @@ README wireshark
 POST-INSTALL
 ============
 
-If you want to run wireshark as an unprivileged user then you must add that
-user to the group "wheel":
+To allow packet capture as a normal user, add yourself to the wheel
+group:
 
     sudo usermod -aG wheel $(whoami)
 
