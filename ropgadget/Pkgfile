@@ -3,7 +3,7 @@
 # Depends on:  capstone
 
 name=ropgadget
-version=7.6
+version=7.7
 release=1
 source=https://github.com/JonathanSalwan/ROPgadget/archive/v$version/ROPgadget-$version.tar.gz
 
@@ -13,7 +13,9 @@ build() {
 	cd ROPgadget-$version
 
 	/usr/bin/python3 setup.py install \
-		--prefix=/usr --root=$PKG --optimize=2
+		--prefix=/usr \
+		--root=$PKG \
+		--optimize=2
 
 	ln -s ROPgadget $PKG/usr/bin/$name
 }
