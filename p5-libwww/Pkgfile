@@ -3,7 +3,7 @@
 # Depends on:  p5-file-listing p5-html-parser p5-http-cookiejar p5-http-cookies p5-http-daemon p5-http-negotiate p5-net-http p5-test-requiresinternet p5-www-robotrules
 
 name=p5-libwww
-version=6.80
+version=6.81
 release=1
 source=https://cpan.metacpan.org/authors/id/O/OA/OALDERS/libwww-perl-$version.tar.gz
 
@@ -16,11 +16,11 @@ build() {
 	make
 	make DESTDIR=$PKG install
 
-        # remove junk and empty dirs
+	# remove junk and empty dirs
 	find $PKG -depth \
-		-type f \( -name perllocal.pod  \
-			-o -name \*.bs          \
-			-o -name .packlist      \
-			\) -delete ,            \
-		-type d -empty -delete
+		\( -type f -name perllocal.pod \
+			-o -name '*.bs' \
+			-o -name .packlist \
+		\) -delete \
+		-o -type d -empty -delete
 }
