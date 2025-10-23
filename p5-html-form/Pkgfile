@@ -3,7 +3,7 @@
 # Depends on:  p5-html-parser
 
 name=p5-html-form
-version=6.12
+version=6.13
 release=1
 source=https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTML-Form-$version.tar.gz
 
@@ -17,9 +17,9 @@ build() {
 
 	# remove junk and empty dirs
 	find $PKG -depth \
-		-type f \( -name perllocal.pod  \
-			-o -name \*.bs          \
-			-o -name .packlist      \
-			\) -delete ,            \
-		-type d -empty -delete
+		\( -type f -name perllocal.pod \
+			-o -name \*.bs \
+			-o -name .packlist \
+		\) -delete \
+		-o -type d -empty -delete
 }
