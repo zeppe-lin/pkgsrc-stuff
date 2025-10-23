@@ -3,7 +3,7 @@
 # Depends on:  libgd librsvg-compat libtool poppler
 
 name=graphviz
-version=14.0.1
+version=14.0.2
 release=1
 source=https://gitlab.com/$name/$name/-/archive/$version/$name-$version.tar.bz2
 
@@ -18,33 +18,33 @@ build() {
 	# --disable-swig:     build fails if swig is installed but tcl is not
 	# --disable-LANG:     disable LANG language bindings
 	# --with-LIB=no:      disable LIB library
-	CONFIG_SHELL=/bin/bash        \
-	./configure                   \
-		--prefix=/usr         \
-		--disable-man-pdfs    \
-		--disable-swig        \
-		--disable-d           \
-		--disable-go          \
-		--disable-guile       \
-		--disable-java        \
-		--disable-javascript  \
-		--disable-lua         \
-		--disable-ocaml       \
-		--disable-perl        \
-		--disable-php         \
-		--disable-python      \
-		--disable-python3     \
-		--disable-r           \
-		--disable-ruby        \
-		--disable-sharp       \
-		--disable-tcl         \
-		--with-glade=no       \
-		--with-qt=no          \
-		--with-quartz=no      \
-		--with-ann=no         \
-		--with-gts=no         \
-		--with-lasi=no        \
-		--with-webp=no        \
+	CONFIG_SHELL=/bin/bash \
+	./configure \
+		--prefix=/usr \
+		--disable-man-pdfs \
+		--disable-swig \
+		--disable-d \
+		--disable-go \
+		--disable-guile \
+		--disable-java \
+		--disable-javascript \
+		--disable-lua \
+		--disable-ocaml \
+		--disable-perl \
+		--disable-php \
+		--disable-python \
+		--disable-python3 \
+		--disable-r \
+		--disable-ruby \
+		--disable-sharp \
+		--disable-tcl \
+		--with-glade=no \
+		--with-qt=no \
+		--with-quartz=no \
+		--with-ann=no \
+		--with-gts=no \
+		--with-lasi=no \
+		--with-webp=no \
 
 	# fix overlinking: drop unused DT_NEEDED entries
 	sed -i 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
