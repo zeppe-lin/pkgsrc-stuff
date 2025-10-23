@@ -3,7 +3,7 @@
 # Depends on:  alsa-lib xorg-libxrender xorg-libxtst
 
 name=jdk17-bin
-version=17.0.16.8.1
+version=17.0.17.10.1
 release=1
 source=https://corretto.aws/downloads/resources/$version/amazon-corretto-$version-linux-x64.tar.gz
 
@@ -36,11 +36,11 @@ build() {
 EOF
 
 	# remove junk
-	find $PKG  -type f \(                     \
-		   -name ASSEMBLY_EXCEPTION       \
-		-o -name ADDITIONAL_LICENSE_INFO  \
-		-o -name LICENSE                  \
-		-o -name README.md                \
-		-o -name README.txt               \
+	find $PKG  -type f \( \
+		   -name ASSEMBLY_EXCEPTION \
+		-o -name ADDITIONAL_LICENSE_INFO \
+		-o -name LICENSE \
+		-o -name README.md \
+		-o -name README.txt \
 		\) -delete
 }

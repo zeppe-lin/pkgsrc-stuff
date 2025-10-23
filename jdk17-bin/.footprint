@@ -13,6 +13,7 @@ drwxr-xr-x	root/root	usr/lib/
 lrwxrwxrwx	root/root	usr/lib/java17 -> jdk17
 drwxr-xr-x	root/root	usr/lib/jdk17/
 drwxr-xr-x	root/root	usr/lib/jdk17/bin/
+-rwxr-xr-x	root/root	usr/lib/jdk17/bin/asprof
 -rwxr-xr-x	root/root	usr/lib/jdk17/bin/jar
 -rwxr-xr-x	root/root	usr/lib/jdk17/bin/jarsigner
 -rwxr-xr-x	root/root	usr/lib/jdk17/bin/java
@@ -25,6 +26,7 @@ drwxr-xr-x	root/root	usr/lib/jdk17/bin/
 -rwxr-xr-x	root/root	usr/lib/jdk17/bin/jdeprscan
 -rwxr-xr-x	root/root	usr/lib/jdk17/bin/jdeps
 -rwxr-xr-x	root/root	usr/lib/jdk17/bin/jfr
+-rwxr-xr-x	root/root	usr/lib/jdk17/bin/jfrconv
 -rwxr-xr-x	root/root	usr/lib/jdk17/bin/jhsdb
 -rwxr-xr-x	root/root	usr/lib/jdk17/bin/jimage
 -rwxr-xr-x	root/root	usr/lib/jdk17/bin/jinfo
@@ -145,6 +147,7 @@ drwxr-xr-x	root/root	usr/lib/jdk17/jmods/
 -rw-r--r--	root/root	usr/lib/jdk17/jmods/jdk.xml.dom.jmod
 -rw-r--r--	root/root	usr/lib/jdk17/jmods/jdk.zipfs.jmod
 drwxr-xr-x	root/root	usr/lib/jdk17/legal/
+-r--r--r--	root/root	usr/lib/jdk17/legal/async-profiler.md
 drwxr-xr-x	root/root	usr/lib/jdk17/legal/java.base/
 -r--r--r--	root/root	usr/lib/jdk17/legal/java.base/aes.md
 -r--r--r--	root/root	usr/lib/jdk17/legal/java.base/asm.md
@@ -259,6 +262,7 @@ drwxr-xr-x	root/root	usr/lib/jdk17/lib/jfr/
 -rw-r--r--	root/root	usr/lib/jdk17/lib/jrt-fs.jar
 -rwxr-xr-x	root/root	usr/lib/jdk17/lib/jspawnhelper
 -rw-r--r--	root/root	usr/lib/jdk17/lib/jvm.cfg
+-rw-r--r--	root/root	usr/lib/jdk17/lib/libasyncProfiler.so
 -rw-r--r--	root/root	usr/lib/jdk17/lib/libattach.so
 -rw-r--r--	root/root	usr/lib/jdk17/lib/libawt.so
 -rw-r--r--	root/root	usr/lib/jdk17/lib/libawt_headless.so
