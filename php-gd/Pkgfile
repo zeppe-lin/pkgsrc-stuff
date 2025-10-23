@@ -3,17 +3,17 @@
 # Depends on:  harfbuzz libgd
 
 name=php-gd
-version=8.3.26
+version=8.3.27
 release=1
 source=https://www.php.net/distributions/php-$version.tar.xz
 
 build() {
 	mkdir build; cd build
 
-	../php-$version/configure   \
-		--disable-all       \
-		--enable-gd=shared  \
-		--with-external-gd  \
+	../php-$version/configure \
+		--disable-all \
+		--enable-gd=shared \
+		--with-external-gd \
 
 	make build-modules
 
