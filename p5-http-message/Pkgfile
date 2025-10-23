@@ -3,7 +3,7 @@
 # Depends on:  p5-clone p5-encode-locale p5-http-date p5-io-html p5-lwp-mediatypes p5-uri
 
 name=p5-http-message
-version=7.00
+version=7.01
 release=1
 source=https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTTP-Message-$version.tar.gz
 
@@ -17,9 +17,9 @@ build() {
 
 	# remove junk and empty dirs
 	find $PKG -depth \
-		-type f \( -name perllocal.pod  \
-			-o -name \*.bs          \
-			-o -name .packlist      \
-			\) -delete ,            \
-		-type d -empty -delete
+		\( -type f -name perllocal.pod \
+			-o -name \*.bs \
+			-o -name .packlist \
+		\) -delete \
+		-o -type d -empty -delete
 }
