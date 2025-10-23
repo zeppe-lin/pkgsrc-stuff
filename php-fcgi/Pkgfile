@@ -3,7 +3,7 @@
 # Depends on:  libpcre2 libxml2
 
 name=php-fcgi
-version=8.3.26
+version=8.3.27
 release=1
 source="https://php.net/distributions/php-$version.tar.xz
 	rc.$name"
@@ -11,20 +11,20 @@ source="https://php.net/distributions/php-$version.tar.xz
 build() {
 	mkdir build; cd build
 
-	EXTENSION_DIR=/usr/lib/php/extensions                \
-	../php-$version/configure                            \
-		--prefix=/usr                                \
-		--disable-cli                                \
-		--disable-debug                              \
-		--disable-static                             \
-		--enable-cgi                                 \
-		--with-config-file-path=/etc/php             \
-		--with-config-file-scan-dir=/etc/php/conf.d  \
-		--with-external-pcre                         \
-		--with-zlib                                  \
-		--without-pdo-sqlite                         \
-		--without-pear                               \
-		--without-sqlite3                            \
+	EXTENSION_DIR=/usr/lib/php/extensions \
+	../php-$version/configure \
+		--prefix=/usr \
+		--disable-cli \
+		--disable-debug \
+		--disable-static \
+		--enable-cgi \
+		--with-config-file-path=/etc/php \
+		--with-config-file-scan-dir=/etc/php/conf.d \
+		--with-external-pcre \
+		--with-zlib \
+		--without-pdo-sqlite \
+		--without-pear \
+		--without-sqlite3 \
 
 	make V=1
 
