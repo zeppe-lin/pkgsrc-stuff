@@ -2,14 +2,14 @@ drwxr-xr-x	root/root	opt/
 drwxr-xr-x	root/root	opt/h8mail/
 drwxr-xr-x	root/root	opt/h8mail/bin/
 -rwxr-xr-x	root/root	opt/h8mail/bin/normalizer
-drwxr-xr-x	root/root	opt/h8mail/certifi-2025.7.14.dist-info/
--rw-r--r--	root/root	opt/h8mail/certifi-2025.7.14.dist-info/INSTALLER
--rw-r--r--	root/root	opt/h8mail/certifi-2025.7.14.dist-info/METADATA
--rw-r--r--	root/root	opt/h8mail/certifi-2025.7.14.dist-info/RECORD
--rw-r--r--	root/root	opt/h8mail/certifi-2025.7.14.dist-info/WHEEL
-drwxr-xr-x	root/root	opt/h8mail/certifi-2025.7.14.dist-info/licenses/
--rw-r--r--	root/root	opt/h8mail/certifi-2025.7.14.dist-info/licenses/LICENSE
--rw-r--r--	root/root	opt/h8mail/certifi-2025.7.14.dist-info/top_level.txt
+drwxr-xr-x	root/root	opt/h8mail/certifi-2025.10.5.dist-info/
+-rw-r--r--	root/root	opt/h8mail/certifi-2025.10.5.dist-info/INSTALLER
+-rw-r--r--	root/root	opt/h8mail/certifi-2025.10.5.dist-info/METADATA
+-rw-r--r--	root/root	opt/h8mail/certifi-2025.10.5.dist-info/RECORD
+-rw-r--r--	root/root	opt/h8mail/certifi-2025.10.5.dist-info/WHEEL
+drwxr-xr-x	root/root	opt/h8mail/certifi-2025.10.5.dist-info/licenses/
+-rw-r--r--	root/root	opt/h8mail/certifi-2025.10.5.dist-info/licenses/LICENSE
+-rw-r--r--	root/root	opt/h8mail/certifi-2025.10.5.dist-info/top_level.txt
 drwxr-xr-x	root/root	opt/h8mail/certifi/
 -rw-r--r--	root/root	opt/h8mail/certifi/__init__.py
 -rw-r--r--	root/root	opt/h8mail/certifi/__main__.py
@@ -20,15 +20,15 @@ drwxr-xr-x	root/root	opt/h8mail/certifi/__pycache__/
 -rw-r--r--	root/root	opt/h8mail/certifi/cacert.pem
 -rw-r--r--	root/root	opt/h8mail/certifi/core.py
 -rw-r--r--	root/root	opt/h8mail/certifi/py.typed (EMPTY)
-drwxr-xr-x	root/root	opt/h8mail/charset_normalizer-3.4.2.dist-info/
--rw-r--r--	root/root	opt/h8mail/charset_normalizer-3.4.2.dist-info/INSTALLER
--rw-r--r--	root/root	opt/h8mail/charset_normalizer-3.4.2.dist-info/METADATA
--rw-r--r--	root/root	opt/h8mail/charset_normalizer-3.4.2.dist-info/RECORD
--rw-r--r--	root/root	opt/h8mail/charset_normalizer-3.4.2.dist-info/WHEEL
--rw-r--r--	root/root	opt/h8mail/charset_normalizer-3.4.2.dist-info/entry_points.txt
-drwxr-xr-x	root/root	opt/h8mail/charset_normalizer-3.4.2.dist-info/licenses/
--rw-r--r--	root/root	opt/h8mail/charset_normalizer-3.4.2.dist-info/licenses/LICENSE
--rw-r--r--	root/root	opt/h8mail/charset_normalizer-3.4.2.dist-info/top_level.txt
+drwxr-xr-x	root/root	opt/h8mail/charset_normalizer-3.4.4.dist-info/
+-rw-r--r--	root/root	opt/h8mail/charset_normalizer-3.4.4.dist-info/INSTALLER
+-rw-r--r--	root/root	opt/h8mail/charset_normalizer-3.4.4.dist-info/METADATA
+-rw-r--r--	root/root	opt/h8mail/charset_normalizer-3.4.4.dist-info/RECORD
+-rw-r--r--	root/root	opt/h8mail/charset_normalizer-3.4.4.dist-info/WHEEL
+-rw-r--r--	root/root	opt/h8mail/charset_normalizer-3.4.4.dist-info/entry_points.txt
+drwxr-xr-x	root/root	opt/h8mail/charset_normalizer-3.4.4.dist-info/licenses/
+-rw-r--r--	root/root	opt/h8mail/charset_normalizer-3.4.4.dist-info/licenses/LICENSE
+-rw-r--r--	root/root	opt/h8mail/charset_normalizer-3.4.4.dist-info/top_level.txt
 drwxr-xr-x	root/root	opt/h8mail/charset_normalizer/
 -rw-r--r--	root/root	opt/h8mail/charset_normalizer/__init__.py
 -rw-r--r--	root/root	opt/h8mail/charset_normalizer/__main__.py
@@ -60,12 +60,13 @@ drwxr-xr-x	root/root	opt/h8mail/charset_normalizer/cli/__pycache__/
 -rw-r--r--	root/root	opt/h8mail/charset_normalizer/py.typed (EMPTY)
 -rw-r--r--	root/root	opt/h8mail/charset_normalizer/utils.py
 -rw-r--r--	root/root	opt/h8mail/charset_normalizer/version.py
-drwxr-xr-x	root/root	opt/h8mail/idna-3.10.dist-info/
--rw-r--r--	root/root	opt/h8mail/idna-3.10.dist-info/INSTALLER
--rw-r--r--	root/root	opt/h8mail/idna-3.10.dist-info/LICENSE.md
--rw-r--r--	root/root	opt/h8mail/idna-3.10.dist-info/METADATA
--rw-r--r--	root/root	opt/h8mail/idna-3.10.dist-info/RECORD
--rw-r--r--	root/root	opt/h8mail/idna-3.10.dist-info/WHEEL
+drwxr-xr-x	root/root	opt/h8mail/idna-3.11.dist-info/
+-rw-r--r--	root/root	opt/h8mail/idna-3.11.dist-info/INSTALLER
+-rw-r--r--	root/root	opt/h8mail/idna-3.11.dist-info/METADATA
+-rw-r--r--	root/root	opt/h8mail/idna-3.11.dist-info/RECORD
+-rw-r--r--	root/root	opt/h8mail/idna-3.11.dist-info/WHEEL
+drwxr-xr-x	root/root	opt/h8mail/idna-3.11.dist-info/licenses/
+-rw-r--r--	root/root	opt/h8mail/idna-3.11.dist-info/licenses/LICENSE.md
 drwxr-xr-x	root/root	opt/h8mail/idna/
 -rw-r--r--	root/root	opt/h8mail/idna/__init__.py
 drwxr-xr-x	root/root	opt/h8mail/idna/__pycache__/
@@ -85,15 +86,15 @@ drwxr-xr-x	root/root	opt/h8mail/idna/__pycache__/
 -rw-r--r--	root/root	opt/h8mail/idna/package_data.py
 -rw-r--r--	root/root	opt/h8mail/idna/py.typed (EMPTY)
 -rw-r--r--	root/root	opt/h8mail/idna/uts46data.py
-drwxr-xr-x	root/root	opt/h8mail/requests-2.32.4.dist-info/
--rw-r--r--	root/root	opt/h8mail/requests-2.32.4.dist-info/INSTALLER
--rw-r--r--	root/root	opt/h8mail/requests-2.32.4.dist-info/METADATA
--rw-r--r--	root/root	opt/h8mail/requests-2.32.4.dist-info/RECORD
--rw-r--r--	root/root	opt/h8mail/requests-2.32.4.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	opt/h8mail/requests-2.32.4.dist-info/WHEEL
-drwxr-xr-x	root/root	opt/h8mail/requests-2.32.4.dist-info/licenses/
--rw-r--r--	root/root	opt/h8mail/requests-2.32.4.dist-info/licenses/LICENSE
--rw-r--r--	root/root	opt/h8mail/requests-2.32.4.dist-info/top_level.txt
+drwxr-xr-x	root/root	opt/h8mail/requests-2.32.5.dist-info/
+-rw-r--r--	root/root	opt/h8mail/requests-2.32.5.dist-info/INSTALLER
+-rw-r--r--	root/root	opt/h8mail/requests-2.32.5.dist-info/METADATA
+-rw-r--r--	root/root	opt/h8mail/requests-2.32.5.dist-info/RECORD
+-rw-r--r--	root/root	opt/h8mail/requests-2.32.5.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	opt/h8mail/requests-2.32.5.dist-info/WHEEL
+drwxr-xr-x	root/root	opt/h8mail/requests-2.32.5.dist-info/licenses/
+-rw-r--r--	root/root	opt/h8mail/requests-2.32.5.dist-info/licenses/LICENSE
+-rw-r--r--	root/root	opt/h8mail/requests-2.32.5.dist-info/top_level.txt
 drwxr-xr-x	root/root	opt/h8mail/requests/
 -rw-r--r--	root/root	opt/h8mail/requests/__init__.py
 drwxr-xr-x	root/root	opt/h8mail/requests/__pycache__/
