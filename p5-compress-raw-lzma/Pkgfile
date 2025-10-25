@@ -2,22 +2,18 @@
 # URL:         https://metacpan.org/pod/Compress::Raw::Lzma
 # Depends on:  perl
 
-# NOTE:
-#	The warnings about missing Pod::Markdown dependency should be
-#	ignored.  The Pod::Markdown package is declared in
-#	META.{yml,json} as a build dependency, but its pod2markdown
-#	utility is used only to generate a README.md file for GitHub
-#	(see private/MakeUtil.pm).  Skip that sh!t...
-#	O tempora, o mores!
+# XXX: Ignore Pod::Markdown warnings - it's a build-only dep used only for
+# GitHub README generation (see private/MakeUtil.pm).
 
 name=p5-compress-raw-lzma
-version=2.213
-release=2
+version=2.214
+release=1
 source=https://cpan.metacpan.org/authors/id/P/PM/PMQS/Compress-Raw-Lzma-$version.tar.gz
 
 build() {
 	cd Compress-Raw-Lzma-$version
 
+	command -v finddepsdistmeta && finddepsdistmeta
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
 	make OPTIMIZE="$CFLAGS"
@@ -25,9 +21,9 @@ build() {
 
 	# remove junk and empty dirs
 	find $PKG -depth \
-		-type f \( -name perllocal.pod  \
-			-o -name \*.bs          \
-			-o -name .packlist      \
-			\) -delete ,            \
-		-type d -empty -delete
+		\( -type f -name perllocal.pod \
+			-o -name '*.bs' \
+			-o -name .packlist \
+		\) -delete \
+		-o -type d -empty -delete
 }
