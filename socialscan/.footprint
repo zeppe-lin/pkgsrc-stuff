@@ -4,6 +4,8 @@ drwxr-xr-x	root/root	opt/socialscan/
 -rw-r--r--	root/root	opt/socialscan/MANIFEST.in
 -rw-r--r--	root/root	opt/socialscan/Pipfile
 -rw-r--r--	root/root	opt/socialscan/Pipfile.lock
+drwxr-xr-x	root/root	opt/socialscan/__pycache__/
+-rw-r--r--	root/root	opt/socialscan/__pycache__/typing_extensions.cpython-312.pyc
 drwxr-xr-x	root/root	opt/socialscan/aiohappyeyeballs/
 -rw-r--r--	root/root	opt/socialscan/aiohappyeyeballs/__init__.py
 drwxr-xr-x	root/root	opt/socialscan/aiohappyeyeballs/__pycache__/
@@ -27,10 +29,13 @@ drwxr-xr-x	root/root	opt/socialscan/aiohttp/.hash/
 -rw-r--r--	root/root	opt/socialscan/aiohttp/__init__.py
 drwxr-xr-x	root/root	opt/socialscan/aiohttp/__pycache__/
 -rw-r--r--	root/root	opt/socialscan/aiohttp/__pycache__/__init__.cpython-312.pyc
+-rw-r--r--	root/root	opt/socialscan/aiohttp/__pycache__/_cookie_helpers.cpython-312.pyc
 -rw-r--r--	root/root	opt/socialscan/aiohttp/__pycache__/abc.cpython-312.pyc
 -rw-r--r--	root/root	opt/socialscan/aiohttp/__pycache__/base_protocol.cpython-312.pyc
 -rw-r--r--	root/root	opt/socialscan/aiohttp/__pycache__/client.cpython-312.pyc
 -rw-r--r--	root/root	opt/socialscan/aiohttp/__pycache__/client_exceptions.cpython-312.pyc
+-rw-r--r--	root/root	opt/socialscan/aiohttp/__pycache__/client_middleware_digest_auth.cpython-312.pyc
+-rw-r--r--	root/root	opt/socialscan/aiohttp/__pycache__/client_middlewares.cpython-312.pyc
 -rw-r--r--	root/root	opt/socialscan/aiohttp/__pycache__/client_proto.cpython-312.pyc
 -rw-r--r--	root/root	opt/socialscan/aiohttp/__pycache__/client_reqrep.cpython-312.pyc
 -rw-r--r--	root/root	opt/socialscan/aiohttp/__pycache__/client_ws.cpython-312.pyc
@@ -71,6 +76,7 @@ drwxr-xr-x	root/root	opt/socialscan/aiohttp/__pycache__/
 -rw-r--r--	root/root	opt/socialscan/aiohttp/__pycache__/web_urldispatcher.cpython-312.pyc
 -rw-r--r--	root/root	opt/socialscan/aiohttp/__pycache__/web_ws.cpython-312.pyc
 -rw-r--r--	root/root	opt/socialscan/aiohttp/__pycache__/worker.cpython-312.pyc
+-rw-r--r--	root/root	opt/socialscan/aiohttp/_cookie_helpers.py
 -rw-r--r--	root/root	opt/socialscan/aiohttp/_cparser.pxd
 -rw-r--r--	root/root	opt/socialscan/aiohttp/_find_header.pxd
 -rw-r--r--	root/root	opt/socialscan/aiohttp/_headers.pxi
@@ -107,6 +113,8 @@ drwxr-xr-x	root/root	opt/socialscan/aiohttp/_websocket/__pycache__/
 -rw-r--r--	root/root	opt/socialscan/aiohttp/base_protocol.py
 -rw-r--r--	root/root	opt/socialscan/aiohttp/client.py
 -rw-r--r--	root/root	opt/socialscan/aiohttp/client_exceptions.py
+-rw-r--r--	root/root	opt/socialscan/aiohttp/client_middleware_digest_auth.py
+-rw-r--r--	root/root	opt/socialscan/aiohttp/client_middlewares.py
 -rw-r--r--	root/root	opt/socialscan/aiohttp/client_proto.py
 -rw-r--r--	root/root	opt/socialscan/aiohttp/client_reqrep.py
 -rw-r--r--	root/root	opt/socialscan/aiohttp/client_ws.py
@@ -150,7 +158,6 @@ drwxr-xr-x	root/root	opt/socialscan/aiohttp/_websocket/__pycache__/
 -rw-r--r--	root/root	opt/socialscan/aiohttp/worker.py
 drwxr-xr-x	root/root	opt/socialscan/aiosignal/
 -rw-r--r--	root/root	opt/socialscan/aiosignal/__init__.py
--rw-r--r--	root/root	opt/socialscan/aiosignal/__init__.pyi
 drwxr-xr-x	root/root	opt/socialscan/aiosignal/__pycache__/
 -rw-r--r--	root/root	opt/socialscan/aiosignal/__pycache__/__init__.cpython-312.pyc
 -rw-r--r--	root/root	opt/socialscan/aiosignal/py.typed (EMPTY)
@@ -284,17 +291,14 @@ drwxr-xr-x	root/root	opt/socialscan/idna/__pycache__/
 -rw-r--r--	root/root	opt/socialscan/idna/uts46data.py
 drwxr-xr-x	root/root	opt/socialscan/multidict/
 -rw-r--r--	root/root	opt/socialscan/multidict/__init__.py
--rw-r--r--	root/root	opt/socialscan/multidict/__init__.pyi
 drwxr-xr-x	root/root	opt/socialscan/multidict/__pycache__/
 -rw-r--r--	root/root	opt/socialscan/multidict/__pycache__/__init__.cpython-312.pyc
 -rw-r--r--	root/root	opt/socialscan/multidict/__pycache__/_abc.cpython-312.pyc
 -rw-r--r--	root/root	opt/socialscan/multidict/__pycache__/_compat.cpython-312.pyc
--rw-r--r--	root/root	opt/socialscan/multidict/__pycache__/_multidict_base.cpython-312.pyc
 -rw-r--r--	root/root	opt/socialscan/multidict/__pycache__/_multidict_py.cpython-312.pyc
 -rw-r--r--	root/root	opt/socialscan/multidict/_abc.py
 -rw-r--r--	root/root	opt/socialscan/multidict/_compat.py
 -rw-r--r--	root/root	opt/socialscan/multidict/_multidict.cpython-312-x86_64-linux-gnu.so
--rw-r--r--	root/root	opt/socialscan/multidict/_multidict_base.py
 -rw-r--r--	root/root	opt/socialscan/multidict/_multidict_py.py
 -rw-r--r--	root/root	opt/socialscan/multidict/py.typed
 drwxr-xr-x	root/root	opt/socialscan/propcache/
@@ -395,6 +399,7 @@ drwxr-xr-x	root/root	opt/socialscan/tqdm/contrib/__pycache__/
 -rw-r--r--	root/root	opt/socialscan/tqdm/tqdm.1
 -rw-r--r--	root/root	opt/socialscan/tqdm/utils.py
 -rw-r--r--	root/root	opt/socialscan/tqdm/version.py
+-rw-r--r--	root/root	opt/socialscan/typing_extensions.py
 drwxr-xr-x	root/root	opt/socialscan/yarl/
 -rw-r--r--	root/root	opt/socialscan/yarl/__init__.py
 drwxr-xr-x	root/root	opt/socialscan/yarl/__pycache__/
@@ -412,7 +417,6 @@ drwxr-xr-x	root/root	opt/socialscan/yarl/__pycache__/
 -rw-r--r--	root/root	opt/socialscan/yarl/_quoters.py
 -rw-r--r--	root/root	opt/socialscan/yarl/_quoting.py
 -rw-r--r--	root/root	opt/socialscan/yarl/_quoting_c.cpython-312-x86_64-linux-gnu.so
--rw-r--r--	root/root	opt/socialscan/yarl/_quoting_c.pyi
 -rw-r--r--	root/root	opt/socialscan/yarl/_quoting_c.pyx
 -rw-r--r--	root/root	opt/socialscan/yarl/_quoting_py.py
 -rw-r--r--	root/root	opt/socialscan/yarl/_url.py
