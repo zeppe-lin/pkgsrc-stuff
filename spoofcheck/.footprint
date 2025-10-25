@@ -1,7 +1,5 @@
 drwxr-xr-x	root/root	opt/
 drwxr-xr-x	root/root	opt/spoofcheck/
-drwxr-xr-x	root/root	opt/spoofcheck/__pycache__/
--rw-r--r--	root/root	opt/spoofcheck/__pycache__/requests_file.cpython-312.pyc
 drwxr-xr-x	root/root	opt/spoofcheck/bin/
 -rw-r--r--	root/root	opt/spoofcheck/bin/futurize
 -rw-r--r--	root/root	opt/spoofcheck/bin/normalizer
@@ -675,7 +673,11 @@ drwxr-xr-x	root/root	opt/spoofcheck/requests/__pycache__/
 -rw-r--r--	root/root	opt/spoofcheck/requests/status_codes.py
 -rw-r--r--	root/root	opt/spoofcheck/requests/structures.py
 -rw-r--r--	root/root	opt/spoofcheck/requests/utils.py
--rw-r--r--	root/root	opt/spoofcheck/requests_file.py
+drwxr-xr-x	root/root	opt/spoofcheck/requests_file/
+-rw-r--r--	root/root	opt/spoofcheck/requests_file/__init__.py
+drwxr-xr-x	root/root	opt/spoofcheck/requests_file/__pycache__/
+-rw-r--r--	root/root	opt/spoofcheck/requests_file/__pycache__/__init__.cpython-312.pyc
+-rw-r--r--	root/root	opt/spoofcheck/requests_file/py.typed (EMPTY)
 -rw-r--r--	root/root	opt/spoofcheck/spoofcheck.py
 drwxr-xr-x	root/root	opt/spoofcheck/tldextract/
 -rw-r--r--	root/root	opt/spoofcheck/tldextract/.tld_set_snapshot
