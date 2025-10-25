@@ -490,6 +490,7 @@ drwxr-xr-x	root/root	usr/share/p5-image-exiftool/config_files/
 -rwxr-xr-x	root/root	usr/share/p5-image-exiftool/config_files/frameCount.config
 -rw-r--r--	root/root	usr/share/p5-image-exiftool/config_files/gps2utm.config
 -rw-r--r--	root/root	usr/share/p5-image-exiftool/config_files/guano.config
+-rw-r--r--	root/root	usr/share/p5-image-exiftool/config_files/local_time.config
 -rw-r--r--	root/root	usr/share/p5-image-exiftool/config_files/nksc.config
 -rw-r--r--	root/root	usr/share/p5-image-exiftool/config_files/onone.config
 -rw-r--r--	root/root	usr/share/p5-image-exiftool/config_files/photoshop_paths.config
