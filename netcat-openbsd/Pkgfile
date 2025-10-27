@@ -1,9 +1,9 @@
-# Description: Netcat from OpenBSD rewritten by Debian
+# Description: Netcat from OpenBSD, maintained and patched by Debian
 # URL:         https://tracker.debian.org/pkg/netcat-openbsd
 # Depends on:  libbsd
 
 name=netcat-openbsd
-version=1.229-1
+version=1.234-1
 release=1
 source="http://http.debian.net/debian/pool/main/n/$name/${name}_${version%%-*}.orig.tar.gz
 	http://http.debian.net/debian/pool/main/n/$name/${name}_$version.debian.tar.xz"
@@ -11,14 +11,14 @@ source="http://http.debian.net/debian/pool/main/n/$name/${name}_${version%%-*}.o
 build() {
 	cd $name-${version%%-*}
 
-	# apply debian patches
-	while read -r patch; do
-		if echo $patch | grep -q '^#'; then continue; fi
-		patch -p1 -i $SRC/debian/patches/$patch
+	# Apply Debian patches
+	while IFS= read -r _patch; do
+		case "$_patch" in ''|'#'*) continue ;; esac
+		patch -Np1 -i $SRC/debian/patches/"$_patch"
 	done < $SRC/debian/patches/series
 
 	make CFLAGS="$CFLAGS -DDEBIAN_VERSION=\"\\\"$version\\\"\" -I/usr/include/libbsd" LDFLAGS="$LDFLAGS -lbsd"
 
-	install -m 0755 -Dt $PKG/usr/bin/            nc
-	install -m 0644 -Dt $PKG/usr/share/man/man1/ nc.1
+	install -m 0755 -Dt $PKG/usr/bin nc
+	install -m 0644 -Dt $PKG/usr/share/man/man1 nc.1
 }
