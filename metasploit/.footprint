@@ -8066,6 +8066,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/rails_mass_assignment.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/rails_xml_yaml_scanner.rb
 -rwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/http/rdp_web_login.py
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/redoc_exposed.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/replace_ext.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/rewrite_proxy_bypass.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/rfcode_reader_enum.rb
@@ -11164,7 +11165,6 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/windows/local/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/local/ps_wmi_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/local/pxeexploit.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/local/razer_zwopenprocess.rb
--rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/local/registry_persistence.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/local/ricoh_driver_privesc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/local/run_as.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/local/s4u_persistence.rb
@@ -11277,6 +11277,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/windows/misc/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/misc/mobile_mouse_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/misc/ms07_064_sami.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/misc/ms10_104_sharepoint.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/misc/ncr_cmcagent_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/misc/netcat110_nt.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/misc/nettransport.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/misc/nvidia_mental_ray.rb
@@ -11354,6 +11355,8 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/windows/oracle/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/oracle/tns_service_name.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/windows/persistence/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/persistence/image_exec_options.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/persistence/registry.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/persistence/startup_folder.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/windows/pop3/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/pop3/seattlelab_pass.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/windows/postgres/
