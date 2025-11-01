@@ -2,7 +2,7 @@
 # URL:         https://github.com/boyter/scc
 
 name=scc-bin
-version=3.5.0
+version=3.6.0
 release=1
 source=$name-$version.tar.gz::https://github.com/boyter/scc/releases/download/v$version/scc_Linux_x86_64.tar.gz
 
