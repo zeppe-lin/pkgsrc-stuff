@@ -3,7 +3,7 @@
 # Depends on:  aircrack-ng pixiewps
 
 name=reaver-wps-t6x
-version=1.6.6-bd0f382
+version=1.6.6-f9b5e15
 release=1
 source=https://github.com/t6x/reaver-wps-fork-t6x/archive/${version#*-}/reaver-wps-fork-t6x-$version.tar.gz
 
@@ -11,10 +11,10 @@ build() {
 	# build in separate dir is broken
 	cd reaver-wps-fork-t6x-${version#*-}*/src
 
-	./configure                   \
-		--prefix=/usr         \
-		--localstatedir=/var  \
+	./configure \
+		--prefix=/usr \
+		--localstatedir=/var \
 
 	make DESTDIR=$PKG install
-	install -m 0644 -Dt $PKG/usr/share/man/man1/ ../docs/reaver.1
+	install -m 0644 -Dt $PKG/usr/share/man/man1 ../docs/reaver.1
 }
