@@ -3,7 +3,7 @@
 # Depends on:  firefox-bin
 
 name=firefox-darkreader-bin
-version=4.9.110
+version=4.9.112
 release=1
 source=$name-$version.xpi::https://github.com/darkreader/darkreader/releases/download/v$version/darkreader-firefox.xpi
 
