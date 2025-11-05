@@ -93,12 +93,12 @@ drwxr-xr-x	root/root	opt/zaproxy/plugin/
 -rw-r--r--	root/root	opt/zaproxy/plugin/webdrivermacos-release-165.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/webdriverwindows-release-166.zap
 -rw-r--r--	root/root	opt/zaproxy/plugin/websocket-release-34.zap
--rw-r--r--	root/root	opt/zaproxy/plugin/zest-beta-48.10.0.zap
+-rw-r--r--	root/root	opt/zaproxy/plugin/zest-beta-48.11.0.zap
 drwxr-xr-x	root/root	opt/zaproxy/xml/
 -rw-r--r--	root/root	opt/zaproxy/xml/config.xml
 -rw-r--r--	root/root	opt/zaproxy/xml/drivers.dtd
 -rw-r--r--	root/root	opt/zaproxy/xml/reportCompare.xsl
--rw-r--r--	root/root	opt/zaproxy/zap-D-2025-10-29.jar
+-rw-r--r--	root/root	opt/zaproxy/zap-D-2025-11-04.jar
 -rwxr-xr-x	root/root	opt/zaproxy/zap.sh
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
