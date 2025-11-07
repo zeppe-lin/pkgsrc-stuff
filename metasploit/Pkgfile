@@ -3,7 +3,7 @@
 # Depends on:  glibc-32 inetutils libpcap postgresql ruby sqlite3
 
 name=metasploit
-version=6.4.96
+version=6.4.97
 release=1
 source=$name-$version.tar.gz::https://github.com/rapid7/metasploit-framework/archive/refs/tags/$version.tar.gz
 
@@ -57,7 +57,7 @@ EOF
 	done
 
 	# zsh completions
-	#install -m 0644 -Dt $PKG/usr/share/zsh/site-functions/ external/zsh/_*
+	#install -m 0644 -Dt $PKG/usr/share/zsh/site-functions external/zsh/_*
 
 	# remove junk
 	rm $PKG/usr/bin/msfupdate
@@ -65,32 +65,32 @@ EOF
 	rm -r vendor/bundle/ruby/*/gems/packetfu-*/test
 	rm -r external/serialport/debian
 	find $PKG -depth \
-		\( -type f -name gen_make.out      \
-			-o -name mkmf.log          \
-			-o -name .codeclimate.yml  \
-			-o -name .dockerignore     \
-			-o -name .gitignore        \
-			-o -name .rubocop.yml      \
-			-o -name .travis.yml       \
-			-o -name CHANGELOG\*       \
-			-o -name CHANGES\*         \
-			-o -name COPYING           \
-			-o -name ChangeLog\*       \
-			-o -name Dockerfile        \
-			-o -name LICENSE\*         \
-			-o -name NEWS\*            \
-			-o -name README\*          \
-			-o -name SECURITY\*        \
-			-o -name THANKS            \
-			-o -name TODO              \
-			-o -name \*-LICENSE\*      \
-			-o -name \*.md             \
-			-o -name Makefile          \
-			-o -name LICENCE           \
-			-o -name AUTHORS           \
-			-o -name BUGS              \
-			-o -name INSTALL           \
-			-o -iname readme.txt       \
+		\( -type f -name gen_make.out \
+			-o -name mkmf.log \
+			-o -name .codeclimate.yml \
+			-o -name .dockerignore \
+			-o -name .gitignore \
+			-o -name .rubocop.yml \
+			-o -name .travis.yml \
+			-o -name CHANGELOG\* \
+			-o -name CHANGES\* \
+			-o -name COPYING \
+			-o -name ChangeLog\* \
+			-o -name Dockerfile \
+			-o -name LICENSE\* \
+			-o -name NEWS\* \
+			-o -name README\* \
+			-o -name SECURITY\* \
+			-o -name THANKS \
+			-o -name TODO \
+			-o -name \*-LICENSE\* \
+			-o -name \*.md \
+			-o -name Makefile \
+			-o -name LICENCE \
+			-o -name AUTHORS \
+			-o -name BUGS \
+			-o -name INSTALL \
+			-o -iname readme.txt \
 		\) -delete \
 		-o -type d -name .github -exec rm -r {} +
 

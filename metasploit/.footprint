@@ -8859,6 +8859,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/bludit_upload_images_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/cacti_unauthenticated_cmd_injection.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/cayin_cms_ntp.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/centreon_auth_rce_cve_2025_5946.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/centreon_pollers_auth_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/centreon_sqli_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/centreon_useralias_exec.rb
@@ -9193,7 +9194,6 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/local/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/cve_2022_1043_io_uring_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/cve_2023_0386_overlayfs_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/desktop_privilege_escalation.rb
--rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/diamorphine_rootkit_signal_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/docker_cgroup_escape.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/docker_daemon_privilege_escalation.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/docker_privileged_container_escape.rb
@@ -9233,9 +9233,9 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/local/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/rds_rds_page_copy_user_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/recvmmsg_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/reptile_rootkit_reptile_cmd_priv_esc.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/rootkit_privesc_signal_hunter.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/runc_cwd_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/saltstack_salt_minion_deployer.rb
--rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/service_persistence.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/servu_ftp_server_prepareinstallation_priv_esc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/sock_sendpage.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/local/sophos_wpa_clear_keys.rb
@@ -9319,6 +9319,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/persistence/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/persistence/init_systemd.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/persistence/init_systemd_override.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/persistence/init_sysvinit.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/persistence/init_upstart.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/persistence/motd.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/persistence/rc_local.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/persistence/yum_package_manager.rb
@@ -11357,6 +11358,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/windows/persistence/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/persistence/image_exec_options.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/persistence/registry.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/persistence/startup_folder.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/persistence/task_scheduler.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/windows/pop3/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/pop3/seattlelab_pass.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/windows/postgres/
