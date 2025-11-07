@@ -3,7 +3,7 @@
 # Depends on:  lzo util-linux
 
 name=btrfs-progs
-version=6.17
+version=6.17.1
 release=1
 source=https://www.kernel.org/pub/linux/kernel/people/kdave/$name/$name-v$version.tar.xz
 
@@ -12,13 +12,13 @@ build() {
 	cd $name-v$version
 
 	./autogen.sh
-	./configure                      \
-		--prefix=/usr            \
-		--bindir=/sbin           \
-		--disable-convert        \
-		--disable-zoned          \
-		--disable-python         \
-		--disable-documentation  \
+	./configure \
+		--prefix=/usr \
+		--bindir=/sbin \
+		--disable-convert \
+		--disable-zoned \
+		--disable-python \
+		--disable-documentation \
 
 	make V=1
 	make DESTDIR=$PKG install
