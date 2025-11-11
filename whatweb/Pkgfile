@@ -3,7 +3,7 @@
 # Depends on:  ruby libxslt
 
 name=whatweb
-version=0.6.2-660f0f4
+version=0.6.3-c42e1b9
 release=1
 source=https://github.com/urbanadventurer/WhatWeb/archive/${version#*-}/WhatWeb-$version.tar.gz
 
@@ -33,34 +33,34 @@ EOF
 	chmod +x $PKG/usr/bin/$name
 
 	# remove junk
-	rm -rf  vendor/bundle/ruby/*/gems/*/test   \
-		vendor/bundle/ruby/*/cache         \
+	rm -rf  vendor/bundle/ruby/*/gems/*/test \
+		vendor/bundle/ruby/*/cache \
 		test icons whatweb.xsl
 
-	find $PKG  -depth -type f \(       \
-		   -name gen_make.out      \
-		-o -name mkmf.log          \
-		-o -name .codeclimate.yml  \
-		-o -name .dockerignore     \
-		-o -name .gitignore        \
-		-o -name .rubocop.yml      \
-		-o -name .travis.yml       \
-		-o -name CHANGELOG\*       \
-		-o -name CHANGES\*         \
-		-o -name COPYING           \
-		-o -name ChangeLog\*       \
-		-o -name Dockerfile        \
-		-o -name LICENSE\*         \
-		-o -name NEWS\*            \
-		-o -name README\*          \
-		-o -name SECURITY\*        \
-		-o -name THANKS            \
-		-o -name TODO              \
-		-o -name VERSION           \
-		-o -name \*-LICENSE\*      \
-		-o -name \*.md             \
-		\) -delete ,               \
-		-type d -name .github -exec rm -r {} +
+	find $PKG -depth \
+		\( -type f -name gen_make.out \
+			-o -name mkmf.log \
+			-o -name .codeclimate.yml \
+			-o -name .dockerignore \
+			-o -name .gitignore \
+			-o -name .rubocop.yml \
+			-o -name .travis.yml \
+			-o -name 'CHANGELOG*' \
+			-o -name 'CHANGES*' \
+			-o -name COPYING \
+			-o -name 'ChangeLog*' \
+			-o -name Dockerfile \
+			-o -name 'LICENSE*' \
+			-o -name 'NEWS*' \
+			-o -name 'README*' \
+			-o -name 'SECURITY*' \
+			-o -name THANKS \
+			-o -name TODO \
+			-o -name VERSION \
+			-o -name '*-LICENSE*' \
+			-o -name '*.md' \
+		\) -delete \
+		-o -type d -name .github -exec rm -r {} +
 
 	# remove empty dirs
 	find $PKG -depth -type d -empty -delete
