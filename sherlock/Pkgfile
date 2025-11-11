@@ -5,7 +5,8 @@
 name=sherlock
 version=0.16.0
 release=1
-source="$name.sh revdep.$name"
+source="$name.sh
+	revdep.$name"
 
 build() {
 	export TMPDIR="$PKGMK_WORK_DIR"
@@ -15,24 +16,13 @@ build() {
 	/usr/bin/pip3 install "sherlock-project==$version"  \
 		--use-pep517 --target $PKG/opt/$name
 
-	install -m 0755 -D $SRC/sherlock.sh  $PKG/usr/bin/sherlock
-	install -m 0644 -D $SRC/revdep.$name $PKG/etc/revdep.d/sherlock
+	install -m 0755 -D $SRC/$name.sh $PKG/usr/bin/$name
+	install -m 0644 -D $SRC/revdep.$name $PKG/etc/revdep.d/$name
 
 	# remove junk
 	#rm -r $PKG/opt/$name/*.dist-info (required)
-	rm -r $PKG/opt/sherlock/pandas/tests/ \
-	      $PKG/opt/sherlock/numpy/_core/tests/ \
-	      $PKG/opt/sherlock/numpy/_pyinstaller/tests/ \
-	      $PKG/opt/sherlock/numpy/f2py/tests/ \
-	      $PKG/opt/sherlock/numpy/fft/tests/ \
-	      $PKG/opt/sherlock/numpy/lib/tests/ \
-	      $PKG/opt/sherlock/numpy/linalg/tests/ \
-	      $PKG/opt/sherlock/numpy/ma/tests/ \
-	      $PKG/opt/sherlock/numpy/matrixlib/tests/ \
-	      $PKG/opt/sherlock/numpy/polynomial/tests/ \
-	      $PKG/opt/sherlock/numpy/random/tests/ \
-	      $PKG/opt/sherlock/numpy/testing/tests/ \
-	      $PKG/opt/sherlock/numpy/typing/tests/
+	rm -r $PKG/opt/$name/pandas/tests/ \
+	      $PKG/opt/$name/numpy/*/tests/ \
 
 	/usr/bin/python3     -m compileall $PKG
 	/usr/bin/python3 -O  -m compileall $PKG
