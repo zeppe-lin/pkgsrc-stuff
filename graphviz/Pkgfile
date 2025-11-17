@@ -3,7 +3,7 @@
 # Depends on:  libgd librsvg-compat libtool poppler
 
 name=graphviz
-version=14.0.2
+version=14.0.4
 release=1
 source=https://gitlab.com/$name/$name/-/archive/$version/$name-$version.tar.bz2
 
