@@ -1,17 +1,17 @@
-# Description: Source code beautifier
+# Description: C, C++, C#, D, Java and Pawn source code beautifier
 # URL:         https://uncrustify.sourceforge.net/
 
 name=uncrustify
-version=0.81.0
+version=0.82.0
 release=1
 source=https://github.com/$name/$name/archive/$name-$version.tar.gz
 
 build() {
-	cmake -S $name-$name-$version -B build -G Ninja  \
-		-D CMAKE_BUILD_TYPE=Release              \
-		-D CMAKE_INSTALL_PREFIX=/usr             \
-		-D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS"   \
-		-D NoGitVersionString=ON                 \
+	cmake -S $name-$name-$version -B build -G Ninja \
+		-D CMAKE_BUILD_TYPE=Release \
+		-D CMAKE_INSTALL_PREFIX=/usr \
+		-D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
+		-D NoGitVersionString=ON \
 
 	ninja -C build -j ${JOBS:-1} -v
 	DESTDIR=$PKG ninja -C build install
