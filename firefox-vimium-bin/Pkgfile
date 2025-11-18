@@ -3,7 +3,7 @@
 # Depends on:  firefox-bin lynx
 
 name=firefox-vimium-bin
-version=2.3
+version=2.3.1
 release=1
 source=$(lynx -dump https://addons.mozilla.org/en-US/firefox/addon/vimium-ff/ |
 	grep -Po "https://addons.mozilla.org/firefox/downloads/file/[0-9]+/vimium_ff-$version.xpi")
