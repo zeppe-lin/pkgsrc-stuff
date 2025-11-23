@@ -1,6 +1,6 @@
 # Description: Network logon cracker
 # URL:         https://github.com/vanhauser-thc/thc-hydra
-# Depends on:  freerdp2 gtk libgcrypt libidn libpcre2 libssh mysql postgresql subversion
+# Depends on:  freerdp2 gtk3 libgcrypt libidn libpcre2 libssh mysql postgresql subversion
 
 name=thc-hydra
 version=9.6-fbd8a1f
