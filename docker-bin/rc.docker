@@ -11,11 +11,7 @@ OPTS="-p $PID -G docker"
 
 case $1 in
 start)
-	if [ ! -f $LOG ]; then
-		touch        $LOG
-		chgrp docker $LOG
-		chmod 640    $LOG
-	fi
+	[ -f $LOG ] || install -o root -g docker -m 0640 /dev/null $LOG
 	/usr/sbin/cgroupfs-mount
 	$SSD --start --pidfile $PID --background --exec $PROG \
 		-- $OPTS >> $LOG 2>&1
@@ -37,7 +33,7 @@ status)
 	esac
 	;;
 *)
-	echo "usage: $0 [start|stop|restart|status]"
+	echo "Usage: $0 [start|stop|restart|status]"
 	;;
 esac
 
