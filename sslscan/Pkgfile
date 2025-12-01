@@ -3,11 +3,13 @@
 # Depends on:  openssl zlib
 
 name=sslscan
-version=2.2.0
+version=2.2.1
 release=1
 source=https://github.com/rbsec/$name/archive/$version/$name-$version.tar.gz
 
 build() {
-	make -C $name-$version GIT_VERSION=$version PREFIX=/usr
-	make -C $name-$version GIT_VERSION=$version PREFIX=/usr DESTDIR=$PKG install
+	cd $name-$version
+
+	make GIT_VERSION=$version PREFIX=/usr
+	make GIT_VERSION=$version PREFIX=/usr DESTDIR=$PKG install
 }
