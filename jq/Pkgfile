@@ -1,6 +1,9 @@
 # Description: Lightweight and flexible command-line JSON processor
 # URL:         https://jqlang.github.io/jq/
-# Optional:    oniguruma
+
+# Maintainer notes on dependencies:
+#   --with-oniguruma=no: avoid dependency on oniguruma
+#   --disable-valgrind: avoid dependency on valgrind
 
 name=jq
 version=1.8.1
@@ -10,18 +13,18 @@ source=https://github.com/stedolan/jq/releases/download/jq-$version/jq-$version.
 build() {
 	mkdir build; cd build
 
-	autoreconf -fi ../jq-$version
-	../jq-$version/configure           \
-		--prefix=/usr              \
-		--disable-docs             \
-		--disable-maintainer-mode  \
-		--disable-valgrind         \
-		--enable-rpathhack         \
-		--with-oniguruma=no        \
+	autoreconf -fiv ../jq-$version
+	../jq-$version/configure \
+		--prefix=/usr \
+		--disable-docs \
+		--disable-maintainer-mode \
+		--disable-valgrind \
+		--enable-rpathhack \
+		--with-oniguruma=no \
 
 	make V=1
 	make DESTDIR=$PKG install
 
-	# remove junk
+	# Remove junk
 	rm -rf $PKG/usr/share/doc
 }

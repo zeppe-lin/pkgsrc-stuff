@@ -1,7 +1,9 @@
 # Description: Build and install Perl modules
 # URL:         https://metacpan.org/release/Module-Build
 # Depends on:  p5-inc-latest
-# Optional:    p5-inc-latest
+
+# Maintainer notes on dependencies:
+#   p5-inc-latest: (enabled)
 
 name=p5-module-build
 version=0.42_35

@@ -1,7 +1,9 @@
 # Description: Comma-separated values manipulator (using XS or PurePerl)
 # URL:         https://metacpan.org/pod/Text::CSV
 # Depends on:  perl
-# Optional:    p5-text-csv-xs
+
+# Maintainer notes on dependencies:
+#   p5-text-csv-xs: (enabled if installed)
 
 name=p5-text-csv
 version=2.06

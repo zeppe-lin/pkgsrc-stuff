@@ -1,7 +1,9 @@
 # Description: Simple GTK/command line TCP/IP packet generator
 # URL:         http://gspoof.sourceforge.net/
 # Depends on:  gtk libnet ktsuss
-# Optional:    ktsuss
+
+# Maintainer notes on dependencies:
+#   ktsuss: Needed to run with elevated privileges (enabled)
 
 name=gspoof
 version=3.2
@@ -36,12 +38,12 @@ build() {
 	mkdir -p $PKG/usr/bin/
 	mkdir -p $PKG/usr/share/applications
 	mkdir -p $PKG/usr/share/pixmaps
-	install -m 0755 gspoof                                   \
+	install -m 0755 gspoof \
 		$PKG/usr/bin/gspoof
-	install -m 0755 $SRC/gspoof-gtk.sh                       \
+	install -m 0755 $SRC/gspoof-gtk.sh \
 		$PKG/usr/bin/gspoof-gtk
-	install -m 0644 $SRC/gspoof-gtk.desktop                  \
+	install -m 0644 $SRC/gspoof-gtk.desktop \
 		$PKG/usr/share/applications/gspoof-gtk.desktop
-	install -m 0644 pixmap/icon.png                          \
+	install -m 0644 pixmap/icon.png \
 		$PKG/usr/share/pixmaps/gspoof.png
 }

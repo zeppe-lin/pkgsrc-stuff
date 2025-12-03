@@ -1,7 +1,9 @@
 # Description: Free peer-reviewed portable C++ source libraries
 # URL:         https://www.boost.org/
 # Depends on:  bzip2 zstd python3
-# Optional:    icu openmpi py3-numpy
+
+# Maintainer notes on dependencies:
+#   icu openmpi py3-numpy: (disabled)
 
 name=boost
 version=1.87.0

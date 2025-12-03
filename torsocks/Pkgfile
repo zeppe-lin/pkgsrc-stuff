@@ -1,6 +1,9 @@
 # Description: Wrapper to safely torify applications
 # URL:         https://gitlab.torproject.org/tpo/core/torsocks/
-# Optional:    tor
+
+# Maintainer notes on dependencies:
+#   tor: optional runtime component; torsocks can use any Tor server,
+#        including remote ones, so not a build/runtime dependency.
 
 name=torsocks
 version=2.5.0
@@ -8,10 +11,10 @@ release=1
 source=https://gitlab.torproject.org/tpo/core/$name/-/archive/v$version/$name-v$version.tar.gz
 
 build() {
-	# fix build with gcc 14
+	# Fix build with GCC 14
 	CFLAGS="$CFLAGS -Wno-implicit-function-declaration"
 
-	# disable tests requiring network access
+	# Disable tests that require network access
 	for test in dns fd_passing getpeername; do
 		sed -e "/^\ttest_${test} \\\\\$/d" \
 		    -i $name-v$version/tests/Makefile.am
@@ -19,14 +22,14 @@ build() {
 
 	mkdir build; cd build
 
-	autoreconf -fi ../$name-v$version
-	../$name-v$version/configure  \
-		--prefix=/usr         \
-		--sysconfdir=/etc     \
+	autoreconf -fiv ../$name-v$version
+	../$name-v$version/configure \
+		--prefix=/usr \
+		--sysconfdir=/etc \
 
 	make V=1
 	make DESTDIR=$PKG install
 
-	# remove junk
+	# Remove junk
 	rm -r $PKG/usr/share/doc
 }

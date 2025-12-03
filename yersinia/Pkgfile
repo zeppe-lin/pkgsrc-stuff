@@ -1,7 +1,9 @@
 # Description: Framework for layer 2 attacks
 # URL:         https://github.com/tomac/yersinia
 # Depends on:  gtk libnet libpcap ktsuss
-# Optional:    ktsuss
+
+# Maintainer notes on dependencies:
+#   ktsuss: Needed to run with elevated privileges
 
 name=yersinia
 version=0.8.2-867b309
@@ -15,24 +17,24 @@ source="https://github.com/tomac/$name/archive/${version##*-}/$name-${version##*
 build() {
 	patch -p1 -d $name-${version#*-}* -i $SRC/respect_system_font.patch
 
-	# remove broken, useless and ugly logo resource (sorry, bro)
+	# Remove broken, useless and ugly logo resource, sorry
 	patch -p1 -d $name-${version#*-}* -i $SRC/aboutdialog_logo.patch
 
 	mkdir build; cd build
 
-	NOCONFIGURE=1 autoreconf -fi ../$name-${version#*-}*
+	NOCONFIGURE=1 autoreconf -fiv ../$name-${version#*-}*
 
-	# remove system optimization flag, yersinia compiles with -O3
+	# Drop system -O? flag (yersinia enforces -O3)
 	CFLAGS=$(echo $CFLAGS | sed 's/-O. / /')
 
-	# remove debug flag
+	# Remove debug flag from upstream CFLAGS, keep -O3
 	sed -i "/CFLAGS=/s/\(-O3 -Wall\) -g/$CFLAGS \1 -fcommon/g" \
 		../$name-${version#*-}*/configure.ac
 
-	# --disable-admin: disable the remove admin interface
-	../$name-${version#*-}*/configure  \
-		--prefix=/usr              \
-		--disable-admin            \
+	# --disable-admin: disable the admin interface
+	../$name-${version#*-}*/configure \
+		--prefix=/usr \
+		--disable-admin \
 
 	make V=1
 	make DESTDIR=$PKG install

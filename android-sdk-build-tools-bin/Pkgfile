@@ -1,7 +1,9 @@
 # Description: Build-Tools for Google Android SDK
 # URL:         http://developer.android.com/sdk/index.html
 # Depends on:  glibc-32 zlib
-# Optional:    android-ndk-bin
+
+# Maintainer notes on dependencies:
+#   android-ndk-bin: (auto-enabled if installed)
 
 name=android-sdk-build-tools-bin
 version=31
@@ -18,13 +20,13 @@ build() {
 	install -m 0644 -D $SRC/revdep.conf $PKG/etc/revdep.d/$name
 
 	# remove junk
-	find $PKG \( -name README*           \
-		-o   -name COPYING           \
-		-o   -name AUTHORS           \
-		-o   -name CONTRIBUTING*     \
-		-o   -name NOTICE*           \
+	find $PKG \( -name README* \
+		-o   -name COPYING \
+		-o   -name AUTHORS \
+		-o   -name CONTRIBUTING* \
+		-o   -name NOTICE* \
 		-o   -name UPSTREAM_REVISION \
-		-o   -name LICENSE*          \
+		-o   -name LICENSE* \
 	\) -delete
 
 	# remove empty dirs

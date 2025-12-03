@@ -1,7 +1,9 @@
 # Description: Flash firmwares on Samsung Galaxy S devices
 # URL:         https://gitlab.com/BenjaminDobell/Heimdall
 # Depends on:  libusb
-# Optional:    qt5
+
+# Maintainer notes on dependencies:
+#   DISABLE_FRONTEND=ON: Useless GUI, needs qt5 (disabled)
 
 name=heimdall
 version=1.4.2
@@ -11,10 +13,8 @@ source=https://gitlab.com/BenjaminDobell/Heimdall/-/archive/v$version/Heimdall-v
 build() {
 	export CXXFLAGS="$CXXFLAGS -DNDEBUG"
 
-	cmake -S Heimdall-v$version -B build \
-		-D DISABLE_FRONTEND=ON # disable GUI (requires qt5)
-
+	cmake -S Heimdall-v$version -B build -D DISABLE_FRONTEND=ON
 	cmake --build build -v
 
-	install -m 0755 -Dt $PKG/usr/bin/ build/bin/$name
+	install -m 0755 -Dt $PKG/usr/bin build/bin/$name
 }

@@ -1,22 +1,25 @@
 # Description: Front-end for mpv
 # URL:         https://www.smplayer.info/
 # Depends on:  hicolor-icon-theme qt5
-# Optional:    yt-dlp
+
+# Maintainer notes on dependencies:
+#   yt-dlp: Youtube support (auto-enabled if installed)
 
 name=smplayer
 version=25.6.0.10388
 release=1
 
-# for stable
-#source=https://github.com/smplayer-dev/$name/releases/download/v$version/$name-$version.tar.bz2
+case $version in
+*.*.*.*) _tag="v${version##*.}" ;; # testing
+      *) _tag="v$version"       ;; # stable
+esac
 
-# for testing
-source=https://github.com/smplayer-dev/$name/releases/download/v${version##*.}/smplayer-$version.tar.bz2
+source="https://github.com/smplayer-dev/$name/releases/download/$_tag/smplayer-$version.tar.bz2"
 
 build() {
 	cd $name-$version
 
-	# pkgmk compress manual pages itself
+	# pkgmk compresses manpages by itself
 	sed '/gzip -9/d' -i Makefile
 
 	export CXXFLAGS="$CXXFLAGS $CPPFLAGS"
@@ -25,9 +28,9 @@ build() {
 		CFLAGS_EXTRA="$CFLAGS $CPPFLAGS $LDFLAGS" all
 	make PREFIX=/usr DESTDIR=$PKG install
 
-	# remove i18n entries
+	# Remove i18n entries from .desktop
 	sed -ri '/\[.+\]=/d' $PKG/usr/share/applications/*.desktop
 
-	# remove junk
+	# Remove junk
 	rm -r $PKG/usr/share/doc
 }

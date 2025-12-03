@@ -1,7 +1,12 @@
 # Description: Remote desktop protocol implementation
 # URL:         https://www.freerdp.com/
 # Depends on:  ffmpeg libusb xorg-libxcursor xorg-libxi xorg-libxinerama xorg-libxkbfile xorg-libxrandr
-# Optional:    ffmpeg gst-plugins-base alsa-lib cups directfb neon pulseaudio xmlto
+
+# Maintainer notes on dependencies:
+#   ffmpeg: (enabled)
+#   gst-plugins-base: (enabled if installed)
+#   alsa-lib: (enabled)
+#   cups directfb neon pulseaudio xmlto: (enabled if installed)
 
 name=freerdp2
 version=2.11.4
@@ -9,22 +14,22 @@ release=2
 source=https://pub.freerdp.com/releases/freerdp-$version.tar.gz
 
 build() {
-	# fix build with gcc 14
+	# Fix build with GCC 14
 	export CFLAGS="$CFLAGS -Wno-incompatible-pointer-types -Wno-int-conversion"
 	export CXXFLAGS="$CXXFLAGS -Wno-incompatible-pointer-types -Wno-int-conversion"
 
-	cmake -S freerdp-$version -B build -G Ninja     \
-		-D CMAKE_BUILD_TYPE=RELEASE             \
-		-D CMAKE_C_FLAGS_RELEASE="$CFLAGS"      \
-		-D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS"  \
-		-D CMAKE_INSTALL_PREFIX=/usr            \
-		-D CMAKE_INSTALL_LIBDIR=lib             \
-		-D CMAKE_SKIP_RPATH=ON                  \
-		-D WITH_SERVER=OFF                      \
-		-D WITH_CLIENT=ON                       \
-		-D WITH_LIBSYSTEMD=OFF                  \
-		-D WITH_WAYLAND=OFF                     \
-		-Wno-dev                                \
+	cmake -S freerdp-$version -B build -G Ninja \
+		-D CMAKE_BUILD_TYPE=RELEASE \
+		-D CMAKE_C_FLAGS_RELEASE="$CFLAGS" \
+		-D CMAKE_CXX_FLAGS_RELEASE="$CXXFLAGS" \
+		-D CMAKE_INSTALL_PREFIX=/usr \
+		-D CMAKE_INSTALL_LIBDIR=lib \
+		-D CMAKE_SKIP_RPATH=ON \
+		-D WITH_SERVER=OFF \
+		-D WITH_CLIENT=ON \
+		-D WITH_LIBSYSTEMD=OFF \
+		-D WITH_WAYLAND=OFF \
+		-Wno-dev \
 
 	ninja -C build -j ${JOBS:-1} -v
 	DESTDIR=$PKG ninja -C build install
