@@ -2,10 +2,11 @@
 # URL:         https://www.nsa.gov/ghidra
 # Depends on:  jdk-bin
 
-# ghidra version 11.2+ requires JDK version 21+
+# Maintainer notes on dependencies:
+#   ghidra version 11.2+ requires JDK version 21+
 
 name=ghidra-bin
-version=11.4.2-20250826
+version=11.4.3-20251203
 release=1
 source="https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_${version%%-*}_build/ghidra_${version%%-*}_PUBLIC_${version##*-}.zip
 	ghidra.desktop"

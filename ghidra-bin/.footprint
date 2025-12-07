@@ -56,13 +56,13 @@ drwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/src/main/java/skeleto
 drwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/src/main/resources/
 drwxr-xr-x	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/src/main/resources/images/
 -rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/Skeleton/src/main/resources/images/README.txt
--rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.4.2_PUBLIC_20250826_BSimElasticPlugin.zip
--rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.4.2_PUBLIC_20250826_GnuDisassembler.zip
--rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.4.2_PUBLIC_20250826_MachineLearning.zip
--rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.4.2_PUBLIC_20250826_SampleTablePlugin.zip
--rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.4.2_PUBLIC_20250826_SleighDevTools.zip
--rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.4.2_PUBLIC_20250826_bundle_examples.zip
--rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.4.2_PUBLIC_20250826_sample.zip
+-rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.4.3_PUBLIC_20251203_BSimElasticPlugin.zip
+-rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.4.3_PUBLIC_20251203_GnuDisassembler.zip
+-rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.4.3_PUBLIC_20251203_MachineLearning.zip
+-rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.4.3_PUBLIC_20251203_SampleTablePlugin.zip
+-rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.4.3_PUBLIC_20251203_SleighDevTools.zip
+-rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.4.3_PUBLIC_20251203_bundle_examples.zip
+-rw-r--r--	root/root	opt/ghidra/Extensions/Ghidra/ghidra_11.4.3_PUBLIC_20251203_sample.zip
 drwxr-xr-x	root/root	opt/ghidra/Extensions/IDAPro/
 drwxr-xr-x	root/root	opt/ghidra/Extensions/IDAPro/Python/
 drwxr-xr-x	root/root	opt/ghidra/Extensions/IDAPro/Python/6xx/
@@ -5065,6 +5065,7 @@ drwxr-xr-x	root/root	opt/ghidra/Ghidra/Processors/x86/data/patterns/
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Processors/x86/data/patterns/x86-64win_patterns.xml
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Processors/x86/data/patterns/x86delphi_patterns.xml
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Processors/x86/data/patterns/x86gcc_patterns.xml
+-rw-r--r--	root/root	opt/ghidra/Ghidra/Processors/x86/data/patterns/x86gcc_prepatterns.xml
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Processors/x86/data/patterns/x86win_patterns.xml
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Processors/x86/data/patterns/x86win_prepatterns.xml
 -rw-r--r--	root/root	opt/ghidra/Ghidra/Processors/x86/data/sleighArgs.txt (EMPTY)
@@ -5371,7 +5372,7 @@ drwxr-xr-x	root/root	opt/ghidra/docs/GhidraClass/Intermediate/Images/Scripting/
 -rw-r--r--	root/root	opt/ghidra/docs/WhatsNew.html
 -rw-r--r--	root/root	opt/ghidra/docs/WhatsNew.md
 drwxr-xr-x	root/root	opt/ghidra/docs/ghidra_stubs/
--rw-r--r--	root/root	opt/ghidra/docs/ghidra_stubs/ghidra_stubs-11.4.2-py3-none-any.whl
+-rw-r--r--	root/root	opt/ghidra/docs/ghidra_stubs/ghidra_stubs-11.4.3-py3-none-any.whl
 drwxr-xr-x	root/root	opt/ghidra/docs/ghidra_stubs/pypredef/
 -rw-r--r--	root/root	opt/ghidra/docs/ghidra_stubs/pypredef/db.buffers.pypredef
 -rw-r--r--	root/root	opt/ghidra/docs/ghidra_stubs/pypredef/db.pypredef
