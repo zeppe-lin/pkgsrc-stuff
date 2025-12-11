@@ -1595,6 +1595,17 @@ drwxrwxr-x	root/root	opt/metasploit/data/exploits/pxexploit/
 -rwxrwxr-x	root/root	opt/metasploit/data/exploits/pxexploit/update3
 -rwxrwxr-x	root/root	opt/metasploit/data/exploits/pxexploit/update4
 -rwxrwxr-x	root/root	opt/metasploit/data/exploits/pxexploit/updatecustom
+drwxrwxr-x	root/root	opt/metasploit/data/exploits/react2shell_unauth_rce_cve_2025_55182/
+-rw-rw-r--	root/root	opt/metasploit/data/exploits/react2shell_unauth_rce_cve_2025_55182/index.html
+-rw-rw-r--	root/root	opt/metasploit/data/exploits/react2shell_unauth_rce_cve_2025_55182/next.config.js
+-rw-rw-r--	root/root	opt/metasploit/data/exploits/react2shell_unauth_rce_cve_2025_55182/package.json
+drwxrwxr-x	root/root	opt/metasploit/data/exploits/react2shell_unauth_rce_cve_2025_55182/src/
+drwxrwxr-x	root/root	opt/metasploit/data/exploits/react2shell_unauth_rce_cve_2025_55182/src/app/
+-rw-rw-r--	root/root	opt/metasploit/data/exploits/react2shell_unauth_rce_cve_2025_55182/src/app/actions.tsx
+-rw-rw-r--	root/root	opt/metasploit/data/exploits/react2shell_unauth_rce_cve_2025_55182/src/app/layout.tsx
+-rw-rw-r--	root/root	opt/metasploit/data/exploits/react2shell_unauth_rce_cve_2025_55182/src/app/page.tsx
+-rw-rw-r--	root/root	opt/metasploit/data/exploits/react2shell_unauth_rce_cve_2025_55182/tsconfig.json
+-rw-rw-r--	root/root	opt/metasploit/data/exploits/react2shell_unauth_rce_cve_2025_55182/vite.config.js
 drwxrwxr-x	root/root	opt/metasploit/data/exploits/redis/
 drwxrwxr-x	root/root	opt/metasploit/data/exploits/redis/exp/
 -rw-rw-r--	root/root	opt/metasploit/data/exploits/redis/exp/exp.c
@@ -2030,6 +2041,7 @@ drwxrwxr-x	root/root	opt/metasploit/data/templates/src/elf/
 drwxrwxr-x	root/root	opt/metasploit/data/templates/src/elf/dll/
 -rw-rw-r--	root/root	opt/metasploit/data/templates/src/elf/dll/elf_dll_aarch64_template.s
 -rw-rw-r--	root/root	opt/metasploit/data/templates/src/elf/dll/elf_dll_armle_template.s
+-rw-rw-r--	root/root	opt/metasploit/data/templates/src/elf/dll/elf_dll_loongarch64_template.s
 -rw-rw-r--	root/root	opt/metasploit/data/templates/src/elf/dll/elf_dll_riscv32le_template.s
 -rw-rw-r--	root/root	opt/metasploit/data/templates/src/elf/dll/elf_dll_riscv64le_template.s
 -rw-rw-r--	root/root	opt/metasploit/data/templates/src/elf/dll/elf_dll_x64_template.s
@@ -2037,6 +2049,7 @@ drwxrwxr-x	root/root	opt/metasploit/data/templates/src/elf/dll/
 drwxrwxr-x	root/root	opt/metasploit/data/templates/src/elf/exe/
 -rwxrwxr-x	root/root	opt/metasploit/data/templates/src/elf/exe/elf_aarch64_template.s
 -rwxrwxr-x	root/root	opt/metasploit/data/templates/src/elf/exe/elf_armle_template.s
+-rwxrwxr-x	root/root	opt/metasploit/data/templates/src/elf/exe/elf_loongarch64_template.s
 -rwxrwxr-x	root/root	opt/metasploit/data/templates/src/elf/exe/elf_mipsle_template.s
 -rw-rw-r--	root/root	opt/metasploit/data/templates/src/elf/exe/elf_ppc64_template.s
 -rwxrwxr-x	root/root	opt/metasploit/data/templates/src/elf/exe/elf_riscv32le_template.s
@@ -2080,6 +2093,8 @@ drwxrwxr-x	root/root	opt/metasploit/data/templates/src/pe/exe_service/
 -rwxrwxr-x	root/root	opt/metasploit/data/templates/template_armle_linux.bin
 -rw-rw-r--	root/root	opt/metasploit/data/templates/template_armle_linux_dll.bin
 -rwxrwxr-x	root/root	opt/metasploit/data/templates/template_dotnetmem.dll
+-rw-rw-r--	root/root	opt/metasploit/data/templates/template_loongarch64_linux.bin
+-rw-rw-r--	root/root	opt/metasploit/data/templates/template_loongarch64_linux_dll.bin
 -rwxrwxr-x	root/root	opt/metasploit/data/templates/template_mipsbe_linux.bin
 -rw-rw-r--	root/root	opt/metasploit/data/templates/template_mipsle_linux.bin
 -rw-rw-r--	root/root	opt/metasploit/data/templates/template_nouac_windows.msi
@@ -4651,6 +4666,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/metasploit/framework/data_service/stubs/
 drwxrwxr-x	root/root	opt/metasploit/lib/metasploit/framework/ftp/
 -rw-rw-r--	root/root	opt/metasploit/lib/metasploit/framework/ftp/client.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/metasploit/framework/hashes.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/metasploit/framework/key_collection.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/metasploit/framework/ldap/
 -rw-rw-r--	root/root	opt/metasploit/lib/metasploit/framework/ldap/client.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/metasploit/framework/login_scanner.rb
@@ -8490,7 +8506,6 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/ssh/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/ssh/ssh_enumusers.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/ssh/ssh_identify_pubkeys.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/ssh/ssh_login.rb
--rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/ssh/ssh_login_pubkey.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/ssh/ssh_version.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/ssl/
 -rwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/ssl/bleichenbacher_oracle.py
@@ -9605,6 +9620,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/log1cms_ajax_create_folder.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/log4shell_header_injection.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/lucee_scheduled_job.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/magento_sessionreaper.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/magento_unserialize.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/makoserver_cmd_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/manage_engine_dc_pmp_sqli.rb
@@ -9699,6 +9715,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/rails_secret_deserialization.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/rails_web_console_v2_code_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/rails_xml_yaml_code_exec.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/react2shell_unauth_rce_cve_2025_55182.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/rocket_servergraph_file_requestor_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/roundcube_auth_rce_cve_2025_49113.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/rudder_server_sqli_rce.rb
@@ -9791,6 +9808,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_file_manager_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_givewp_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_hash_form_rce.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_king_addons_privilege_escalation.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_litespeed_cookie_theft.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_ninja_forms_unauthenticated_file_upload.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_plugin_backup_guard_rce.rb
@@ -11528,6 +11546,8 @@ drwxrwxr-x	root/root	opt/metasploit/modules/nops/armle/
 -rw-rw-r--	root/root	opt/metasploit/modules/nops/armle/simple.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/nops/cmd/
 -rw-rw-r--	root/root	opt/metasploit/modules/nops/cmd/generic.rb
+drwxrwxr-x	root/root	opt/metasploit/modules/nops/loongarch64/
+-rw-rw-r--	root/root	opt/metasploit/modules/nops/loongarch64/simple.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/nops/mipsbe/
 -rw-rw-r--	root/root	opt/metasploit/modules/nops/mipsbe/better.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/nops/php/
@@ -11769,6 +11789,8 @@ drwxrwxr-x	root/root	opt/metasploit/modules/payloads/singles/linux/armle/
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/linux/armle/meterpreter_reverse_tcp.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/linux/armle/shell_bind_tcp.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/linux/armle/shell_reverse_tcp.rb
+drwxrwxr-x	root/root	opt/metasploit/modules/payloads/singles/linux/loongarch64/
+-rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/linux/loongarch64/reboot.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/payloads/singles/linux/mips64/
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/linux/mips64/meterpreter_reverse_http.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/linux/mips64/meterpreter_reverse_https.rb
