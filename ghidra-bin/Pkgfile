@@ -3,10 +3,10 @@
 # Depends on:  jdk-bin
 
 # Maintainer notes on dependencies:
-#   ghidra version 11.2+ requires JDK version 21+
+#   ghidra-bin version 11.2+ requires JDK version 21+
 
 name=ghidra-bin
-version=11.4.3-20251203
+version=12.0-20251205
 release=1
 source="https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_${version%%-*}_build/ghidra_${version%%-*}_PUBLIC_${version##*-}.zip
 	ghidra.desktop"
@@ -22,12 +22,12 @@ build() {
 		$PKG/usr/share/icons/hicolor/64x64/apps/ghidra.png
 	install -m 0644 -Dt $PKG/usr/share/applications $SRC/ghidra.desktop
 
-	# fix perms
+	# Fix perms
 	find $PKG -type d -not -perm 0755 -exec chmod 0755 {} \;
 	find $PKG -type f -perm 0775 -exec chmod 0755 {} \;
 	find $PKG -type f -perm 0664 -exec chmod 0644 {} \;
 	chmod 0644 $PKG/opt/ghidra/Ghidra/.dbDirLock
 
-	# remove junk
+	# Remove junk
 	rm -r $PKG/opt/ghidra/licenses
 }
