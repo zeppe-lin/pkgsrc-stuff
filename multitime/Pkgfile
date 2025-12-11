@@ -2,12 +2,12 @@
 # URL:         https://tratt.net/laurie/src/multitime/
 
 name=multitime
-version=1.4
+version=1.5
 release=1
 source=https://tratt.net/laurie/src/$name/releases/$name-$version.tar.gz
 
 build() {
-	# build in separate dir is broken
+	# Build in separate dir is broken
 	cd $name-$version
 
 	./configure --prefix=/usr
