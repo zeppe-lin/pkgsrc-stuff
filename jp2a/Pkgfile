@@ -3,7 +3,7 @@
 # Depends on:  curl libexif libwebp ncurses
 
 name=jp2a
-version=1.3.2
+version=1.3.3
 release=1
 source=https://github.com/Talinx/jp2a/releases/download/v$version/jp2a-$version.tar.bz2
 
@@ -14,15 +14,15 @@ build() {
 
 	# --enable-curl: use libcurl to download images from the net
 	# --enable-termlib: use term/curses for detecting terminal dimensions
-	../jp2a-$version/configure     \
-		--prefix=/usr          \
-		--disable-doxygen-doc  \
-		--enable-curl          \
-		--enable-termlib       \
+	../jp2a-$version/configure \
+		--prefix=/usr \
+		--disable-doxygen-doc \
+		--enable-curl \
+		--enable-termlib \
 
 	make V=1
 	make DESTDIR=$PKG install
 
-	# rm zsh completion
+	# Remove zsh completion
 	rm -r $PKG/usr/share/zsh
 }
