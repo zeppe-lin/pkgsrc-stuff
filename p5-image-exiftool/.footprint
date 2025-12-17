@@ -118,6 +118,7 @@ drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/Charset/
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/JSON.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/JVC.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/Jpeg2000.pm
+-r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/Kandao.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/Kodak.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/KyoceraRaw.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Image/ExifTool/LIF.pm
@@ -331,6 +332,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::JSON.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::JVC.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::Jpeg2000.3pm.gz
+-r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::Kandao.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::Kodak.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::KyoceraRaw.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Image::ExifTool::LIF.3pm.gz
