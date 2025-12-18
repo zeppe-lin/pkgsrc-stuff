@@ -8066,6 +8066,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/ms09_020_webdav_unicode_bypass.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/ms15_034_http_sys_memory_dump.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/mybook_live_login.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/nable_ncentral_auth_bypass_xxe.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/nagios_xi_scanner.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/netalertx_file_read.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/http/netdecision_traversal.rb
@@ -9586,6 +9587,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/glossword_upload_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/glpi_install_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/gogs_git_hooks_rce.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/grav_twig_ssti_sandbox_bypass_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/horde_csv_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/horde_form_file_upload.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/horde_href_backdoor.rb
