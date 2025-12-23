@@ -3,7 +3,7 @@
 # Depends on:  libpcre
 
 name=cppcheck
-version=2.18.3
+version=2.19.0
 release=1
 source=https://github.com/danmar/$name/archive/$version/$name-$version.tar.gz
 
@@ -12,15 +12,19 @@ build() {
 	export MATCHCOMPILER=yes
 	export FILESDIR=/usr/share/cppcheck
 
+	# Do not force -pipe; respect global CXXFLAGS
 	sed -i '/CXXFLAGS /s/ -pipe/ /g' $name-$version/Makefile
+
 	make -C $name-$version DESTDIR=$PKG install
 
-	# htmlreport depends on py3-pygments which requires a whole bunch of
-	# sh1tty dependencies
+	# cppcheck-htmlreport pulls py3-pygments and its dependency chain
+	# Remove to keep runtime footprint minimal
 	rm $PKG/usr/bin/cppcheck-htmlreport
 
-	# man pages requires docbook-{xml,xsl}
-	#make man \
-	#DB2MAN=/usr/share/xml/docbook/xsl-stylesheets/manpages/docbook.xsl
-	#install -m 0644 -D $name.1 $PKG/usr/share/man/man1/$name.1
+	# Man page generation requires docbook-{xml,xsl}
+	# Intentionally skipped to avoid heavy build-time dependencies
+	#
+	# make man \
+	#   DB2MAN=/usr/share/xml/docbook/xsl-stylesheets/manpages/docbook.xsl
+	# install -m 0644 -D $name.1 $PKG/usr/share/man/man1/$name.1
 }
