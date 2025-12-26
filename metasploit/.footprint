@@ -8982,6 +8982,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/hikvision_cve_2021_36260_blind.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/hp_system_management.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/hp_van_sdn_cmd_inject.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/hpe_oneview_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/huawei_hg532n_cmdinject.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/ibm_drm_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/ibm_qradar_unauth_rce.rb
@@ -9798,6 +9799,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wikka_spam_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wingftp_null_byte_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wondercms_rce.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_acf_extended_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_ai_engine_mcp_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_ait_csv_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_automatic_sqli_to_rce.rb
@@ -11397,6 +11399,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/windows/oracle/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/oracle/tns_auth_sesskey.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/oracle/tns_service_name.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/windows/persistence/
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/persistence/assistive_technology.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/persistence/image_exec_options.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/persistence/linqpad_deserialization.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/persistence/notepadpp_plugin_persistence.rb
@@ -11582,7 +11585,6 @@ drwxrwxr-x	root/root	opt/metasploit/modules/payloads/adapters/cmd/linux/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/adapters/cmd/linux/http/mipsle.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/adapters/cmd/linux/http/ppc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/adapters/cmd/linux/http/ppc64.rb
--rw-rw-r--	root/root	opt/metasploit/modules/payloads/adapters/cmd/linux/http/ppc64le.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/adapters/cmd/linux/http/x64.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/adapters/cmd/linux/http/x86.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/payloads/adapters/cmd/linux/https/
@@ -11594,7 +11596,6 @@ drwxrwxr-x	root/root	opt/metasploit/modules/payloads/adapters/cmd/linux/https/
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/adapters/cmd/linux/https/mipsle.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/adapters/cmd/linux/https/ppc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/adapters/cmd/linux/https/ppc64.rb
--rw-rw-r--	root/root	opt/metasploit/modules/payloads/adapters/cmd/linux/https/ppc64le.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/adapters/cmd/linux/https/x64.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/adapters/cmd/linux/https/x86.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/payloads/adapters/cmd/linux/tftp/
@@ -11606,7 +11607,6 @@ drwxrwxr-x	root/root	opt/metasploit/modules/payloads/adapters/cmd/linux/tftp/
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/adapters/cmd/linux/tftp/mipsle.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/adapters/cmd/linux/tftp/ppc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/adapters/cmd/linux/tftp/ppc64.rb
--rw-rw-r--	root/root	opt/metasploit/modules/payloads/adapters/cmd/linux/tftp/ppc64le.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/adapters/cmd/linux/tftp/x64.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/adapters/cmd/linux/tftp/x86.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/payloads/adapters/cmd/unix/
@@ -11814,9 +11814,6 @@ drwxrwxr-x	root/root	opt/metasploit/modules/payloads/singles/linux/mipsle/
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/linux/mipsle/shell_bind_tcp.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/linux/mipsle/shell_reverse_tcp.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/payloads/singles/linux/ppc/
--rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/linux/ppc/meterpreter_reverse_http.rb
--rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/linux/ppc/meterpreter_reverse_https.rb
--rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/linux/ppc/meterpreter_reverse_tcp.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/linux/ppc/shell_bind_tcp.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/linux/ppc/shell_find_port.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/linux/ppc/shell_reverse_tcp.rb
@@ -11824,14 +11821,6 @@ drwxrwxr-x	root/root	opt/metasploit/modules/payloads/singles/linux/ppc64/
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/linux/ppc64/shell_bind_tcp.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/linux/ppc64/shell_find_port.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/linux/ppc64/shell_reverse_tcp.rb
-drwxrwxr-x	root/root	opt/metasploit/modules/payloads/singles/linux/ppc64le/
--rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/linux/ppc64le/meterpreter_reverse_http.rb
--rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/linux/ppc64le/meterpreter_reverse_https.rb
--rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/linux/ppc64le/meterpreter_reverse_tcp.rb
-drwxrwxr-x	root/root	opt/metasploit/modules/payloads/singles/linux/ppce500v2/
--rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/linux/ppce500v2/meterpreter_reverse_http.rb
--rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/linux/ppce500v2/meterpreter_reverse_https.rb
--rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/linux/ppce500v2/meterpreter_reverse_tcp.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/payloads/singles/linux/riscv32le/
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/linux/riscv32le/chmod.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/payloads/singles/linux/riscv32le/exec.rb
