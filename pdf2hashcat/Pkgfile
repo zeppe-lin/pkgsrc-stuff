@@ -3,7 +3,7 @@
 # Depends on:  python3
 
 name=pdf2hashcat
-version=0.1-f72185a
+version=0.1-aff825d
 release=1
 source=https://github.com/sighook/$name/archive/${version#*-}/$name-$version.tar.gz
 
