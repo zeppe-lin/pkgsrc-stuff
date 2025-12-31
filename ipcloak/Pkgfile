@@ -1,0 +1,17 @@
+# Description: IPv4 address obfuscation and alternate representation tool
+# URL:         https://github.com/sighook/ipcloak
+
+name=ipcloak
+version=0.1-e418ba6
+release=1
+source=https://github.com/sighook/$name/archive/${version#*-}/$name-${version#*-}.tar.gz
+
+build() {
+	cd $name-${version#*-}*
+
+	pod2man -s 1 -c ' ' -n $name -r ${version%-*} \
+		README.pod > $name.1
+
+	install -m 0755 -D $name   $PKG/usr/bin/$name
+	install -m 0644 -D $name.1 $PKG/usr/share/man/man1/$name.1
+}
