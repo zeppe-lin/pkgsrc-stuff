@@ -3,7 +3,7 @@
 # Depends on:  py3-setuptools tcpdump
 
 name=scapy
-version=2.6.1
+version=2.7.0
 release=1
 source=https://github.com/secdev/$name/archive/v$version/$name-$version.tar.gz
 
@@ -13,10 +13,14 @@ build() {
 	cd $name-$version
 
 	python3 setup.py build
-	python3 setup.py install --prefix=/usr --root=$PKG -O1
+	python3 setup.py install --skip-build --prefix=/usr --root=$PKG
 
-	# install wrappers
-	install -d $PKG/usr/bin
+	/usr/bin/python3     -m compileall $PKG
+	/usr/bin/python3 -O  -m compileall $PKG
+	/usr/bin/python3 -OO -m compileall $PKG
+
+	# Install wrappers
+	mkdir -p $PKG/usr/bin
 	cat > $PKG/usr/bin/scapy <<EOF
 #!/usr/bin/python3
 from scapy.main import interact
@@ -25,11 +29,11 @@ exit(interact())
 EOF
 	cat > $PKG/usr/bin/UTscapy <<EOF
 #!/bin/sh
-PYVER=\$(python3 -V | grep -Po '\\d\.\\d')
+PYVER=\$(python3 -V | grep -Po '\\d+\\.\\d+')
 python3 /usr/lib/python\${PYVER}/site-packages/scapy/tools/UTscapy.py
 EOF
 	chmod +x $PKG/usr/bin/*
 
-	# remove junk
+	# Remove junk
 	rm -r $PKG/usr/lib/python*/site-packages/scapy-*-py*.egg-info
 }
