@@ -32,11 +32,13 @@ drwxr-xr-x	root/root	opt/sqlmap/data/shell/
 drwxr-xr-x	root/root	opt/sqlmap/data/shell/backdoors/
 -rw-r--r--	root/root	opt/sqlmap/data/shell/backdoors/backdoor.asp_
 -rw-r--r--	root/root	opt/sqlmap/data/shell/backdoors/backdoor.aspx_
+-rw-r--r--	root/root	opt/sqlmap/data/shell/backdoors/backdoor.cfm_
 -rw-r--r--	root/root	opt/sqlmap/data/shell/backdoors/backdoor.jsp_
 -rw-r--r--	root/root	opt/sqlmap/data/shell/backdoors/backdoor.php_
 drwxr-xr-x	root/root	opt/sqlmap/data/shell/stagers/
 -rw-r--r--	root/root	opt/sqlmap/data/shell/stagers/stager.asp_
 -rw-r--r--	root/root	opt/sqlmap/data/shell/stagers/stager.aspx_
+-rw-r--r--	root/root	opt/sqlmap/data/shell/stagers/stager.cfm_
 -rw-r--r--	root/root	opt/sqlmap/data/shell/stagers/stager.jsp_
 -rw-r--r--	root/root	opt/sqlmap/data/shell/stagers/stager.php_
 drwxr-xr-x	root/root	opt/sqlmap/data/txt/
@@ -319,9 +321,6 @@ drwxr-xr-x	root/root	opt/sqlmap/lib/core/__pycache__/
 -rw-r--r--	root/root	opt/sqlmap/lib/core/__pycache__/exception.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	opt/sqlmap/lib/core/__pycache__/exception.cpython-312.opt-2.pyc
 -rw-r--r--	root/root	opt/sqlmap/lib/core/__pycache__/exception.cpython-312.pyc
--rw-r--r--	root/root	opt/sqlmap/lib/core/__pycache__/gui.cpython-312.opt-1.pyc
--rw-r--r--	root/root	opt/sqlmap/lib/core/__pycache__/gui.cpython-312.opt-2.pyc
--rw-r--r--	root/root	opt/sqlmap/lib/core/__pycache__/gui.cpython-312.pyc
 -rw-r--r--	root/root	opt/sqlmap/lib/core/__pycache__/log.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	opt/sqlmap/lib/core/__pycache__/log.cpython-312.opt-2.pyc
 -rw-r--r--	root/root	opt/sqlmap/lib/core/__pycache__/log.cpython-312.pyc
@@ -389,7 +388,6 @@ drwxr-xr-x	root/root	opt/sqlmap/lib/core/__pycache__/
 -rw-r--r--	root/root	opt/sqlmap/lib/core/dump.py
 -rw-r--r--	root/root	opt/sqlmap/lib/core/enums.py
 -rw-r--r--	root/root	opt/sqlmap/lib/core/exception.py
--rw-r--r--	root/root	opt/sqlmap/lib/core/gui.py
 -rw-r--r--	root/root	opt/sqlmap/lib/core/log.py
 -rw-r--r--	root/root	opt/sqlmap/lib/core/option.py
 -rw-r--r--	root/root	opt/sqlmap/lib/core/optiondict.py
@@ -617,6 +615,9 @@ drwxr-xr-x	root/root	opt/sqlmap/lib/utils/__pycache__/
 -rw-r--r--	root/root	opt/sqlmap/lib/utils/__pycache__/getch.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	opt/sqlmap/lib/utils/__pycache__/getch.cpython-312.opt-2.pyc
 -rw-r--r--	root/root	opt/sqlmap/lib/utils/__pycache__/getch.cpython-312.pyc
+-rw-r--r--	root/root	opt/sqlmap/lib/utils/__pycache__/gui.cpython-312.opt-1.pyc
+-rw-r--r--	root/root	opt/sqlmap/lib/utils/__pycache__/gui.cpython-312.opt-2.pyc
+-rw-r--r--	root/root	opt/sqlmap/lib/utils/__pycache__/gui.cpython-312.pyc
 -rw-r--r--	root/root	opt/sqlmap/lib/utils/__pycache__/har.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	opt/sqlmap/lib/utils/__pycache__/har.cpython-312.opt-2.pyc
 -rw-r--r--	root/root	opt/sqlmap/lib/utils/__pycache__/har.cpython-312.pyc
@@ -653,6 +654,9 @@ drwxr-xr-x	root/root	opt/sqlmap/lib/utils/__pycache__/
 -rw-r--r--	root/root	opt/sqlmap/lib/utils/__pycache__/timeout.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	opt/sqlmap/lib/utils/__pycache__/timeout.cpython-312.opt-2.pyc
 -rw-r--r--	root/root	opt/sqlmap/lib/utils/__pycache__/timeout.cpython-312.pyc
+-rw-r--r--	root/root	opt/sqlmap/lib/utils/__pycache__/tui.cpython-312.opt-1.pyc
+-rw-r--r--	root/root	opt/sqlmap/lib/utils/__pycache__/tui.cpython-312.opt-2.pyc
+-rw-r--r--	root/root	opt/sqlmap/lib/utils/__pycache__/tui.cpython-312.pyc
 -rw-r--r--	root/root	opt/sqlmap/lib/utils/__pycache__/versioncheck.cpython-312.opt-1.pyc
 -rw-r--r--	root/root	opt/sqlmap/lib/utils/__pycache__/versioncheck.cpython-312.opt-2.pyc
 -rw-r--r--	root/root	opt/sqlmap/lib/utils/__pycache__/versioncheck.cpython-312.pyc
@@ -664,6 +668,7 @@ drwxr-xr-x	root/root	opt/sqlmap/lib/utils/__pycache__/
 -rw-r--r--	root/root	opt/sqlmap/lib/utils/crawler.py
 -rw-r--r--	root/root	opt/sqlmap/lib/utils/deps.py
 -rw-r--r--	root/root	opt/sqlmap/lib/utils/getch.py
+-rw-r--r--	root/root	opt/sqlmap/lib/utils/gui.py
 -rw-r--r--	root/root	opt/sqlmap/lib/utils/har.py
 -rw-r--r--	root/root	opt/sqlmap/lib/utils/hash.py
 -rw-r--r--	root/root	opt/sqlmap/lib/utils/hashdb.py
@@ -676,6 +681,7 @@ drwxr-xr-x	root/root	opt/sqlmap/lib/utils/__pycache__/
 -rw-r--r--	root/root	opt/sqlmap/lib/utils/sgmllib.py
 -rw-r--r--	root/root	opt/sqlmap/lib/utils/sqlalchemy.py
 -rw-r--r--	root/root	opt/sqlmap/lib/utils/timeout.py
+-rw-r--r--	root/root	opt/sqlmap/lib/utils/tui.py
 -rw-r--r--	root/root	opt/sqlmap/lib/utils/versioncheck.py
 -rw-r--r--	root/root	opt/sqlmap/lib/utils/xrange.py
 drwxr-xr-x	root/root	opt/sqlmap/plugins/

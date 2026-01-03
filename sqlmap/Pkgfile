@@ -3,7 +3,7 @@
 # Depends on:  python3
 
 name=sqlmap
-version=1.9.12
+version=1.10
 release=1
 source=https://github.com/sqlmapproject/$name/archive/$version/$name-$version.tar.gz
 
@@ -18,7 +18,7 @@ build() {
 	/usr/bin/python3 -O  -mcompileall $PKG
 	/usr/bin/python3 -OO -mcompileall $PKG
 
-	# remove junk
+	# Remove junk
 	rm -r $PKG/opt/sqlmap/doc \
 	      $PKG/opt/sqlmap/.github \
 	      $PKG/opt/sqlmap/.gitattributes \
