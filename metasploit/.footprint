@@ -7709,6 +7709,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/gather/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/firefox_pdfjs_file_theft.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/flash_rosetta_jsonp_url_disclosure.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/fortios_vpnssl_traversal_creds_leak.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/geoserver_wms_getmap_xxe_file_read.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/gitlab_authenticated_subgroups_file_read.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/gitlab_tags_rss_feed_email_disclosure.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/glpi_inventory_plugin_unauth_sqli.rb
@@ -8266,6 +8267,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/misc/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/misc/sunrpc_portmapper.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/misc/zenworks_preboot_fileaccess.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/mongodb/
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/mongodb/cve_2025_14847_mongobleed.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/mongodb/mongodb_login.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/scanner/motorola/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/scanner/motorola/timbuktu_udp.rb

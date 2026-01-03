@@ -3,7 +3,7 @@
 # Depends on:  glibc-32 inetutils libpcap postgresql ruby sqlite3
 
 name=metasploit
-version=6.4.104
+version=6.4.105
 release=1
 source=$name-$version.tar.gz::https://github.com/rapid7/metasploit-framework/archive/refs/tags/$version.tar.gz
 
