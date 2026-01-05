@@ -3,23 +3,24 @@
 # Depends on:  libgd p5-extutils-pkgconfig p5-file-which p5-test-fork p5-test-nowarnings
 
 name=p5-gd
-version=2.83
-release=2
+version=2.84
+release=1
 source=http://search.cpan.org/CPAN/authors/id/R/RU/RURBAN/GD-$version.tar.gz
 
 build() {
 	cd GD-$version
 	
+	command -v finddepsdistmeta >/dev/null 2>&1 && finddepsdistmeta
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
 	make OPTIMIZE="$CFLAGS"
 	make DESTDIR=$PKG install
 
-	# remove junk and empty dirs
+	# Remove junk and empty dirs
 	find $PKG -depth \
-		-type f \( -name perllocal.pod  \
-			-o -name \*.bs          \
-			-o -name .packlist      \
-			\) -delete ,            \
-		-type d -empty -delete
+		\( -type f -name perllocal.pod \
+			-o -name '*.bs' \
+			-o -name .packlist \
+		\) -delete \
+		-o -type d -empty -delete
 }
