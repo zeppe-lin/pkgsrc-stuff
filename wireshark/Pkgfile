@@ -3,7 +3,7 @@
 # Depends on:  asciidoctor c-ares gnutls hicolor-icon-theme libcap libgcrypt libnl libpcap libssh qt5 speexdsp
 
 name=wireshark
-version=4.6.2
+version=4.6.3
 release=1
 source=https://github.com/$name/$name/archive/v$version/$name-$version.tar.gz
 
@@ -23,7 +23,9 @@ build() {
 	# Enable ccache if present
 	if pkgman isinst ccache >/dev/null 2>&1; then
 		_cmake_flags="-D ENABLE_CCACHE=ON"
-		PATH="$(echo $PATH | awk -v RS=: -v ORS=: '/ccache/ {next} {print}' | sed 's/:*$//')"
+		PATH="$(printf '%s\n' "$PATH" |
+			awk -v RS=: -v ORS=: '/ccache/ {next} {print}' |
+			sed 's/:*$//')"
 	fi
 
 	cmake -S $name-$version -B build -G Ninja \
