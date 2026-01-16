@@ -3,25 +3,25 @@
 # Depends on:  p5-digest-hmac
 
 name=p5-net-dns
-version=1.53
+version=1.54
 release=1
 source=https://cpan.metacpan.org/authors/id/N/NL/NLNETLABS/Net-DNS-$version.tar.gz
 
 build() {
 	cd Net-DNS-$version
 
-	command -v finddepsdistmeta && finddepsdistmeta
+	command -v finddepsdistmeta >/dev/null 2>&1 && finddepsdistmeta
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor \
 		--no-online-tests --no-IPv6-tests
 
 	make
 	make install DESTDIR=$PKG
 
-	# remove junk and empty dirs
+	# Remove junk and empty dirs
 	find $PKG -depth \
-		-type f \( -name perllocal.pod  \
-			-o -name \*.bs          \
-			-o -name .packlist      \
-			\) -delete ,            \
-		-type d -empty -delete
+		\( -type f -name perllocal.pod \
+			-o -name '*.bs' \
+			-o -name .packlist \
+		\) -delete \
+		-o -type d -empty -delete
 }
