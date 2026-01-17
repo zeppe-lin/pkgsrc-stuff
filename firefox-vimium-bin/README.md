@@ -3,10 +3,10 @@ README firefox-vimium-bin
 ---
 
 
-ONLINE DOCUMENTATION
-====================
+REFERENCES
+==========
 
-* Wiki: https://github.com/philc/vimium/wiki
+* Wiki: <https://github.com/philc/vimium/wiki>
 
 
 ---

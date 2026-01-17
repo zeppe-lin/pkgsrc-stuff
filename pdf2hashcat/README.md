@@ -3,10 +3,11 @@ README pdf2hashcat
 ---
 
 
-ONLINE DOCUMENTATION
-====================
+REFERENCES
+==========
 
-https://github.com/sighook/pdf2hashcat/blob/master/README.md#usage
+- Usage:
+  <https://github.com/sighook/pdf2hashcat/blob/master/README.md#usage>
 
 
 ---

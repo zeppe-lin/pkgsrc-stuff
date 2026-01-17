@@ -9,13 +9,16 @@ POST-INSTALL
 To use docker as an unprivileged user, add the user to the `docker`
 group:
 
-    usermod -aG docker <username>
+```sh
+# as root
+usermod -aG docker <username>
+```
 
 
-ONLINE DOCUMENTATION
-====================
+REFERENCES
+==========
 
-* Guides, Manuals, Reference: https://docs.docker.com/
+* Guides, Manuals, Reference: <https://docs.docker.com/>
 
 
 ---

@@ -6,11 +6,13 @@ README hwloc
 NOTES
 =====
 
-To dump hardware topology and locality information to `/usr/var/run/hwloc` at
-startup add these lines to `/etc/rc.local`:
+To dump hardware topology and locality information to
+`/usr/var/run/hwloc` at startup add these lines to `/etc/rc.local`:
 
-    # Dump hardware topology and locality information.
-    /usr/sbin/hwloc-dump-hwdata -o /usr/var/run/hwloc
+```sh
+# Dump hardware topology and locality information.
+/usr/sbin/hwloc-dump-hwdata -o /usr/var/run/hwloc
+```
 
 
 ---
