@@ -3,22 +3,22 @@
 # Depends on:  alsa-lib xorg-libxrender xorg-libxtst
 
 name=jdk17-bin
-version=17.0.17.10.1
+version=17.0.18.8.1
 release=1
 source=https://corretto.aws/downloads/resources/$version/amazon-corretto-$version-linux-x64.tar.gz
 
 build() {
 	cd amazon-corretto-$version-linux-x64
 
-	# fix perms
+	# Fix permissions
 	chmod -R o-w,g-w .
 
-	# install
+	# Install
 	mkdir -p $PKG/usr/bin $PKG/usr/lib/jdk17 $PKG/usr/share
 	#mv man $PKG/usr/share/ # (conflicts with jdk-bin)
 	mv * $PKG/usr/lib/jdk17/
 
-	# symlinks
+	# Symlinks
 	ln -s jdk17                       $PKG/usr/lib/java17
 	ln -s ../lib/jdk17/bin/java       $PKG/usr/bin/java17
 	ln -s ../lib/jdk17/bin/javac      $PKG/usr/bin/javac17
@@ -35,7 +35,7 @@ build() {
 /usr/lib/jdk17/lib/server
 EOF
 
-	# remove junk
+	# Remove junk
 	find $PKG  -type f \( \
 		   -name ASSEMBLY_EXCEPTION \
 		-o -name ADDITIONAL_LICENSE_INFO \
