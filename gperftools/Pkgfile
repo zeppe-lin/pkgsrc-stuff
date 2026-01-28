@@ -3,22 +3,23 @@
 # Depends on:  graphviz libunwind perl
 
 name=gperftools
-version=2.17.2
+version=2.18
 release=1
 source=https://github.com/$name/$name/releases/download/$name-$version/$name-$version.tar.gz
 
 build() {
 	mkdir build; cd build
 
-	../$name-$version/configure  \
-		--prefix=/usr        \
-		--enable-libunwind   \
+	../$name-$version/configure \
+		--prefix=/usr \
+		--enable-libunwind \
 
+	# Ensure --as-needed is applied to shared linker invocations
 	sed -i 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
 
 	make V=1
 	make DESTDIR=$PKG install
 
-	# remove junk
+	# Remove junk
 	rm -r $PKG/usr/share/doc; rmdir $PKG/usr/share
 }
