@@ -882,6 +882,17 @@ drwxrwxr-x	root/root	opt/metasploit/data/exploits/batik_svg/
 -rwxrwxr-x	root/root	opt/metasploit/data/exploits/batik_svg/Exploit.class
 drwxrwxr-x	root/root	opt/metasploit/data/exploits/batik_svg/META-INF/
 -rwxrwxr-x	root/root	opt/metasploit/data/exploits/batik_svg/META-INF/MANIFEST.MF
+drwxrwxr-x	root/root	opt/metasploit/data/exploits/burp_extension/
+-rw-rw-r--	root/root	opt/metasploit/data/exploits/burp_extension/build.gradle
+-rw-rw-r--	root/root	opt/metasploit/data/exploits/burp_extension/precompiled.class
+-rw-rw-r--	root/root	opt/metasploit/data/exploits/burp_extension/settings.gradle
+drwxrwxr-x	root/root	opt/metasploit/data/exploits/burp_extension/src/
+drwxrwxr-x	root/root	opt/metasploit/data/exploits/burp_extension/src/main/
+drwxrwxr-x	root/root	opt/metasploit/data/exploits/burp_extension/src/main/java/
+-rw-rw-r--	root/root	opt/metasploit/data/exploits/burp_extension/src/main/java/BurpExtender.java
+drwxrwxr-x	root/root	opt/metasploit/data/exploits/burp_extension/src/main/resources/
+-rw-rw-r--	root/root	opt/metasploit/data/exploits/burp_extension/src/main/resources/command.txt
+-rw-rw-r--	root/root	opt/metasploit/data/exploits/burp_extension/src/main/resources/name.txt
 drwxrwxr-x	root/root	opt/metasploit/data/exploits/capcom_sys_exec/
 -rwxrwxr-x	root/root	opt/metasploit/data/exploits/capcom_sys_exec/capcom_sys_exec.x64.dll
 drwxrwxr-x	root/root	opt/metasploit/data/exploits/capture/
@@ -5290,6 +5301,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/pretalx/
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/sitecore/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/sitecore/error.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/sitecore_xp.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/smartermail.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/spip.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/splunk.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/splunk/
@@ -7754,6 +7766,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/gather/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/firefox_pdfjs_file_theft.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/flash_rosetta_jsonp_url_disclosure.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/fortios_vpnssl_traversal_creds_leak.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/freepbx_custom_extension_injection.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/geoserver_wms_getmap_xxe_file_read.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/gitlab_authenticated_subgroups_file_read.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/gitlab_tags_rss_feed_email_disclosure.rb
@@ -9581,6 +9594,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/bitbucket_env_var_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/bolt_file_upload.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/builderengine_upload_exec.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/cacti_graph_template_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/cacti_package_import_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/cacti_pollers_sqli_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/caidao_php_backdoor_exec.rb
@@ -9780,6 +9794,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/shopware_createinstancefromnamedarguments_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/simple_backdoors_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/sit_file_upload.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/smartermail_guid_file_upload.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/snortreport_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/solarwinds_store_manager_auth_filter.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/solr_velocity_rce.rb
@@ -9960,10 +9975,12 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/ntp/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/ntp/ntp_overflow.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/persistence/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/persistence/at.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/persistence/burp_extension.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/persistence/cron.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/persistence/obsidian_plugin.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/persistence/periodic_script.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/persistence/python_site_specific_hook.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/persistence/ssh_key.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/php/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/php/ignition_laravel_debug_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/php/jorani_path_trav.rb
@@ -10114,6 +10131,8 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/unix/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/http/epmp1000_get_chart_cmd_shell.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/http/epmp1000_ping_cmd_shell.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/http/freepbx_callmenum.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/http/freepbx_custom_extension_rce.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/http/freepbx_firmware_file_upload.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/http/freepbx_unauth_sqli_to_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/http/laravel_token_unserialize_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/http/lifesize_room.rb
@@ -12363,7 +12382,6 @@ drwxrwxr-x	root/root	opt/metasploit/modules/post/linux/manage/
 -rw-rw-r--	root/root	opt/metasploit/modules/post/linux/manage/geutebruck_post_exp.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/post/linux/manage/iptables_removal.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/post/linux/manage/pseudo_shell.rb
--rw-rw-r--	root/root	opt/metasploit/modules/post/linux/manage/sshkey_persistence.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/post/multi/
 drwxrwxr-x	root/root	opt/metasploit/modules/post/multi/escalate/
 -rw-rw-r--	root/root	opt/metasploit/modules/post/multi/escalate/aws_create_iam_user.rb
@@ -12733,7 +12751,6 @@ drwxrwxr-x	root/root	opt/metasploit/modules/post/windows/manage/powershell/
 -rw-rw-r--	root/root	opt/metasploit/modules/post/windows/manage/run_as_psh.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/post/windows/manage/sdel.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/post/windows/manage/shellcode_inject.rb
--rw-rw-r--	root/root	opt/metasploit/modules/post/windows/manage/sshkey_persistence.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/post/windows/manage/vmdk_mount.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/post/windows/manage/vss.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/post/windows/manage/wdigest_caching.rb
@@ -13666,6 +13683,7 @@ drwxrwxr-x	root/root	opt/metasploit/spec/support/acceptance/session/
 -rw-rw-r--	root/root	opt/metasploit/spec/support/acceptance/session/mettle.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/support/acceptance/session/php.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/support/acceptance/session/python.rb
+-rw-rw-r--	root/root	opt/metasploit/spec/support/acceptance/session/shared.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/support/acceptance/session/windows_meterpreter.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/support/acceptance/target.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/support/lib/
