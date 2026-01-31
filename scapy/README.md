@@ -1,7 +1,6 @@
-README scapy
+README for scapy
 
 ---
-
 
 REQUIREMENTS
 ============
@@ -16,7 +15,6 @@ The following dependencies are optional:
 - `graphviz`, `imagemagick`: Graph generation.
 - `py3-cryptography`: IPsec, WEP, PKI and TLS support.
 - `sox`: VOIP support.
-
 
 ---
 

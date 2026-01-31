@@ -1,7 +1,6 @@
-README hwloc
+README for hwloc
 
 ---
-
 
 NOTES
 =====
@@ -13,7 +12,6 @@ To dump hardware topology and locality information to
 # Dump hardware topology and locality information.
 /usr/sbin/hwloc-dump-hwdata -o /usr/var/run/hwloc
 ```
-
 
 ---
 

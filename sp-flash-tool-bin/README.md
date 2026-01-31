@@ -1,7 +1,6 @@
-README sp-flash-tool-bin
+README for sp-flash-tool-bin
 
 ---
-
 
 DEVICE VISIBILITY
 =================
@@ -40,7 +39,6 @@ device's IDs to udev rules.
    ```
 
 4. Replug the device and check if it works.
-
 
 ---
 

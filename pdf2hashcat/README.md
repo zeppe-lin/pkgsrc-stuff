@@ -1,14 +1,12 @@
-README pdf2hashcat
+README for pdf2hashcat
 
 ---
-
 
 REFERENCES
 ==========
 
 - Usage:
   <https://github.com/sighook/pdf2hashcat/blob/master/README.md#usage>
-
 
 ---
 

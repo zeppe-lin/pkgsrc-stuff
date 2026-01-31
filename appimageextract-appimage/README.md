@@ -1,7 +1,6 @@
-README appimageextract-appimage
+README for appimageextract-appimage
 
 ---
-
 
 POST-INSTALL
 ============
@@ -22,7 +21,6 @@ every time before starting AppImage:
 # Filesystem in Userspace
 /sbin/modprobe fuse
 ```
-
 
 ---
 

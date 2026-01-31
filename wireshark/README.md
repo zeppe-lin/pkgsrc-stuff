@@ -1,7 +1,6 @@
-README wireshark
+README for wireshark
 
 ---
-
 
 POST-INSTALL
 ============
@@ -13,7 +12,6 @@ group:
 # as root
 usermod -aG wheel <username>
 ```
-
 
 ---
 

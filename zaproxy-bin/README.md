@@ -1,7 +1,6 @@
-README zaproxy-bin
+README for zaproxy-bin
 
 ---
-
 
 LOOK AND FEEL
 =============
@@ -13,6 +12,7 @@ README of `jdk-bin` package:
 pkgman readme zaproxy-bin
 ```
 
+---
 
 RUN AS DIFFERENT USER
 =====================
@@ -51,6 +51,7 @@ line into the `/etc/sudoers.d/99_zaproxy` file:
 And remember that separate user makes sense if your home directory has
 permission 700.
 
+---
 
 FIREFOX/PALEMOON AND SELF-SIGNED CERTIFICATE
 ============================================
@@ -108,7 +109,6 @@ And import `mydomain.pem` into zaproxy:
 ```
 Tools -> Options -> Dynamic SSL Certificates -> Import
 ```
-
 
 ---
 

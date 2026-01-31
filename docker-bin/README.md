@@ -1,7 +1,6 @@
-README docker-bin
+README for docker-bin
 
 ---
-
 
 POST-INSTALL
 ============
@@ -14,12 +13,12 @@ group:
 usermod -aG docker <username>
 ```
 
+---
 
 REFERENCES
 ==========
 
 * Guides, Manuals, Reference: <https://docs.docker.com/>
-
 
 ---
 

@@ -1,14 +1,11 @@
-README apktool-bin
+README for apktool-bin
 
 ---
-
 
 REFERENCES
 ==========
 
-- Documentation:
-  <https://ibotpeaches.github.io/Apktool/documentation/>
-
+- Documentation: <https://ibotpeaches.github.io/Apktool/documentation/>
 
 ---
 

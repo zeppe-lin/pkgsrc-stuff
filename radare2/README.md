@@ -1,7 +1,6 @@
-README radare2
+README for radare2
 
 ---
-
 
 WEB-UI
 ======
@@ -12,14 +11,12 @@ Usage: `r2 -q -e http.ui=<t|m> -c=H file`
 
 Material (m) seems very buggy now.  Use (t) for a while.
 
+---
 
-ONLINE DOCUMENTATION
-====================
+REFERENCES
+==========
 
-* [The Official Radare2 Book][1]
-
-[1]: https://book.rada.re/
-
+* [The Official Radare2 Book](https://book.rada.re/)
 
 ---
 
