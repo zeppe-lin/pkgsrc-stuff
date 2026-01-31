@@ -6,7 +6,7 @@
 #   ghidra-bin version 11.2+ requires JDK version 21+
 
 name=ghidra-bin
-version=12.0.1-20260114
+version=12.0.2-20260129
 release=1
 source="https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_${version%%-*}_build/ghidra_${version%%-*}_PUBLIC_${version##*-}.zip
 	ghidra.desktop"
@@ -22,7 +22,7 @@ build() {
 		$PKG/usr/share/icons/hicolor/64x64/apps/ghidra.png
 	install -m 0644 -Dt $PKG/usr/share/applications $SRC/ghidra.desktop
 
-	# Fix perms
+	# Fix permissions
 	find $PKG -type d -not -perm 0755 -exec chmod 0755 {} \;
 	find $PKG -type f -perm 0775 -exec chmod 0755 {} \;
 	find $PKG -type f -perm 0664 -exec chmod 0644 {} \;
