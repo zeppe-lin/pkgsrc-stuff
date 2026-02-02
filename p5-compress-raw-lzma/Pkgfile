@@ -6,14 +6,14 @@
 # GitHub README generation (see private/MakeUtil.pm).
 
 name=p5-compress-raw-lzma
-version=2.214
+version=2.217
 release=1
 source=https://cpan.metacpan.org/authors/id/P/PM/PMQS/Compress-Raw-Lzma-$version.tar.gz
 
 build() {
 	cd Compress-Raw-Lzma-$version
 
-	command -v finddepsdistmeta && finddepsdistmeta
+	command -v finddepsdistmeta >/dev/null 2>&1 && finddepsdistmeta
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
 	make OPTIMIZE="$CFLAGS"
