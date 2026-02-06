@@ -3,23 +3,24 @@
 # Depends on:  openssl perl zlib
 
 name=p5-net-ssleay
-version=1.94
-release=2
-source=https://cpan.metacpan.org/authors/id/C/CH/CHRISN/Net-SSLeay-$version.tar.gz
+version=1.95_01
+release=1
+source=https://cpan.metacpan.org/authors/id/E/ET/ETHER/Net-SSLeay-$version.tar.gz
 
 build() {
 	cd Net-SSLeay-$version
 
+	command -v finddepsdistmeta >/dev/null 2>&1 && finddepsdistmeta
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
 	make OPTIMIZE="$CFLAGS"
 	make DESTDIR=$PKG install
 
-	# remove junk and empty dirs
+	# Remove junk and empty dirs
 	find $PKG -depth \
-		-type f \( -name perllocal.pod  \
-			-o -name \*.bs          \
-			-o -name .packlist      \
-			\) -delete ,            \
-		-type d -empty -delete
+		\( -type f -name perllocal.pod \
+			-o -name '*.bs' \
+			-o -name .packlist \
+		\) -delete \
+		-o -type d -empty -delete
 }
