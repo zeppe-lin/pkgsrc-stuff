@@ -4935,6 +4935,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/auxiliary/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/auxiliary/etcd.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/auxiliary/f5.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/auxiliary/fuzzer.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/auxiliary/gladinet.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/auxiliary/http_crawler.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/auxiliary/iax2.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/auxiliary/juniper.rb
@@ -7770,6 +7771,8 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/gather/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/geoserver_wms_getmap_xxe_file_read.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/gitlab_authenticated_subgroups_file_read.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/gitlab_tags_rss_feed_email_disclosure.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/gladinet_storage_access_ticket_forge.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/gladinet_storage_path_traversal_cve_2025_11371.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/glpi_inventory_plugin_unauth_sqli.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/grandstream_ucm62xx_sql_account_guess.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/hikvision_info_disclosure_cve_2017_7921.rb
@@ -13094,6 +13097,7 @@ drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/core/auxiliary/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/auxiliary/kademlia_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/auxiliary/mikrotik_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/auxiliary/nfs_spec.rb
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/auxiliary/password_cracker_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/auxiliary/prometheus_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/auxiliary/redis_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/auxiliary/rocketmq_spec.rb
