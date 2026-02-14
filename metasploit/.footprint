@@ -8892,6 +8892,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/freebsd/local/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/freebsd/local/watchguard_fix_corrupt_mail.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/freebsd/misc/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/freebsd/misc/citrix_netscaler_soap_bof.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/freebsd/misc/rtsold_dnssl_cmdinject.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/freebsd/samba/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/freebsd/samba/trans2open.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/freebsd/tacacs/
@@ -9469,6 +9470,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/ssh/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/ssh/vmware_vrni_known_privkey.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/ssh/vyos_restricted_shell_privesc.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/telnet/
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/telnet/gnu_inetutils_auth_bypass.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/telnet/netgear_telnetenable.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/telnet/telnet_encrypt_keyid.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/upnp/
@@ -9801,6 +9803,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/smartermail_guid_file_upload.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/snortreport_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/solarwinds_store_manager_auth_filter.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/solarwinds_webhelpdesk_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/solr_velocity_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/sonicwall_gms_upload.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/sonicwall_scrutinizer_methoddetail_sqli.rb
@@ -9907,6 +9910,9 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wso2_api_manager_file_upload_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wso2_file_upload_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/x7chat2_php_exec.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/xerte_authenticated_rce_uploadimage.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/xerte_unauthenticated_importlanguage.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/xerte_unauthenticated_template_import_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/xwiki_unauth_rce_cve_2025_24893.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/zabbix_script_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/zemra_panel_rce.rb
