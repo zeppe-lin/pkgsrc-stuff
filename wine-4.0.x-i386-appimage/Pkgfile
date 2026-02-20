@@ -4,12 +4,14 @@
 
 name=wine-4.0.x-i386-appimage
 version=4.0.4
-release=1
-source=https://github.com/mmtrt/WINE_AppImage/releases/download/continuous-stable-4-i386/wine-stable-i386_$version-x86_64.AppImage
+release=2
+source=https://github.com/mmtrt/WINE_AppImage/releases/download/old-v4-i386/wine-stable-i386_$version-x86_64.AppImage
 
 build() {
-	mkdir -p $PKG/opt/wine
+	_appimage=wine-stable-i386_$version-x86_64.AppImage
+	_destdir=$PKG/opt/AppImage
 
-	mv $SRC/wine-stable-i386_$version-x86_64.AppImage $PKG/opt/wine/
-	chmod +x $PKG/opt/wine/wine-stable-i386_$version-x86_64.AppImage
+	mkdir -p $_destdir
+	mv $SRC/$_appimage $_destdir/
+	chmod +x $_destdir/$_appimage
 }
