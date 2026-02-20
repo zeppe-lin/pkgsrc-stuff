@@ -1,0 +1,18 @@
+--- checksec.1.orig	2026-02-20 23:13:29.243224485 +0200
++++ checksec.1	2026-02-20 23:14:18.054514194 +0200
+@@ -74,12 +74,9 @@
+ For most of the checks you must be root.
+ .El
+ .Sh SEE ALSO
+-.Xr hardening-check 1
+-.Ns ,
+-.Xr feature_test_macros 7
+-.Ns ,
+-.Xr gcc 1
+-.Ns ,
++.Xr hardening-check 1 ,
++.Xr feature_test_macros 7 ,
++.Xr gcc 1 ,
+ .Xr ld 1
+ .Sh HISTORY
+ .Nm

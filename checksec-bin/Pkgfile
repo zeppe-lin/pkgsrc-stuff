@@ -1,0 +1,17 @@
+# Description: Check the properties of executables
+# URL:         https://github.com/slimm609/checksec
+# Depends on:  binutils coreutils file findutils grep openssl
+
+name=checksec-bin
+version=3.1.0
+release=1
+source="https://github.com/slimm609/checksec/releases/download/$version/checksec_${version}_amd64.deb
+	manpage.patch"
+
+build() {
+	ar x checksec_${version}_amd64.deb
+
+	tar -xf data.tar.gz -C $PKG --exclude='usr/share/licenses'
+
+	patch -d $PKG/usr/share/man/man1 -p0 -i $SRC/manpage.patch
+}
