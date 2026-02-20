@@ -1,11 +1,11 @@
-# Description: Reader and rewriter of EXIF metadata with raw file support
-# URL:         https://exiftool.org/
+# Description: Read and write meta information
+# URL:         https://metacpan.org/dist/Image-ExifTool
 # Depends on:  perl
 
 name=p5-image-exiftool
 version=13.50
 release=1
-source=https://exiftool.org/Image-ExifTool-$version.tar.gz
+source=https://cpan.metacpan.org/authors/id/E/EX/EXIFTOOL/Image-ExifTool-$version.tar.gz
 
 build() {
 	cd Image-ExifTool-$version
