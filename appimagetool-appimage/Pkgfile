@@ -2,19 +2,18 @@
 # URL:         https://github.com/AppImage/AppImageKit
 
 name=appimagetool-appimage
-version=13
+version=1.9.1
 release=1
-source=AppImageTool-$version.AppImage::https://github.com/AppImage/AppImageKit/releases/download/$version/appimagetool-x86_64.AppImage
+source=AppImageTool-$version.AppImage::https://github.com/AppImage/appimagetool/releases/download/1.9.1/appimagetool-x86_64.AppImage
 
 build() {
-	mkdir -p $PKG/opt/AppImageKit $PKG/usr/bin
+	local _destdir=$PKG/opt/AppImage
 
-	mv *.AppImage $PKG/opt/AppImageKit/AppImageTool-$version.AppImage
-	chmod +x $PKG/opt/AppImageKit/AppImageTool-$version.AppImage
+	mkdir -p $_destdir $PKG/usr/bin
 
-	ln -s /opt/AppImageKit/AppImageTool-$version.AppImage $PKG/usr/bin/appimagetool
+	mv *.AppImage $_destdir/AppImageTool-$version.AppImage
+	chmod +x $_destdir/AppImageTool-$version.AppImage
 
-	# useless
-	#install -m 0644 -Dt $PKG/usr/share/applications/ $SRC/AppImageExtract.desktop
-	#install -m 0644 -Dt $PKG/usr/share/pixmaps/ $SRC/AppImageExtract.png
+	ln -s ../../opt/AppImage/AppImageTool-$version.AppImage \
+		$PKG/usr/bin/appimagetool
 }

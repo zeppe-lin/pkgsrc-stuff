@@ -2,25 +2,26 @@ README for appimagetool-appimage
 
 ---
 
-POST-INSTALL
+REQUIREMENTS
 ============
 
-AppImage needs FUSE to run, so load kernel module `fuse`' before
-starting the application:
+Kernel Module
+-------------
+
+AppImage requires **fuse** module to be loaded before starting the
+application.
+
+Load manually:
 
 ```sh
 # as root
-modprobe fuse
-```
-
-You can add `modprobe fuse` to `/etc/rc.modules` to have the module
-load automatically on system startup, rather than having to do it
-every time before starting AppImage:
-
-```sh
-# Filesystem in Userspace
 /sbin/modprobe fuse
 ```
+
+Load automatically at boot:
+
+- Add `fuse` to `/etc/modules-load.d/*.conf` or
+- Add `/sbin/modprobe fuse` to `/etc/rc.modules`.
 
 ---
 
