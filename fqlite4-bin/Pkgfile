@@ -3,7 +3,7 @@
 # Depends on:  jdk-bin
 
 name=fqlite4-bin
-version=4.0
+version=4.01
 release=1
 source="https://github.com/pawlaszczyk/fqlite/releases/download/$version/fqlite-$version-x86_64.deb
 	revdep.$name"

@@ -48,7 +48,7 @@ drwxr-xr-x	root/root	opt/fqlite4/lib/app/
 -rw-r--r--	root/root	opt/fqlite4/lib/app/failureaccess-1.0.3.jar
 -rw-r--r--	root/root	opt/fqlite4/lib/app/flowless-0.7.3.jar
 -rw-r--r--	root/root	opt/fqlite4/lib/app/fontbox-3.0.0.jar
--rw-r--r--	root/root	opt/fqlite4/lib/app/fqlite-4.0.jar
+-rw-r--r--	root/root	opt/fqlite4/lib/app/fqlite-4.01.jar
 -rw-r--r--	root/root	opt/fqlite4/lib/app/fqlite.cfg
 -rw-r--r--	root/root	opt/fqlite4/lib/app/gson-2.11.0.jar
 -rw-r--r--	root/root	opt/fqlite4/lib/app/guava-33.4.8-jre.jar
