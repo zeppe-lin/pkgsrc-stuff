@@ -6,9 +6,9 @@
 #   ktsuss: Needed to run with elevated privileges (enabled)
 
 name=gspoof
-version=3.2
-release=3
-source="http://gspoof.sourceforge.net/src/gspoof-$version.tar.gz
+version=3.2-0d8fb9e
+release=4
+source="https://github.com/embyte0/$name/archive/${version#*-}/$name-$version.tar.gz
 	configure.ac.patch
 	gfuncts.c.patch
 	ginclude.h.patch
@@ -20,7 +20,7 @@ source="http://gspoof.sourceforge.net/src/gspoof-$version.tar.gz
 build() {
 	export CFLAGS="$CFLAGS -I/usr/include/cairo"
 
-	cd gspoof-$version
+	cd gspoof-*
 
 	patch -p0 -i $SRC/configure.ac.patch
 	patch -p1 -i $SRC/gfuncts.c.patch
@@ -35,15 +35,10 @@ build() {
 	make V=1
 	#make DESTDIR=$PKG install (broken)
 
-	mkdir -p $PKG/usr/bin/
-	mkdir -p $PKG/usr/share/applications
-	mkdir -p $PKG/usr/share/pixmaps
-	install -m 0755 gspoof \
-		$PKG/usr/bin/gspoof
-	install -m 0755 $SRC/gspoof-gtk.sh \
-		$PKG/usr/bin/gspoof-gtk
-	install -m 0644 $SRC/gspoof-gtk.desktop \
+	install -m 0755 -D gspoof $PKG/usr/bin/gspoof
+	install -m 0755 -D $SRC/gspoof-gtk.sh $PKG/usr/bin/gspoof-gtk
+	install -m 0644 -D $SRC/gspoof-gtk.desktop \
 		$PKG/usr/share/applications/gspoof-gtk.desktop
-	install -m 0644 pixmap/icon.png \
+	install -m 0644 -D pixmap/icon.png \
 		$PKG/usr/share/pixmaps/gspoof.png
 }
