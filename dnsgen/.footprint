@@ -17,14 +17,14 @@ drwxr-xr-x	root/root	opt/dnsgen/_distutils_hack/__pycache__/
 drwxr-xr-x	root/root	opt/dnsgen/bin/
 -rwxr-xr-x	root/root	opt/dnsgen/bin/normalizer
 -rwxr-xr-x	root/root	opt/dnsgen/bin/tldextract
-drwxr-xr-x	root/root	opt/dnsgen/certifi-2025.10.5.dist-info/
--rw-r--r--	root/root	opt/dnsgen/certifi-2025.10.5.dist-info/INSTALLER
--rw-r--r--	root/root	opt/dnsgen/certifi-2025.10.5.dist-info/METADATA
--rw-r--r--	root/root	opt/dnsgen/certifi-2025.10.5.dist-info/RECORD
--rw-r--r--	root/root	opt/dnsgen/certifi-2025.10.5.dist-info/WHEEL
-drwxr-xr-x	root/root	opt/dnsgen/certifi-2025.10.5.dist-info/licenses/
--rw-r--r--	root/root	opt/dnsgen/certifi-2025.10.5.dist-info/licenses/LICENSE
--rw-r--r--	root/root	opt/dnsgen/certifi-2025.10.5.dist-info/top_level.txt
+drwxr-xr-x	root/root	opt/dnsgen/certifi-2026.1.4.dist-info/
+-rw-r--r--	root/root	opt/dnsgen/certifi-2026.1.4.dist-info/INSTALLER
+-rw-r--r--	root/root	opt/dnsgen/certifi-2026.1.4.dist-info/METADATA
+-rw-r--r--	root/root	opt/dnsgen/certifi-2026.1.4.dist-info/RECORD
+-rw-r--r--	root/root	opt/dnsgen/certifi-2026.1.4.dist-info/WHEEL
+drwxr-xr-x	root/root	opt/dnsgen/certifi-2026.1.4.dist-info/licenses/
+-rw-r--r--	root/root	opt/dnsgen/certifi-2026.1.4.dist-info/licenses/LICENSE
+-rw-r--r--	root/root	opt/dnsgen/certifi-2026.1.4.dist-info/top_level.txt
 drwxr-xr-x	root/root	opt/dnsgen/certifi/
 -rw-r--r--	root/root	opt/dnsgen/certifi/__init__.py
 -rw-r--r--	root/root	opt/dnsgen/certifi/__main__.py
@@ -138,12 +138,6 @@ drwxr-xr-x	root/root	opt/dnsgen/idna/__pycache__/
 -rw-r--r--	root/root	opt/dnsgen/idna/package_data.py
 -rw-r--r--	root/root	opt/dnsgen/idna/py.typed (EMPTY)
 -rw-r--r--	root/root	opt/dnsgen/idna/uts46data.py
-drwxr-xr-x	root/root	opt/dnsgen/pkg_resources/
--rw-r--r--	root/root	opt/dnsgen/pkg_resources/__init__.py
-drwxr-xr-x	root/root	opt/dnsgen/pkg_resources/__pycache__/
--rw-r--r--	root/root	opt/dnsgen/pkg_resources/__pycache__/__init__.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/pkg_resources/api_tests.txt
--rw-r--r--	root/root	opt/dnsgen/pkg_resources/py.typed (EMPTY)
 drwxr-xr-x	root/root	opt/dnsgen/requests-2.32.5.dist-info/
 -rw-r--r--	root/root	opt/dnsgen/requests-2.32.5.dist-info/INSTALLER
 -rw-r--r--	root/root	opt/dnsgen/requests-2.32.5.dist-info/METADATA
@@ -203,15 +197,15 @@ drwxr-xr-x	root/root	opt/dnsgen/requests_file/
 drwxr-xr-x	root/root	opt/dnsgen/requests_file/__pycache__/
 -rw-r--r--	root/root	opt/dnsgen/requests_file/__pycache__/__init__.cpython-312.pyc
 -rw-r--r--	root/root	opt/dnsgen/requests_file/py.typed (EMPTY)
-drwxr-xr-x	root/root	opt/dnsgen/setuptools-80.9.0.dist-info/
--rw-r--r--	root/root	opt/dnsgen/setuptools-80.9.0.dist-info/INSTALLER
--rw-r--r--	root/root	opt/dnsgen/setuptools-80.9.0.dist-info/METADATA
--rw-r--r--	root/root	opt/dnsgen/setuptools-80.9.0.dist-info/RECORD
--rw-r--r--	root/root	opt/dnsgen/setuptools-80.9.0.dist-info/WHEEL
--rw-r--r--	root/root	opt/dnsgen/setuptools-80.9.0.dist-info/entry_points.txt
-drwxr-xr-x	root/root	opt/dnsgen/setuptools-80.9.0.dist-info/licenses/
--rw-r--r--	root/root	opt/dnsgen/setuptools-80.9.0.dist-info/licenses/LICENSE
--rw-r--r--	root/root	opt/dnsgen/setuptools-80.9.0.dist-info/top_level.txt
+drwxr-xr-x	root/root	opt/dnsgen/setuptools-82.0.0.dist-info/
+-rw-r--r--	root/root	opt/dnsgen/setuptools-82.0.0.dist-info/INSTALLER
+-rw-r--r--	root/root	opt/dnsgen/setuptools-82.0.0.dist-info/METADATA
+-rw-r--r--	root/root	opt/dnsgen/setuptools-82.0.0.dist-info/RECORD
+-rw-r--r--	root/root	opt/dnsgen/setuptools-82.0.0.dist-info/WHEEL
+-rw-r--r--	root/root	opt/dnsgen/setuptools-82.0.0.dist-info/entry_points.txt
+drwxr-xr-x	root/root	opt/dnsgen/setuptools-82.0.0.dist-info/licenses/
+-rw-r--r--	root/root	opt/dnsgen/setuptools-82.0.0.dist-info/licenses/LICENSE
+-rw-r--r--	root/root	opt/dnsgen/setuptools-82.0.0.dist-info/top_level.txt
 drwxr-xr-x	root/root	opt/dnsgen/setuptools/
 -rw-r--r--	root/root	opt/dnsgen/setuptools/__init__.py
 drwxr-xr-x	root/root	opt/dnsgen/setuptools/__pycache__/
@@ -476,13 +470,13 @@ drwxr-xr-x	root/root	opt/dnsgen/setuptools/_distutils/tests/compat/__pycache__/
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_shutil.py
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_static.py
 drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/
-drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/__pycache__/
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/__pycache__/typing_extensions.cpython-312.pyc
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/.lock (EMPTY)
 drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/autocommand-2.2.2.dist-info/
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/autocommand-2.2.2.dist-info/INSTALLER
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/autocommand-2.2.2.dist-info/LICENSE
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/autocommand-2.2.2.dist-info/METADATA
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/autocommand-2.2.2.dist-info/RECORD
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/autocommand-2.2.2.dist-info/REQUESTED (EMPTY)
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/autocommand-2.2.2.dist-info/WHEEL
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/autocommand-2.2.2.dist-info/top_level.txt
 drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/autocommand/
@@ -523,14 +517,15 @@ drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/backports/tarfile/compat/__py
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/backports/tarfile/compat/__pycache__/__init__.cpython-312.pyc
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/backports/tarfile/compat/__pycache__/py38.cpython-312.pyc
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/backports/tarfile/compat/py38.py
-drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata-8.0.0.dist-info/
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata-8.0.0.dist-info/INSTALLER
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata-8.0.0.dist-info/LICENSE
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata-8.0.0.dist-info/METADATA
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata-8.0.0.dist-info/RECORD
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata-8.0.0.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata-8.0.0.dist-info/WHEEL
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata-8.0.0.dist-info/top_level.txt
+drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata-8.7.1.dist-info/
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata-8.7.1.dist-info/INSTALLER
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata-8.7.1.dist-info/METADATA
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata-8.7.1.dist-info/RECORD
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata-8.7.1.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata-8.7.1.dist-info/WHEEL
+drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata-8.7.1.dist-info/licenses/
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata-8.7.1.dist-info/licenses/LICENSE
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata-8.7.1.dist-info/top_level.txt
 drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata/
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata/__init__.py
 drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata/__pycache__/
@@ -542,6 +537,7 @@ drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata/__pycache_
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata/__pycache__/_itertools.cpython-312.pyc
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata/__pycache__/_meta.cpython-312.pyc
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata/__pycache__/_text.cpython-312.pyc
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata/__pycache__/_typing.cpython-312.pyc
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata/__pycache__/diagnose.cpython-312.pyc
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata/_adapters.py
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata/_collections.py
@@ -550,6 +546,7 @@ drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata/__pycache_
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata/_itertools.py
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata/_meta.py
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata/_text.py
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata/_typing.py
 drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata/compat/
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata/compat/__init__.py (EMPTY)
 drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata/compat/__pycache__/
@@ -560,63 +557,20 @@ drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata/compat/__p
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata/compat/py39.py
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata/diagnose.py
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/importlib_metadata/py.typed (EMPTY)
-drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/inflect-7.3.1.dist-info/
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/inflect-7.3.1.dist-info/INSTALLER
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/inflect-7.3.1.dist-info/LICENSE
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/inflect-7.3.1.dist-info/METADATA
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/inflect-7.3.1.dist-info/RECORD
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/inflect-7.3.1.dist-info/WHEEL
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/inflect-7.3.1.dist-info/top_level.txt
-drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/inflect/
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/inflect/__init__.py
-drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/inflect/__pycache__/
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/inflect/__pycache__/__init__.cpython-312.pyc
-drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/inflect/compat/
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/inflect/compat/__init__.py (EMPTY)
-drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/inflect/compat/__pycache__/
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/inflect/compat/__pycache__/__init__.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/inflect/compat/__pycache__/py38.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/inflect/compat/py38.py
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/inflect/py.typed (EMPTY)
-drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/jaraco.collections-5.1.0.dist-info/
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco.collections-5.1.0.dist-info/INSTALLER
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco.collections-5.1.0.dist-info/LICENSE
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco.collections-5.1.0.dist-info/METADATA
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco.collections-5.1.0.dist-info/RECORD
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco.collections-5.1.0.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco.collections-5.1.0.dist-info/WHEEL
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco.collections-5.1.0.dist-info/top_level.txt
-drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/jaraco.context-5.3.0.dist-info/
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco.context-5.3.0.dist-info/INSTALLER
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco.context-5.3.0.dist-info/LICENSE
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco.context-5.3.0.dist-info/METADATA
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco.context-5.3.0.dist-info/RECORD
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco.context-5.3.0.dist-info/WHEEL
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco.context-5.3.0.dist-info/top_level.txt
-drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/jaraco.functools-4.0.1.dist-info/
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco.functools-4.0.1.dist-info/INSTALLER
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco.functools-4.0.1.dist-info/LICENSE
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco.functools-4.0.1.dist-info/METADATA
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco.functools-4.0.1.dist-info/RECORD
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco.functools-4.0.1.dist-info/WHEEL
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco.functools-4.0.1.dist-info/top_level.txt
-drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/jaraco.text-3.12.1.dist-info/
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco.text-3.12.1.dist-info/INSTALLER
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco.text-3.12.1.dist-info/LICENSE
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco.text-3.12.1.dist-info/METADATA
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco.text-3.12.1.dist-info/RECORD
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco.text-3.12.1.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco.text-3.12.1.dist-info/WHEEL
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco.text-3.12.1.dist-info/top_level.txt
+drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/jaraco.text-4.0.0.dist-info/
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco.text-4.0.0.dist-info/INSTALLER
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco.text-4.0.0.dist-info/LICENSE
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco.text-4.0.0.dist-info/METADATA
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco.text-4.0.0.dist-info/RECORD
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco.text-4.0.0.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco.text-4.0.0.dist-info/WHEEL
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco.text-4.0.0.dist-info/top_level.txt
 drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/jaraco/
-drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/jaraco/__pycache__/
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco/__pycache__/context.cpython-312.pyc
-drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/jaraco/collections/
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco/collections/__init__.py
-drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/jaraco/collections/__pycache__/
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco/collections/__pycache__/__init__.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco/collections/py.typed (EMPTY)
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco/context.py
+drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/jaraco/context/
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco/context/__init__.py
+drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/jaraco/context/__pycache__/
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco/context/__pycache__/__init__.cpython-312.pyc
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco/context/py.typed (EMPTY)
 drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/jaraco/functools/
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco/functools/__init__.py
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco/functools/__init__.pyi
@@ -638,13 +592,32 @@ drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/jaraco/text/__pycache__/
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco/text/strip-prefix.py
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco/text/to-dvorak.py
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco/text/to-qwerty.py
-drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/more_itertools-10.3.0.dist-info/
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/more_itertools-10.3.0.dist-info/INSTALLER
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/more_itertools-10.3.0.dist-info/LICENSE
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/more_itertools-10.3.0.dist-info/METADATA
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/more_itertools-10.3.0.dist-info/RECORD
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/more_itertools-10.3.0.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/more_itertools-10.3.0.dist-info/WHEEL
+drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/jaraco_context-6.1.0.dist-info/
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco_context-6.1.0.dist-info/INSTALLER
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco_context-6.1.0.dist-info/METADATA
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco_context-6.1.0.dist-info/RECORD
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco_context-6.1.0.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco_context-6.1.0.dist-info/WHEEL
+drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/jaraco_context-6.1.0.dist-info/licenses/
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco_context-6.1.0.dist-info/licenses/LICENSE
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco_context-6.1.0.dist-info/top_level.txt
+drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/jaraco_functools-4.4.0.dist-info/
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco_functools-4.4.0.dist-info/INSTALLER
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco_functools-4.4.0.dist-info/METADATA
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco_functools-4.4.0.dist-info/RECORD
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco_functools-4.4.0.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco_functools-4.4.0.dist-info/WHEEL
+drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/jaraco_functools-4.4.0.dist-info/licenses/
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco_functools-4.4.0.dist-info/licenses/LICENSE
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/jaraco_functools-4.4.0.dist-info/top_level.txt
+drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/more_itertools-10.8.0.dist-info/
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/more_itertools-10.8.0.dist-info/INSTALLER
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/more_itertools-10.8.0.dist-info/METADATA
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/more_itertools-10.8.0.dist-info/RECORD
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/more_itertools-10.8.0.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/more_itertools-10.8.0.dist-info/WHEEL
+drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/more_itertools-10.8.0.dist-info/licenses/
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/more_itertools-10.8.0.dist-info/licenses/LICENSE
 drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/more_itertools/
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/more_itertools/__init__.py
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/more_itertools/__init__.pyi
@@ -657,15 +630,16 @@ drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/more_itertools/__pycache__/
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/more_itertools/py.typed (EMPTY)
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/more_itertools/recipes.py
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/more_itertools/recipes.pyi
-drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/packaging-24.2.dist-info/
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/packaging-24.2.dist-info/INSTALLER
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/packaging-24.2.dist-info/LICENSE
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/packaging-24.2.dist-info/LICENSE.APACHE
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/packaging-24.2.dist-info/LICENSE.BSD
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/packaging-24.2.dist-info/METADATA
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/packaging-24.2.dist-info/RECORD
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/packaging-24.2.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/packaging-24.2.dist-info/WHEEL
+drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/packaging-26.0.dist-info/
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/packaging-26.0.dist-info/INSTALLER
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/packaging-26.0.dist-info/METADATA
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/packaging-26.0.dist-info/RECORD
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/packaging-26.0.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/packaging-26.0.dist-info/WHEEL
+drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/packaging-26.0.dist-info/licenses/
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/packaging-26.0.dist-info/licenses/LICENSE
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/packaging-26.0.dist-info/licenses/LICENSE.APACHE
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/packaging-26.0.dist-info/licenses/LICENSE.BSD
 drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/packaging/
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/packaging/__init__.py
 drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/packaging/__pycache__/
@@ -678,6 +652,7 @@ drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/packaging/__pycache__/
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/packaging/__pycache__/_tokenizer.cpython-312.pyc
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/packaging/__pycache__/markers.cpython-312.pyc
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/packaging/__pycache__/metadata.cpython-312.pyc
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/packaging/__pycache__/pylock.cpython-312.pyc
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/packaging/__pycache__/requirements.cpython-312.pyc
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/packaging/__pycache__/specifiers.cpython-312.pyc
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/packaging/__pycache__/tags.cpython-312.pyc
@@ -698,19 +673,20 @@ drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/packaging/licenses/__pycache_
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/packaging/markers.py
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/packaging/metadata.py
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/packaging/py.typed (EMPTY)
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/packaging/pylock.py
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/packaging/requirements.py
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/packaging/specifiers.py
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/packaging/tags.py
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/packaging/utils.py
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/packaging/version.py
-drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/platformdirs-4.2.2.dist-info/
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/platformdirs-4.2.2.dist-info/INSTALLER
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/platformdirs-4.2.2.dist-info/METADATA
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/platformdirs-4.2.2.dist-info/RECORD
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/platformdirs-4.2.2.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/platformdirs-4.2.2.dist-info/WHEEL
-drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/platformdirs-4.2.2.dist-info/licenses/
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/platformdirs-4.2.2.dist-info/licenses/LICENSE
+drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/platformdirs-4.4.0.dist-info/
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/platformdirs-4.4.0.dist-info/INSTALLER
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/platformdirs-4.4.0.dist-info/METADATA
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/platformdirs-4.4.0.dist-info/RECORD
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/platformdirs-4.4.0.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/platformdirs-4.4.0.dist-info/WHEEL
+drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/platformdirs-4.4.0.dist-info/licenses/
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/platformdirs-4.4.0.dist-info/licenses/LICENSE
 drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/platformdirs/
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/platformdirs/__init__.py
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/platformdirs/__main__.py
@@ -730,13 +706,14 @@ drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/platformdirs/__pycache__/
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/platformdirs/unix.py
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/platformdirs/version.py
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/platformdirs/windows.py
-drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/tomli-2.0.1.dist-info/
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/tomli-2.0.1.dist-info/INSTALLER
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/tomli-2.0.1.dist-info/LICENSE
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/tomli-2.0.1.dist-info/METADATA
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/tomli-2.0.1.dist-info/RECORD
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/tomli-2.0.1.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/tomli-2.0.1.dist-info/WHEEL
+drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/tomli-2.4.0.dist-info/
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/tomli-2.4.0.dist-info/INSTALLER
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/tomli-2.4.0.dist-info/METADATA
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/tomli-2.4.0.dist-info/RECORD
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/tomli-2.4.0.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/tomli-2.4.0.dist-info/WHEEL
+drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/tomli-2.4.0.dist-info/licenses/
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/tomli-2.4.0.dist-info/licenses/LICENSE
 drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/tomli/
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/tomli/__init__.py
 drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/tomli/__pycache__/
@@ -748,58 +725,15 @@ drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/tomli/__pycache__/
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/tomli/_re.py
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/tomli/_types.py
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/tomli/py.typed
-drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/typeguard-4.3.0.dist-info/
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typeguard-4.3.0.dist-info/INSTALLER
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typeguard-4.3.0.dist-info/LICENSE
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typeguard-4.3.0.dist-info/METADATA
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typeguard-4.3.0.dist-info/RECORD
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typeguard-4.3.0.dist-info/WHEEL
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typeguard-4.3.0.dist-info/entry_points.txt
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typeguard-4.3.0.dist-info/top_level.txt
-drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/typeguard/
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typeguard/__init__.py
-drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/typeguard/__pycache__/
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typeguard/__pycache__/__init__.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typeguard/__pycache__/_checkers.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typeguard/__pycache__/_config.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typeguard/__pycache__/_decorators.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typeguard/__pycache__/_exceptions.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typeguard/__pycache__/_functions.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typeguard/__pycache__/_importhook.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typeguard/__pycache__/_memo.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typeguard/__pycache__/_pytest_plugin.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typeguard/__pycache__/_suppression.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typeguard/__pycache__/_transformer.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typeguard/__pycache__/_union_transformer.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typeguard/__pycache__/_utils.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typeguard/_checkers.py
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typeguard/_config.py
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typeguard/_decorators.py
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typeguard/_exceptions.py
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typeguard/_functions.py
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typeguard/_importhook.py
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typeguard/_memo.py
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typeguard/_pytest_plugin.py
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typeguard/_suppression.py
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typeguard/_transformer.py
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typeguard/_union_transformer.py
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typeguard/_utils.py
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typeguard/py.typed (EMPTY)
-drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/typing_extensions-4.12.2.dist-info/
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typing_extensions-4.12.2.dist-info/INSTALLER
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typing_extensions-4.12.2.dist-info/LICENSE
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typing_extensions-4.12.2.dist-info/METADATA
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typing_extensions-4.12.2.dist-info/RECORD
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typing_extensions-4.12.2.dist-info/WHEEL
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/typing_extensions.py
-drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/wheel-0.45.1.dist-info/
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel-0.45.1.dist-info/INSTALLER
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel-0.45.1.dist-info/LICENSE.txt
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel-0.45.1.dist-info/METADATA
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel-0.45.1.dist-info/RECORD
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel-0.45.1.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel-0.45.1.dist-info/WHEEL
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel-0.45.1.dist-info/entry_points.txt
+drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/wheel-0.46.3.dist-info/
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel-0.46.3.dist-info/INSTALLER
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel-0.46.3.dist-info/METADATA
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel-0.46.3.dist-info/RECORD
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel-0.46.3.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel-0.46.3.dist-info/WHEEL
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel-0.46.3.dist-info/entry_points.txt
+drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/wheel-0.46.3.dist-info/licenses/
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel-0.46.3.dist-info/licenses/LICENSE.txt
 drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/wheel/
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/__init__.py
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/__main__.py
@@ -807,86 +741,57 @@ drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/wheel/__pycache__/
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/__pycache__/__init__.cpython-312.pyc
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/__pycache__/__main__.cpython-312.pyc
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/__pycache__/_bdist_wheel.cpython-312.pyc
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/__pycache__/_metadata.cpython-312.pyc
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/__pycache__/_setuptools_logging.cpython-312.pyc
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/__pycache__/bdist_wheel.cpython-312.pyc
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/__pycache__/macosx_libfile.cpython-312.pyc
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/__pycache__/metadata.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/__pycache__/util.cpython-312.pyc
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/__pycache__/wheelfile.cpython-312.pyc
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/_bdist_wheel.py
+drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/wheel/_commands/
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/_commands/__init__.py
+drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/wheel/_commands/__pycache__/
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/_commands/__pycache__/__init__.cpython-312.pyc
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/_commands/__pycache__/convert.cpython-312.pyc
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/_commands/__pycache__/pack.cpython-312.pyc
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/_commands/__pycache__/tags.cpython-312.pyc
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/_commands/__pycache__/unpack.cpython-312.pyc
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/_commands/convert.py
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/_commands/pack.py
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/_commands/tags.py
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/_commands/unpack.py
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/_metadata.py
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/_setuptools_logging.py
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/bdist_wheel.py
-drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/wheel/cli/
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/cli/__init__.py
-drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/wheel/cli/__pycache__/
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/cli/__pycache__/__init__.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/cli/__pycache__/convert.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/cli/__pycache__/pack.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/cli/__pycache__/tags.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/cli/__pycache__/unpack.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/cli/convert.py
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/cli/pack.py
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/cli/tags.py
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/cli/unpack.py
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/macosx_libfile.py
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/metadata.py
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/util.py
-drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/__init__.py (EMPTY)
-drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/__pycache__/
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/__pycache__/__init__.cpython-312.pyc
-drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/packaging/
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/packaging/LICENSE
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/packaging/LICENSE.APACHE
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/packaging/LICENSE.BSD
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/packaging/__init__.py (EMPTY)
-drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/packaging/__pycache__/
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/packaging/__pycache__/__init__.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/packaging/__pycache__/_elffile.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/packaging/__pycache__/_manylinux.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/packaging/__pycache__/_musllinux.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/packaging/__pycache__/_parser.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/packaging/__pycache__/_structures.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/packaging/__pycache__/_tokenizer.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/packaging/__pycache__/markers.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/packaging/__pycache__/requirements.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/packaging/__pycache__/specifiers.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/packaging/__pycache__/tags.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/packaging/__pycache__/utils.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/packaging/__pycache__/version.cpython-312.pyc
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/packaging/_elffile.py
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/packaging/_manylinux.py
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/packaging/_musllinux.py
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/packaging/_parser.py
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/packaging/_structures.py
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/packaging/_tokenizer.py
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/packaging/markers.py
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/packaging/requirements.py
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/packaging/specifiers.py
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/packaging/tags.py
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/packaging/utils.py
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/packaging/version.py
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/vendored/vendor.txt
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/wheel/wheelfile.py
-drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/zipp-3.19.2.dist-info/
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/zipp-3.19.2.dist-info/INSTALLER
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/zipp-3.19.2.dist-info/LICENSE
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/zipp-3.19.2.dist-info/METADATA
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/zipp-3.19.2.dist-info/RECORD
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/zipp-3.19.2.dist-info/REQUESTED (EMPTY)
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/zipp-3.19.2.dist-info/WHEEL
--rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/zipp-3.19.2.dist-info/top_level.txt
+drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/zipp-3.23.0.dist-info/
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/zipp-3.23.0.dist-info/INSTALLER
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/zipp-3.23.0.dist-info/METADATA
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/zipp-3.23.0.dist-info/RECORD
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/zipp-3.23.0.dist-info/REQUESTED (EMPTY)
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/zipp-3.23.0.dist-info/WHEEL
+drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/zipp-3.23.0.dist-info/licenses/
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/zipp-3.23.0.dist-info/licenses/LICENSE
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/zipp-3.23.0.dist-info/top_level.txt
 drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/zipp/
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/zipp/__init__.py
 drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/zipp/__pycache__/
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/zipp/__pycache__/__init__.cpython-312.pyc
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/zipp/__pycache__/_functools.cpython-312.pyc
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/zipp/__pycache__/glob.cpython-312.pyc
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/zipp/_functools.py
 drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/zipp/compat/
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/zipp/compat/__init__.py (EMPTY)
 drwxr-xr-x	root/root	opt/dnsgen/setuptools/_vendor/zipp/compat/__pycache__/
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/zipp/compat/__pycache__/__init__.cpython-312.pyc
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/zipp/compat/__pycache__/overlay.cpython-312.pyc
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/zipp/compat/__pycache__/py310.cpython-312.pyc
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/zipp/compat/__pycache__/py313.cpython-312.pyc
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/zipp/compat/overlay.py
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/zipp/compat/py310.py
+-rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/zipp/compat/py313.py
 -rw-r--r--	root/root	opt/dnsgen/setuptools/_vendor/zipp/glob.py
 -rw-r--r--	root/root	opt/dnsgen/setuptools/archive_util.py
 -rw-r--r--	root/root	opt/dnsgen/setuptools/build_meta.py
@@ -1036,13 +941,13 @@ drwxr-xr-x	root/root	opt/dnsgen/tldextract/__pycache__/
 -rw-r--r--	root/root	opt/dnsgen/tldextract/cli.py
 -rw-r--r--	root/root	opt/dnsgen/tldextract/remote.py
 -rw-r--r--	root/root	opt/dnsgen/tldextract/tldextract.py
-drwxr-xr-x	root/root	opt/dnsgen/urllib3-2.5.0.dist-info/
--rw-r--r--	root/root	opt/dnsgen/urllib3-2.5.0.dist-info/INSTALLER
--rw-r--r--	root/root	opt/dnsgen/urllib3-2.5.0.dist-info/METADATA
--rw-r--r--	root/root	opt/dnsgen/urllib3-2.5.0.dist-info/RECORD
--rw-r--r--	root/root	opt/dnsgen/urllib3-2.5.0.dist-info/WHEEL
-drwxr-xr-x	root/root	opt/dnsgen/urllib3-2.5.0.dist-info/licenses/
--rw-r--r--	root/root	opt/dnsgen/urllib3-2.5.0.dist-info/licenses/LICENSE.txt
+drwxr-xr-x	root/root	opt/dnsgen/urllib3-2.6.3.dist-info/
+-rw-r--r--	root/root	opt/dnsgen/urllib3-2.6.3.dist-info/INSTALLER
+-rw-r--r--	root/root	opt/dnsgen/urllib3-2.6.3.dist-info/METADATA
+-rw-r--r--	root/root	opt/dnsgen/urllib3-2.6.3.dist-info/RECORD
+-rw-r--r--	root/root	opt/dnsgen/urllib3-2.6.3.dist-info/WHEEL
+drwxr-xr-x	root/root	opt/dnsgen/urllib3-2.6.3.dist-info/licenses/
+-rw-r--r--	root/root	opt/dnsgen/urllib3-2.6.3.dist-info/licenses/LICENSE.txt
 drwxr-xr-x	root/root	opt/dnsgen/urllib3/
 -rw-r--r--	root/root	opt/dnsgen/urllib3/__init__.py
 drwxr-xr-x	root/root	opt/dnsgen/urllib3/__pycache__/
