@@ -128,6 +128,7 @@ drwxr-xr-x	root/root	opt/spoofcheck/filelock/__pycache__/
 -rw-r--r--	root/root	opt/spoofcheck/filelock/__pycache__/__init__.cpython-312.pyc
 -rw-r--r--	root/root	opt/spoofcheck/filelock/__pycache__/_api.cpython-312.pyc
 -rw-r--r--	root/root	opt/spoofcheck/filelock/__pycache__/_error.cpython-312.pyc
+-rw-r--r--	root/root	opt/spoofcheck/filelock/__pycache__/_read_write.cpython-312.pyc
 -rw-r--r--	root/root	opt/spoofcheck/filelock/__pycache__/_soft.cpython-312.pyc
 -rw-r--r--	root/root	opt/spoofcheck/filelock/__pycache__/_unix.cpython-312.pyc
 -rw-r--r--	root/root	opt/spoofcheck/filelock/__pycache__/_util.cpython-312.pyc
@@ -136,6 +137,7 @@ drwxr-xr-x	root/root	opt/spoofcheck/filelock/__pycache__/
 -rw-r--r--	root/root	opt/spoofcheck/filelock/__pycache__/version.cpython-312.pyc
 -rw-r--r--	root/root	opt/spoofcheck/filelock/_api.py
 -rw-r--r--	root/root	opt/spoofcheck/filelock/_error.py
+-rw-r--r--	root/root	opt/spoofcheck/filelock/_read_write.py
 -rw-r--r--	root/root	opt/spoofcheck/filelock/_soft.py
 -rw-r--r--	root/root	opt/spoofcheck/filelock/_unix.py
 -rw-r--r--	root/root	opt/spoofcheck/filelock/_util.py
