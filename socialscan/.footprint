@@ -335,7 +335,6 @@ drwxr-xr-x	root/root	opt/socialscan/tqdm/
 drwxr-xr-x	root/root	opt/socialscan/tqdm/__pycache__/
 -rw-r--r--	root/root	opt/socialscan/tqdm/__pycache__/__init__.cpython-312.pyc
 -rw-r--r--	root/root	opt/socialscan/tqdm/__pycache__/__main__.cpython-312.pyc
--rw-r--r--	root/root	opt/socialscan/tqdm/__pycache__/_dist_ver.cpython-312.pyc
 -rw-r--r--	root/root	opt/socialscan/tqdm/__pycache__/_main.cpython-312.pyc
 -rw-r--r--	root/root	opt/socialscan/tqdm/__pycache__/_monitor.cpython-312.pyc
 -rw-r--r--	root/root	opt/socialscan/tqdm/__pycache__/_tqdm.cpython-312.pyc
@@ -356,7 +355,6 @@ drwxr-xr-x	root/root	opt/socialscan/tqdm/__pycache__/
 -rw-r--r--	root/root	opt/socialscan/tqdm/__pycache__/tk.cpython-312.pyc
 -rw-r--r--	root/root	opt/socialscan/tqdm/__pycache__/utils.cpython-312.pyc
 -rw-r--r--	root/root	opt/socialscan/tqdm/__pycache__/version.cpython-312.pyc
--rw-r--r--	root/root	opt/socialscan/tqdm/_dist_ver.py
 -rw-r--r--	root/root	opt/socialscan/tqdm/_main.py
 -rw-r--r--	root/root	opt/socialscan/tqdm/_monitor.py
 -rw-r--r--	root/root	opt/socialscan/tqdm/_tqdm.py
