@@ -8,6 +8,7 @@ drwxr-xr-x	root/root	opt/holehe/anyio/
 drwxr-xr-x	root/root	opt/holehe/anyio/__pycache__/
 -rw-r--r--	root/root	opt/holehe/anyio/__pycache__/__init__.cpython-312.pyc
 -rw-r--r--	root/root	opt/holehe/anyio/__pycache__/from_thread.cpython-312.pyc
+-rw-r--r--	root/root	opt/holehe/anyio/__pycache__/functools.cpython-312.pyc
 -rw-r--r--	root/root	opt/holehe/anyio/__pycache__/lowlevel.cpython-312.pyc
 -rw-r--r--	root/root	opt/holehe/anyio/__pycache__/pytest_plugin.cpython-312.pyc
 -rw-r--r--	root/root	opt/holehe/anyio/__pycache__/to_interpreter.cpython-312.pyc
@@ -74,6 +75,7 @@ drwxr-xr-x	root/root	opt/holehe/anyio/abc/__pycache__/
 -rw-r--r--	root/root	opt/holehe/anyio/abc/_tasks.py
 -rw-r--r--	root/root	opt/holehe/anyio/abc/_testing.py
 -rw-r--r--	root/root	opt/holehe/anyio/from_thread.py
+-rw-r--r--	root/root	opt/holehe/anyio/functools.py
 -rw-r--r--	root/root	opt/holehe/anyio/lowlevel.py
 -rw-r--r--	root/root	opt/holehe/anyio/py.typed (EMPTY)
 -rw-r--r--	root/root	opt/holehe/anyio/pytest_plugin.py
@@ -510,7 +512,6 @@ drwxr-xr-x	root/root	opt/holehe/tqdm/
 drwxr-xr-x	root/root	opt/holehe/tqdm/__pycache__/
 -rw-r--r--	root/root	opt/holehe/tqdm/__pycache__/__init__.cpython-312.pyc
 -rw-r--r--	root/root	opt/holehe/tqdm/__pycache__/__main__.cpython-312.pyc
--rw-r--r--	root/root	opt/holehe/tqdm/__pycache__/_dist_ver.cpython-312.pyc
 -rw-r--r--	root/root	opt/holehe/tqdm/__pycache__/_main.cpython-312.pyc
 -rw-r--r--	root/root	opt/holehe/tqdm/__pycache__/_monitor.cpython-312.pyc
 -rw-r--r--	root/root	opt/holehe/tqdm/__pycache__/_tqdm.cpython-312.pyc
@@ -531,7 +532,6 @@ drwxr-xr-x	root/root	opt/holehe/tqdm/__pycache__/
 -rw-r--r--	root/root	opt/holehe/tqdm/__pycache__/tk.cpython-312.pyc
 -rw-r--r--	root/root	opt/holehe/tqdm/__pycache__/utils.cpython-312.pyc
 -rw-r--r--	root/root	opt/holehe/tqdm/__pycache__/version.cpython-312.pyc
--rw-r--r--	root/root	opt/holehe/tqdm/_dist_ver.py
 -rw-r--r--	root/root	opt/holehe/tqdm/_main.py
 -rw-r--r--	root/root	opt/holehe/tqdm/_monitor.py
 -rw-r--r--	root/root	opt/holehe/tqdm/_tqdm.py
