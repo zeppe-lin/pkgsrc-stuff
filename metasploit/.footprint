@@ -1475,6 +1475,8 @@ drwxrwxr-x	root/root	opt/metasploit/data/exploits/edb-35948/js/
 -rw-rw-r--	root/root	opt/metasploit/data/exploits/edb-35948/js/rop_builder.js
 -rw-rw-r--	root/root	opt/metasploit/data/exploits/edb-35948/js/sprayer.js
 -rw-rw-r--	root/root	opt/metasploit/data/exploits/edb-35948/main.html
+drwxrwxr-x	root/root	opt/metasploit/data/exploits/emacs_extension/
+-rw-rw-r--	root/root	opt/metasploit/data/exploits/emacs_extension/template.el
 -rw-rw-r--	root/root	opt/metasploit/data/exploits/evasion_shellcode.js
 -rwxrwxr-x	root/root	opt/metasploit/data/exploits/exec_payload.msi
 drwxrwxr-x	root/root	opt/metasploit/data/exploits/firefox_smil_uaf/
@@ -7820,6 +7822,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/gather/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/mybb_db_fingerprint.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/natpmp_external_address.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/netgear_password_disclosure.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/ni8mare_cve_2026_21858.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/nis_bootparamd_domain.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/nis_ypserv_map.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/nuuo_cms_bruteforce.rb
@@ -9417,6 +9420,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/persistence/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/persistence/autostart.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/persistence/bash_profile.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/persistence/docker_image.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/persistence/emacs_extension.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/persistence/igel_persistence.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/persistence/init_openrc.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/persistence/init_systemd.rb
@@ -9605,6 +9609,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/cacti_pollers_sqli_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/caidao_php_backdoor_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/carrental_fileupload_rce.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/churchcrm_install_unauth_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/churchinfo_upload_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/cisco_dcnm_upload.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/cisco_dcnm_upload_2019.rb
@@ -9898,6 +9903,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_plugin_fma_shortcode_unauth_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_plugin_modern_events_calendar_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_plugin_sp_project_document_rce.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_plugin_story_chef_file_upload.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_popular_posts_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_reallysimplessl_2fa_bypass_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/wp_responsive_thumbnail_slider_upload.rb
@@ -11490,6 +11496,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/windows/persistence/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/persistence/linqpad_deserialization.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/persistence/notepadpp_plugin.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/persistence/registry.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/persistence/registry_userinit.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/persistence/service.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/persistence/startup_folder.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/windows/persistence/task_scheduler.rb
@@ -13387,6 +13394,7 @@ drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/image_source/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/mac_oui_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/ntpath_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/parser/
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/parser/acunetix_document_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/rex/parser/fs/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/parser/fs/bitlocker_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/rex/parser/group_policy_preferences_spec.rb
