@@ -14,11 +14,11 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/wireshark
 drwxr-xr-x	root/root	usr/lib/
 lrwxrwxrwx	root/root	usr/lib/libwireshark.so -> libwireshark.so.19
-lrwxrwxrwx	root/root	usr/lib/libwireshark.so.19 -> libwireshark.so.19.0.3
--rwxr-xr-x	root/root	usr/lib/libwireshark.so.19.0.3
+lrwxrwxrwx	root/root	usr/lib/libwireshark.so.19 -> libwireshark.so.19.0.4
+-rwxr-xr-x	root/root	usr/lib/libwireshark.so.19.0.4
 lrwxrwxrwx	root/root	usr/lib/libwiretap.so -> libwiretap.so.16
-lrwxrwxrwx	root/root	usr/lib/libwiretap.so.16 -> libwiretap.so.16.0.3
--rwxr-xr-x	root/root	usr/lib/libwiretap.so.16.0.3
+lrwxrwxrwx	root/root	usr/lib/libwiretap.so.16 -> libwiretap.so.16.0.4
+-rwxr-xr-x	root/root	usr/lib/libwiretap.so.16.0.4
 lrwxrwxrwx	root/root	usr/lib/libwsutil.so -> libwsutil.so.17
 lrwxrwxrwx	root/root	usr/lib/libwsutil.so.17 -> libwsutil.so.17.0.0
 -rwxr-xr-x	root/root	usr/lib/libwsutil.so.17.0.0
@@ -55,39 +55,6 @@ drwxr-xr-x	root/root	usr/lib/wireshark/plugins/4.6/wiretap/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/applications/
 -rw-r--r--	root/root	usr/share/applications/org.wireshark.Wireshark.desktop
-drwxr-xr-x	root/root	usr/share/doc/
-drwxr-xr-x	root/root	usr/share/doc/wireshark/
--rw-r--r--	root/root	usr/share/doc/wireshark/COPYING
--rw-r--r--	root/root	usr/share/doc/wireshark/README.xml-output
--rw-r--r--	root/root	usr/share/doc/wireshark/Stratoshark Release Notes.html
--rw-r--r--	root/root	usr/share/doc/wireshark/Wireshark Release Notes.html
--rw-r--r--	root/root	usr/share/doc/wireshark/androiddump.html
--rw-r--r--	root/root	usr/share/doc/wireshark/capinfos.html
--rw-r--r--	root/root	usr/share/doc/wireshark/captype.html
--rw-r--r--	root/root	usr/share/doc/wireshark/ciscodump.html
--rw-r--r--	root/root	usr/share/doc/wireshark/dpauxmon.html
--rw-r--r--	root/root	usr/share/doc/wireshark/dumpcap.html
--rw-r--r--	root/root	usr/share/doc/wireshark/editcap.html
--rw-r--r--	root/root	usr/share/doc/wireshark/etwdump.html
--rw-r--r--	root/root	usr/share/doc/wireshark/extcap.html
--rw-r--r--	root/root	usr/share/doc/wireshark/falcodump.html
--rw-r--r--	root/root	usr/share/doc/wireshark/mergecap.html
--rw-r--r--	root/root	usr/share/doc/wireshark/pdml2html.xsl
--rw-r--r--	root/root	usr/share/doc/wireshark/randpkt.html
--rw-r--r--	root/root	usr/share/doc/wireshark/randpktdump.html
--rw-r--r--	root/root	usr/share/doc/wireshark/rawshark.html
--rw-r--r--	root/root	usr/share/doc/wireshark/reordercap.html
--rw-r--r--	root/root	usr/share/doc/wireshark/sshdig.html
--rw-r--r--	root/root	usr/share/doc/wireshark/sshdump.html
--rw-r--r--	root/root	usr/share/doc/wireshark/strato.html
--rw-r--r--	root/root	usr/share/doc/wireshark/stratoshark.html
--rw-r--r--	root/root	usr/share/doc/wireshark/text2pcap.html
--rw-r--r--	root/root	usr/share/doc/wireshark/tshark.html
--rw-r--r--	root/root	usr/share/doc/wireshark/udpdump.html
--rw-r--r--	root/root	usr/share/doc/wireshark/wifidump.html
--rw-r--r--	root/root	usr/share/doc/wireshark/wireshark-filter.html
--rw-r--r--	root/root	usr/share/doc/wireshark/wireshark.html
--rw-r--r--	root/root	usr/share/doc/wireshark/ws.css
 drwxr-xr-x	root/root	usr/share/icons/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/128x128/
@@ -194,6 +161,38 @@ drwxr-xr-x	root/root	usr/share/wireshark/diameter/
 -rw-r--r--	root/root	usr/share/wireshark/diameter/sip.xml
 -rw-r--r--	root/root	usr/share/wireshark/diameter/sunping.xml
 -rw-r--r--	root/root	usr/share/wireshark/dmacros
+drwxr-xr-x	root/root	usr/share/wireshark/doc/
+-rw-r--r--	root/root	usr/share/wireshark/doc/COPYING
+-rw-r--r--	root/root	usr/share/wireshark/doc/README.xml-output
+-rw-r--r--	root/root	usr/share/wireshark/doc/Stratoshark Release Notes.html
+-rw-r--r--	root/root	usr/share/wireshark/doc/Wireshark Release Notes.html
+-rw-r--r--	root/root	usr/share/wireshark/doc/androiddump.html
+-rw-r--r--	root/root	usr/share/wireshark/doc/capinfos.html
+-rw-r--r--	root/root	usr/share/wireshark/doc/captype.html
+-rw-r--r--	root/root	usr/share/wireshark/doc/ciscodump.html
+-rw-r--r--	root/root	usr/share/wireshark/doc/dpauxmon.html
+-rw-r--r--	root/root	usr/share/wireshark/doc/dumpcap.html
+-rw-r--r--	root/root	usr/share/wireshark/doc/editcap.html
+-rw-r--r--	root/root	usr/share/wireshark/doc/etwdump.html
+-rw-r--r--	root/root	usr/share/wireshark/doc/extcap.html
+-rw-r--r--	root/root	usr/share/wireshark/doc/falcodump.html
+-rw-r--r--	root/root	usr/share/wireshark/doc/mergecap.html
+-rw-r--r--	root/root	usr/share/wireshark/doc/pdml2html.xsl
+-rw-r--r--	root/root	usr/share/wireshark/doc/randpkt.html
+-rw-r--r--	root/root	usr/share/wireshark/doc/randpktdump.html
+-rw-r--r--	root/root	usr/share/wireshark/doc/rawshark.html
+-rw-r--r--	root/root	usr/share/wireshark/doc/reordercap.html
+-rw-r--r--	root/root	usr/share/wireshark/doc/sshdig.html
+-rw-r--r--	root/root	usr/share/wireshark/doc/sshdump.html
+-rw-r--r--	root/root	usr/share/wireshark/doc/strato.html
+-rw-r--r--	root/root	usr/share/wireshark/doc/stratoshark.html
+-rw-r--r--	root/root	usr/share/wireshark/doc/text2pcap.html
+-rw-r--r--	root/root	usr/share/wireshark/doc/tshark.html
+-rw-r--r--	root/root	usr/share/wireshark/doc/udpdump.html
+-rw-r--r--	root/root	usr/share/wireshark/doc/wifidump.html
+-rw-r--r--	root/root	usr/share/wireshark/doc/wireshark-filter.html
+-rw-r--r--	root/root	usr/share/wireshark/doc/wireshark.html
+-rw-r--r--	root/root	usr/share/wireshark/doc/ws.css
 drwxr-xr-x	root/root	usr/share/wireshark/dtds/
 -rw-r--r--	root/root	usr/share/wireshark/dtds/dc.dtd
 -rw-r--r--	root/root	usr/share/wireshark/dtds/itunes.dtd
