@@ -2,11 +2,11 @@
 # URL:         https://metacpan.org/pod/Compress::Raw::Lzma
 # Depends on:  perl
 
-# XXX: Ignore Pod::Markdown warnings - it's a build-only dep used only for
-# GitHub README generation (see private/MakeUtil.pm).
+# XXX: Ignore Pod::Markdown warnings - it's a build-only dep used only
+# for GitHub README generation (see private/MakeUtil.pm).
 
 name=p5-compress-raw-lzma
-version=2.217
+version=2.219
 release=1
 source=https://cpan.metacpan.org/authors/id/P/PM/PMQS/Compress-Raw-Lzma-$version.tar.gz
 
