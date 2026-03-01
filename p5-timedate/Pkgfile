@@ -3,23 +3,24 @@
 # Depends on:  perl
 
 name=p5-timedate
-version=2.33
-release=2
+version=2.34
+release=1
 source=https://cpan.metacpan.org/authors/id/A/AT/ATOOMIC/TimeDate-$version.tar.gz
 
 build() {
 	cd TimeDate-$version
 
+	command -v finddepsdistmeta >/dev/null 2>&1 && finddepsdistmeta
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
 	make
 	make DESTDIR=$PKG install
 
-	# remove junk and empty dirs
+	# Remove junk and empty dirs
 	find $PKG -depth \
-		-type f \( -name perllocal.pod  \
-			-o -name \*.bs          \
-			-o -name .packlist      \
-			\) -delete ,            \
-		-type d -empty -delete
+		\( -type f -name perllocal.pod \
+			-o -name '*.bs' \
+			-o -name .packlist \
+		\) -delete \
+		-o -type d -empty -delete
 }
