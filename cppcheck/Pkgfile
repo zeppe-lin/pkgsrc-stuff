@@ -3,7 +3,7 @@
 # Depends on:  libpcre
 
 name=cppcheck
-version=2.19.1
+version=2.20.0
 release=1
 source=https://github.com/danmar/$name/archive/$version/$name-$version.tar.gz
 
@@ -24,7 +24,7 @@ build() {
 	# Man page generation requires docbook-{xml,xsl}
 	# Intentionally skipped to avoid heavy build-time dependencies
 	#
-	# make man \
-	#   DB2MAN=/usr/share/xml/docbook/xsl-stylesheets/manpages/docbook.xsl
-	# install -m 0644 -D $name.1 $PKG/usr/share/man/man1/$name.1
+	#make man \
+	#  DB2MAN=/usr/share/xml/docbook/xsl-stylesheets/manpages/docbook.xsl
+	#install -m 0644 -D $name.1 $PKG/usr/share/man/man1/$name.1
 }
