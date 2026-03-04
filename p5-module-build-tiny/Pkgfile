@@ -3,24 +3,24 @@
 # Depends on:  p5-extutils-helpers p5-extutils-installpaths
 
 name=p5-module-build-tiny
-version=0.052
+version=0.053
 release=1
 source=https://cpan.metacpan.org/authors/id/L/LE/LEONT/Module-Build-Tiny-$version.tar.gz
 
 build() {
 	cd Module-Build-Tiny-$version
 
-	command -v finddepsdistmeta && finddepsdistmeta
+	command -v finddepsdistmeta >/dev/null 2>&1 && finddepsdistmeta
 	perl Build.PL --installdirs=vendor
 
 	./Build
 	./Build install --destdir=$PKG --create_packlist=0
 
-	# remove junk and empty dirs
+	# Remove junk and empty dirs
 	find $PKG -depth \
-		-type f \( -name perllocal.pod  \
-			-o -name \*.bs          \
-			-o -name .packlist      \
-			\) -delete ,            \
-		-type d -empty -delete
+		\( -type f -name perllocal.pod \
+			-o -name '*.bs' \
+			-o -name .packlist \
+		\) -delete \
+		-o -type d -empty -delete
 }
