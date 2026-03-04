@@ -5802,6 +5802,8 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/payload/linux/x64/
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/payload/linux/x86/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/payload/linux/x86/elf_loader.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/payload/linux/x86/prepends.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/payload/linux/x86/rc4_decrypter.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/payload/linux/x86/sleep_evasion.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/payload/linux/zarch/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/payload/linux/zarch/prepends.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/payload/macho.rb
@@ -8871,6 +8873,8 @@ drwxrwxr-x	root/root	opt/metasploit/modules/evasion/
 drwxrwxr-x	root/root	opt/metasploit/modules/evasion/linux/
 drwxrwxr-x	root/root	opt/metasploit/modules/evasion/linux/aarch64/
 -rw-rw-r--	root/root	opt/metasploit/modules/evasion/linux/aarch64/rc4_packer.rb
+drwxrwxr-x	root/root	opt/metasploit/modules/evasion/linux/x86/
+-rw-rw-r--	root/root	opt/metasploit/modules/evasion/linux/x86/rc4_packer.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/evasion/windows/
 -rw-rw-r--	root/root	opt/metasploit/modules/evasion/windows/applocker_evasion_install_util.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/evasion/windows/applocker_evasion_msbuild.rb
@@ -9755,6 +9759,9 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/lucee_scheduled_job.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/magento_sessionreaper.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/magento_unserialize.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/majordomo_cmd_injection_rce.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/majordomo_console_eval_rce.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/majordomo_supply_chain_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/makoserver_cmd_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/manage_engine_dc_pmp_sqli.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/manageengine_adselfservice_plus_saml_rce_cve_2022_47966.rb
