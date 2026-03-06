@@ -3,10 +3,14 @@
 # Depends on:  firefox-bin lynx
 
 name=firefox-vimium-bin
-version=2.3.1
+version=2.4.0
 release=1
-source=$(lynx -dump https://addons.mozilla.org/en-US/firefox/addon/vimium-ff/ |
-	grep -Po "https://addons.mozilla.org/firefox/downloads/file/[0-9]+/vimium_ff-$version.xpi")
+
+_addons_url=https://addons.mozilla.org/en-US/firefox/addon
+_downloads_url=https://addons.mozilla.org/firefox/downloads/file
+
+source=$(lynx -dump ${_addons_url}/vimium-ff |
+	grep -Po "${_downloads_url}/[0-9]+/vimium_ff-$version.xpi")
 
 build() {
 	local _DESTDIR=$PKG/opt/firefox/distribution/extensions
