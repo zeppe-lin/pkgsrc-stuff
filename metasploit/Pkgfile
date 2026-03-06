@@ -3,7 +3,7 @@
 # Depends on:  glibc-32 inetutils libpcap postgresql ruby sqlite3
 
 name=metasploit
-version=6.4.118
+version=6.4.119
 release=1
 source=$name-$version.tar.gz::https://github.com/rapid7/metasploit-framework/archive/refs/tags/$version.tar.gz
 
@@ -25,7 +25,8 @@ build() {
 	bundle config set no-cache true
 	bundle config set --local path vendor/bundle
 	bundle config set --local without development test
-	sed 's|git ls-files|find -type f|' -i metasploit-framework.gemspec
+	sed -i 's|git ls-files|find -type f|' \
+		metasploit-framework.gemspec
 	bundle install -j ${JOBS:-1} --no-cache
 
 	# Reproducible build: don't leak jobs count
@@ -57,7 +58,8 @@ EOF
 	done
 
 	# zsh completions
-	#install -m 0644 -Dt $PKG/usr/share/zsh/site-functions external/zsh/_*
+	#install -m 0644 -Dt $PKG/usr/share/zsh/site-functions \
+	#	external/zsh/_*
 
 	# Remove junk
 	rm $PKG/usr/bin/msfupdate

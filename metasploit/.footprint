@@ -9272,6 +9272,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/symmetricom_syncserver_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/synology_dsm_sliceupload_exec_noauth.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/synology_dsm_smart_exec_auth.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/tacticalrmm_ssti_rce_cve_2025_69516.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/terramaster_unauth_rce_cve_2020_35665.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/terramaster_unauth_rce_cve_2021_45837.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/terramaster_unauth_rce_cve_2022_24990.rb
