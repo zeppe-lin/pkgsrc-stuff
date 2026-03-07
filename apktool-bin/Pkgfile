@@ -3,9 +3,10 @@
 # Depends on:  jdk-bin
 
 name=apktool-bin
-version=2.12.1
+version=3.0.1
 release=1
-source=https://github.com/iBotPeaches/Apktool/releases/download/v$version/apktool_$version.jar
+source="https://github.com/iBotPeaches/Apktool/releases/download/v$version/apktool_$version.jar
+	apktool.sh"
 
 build() {
 	mkdir -p $PKG/opt/apktool $PKG/usr/bin
@@ -13,10 +14,5 @@ build() {
 	mv $SRC/apktool_$version.jar $PKG/opt/apktool/apktool.jar
 	chmod 0644 $PKG/opt/apktool/apktool.jar
 
-	# launch wrapper
-	cat >$PKG/usr/bin/apktool <<EOF
-#!/bin/sh -e
-exec java -Dfile.encoding=utf8 -Xmx512M -jar /opt/apktool/apktool.jar \$@
-EOF
-	chmod +x $PKG/usr/bin/apktool
+	install -m 0755 -D $SRC/apktool.sh $PKG/usr/bin/apktool
 }
