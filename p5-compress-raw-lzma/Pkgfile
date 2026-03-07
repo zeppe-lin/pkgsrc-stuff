@@ -6,7 +6,7 @@
 # for GitHub README generation (see private/MakeUtil.pm).
 
 name=p5-compress-raw-lzma
-version=2.219
+version=2.220
 release=1
 source=https://cpan.metacpan.org/authors/id/P/PM/PMQS/Compress-Raw-Lzma-$version.tar.gz
 
@@ -19,7 +19,7 @@ build() {
 	make OPTIMIZE="$CFLAGS"
 	make DESTDIR=$PKG install
 
-	# remove junk and empty dirs
+	# Remove junk and empty dirs
 	find $PKG -depth \
 		\( -type f -name perllocal.pod \
 			-o -name '*.bs' \
