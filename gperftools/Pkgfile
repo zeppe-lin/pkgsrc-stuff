@@ -3,7 +3,7 @@
 # Depends on:  graphviz libunwind perl
 
 name=gperftools
-version=2.18
+version=2.18.1
 release=1
 source=https://github.com/$name/$name/releases/download/$name-$version/$name-$version.tar.gz
 
@@ -21,5 +21,6 @@ build() {
 	make DESTDIR=$PKG install
 
 	# Remove junk
-	rm -r $PKG/usr/share/doc; rmdir $PKG/usr/share
+	rm -r $PKG/usr/share/doc
+	rmdir $PKG/usr/share
 }
