@@ -1,6 +1,5 @@
 # Description: Check the properties of executables
 # URL:         https://github.com/slimm609/checksec
-# Depends on:  binutils coreutils file findutils grep openssl
 
 name=checksec-bin
 version=3.1.0
