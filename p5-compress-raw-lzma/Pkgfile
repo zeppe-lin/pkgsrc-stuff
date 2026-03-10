@@ -3,7 +3,7 @@
 # Depends on:  perl
 
 name=p5-compress-raw-lzma
-version=2.220
+version=2.221
 release=1
 source=https://cpan.metacpan.org/authors/id/P/PM/PMQS/Compress-Raw-Lzma-$version.tar.gz
 
