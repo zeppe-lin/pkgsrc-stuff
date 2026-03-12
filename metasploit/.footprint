@@ -5797,8 +5797,10 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/payload/linux/riscv64le/
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/payload/linux/x64/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/payload/linux/x64/elf_loader.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/payload/linux/x64/prepends.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/payload/linux/x64/rc4_decrypter.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/payload/linux/x64/reverse_sctp.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/payload/linux/x64/reverse_tcp.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/payload/linux/x64/sleep_evasion.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/payload/linux/x86/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/payload/linux/x86/elf_loader.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/payload/linux/x86/prepends.rb
@@ -7854,6 +7856,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/auxiliary/gather/
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/ldap_esc_vulnerable_cert_finder.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/ldap_passwords.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/ldap_query.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/leakix_search.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/listmonk_env_disclosure.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/magento_xxe_cve_2024_34102.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/auxiliary/gather/manageengine_adaudit_plus_xnode_enum.rb
@@ -8873,6 +8876,8 @@ drwxrwxr-x	root/root	opt/metasploit/modules/evasion/
 drwxrwxr-x	root/root	opt/metasploit/modules/evasion/linux/
 drwxrwxr-x	root/root	opt/metasploit/modules/evasion/linux/aarch64/
 -rw-rw-r--	root/root	opt/metasploit/modules/evasion/linux/aarch64/rc4_packer.rb
+drwxrwxr-x	root/root	opt/metasploit/modules/evasion/linux/x64/
+-rw-rw-r--	root/root	opt/metasploit/modules/evasion/linux/x64/rc4_packer.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/evasion/linux/x86/
 -rw-rw-r--	root/root	opt/metasploit/modules/evasion/linux/x86/rc4_packer.rb
 drwxrwxr-x	root/root	opt/metasploit/modules/evasion/windows/
@@ -9879,6 +9884,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/multi/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/spip_connect_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/spip_porte_plume_previsu_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/spip_rce_form.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/spip_saisies_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/splunk_auth_rce_cve_2022_43571.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/splunk_mappy_exec.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/multi/http/splunk_privilege_escalation_cve_2023_32707.rb
