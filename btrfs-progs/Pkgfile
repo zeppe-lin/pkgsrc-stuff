@@ -3,12 +3,12 @@
 # Depends on:  lzo util-linux
 
 name=btrfs-progs
-version=6.19
+version=6.19.1
 release=1
 source=https://www.kernel.org/pub/linux/kernel/people/kdave/$name/$name-v$version.tar.xz
 
 build() {
-	# build in separate dir is broken by design
+	# Build in separate dir is broken (by design)
 	cd $name-v$version
 
 	./autogen.sh
