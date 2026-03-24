@@ -5204,12 +5204,14 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/atlassian/c
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/atlassian/confluence/version.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/beyondtrust.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/cisco_ios_xe.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/complete_pbx.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/drupal.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/exchange.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/exchange/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/exchange/proxy_maybe_shell.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/flask_unsign.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/flowise.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/freepbx.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/gitea.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/gitea/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/gitea/base.rb
@@ -5338,7 +5340,6 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/wordpress/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/wordpress/users.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/wordpress/version.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/wordpress/xml_rpc.rb
--rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http/xorcom_complete_pbx.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http_client.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/http_server.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/http_server/
@@ -5382,7 +5383,6 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/kerberos/client/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/kerberos/client/pkinit.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/kerberos/client/tgs_request.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/kerberos/client/tgs_response.rb
--rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/kerberos/clock_skew.rb
 drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/exploit/remote/kerberos/model/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/kerberos/model/tgt_response.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/exploit/remote/kerberos/service_authenticator.rb
@@ -5705,6 +5705,7 @@ drwxrwxr-x	root/root	opt/metasploit/lib/msf/core/modules/metadata/
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/opt_regexp.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/opt_rhosts.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/opt_string.rb
+-rw-rw-r--	root/root	opt/metasploit/lib/msf/core/opt_timedelta.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/option_container.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/option_group.rb
 -rw-rw-r--	root/root	opt/metasploit/lib/msf/core/optional_session.rb
@@ -9006,6 +9007,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/linux/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/astium_sqli_upload.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/asuswrt_lan_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/atutor_filemanager_traversal.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/avideo_encoder_getimage_cmd_injection.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/axis_app_install.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/axis_srv_parhand_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/linux/http/belkin_login_bof.rb
@@ -10216,6 +10218,7 @@ drwxrwxr-x	root/root	opt/metasploit/modules/exploits/unix/http/
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/http/epmp1000_ping_cmd_shell.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/http/freepbx_callmenum.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/http/freepbx_custom_extension_rce.rb
+-rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/http/freepbx_filestore_cmd_injection.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/http/freepbx_firmware_file_upload.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/http/freepbx_unauth_sqli_to_rce.rb
 -rw-rw-r--	root/root	opt/metasploit/modules/exploits/unix/http/laravel_token_unserialize_exec.rb
@@ -13334,6 +13337,7 @@ drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/core/modules/metadata/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/opt_regexp_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/opt_rhosts_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/opt_spec.rb
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/opt_timedelta_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/option_container_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/option_group_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/core/optional_session/
@@ -13345,6 +13349,7 @@ drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/core/payload/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/payload/python_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/payload/reverse_http_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/payload_generator_spec.rb
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/payload_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/core/platform_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/core/post/
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/core/post/android/
@@ -13437,6 +13442,7 @@ drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/util/document_generator/
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/msf/util/java_deserialization/
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/util/java_deserialization/bean_factory_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/util/java_deserialization_spec.rb
+-rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/util/payload_cached_size_spec.rb
 -rw-rw-r--	root/root	opt/metasploit/spec/lib/msf/util/windows_crypto_helpers_spec.rb
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/net/
 drwxrwxr-x	root/root	opt/metasploit/spec/lib/net/dns/
