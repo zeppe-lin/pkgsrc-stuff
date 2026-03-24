@@ -3,7 +3,7 @@
 # Depends on:  perl
 
 name=p5-timedate
-version=2.34
+version=2.35
 release=1
 source=https://cpan.metacpan.org/authors/id/A/AT/ATOOMIC/TimeDate-$version.tar.gz
 

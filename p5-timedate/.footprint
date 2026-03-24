@@ -32,6 +32,7 @@ drwxr-xr-x	root/root	usr/lib/perl5/site_perl/5.38/Date/Language/
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Date/Language/Norwegian.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Date/Language/Occitan.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Date/Language/Oromo.pm
+-r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Date/Language/Portuguese.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Date/Language/Romanian.pm
 -r--r--r--	root/root	usr/lib/perl5/site_perl/5.38/Date/Language/Russian.pm
 -r-xr-xr-x	root/root	usr/lib/perl5/site_perl/5.38/Date/Language/Russian_cp1251.pm
@@ -77,6 +78,7 @@ drwxr-xr-x	root/root	usr/share/man/man3/
 -r--r--r--	root/root	usr/share/man/man3/Date::Language::Norwegian.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Date::Language::Occitan.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Date::Language::Oromo.3pm.gz
+-r--r--r--	root/root	usr/share/man/man3/Date::Language::Portuguese.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Date::Language::Romanian.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Date::Language::Russian.3pm.gz
 -r--r--r--	root/root	usr/share/man/man3/Date::Language::Russian_cp1251.3pm.gz
