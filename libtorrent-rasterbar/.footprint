@@ -1,3 +1,12 @@
+drwxr-xr-x	root/root	lib/
+drwxr-xr-x	root/root	lib/python3.12/
+drwxr-xr-x	root/root	lib/python3.12/site-packages/
+-rwxr-xr-x	root/root	lib/python3.12/site-packages/libtorrent.cpython-312-x86_64-linux-gnu.so
+drwxr-xr-x	root/root	lib/python3.12/site-packages/libtorrent.egg-info/
+-rw-r--r--	root/root	lib/python3.12/site-packages/libtorrent.egg-info/PKG-INFO
+-rw-r--r--	root/root	lib/python3.12/site-packages/libtorrent.egg-info/SOURCES.txt
+-rw-r--r--	root/root	lib/python3.12/site-packages/libtorrent.egg-info/dependency_links.txt
+-rw-r--r--	root/root	lib/python3.12/site-packages/libtorrent.egg-info/top_level.txt
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/libtorrent/
@@ -285,18 +294,10 @@ drwxr-xr-x	root/root	usr/lib/cmake/LibtorrentRasterbar/
 -rw-r--r--	root/root	usr/lib/cmake/LibtorrentRasterbar/LibtorrentRasterbarTargets-release.cmake
 -rw-r--r--	root/root	usr/lib/cmake/LibtorrentRasterbar/LibtorrentRasterbarTargets.cmake
 lrwxrwxrwx	root/root	usr/lib/libtorrent-rasterbar.so -> libtorrent-rasterbar.so.2.0
-lrwxrwxrwx	root/root	usr/lib/libtorrent-rasterbar.so.2.0 -> libtorrent-rasterbar.so.2.0.11
--rwxr-xr-x	root/root	usr/lib/libtorrent-rasterbar.so.2.0.11
+lrwxrwxrwx	root/root	usr/lib/libtorrent-rasterbar.so.2.0 -> libtorrent-rasterbar.so.2.0.12
+-rwxr-xr-x	root/root	usr/lib/libtorrent-rasterbar.so.2.0.12
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libtorrent-rasterbar.pc
-drwxr-xr-x	root/root	usr/lib/python3.12/
-drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/
--rwxr-xr-x	root/root	usr/lib/python3.12/site-packages/libtorrent.cpython-312-x86_64-linux-gnu.so
-drwxr-xr-x	root/root	usr/lib/python3.12/site-packages/libtorrent.egg-info/
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/libtorrent.egg-info/PKG-INFO
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/libtorrent.egg-info/SOURCES.txt
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/libtorrent.egg-info/dependency_links.txt
--rw-r--r--	root/root	usr/lib/python3.12/site-packages/libtorrent.egg-info/top_level.txt
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/cmake/
 drwxr-xr-x	root/root	usr/share/cmake/Modules/
