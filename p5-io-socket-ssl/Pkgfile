@@ -4,13 +4,16 @@
 
 name=p5-io-socket-ssl
 version=2.098
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/S/SU/SULLR/IO-Socket-SSL-$version.tar.gz
 
 build() {
 	cd IO-Socket-SSL-$version
 
-	command -v finddepsdistmeta >/dev/null 2>&1 && finddepsdistmeta
+	if command -v finddepsdistmeta >/dev/null 2>&1; then
+		finddepsdistmeta || :
+	fi
+
 	PERL_MM_USE_DEFAULT=1 perl -I. Makefile.PL INSTALLDIRS=vendor
 
 	make
