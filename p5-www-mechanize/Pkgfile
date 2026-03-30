@@ -4,19 +4,22 @@
 
 name=p5-www-mechanize
 version=2.20
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/O/OA/OALDERS/WWW-Mechanize-$version.tar.gz
 
 build() {
 	cd WWW-Mechanize-$version
 
-	command -v finddepsdistmeta && finddepsdistmeta
+	if command -v finddepsdistmeta >/dev/null 2>&1; then
+		finddepsdistmeta || :
+	fi
+
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
 	make
 	make DESTDIR=$PKG install
 
-	# remove junk and empty dirs
+	# Remove junk and empty dirs
 	find $PKG -depth \
 		\( -type f -name perllocal.pod \
 			-o -name '*.bs' \
