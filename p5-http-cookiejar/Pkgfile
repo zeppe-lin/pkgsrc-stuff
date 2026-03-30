@@ -4,7 +4,7 @@
 
 name=p5-http-cookiejar
 version=0.014
-release=2
+release=3
 source=https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/HTTP-CookieJar-$version.tar.gz
 
 build() {
@@ -15,11 +15,11 @@ build() {
 	make
 	make DESTDIR=$PKG install
 
-	# remove junk and empty dirs
+	# Remove junk and empty dirs
 	find $PKG -depth \
-		-type f \( -name perllocal.pod  \
-			-o -name \*.bs          \
-			-o -name .packlist      \
-			\) -delete ,            \
-		-type d -empty -delete
+		\( -type f -name perllocal.pod \
+			-o -name '*.bs' \
+			-o -name .packlist \
+		\) -delete \
+		-o -type d -empty -delete
 }
