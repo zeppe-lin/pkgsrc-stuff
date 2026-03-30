@@ -4,11 +4,15 @@
 
 name=p5-http-daemon
 version=6.16
-release=2
+release=3
 source=https://cpan.metacpan.org/authors/id/O/OA/OALDERS/HTTP-Daemon-$version.tar.gz
 
 build() {
 	cd HTTP-Daemon-$version
+
+	if command -v finddepsdistmeta >/dev/null 2>&1; then
+		finddepsdistmeta || :
+	fi
 
 	export PERL_MM_FALLBACK_SILENCE_WARNING=1
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
@@ -16,11 +20,11 @@ build() {
 	make
 	make DESTDIR=$PKG install
 
-	# remove junk and empty dirs
+	# Remove junk and empty dirs
 	find $PKG -depth \
-		-type f \( -name perllocal.pod  \
-			-o -name \*.bs          \
-			-o -name .packlist      \
-			\) -delete ,            \
-		-type d -empty -delete
+		\( -type f -name perllocal.pod \
+			-o -name '*.bs' \
+			-o -name .packlist \
+		\) -delete \
+		-o -type d -empty -delete
 }
