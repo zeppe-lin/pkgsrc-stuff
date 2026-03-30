@@ -4,7 +4,7 @@
 
 name=p5-pdf-api2
 version=2.048
-release=1
+release=2
 source="https://cpan.metacpan.org/authors/id/S/SS/SSIMMS/PDF-API2-$version.tar.gz
 	font-location.patch
 	reproducible-resources.patch"
@@ -12,20 +12,23 @@ source="https://cpan.metacpan.org/authors/id/S/SS/SSIMMS/PDF-API2-$version.tar.g
 build() {
 	cd PDF-API2-$version
 
+	if command -v finddepsdistmeta >/dev/null 2>&1; then
+		finddepsdistmeta || :
+	fi
+
 	patch -Np1 -i $SRC/font-location.patch
 	patch -Np1 -i $SRC/reproducible-resources.patch
 
-	command -v finddepsdistmeta && finddepsdistmeta
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
 	make
 	make DESTDIR=$PKG install
 
-	# remove junk and empty dirs
+	# Remove junk and empty dirs
 	find $PKG -depth \
-		-type f \( -name perllocal.pod  \
-			-o -name \*.bs          \
-			-o -name .packlist      \
-			\) -delete ,            \
-		-type d -empty -delete
+		\( -type f -name perllocal.pod \
+			-o -name '*.bs' \
+			-o -name .packlist \
+		\) -delete \
+		-o -type d -empty -delete
 }
