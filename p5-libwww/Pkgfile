@@ -4,19 +4,22 @@
 
 name=p5-libwww
 version=6.81
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/O/OA/OALDERS/libwww-perl-$version.tar.gz
 
 build() {
 	cd libwww-perl-$version
 
-	command -v finddepsdistmeta && finddepsdistmeta
+	if command -v finddepsdistmeta >/dev/null 2>&1; then
+		finddepsdistmeta || :
+	fi
+
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL --aliases INSTALLDIRS=vendor
 
 	make
 	make DESTDIR=$PKG install
 
-	# remove junk and empty dirs
+	# Remove junk and empty dirs
 	find $PKG -depth \
 		\( -type f -name perllocal.pod \
 			-o -name '*.bs' \
