@@ -4,13 +4,16 @@
 
 name=p5-module-build-tiny
 version=0.053
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/L/LE/LEONT/Module-Build-Tiny-$version.tar.gz
 
 build() {
 	cd Module-Build-Tiny-$version
 
-	command -v finddepsdistmeta >/dev/null 2>&1 && finddepsdistmeta
+	if command -v finddepsdistmeta >/dev/null 2>&1; then
+		finddepsdistmeta || :
+	fi
+
 	perl Build.PL --installdirs=vendor
 
 	./Build
