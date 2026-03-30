@@ -4,13 +4,16 @@
 
 name=p5-image-exiftool
 version=13.50
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/E/EX/EXIFTOOL/Image-ExifTool-$version.tar.gz
 
 build() {
 	cd Image-ExifTool-$version
 
-	command -v finddepsdistmeta >/dev/null 2>&1 && finddepsdistmeta
+	if command -v finddepsdistmeta >/dev/null 2>&1; then
+		finddepsdistmeta || :
+	fi
+
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
 	make
