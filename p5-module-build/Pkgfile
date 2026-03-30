@@ -13,16 +13,20 @@ source=https://cpan.metacpan.org/authors/id/L/LE/LEONT/Module-Build-$version.tar
 build() {
 	cd Module-Build-$version
 
+	if command -v finddepsdistmeta >/dev/null 2>&1; then
+		finddepsdistmeta || :
+	fi
+
 	yes n | PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
 	make
 	make DESTDIR=$PKG install
 
-	# remove junk and empty dirs
+	# Remove junk and empty dirs
 	find $PKG -depth \
-		-type f \( -name perllocal.pod  \
-			-o -name \*.bs          \
-			-o -name .packlist      \
-			\) -delete ,            \
-		-type d -empty -delete
+		\( -type f -name perllocal.pod \
+			-o -name '*.bs' \
+			-o -name .packlist \
+		\) -delete \
+		-o -type d -empty -delete
 }
