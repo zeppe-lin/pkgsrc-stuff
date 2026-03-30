@@ -4,11 +4,15 @@
 
 name=p5-json
 version=4.11
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/I/IS/ISHIGAKI/JSON-$version.tar.gz
 
 build() {
 	cd JSON-$version
+
+	if command -v finddepsdistmeta >/dev/null 2>&1; then
+		finddepsdistmeta || :
+	fi
 
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
