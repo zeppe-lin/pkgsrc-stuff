@@ -4,13 +4,16 @@
 
 name=p5-lwp-protocol-https
 version=6.15
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/O/OA/OALDERS/LWP-Protocol-https-$version.tar.gz
 
 build() {
 	cd LWP-Protocol-https-$version
 
-	command -v finddepsdistmeta >/dev/null 2>&1 && finddepsdistmeta
+	if command -v finddepsdistmeta >/dev/null 2>&1; then
+		finddepsdistmeta || :
+	fi
+
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
 	make
