@@ -4,7 +4,7 @@
 
 name=p5-net-pcap
 version=0.21
-release=1
+release=2
 source="https://cpan.metacpan.org/authors/id/C/CO/CORION/Net-Pcap-$version.tar.gz
 	fixups.patch
 	listdatalinks.patch
@@ -15,7 +15,11 @@ source="https://cpan.metacpan.org/authors/id/C/CO/CORION/Net-Pcap-$version.tar.g
 
 build() {
 	cd Net-Pcap-$version
-	
+
+	if command -v finddepsdistmeta >/dev/null 2>&1; then
+		finddepsdistmeta || :
+	fi
+
 	#patch -Np2 -b -z .orig -i $SRC/makefile.patch
 	patch -Np2 -b -z .orig -i $SRC/listdatalinks.patch
 	#patch -Np1 -b -z .orig -i $SRC/pcapapi.patch
@@ -24,17 +28,17 @@ build() {
 
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
-	# remove default -pipe flag
+	# Remove default -pipe flag
 	sed -i '/CCFLAGS = /s/ -pipe / /' Makefile
 
 	make OPTIMIZE="$CFLAGS"
 	make DESTDIR=$PKG install
 
-	# remove junk and empty dirs
+	# Remove junk and empty dirs
 	find $PKG -depth \
-		-type f \( -name perllocal.pod  \
-			-o -name \*.bs          \
-			-o -name .packlist      \
-			\) -delete ,            \
-		-type d -empty -delete
+		\( -type f -name perllocal.pod \
+			-o -name '*.bs' \
+			-o -name .packlist \
+		\) -delete \
+		-o -type d -empty -delete
 }
