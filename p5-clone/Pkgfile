@@ -4,13 +4,16 @@
 
 name=p5-clone
 version=0.50
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/A/AT/ATOOMIC/Clone-$version.tar.gz
 
 build() {
 	cd Clone-$version
 
-	command -v finddepsdistmeta >/dev/null 2>&1 && finddepsdistmeta
+	if command -v finddepsdistmeta >/dev/null 2>&1; then
+		finddepsdistmeta || :
+	fi
+
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
 	make OPTIMIZE="$CFLAGS"
