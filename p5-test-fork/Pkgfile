@@ -4,22 +4,26 @@
 
 name=p5-test-fork
 version=0.02
-release=2
+release=3
 source=https://cpan.metacpan.org/authors/id/M/MS/MSCHWERN/Test-Fork-$version.tar.gz
 
 build() {
 	cd Test-Fork-$version
+
+	if command -v finddepsdistmeta >/dev/null 2>&1; then
+		finddepsdistmeta || :
+	fi
 
 	perl Build.PL installdirs=vendor destdir=$PKG
 
 	perl Build
 	perl Build install
 
-	# remove junk and empty dirs
+	# Remove junk and empty dirs
 	find $PKG -depth \
-		-type f \( -name perllocal.pod  \
-			-o -name \*.bs          \
-			-o -name .packlist      \
-			\) -delete ,            \
-		-type d -empty -delete
+		\( -type f -name perllocal.pod \
+			-o -name '*.bs' \
+			-o -name .packlist \
+		\) -delete \
+		-o -type d -empty -delete
 }
