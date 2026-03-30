@@ -4,19 +4,22 @@
 
 name=p5-cgi
 version=4.71
-release=1
+release=2
 source=https://cpan.metacpan.org/authors/id/L/LE/LEEJO/CGI-$version.tar.gz
 
 build() {
 	cd CGI-$version
 
-	command -v finddepsdistmeta >/dev/null 2>&1 && finddepsdistmeta
+	if command -v finddepsdistmeta >/dev/null 2>&1; then
+		finddepsdistmeta || :
+	fi
+
 	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
 
 	make
 	make DESTDIR=$PKG install
 
-	# remove junk and empty dirs
+	# Remove junk and empty dirs
 	find $PKG -depth \
 		\( -type f -name perllocal.pod \
 			-o -name '*.bs' \
