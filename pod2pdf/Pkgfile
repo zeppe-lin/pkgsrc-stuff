@@ -4,7 +4,7 @@
 
 name=pod2pdf
 version=0.42
-release=4
+release=5
 source="https://cpan.metacpan.org/authors/id/J/JO/JONALLEN/$name-$version.tar.gz
 	add-outlines.patch
 	allow-float.patch
@@ -15,6 +15,10 @@ source="https://cpan.metacpan.org/authors/id/J/JO/JONALLEN/$name-$version.tar.gz
 
 build() {
 	cd $name-$version
+
+	if command -v finddepsdistmeta >/dev/null 2>&1; then
+		finddepsdistmeta || :
+	fi
 
 	patch -p1 -i $SRC/timestamp.patch
 	patch -p1 -i $SRC/fix-producer-version.patch
@@ -31,11 +35,11 @@ build() {
 	mv $PKG/usr/share/man/man1/pod2pdf.1 \
 	   $PKG/usr/share/man/man1/pod2pdf.1pm
 
-	# remove junk and empty dirs
+	# Remove junk and empty dirs
 	find $PKG -depth \
-		-type f \( -name perllocal.pod  \
-			-o -name \*.bs          \
-			-o -name .packlist      \
-			\) -delete ,            \
-		-type d -empty -delete
+		\( -type f -name perllocal.pod \
+			-o -name '*.bs' \
+			-o -name .packlist \
+		\) -delete \
+		-o -type d -empty -delete
 }
