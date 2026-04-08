@@ -2,11 +2,11 @@
 # URL:         https://www.smplayer.info/
 # Depends on:  hicolor-icon-theme qt5
 
-# Maintainer notes on dependencies:
+# Notes on dependencies:
 #   yt-dlp: Youtube support (auto-enabled if installed)
 
 name=smplayer
-version=25.6.0.10388
+version=25.6.0.10403
 release=1
 
 case $version in
@@ -32,5 +32,6 @@ build() {
 	sed -ri '/\[.+\]=/d' $PKG/usr/share/applications/*.desktop
 
 	# Remove junk
-	rm -r $PKG/usr/share/doc
+	cd $PKG/usr/share
+	rm -r doc metainfo
 }
