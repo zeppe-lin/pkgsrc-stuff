@@ -153,6 +153,7 @@ drwxr-xr-x	root/root	usr/lib/jdk17/legal/java.base/
 -r--r--r--	root/root	usr/lib/jdk17/legal/java.base/asm.md
 -r--r--r--	root/root	usr/lib/jdk17/legal/java.base/c-libutl.md
 -r--r--r--	root/root	usr/lib/jdk17/legal/java.base/cldr.md
+-r--r--r--	root/root	usr/lib/jdk17/legal/java.base/gcc.md
 -r--r--r--	root/root	usr/lib/jdk17/legal/java.base/icu.md
 -r--r--r--	root/root	usr/lib/jdk17/legal/java.base/public_suffix.md
 -r--r--r--	root/root	usr/lib/jdk17/legal/java.base/siphash.md
