@@ -22,9 +22,9 @@ drwxr-xr-x	root/root	usr/include/hunspell/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libhunspell-1.7.a
 -rwxr-xr-x	root/root	usr/lib/libhunspell-1.7.la
-lrwxrwxrwx	root/root	usr/lib/libhunspell-1.7.so -> libhunspell-1.7.so.0.0.1
-lrwxrwxrwx	root/root	usr/lib/libhunspell-1.7.so.0 -> libhunspell-1.7.so.0.0.1
--rwxr-xr-x	root/root	usr/lib/libhunspell-1.7.so.0.0.1
+lrwxrwxrwx	root/root	usr/lib/libhunspell-1.7.so -> libhunspell-1.7.so.0.1.0
+lrwxrwxrwx	root/root	usr/lib/libhunspell-1.7.so.0 -> libhunspell-1.7.so.0.1.0
+-rwxr-xr-x	root/root	usr/lib/libhunspell-1.7.so.0.1.0
 lrwxrwxrwx	root/root	usr/lib/libhunspell.so -> libhunspell-1.7.so.0.0.1
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/hunspell.pc
