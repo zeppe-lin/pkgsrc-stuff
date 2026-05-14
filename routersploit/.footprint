@@ -1,5 +1,6 @@
 drwxr-xr-x	root/root	opt/
 drwxr-xr-x	root/root	opt/routersploit/
+-rw-r--r--	root/root	opt/routersploit/81d243bd2c585b0f4821__mypyc.cpython-312-x86_64-linux-gnu.so
 -rw-r--r--	root/root	opt/routersploit/CONTRIBUTING.md
 drwxr-xr-x	root/root	opt/routersploit/Crypto/
 drwxr-xr-x	root/root	opt/routersploit/Crypto/Cipher/
@@ -1918,6 +1919,7 @@ drwxr-xr-x	root/root	opt/routersploit/charset_normalizer/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/charset_normalizer/__pycache__/utils.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/charset_normalizer/__pycache__/version.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/charset_normalizer/api.py
+-rw-r--r--	root/root	opt/routersploit/charset_normalizer/cd.cpython-312-x86_64-linux-gnu.so
 -rw-r--r--	root/root	opt/routersploit/charset_normalizer/cd.py
 drwxr-xr-x	root/root	opt/routersploit/charset_normalizer/cli/
 -rw-r--r--	root/root	opt/routersploit/charset_normalizer/cli/__init__.py
@@ -1929,7 +1931,6 @@ drwxr-xr-x	root/root	opt/routersploit/charset_normalizer/cli/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/charset_normalizer/legacy.py
 -rw-r--r--	root/root	opt/routersploit/charset_normalizer/md.cpython-312-x86_64-linux-gnu.so
 -rw-r--r--	root/root	opt/routersploit/charset_normalizer/md.py
--rw-r--r--	root/root	opt/routersploit/charset_normalizer/md__mypyc.cpython-312-x86_64-linux-gnu.so
 -rw-r--r--	root/root	opt/routersploit/charset_normalizer/models.py
 -rw-r--r--	root/root	opt/routersploit/charset_normalizer/py.typed (EMPTY)
 -rw-r--r--	root/root	opt/routersploit/charset_normalizer/utils.py
@@ -1991,8 +1992,11 @@ drwxr-xr-x	root/root	opt/routersploit/cryptography/hazmat/bindings/_rust/openssl
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/bindings/_rust/openssl/ed448.pyi
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/bindings/_rust/openssl/hashes.pyi
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/bindings/_rust/openssl/hmac.pyi
+-rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/bindings/_rust/openssl/hpke.pyi
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/bindings/_rust/openssl/kdf.pyi
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/bindings/_rust/openssl/keys.pyi
+-rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/bindings/_rust/openssl/mldsa.pyi
+-rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/bindings/_rust/openssl/mlkem.pyi
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/bindings/_rust/openssl/poly1305.pyi
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/bindings/_rust/openssl/rsa.pyi
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/bindings/_rust/openssl/x25519.pyi
@@ -2018,23 +2022,28 @@ drwxr-xr-x	root/root	opt/routersploit/cryptography/hazmat/decrepit/ciphers/
 drwxr-xr-x	root/root	opt/routersploit/cryptography/hazmat/decrepit/ciphers/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/decrepit/ciphers/__pycache__/__init__.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/decrepit/ciphers/__pycache__/algorithms.cpython-312.pyc
+-rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/decrepit/ciphers/__pycache__/modes.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/decrepit/ciphers/algorithms.py
+-rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/decrepit/ciphers/modes.py
 drwxr-xr-x	root/root	opt/routersploit/cryptography/hazmat/primitives/
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/__init__.py
 drwxr-xr-x	root/root	opt/routersploit/cryptography/hazmat/primitives/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/__pycache__/__init__.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/__pycache__/_asymmetric.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/__pycache__/_cipheralgorithm.cpython-312.pyc
+-rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/__pycache__/_modes.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/__pycache__/_serialization.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/__pycache__/cmac.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/__pycache__/constant_time.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/__pycache__/hashes.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/__pycache__/hmac.cpython-312.pyc
+-rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/__pycache__/hpke.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/__pycache__/keywrap.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/__pycache__/padding.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/__pycache__/poly1305.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/_asymmetric.py
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/_cipheralgorithm.py
+-rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/_modes.py
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/_serialization.py
 drwxr-xr-x	root/root	opt/routersploit/cryptography/hazmat/primitives/asymmetric/
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/asymmetric/__init__.py
@@ -2045,6 +2054,8 @@ drwxr-xr-x	root/root	opt/routersploit/cryptography/hazmat/primitives/asymmetric/
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/asymmetric/__pycache__/ec.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/asymmetric/__pycache__/ed25519.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/asymmetric/__pycache__/ed448.cpython-312.pyc
+-rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/asymmetric/__pycache__/mldsa.cpython-312.pyc
+-rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/asymmetric/__pycache__/mlkem.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/asymmetric/__pycache__/padding.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/asymmetric/__pycache__/rsa.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/asymmetric/__pycache__/types.cpython-312.pyc
@@ -2056,6 +2067,8 @@ drwxr-xr-x	root/root	opt/routersploit/cryptography/hazmat/primitives/asymmetric/
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/asymmetric/ec.py
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/asymmetric/ed25519.py
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/asymmetric/ed448.py
+-rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/asymmetric/mldsa.py
+-rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/asymmetric/mlkem.py
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/asymmetric/padding.py
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/asymmetric/rsa.py
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/asymmetric/types.py
@@ -2078,6 +2091,7 @@ drwxr-xr-x	root/root	opt/routersploit/cryptography/hazmat/primitives/ciphers/__p
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/constant_time.py
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/hashes.py
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/hmac.py
+-rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/hpke.py
 drwxr-xr-x	root/root	opt/routersploit/cryptography/hazmat/primitives/kdf/
 -rw-r--r--	root/root	opt/routersploit/cryptography/hazmat/primitives/kdf/__init__.py
 drwxr-xr-x	root/root	opt/routersploit/cryptography/hazmat/primitives/kdf/__pycache__/
@@ -2461,7 +2475,6 @@ drwxr-xr-x	root/root	opt/routersploit/invoke/
 drwxr-xr-x	root/root	opt/routersploit/invoke/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/invoke/__pycache__/__init__.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/invoke/__pycache__/__main__.cpython-312.pyc
--rw-r--r--	root/root	opt/routersploit/invoke/__pycache__/_version.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/invoke/__pycache__/collection.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/invoke/__pycache__/config.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/invoke/__pycache__/context.cpython-312.pyc
@@ -2476,7 +2489,6 @@ drwxr-xr-x	root/root	opt/routersploit/invoke/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/invoke/__pycache__/terminals.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/invoke/__pycache__/util.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/invoke/__pycache__/watchers.cpython-312.pyc
--rw-r--r--	root/root	opt/routersploit/invoke/_version.py
 -rw-r--r--	root/root	opt/routersploit/invoke/collection.py
 drwxr-xr-x	root/root	opt/routersploit/invoke/completion/
 -rw-r--r--	root/root	opt/routersploit/invoke/completion/__init__.py (EMPTY)
@@ -2659,10 +2671,8 @@ drwxr-xr-x	root/root	opt/routersploit/paramiko/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/paramiko/__pycache__/kex_curve25519.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/paramiko/__pycache__/kex_ecdh_nist.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/paramiko/__pycache__/kex_gex.cpython-312.pyc
--rw-r--r--	root/root	opt/routersploit/paramiko/__pycache__/kex_group1.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/paramiko/__pycache__/kex_group14.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/paramiko/__pycache__/kex_group16.cpython-312.pyc
--rw-r--r--	root/root	opt/routersploit/paramiko/__pycache__/kex_gss.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/paramiko/__pycache__/message.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/paramiko/__pycache__/packet.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/paramiko/__pycache__/pipe.cpython-312.pyc
@@ -2679,7 +2689,6 @@ drwxr-xr-x	root/root	opt/routersploit/paramiko/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/paramiko/__pycache__/sftp_server.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/paramiko/__pycache__/sftp_si.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/paramiko/__pycache__/ssh_exception.cpython-312.pyc
--rw-r--r--	root/root	opt/routersploit/paramiko/__pycache__/ssh_gss.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/paramiko/__pycache__/transport.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/paramiko/__pycache__/util.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/paramiko/__pycache__/win_openssh.cpython-312.pyc
@@ -2702,10 +2711,8 @@ drwxr-xr-x	root/root	opt/routersploit/paramiko/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/paramiko/kex_curve25519.py
 -rw-r--r--	root/root	opt/routersploit/paramiko/kex_ecdh_nist.py
 -rw-r--r--	root/root	opt/routersploit/paramiko/kex_gex.py
--rw-r--r--	root/root	opt/routersploit/paramiko/kex_group1.py
 -rw-r--r--	root/root	opt/routersploit/paramiko/kex_group14.py
 -rw-r--r--	root/root	opt/routersploit/paramiko/kex_group16.py
--rw-r--r--	root/root	opt/routersploit/paramiko/kex_gss.py
 -rw-r--r--	root/root	opt/routersploit/paramiko/message.py
 -rw-r--r--	root/root	opt/routersploit/paramiko/packet.py
 -rw-r--r--	root/root	opt/routersploit/paramiko/pipe.py
@@ -2722,7 +2729,6 @@ drwxr-xr-x	root/root	opt/routersploit/paramiko/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/paramiko/sftp_server.py
 -rw-r--r--	root/root	opt/routersploit/paramiko/sftp_si.py
 -rw-r--r--	root/root	opt/routersploit/paramiko/ssh_exception.py
--rw-r--r--	root/root	opt/routersploit/paramiko/ssh_gss.py
 -rw-r--r--	root/root	opt/routersploit/paramiko/transport.py
 -rw-r--r--	root/root	opt/routersploit/paramiko/util.py
 -rw-r--r--	root/root	opt/routersploit/paramiko/win_openssh.py
@@ -3182,6 +3188,7 @@ drwxr-xr-x	root/root	opt/routersploit/requests/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/requests/__pycache__/__init__.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/requests/__pycache__/__version__.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/requests/__pycache__/_internal_utils.cpython-312.pyc
+-rw-r--r--	root/root	opt/routersploit/requests/__pycache__/_types.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/requests/__pycache__/adapters.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/requests/__pycache__/api.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/requests/__pycache__/auth.cpython-312.pyc
@@ -3199,6 +3206,7 @@ drwxr-xr-x	root/root	opt/routersploit/requests/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/requests/__pycache__/utils.cpython-312.pyc
 -rw-r--r--	root/root	opt/routersploit/requests/__version__.py
 -rw-r--r--	root/root	opt/routersploit/requests/_internal_utils.py
+-rw-r--r--	root/root	opt/routersploit/requests/_types.py
 -rw-r--r--	root/root	opt/routersploit/requests/adapters.py
 -rw-r--r--	root/root	opt/routersploit/requests/api.py
 -rw-r--r--	root/root	opt/routersploit/requests/auth.py
@@ -3210,6 +3218,7 @@ drwxr-xr-x	root/root	opt/routersploit/requests/__pycache__/
 -rw-r--r--	root/root	opt/routersploit/requests/hooks.py
 -rw-r--r--	root/root	opt/routersploit/requests/models.py
 -rw-r--r--	root/root	opt/routersploit/requests/packages.py
+-rw-r--r--	root/root	opt/routersploit/requests/py.typed (EMPTY)
 -rw-r--r--	root/root	opt/routersploit/requests/sessions.py
 -rw-r--r--	root/root	opt/routersploit/requests/status_codes.py
 -rw-r--r--	root/root	opt/routersploit/requests/structures.py
