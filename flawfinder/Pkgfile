@@ -3,7 +3,7 @@
 # Depends on:  py3-setuptools
 
 name=flawfinder
-version=2.0.19
+version=2.0.20
 release=1
 source=https://dwheeler.com/$name/$name-$version.tar.gz
 
@@ -11,4 +11,8 @@ build() {
 	cd $name-$version
 
 	make prefix=/usr DESTDIR=$PKG install
+
+	# Fix permissions
+	chmod 0755 $PKG/usr/bin/flawfinder
+	chmod 0644 $PKG/usr/share/man/man1/flawfinder.1
 }
